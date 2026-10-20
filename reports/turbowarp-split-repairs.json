@@ -1,0 +1,205 @@
+[
+  {
+    "path": "library-source/html5-games/clColorboxmustard.html",
+    "status": "repaired",
+    "reason": "Google Drive warning or missing file replaced by original TurboWarp source; project archive split for static hosts",
+    "original_bytes": 169477764,
+    "original_sha256": "021e8f83dde389e48acaa5db552b975b8f5d864f09d46ff35848e7c97e6e7a39",
+    "launcher_bytes": 3854385,
+    "launcher_sha256": "c0dd5a2f7449400f465675baa8e4236de758ce8001566dcb653a6ad8699b7c66",
+    "project_archive_bytes": 132427082,
+    "archive_entries": 1079,
+    "archive_crc_verified": true,
+    "base85_chunks_decoded": 2021,
+    "parts": [
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part01.bin",
+        "bytes": 20971520,
+        "sha256": "54ffa136f96d03634591828ae87f35d18571904adc3bb7d9542a91a1196d3a0b"
+      },
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part02.bin",
+        "bytes": 20971520,
+        "sha256": "c0d6d903214e69ab1d8b0ce3af7feadbfae98e96eb82215370753067fa903e65"
+      },
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part03.bin",
+        "bytes": 20971520,
+        "sha256": "e09e287955979a1daaca70fa7dc11e8cf0335c37d27c55daf4bc85e511a34cc3"
+      },
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part04.bin",
+        "bytes": 20971520,
+        "sha256": "7424f652d05340bfee5ccdf210b25649a94218b20d426e0d000b1f1676497cae"
+      },
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part05.bin",
+        "bytes": 20971520,
+        "sha256": "601c83820e6a2f526e4e6ec8670e28d1c1d4e322c663e0e02a1d7e065e3e047d"
+      },
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part06.bin",
+        "bytes": 20971520,
+        "sha256": "cd0dd89481d7eae57b4dc76ac57166804e3c06a760c9c010220757189bd80d13"
+      },
+      {
+        "path": "library-source/html5-games/clColorboxmustard-assets/project.part07.bin",
+        "bytes": 6597962,
+        "sha256": "a6924f956f52d0c79e008b0808e705ba27a2973132933cfa17373e60de98ee4a"
+      }
+    ],
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clrabbithole106.html",
+    "status": "repaired",
+    "reason": "Google Drive warning or missing file replaced by original TurboWarp source; project archive split for static hosts",
+    "original_bytes": 487532532,
+    "original_sha256": "26db5f8abc845ca78a8130c1c45451d5fd701752983ad2c60843b38e1503e2ac",
+    "launcher_bytes": 2309375,
+    "launcher_sha256": "48cd325974afea101969c9ca42cd9b362b56509eebd9ae58ff88a4880a08bdc8",
+    "project_archive_bytes": 387970186,
+    "archive_entries": 4060,
+    "archive_crc_verified": true,
+    "base85_chunks_decoded": 5920,
+    "parts": [
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part01.bin",
+        "bytes": 20971520,
+        "sha256": "f1b8acc9bff045ede190e621ad292f1f77fb4c4e7a5c20fc95ce04b67069bf25"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part02.bin",
+        "bytes": 20971520,
+        "sha256": "6cdf34eecd54713e82ce860998429ea1d36aa3574816acfea26a672a465f918b"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part03.bin",
+        "bytes": 20971520,
+        "sha256": "c20fb354471dff2d17cf8032cea2fe7934b2e5631c64c74ebcc55cbdb0c12d88"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part04.bin",
+        "bytes": 20971520,
+        "sha256": "d16286d73d4d7542d9105e74d00fe0ee8c85dddd68756a131cfa2a54eb9b01c8"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part05.bin",
+        "bytes": 20971520,
+        "sha256": "f149cba0cff0bc4cf6bab2cba1d26e602d0a32ab5afcbbc505d8837f555eec98"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part06.bin",
+        "bytes": 20971520,
+        "sha256": "7a5f8ec04591b16ccef03a7dbe0d8239982585d5a871f152db2fa518706ef6c6"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part07.bin",
+        "bytes": 20971520,
+        "sha256": "fec2a2223480f164f1f9cbd47473e2a661cb56dec4864b51202990310c8a1408"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part08.bin",
+        "bytes": 20971520,
+        "sha256": "0adaf3dd99591f9293151debb580de4a3ed2d172d42560d8465c6c3ba9ff4a7f"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part09.bin",
+        "bytes": 20971520,
+        "sha256": "9b2d92814237f9f65fa5ce1c964ebec5d8970b9dc65ce6d4b9e194e86c0dcf24"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part10.bin",
+        "bytes": 20971520,
+        "sha256": "ec824d7070ffd8da79d691ba862a1626c1e66573820bf9f624b45eaa67e6a23d"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part11.bin",
+        "bytes": 20971520,
+        "sha256": "08fb4c2c41b11dc4320401250ba62d1a086fb2311f82858bbf27e531fb999fdd"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part12.bin",
+        "bytes": 20971520,
+        "sha256": "0c169e8f752996b920eae670eef33a7acfbf430274ff515422d5c631b18dde99"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part13.bin",
+        "bytes": 20971520,
+        "sha256": "e6aa81739232c4482772ed9b0fddca694acac4c776d34d84f9f9b6d73a4ee875"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part14.bin",
+        "bytes": 20971520,
+        "sha256": "45aa5c2c5427a39bdc17467dc3ad2b77e7c526b5c47ee2db8dc979083e8fad6a"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part15.bin",
+        "bytes": 20971520,
+        "sha256": "7735c96cc86e3a89f291e60688c06c37118920ff074ab49cb118f0bd21d3234e"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part16.bin",
+        "bytes": 20971520,
+        "sha256": "9e8e83b96d518553e819ad0c48631e650a2729e86a05220f5681de4428c85425"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part17.bin",
+        "bytes": 20971520,
+        "sha256": "f8a3177489dca753cc7eb1f3bbad28ec77f90c0f68aaf2016e167a2a09321d1a"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part18.bin",
+        "bytes": 20971520,
+        "sha256": "b4f61d23c1a1135ba3a9b82708b14280ab05dcaff134c273909895d10acf4fbd"
+      },
+      {
+        "path": "library-source/html5-games/clrabbithole106-assets/project.part19.bin",
+        "bytes": 10482826,
+        "sha256": "5688bca94a7837f60a42911bd439abccad577010859d0428b72db6af667e24ff"
+      }
+    ],
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clgdwaveover100mb.html",
+    "status": "repaired",
+    "reason": "Google Drive warning or missing file replaced by original TurboWarp source; project archive split for static hosts",
+    "original_bytes": 121121169,
+    "original_sha256": "2ef4ca2c0bff7db8e7fc04bc782c6580cb4e081525e663b66b46f937deb7c17e",
+    "launcher_bytes": 1820787,
+    "launcher_sha256": "c37fad49fb21183f59eea7bc05a3ab8f474b305b6b8090d5c9c8372566452018",
+    "project_archive_bytes": 95388497,
+    "archive_entries": 99,
+    "archive_crc_verified": true,
+    "base85_chunks_decoded": 1456,
+    "parts": [
+      {
+        "path": "library-source/html5-games/clgdwaveover100mb-assets/project.part01.bin",
+        "bytes": 20971520,
+        "sha256": "78acefbfa6da8c5eb61201333ee0280349fb1a3bdcec7d7e9a7004805abc7afc"
+      },
+      {
+        "path": "library-source/html5-games/clgdwaveover100mb-assets/project.part02.bin",
+        "bytes": 20971520,
+        "sha256": "ce6ed4dbb1382c31b00630eba9dabf8a84cf12360de123072d7e36da2311e310"
+      },
+      {
+        "path": "library-source/html5-games/clgdwaveover100mb-assets/project.part03.bin",
+        "bytes": 20971520,
+        "sha256": "f6fdbf89c71373fa30f85a6a3b9c0e6dc53f12eba0068aa8106b0fbe930b2f29"
+      },
+      {
+        "path": "library-source/html5-games/clgdwaveover100mb-assets/project.part04.bin",
+        "bytes": 20971520,
+        "sha256": "14480e0efba8ba9c48c6f1748e1659dab74870edfd48e7380582ffc9aec26090"
+      },
+      {
+        "path": "library-source/html5-games/clgdwaveover100mb-assets/project.part05.bin",
+        "bytes": 11502417,
+        "sha256": "cba96bd11440244fb2f96f091346f4e7225237528e37255e97d8b924c1f322b4"
+      }
+    ],
+    "gameplay_verified": false
+  }
+]

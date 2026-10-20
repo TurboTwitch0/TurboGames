@@ -1,0 +1,53 @@
+{
+  "method": "Browser render/start-screen checks, not complete playthroughs. Remote source availability is checked separately. Some sandbox iframe subrequests in this managed browser bypass interception and may fail its environment CA trust; these are marked environmentTLSBlocked. No TLS checks were disabled.",
+  "results": [
+    {
+      "title": "Windows Doors",
+      "source": "library-source/flash/clwindowsdoors.html",
+      "state": {
+        "title": "really cool flash game",
+        "text": "",
+        "canvases": 1,
+        "iframes": 0,
+        "storage": true,
+        "gridTiles": 0
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "environmentTLSBlocked": false,
+      "failedRequests": []
+    },
+    {
+      "title": "Douchebag Workout 2",
+      "source": "library-source/flash/cldouchebagworkout2.html",
+      "state": {
+        "title": "really cool flash game",
+        "text": "]]>",
+        "canvases": 1,
+        "iframes": 0,
+        "storage": true,
+        "gridTiles": 0
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "environmentTLSBlocked": false,
+      "failedRequests": []
+    },
+    {
+      "title": "Orbit Breaker",
+      "source": "games/orbit-breaker.html",
+      "state": {
+        "title": "Orbit Breaker",
+        "text": "Orbit Breaker\n\nMove your mouse or finger to steer. Break the orbiting stars!\n\nScore: 0\n\nStart game",
+        "canvases": 1,
+        "iframes": 0,
+        "storage": true,
+        "gridTiles": 0
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "environmentTLSBlocked": false,
+      "failedRequests": []
+    }
+  ]
+}

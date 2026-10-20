@@ -1,0 +1,772 @@
+[
+  {
+    "path": "library-source/flash/cl10morebullets.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "10 More Bullets",
+        "source": "library-source/flash/cl10morebullets.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "244138093eae7aef3e56daa99ee45978a13bd69dbde0415a4c44d303a248487d",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/claxisfootballleague.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Axis Football League",
+        "source": "library-source/flash/claxisfootballleague.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "6809bc5a17d45a0fd0a343c08a7a5b7f79ca7a565bed9d2a4139519a91e3ec9e",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clbash.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Bash the Computer",
+        "source": "library-source/flash/clbash.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "d249515498ff7019cdd666ab1a024f5beadbea2da50355afc66ead336b5dfab5",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clblackknight.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Black Knight",
+        "source": "library-source/flash/clblackknight.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "7412141735e02f2574d27db15a1b90b62e0c04318c219ed870b18340995007d2",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clcastaway.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Castaway",
+        "source": "library-source/flash/clcastaway.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "014def9e27d7c3895291d1bb73efb38de002142a4fdddbbaad0fb23614ab8496",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clcrazypenguincatapult.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Crazy Penguin Catapult",
+        "source": "library-source/flash/clcrazypenguincatapult.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "a81d295711fd2fdd9e2067d5fbe14f3d38ba6a6ce479a0826664c5a8ba4379c4",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/cldunebuggy.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Dune Buggy",
+        "source": "library-source/flash/cldunebuggy.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "2be698382ea5d9abdb2d94ad5f7166ea4da16bad7c182caf6a6f771561c764a1",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clinnkeeper.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Innkeeper",
+        "source": "library-source/flash/clinnkeeper.html",
+        "script": 6,
+        "error": "Invalid or unexpected token"
+      }
+    ],
+    "changes": [
+      "Repaired invalid multiline legacy browser warning string."
+    ],
+    "sha256": "985b972aee3166e2ce7b715741eba86cafc840d367eee2ee2bda8c604b5f07b4",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clmicrolife.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Micro Life",
+        "source": "library-source/flash/clmicrolife.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "b87f438a6d85a1f43513238a62f9eafbd81171478e7f4801ab63f473b9acaf64",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clminecaves.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "MineCaves",
+        "source": "library-source/flash/clminecaves.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "65768366f0b6eb3cdb0f1edc15b05eced1daa35ea731283d3562a92503fdd92e",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clmonstertruckcurfew.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Monster Truck Curfew",
+        "source": "library-source/flash/clmonstertruckcurfew.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "1ddc456526a320217466430627c3171ad94ce7aefbe84ab4b4f4d4d3c97ac175",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clpandameic2.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Pandemic 2",
+        "source": "library-source/flash/clpandameic2.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "0945b7091fc15af987462e4e7501521bf894da0fee001c473b3ec2148936f544",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clpapasburgerIIIAAAAA.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Papa\u2019s Burgeria",
+        "source": "library-source/flash/clpapasburgerIIIAAAAA.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "393113912638b01f6b80945a2c2aa9c05c0a501a9e2a156ceee6f4c5c9fd65fa",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clragdollachivement.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Ragdollachivement",
+        "source": "library-source/flash/clragdollachivement.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "dc35065503770bef9232f8f57c927fc9a54ddf5e48cbd1cba21a356c03621944",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clwarfare1917.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Warfare 1917",
+        "source": "library-source/flash/clwarfare1917.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "46c3c8d3bf3d91a76ea53944b88e401e663c6a289712d854415060654aaef68c",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clzoinkz.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Zoikz Defender",
+        "source": "library-source/flash/clzoinkz.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "01f77f05384edb31210c534be58f6da8a31c3fd96f7cd9c774501588cef94146",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/cl12minibattles.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "12 Mini Battles",
+        "source": "library-source/html5-games/cl12minibattles.html",
+        "script": 1,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: pause game logic / mute audio",
+      "Restored block comment lost when source lines were flattened: advertisement done, resume game logic and unmute audio",
+      "Restored block comment lost when source lines were flattened: when sdk is ready"
+    ],
+    "sha256": "cb86ceb0627be5c1b6c40afb29f99945e252fb46bdb09acb8ede234357b71cc6",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clbasketrandom.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Basket Random",
+        "source": "library-source/html5-games/clbasketrandom.html",
+        "script": 1,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "3bbd85c4925ee6e20087d3772851ac267a0a4e3dc1b395b9db8b0ad1a8e6a07b",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clbattles.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Battles",
+        "source": "library-source/html5-games/clbattles.html",
+        "script": 1,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "9c13ead476bbefe3c84136abe58abf4a99ee76b776892c31dbc914d6e178363e",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clcastlewarsmodern.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Castle Wars Modern",
+        "source": "library-source/html5-games/clcastlewarsmodern.html",
+        "script": 3,
+        "error": "Unexpected end of input"
+      },
+      {
+        "title": "Castle Wars Modern",
+        "source": "library-source/html5-games/clcastlewarsmodern.html",
+        "script": 4,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys",
+      "Restored block comment lost when source lines were flattened: advertisement done, resume game logic and unmute audio",
+      "Restored block comment lost when source lines were flattened: when sdk is ready",
+      "Restored block comment lost when source lines were flattened: Fill the game_id",
+      "Restored block comment lost when source lines were flattened: when sdk get error"
+    ],
+    "sha256": "4bc23b38ad995c1b65eae56b5ffde3afa6a0c59a406fdb3a4133472513bd1542",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/cldrawclimber.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Draw Climber",
+        "source": "library-source/html5-games/cldrawclimber.html",
+        "script": 2,
+        "error": "Unexpected identifier 'window'"
+      }
+    ],
+    "changes": [
+      "Restored missing separator between game configuration assignments."
+    ],
+    "sha256": "dbb504fa123edc35d19934e494550d2b5306f472472328d08d9685cc144ce40b",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clfootballlegends.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Football Legends",
+        "source": "library-source/html5-games/clfootballlegends.html",
+        "script": 12,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: pause game logic / mute audio",
+      "Restored block comment lost when source lines were flattened: advertisement done, resume game logic and unmute audio",
+      "Restored block comment lost when source lines were flattened: this event is triggered when your user doesn't want personalised targeting of ads and such"
+    ],
+    "sha256": "a12eddae8f03193e3df0e748ba222345787295c44b887a917824b36386dc8321",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clgetontop.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Get On Top",
+        "source": "library-source/html5-games/clgetontop.html",
+        "script": 6,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "46965a15a30e5d57d7f105b5fb9dd736e0d719be9576eea3804be7a4b589ad16",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clhandulum.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Handulam+",
+        "source": "library-source/html5-games/clhandulum.html",
+        "script": 2,
+        "error": "Unexpected token '<'"
+      }
+    ],
+    "changes": [
+      "Removed malformed script/style boundary so actual Handulum runtime loads."
+    ],
+    "sha256": "0d552586d70e585055efc7bcd88a3fc060e5e246b19e05afb35d22f135e2d122",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/cljellytruckgood.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Jelly Truck",
+        "source": "library-source/html5-games/cljellytruckgood.html",
+        "script": 35,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: Works on Firefox, Chrome, Opera and IE9+",
+      "Restored block comment lost when source lines were flattened: Works on Safari",
+      "Removed commented alternative Safari user agent swallowed by minification."
+    ],
+    "sha256": "a5e7303069e3c9a75eb809d8831313f2bfea150201541646f20123e9fbbeb809",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clminitooth.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Mini Tooth",
+        "source": "library-source/html5-games/clminitooth.html",
+        "script": 4,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "ecddd5fb20b9396dfceb68e57e661b3ca241ff2a8181fd4a8ac3bd1bcd4b736a",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clmotox3mpoolparty.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "MotoX3m Pool Party",
+        "source": "library-source/html5-games/clmotox3mpoolparty.html",
+        "script": 12,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: pause game logic / mute audio",
+      "Restored block comment lost when source lines were flattened: advertisement done, resume game logic and unmute audio",
+      "Restored block comment lost when source lines were flattened: this event is triggered when your user doesn't want personalised targeting of ads and such"
+    ],
+    "sha256": "c2000429fe11214c6b6866b9b20c19d69ea84da95286281af9aa987d842ba3a9",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clmotox3mspookyland.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "MotoX3m Spooky Land",
+        "source": "library-source/html5-games/clmotox3mspookyland.html",
+        "script": 12,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: pause game logic / mute audio",
+      "Restored block comment lost when source lines were flattened: advertisement done, resume game logic and unmute audio",
+      "Restored block comment lost when source lines were flattened: this event is triggered when your user doesn't want personalised targeting of ads and such"
+    ],
+    "sha256": "f35c5d111a2ae12abb2b4fb8b51ca4d95736bcc47c424a6eb22cd72026c5b1e9",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clpaperiomania.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Paper.io Mania",
+        "source": "library-source/html5-games/clpaperiomania.html",
+        "script": 3,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Removed truncated mobile-app-only Cordova callback."
+    ],
+    "sha256": "ba74dbb042cd405dc75a473bd246d7424fecb2aedde0d50e09b593a77e3b8e26",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clpixelspeedrun.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Pixelspeedrun",
+        "source": "library-source/html5-games/clpixelspeedrun.html",
+        "script": 3,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "d3850dc38d7942688f5c2ad7e9af188465fbaa2d7ff575715b297111308535eb",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clskibidiinthebackrooms.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Skibidi in the Backrooms",
+        "source": "library-source/html5-games/clskibidiinthebackrooms.html",
+        "script": 6,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored truncated keydown scroll prevention callback."
+    ],
+    "sha256": "cfd2e65d6f4927ef3f6bc4ed763c3e21946ebe0ec37b362154586e23067b6fe7",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clsoccerrandomgood.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Soccer Random",
+        "source": "library-source/html5-games/clsoccerrandomgood.html",
+        "script": 3,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "e0f313cbccad0e4de16aefd4a4daf29be446f4a05c67820ac93f0e0341561ce3",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clsprinter.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Sprinter",
+        "source": "library-source/html5-games/clsprinter.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "2f9757e874efa0411dcdf7af85a850a931b23dcb877ab93c0bc394e1c2b7dc08",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clstickarchersbattle.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Stick Archers Battle",
+        "source": "library-source/html5-games/clstickarchersbattle.html",
+        "script": 3,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "22e2ddc78ca211f456a49dbf46fd9c56ab096d8588f68af3d01b317084d5fd05",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clsuperhot.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Superhot",
+        "source": "library-source/html5-games/clsuperhot.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed interrupted canvas resize IIFE."
+    ],
+    "sha256": "f16663e666e668e148e6550c05f82363ad45a50b7cd3b46b05f1b9562e0cd45e",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clsuperoliverworld.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Super Oliver World",
+        "source": "library-source/html5-games/clsuperoliverworld.html",
+        "script": 4,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Restored block comment lost when source lines were flattened: space and arrow keys"
+    ],
+    "sha256": "1a19ad8f637e9c091fba4de9069ca34d1aa046d3f68d28db0b417b9a9efaf0de",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clsupersantakicker2.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Super Santa Kicker 2",
+        "source": "library-source/html5-games/clsupersantakicker2.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "82ba8069424497fdd69cfeccf76d1b83e2a21c3f162ab310b4e354662da91f7a",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/redvbluefix.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Redvbluefix",
+        "source": "library-source/html5-games/redvbluefix.html",
+        "script": 4,
+        "error": "Unexpected identifier 'myGameInstance'"
+      }
+    ],
+    "changes": [
+      "Separated leaderboard assignment from Unity callback.",
+      "Removed duplicate Unity bootstrap that redeclared global const bindings and instantiated twice."
+    ],
+    "sha256": "e5f8a831ac5d344e2f48427d5af39f52bed51023ecbd6f3c12d127e303a27466",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/html5-games/clredvsblue2.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Red vs. Blue",
+        "source": "library-source/html5-games/clredvsblue2.html",
+        "script": 4,
+        "error": "Unexpected identifier 'myGameInstance'"
+      }
+    ],
+    "changes": [
+      "Separated leaderboard assignment from Unity callback.",
+      "Removed duplicate Unity bootstrap that redeclared global const bindings and instantiated twice."
+    ],
+    "sha256": "e5f8a831ac5d344e2f48427d5af39f52bed51023ecbd6f3c12d127e303a27466",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clragdollachievement.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Ragdoll Achievement",
+        "source": "library-source/flash/clragdollachievement.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "dc35065503770bef9232f8f57c927fc9a54ddf5e48cbd1cba21a356c03621944",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clstickmanswat.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Stick Man SWAT",
+        "source": "library-source/flash/clstickmanswat.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "f43069aaf8fbb2e9aac66bde5d7aa203758cd228dad31947236b8eb269992a8e",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clstormthehouse2.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Storm the House 2",
+        "source": "library-source/flash/clstormthehouse2.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "6920f3248c05c08dfa9b4b99ba5b76fa0924e509420a3e3bd3174bab970a6e5e",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clspecialmission.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "Special Mission",
+        "source": "library-source/flash/clspecialmission.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "3f26ab75555a7cbba3b45ab6c472863c501f8530953f4868471e4128afca92c1",
+    "method": "Static syntax repairs; game scripts not executed."
+  },
+  {
+    "path": "library-source/flash/clsupersmashflash0.8.html",
+    "status": "repaired",
+    "original_syntax_errors": [
+      {
+        "title": "SuperSmashFlash v0.8",
+        "source": "library-source/flash/clsupersmashflash0.8.html",
+        "script": 2,
+        "error": "Unexpected end of input"
+      }
+    ],
+    "changes": [
+      "Closed truncated resizeGame height branch and restored proportional width."
+    ],
+    "sha256": "58ed552281e6ac348fe4759e05bf3f8111c131458109aa47e81aaabff56dae31",
+    "method": "Static syntax repairs; game scripts not executed."
+  }
+]

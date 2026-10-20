@@ -1,0 +1,27 @@
+{
+  "catalog_entries": 3098,
+  "source_artwork": 1619,
+  "illustrated_covers": 1479,
+  "repaired_launchers": 488,
+  "confirmed_source_unavailable": 28,
+  "all_local_source_and_image_paths_exist": true,
+  "inline_script_syntax": {
+    "method": "Parse inline classic and module JavaScript without execution; remote scripts not checked",
+    "items": 3098,
+    "scripts": 8497,
+    "modules": 38,
+    "failures": []
+  },
+  "ui_checks": {
+    "passed": true,
+    "checks": [
+      "Every rendered card has an image element",
+      "Catalog paging renders 96 more cards",
+      "Game storage/cookies/IndexedDB work while parent access stays blocked",
+      "Fullscreen opens the player or offers a new-tab fallback when blocked",
+      "Local game saves survive close/reopen",
+      "Google Sites helper generates HTTPS embed code with fullscreen permission",
+      "Compact mobile embed has no horizontal overflow"
+    ]
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-10-17T23:45:03.420854+00:00",
+  "method": "Inspected source launcher configs and public upstream GitHub file trees. Replaced only exact matching title/platform filenames; pinned changed source URLs where available. GET range checks verified HTTP/CORS and ROM/archive signatures; actual gameplay not verified by these network checks.",
+  "repair_count": 19,
+  "repairs": [
+    {
+      "source": "library-source/emulated/gba/clgamewatchgallery3.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Game%20%26%20Watch%20Gallery%203.zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Game%20%26%20Watch%20Gallery%203%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.zip",
+      "reason": "Upstream filename now includes region and hardware qualifiers.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Game%20%26%20Watch%20Gallery%203%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "cors": "*",
+        "prefix_hex": "504b030414000200080000bc9821da25",
+        "prefix_text": "b'PK\\x03\\x04\\x14\\x00\\x02\\x00\\x08\\x00\\x00\\xbc\\x98!\\xda%\\xc6\\x1a\\xea?\\x07\\x00\\x00\\x00\\x10\\x00G\\x00\\x00\\x00Game & Watch Gallery 3 (USA, Europe) (SGB Enhanced) (GB Comp'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/gba/cllinksawakeningdx.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Legend%20of%20Zelda%2C%20The%20-%20Link's%20Awakening%20DX%20(USA%2C%20Europe)%20(SGB%20Enhanced)%20(GB%20Compatible).zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29.zip",
+      "reason": "Upstream shortened archive filename; ZIP header retains matching Link's Awakening DX title.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "cors": "*",
+        "prefix_hex": "504b030414000200080000bc98214829",
+        "prefix_text": "b\"PK\\x03\\x04\\x14\\x00\\x02\\x00\\x08\\x00\\x00\\xbc\\x98!H)\\x82\\x97\\xf9\\x92\\x07\\x00\\x00\\x00\\x10\\x00[\\x00\\x00\\x00Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SG\""
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/gba/clsupermarioland2dx.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Super%20Mario%20Land%202.gb",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Super%20Mario%20Land%202.7z",
+      "reason": "Upstream archive is now 7z; keeps the same Super Mario Land 2 source game.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Super%20Mario%20Land%202.7z",
+        "status": 206,
+        "content_type": "application/x-7z-compressed",
+        "cors": "*",
+        "prefix_hex": "377abcaf271c0004a3314737e5e30300",
+        "prefix_text": "b'7z\\xbc\\xaf\\'\\x1c\\x00\\x04\\xa31G7\\xe5\\xe3\\x03\\x00\\x00\\x00\\x00\\x00r\\x00\\x00\\x00\\x00\\x00\\x00\\x00!\\xe1jM\\xe1\\xce\\xad\\xc0\\x06]\\x00a\\xb9< \\x0c\\xd5\\x0bWk\\x1aZ\\tW\"\\xb5\\xbe\\x1c\\xf4kF\\x15\\xe8\\xc4\\x85\\xef%\\xe0\\xce1N\\xb5b\\xb9\\xf8g\\xa4\\xcd\\\\\\xa7K\\xe6\\x90\\xc0\\xd8v\\xd36\\xc4\\x05\\xacW'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/segaMD/TheSFactorSoniaAndSilver.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/SFACTOR.zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gen/SFACTOR.bin",
+      "reason": "Upstream provides matching S Factor ROM as BIN rather than the missing ZIP.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gen/SFACTOR.bin",
+        "status": 206,
+        "content_type": "application/octet-stream",
+        "cors": "*",
+        "prefix_hex": "",
+        "prefix_text": "b''"
+      },
+      "gameplay_verified": false,
+      "additional_validation": {
+        "method": "GET without Range read first1024 bytes",
+        "http_status": 200,
+        "sega_header_at_0x100": "SEGA MEGA DRIVE"
+      }
+    },
+    {
+      "source": "library-source/emulated/segaMD/clsonic2timeandplace.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Sonic2TimeandPlace.bin",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gen/Sonic%202%20Time%20and%20Place.bin",
+      "reason": "Corrected missing spaces in upstream matching ROM filename.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gen/Sonic%202%20Time%20and%20Place.bin",
+        "status": 206,
+        "content_type": "application/octet-stream",
+        "cors": "*",
+        "prefix_hex": "",
+        "prefix_text": "b''"
+      },
+      "gameplay_verified": false,
+      "additional_validation": {
+        "method": "GET without Range read first1024 bytes",
+        "http_status": 200,
+        "sega_header_at_0x100": "SEGA GENESIS"
+      }
+    },
+    {
+      "source": "library-source/emulated/nes/clelevatoraction.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/nes/Elevator%20Action%20(USA).7z",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/nes/Elevator%20Action.7z",
+      "reason": "Upstream archive filename omits region qualifier.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/nes/Elevator%20Action.7z",
+        "status": 206,
+        "content_type": "application/x-7z-compressed",
+        "cors": "*",
+        "prefix_hex": "377abcaf271c000344e4febc444b0000",
+        "prefix_text": "b\"7z\\xbc\\xaf'\\x1c\\x00\\x03D\\xe4\\xfe\\xbcDK\\x00\\x00\\x00\\x00\\x00\\x00\\x82\\x00\\x00\\x00\\x00\\x00\\x00\\x00yS%m\\x00'\\x11F\\xa8\\xc5sw<s\\xc9\\xe4&\\x7f\\xb0N\\xdfJ+\\xaa\\xdd\\xbb&\\xe5\\x08\\xcbj`\\xac\\xa9eY\\xc0\\xe79\\xab\\xf6\\x02\\xd6\\xfc\\xc7#\\x9b\\xa1\\x1b\\x85\\x80\\x1b\\xd4t\\xe1\\xccN\\x9a\\xf3\\x83\\xda\\x0b\""
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/nes/clsupermario3mix.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/nes/Super%20Mario%20Bros.%203Mix.7z",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/nes/Super%20Mario%20Bros%203Mix.7z",
+      "reason": "Corrected punctuation in upstream Super Mario Bros 3Mix archive filename.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/nes/Super%20Mario%20Bros%203Mix.7z",
+        "status": 206,
+        "content_type": "application/x-7z-compressed",
+        "cors": "*",
+        "prefix_hex": "377abcaf271c0003c154f3611af50300",
+        "prefix_text": "b\"7z\\xbc\\xaf'\\x1c\\x00\\x03\\xc1T\\xf3a\\x1a\\xf5\\x03\\x00\\x00\\x00\\x00\\x00\\x8e\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xd7\\xc6\\xfd\\x06\\x00'\\x11F\\xa8\\xc6\\x7f\\xcd\\x9d\\xd1\\xe3\\xeb\\xdc/\\x1dV\\xa2\\x926\\x04\\x952\\x118\\x95j,\\x12\\xe6^\\xe2\\x17\\x8f\\xce5Vm\\xb1\\xe5f\\xbdQ\\xe81\\xa8\\x8b\\xf6\\xf6K\\xcb\\xae\\x03\\xbf\\xe1\\xc5\\xae\\x9c\\x92\""
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/snes/clsmwplumberallseasons.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/sfc/SMW%20A%20Plumber%20For%20All%20Seasons.sfc",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/sfc/Patched_A_Plumber_For_All_Seasons_2021-11-22.zip",
+      "reason": "Upstream provides matching patched A Plumber For All Seasons archive rather than missing uncompressed file.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/sfc/Patched_A_Plumber_For_All_Seasons_2021-11-22.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "cors": "*",
+        "prefix_hex": "504b03040a0000000000f2897e5c63ab",
+        "prefix_text": "b'PK\\x03\\x04\\n\\x00\\x00\\x00\\x00\\x00\\xf2\\x89~\\\\c\\xab\\xb8\\xb5\\x00\\x00@\\x00\\x00\\x00@\\x00(\\x00\\x00\\x00a-plumber-for-all-seasons_2021-11-22.sfcx\\x9c\\x00B\\x9c\\x0cB\\x9c\\x0bB\\x9c@!\\x9cA!\\x9cB!\\x9c'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/snes/clwhatamarioworld.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/sfc/What%20A%20Mario%20World!%20(1.0.9).7z",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/sfc/What%20A%20Mario%20World%21%20%281.2.0%29.zip",
+      "reason": "Updated unavailable What A Mario World 1.0.9 to current matching title version 1.2.0.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/sfc/What%20A%20Mario%20World%21%20%281.2.0%29.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "cors": "*",
+        "prefix_hex": "504b03041400000008001d6f705cd4aa",
+        "prefix_text": "b'PK\\x03\\x04\\x14\\x00\\x00\\x00\\x08\\x00\\x1dop\\\\\\xd4\\xaa G_\\x9c\\x12\\x00\\x00\\x020\\x00\\x1f\\x00\\x00\\x00What A Mario World! (1.2.0).smc\\xec\\xbc{@\\x14U\\xfb\\x00|ffwY\\x96\\xdb\\x80\\x80\\x0b\"\\xcc\\xaeb\\xa0b+^\\xc2K\\xba'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/snes/clbonkerssnes.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/snes/Bonkers%20(USA).zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/sfc/Bonkers%20%28USA%29.zip",
+      "reason": "Corrected upstream system folder from snes to sfc.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/sfc/Bonkers%20%28USA%29.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "cors": "*",
+        "prefix_hex": "504b030414000200080000bc98214e46",
+        "prefix_text": "b'PK\\x03\\x04\\x14\\x00\\x02\\x00\\x08\\x00\\x00\\xbc\\x98!NFDE#5\\x0b\\x00\\x00\\x00\\x10\\x003\\x00\\x00\\x00Bonkers (USA) [FastROM hack by kandowontu v1.0].sfc\\xac\\xbd\\x0b|\\x14\\xd5\\xf58~'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/gba/clsupermariolanddx.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/supplies@main/gb/Super%20Mario%20Land%20DX.gb",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Super%20Mario%20Land%20DX.7z",
+      "reason": "Moved missing supplies repository dependency to matching current exams source collection, now 7z.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gb/Super%20Mario%20Land%20DX.7z",
+        "status": 206,
+        "content_type": "application/x-7z-compressed",
+        "cors": "*",
+        "prefix_hex": "377abcaf271c0004883318e62da30000",
+        "prefix_text": "b\"7z\\xbc\\xaf'\\x1c\\x00\\x04\\x883\\x18\\xe6-\\xa3\\x00\\x00\\x00\\x00\\x00\\x00z\\x00\\x00\\x00\\x00\\x00\\x00\\x00~\\xcd\\x81f\\xe1\\xff\\xff\\xa3%]\\x00a\\xa1</\\xfd\\x01~?%x\\x9f\\xac\\xfb2\\xfe2u?6\\x05\\x19R\\x84P\\xf2\\x9a\\x80\\x922\\xdc\\x93\\x126\\x14\\xf3\\xb2\\x01=F\\x9fn\\xda-\\xd5\\x18|\\xf6\\xf9fep\""
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/n64/clsupermario74.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/supplies@main/n64/Super%20Mario%2074.7z",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/n64/Super%20Mario%2074.7z",
+      "reason": "Moved missing supplies repository dependency to exact same Super Mario 74 title in current exams collection.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/n64/Super%20Mario%2074.7z",
+        "status": 206,
+        "content_type": "application/x-7z-compressed",
+        "cors": "*",
+        "prefix_hex": "377abcaf271c0003e538c789dfde8400",
+        "prefix_text": "b'7z\\xbc\\xaf\\'\\x1c\\x00\\x03\\xe58\\xc7\\x89\\xdf\\xde\\x84\\x00\\x00\\x00\\x00\\x00\\x82\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xc2\\x98\\xad\\x0c\\x00@\\r\\xbeC\\xe0\\x06\\x8a\\x97\\t*\\xd2\\xa65\\x82\\x9e\\x98\\x1b0a\\xb0xdBY\\n\\x9b\\x7f\\x18\\xa1\\xfe7Y!\\xd6\\x195\\xabK\\x8b\\x1e\\xc3\\xa7b0\\xc9\\x91\\x86\"s\\xf0L,\\xa5\\xca14\\xef'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/gba/clcrashbandicoot2.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@afe43819079924daff91c9d022f1c8c139be1b8d/Crash%20Bandicoot%20-%20The%20Huge%20Adventure%20(USA).zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@3d64759cb35b901b5f982ce9da2db9053a9948f7/Crash%20Bandicoot%202%20-%20N-Tranced%20%28USA%29.zip",
+      "reason": "Corrected copied first Crash game ROM to the matching Crash Bandicoot 2 N-Tranced GBA game.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@3d64759cb35b901b5f982ce9da2db9053a9948f7/Crash%20Bandicoot%202%20-%20N-Tranced%20%28USA%29.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "cors": "*",
+        "prefix_hex": "504b030414000200080000bc98214a18",
+        "prefix_text": "b\"PK\\x03\\x04\\x14\\x00\\x02\\x00\\x08\\x00\\x00\\xbc\\x98!J\\x18\\x16.\\xc9\\xd2A\\x00\\x00\\x00\\x80\\x00'\\x00\\x00\\x00Crash Bandicoot 2 - N-Tranced (USA).gba\\xc4\\xbd\\rx\\x1b\\xd5\\x950|g4\\x92G\\xb2c\\xcb\\x8e\\x93\\x8c\\x9cI\""
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/n64/cljetforcegemini.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/a456pur/seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/jetforcegemini/Jet%20Force%20Gemini%20(USA).n64",
+      "replacement_url": "https://raw.githubusercontent.com/a456pur/seraph/ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/jetforcegemini/Jet%20Force%20Gemini%20%28USA%29.n64",
+      "reason": "jsDelivr returned 403 for large ROM; matching exact pinned GitHub raw URL serves correct N64 bytes with CORS.",
+      "http_validation": {
+        "url": "https://raw.githubusercontent.com/a456pur/seraph/ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/jetforcegemini/Jet%20Force%20Gemini%20%28USA%29.n64",
+        "status": 206,
+        "content_type": "application/octet-stream",
+        "cors": "*",
+        "prefix_hex": "3780401200000f000080000400004714",
+        "prefix_text": "b'7\\x80@\\x12\\x00\\x00\\x0f\\x00\\x00\\x80\\x00\\x04\\x00\\x00G\\x14`\\x8a\\xb6\\t\\xac\\x94P\\xe1\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00EJ TOFCR EEGIMIN    \\x00\\x00\\x00\\x00\\x00\\x00N\\x00FJ\\x00E\\xa0\\x03 H(\\x8d\\x10\\xf0j\\x8dD\\x00H\\x01&P*\\xad\\x10\\xf0k!\\x04\\x00\\x081'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/segaMD/clgoldenaxe.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/aurpon70-gif/Gunny@main/ToeJam%20%26%20Earl%20(USA%2C%20Europe%2C%20Korea)%20(En).md",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gen/Golden%20Axe%20%28World%29%20%28Rev%20A%29.zip",
+      "reason": "Corrected copied ToeJam & Earl ROM to matching Golden Axe game.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/gen/Golden%20Axe%20%28World%29%20%28Rev%20A%29.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "content_encoding": null,
+        "cors": "*",
+        "prefix_hex": "504b030414000000080000b8f22af97d",
+        "prefix_text": "b'PK\\x03\\x04\\x14\\x00\\x00\\x00\\x08\\x00\\x00\\xb8\\xf2*\\xf9}]f/\\x1d\\x05\\x00\\x00\\x00\\x08\\x00\\x1d\\x00\\x00\\x00Golden Axe (World) (Rev A).md\\xac]\\r|S\\xd5\\x15?\\xef%}}\\x84P\\xd2Rk\\xac\\xa5\\xa4\\xa5\\xebb\\xad5-\\xb5\\xcbj\\x86i'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/nes/cljamesbondjr.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/Deformed-steve/emujsgames@main/astynaxsmthidek.nes",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/Deformed-steve/emujsgames@main/James%20Bond%20Jr%20%28USA%29.nes",
+      "reason": "Corrected copied Astyanax ROM to matching James Bond Jr NES game.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/Deformed-steve/emujsgames@main/James%20Bond%20Jr%20%28USA%29.nes",
+        "status": 206,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "cors": "*",
+        "prefix_hex": "4e45531a081040000000000000000000",
+        "prefix_text": "b'NES\\x1a\\x08\\x10@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00 \\xfa\\xe0\\xa9[\\xa2\\xc4 \\x1a\\xc4\\xa9\\x00\\xa2\\xc0 \\x1f\\xc4\\xa9\\xe0\\x8d\\x1f\\x04 \\xe8\\x938 \\x0c\\xcc \\xf8\\xe7 P\\xc4 u\\xe7\\xa6\\x9f\\xbdW\\xff\\x8d\\xec\\x03 \\xc3\\xe6\\xa9\\x05\\x85\\x1a =\\xc4\\xa9\\x00\\x8d/\\x04\\xa5\\x1b\\x10\\xfc\\xa9\\x01\\x8d/\\x04 i\\xe0\\xea'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/clshinobi.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/aurpon70-gif/Gunny@main/shdancer.zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/aurpon70-gif/Gunny@main/shinobi.zip",
+      "reason": "Corrected copied Shadow Dancer arcade archive to matching Shinobi arcade game.",
+      "http_validation": {
+        "url": "https://cdn.jsdelivr.net/gh/aurpon70-gif/Gunny@main/shinobi.zip",
+        "status": 206,
+        "content_type": "application/zip",
+        "content_encoding": null,
+        "cors": "*",
+        "prefix_hex": "504b030414000200080000bc9821fc34",
+        "prefix_text": "b'PK\\x03\\x04\\x14\\x00\\x02\\x00\\x08\\x00\\x00\\xbc\\x98!\\xfc4\\x95j\\xb1\\x01\\x00\\x00\\x00\\x04\\x00\\x00\\x08\\x00\\x00\\x007751.bin\\xd5\\x91\\xbfk\\x13q\\x18\\xc6\\x9fk\\xbe\\xe9}\\x13B/\\x18\\xc5\\x14\\x7f\\x10\\xf8\\x06\\xce\\xc1\\xa1RJl\\xb9\\xe4\\x84(Gqh\\xe1{\\xe0\\x16\\xb28\\xa9\\x90\\xa5s\\x03\\xf7\\x0f\\x08\\xc2\\x89'"
+      },
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/psx/clmegamanlegends2.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/bubbls/ugss@main/sonic-cd/Sonic%20CD%20(USA).zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/bubbls/ugss@b4ad0afb174a2c482c3d6c13b748095704e17b4d/mmlegends2/Mega%20Man%20Legends%202%20%28USA%29.chd",
+      "reason": "Original Mega Man Legends 2 file was a copied Sonic CD launcher with Sega CD core and Gran Turismo title. Restored PS1 core, actual Mega Man Legends 2 CHD (12 padded parts), correct title, and matching existing PS1 BIOS configuration.",
+      "http_validation": [
+        {
+          "key": "mmlegends2",
+          "url": "https://cdn.jsdelivr.net/gh/bubbls/ugss@b4ad0afb174a2c482c3d6c13b748095704e17b4d/mmlegends2/Mega%20Man%20Legends%202%20%28USA%29.chd.part01",
+          "status": 206,
+          "content_type": "application/octet-stream",
+          "cors": "*",
+          "prefix_hex": "4d436f6d707248440000007c00000005",
+          "prefix_text": "b'MComprHD\\x00\\x00\\x00|\\x00\\x00\\x00\\x05cdlzcdzlcdfl\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00(\\x83\\xe0@\\x00\\x00\\x00\\x00\\r\\xe3W\\xb4\\x00\\x00\\x00\\x00\\x00\\x00\\x00|\\x00\\x00L\\x80\\x00\\x00\\t\\x90\\xaeFO\\xfdzW\\xb6\\xa9\\xcb\\xe5\\xd1\\xfc&|g\\xe7\\xdf,~\\xbe\\x1804\\xa5\\x15c'"
+        },
+        {
+          "key": "mmlast",
+          "url": "https://cdn.jsdelivr.net/gh/bubbls/ugss@b4ad0afb174a2c482c3d6c13b748095704e17b4d/mmlegends2/Mega%20Man%20Legends%202%20%28USA%29.chd.part12",
+          "status": 206,
+          "content_type": "application/octet-stream",
+          "content_encoding": null,
+          "cors": "*",
+          "prefix_hex": "ca8301dc0f29a6cf200063601805a360",
+          "prefix_text": "b'\\xca\\x83\\x01\\xdc\\x0f)\\xa6\\xcf \\x00c`\\x18\\x05\\xa3`\\xe4\\x02\\x00\\x0035\\x00\\x00?\\xf5\\x12\\x04\\xfe\\x9d\\x11\\xca]\\xf3\\x12\\xc3I\\xac>\\xef\\x90\\xfd/f\\x13\\xa20\\xa3R\\x06d\\x02p/\\x92\\xad%\\xbb\\xf6\\xf3\\xa3\\x1cm\\xd6\\xc0\\xb0Y\\xa0\\xb9@%n\\x16\\xe9s\\xf6\\xbf\\xc2\\x9f\\\\\\x0e\\x06\\xf1\\xa5N\\xce\\xf3\\x83\\xf85'"
+        },
+        {
+          "key": "mmbios",
+          "url": "https://cdn.jsdelivr.net/gh/Abdess/retroarch_system@5f96368f6dbad5851cdb16a5041fefec4bdcd305/Sony%20-%20PlayStation/scph5501.bin",
+          "status": 206,
+          "content_type": "application/octet-stream",
+          "content_encoding": null,
+          "cors": "*",
+          "prefix_hex": "1300083c3f240835801f013c101028ac",
+          "prefix_text": "b'\\x13\\x00\\x08<?$\\x085\\x80\\x1f\\x01<\\x10\\x10(\\xac\\x00\\x00\\x00\\x00\\x88\\x0b\\x08$\\x80\\x1f\\x01<`\\x10(\\xac\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'"
+        }
+      ],
+      "gameplay_verified": false
+    },
+    {
+      "source": "library-source/emulated/arcade/clhyperstreetfighter2.html",
+      "original_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/mame/test/sfa3u.zip",
+      "replacement_url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/mame/test/hsf2.zip",
+      "reason": "Corrected copied Street Fighter Alpha 3 archive and ROM filename to actual Hyper Street Fighter II arcade archive, preserving the two-part loader.",
+      "http_validation": [
+        {
+          "key": "hyper",
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/mame/test/hsf2.zip.part1",
+          "status": 206,
+          "content_type": "application/octet-stream",
+          "cors": "*",
+          "prefix_hex": "504b030414000208080000bc98218637",
+          "prefix_text": "b'PK\\x03\\x04\\x14\\x00\\x02\\x08\\x08\\x00\\x00\\xbc\\x98!\\x867\\xa1\\xc1\\x8d\\x03\\x01\\x00\\x00\\x00\\x02\\x00\\x06\\x00\\x00\\x00hs2.01\\xec\\x9ay|\\x13\\xe5\\xbf\\xfd?\\xb3dO\\xdbi)\\xd0B\\x81)\\xb4\\xd0\\xb2\\x86\\x02\\xa5\\x94R\\x06D6Y\"KE\\x962\";\\x08a/\\x08\\xe5Q\\x11\\x11Q\\xe3\\x86(.\\xe3\\x8e+'"
+        },
+        {
+          "key": "hyperlast",
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@a49982ce68cd449ef36797739b8429692774444c/mame/test/hsf2.zip.part2",
+          "status": 206,
+          "content_type": "application/octet-stream",
+          "content_encoding": null,
+          "cors": "*",
+          "prefix_hex": "ff54bf3be53d10df9f30df2bc21e5571",
+          "prefix_text": "b'\\xffT\\xbf;\\xe5=\\x10\\xdf\\x9f0\\xdf+\\xc2\\x1eUq~P8\\x99\\xdd\\x0f*)\\xc8+\\x934!\\xfbI@\\xd9\\x1eW\\xea}/\\x90\\x88\\xfaj\\x1e\\xa6\\\\\\xe2\\x15:S.\\xb5\\xc2\\x97\\nW\\xa1\\xf8\\xd1%z{A\\xcc.\\x99k$\\x1d\\xb0P\\x15\\xd8\\x1dH\\xaa \\xe1j\\xdc\\xa4\\xe2\\xd8\\x8fc\\\\\\xdc\\xe3\\xb8#L'"
+        }
+      ],
+      "gameplay_verified": false
+    }
+  ]
+}

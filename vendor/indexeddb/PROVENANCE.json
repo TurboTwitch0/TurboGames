@@ -1,0 +1,7 @@
+{
+  "package": "fake-indexeddb",
+  "version": "6.2.6",
+  "license": "Apache-2.0",
+  "source": "https://www.npmjs.com/package/fake-indexeddb",
+  "use": "In-memory IndexedDB compatibility for game frames that cannot access browser databases"
+}

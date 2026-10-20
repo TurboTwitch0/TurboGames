@@ -1,0 +1,24 @@
+[
+  {
+    "path": "library-source/html5-games/clColorboxmustard.html",
+    "original_source": "https://drive.google.com/file/d/1OvMtTBJzD5d5f9YNnm1GU2rJ9zbmMGpF/view",
+    "reason": "Google Drive virus scan warning page imported instead of launcher",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "bytes": 169477764,
+    "sha256": "021e8f83dde389e48acaa5db552b975b8f5d864f09d46ff35848e7c97e6e7a39",
+    "status": "repaired",
+    "warning": "Very large self-contained launcher; allow additional download time and memory."
+  },
+  {
+    "path": "library-source/html5-games/clrabbithole106.html",
+    "original_source": "https://drive.google.com/file/d/14yg1yBXJiRwqO5awBTn0Kymlmpxs8TCP/view",
+    "reason": "Google Drive virus scan warning page imported instead of launcher",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "bytes": 487532532,
+    "sha256": "26db5f8abc845ca78a8130c1c45451d5fd701752983ad2c60843b38e1503e2ac",
+    "status": "repaired",
+    "warning": "Very large self-contained launcher; allow additional download time and memory."
+  }
+]

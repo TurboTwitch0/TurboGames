@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-10-18T07:42:26.889271+00:00",
+  "method": "GET range checks of actual game assets/first-last parts for removed host; matching replacement not verified. No unrelated games substituted.",
+  "launchers_unavailable": [
+    "library-source/emulated/clmmbn5tc.html",
+    "library-source/emulated/clmmbn5tp.html",
+    "library-source/emulated/clmmbn6cf.html",
+    "library-source/emulated/clmmbn6cg.html",
+    "library-source/emulated/clsonicthesuperchallenges.html",
+    "library-source/emulated/cltheimmortal.html",
+    "library-source/emulated/gba/clmegamanbattlechipchallenge.html",
+    "library-source/emulated/gba/clmegamanbn5tc.html",
+    "library-source/emulated/gba/clmegamanbn5tp.html",
+    "library-source/emulated/gba/clmegamanbn6cf.html",
+    "library-source/emulated/gba/clmegamanbn6cg.html",
+    "library-source/emulated/n64/clZeldaIndigoch2.html",
+    "library-source/emulated/n64/clsm64oot.html",
+    "library-source/emulated/n64/clsouthparkn64.html",
+    "library-source/emulated/nds/clmmsf2zxn.html",
+    "library-source/emulated/nds/clmmsf2zxs.html",
+    "library-source/emulated/nds/clmmsf3ba.html",
+    "library-source/emulated/nds/clmmsf3rj.html",
+    "library-source/emulated/nds/clmmsfd.html",
+    "library-source/emulated/nds/clmmsfl.html",
+    "library-source/emulated/nds/clmmsfp.html",
+    "library-source/emulated/nes/cltheimmortalnes.html",
+    "library-source/emulated/segaMD/clOutrunGenesis.html",
+    "library-source/emulated/segaMD/clSnowBrosGenesis.html",
+    "library-source/emulated/segaMD/clSonic1TheSuperChallenges.html",
+    "library-source/emulated/segaMD/clSonicClassics.html",
+    "library-source/emulated/snes/cljunglebooksnes.html",
+    "library-source/emulated/snes/clmauimallard.html"
+  ],
+  "results": [
+    {
+      "source": "library-source/emulated/clmmbn5tc.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%205%20-%20Team%20Colonel%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/clmmbn5tp.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%205%20-%20Team%20Protoman%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/clmmbn6cf.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%206%20-%20Cybeast%20Falzar%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/clmmbn6cg.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%206%20-%20Cybeast%20Gregar%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/clsonicthesuperchallenges.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/genesis/S1SC_-_First_Demo_Hotfix_2.zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/cltheimmortal.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nes/Immortal%2C%20The%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/gba/clmegamanbattlechipchallenge.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Chip%20Challenge%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/gba/clmegamanbn5tc.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%205%20-%20Team%20Colonel%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/gba/clmegamanbn5tp.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%205%20-%20Team%20Protoman%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/gba/clmegamanbn6cf.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%206%20-%20Cybeast%20Falzar%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/gba/clmegamanbn6cg.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/gb/Megaman%20-%20Battle%20Network%206%20-%20Cybeast%20Gregar%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/n64/clZeldaIndigoch2.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/n64/ZeldaIndigo/Zelda%20Indigo%20chapter%202.iso.part1",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/n64/clZeldaIndigoch2.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/n64/ZeldaIndigo/Zelda%20Indigo%20chapter%202.iso.part2",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/n64/clsm64oot.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/n64/SM64_%20Ocarina%20of%20Time%20-%20v.Latest.7z",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/n64/clsouthparkn64.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/n64/South%20Park%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsf2zxn.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%202%20-%20Zerker%20x%20Ninja%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsf2zxs.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%202%20-%20Zerker%20x%20Saurian%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsf3ba.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%203%20-%20Black%20Ace%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsf3rj.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%203%20-%20Red%20Joker%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsfd.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%20-%20Dragon%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsfl.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%20-%20Leo%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nds/clmmsfp.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nds/mmsf/Mega%20Man%20Star%20Force%20-%20Pegasus%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/nes/cltheimmortalnes.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/nes/Immortal%2C%20The%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/segaMD/clOutrunGenesis.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/genesis/OutRun_USA_Europe_Sega_Smash_Pack.7z",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/segaMD/clSnowBrosGenesis.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/genesis/Snow%20Bros.%20-%20Nick%20%26%20Tom%20(Japan)%20(En).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/segaMD/clSonic1TheSuperChallenges.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/genesis/S1SC_-_First_Demo_Hotfix_2.zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/segaMD/clSonicClassics.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/genesis/Sonic%20Compilation%20~%20Sonic%20Classics%20(World)%20(v1.1).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/snes/cljunglebooksnes.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/snes/Jungle%20Book%2C%20The%20(USA).zip",
+      "status": 404
+    },
+    {
+      "source": "library-source/emulated/snes/clmauimallard.html",
+      "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/snes/Maui%20Mallard%20in%20Cold%20Shadow%20(USA).zip",
+      "status": 404
+    }
+  ]
+}

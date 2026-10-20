@@ -1,0 +1,7 @@
+{
+  "method": "Parse inline classic and module JavaScript without execution; remote scripts not checked",
+  "items": 3098,
+  "scripts": 8497,
+  "modules": 38,
+  "failures": []
+}

@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-10-17T23:39:04.090141+00:00",
+  "method": "Source inspection and HTTP reachability only. Game scripts were not executed.",
+  "repairs": [
+    {
+      "path": "library-source/html5-games/cltunnelrush.html",
+      "status": "replacement-launcher",
+      "notes": "Replaced dead editmysite 6main.js launcher with matching Tunnel Rush Unity build. Manifest and all seven runtime/build files returned 200/206. All paths pin source commit. Removed the replacement source site redirect and publisher analytics.",
+      "source": "https://github.com/TunnelRushUnblocked/TunnelRushUnblocked.github.io/tree/5aa57188d11cf93b218c7fd44989c14de5c90113",
+      "http_checks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/unityloader49.js",
+          "status": 206,
+          "cors": "*",
+          "prefix": "5b2961524630c60100c09ff77065444d",
+          "size": "16"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/tunnel_rush_v9data.unityweb",
+          "status": 206,
+          "cors": "*",
+          "prefix": "1f8b08189084cc5a040374756e6e656c",
+          "size": "16"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/tunnel_rush_v9wasmcode.unityweb",
+          "status": 206,
+          "cors": "*",
+          "prefix": "1f8b08189084cc5a040374756e6e656c",
+          "size": "16"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/tunnel_rush_v9_wasmframework.unityweb",
+          "status": 206,
+          "cors": "*",
+          "prefix": "2866756e6374696f6e284d6f64756c65",
+          "size": "16"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/tunnel_rush_v9code.unityweb",
+          "status": 206,
+          "cors": "*",
+          "prefix": "1f8b08189084cc5a040374756e6e656c",
+          "size": "16"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/tunnel_rush_v9memory.unityweb",
+          "status": 206,
+          "cors": "*",
+          "prefix": "1f8b08189084cc5a040374756e6e656c",
+          "size": "16"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/tunnel_rush_v9framework.unityweb",
+          "status": 206,
+          "cors": "*",
+          "prefix": "2866756e6374696f6e284d6f64756c65",
+          "size": "16"
+        }
+      ],
+      "gameplay_verified": false,
+      "bytes": 1367,
+      "sha256": "11544612532a00fe40a053cf3b44b9a43c6fcd3ad87edec41fe408f09ff19148"
+    },
+    {
+      "path": "library-source/html5-games/cltinyfishing.html",
+      "status": "invalid-extra-resources-removed",
+      "notes": "Removed 2 directory-only script tags and 1 empty script tags plus unavailable Google gadget host callbacks. Actual tf.js returned 200 and contains a correct absolute asset directory. Gameplay runtime was retained.",
+      "source": "https://72682389-756457502729861133.preview.editmysite.com/uploads/b/11886820-896015480911618794/files/html5/tf.js",
+      "gameplay_verified": false,
+      "bytes": 6997,
+      "sha256": "1912d8e52600f894b4ece06aa29a75e6f2cf564b74306577fe7f522d68678c94"
+    },
+    {
+      "path": "library-source/html5-games/clfnaw.html",
+      "status": "missing-publisher-script-removed",
+      "notes": "Removed 1 root-relative /FNAW/runtime.js script that resolves to a 404. Matching source tree has no such file. Independent fnaw.js, untar.js and assets.tar all returned 200. Retained game copyright/license and original runtime. Storage support depends on the general sandbox storage compatibility shim.",
+      "source": "https://github.com/bubbls/UGS-Assets/tree/main/FNAW-main",
+      "gameplay_verified": false,
+      "bytes": 5949,
+      "sha256": "5b70142f45b86b358ddac2dafbe7887c4a6ab127944a76bad0a038b35d5e6aa9"
+    },
+    {
+      "path": "library-source/emulated/dos/clarena.html",
+      "status": "unchanged-false-positive",
+      "notes": "Missing ../../../c/libs/jquery.min.js appeared only inside an HTML comment. Active jquery resource is https://code.jquery.com/jquery-2.1.1.min.js. No launcher modification needed.",
+      "gameplay_verified": false,
+      "bytes": 5453,
+      "sha256": "3596b839aebf62f923682b84f9422e3b79afe97b589db2f2ba61dc3ee0424435"
+    },
+    {
+      "path": "library-source/emulated/dos/cldoomdos.html",
+      "status": "unchanged-false-positive",
+      "notes": "Missing ../../../c/libs/jquery.min.js appeared only inside an HTML comment. Active jquery resource is https://code.jquery.com/jquery-2.1.1.min.js. No launcher modification needed.",
+      "gameplay_verified": false,
+      "bytes": 5454,
+      "sha256": "20fd93860927191d41792d0b610b958bc4f3e8004623e23cd7c870d8f5481a54"
+    }
+  ],
+  "snapshot_stage": "Recorded immediately after this repair, before later library-wide compatibility processing."
+}

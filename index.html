@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101014" />
+    <title>TurboGames — play something good</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/fallback-cover.svg" type="image/svg+xml" />
+    <script src="catalog.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="TurboGames home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>Turbo<span class="brand-accent">Games</span></span>
+        </a>
+        <label class="searchbox">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search" type="search" autocomplete="off" placeholder="Search games, apps, and more" aria-label="Search all games and apps" />
+          <kbd>/</kbd>
+        </label>
+        <div class="topbar-note"><span class="status-dot"></span> Your next favorite is here</div>
+      </header>
+
+      <main id="top">
+        <section class="welcome" aria-labelledby="welcome-title">
+          <div class="welcome-copy">
+            <p class="eyebrow"><span class="sparkle">✳</span> THE ARCADE IS OPEN</p>
+            <h1 id="welcome-title">A little fun<br />goes a <span>long way.</span></h1>
+            <p class="intro">Find your next favorite in a collection of games, apps, emulators, and other good stuff.</p>
+            <a class="jump-link" href="#catalog">Explore the collection <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="welcome-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-card art-card-back">✦</div>
+            <div class="art-card art-card-front"><span>PRESS<br />PLAY</span><b>▶</b></div>
+            <span class="art-star star-one">✳</span><span class="art-star star-two">✦</span>
+          </div>
+        </section>
+
+        <section id="catalog" class="catalog-section" aria-labelledby="catalog-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">PICK YOUR MOOD</p><h2 id="catalog-title">The collection</h2></div>
+            <p id="result-count" class="result-count" aria-live="polite"></p>
+          </div>
+          <nav class="tabs" aria-label="Browse collection">
+            <button class="tab is-active" data-category="popular" type="button">Popular <span class="tab-icon">✦</span></button>
+            <button class="tab" data-category="games" type="button">Games</button>
+            <button class="tab" data-category="flash" type="button">Flash</button>
+            <button class="tab" data-category="apps" type="button">Apps</button>
+            <button class="tab" data-category="emulator" type="button">Emulator</button>
+            <button class="tab" data-category="misc" type="button">Misc</button>
+          </nav>
+          <div id="game-grid" class="game-grid" aria-live="polite"></div>
+          <button id="load-more" class="load-more" type="button" hidden>Show more</button>
+          <div id="empty-state" class="empty-state" hidden>
+            <span class="empty-icon" aria-hidden="true">⌕</span>
+            <h3>No matches yet</h3>
+            <p>Try another search or pick a different tab.</p>
+            <button id="clear-search" class="text-button" type="button">Clear search</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">T</span><span>Turbo<span class="brand-accent">Games</span></span></a><a href="google-sites.html">Add to Google Sites</a><a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/preview">UGS collection &amp; credits</a></footer>
+    </div>
+
+    <dialog id="game-dialog" class="game-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-bar">
+        <div class="dialog-title-wrap"><span class="dialog-led"></span><h2 id="dialog-title">Game</h2></div>
+        <div class="dialog-actions">
+          <a id="open-game-tab" class="icon-button" href="#" target="_blank" rel="noopener noreferrer" title="Open in new tab" aria-label="Open game in new tab">↗</a>
+          <button id="reload-game" class="icon-button" type="button" title="Restart game" aria-label="Restart game">↻</button>
+          <button id="fullscreen-button" class="icon-button" type="button" title="Go fullscreen" aria-label="Go fullscreen">⛶</button>
+          <button id="close-dialog" class="icon-button close-button" type="button" title="Close game" aria-label="Close game">×</button>
+        </div>
+      </div>
+      <p id="player-status" class="player-status" role="status"></p>
+      <iframe id="game-frame" title="Game window" allow="autoplay; fullscreen; gamepad; clipboard-read; clipboard-write" allowfullscreen></iframe>
+    </dialog>
+  </body>
+</html>

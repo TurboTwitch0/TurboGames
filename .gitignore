@@ -1,0 +1,12 @@
+# Local deployment state and credentials
+.netlify/
+.env
+.env.*
+!.env.example
+
+# Generated local caches
+__pycache__/
+*.py[cod]
+node_modules/
+.DS_Store
+Thumbs.db

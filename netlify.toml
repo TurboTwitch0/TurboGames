@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+
+# Static site: upload this folder, including index.html and library-source/.
+# Keep the real game file paths; there is no single-page-app redirect.

@@ -1,0 +1,28 @@
+{
+  "method": "Browser render/start-screen checks, not complete playthroughs. Remote source availability is checked separately. Some sandbox iframe subrequests in this managed browser bypass interception and may fail its environment CA trust; these are marked environmentTLSBlocked. No TLS checks were disabled.",
+  "results": [
+    {
+      "title": "Windows Doors",
+      "source": "library-source/flash/clwindowsdoors.html",
+      "state": {
+        "title": "really cool flash game",
+        "text": "",
+        "canvases": 0,
+        "iframes": 0,
+        "storage": true,
+        "gridTiles": 0
+      },
+      "errors": [
+        "Failed to begin SWF load: Error: Failed to load Ruffle WASM"
+      ],
+      "consoleErrors": [
+        "Access to fetch at 'http://127.0.0.1:8010/vendor/ruffle/172de42e6619eac8f371.wasm' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "Failed to load resource: net::ERR_FAILED",
+        "Serious error loading Ruffle: TypeError: Failed to fetch",
+        "Serious error occurred loading SWF file: Error: Failed to load Ruffle WASM"
+      ],
+      "environmentTLSBlocked": false,
+      "failedRequests": []
+    }
+  ]
+}

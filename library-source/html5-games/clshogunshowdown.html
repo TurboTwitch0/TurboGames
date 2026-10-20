@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- Ultimate Game Stash source: https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shogun Showdown</title>
+<style>html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#111;color:#fff;font:16px system-ui}#unity-canvas{display:block;width:100%;height:100%;background:#111}#status{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:2rem;pointer-events:none}</style></head>
+<body><canvas id="unity-canvas" tabindex="0"></canvas><div id="status" role="status">Downloading Shogun Showdown…</div>
+<script src="https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.loader.js"></script>
+<script>
+// These upstream files have .gz names. Normalize them to blob URLs so Unity
+// works whether the host returns compressed bytes or already decoded bytes.
+(async () => {
+ const status=document.getElementById('status');
+ const blobs=[];
+ async function asset(url,type){
+  const response=await fetch(url);
+  if(!response.ok)throw new Error('Game download returned '+response.status);
+  let bytes=await response.arrayBuffer();
+  const header=new Uint8Array(bytes,0,Math.min(bytes.byteLength,2));
+  if(header[0]===31 && header[1]===139){
+   if(!window.DecompressionStream)throw new Error('Please use a current browser to decompress this game.');
+   bytes=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
+  }
+  const urlBlob=URL.createObjectURL(new Blob([bytes],{type}));blobs.push(urlBlob);return urlBlob;
+ }
+ try{
+  if(typeof createUnityInstance!=='function')throw new Error('The Unity loader could not be downloaded.');
+  const [dataUrl,codeUrl]=await Promise.all([
+   asset("https://raw.githubusercontent.com/Stinkalistic/junk/135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.data.gz",'application/octet-stream'),
+   asset("https://raw.githubusercontent.com/Stinkalistic/junk/135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.wasm.gz",'application/wasm')
+  ]);
+  await createUnityInstance(document.getElementById('unity-canvas'),{
+   dataUrl,codeUrl,
+   frameworkUrl:"https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.framework.js",
+   streamingAssetsUrl:"https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/StreamingAssets",
+   companyName:'Roboatino',productName:'ShogunShowdown',productVersion:'0.2.1',
+   showBanner:(message,type)=>{if(type==='error')status.textContent=message;}
+  },progress=>{status.textContent='Loading '+Math.round(progress*100)+'%';});
+  status.remove();document.getElementById('unity-canvas').focus();
+ }catch(error){status.textContent='Unable to load Shogun Showdown. '+error.message;}
+ window.addEventListener('pagehide',()=>blobs.forEach(url=>URL.revokeObjectURL(url)),{once:true});
+})();
+</script></body></html>

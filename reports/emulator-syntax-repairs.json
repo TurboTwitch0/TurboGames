@@ -1,0 +1,205 @@
+{
+  "method": "Repaired definite inline JavaScript syntax corruption using surviving original game and loader URLs; HTTP validation does not prove game playback.",
+  "items": [
+    {
+      "title": "Samurai Shodown 3",
+      "source": "library-source/emulated/arcade/clSamuraiShodown3.html",
+      "originalGameUrl": "https://cdn.jsdelivr.net/gh/Ray52511/Emujsgames@main/samsho3/samsho3.zip",
+      "gameUrl": "https://cdn.jsdelivr.net/gh/Ray52511/Emujsgames@main/samsho3/samsho3.zip",
+      "changes": [
+        "Closed unterminated emulator data URL string.",
+        "Set Neo Geo BIOS URL before loading the emulator.",
+        "Removed unavailable Google Sites parent API bridge and external cloak injection where present."
+      ],
+      "httpChecks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/Ray52511/Emujsgames@main/samsho3/samsho3.zip",
+          "status": 200,
+          "type": "application/zip",
+          "bytes": "19498263"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/Ray52511/Emujsgames@main/neogeo/neogeo.zip",
+          "status": 200,
+          "type": "application/zip",
+          "bytes": "1950045"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/emu@main/loader.js",
+          "status": 200,
+          "type": "application/javascript; charset=utf-8",
+          "bytes": null
+        }
+      ],
+      "validation": {
+        "inlineScripts": 1,
+        "syntax": "passed",
+        "launcherConfiguration": "passed (mock DOM; emulator playback not executed)"
+      }
+    },
+    {
+      "title": "Pokémon Crystal Inheritance",
+      "source": "library-source/emulated/pokemon/clpokecrystalinheritance.html",
+      "originalGameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Crystal%20Inheritance%20(v1.1).7z;",
+      "gameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Crystal%20Inheritance%20(v1.1).7z",
+      "changes": [
+        "Closed unterminated game URL string.",
+        "Corrected emulator display name.",
+        "Removed unavailable Google Sites parent API bridge and external cloak injection where present."
+      ],
+      "httpChecks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gb/Crystal%20Inheritance%20(v1.1).7z",
+          "status": 200,
+          "type": "application/x-7z-compressed",
+          "bytes": "1140104"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/loader.js",
+          "status": 200,
+          "type": "application/javascript; charset=utf-8",
+          "bytes": null
+        }
+      ],
+      "validation": {
+        "inlineScripts": 1,
+        "syntax": "passed",
+        "launcherConfiguration": "passed (mock DOM; emulator playback not executed)"
+      }
+    },
+    {
+      "title": "Kid Chameleon",
+      "source": "library-source/emulated/segaMD/clkidchameleon.html",
+      "originalGameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Kid Chameleon (USA, Europe).zip;",
+      "gameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Kid%20Chameleon%20(USA,%20Europe).zip",
+      "changes": [
+        "Closed unterminated game URL string.",
+        "Added trailing slash to emulator data directory.",
+        "Removed unavailable Google Sites parent API bridge and external cloak injection where present."
+      ],
+      "httpChecks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Kid%20Chameleon%20(USA,%20Europe).zip",
+          "status": 200,
+          "type": "application/zip",
+          "bytes": "730969"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data/loader.js",
+          "status": 200,
+          "type": "application/javascript; charset=utf-8",
+          "bytes": null
+        }
+      ],
+      "validation": {
+        "inlineScripts": 1,
+        "syntax": "passed",
+        "launcherConfiguration": "passed (mock DOM; emulator playback not executed)"
+      }
+    },
+    {
+      "title": "Monster World IV",
+      "source": "library-source/emulated/segaMD/clmonsterworld4.html",
+      "originalGameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Monster World IV (USA, Europe) (En,Ja) (Virtual Console).zip",
+      "gameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Monster%20World%20IV%20(USA,%20Europe)%20(En,Ja)%20(Virtual%20Console).zip",
+      "changes": [
+        "Removed literal newline breaking the game URL string.",
+        "Added trailing slash to emulator data directory.",
+        "Removed unavailable Google Sites parent API bridge and external cloak injection where present."
+      ],
+      "httpChecks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/gen/Monster%20World%20IV%20(USA,%20Europe)%20(En,Ja)%20(Virtual%20Console).zip",
+          "status": 200,
+          "type": "application/zip",
+          "bytes": "986907"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data/loader.js",
+          "status": 200,
+          "type": "application/javascript; charset=utf-8",
+          "bytes": null
+        }
+      ],
+      "validation": {
+        "inlineScripts": 1,
+        "syntax": "passed",
+        "launcherConfiguration": "passed (mock DOM; emulator playback not executed)"
+      }
+    },
+    {
+      "title": "Super Smash Bros.",
+      "source": "library-source/emulated/n64/clsupersmashbros.html",
+      "originalGameUrl": "https://cdn.jsdelivr.net/gh/a456pur/seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/supersmashbros/supersmashbros.zip",
+      "gameUrl": "https://cdn.jsdelivr.net/gh/a456pur/seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/supersmashbros/supersmashbros.zip",
+      "changes": [
+        "Removed an accidentally pasted nested HTML document from the loader URL.",
+        "Restored the original loader URL retained inside the nested copy.",
+        "Removed unavailable Google Sites parent API bridge and external cloak injection where present."
+      ],
+      "httpChecks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/a456pur/seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/supersmashbros/supersmashbros.zip",
+          "status": 200,
+          "type": "application/zip",
+          "bytes": "12539753"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/bubblfan/emu@master/loader.js",
+          "status": 200,
+          "type": "application/javascript; charset=utf-8",
+          "bytes": null
+        }
+      ],
+      "validation": {
+        "inlineScripts": 1,
+        "syntax": "passed",
+        "launcherConfiguration": "passed (mock DOM; emulator playback not executed)"
+      }
+    },
+    {
+      "title": "Mickey Mania: The Timeless Adventures of Mickey Mouse",
+      "source": "library-source/emulated/snes/clmickeymaniasnes.html",
+      "originalGameUrl": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/snes/<html>",
+      "gameUrl": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/sfc/Mickey%20Mania%20-%20The%20Timeless%20Adventures%20of%20Mickey%20Mouse%20%28USA%29.zip",
+      "changes": [
+        "Removed an accidentally pasted nested HTML document from the game URL.",
+        "Restored the matching Mickey Mania ROM URL retained inside the nested copy.",
+        "Removed unavailable Google Sites parent API bridge and external cloak injection where present.",
+        "Replaced the unavailable schoolstuff1337 ROM URL (404) with the same titled USA SNES game in the existing ap-math-class/exams source collection. HTTP GET 200 and ZIP contents verified.",
+        "The replacement ZIP contains the USA game with its labeled FastROM v1.0 patch; platform and title match the requested SNES game."
+      ],
+      "httpChecks": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/snes/Mickey%20Mania%20-%20The%20Timeless%20Adventures%20of%20Mickey%20Mouse%20(USA).zip",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/bubblfan/emu@master/loader.js",
+          "status": 200,
+          "type": "application/javascript; charset=utf-8",
+          "bytes": null
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/sfc/Mickey%20Mania%20-%20The%20Timeless%20Adventures%20of%20Mickey%20Mouse%20%28USA%29.zip",
+          "status": 200,
+          "type": "application/zip",
+          "bytes": 1471131,
+          "archiveEntries": [
+            "Mickey Mania - The Timeless Adventures of Mickey Mouse (USA) [FastROM hack by kandowontu v1.0].sfc"
+          ]
+        }
+      ],
+      "provenance": {
+        "replacementSource": "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/sfc/",
+        "reason": "Matching original title and platform; original schoolstuff1337 URL returns 404.",
+        "discovery": "Inspected existing SNES launchers for the source collection and checked the exact matching game filename."
+      },
+      "validation": {
+        "inlineScripts": 1,
+        "syntax": "passed",
+        "launcherConfiguration": "passed (mock DOM; emulator playback not executed)"
+      }
+    }
+  ]
+}

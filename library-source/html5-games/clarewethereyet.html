@@ -1,0 +1,13 @@
+<!doctype html>
+<!-- Ultimate Game Stash source: https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Are We There Yet?</title>
+<style>html,body,#gameContainer{width:100%;height:100%;margin:0;background:#111;overflow:hidden}#status{position:absolute;inset:0;display:grid;place-content:center;color:#fff;font:16px system-ui;pointer-events:none}canvas{max-width:100%;max-height:100%}</style></head>
+<body><div id="gameContainer"></div><div id="status" role="status">Loading Are We There Yet?…</div>
+<script src="https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/AWTY/Build/UnityLoader.js"></script>
+<script>
+const status=document.getElementById('status');
+try {
+ if (!window.UnityLoader) throw new Error('The Unity loader could not be downloaded.');
+ UnityLoader.instantiate('gameContainer',"https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/AWTY/Build/AWTY_Web.json",{onProgress:(_instance,progress)=>{status.textContent='Loading '+Math.round(progress*100)+'%';if(progress>=1)status.remove();}});
+} catch(error) {status.textContent=error.message;}
+</script></body></html>

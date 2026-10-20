@@ -1,0 +1,33 @@
+# TurboGames
+
+TurboGames is a static, searchable library with **3,098 games and apps**, square cover images, category tabs, and an isolated fullscreen player. No package install or build step is needed.
+
+## Google Sites
+
+Start with **[GOOGLE-SITES.md](GOOGLE-SITES.md)**. Host the extracted TurboGames folder on an HTTPS static website host, open **google-sites.html**, and paste your hosted address to generate the Google Sites embed code. Google Sites embeds the hosted arcade; it cannot host the ZIP itself.
+
+## Run locally
+
+From this folder:
+
+```sh
+python3 tools/dev-server.py --port 8000
+```
+
+Open <http://127.0.0.1:8000>. This server includes the CORS headers needed by isolated players loading local split game assets. The supplied `_headers` file provides those headers on Netlify.
+
+## Deploy from GitHub to Netlify
+
+Import `TurboTwitch0/TurboGames` into Netlify using branch `main`. Leave the build command empty and set the publish directory to `.`. The repository root already contains `index.html` and `netlify.toml`; no nested TurboGames folder is needed for a GitHub deployment.
+
+Keep `_headers` in the published root. It includes the Ruffle WASM CORS fix required by the isolated Flash player. Uploading to GitHub alone does not update a manually deployed Netlify site; connect the existing Netlify project to this repository to enable automatic deployments.
+
+## Images and repaired sources
+
+Every catalog entry has a local image: sourced artwork where available and original illustrated covers for other titles. Attribution and repeatable import scripts are described in **ARTWORK.md**.
+
+The update repairs hundreds of launcher bugs, replaces missing files from verified sources, and includes local Ruffle 0.7.1. Detailed evidence and remaining limitations are in **reports/FINAL-STATUS.md** and the adjacent repair manifests.
+
+Some launchers still need assets from third-party hosts. Entries whose removed asset host was confirmed unavailable have a **Needs source** badge; they are retained in the collection, rather than replaced with a different game. Their exact URLs are listed in **reports/unavailable-game-sources.json**.
+
+LocalStorage and cookies are saved separately for each game. IndexedDB compatibility in isolated game frames is temporary: use the game's **Save State / Export Save** controls to retain emulator progress across closing the game.

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Every rendered card has an image element",
+    "Catalog paging renders 96 more cards",
+    "Game storage/cookies/IndexedDB work while parent access stays blocked",
+    "Fullscreen opens the player or offers a new-tab fallback when blocked",
+    "Local game saves survive close/reopen",
+    "Google Sites helper generates HTTPS embed code with fullscreen permission",
+    "Compact mobile embed has no horizontal overflow"
+  ]
+}

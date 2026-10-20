@@ -1,0 +1,149 @@
+{
+  "checked_at": "2026-10-17T23:33:57.668091+00:00",
+  "scope": "Seven unavailable placeholder launchers; network checks and static validation only. Game scripts were not executed.",
+  "repairs": [
+    {
+      "path": "library-source/flash/cldouchebagworkout.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/1MpgiIrmW0JtQkEsqOaEUXrw_mNNH6trd/view",
+      "original_result": "HTTP 404",
+      "replacement_source": "https://raw.githubusercontent.com/brickyosu/ugs-files-sorted/ad5667281e90e7b118ce6c35d2a423c3cb84a137/D/cldouchebagworkout.html",
+      "bytes": 1476,
+      "sha256": "44fe64b73662c804dce568bf5a7fe63f019c2fd3790f6bcc273ac5b0abf66605",
+      "notes": "Restored matching Flash SWF through standard Ruffle player. SWF returned HTTP 200 and CWS signature.",
+      "gameplay_verified": false
+    },
+    {
+      "path": "library-source/flash/clsuperstacker2.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/1-vocREQyVhYLI0bJzj6VWiZqzhbv35Cm/view",
+      "original_result": "HTTP 404",
+      "replacement_source": "https://github.com/coollittledude21/Super-Stacker-2/tree/053f3c7362d787487583f25c02a288ca25a741d2",
+      "bytes": 1479,
+      "sha256": "8a2597122a4d5f359a25d2847f5bb5f8c946ef64e20be6a33d42458f630db755",
+      "notes": "Replaced inaccessible original with matching Super Stacker 2 SWF. SWF returned HTTP 200 and CWS signature.",
+      "gameplay_verified": false
+    },
+    {
+      "path": "library-source/html5-games/clarewethereyet.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/1gISYzeCKmM8hLcl-SbOU6qW0r41RJ5dF/view",
+      "original_result": "HTTP 404",
+      "replacement_source": "https://raw.githubusercontent.com/brickyosu/ugs-files-sorted/ad5667281e90e7b118ce6c35d2a423c3cb84a137/A/clarewethereyet.html",
+      "bytes": 1297,
+      "sha256": "f0bd80ed24fded3af99b75362bbd2f660e7183859d505aec69cff900bf2471eb",
+      "notes": "Restored matching Unity launcher with responsive sizing. Unity build manifest returned HTTP 200.",
+      "gameplay_verified": false
+    },
+    {
+      "path": "library-source/html5-games/clcountersnipe.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/15OLPH_vnR_L6nl7LIvT5JW7qGDczbqlB/view",
+      "original_result": "HTTP 404",
+      "replacement_source": "https://raw.githubusercontent.com/brickyosu/ugs-files-sorted/ad5667281e90e7b118ce6c35d2a423c3cb84a137/C/clcountersnipe.html",
+      "bytes": 1454,
+      "sha256": "c14bc922c26f1c60d3f6cff02d053f186e8ee4b4961b690ab576ed958c809d87",
+      "notes": "Restored matching Flash SWF through Ruffle, removing the upstream bogus embed URL. SWF returned HTTP 200 and CWS signature.",
+      "gameplay_verified": false
+    },
+    {
+      "path": "library-source/html5-games/cldoomgallery.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/1QAd-8pDEqkEaqE_fPZM98PhNBcqcoMSW/view",
+      "original_result": "HTTP 404",
+      "replacement_source": "https://raw.githubusercontent.com/brickyosu/ugs-files-sorted/ad5667281e90e7b118ce6c35d2a423c3cb84a137/D/cldoomgallery.html",
+      "bytes": 2082,
+      "sha256": "1f73636e4756c7c048f790fce400fb9e02c7ec6e9c9ad45d90aa0e8e4c2732ac",
+      "notes": "Restored matching Construct launcher and pinned upstream asset base. Removed service-worker registration because a cross-origin game base cannot register a service worker for this local site. Main module returned HTTP 200.",
+      "gameplay_verified": false
+    },
+    {
+      "path": "library-source/html5-games/clgdwaveover100mb.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/1qJ5PdyAl9GRMxpn-0NrcDH6Ap68ASqWi/view",
+      "original_result": "HTTP 200 after public download confirmation",
+      "replacement_source": "https://drive.google.com/file/d/1qJ5PdyAl9GRMxpn-0NrcDH6Ap68ASqWi/view",
+      "bytes": 121121169,
+      "sha256": "2ef4ca2c0bff7db8e7fc04bc782c6580cb4e081525e663b66b46f937deb7c17e",
+      "notes": "Recovered original 121,121,169-byte TurboWarp HTML by following Drive public warning form. Full HTML present; no Drive warning/error page.",
+      "gameplay_verified": false
+    },
+    {
+      "path": "library-source/html5-games/clshogunshowdown.html",
+      "status": "launcher-recovered",
+      "original_url": "https://drive.google.com/file/d/1I6N-dqKPDrDATJfxVZ_e4Gq_psrDAgRL/view",
+      "original_result": "HTTP 404",
+      "replacement_source": "https://raw.githubusercontent.com/brickyosu/ugs-files-sorted/ad5667281e90e7b118ce6c35d2a423c3cb84a137/S/clshogunshowdown.html",
+      "bytes": 3179,
+      "sha256": "437c4eacf930ec2358cf7c115b72498dfddf6b4ecd612199dad363d1a9a6009e",
+      "notes": "Replaced statically.io URLs returning HTTP 403. Unity loader/framework, data and WASM verified HTTP 200 with CORS. Normalized build files through blob URLs to handle misleading .gz names and missing server Content-Encoding.",
+      "gameplay_verified": false
+    }
+  ],
+  "asset_http_checks": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@bc13cc7651ca3e238d734ba1e37964c3b8607071/SWFs/countersnipe.swf",
+      "http_status": 200,
+      "type": "application/x-shockwave-flash",
+      "cors": "*",
+      "first_bytes": "4357530af158240078dad47d"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/AWTY/Build/AWTY_Web.json",
+      "http_status": 200,
+      "type": "application/json; charset=utf-8",
+      "cors": "*",
+      "first_bytes": "7b0a22636f6d70616e794e61"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.framework.js",
+      "http_status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cors": "*",
+      "first_bytes": "66756e6374696f6e20756e69"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.loader.js",
+      "http_status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cors": "*",
+      "first_bytes": "66756e6374696f6e20637265"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@fa43d798a8cafd1a87fdf9f78691c6f81823ee8b/Douchebag_Workout.swf",
+      "http_status": 200,
+      "type": "application/x-shockwave-flash",
+      "cors": "*",
+      "first_bytes": "43575309937a4300789cdcbc"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/coollittledude21/Super-Stacker-2@053f3c7362d787487583f25c02a288ca25a741d2/481558_superstacker2.swf",
+      "http_status": 200,
+      "type": "application/x-shockwave-flash",
+      "cors": "*",
+      "first_bytes": "4357530951821900789cacbd"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@0.2.0-nightly.2025.10.2/ruffle.js",
+      "http_status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cors": "*",
+      "first_bytes": "2828293d3e7b227573652073"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Stinkalistic/junk/135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.data.gz",
+      "http_status": 200,
+      "type": "application/octet-stream",
+      "cors": "*",
+      "first_bytes": "556e69747957656244617461"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Stinkalistic/junk/135501a3c705c8795f185c8cda4911ee2f14313d/ShogunShowdown/Build/ShogunShowdown_WebGL.wasm.gz",
+      "http_status": 200,
+      "type": "application/octet-stream",
+      "cors": "*",
+      "first_bytes": "0061736d0100000001f83cb5"
+    }
+  ],
+  "snapshot_stage": "Recorded immediately after this repair, before later library-wide compatibility processing."
+}

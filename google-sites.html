@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <title>Put TurboGames on Google Sites</title>
+  <style>
+    :root{color-scheme:dark;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#f5f3f7;background:#101014;line-height:1.6}*{box-sizing:border-box}body{margin:0;padding:40px 20px}main{max-width:800px;margin:auto}a{color:#d7ff66}header{margin-bottom:30px}.brand{display:inline-flex;align-items:center;gap:10px;font-size:22px;font-weight:750;text-decoration:none;letter-spacing:-.7px}.mark{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#d7ff66;color:#101014;transform:rotate(-7deg)}h1{font-size:clamp(29px,6vw,43px);line-height:1.15;letter-spacing:-1.5px;margin:24px 0 14px}p{color:#b9b7c4;margin:0 0 20px}.steps{padding:0;list-style:none;counter-reset:step;display:grid;gap:15px;margin:30px 0}.steps>li{position:relative;padding:22px 22px 22px 67px;background:#19191f;border:1px solid #30303a;border-radius:14px;counter-increment:step}.steps>li:before{content:counter(step);position:absolute;left:22px;top:22px;border-radius:50%;width:28px;height:28px;background:#d7ff66;color:#101014;text-align:center;font-weight:750}.steps strong{display:block;font-size:17px;margin-bottom:5px}.steps p{font-size:14px;margin:0}form{padding:25px;background:#19191f;border:1px solid #30303a;border-radius:14px}label{display:block;font-weight:650;margin-bottom:8px}input,textarea,button{font:inherit}input,textarea{color:#f5f3f7;background:#101014;border:1px solid #484653;border-radius:8px;width:100%;padding:12px;outline:none}input:focus,textarea:focus{border-color:#d7ff66;box-shadow:0 0 0 3px #d7ff661c}input{font-size:16px}textarea{font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;resize:vertical;min-height:170px}button,.button-link{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid transparent;border-radius:8px;font-weight:700;text-decoration:none;cursor:pointer;font-size:14px;background:#d7ff66;color:#141510}button:hover,.button-link:hover{background:#e3ff98}button.secondary,.button-link.secondary{border-color:#484653;background:#26252d;color:#f5f3f7}button.secondary:hover,.button-link.secondary:hover{border-color:#9d99ab;background:#302e39}.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:13px}.hint{font-size:13px;margin:9px 0 0;color:#a09dab}#message{min-height:24px;margin:12px 0 0;font-size:14px}#message.error{color:#ffaaa8}#result{margin-top:25px;padding-top:25px;border-top:1px solid #36343f}#result h2{font-size:20px;margin:0 0 8px}.output-label{margin-top:20px;font-size:14px}.note{border-left:3px solid #d7ff66;padding-left:16px;margin-top:27px;font-size:14px}footer{margin-top:35px;font-size:13px;color:#92909d}[hidden]{display:none!important}@media(max-width:520px){body{padding:25px 14px}.steps>li{padding:18px 18px 18px 56px}.steps>li:before{left:16px;top:18px}form{padding:18px}.row>*{flex:1 1 auto}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">T</span>TurboGames</a>
+    <h1>Your arcade.<br>Your Google Site.</h1>
+    <p>Host the TurboGames folder, then add it to your Google Site with an embed. This helper works on your computer, too.</p>
+  </header>
+  <ol class="steps">
+    <li><strong>Put TurboGames online</strong><p>Extract the download. Upload the folder containing <code>index.html</code> to <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer">Netlify Drop</a>, or another static website host. Copy its HTTPS website address.</p></li>
+    <li><strong>Make your embed below</strong><p>Paste the website address into this helper. Use the address of your deployed TurboGames site.</p></li>
+    <li><strong>Add it to Google Sites</strong><p>Open your site editor. Choose <b>Insert → Embed → Embed code</b>, paste the code, then choose <b>Next → Insert</b>. Make the embed wide and tall, then publish your Google Site.</p></li>
+  </ol>
+  <form id="embed-form" novalidate>
+    <label for="site-url">Your TurboGames website address</label>
+    <input id="site-url" name="site-url" type="url" inputmode="url" autocomplete="url" placeholder="https://your-turbogames.netlify.app/" aria-describedby="url-hint message" required>
+    <p class="hint" id="url-hint">Use the public HTTPS site address from your host.</p>
+    <div class="row"><button type="submit">Make embed code <span aria-hidden="true">&nbsp;→</span></button></div>
+    <p id="message" role="status" aria-live="polite"></p>
+    <section id="result" hidden aria-labelledby="result-heading">
+      <h2 id="result-heading">Ready for your Google Site</h2>
+      <p class="hint">Copy this code into Google Sites’ Embed code box. The arcade opens in a compact layout with search and all categories.</p>
+      <label class="output-label" for="embed-code">Embed code</label>
+      <textarea id="embed-code" rows="8" readonly spellcheck="false"></textarea>
+      <div class="row"><button id="copy-code" type="button">Copy embed code</button><a id="open-site" class="button-link secondary" href="#" target="_blank" rel="noopener noreferrer">Open your arcade ↗</a></div>
+      <label class="output-label" for="embed-url">Or use Insert → Embed → By URL</label>
+      <input id="embed-url" type="url" readonly aria-label="TurboGames embed URL">
+      <div class="row"><button id="copy-url" class="secondary" type="button">Copy embed URL</button></div>
+    </section>
+  </form>
+  <p class="note">Google Sites embeds a hosted website; it cannot run the downloaded folder or ZIP itself. Some games or fullscreen controls may be limited inside Google Sites. The included “Open TurboGames in a new tab” link opens the full arcade.</p>
+  <footer>Game loading can still depend on the game’s original online assets. Keep the complete TurboGames folder together when you upload it.</footer>
+</main>
+<script>
+  (() => {
+    "use strict";
+    const form = document.getElementById("embed-form");
+    const input = document.getElementById("site-url");
+    const result = document.getElementById("result");
+    const code = document.getElementById("embed-code");
+    const embedUrl = document.getElementById("embed-url");
+    const message = document.getElementById("message");
+    const escapeAttribute = value => value.replace(/[&"<>]/g, character => ({"&":"&amp;",'"':"&quot;","<":"&lt;",">":"&gt;"})[character]);
+
+    function tell(text, isError = false) {
+      message.textContent = text;
+      message.classList.toggle("error", isError);
+    }
+
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      let url;
+      try {
+        url = new URL(input.value.trim());
+        if (url.protocol !== "https:" || !url.hostname || url.username || url.password) throw new Error("invalid URL");
+        if (/(^|\.)sites\.google\.com$/i.test(url.hostname)) {
+          tell("Paste your hosted TurboGames address here. Add the generated code to your Google Site afterward.", true);
+          input.setAttribute("aria-invalid", "true");
+          result.hidden = true;
+          return;
+        }
+      } catch {
+        tell("Enter a complete HTTPS website address, such as https://your-turbogames.netlify.app/.", true);
+        input.setAttribute("aria-invalid", "true");
+        result.hidden = true;
+        return;
+      }
+      input.removeAttribute("aria-invalid");
+      url.hash = "";
+      url.searchParams.set("embed", "1");
+      const source = escapeAttribute(url.href);
+      const fullSite = new URL(url.href);
+      fullSite.searchParams.delete("embed");
+      code.value = '<iframe src="' + source + '" title="TurboGames game library" width="100%" height="850" style="width:100%;height:85vh;min-height:650px;border:0;border-radius:12px" allow="autoplay; fullscreen; gamepad; clipboard-read; clipboard-write" allowfullscreen loading="lazy"></iframe>\n<p><a href="' + escapeAttribute(fullSite.href) + '" target="_blank" rel="noopener noreferrer">Open TurboGames in a new tab ↗</a></p>';
+      embedUrl.value = url.href;
+      document.getElementById("open-site").href = fullSite.href;
+      result.hidden = false;
+      tell("Your embed code is ready. Copy it into Google Sites.");
+    });
+
+    async function copy(field, label) {
+      try {
+        if (!navigator.clipboard || !window.isSecureContext) throw new Error("clipboard unavailable");
+        await navigator.clipboard.writeText(field.value);
+        tell(label + " copied.");
+      } catch {
+        field.focus();
+        field.select();
+        field.setSelectionRange(0, field.value.length);
+        if (document.execCommand("copy")) tell(label + " copied.");
+        else tell("The text is selected. Press Ctrl+C or Command+C to copy it.");
+      }
+    }
+    document.getElementById("copy-code").addEventListener("click", () => copy(code, "Embed code"));
+    document.getElementById("copy-url").addEventListener("click", () => copy(embedUrl, "Embed URL"));
+    if (location.protocol === "https:" && location.hostname !== "sites.google.com") {
+      input.value = new URL("./", location.href).href;
+    }
+  })();
+</script>
+</body>
+</html>

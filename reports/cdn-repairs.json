@@ -1,0 +1,165 @@
+[
+  {
+    "path": "library-source/html5-games/clhellron.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/MISC/hellron/index.js",
+        "http_status": 206,
+        "content_type": "application/javascript; charset=utf-8",
+        "header_bytes": "5b2c291551ddfca1036024c2bcb67af86341f4a4d5ea21402365e1fcfdc7c060"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  },
+  {
+    "path": "library-source/html5-games/clhl2doom.html",
+    "reason": "Replaced stale whole-file Build URLs (404) with current matching upstream split-file loader",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hl2doom/Build/loader.js",
+        "http_status": 206,
+        "signature": "1ba1504454937a001421c3dc97efabf5fff50ba1ead0e8611ba69ccc649732a2726c27e39b9727b277e616c34d416453c406045400685911f9f3362dabbb0b57",
+        "encoding": null,
+        "type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hl2doom/Build/framework.js",
+        "http_status": 206,
+        "signature": "0a76617220756e6974794672616d65776f726b203d20282829203d3e207b0a2020766172205f736372697074446972203d20747970656f6620646f63756d656e",
+        "encoding": null,
+        "type": "application/javascript; charset=utf-8"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hl2doom/Build/data.br.part1",
+        "http_status": 206,
+        "signature": "cbffff084d60b4ed069f350b16431156270000b6bfea1e1251cc074055555555555555555555555555555555d526120103ce567523f860c00ffa213fec47fca8",
+        "encoding": null,
+        "type": "application/octet-stream"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hl2doom/Build/data.br.part2",
+        "http_status": 206,
+        "signature": "cbff7f0e2311d6cd1f3a00cc48cc07401da90b7ffefcfb67e0b81eebbc07e00000503388f6dbcf2d2665804149b748088284b42291524fa28507e8071551506c",
+        "encoding": null,
+        "type": "application/octet-stream"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hl2doom/Build/wasm.br.part1",
+        "http_status": 206,
+        "signature": "cbffff3fffe71fe446ff691c7a2090515a5b20696bab75dbd1f9c1ea04004075bff5d0220a4ef60760c080cd429282e9010040abdf873d9d7f8893fd4730f3c1",
+        "encoding": null,
+        "type": "application/octet-stream"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hl2doom/Build/wasm.br.part2",
+        "http_status": 206,
+        "signature": "cbff7f24ffe71f86d0fdb7dd70e3dd7575d3293b6591c8a2a4448a3228132952068385c16a205928a15d59c0ea0400c057b7f5f03d149cec0fb60a2a40402582",
+        "encoding": null,
+        "type": "application/octet-stream"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired",
+    "source": {
+      "url": "https://raw.githubusercontent.com/Stinkalistic/UGS/main/UNITY/hl2doom/index.html",
+      "http_status": 206,
+      "signature": "3c21444f43545950452068746d6c3e0a"
+    },
+    "upstream_repository": "https://github.com/Stinkalistic/UGS/tree/main/UNITY/hl2doom"
+  },
+  {
+    "path": "library-source/html5-games/clkillover.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/MISC/killover/index.js",
+        "http_status": 206,
+        "content_type": "application/javascript; charset=utf-8",
+        "header_bytes": "76617220476f646f743d2828293d3e7b766172205f7363726970744e616d653d"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  },
+  {
+    "path": "library-source/html5-games/clportal2d.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/SWAGgames@main/portal2d/index.js",
+        "http_status": 206,
+        "content_type": "application/javascript; charset=utf-8",
+        "header_bytes": "0a76617220476f646f74203d20282829203d3e207b0a2020766172205f736372"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  },
+  {
+    "path": "library-source/html5-games/clredalert.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/MISC/red-alert/index.js",
+        "http_status": 206,
+        "signature": "76617220683b687c7c3d747970656f66"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  },
+  {
+    "path": "library-source/html5-games/cltiberiandawn.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/MISC/tiberiandawn/index.js",
+        "http_status": 206,
+        "signature": "76617220683b687c7c3d747970656f66"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  },
+  {
+    "path": "library-source/html5-games/clupslash.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/upslash/Build/WebGL%20UpSlash.loader.js",
+        "http_status": 206,
+        "signature": "66756e6374696f6e2063726561746555"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  },
+  {
+    "path": "library-source/html5-games/clvaportrails.html",
+    "reason": "Original statically.io CDN returns 403; use matching repository files through jsDelivr",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/Vapor%20Trails/TemplateData/UnityProgress.js",
+        "http_status": 206,
+        "content_type": "application/javascript; charset=utf-8",
+        "header_bytes": "1bbb0400c42a377b9a6a51ab19a68fd9f440ee6397fb980ede04873d828ec03f"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/Vapor%20Trails/Build/UnityLoader.js",
+        "http_status": 206,
+        "content_type": "application/javascript; charset=utf-8",
+        "header_bytes": "76617220556e6974794c6f616465723d556e6974794c6f616465727c7c7b436f"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/Vapor%20Trails/Build/Vapor%20Trails.json",
+        "http_status": 206,
+        "content_type": "application/json; charset=utf-8",
+        "header_bytes": "7b0a22636f6d70616e794e616d65223a2022736576656e6372616e65222c0a22"
+      }
+    ],
+    "gameplay_verified": false,
+    "status": "repaired"
+  }
+]

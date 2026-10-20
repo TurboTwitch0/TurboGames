@@ -1,0 +1,220 @@
+[
+  {
+    "path": "library-source/html5-games/clarsonate.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "old": "href=\"TemplateData/style.css\"",
+        "new": "href=\"https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/arsonate/TemplateData/style.css\""
+      },
+      {
+        "old": "href=\"TemplateData/favicon.ico\"",
+        "new": "href=\"https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/arsonate/TemplateData/favicon.ico\""
+      }
+    ],
+    "sha256": "b1cf26786ab892eb424a0de02aee665c431daf71f8f9823b46d5e370365caa97",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clthrowapotato.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "old": "hhttps://",
+        "new": "https://"
+      }
+    ],
+    "sha256": "2514d1c25286751c85ad6c6a50f37d8076512e8fc02fafcb3b07e49f83455f38",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clneonblaster.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "offlineClient.js"
+      }
+    ],
+    "sha256": "614125cb7dd1cdc579f9f649e75fdaf21f6a52d49b7689b2284416f13a7847ee",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clwordle.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/main.js"
+      }
+    ],
+    "sha256": "925634753fed91a14853692e908de3ace1fa247928e5653d21a8bc72a47111f9",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clucds.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/cloak.js"
+      }
+    ],
+    "sha256": "35816ac0deccd350c56156cb74271235932862038123a4206227f39c77bdb5dd",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clroulettehero.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "old": "href=\"TemplateData/style.css\"",
+        "new": "href=\"https://cdn.jsdelivr.net/gh/shayderrr/portsv4@f062252f3248db5a493ede8b57e68a29ae96dee3/15819845/TemplateData/style.css\""
+      }
+    ],
+    "sha256": "bfa2bf1bc94d226f0cbc3f023a735f23af64b87ee3586214fab322eeaaddf3d3",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clcellmachine.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/main.js"
+      }
+    ],
+    "sha256": "ff4caf4776de891beeb45b0b7d138b25274f8034e8ee0ddea63800876463e21f",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clobbyclimbforbrainrots.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/sdk.js"
+      }
+    ],
+    "sha256": "f2100e918839ebb95c15f3fcf2c4d7377e52096f9e4e6d162deaf42b7b8e88ae",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/cltubejumpers.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "h"
+      }
+    ],
+    "sha256": "be34df88542d625a4e78fd7314740f0e257865c1b77efef585566eccfaa3aee6",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/cl1.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/main.js"
+      }
+    ],
+    "sha256": "3d30827ddf52d38cc0b6b8545446b744e75b4ebd4e489270be14507423c70a28",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clhextris.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/main.js"
+      },
+      {
+        "old": "src=\"vendor/keypress.min.js\"",
+        "new": "src=\"https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/keypress.min.js\""
+      }
+    ],
+    "sha256": "c78afd5bbc68d6f141ffb47f0e422d8724e6c7a92cb4f28886bbd8714c1f1e50",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clcsgoclicker.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/main.js"
+      },
+      {
+        "old": "maxcdn.b ootstrapcdn.com",
+        "new": "maxcdn.bootstrapcdn.com"
+      },
+      {
+        "old": "steamcommunity-a.akamai hd.net",
+        "new": "steamcommunity-a.akamaihd.net"
+      }
+    ],
+    "sha256": "2a7c7307cc25f91260f4a26f7bfac775847cc9ba7d1be6aa9c7115f29aeb39ee",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clgolddiggerfrvr.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/all.min.js"
+      },
+      {
+        "old": "seraph@tree/ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7",
+        "new": "seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7"
+      }
+    ],
+    "sha256": "d59378f48a44ecd3ed4c9e01ca3a0cbe84b26211d6cf02c97eaa85eb06639e76",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clclimbforbrainrots.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/sdk.js"
+      }
+    ],
+    "sha256": "f2100e918839ebb95c15f3fcf2c4d7377e52096f9e4e6d162deaf42b7b8e88ae",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clfluidism.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "/js/all.js"
+      }
+    ],
+    "sha256": "027991d7ab0445ba6b974ece64a65b99c03f1da1d5d833e3cd43f2c645a128c6",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clbadtimesim.html",
+    "status": "repaired",
+    "changes": [
+      {
+        "removed_missing_utility": "offlineClient.js"
+      }
+    ],
+    "sha256": "5ba48b292b4648472073fc52dbded4ce74f7605076dcaac9ef363167e88a20fc",
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clslendytubbies.html",
+    "reason": "Missing local Unity stylesheet resolved to source matching pinned build",
+    "status": "repaired",
+    "checks": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/shayderrr/portsv4@c2b7ec0e0ea2e212f7b715c56f4ce60576e30a2b/slendy/TemplateData/style.css",
+        "http_status": 206,
+        "signature": "626f6479207b2070616464696e673a20"
+      }
+    ],
+    "gameplay_verified": false
+  },
+  {
+    "path": "library-source/html5-games/clskyrace-3d.html",
+    "status": "repaired",
+    "reason": "Removed absent original-site SDK; existing InitYSDK catch path starts Unity and retains gameplay loader",
+    "gameplay_verified": false
+  }
+]

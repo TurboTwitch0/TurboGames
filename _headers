@@ -1,0 +1,29 @@
+# Allow the arcade to be embedded on Google Sites.
+# Do not add X-Frame-Options or a restrictive frame-ancestors policy here.
+
+# Isolated game frames have an opaque origin. Ruffle fetches its WASM
+# from this directory and needs CORS even when the arcade uses this host.
+/vendor/*
+  Access-Control-Allow-Origin: *
+
+/library-source/*
+  Access-Control-Allow-Origin: *
+
+/player-compat.js
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/catalog.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/app.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/google-sites.html
+  Cache-Control: public, max-age=0, must-revalidate

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "isolated": true,
+  "files": [
+    {
+      "name": "172de42e6619eac8f371.wasm",
+      "status": 200,
+      "type": "application/wasm",
+      "bytes": 14302754,
+      "magic": [
+        0,
+        97,
+        115,
+        109
+      ]
+    },
+    {
+      "name": "878d548199cddef07035.wasm",
+      "status": 200,
+      "type": "application/wasm",
+      "bytes": 14227884,
+      "magic": [
+        0,
+        97,
+        115,
+        109
+      ]
+    }
+  ]
+}
