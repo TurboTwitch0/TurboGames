@@ -5,6 +5,36 @@
   try { config = window.__TURBOGAMES_CONFIG__ || JSON.parse(window.name); } catch { return; }
   if (config?.turboGames !== 1 || typeof config.nonce !== "string" || !/^https?:\/\//.test(config.parentOrigin)) return;
   delete window.__TURBOGAMES_CONFIG__;
+  // Legacy Unity loaders often treat merged blob assets as relative paths.
+  // Preserve complete asset URLs without changing their relative-path resolver.
+  const wrappedUnity = new WeakSet();
+  function prepareUnity(loader) {
+    if (!loader || typeof loader.instantiate !== "function" || wrappedUnity.has(loader.instantiate)) return loader;
+    const original = loader.instantiate;
+    function instantiate(...args) {
+      const instance = original.apply(this, args);
+      const module = instance?.Module;
+      if (module && typeof module.resolveBuildUrl === "function") {
+        const resolve = module.resolveBuildUrl;
+        module.resolveBuildUrl = function (url) {
+          return typeof url === "string" && /^(?:blob:|data:|https?:\/\/)/i.test(url)
+            ? url : resolve.call(this, url);
+        };
+      }
+      return instance;
+    }
+    wrappedUnity.add(instantiate);
+    try { loader.instantiate = instantiate; } catch { /* Read-only loaders retain their own resolver. */ }
+    return loader;
+  }
+  try {
+    let unity = window.UnityLoader;
+    Object.defineProperty(window, "UnityLoader", {
+      configurable: true,
+      get: () => prepareUnity(unity),
+      set: value => { unity = prepareUnity(value); }
+    });
+  } catch { /* A game with a non-configurable global keeps its own loader. */ }
   function install(kind, initial) {
     const values = Object.create(null);
     for (const [key, value] of Object.entries(initial || {})) if (typeof value === "string") values[key] = value;

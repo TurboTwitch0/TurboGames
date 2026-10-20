@@ -1,0 +1,1949 @@
+{
+  "method": "Real upstream legacy Unity loaders, instantiated with network startup disabled. Tests complete URL preservation and unchanged relative URL resolution; not game playthroughs.",
+  "loaders": 88,
+  "passed": 88,
+  "correctedBlob": 88,
+  "results": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/NovaAppsInc/fracital-proxy@808c643ed7924cfb696a68ccdd9d2b97c12a4bee/g/rooftop-snipers/UnityLoader.js",
+      "file": "aebe4f060691d8a8.js",
+      "references": [
+        "library-source/flash/clrooftopsnipers.html",
+        "library-source/html5-games/clrooftopsnipers.html"
+      ],
+      "bytes": 255836,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/greeniYT/y@main/smashhit/js/unityloader.js",
+      "file": "9b2532b641e9ec79.js",
+      "references": [
+        "library-source/html5-games/Smash Hit Ripoff.html",
+        "library-source/html5-games/clsmashhitripoff.html"
+      ],
+      "bytes": 150048,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/web-ports/baldi-mods@a9a006b703c35330ec3925de5a1edcc99df123c8/-b/Build/UnityLoader.js",
+      "file": "9e7d11629e158cbd.js",
+      "references": [
+        "library-source/html5-games/cl-b.html"
+      ],
+      "bytes": 159510,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/10minutestilldawn/Build/UnityLoader.js",
+      "file": "33b1004eb7813bba.js",
+      "references": [
+        "library-source/html5-games/cl10minutestildawn.html"
+      ],
+      "bytes": 159436,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/n-101-1/1@main/2.7.js",
+      "file": "9beba3037175e01e.js",
+      "references": [
+        "library-source/html5-games/cl1v1lol.html",
+        "library-source/html5-games/cl1v1maybeidk.html"
+      ],
+      "bytes": 159510,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/udbsite/adofai@f170efcb1b532312817e69f26ce3f84c99940238/Build/UnityLoader.js",
+      "file": "d76657e6d6d287c7.js",
+      "references": [
+        "library-source/html5-games/clADOFAI.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/hinohomo/Build/UnityLoader.js",
+      "file": "2a005409a228aab8.js",
+      "references": [
+        "library-source/html5-games/clHiNoHomo.html"
+      ],
+      "bytes": 150050,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@e6b59708ba479552b77ff6fd7ff5b73885db6279/lib/Ahoy/UnityLoaderahoy.js",
+      "file": "9662331aacd88e09.js",
+      "references": [
+        "library-source/html5-games/clahoysurvival.html"
+      ],
+      "bytes": 159236,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/alien%20sky%20invasion/Build/UnityLoader.js",
+      "file": "327d806f8bf2df13.js",
+      "references": [
+        "library-source/html5-games/clalienskyinvasion.html"
+      ],
+      "bytes": 195575,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/apesvshelium/Build/UnityLoader.js",
+      "file": "b9108a3d183e3517.js",
+      "references": [
+        "library-source/html5-games/clapesvshelium.html"
+      ],
+      "bytes": 209608,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@135501a3c705c8795f185c8cda4911ee2f14313d/AWTY/Build/UnityLoader.js",
+      "file": "ccd9959cef8e9c09.js",
+      "references": [
+        "library-source/html5-games/clarewethereyet.html"
+      ],
+      "bytes": 158244,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ports@89abf1665a415434935039694dccc55678c0f2d2/arthurs-nightmare/Build/UnityLoader.js",
+      "file": "a7df432fdbf404c3.js",
+      "references": [
+        "library-source/html5-games/clarthuarsnightmare.html",
+        "library-source/html5-games/clarthursnightmare (1).html"
+      ],
+      "bytes": 247862,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/aKevbo/lumassets@39dcf72cfd3d38396758105fcd0a41ac651a0bc1/backrooms/Build/UnityLoader.js",
+      "file": "9bdc0cb625ed9a7d.js",
+      "references": [
+        "library-source/html5-games/clbackrooms.html"
+      ],
+      "bytes": 158595,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/67-Factory/web-ports@main/badpiggies/Build/UnityLoader.js",
+      "file": "c474e0cc2d8a9453.js",
+      "references": [
+        "library-source/html5-games/clbadpiggieslatest.html"
+      ],
+      "bytes": 157168,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/ports@latest/baldi-caseoh/Build/UnityLoader.js",
+      "file": "ae599d7bf80b7215.js",
+      "references": [
+        "library-source/html5-games/clbaldicaseoh.html"
+      ],
+      "bytes": 159436,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/barry%20has%20a%20secret/Build/UnityLoader.js",
+      "file": "3404fc79cd447290.js",
+      "references": [
+        "library-source/html5-games/clbarryhasasecret.html"
+      ],
+      "bytes": 155979,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/a456pur/seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/games/bitlife/Build/UnityLoader.js",
+      "file": "3720e31961e09ee1.js",
+      "references": [
+        "library-source/html5-games/clbitlife.html"
+      ],
+      "bytes": 324823,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/Blightborne/Build/UnityLoader.js",
+      "file": "b3982cc736d39130.js",
+      "references": [
+        "library-source/html5-games/clblightborne.html"
+      ],
+      "bytes": 250518,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/malpig/HTML-Games-V2@c80f20e7b02c5a026c9fede3366477ff7efa628c/blocky-snakes/UnityLoader.js",
+      "file": "0a53745605b9b27a.js",
+      "references": [
+        "library-source/html5-games/clblockysnakes.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@3c92f983073739a8afc2dab20af78e92f1f54f3a/UI/Panels/card/UnityLoader.js",
+      "file": "e660646708af53c1.js",
+      "references": [
+        "library-source/html5-games/clcardrawing.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/cell-machine/Build/UnityLoader.js",
+      "file": "3576a756b1e7c62c.js",
+      "references": [
+        "library-source/html5-games/clcellmachine.html"
+      ],
+      "bytes": 159307,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/billybobisverycool/-m@67485d31f27df608a4407d8cf3b42fd08c65e2e4/clean-up-io/UnityLoader.js",
+      "file": "85f682e209e20c02.js",
+      "references": [
+        "library-source/html5-games/clcleanupio.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/cooldude2349/everything@main/deathchase/Build/UnityLoader.js",
+      "file": "94dd21fb01c2b392.js",
+      "references": [
+        "library-source/html5-games/cldeathchase.html"
+      ],
+      "bytes": 150037,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/amazing6ox/okimfine@main/Build/UnityLoader.js",
+      "file": "5c67bd16635d4b85.js",
+      "references": [
+        "library-source/html5-games/cldeathrun.html"
+      ],
+      "bytes": 150047,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/drift-hunters/UnityLoader2019.js",
+      "file": "694acd238c9e10b5.js",
+      "references": [
+        "library-source/html5-games/cldrifthuntersmerge.html"
+      ],
+      "bytes": 280434,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@dfa34cd79508c1af7e83c42fdfdf0340260e1638/duck%20life%206/Build/UnityLoader.js",
+      "file": "19ad61e1c6b247b8.js",
+      "references": [
+        "library-source/html5-games/clducklifespace.html"
+      ],
+      "bytes": 203947,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/enchain/Build/UnityLoader.js",
+      "file": "34b6e10341558912.js",
+      "references": [
+        "library-source/html5-games/clenchain.html"
+      ],
+      "bytes": 155979,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/Evolution/Build/UnityLoader.js",
+      "file": "c3a71af03d5f17ab.js",
+      "references": [
+        "library-source/html5-games/clevolution.html"
+      ],
+      "bytes": 157168,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/web-port@main/fears-to-fathom/home-alone/Build/UnityLoader.js",
+      "file": "9cfe00cd76ba8a5b.js",
+      "references": [
+        "library-source/html5-games/clfearstofathomhomealone.html"
+      ],
+      "bytes": 215990,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "Build/blob:null/turbo-game-data",
+        "Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/gdlite/Build/UnityLoader.js",
+      "file": "4554f5a959cd0942.js",
+      "references": [
+        "library-source/html5-games/clgdlite.html"
+      ],
+      "bytes": 160031,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/georgeandprinter/Build/UnityLoader.js",
+      "file": "d113be60153efb51.js",
+      "references": [
+        "library-source/html5-games/clgeorgeandtheprinter.html"
+      ],
+      "bytes": 208688,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/lordsofdank/GetawayShootout@9e99964c43638346680fce45d3b296408da61181/Build/UnityLoader.js",
+      "file": "f8185ac2176c5801.js",
+      "references": [
+        "library-source/html5-games/clgetawayshootout.html"
+      ],
+      "bytes": 158244,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@6a23ed7ae219e6566781b0d8486ed2b50b1ec20a/gimmie%20the%20airpod/Build/UnityLoader.js",
+      "file": "8281dbf3d532d926.js",
+      "references": [
+        "library-source/html5-games/clgimmietheairpod.html"
+      ],
+      "bytes": 208688,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/gts/Build/UnityLoader6.js",
+      "file": "7207d4d7187c4751.js",
+      "references": [
+        "library-source/html5-games/clgrandshiftauto.html"
+      ],
+      "bytes": 251835,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/grey%20box%20testing/Build/UnityLoader.js",
+      "file": "3192a67039fc9f66.js",
+      "references": [
+        "library-source/html5-games/clgrey-box-testing.html"
+      ],
+      "bytes": 159236,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/gunspin/Build/UnityLoader.js",
+      "file": "0f05888924879bf7.js",
+      "references": [
+        "library-source/html5-games/clgun-spin.html"
+      ],
+      "bytes": 159242,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/hei%24t/Build/UnityLoader.js",
+      "file": "82cd4b246cc0ba06.js",
+      "references": [
+        "library-source/html5-games/clhei$t.html"
+      ],
+      "bytes": 159236,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/gertdoro/Toolkit@80a659a20b7bb0f4e3141cc82c64286b22bb12cc/Tcl/holeUnityLoader.js",
+      "file": "a89f857a4191d83a.js",
+      "references": [
+        "library-source/html5-games/clholeio.html"
+      ],
+      "bytes": 155979,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/goobertime/math@12f2387f37be9b093112414ab5e6ab148c154c94/newgames/houseofhazards/UnityLoader.js",
+      "file": "38d3b92b9612cf16.js",
+      "references": [
+        "library-source/html5-games/clhouseofhazards.html"
+      ],
+      "bytes": 159307,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/aidenm05/pencil@d964959ea159b8b79694028bb1bc55ac240e4bd7/hoverracerdrive/Build/UnityLoader.js",
+      "file": "53fc1edca3c611e7.js",
+      "references": [
+        "library-source/html5-games/clhoverracerdrive.html"
+      ],
+      "bytes": 159511,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/dayyiq/yyy6y6y6@main/Build/UnityLoader.js",
+      "file": "98950684450a264c.js",
+      "references": [
+        "library-source/html5-games/clhuggywuggypixel.html"
+      ],
+      "bytes": 149420,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/web-port@main/jelly-drift/Build/UnityLoader.js",
+      "file": "470a3ea213998879.js",
+      "references": [
+        "library-source/html5-games/cljellydrift.html"
+      ],
+      "bytes": 256018,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "Build/blob:null/turbo-game-data",
+        "Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@f417ff6594e3b48319bc28c35b2f4335f31bc3b7/jet%20rush/UnityLoader.js",
+      "file": "c0cc473fdc7eddd1.js",
+      "references": [
+        "library-source/html5-games/cljetrush.html"
+      ],
+      "bytes": 207529,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/D3ch/hell@e1ef9902521cfadf702a3bea91ccaeb1684c0f0f/Games/just-fall/UnityLoader.js",
+      "file": "eb33a55c8495ef97.js",
+      "references": [
+        "library-source/html5-games/cljustfalllol.html"
+      ],
+      "bytes": 159436,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/web-port@main/karlson/Build/UnityLoader.js",
+      "file": "587b17e5860a7183.js",
+      "references": [
+        "library-source/html5-games/clkarlson.html"
+      ],
+      "bytes": 255678,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "Build/blob:null/turbo-game-data",
+        "Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/leader%20strike/UnityLoader.js",
+      "file": "45e0130462521e8b.js",
+      "references": [
+        "library-source/html5-games/clleaderstrike.html"
+      ],
+      "bytes": 149517,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/UGS@main/UNITY/marbleracer/Build/UnityLoader.js",
+      "file": "ecba0bc004866d28.js",
+      "references": [
+        "library-source/html5-games/clmarbleracer.html",
+        "library-source/html5-games/marbleracer.html"
+      ],
+      "bytes": 159307,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@79091a3feb921044b3597bd32cea7357b43e2d9c/masekd%20for/Build/UnityLoader.js",
+      "file": "52460cde2ca620ef.js",
+      "references": [
+        "library-source/html5-games/clmaskedforcesunlimited.html"
+      ],
+      "bytes": 150187,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/mailgma-class/mos@main/Build/UnityLoader.js",
+      "file": "3d42184a74ef702b.js",
+      "references": [
+        "library-source/html5-games/clmonstertruckportstunt.html"
+      ],
+      "bytes": 158595,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@c48a116edd88e1aa293844c8b806a8a4ea36d214/moto%20road%20rash/UnityLoader.js",
+      "file": "1e3ecedcf298e2d7.js",
+      "references": [
+        "library-source/html5-games/clmotoroadrash.html"
+      ],
+      "bytes": 205066,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/eazy-man/shHH@main/nguidle/Build/UnityLoader.js",
+      "file": "5595abb58d2963a7.js",
+      "references": [
+        "library-source/html5-games/clnguidle.html"
+      ],
+      "bytes": 150037,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/nullkevin/Build/UnityLoader.js",
+      "file": "a5a450c644e3986f.js",
+      "references": [
+        "library-source/html5-games/clnullkevin.html"
+      ],
+      "bytes": 159236,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Susorodni/swfgalaxy@a8aa0dc864c6e9b964ab966bc49f9b077401b8fb/games/pingpongchaos/Build/UnityLoader.js",
+      "file": "93907ac030e4c8bb.js",
+      "references": [
+        "library-source/html5-games/clpingpongchaos.html"
+      ],
+      "bytes": 158244,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/russ-ilove/4@main/UnityLoader.js",
+      "file": "c16b8d4550f00708.js",
+      "references": [
+        "library-source/html5-games/clpixelbattlegroundsio.html"
+      ],
+      "bytes": 159104,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/pixel%20combat%202/UnityLoader.js",
+      "file": "5dbbf80df34ff030.js",
+      "references": [
+        "library-source/html5-games/clpixelcombat2.html"
+      ],
+      "bytes": 159307,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/plangman/Build/UnityLoader.js",
+      "file": "8dfa5ea142c551de.js",
+      "references": [
+        "library-source/html5-games/clplangman.html"
+      ],
+      "bytes": 155356,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/flight%20sim/Build/UnityLoader.js",
+      "file": "4c5502d50676678d.js",
+      "references": [
+        "library-source/html5-games/clrealflightsim.html"
+      ],
+      "bytes": 150163,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/redhanded/Build/UnityLoader.js",
+      "file": "a59081d683b6c164.js",
+      "references": [
+        "library-source/html5-games/clredhanded.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/roller%20baller/Build/UnityLoader.js",
+      "file": "ca91c66de31e8f49.js",
+      "references": [
+        "library-source/html5-games/clrollerballer.html"
+      ],
+      "bytes": 208688,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/rolling-sky/Build/UnityLoader.js",
+      "file": "95c4dba2f5d88871.js",
+      "references": [
+        "library-source/html5-games/clrollingsky.html"
+      ],
+      "bytes": 204026,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/eazy-man/shHH@main/unity/wither/Build/UnityLoader.js",
+      "file": "00e706aa3525daae.js",
+      "references": [
+        "library-source/html5-games/clrunfromwitheredfox.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/russian-cardriver/Build/UnityLoader.js",
+      "file": "5d4faeb6e20cba32.js",
+      "references": [
+        "library-source/html5-games/clrussiancardriver.html"
+      ],
+      "bytes": 156042,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/scrap-metal/scrapUnityLoader.js",
+      "file": "393fb8ac64e3e32c.js",
+      "references": [
+        "library-source/html5-games/clscrapmetal3.html"
+      ],
+      "bytes": 158595,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/school-management-google/readme@main/Build/UnityLoader.js",
+      "file": "0933e2b2682bbf9b.js",
+      "references": [
+        "library-source/html5-games/clsevendays.html"
+      ],
+      "bytes": 158595,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/shredsauce/legacy_shredsauce/Build/UnityLoader.js",
+      "file": "55ea2cc28800b6fb.js",
+      "references": [
+        "library-source/html5-games/clshredsauce.html"
+      ],
+      "bytes": 208736,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/galaxyking16/r@main/Build/UnityLoader.js",
+      "file": "9fd70fd7dcddde6a.js",
+      "references": [
+        "library-source/html5-games/clsixcatsunder.html"
+      ],
+      "bytes": 159236,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/web-port@main/slender/Build/UnityLoader.js",
+      "file": "b387759f95ea5c86.js",
+      "references": [
+        "library-source/html5-games/clslenderman.html"
+      ],
+      "bytes": 239951,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "Build/blob:null/turbo-game-data",
+        "Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/slide-in-the-woods-/Build/UnityLoader.js",
+      "file": "4dfd2c39423cdf79.js",
+      "references": [
+        "library-source/html5-games/clslideinthewoods.html"
+      ],
+      "bytes": 159307,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/slope%203/UnityLoader.js",
+      "file": "4886bd77275c163f.js",
+      "references": [
+        "library-source/html5-games/clslope3.html"
+      ],
+      "bytes": 159510,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Vrkids2009/snowrider3d@6b7c2b9167b592528b221428414e63f06c4640b9/Build/UnityLoader.js",
+      "file": "a88f46bcb82aa35d.js",
+      "references": [
+        "library-source/html5-games/clsnowrider.html"
+      ],
+      "bytes": 156644,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/drippy-cat/snowrider3D@c82fe583cbffafa502b0aa3ed2da0053972e0c80/Build/UnityLoader.js",
+      "file": "64d858a6ec77201f.js",
+      "references": [
+        "library-source/html5-games/clsnowriderrrr.html"
+      ],
+      "bytes": 156644,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/CycloKid/sonic-revert@938c293b495adfec91a0b199700e3d2cd22c0252/Build/UnityLoader.js",
+      "file": "fd39d8f3b1611f75.js",
+      "references": [
+        "library-source/html5-games/clsonicrevert.html"
+      ],
+      "bytes": 159510,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@269dbddebd3c6b95b4db7467fef7935f4e36a6d3/stackball.io/Build/UnityLoader.js",
+      "file": "6381db81e5e7d420.js",
+      "references": [
+        "library-source/html5-games/clstackballio.html"
+      ],
+      "bytes": 159256,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/station%20141/Build/UnityLoader.js",
+      "file": "a32c4c030b5df037.js",
+      "references": [
+        "library-source/html5-games/clstation141.html"
+      ],
+      "bytes": 208778,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/Tanuki-Sunset@master/Build/UnityLoader.js",
+      "file": "ede1cead7f85017b.js",
+      "references": [
+        "library-source/html5-games/cltanukisunset.html"
+      ],
+      "bytes": 281237,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://cdn.jsdelivr.net/gh/bubbls/Tanuki-Sunset@54593ffd2ff9f4b36edddb0331e2b6fd9cf236d0/Build/blob:null/turbo-game-data",
+        "https://cdn.jsdelivr.net/gh/bubbls/Tanuki-Sunset@54593ffd2ff9f4b36edddb0331e2b6fd9cf236d0/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://cdn.jsdelivr.net/gh/bubbls/Tanuki-Sunset@54593ffd2ff9f4b36edddb0331e2b6fd9cf236d0/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://cdn.jsdelivr.net/gh/bubbls/Tanuki-Sunset@54593ffd2ff9f4b36edddb0331e2b6fd9cf236d0/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/tempoverdose/Build/UnityLoader.js",
+      "file": "602a446383c8aad5.js",
+      "references": [
+        "library-source/html5-games/cltempoverdose.html"
+      ],
+      "bytes": 159510,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@8dc0657056a87e002a099cad5854900c74be1659/toasterball/Build/UnityLoader.js",
+      "file": "0936301095ae69c4.js",
+      "references": [
+        "library-source/html5-games/cltoasterball.html"
+      ],
+      "bytes": 158595,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/tomb/UnityLoader.js",
+      "file": "c1b169bb8922a941.js",
+      "references": [
+        "library-source/html5-games/cltotm.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@c0f81b71d9a45688dcdb9a7a0303ebe5c424e4f2/traffic%20jam%203d/Build/UnityLoader.js",
+      "file": "a69315735ffb06a4.js",
+      "references": [
+        "library-source/html5-games/cltrafficjam3d.html"
+      ],
+      "bytes": 156644,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@79091a3feb921044b3597bd32cea7357b43e2d9c/indian-truck-simulator-3d-gh-pages/Build/UnityLoader.js",
+      "file": "bace9dc402ea6d8f.js",
+      "references": [
+        "library-source/html5-games/cltrucksim.html"
+      ],
+      "bytes": 158595,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Ven0mYT/tube-jumpers-ven0m@d7e473d1bbb19c421a23516ef2202bda21e8c3f0/js/UnityLoader.js",
+      "file": "2518e75e0b580d02.js",
+      "references": [
+        "library-source/html5-games/cltubejumpers.html"
+      ],
+      "bytes": 265686,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/web-ports/baldi-mods@main/t3/Build/UnityLoader.js",
+      "file": "71b24301090b086c.js",
+      "references": [
+        "library-source/html5-games/cltungtungbasics.html"
+      ],
+      "bytes": 159510,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/TunnelRushUnblocked/TunnelRushUnblocked.github.io@5aa57188d11cf93b218c7fd44989c14de5c90113/Build/unityloader49.js",
+      "file": "33929c2ae2c3a8d0.js",
+      "references": [
+        "library-source/html5-games/cltunnelrush.html"
+      ],
+      "bytes": 155946,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/poopoofartnut/ppfn@6cf67e43152d74965ab5fde3922e61dbd353c054/projects/tunnel-rush/UnityLoader.js",
+      "file": "cc124e330963ec4f.js",
+      "references": [
+        "library-source/html5-games/cltunnelrushbetter.html"
+      ],
+      "bytes": 155955,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/tyler6974/TwoBall3D@2ab5c5b3871c0a240842a0c584208340743bad09/files/games/other/TwoBall3D/Build/UnityLoader.js",
+      "file": "9dd7a42ba82ebcaf.js",
+      "references": [
+        "library-source/html5-games/cltwoball3d.html"
+      ],
+      "bytes": 157128,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/Vapor%20Trails/Build/UnityLoader.js",
+      "file": "e5fbc2df96ad0707.js",
+      "references": [
+        "library-source/html5-games/clvaportrails.html"
+      ],
+      "bytes": 159307,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@54a510a80184f0d5fe1865ddddede69de1df1ef6/winter%20falling/Build/UnityLoader.js",
+      "file": "96cb034eed876098.js",
+      "references": [
+        "library-source/html5-games/clwinterfalling.html"
+      ],
+      "bytes": 208736,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "https://example.org/Build/blob:null/turbo-game-data",
+        "https://example.org/Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "https://example.org/Build/game.data"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/web-port@master/yandere-simulator/Build/UnityLoader.js",
+      "file": "9d5e7af72974a1d6.js",
+      "references": [
+        "library-source/html5-games/clyanderesimulator.html"
+      ],
+      "bytes": 255247,
+      "passed": true,
+      "correctedBlob": true,
+      "before": [
+        "Build/blob:null/turbo-game-data",
+        "Build/data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ],
+      "after": [
+        "blob:null/turbo-game-data",
+        "data:application/octet-stream;base64,AA==",
+        "https://example.org/game.wasm",
+        "Build/game.data"
+      ]
+    }
+  ]
+}

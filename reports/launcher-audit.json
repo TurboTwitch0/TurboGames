@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-17T23:45:24.558818+00:00",
+  "generated_at": "2026-10-20T18:59:26.203219+00:00",
   "method": "Static HTML scan of every imported launcher; remote runtime dependencies and game play not verified.",
   "file_count": 3114,
-  "total_bytes": 978561003,
+  "total_bytes": 978561716,
   "summary": {
     "source-template": 19,
     "structural-pass": 3061,
@@ -72893,7 +72893,7 @@
     },
     {
       "path": "library-source/html5-games/clyanderesimulator.html",
-      "bytes": 4636,
+      "bytes": 5349,
       "issues": [],
       "external_resource_count": 1,
       "external_resources": [

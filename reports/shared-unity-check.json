@@ -1,0 +1,37 @@
+{
+  "method": "Real public Unity assets downloaded with TLS verification, served locally to avoid cloud browser CA limitation. Startup check, not full playthrough.",
+  "results": [
+    {
+      "version": "before",
+      "started": false,
+      "fullscreen": false,
+      "errors": [
+        "An error occurred running the Unity content on this page. See your browser JavaScript console for more info. The error was:\nScript error.",
+        "Offset is outside the bounds of the DataView"
+      ],
+      "bad": [
+        {
+          "url": "http://127.0.0.1:8012/__unity-test/Build/blob:null/955ae2d8-c538-4f16-9bf0-57a788a4f97f",
+          "status": 404
+        }
+      ],
+      "state": {
+        "text": "LOADING... (5/5)\nLOADING...",
+        "canvas": true,
+        "webgl": true
+      }
+    },
+    {
+      "version": "after",
+      "started": true,
+      "fullscreen": true,
+      "errors": [],
+      "bad": [],
+      "state": {
+        "text": "LOADING...",
+        "canvas": true,
+        "webgl": true
+      }
+    }
+  ]
+}

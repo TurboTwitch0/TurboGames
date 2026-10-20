@@ -11620,11 +11620,12 @@
     "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails."
   },
   "library-source/emulated/gba/cltetrisgba.html": {
-    "image": "assets/covers/illustrated/tetrisgba-47697e04a5b0.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "puzzle"
+    "image": "assets/covers/downloaded/tetris-7f291b783964.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/733.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Nintendo",
+    "matchedFrom": "library-source/emulated/cltetrisgb.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/emulated/gba/clthepit.html": {
     "image": "assets/covers/illustrated/the-pit-b50b2de9f98b.svg",
@@ -13399,11 +13400,12 @@
     "motif": "horror"
   },
   "library-source/emulated/nes/clastynax.html": {
-    "image": "assets/covers/illustrated/astynax-0cb0e2814f6e.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "console"
+    "image": "assets/covers/emulator/8ff92f5db26a27f08af3.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Astyanax%20%28USA%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "matchedFrom": "library-source/emulated/clastyanax.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/emulated/nes/clballoonfight.html": {
     "image": "assets/covers/emulator/66a463d4a80913dcf0b7.webp",
@@ -19245,11 +19247,12 @@
     "attribution": "Game artwork from GN Math cover catalog; creator: McLeodGaming"
   },
   "library-source/flash/clsupersmashflash0.8.html": {
-    "image": "assets/covers/illustrated/supersmashflash-v0-8-0181e7cafb6c.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "arcade"
+    "image": "assets/covers/downloaded/super-smash-flash-9b62c5457039.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/647.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: McLeodGaming",
+    "matchedFrom": "library-source/flash/clsupersmashflash.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/flash/clsupersmashflash2.html": {
     "image": "assets/covers/illustrated/super-smash-flash-2-e44a8104cbe4.svg",
@@ -19675,11 +19678,12 @@
     "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails."
   },
   "library-source/emulated/clphantasystar1.html": {
-    "image": "assets/covers/illustrated/phantasy-star-1-ac8e0744cfeb.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "space"
+    "image": "assets/covers/emulator/40106ea65dc44351cb49.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Master_System_-_Mark_III/master/Named_Boxarts/Phantasy%20Star%20%28World%29%20%28En%29%20%28Sega%20Ages%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "matchedFrom": "library-source/emulated/segaMS/clphantasystar.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/emulated/clwinterolympics.html": {
     "image": "assets/covers/emulator/44e3e49b85ae58f31255.webp",
@@ -19781,11 +19785,12 @@
     "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails."
   },
   "library-source/emulated/clmariopartyadvanced.html": {
-    "image": "assets/covers/illustrated/mario-party-advanced-e51aa81f8577.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "platform"
+    "image": "assets/covers/emulator/13190199f3d1f1cbc6e4.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Mario%20Party%20Advance%20%28USA%29%20%28Virtual%20Console%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "matchedFrom": "library-source/emulated/gba/clMario Party Advance.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/emulated/clmmbn5tc.html": {
     "image": "assets/covers/emulator/468ca63420969f89539a.webp",
@@ -19879,11 +19884,12 @@
     "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails."
   },
   "library-source/emulated/cldkccompetition.html": {
-    "image": "assets/covers/illustrated/donkey-kong-country-1-competition-f8aec4149b0a.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "console"
+    "image": "assets/covers/emulator/96276b2d36fb90a727fd.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Donkey%20Kong%20Country%20-%20Competition%20Cartridge%20%28USA%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "matchedFrom": "library-source/emulated/snes/cldkccompetitioncart.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/emulated/clihateyousmw.html": {
     "image": "assets/covers/illustrated/i-hate-you-3fe86658d7ec.svg",
@@ -20126,11 +20132,12 @@
     "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails."
   },
   "library-source/html5-games/clpokeblack2.html": {
-    "image": "assets/covers/illustrated/pokeblack2-97f966aaf93c.svg",
-    "type": "illustrated",
-    "source": "tools/import_artwork.py",
-    "attribution": "Original TurboGames category illustration; not official game cover artwork",
-    "motif": "adventure"
+    "image": "assets/covers/emulator/b5d915335e27e0243cac.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Pokemon%20-%20Black%20Version%202%20%28USA%2C%20Europe%29%20%28NDSi%20Enhanced%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "matchedFrom": "library-source/emulated/nds/clpokeblack2.html.html",
+    "matchMethod": "Identical game asset URL and emulator core/category"
   },
   "library-source/html5-games/clai.html": {
     "image": "assets/covers/illustrated/ai-c716f94198ae.svg",
