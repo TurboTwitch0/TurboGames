@@ -8,6 +8,7 @@
   const count = document.querySelector("#result-count");
   const tabs = [...document.querySelectorAll(".tab")];
   const dialog = document.querySelector("#game-dialog");
+  const playerSurface = document.querySelector("#player-surface");
   const frame = document.querySelector("#game-frame");
   const dialogTitle = document.querySelector("#dialog-title");
   const playerStatus = document.querySelector("#player-status");
@@ -207,6 +208,7 @@
   document.querySelector("#close-dialog").addEventListener("click", () => dialog.close());
   document.querySelector("#reload-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
   dialog.addEventListener("close", () => {
+    if (document.fullscreenElement === playerSurface) document.exitFullscreen().catch(() => {});
     flushSave();
     loadController?.abort();
     activeItem = undefined;
@@ -219,7 +221,7 @@
   document.querySelector("#fullscreen-button").addEventListener("click", async () => {
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
-      else await dialog.requestFullscreen();
+      else await playerSurface.requestFullscreen();
     } catch {
       playerStatus.textContent = "Fullscreen is blocked by this page. Use Open in new tab for the full arcade.";
       openTab.focus();

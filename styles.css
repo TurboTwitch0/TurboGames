@@ -8,3 +8,6 @@
 
 /* Keep ads separate from game navigation and player controls. */
 .ad-placement{margin:36px 0 12px;padding:16px 0 24px;border-bottom:1px solid var(--line);min-height:120px;max-width:100%}.ad-label{margin:0 0 16px;text-align:center;color:var(--muted);font-size:10px;letter-spacing:1px;text-transform:uppercase}.ad-placement .adsbygoogle{min-height:90px}.is-embedded .ad-placement{display:none!important}
+
+/* A dialog cannot be a Fullscreen API target; its inner surface can. */
+.player-surface{position:relative;width:100%;height:100%;background:#111116}.player-surface:fullscreen{width:100vw;height:100vh;background:#111116}
