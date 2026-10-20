@@ -22,6 +22,10 @@ Import `TurboTwitch0/TurboGames` into Netlify using branch `main`. Leave the bui
 
 Keep `_headers` in the published root. It includes the Ruffle WASM CORS fix required by the isolated Flash player. Uploading to GitHub alone does not update a manually deployed Netlify site; connect the existing Netlify project to this repository to enable automatic deployments.
 
+## Advertising
+
+An optional, labeled AdSense display placement is prepared but disabled. See **MONETIZATION.md** for account approval, public ad IDs, consent requirements and activation. No advertising revenue is active until those steps are complete.
+
 ## Images and repaired sources
 
 Every catalog entry has a local image: sourced artwork where available and original illustrated covers for other titles. Attribution and repeatable import scripts are described in **ARTWORK.md**.

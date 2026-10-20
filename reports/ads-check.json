@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "method": "Local browser checks with ad network mocked; no live ad traffic or earnings.",
+  "checks": [
+    "Disabled by default",
+    "Reject invalid IDs",
+    "Skip Google Sites mode",
+    "One placement; no refresh on interactions",
+    "Ad network failure does not block games",
+    "No-fill placement collapses"
+  ]
+}

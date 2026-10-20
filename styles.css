@@ -5,3 +5,6 @@
 @media(max-width:520px){.is-embedded .site-shell{padding:0 12px}.is-embedded .topbar{height:auto;min-height:112px;padding:12px 0}.is-embedded .searchbox{width:100%;flex-basis:100%}.dialog-bar{padding:0 8px}.dialog-title-wrap h2{max-width:40vw}.dialog-actions{gap:4px}.icon-button{width:27px;height:29px}.footer{height:auto;min-height:90px;flex-wrap:wrap;padding:20px 0}.footer>a:not(.brand){font-size:10px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .source-unavailable .card-category{background:#643e18ed;color:#fff0d8}
+
+/* Keep ads separate from game navigation and player controls. */
+.ad-placement{margin:36px 0 12px;padding:16px 0 24px;border-bottom:1px solid var(--line);min-height:120px;max-width:100%}.ad-label{margin:0 0 16px;text-align:center;color:var(--muted);font-size:10px;letter-spacing:1px;text-transform:uppercase}.ad-placement .adsbygoogle{min-height:90px}.is-embedded .ad-placement{display:none!important}

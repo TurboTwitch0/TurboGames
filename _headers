@@ -22,6 +22,12 @@
 /app.js
   Cache-Control: public, max-age=0, must-revalidate
 
+/ads-config.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/ads.js
+  Cache-Control: public, max-age=0, must-revalidate
+
 /styles.css
   Cache-Control: public, max-age=0, must-revalidate
 
