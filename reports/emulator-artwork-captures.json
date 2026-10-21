@@ -1,0 +1,3605 @@
+{
+  "generatedAt": "2026-10-21T01:48:28.264Z",
+  "attempted": 432,
+  "captured": 216,
+  "failed": 216,
+  "results": [
+    {
+      "id": "library-source/emulated/arcade/clFinalFight30thAnniversaryHack.html",
+      "title": "Final fight30th anniversary hack",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clghoulsandghosts.html",
+      "title": "Ghoulsandghosts",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-arcade-clghoulsandghosts.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/cljjbahftf.htm",
+      "title": "Jjbahftf",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/arcade/clneodrift.html",
+      "title": "Neodrift",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/arcade/clSf2Rainbowedition.html",
+      "title": "Sf2rainbowedition",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clSfiii4n.html",
+      "title": "Street Fighter 3 - 4rd Strike",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/arcade/clsfiiinewgen.html",
+      "title": "Street Fighter 3 - New Generation",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/arcade/clshadowdancer.html",
+      "title": "Shadow Dancer: The Secret of Shinobi",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clsimpsonsarcade.html",
+      "title": "Simpsons Arcade",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clSSF2Arcade.html",
+      "title": "Ssf2arcade",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clsuperstreetfighter2turbojp.html",
+      "title": "Super Street Fighter 2 Turbo JP",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clsvcchaosplus.html",
+      "title": "SVC Chaos Plus",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+      "title": "Tetris - The Grandmaster 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/cltmnt2arc.html",
+      "title": "Teenage Mutant Ninja Turtles 2: Turtles In Time",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-arcade-cltmnt2arc.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/cltmntarc.html",
+      "title": "Teenage Mutant Ninja Turtles 1",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-arcade-cltmntarc.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clwbml.html",
+      "title": "Wonder Boy Monster Land",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-arcade-clwbml.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/arcade/clXMenChildrenOfTheAtomArcade.html",
+      "title": "Xmen children of the atom arcade",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-arcade-clXMenChildrenOfTheAtomArcade.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/bootleg/cl115in1.html",
+      "title": "115 in 1",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/bootleg/clgranddad.html",
+      "title": "7 Grand Dad",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-bootleg-clgranddad.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/bootleg/clnotfinalfantasy7.html",
+      "title": "Notfinalfantasy7",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-bootleg-clnotfinalfantasy7.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/dos/cldaggerfall.html",
+      "title": "The Elder Scrolls 2: Daggerfall",
+      "ok": false,
+      "error": "emulator still loading",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/dos/clzdoom.html",
+      "title": "ZDoom",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-dos-clzdoom.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clakumanorgaiden.html",
+      "title": "Akumanor Gaiden",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clakumanorgaiden.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clapotris.html",
+      "title": "Apotris",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clapotris.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clbalatrogba.html",
+      "title": "Balatro",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clbalatrogba.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clcommanderkeen4.html",
+      "title": "Commander Keen 4",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clcommanderkeen4.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clcommanderkeen5.html",
+      "title": "Commander Keen 5",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clcommanderkeen5.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clcommanderkeen6.html",
+      "title": "Commander Keen 6",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clcommanderkeen6.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cldigdug.html",
+      "title": "Dig Dug",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cldigdug.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cldonkeykong94.html",
+      "title": "Donkey Kong 94",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cldonkeykong94.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cldragonwarriormonsters.html",
+      "title": "Dragon Warrior Monsters",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cldragonwarriormonsters.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clearthbound3.html",
+      "title": "Earthbound 3",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clFIFA07.html",
+      "title": "FIFA 07",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clFIFA2000 (1).html",
+      "title": "Fifa2000 (1)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clFIFA2000-1-.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clfifa2000.html",
+      "title": "FIFA 2000",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clfifa2000.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clfinalfantasylegend2.html",
+      "title": "Final Fantasy Legend 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clfinalfantasylegend2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clFleurdeLis.html",
+      "title": "Fleur de Lis (video)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clFleurdeLis.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clgameandwatchcollection.html",
+      "title": "Game And Watch Collection",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clgameandwatchcollection.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clgamewatchgallery3.html",
+      "title": "Game and Watch Gallery 3",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clgamewatchgallery3.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clgrimacebirthday.html",
+      "title": "Grimace’s Birthday",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clgrimacebirthday.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clgta2.html",
+      "title": "Grand Theft Auto 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clgta2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clhalocombatdevolved.html",
+      "title": "Halo Combat Devolved",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clhalocombatdevolved.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clharvestmoon.html",
+      "title": "Harvest Moon",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clharvestmoon.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clharvestmoon2.html",
+      "title": "Harvest Moon 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clharvestmoon2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clkirbyandtheamzingmirror.html",
+      "title": "Kirby and the Amazing Mirror",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clkirbyandtheamzingmirror.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clkirbysdreamland.html",
+      "title": "Kirby’s Dream Land",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clkirbysdreamland.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clkirbysdreamland2.html",
+      "title": "Kirby’s Dream Land 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clkirbysdreamland2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clkirbytiltandtumble.html",
+      "title": "Kirby Tilt N Tumble",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clkirbytiltandtumble.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clklonoaheroes.html",
+      "title": "Klonoa Heroes - The Legendary Star Medal",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clklonoaheroes.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clLegacyOfGoku.html",
+      "title": "Dragon Ball Z - The Legacy of Goku 1/2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clLegacyOfGoku.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cllinksawakeningdx.html",
+      "title": "Linksawakeningdx",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cllinksawakeningdx.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cllozlinkawakening.html",
+      "title": "Lozlinkawakening",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cllozlinkawakening.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cllozminishcap.html",
+      "title": "The Legend of Zelda - Minish Cap",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cllozminishcap.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cllozoracleofages.html",
+      "title": "Legend of Zelda, the - Oracle of Ages",
+      "ok": false,
+      "error": "Restart Pause Save State Load State Control Settings Cheats Cache Manager Export Save File Import Save File Netplay Settings Enter Fullscreen Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/cllozoracleofseasons.html",
+      "title": "Legend of Zelda, the - Oracle of Seasons",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-cllozoracleofseasons.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clmaddennfl.html",
+      "title": "Madden NFL",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clmaddennfl.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clmarioandluigisuperstarsaga.html",
+      "title": "Mario & Luigi - Superstar Saga",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clmarioandluigisuperstarsaga.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clmariotennisgb.html",
+      "title": "Mario Tennis",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clmariotennisgb.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clmegaman2gba.html",
+      "title": "Mega Man 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clmegaman2gba.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clmegaman5gb.html",
+      "title": "Mega Man 5",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clmegaman5gb.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clmetroid2.html",
+      "title": "Metroid 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clmetroid2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clopposumcountry.html",
+      "title": "Opposumcountry",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clopposumcountry.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clpokemonvolume1.html",
+      "title": "Pokemonvolume1",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clpokemonvolume2.html",
+      "title": "Pokemonvolume2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clpokemonvolume3.html",
+      "title": "Pokemonvolume3",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clpokemonvolume4.html",
+      "title": "Pokemonvolume4",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clpokepicross.html",
+      "title": "Pokemon Picross",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clpokepicross.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clpyrotoad.html",
+      "title": "Pyrotoad",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clshantaegb.html",
+      "title": "Shantae",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clskong.html",
+      "title": "Hollow Knight Silksong Demake",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clskong.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsmadvance3.html",
+      "title": "Super Mario Advance 3",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clsmadvance3.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsmbdx.html",
+      "title": "Super Mario Bros Deluxe",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/gba/clsonicadvance2sp.html",
+      "title": "Sonic Advance 2 SP",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clsonicadvance2sp.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsupermariobros3.html",
+      "title": "Super Mario Advance 4",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clsupermariobros3.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsupermarioland.html",
+      "title": "Super Mario Land",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsupermarioland2 (1).html",
+      "title": "Supermarioland2 (1)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clsupermarioland2-1-.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsupermarioland2dx.html",
+      "title": "Super Mario Land 2 DX",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clsupermarioland2dx.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clsupermariolanddx.html",
+      "title": "Super Mario Land 1 DX",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clsupermariolanddx.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clthepit.html",
+      "title": "The Pit",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clwarioland1.html",
+      "title": "Wario Land 1 - Super Mario Land 3",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-clwarioland1.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/clwarioland3.html",
+      "title": "Wario Land 3",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/gba/simpsonsroadrangeGBA.html",
+      "title": "Simpsonsroadrange gba",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-gba-simpsonsroadrangeGBA.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/Genesis Plus/clsonicmegamix4.html",
+      "title": "Sonic Megamix 4.0",
+      "ok": false,
+      "error": "Restart Pause Save State Load State Control Settings Cheats Cache Manager Export Save File Import Save File Netplay Settings Enter Fullscreen Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/Genesis Plus/clsonicmegamix5.0aLEAKED.html",
+      "title": "Sonicmegamix5.0a leaked",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clallbossesin1.html",
+      "title": "Paper Mario All Bosses In 1 Battle",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clanimalforestn64.html",
+      "title": "Animal Forest",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clanimalforestn64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clB3313.html",
+      "title": "B3313 (version 0.7)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clb3313unabandonedA2.html",
+      "title": "B3313 Unabandoned A2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clb3313unabandonedA2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/cldanganronpa64.html",
+      "title": "Danganronpa64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-cldanganronpa64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clddlc64.html",
+      "title": "Doki Doki Literature Club 64",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clkirby64.html",
+      "title": "Kirby 64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clkirby64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clmajorasmaskredux.html",
+      "title": "The Legend of Zelda Majora’s Mask Redux",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clmajorasmaskus.html",
+      "title": "The Legend of Zelda Majora’s Mask (US)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clmariobuilder64.html",
+      "title": "Mariobuilder64",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clmidwaysgreatesthitsn64.html",
+      "title": "Midwaysgreatesthitsn64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clmidwaysgreatesthitsn64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clmk64ampedup.html",
+      "title": "Mario Kart 64 - Amped Up",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "GamepadHandler is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clmo64.html",
+      "title": "Mario Odyssey",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clnatsuki64.html",
+      "title": "Natsuki (DDLC) 64",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clOotMasterQuest.html",
+      "title": "The Legend of Zelda Ocarina of Time Master Quest",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clpapermarioblackpit.html",
+      "title": "Paper Mario Black Pit",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clpapermarioblackpit.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clPaperMarioDSE.html",
+      "title": "Paper Mario - Dark Star Edition",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "nipplejs is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clPaperMarioPracticeHack.html",
+      "title": "Paper Mario Practice Hack",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clpapermariopromode.html",
+      "title": "Paper Mario Pro Mode",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clpapermariottyd.html",
+      "title": "Paper Mario-TTYD Edition",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clportal.html",
+      "title": "Portal",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clportal.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clquake64.html",
+      "title": "Quake 64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clquake64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsimcity64.html",
+      "title": "SimCity 64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsimcity64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64greenstars.html",
+      "title": "Super Mario 64 - The Green Stars",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64hiddenstars.html",
+      "title": "Super Mario 64 The Hidden Stars",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsm64hiddenstars.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clSM64Land.html",
+      "title": "Super Mario 64 Land",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64lastimpact.html",
+      "title": "Super Mario 64 Last Impact",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64liminaldream.html",
+      "title": "Super Mario 64 - Liminal Dream",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsm64liminaldream.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64oot.html",
+      "title": "Super Mario 64: Ocarina of Time",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64sapphire.html",
+      "title": "Super Mario 64 - Sapphire",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64yscaled.html",
+      "title": "Super Mario 64 Y Scaled",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsm64yscaled.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsmashremix.html",
+      "title": "Smash Remix",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clsmashremix2.0.1.html",
+      "title": "Smash Remix 2.0.1",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clsomari64.html",
+      "title": "Somari 64",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clSonicInSM64.html",
+      "title": "Sonic in Super Mario 64",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clSonicInSM64Plus.html",
+      "title": "Sonic in Super Mario 64 Plus",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clsonicmushroomblast.html",
+      "title": "Sonic Mushroom Blast",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/n64/clsupermario74.html",
+      "title": "Super Mario 74",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsupermario74.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsupermariostarroad.html",
+      "title": "Supermariostarroad",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsupermariostarroad.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsupermariostarroadretooled.html",
+      "title": "Supermariostarroadretooled",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clsupermariosunshine64.html",
+      "title": "Supermariosunshine64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clsupermariosunshine64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/cltelocation.html",
+      "title": "Telocation",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-cltelocation.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clwaluigitacostand.html",
+      "title": "Waluigi’s Taco Stand",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clwaluigitacostand.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clworldcup98.html",
+      "title": "FIFA World Cup 98",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clworldcup98.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/n64/clZeldaIndigoch2.html",
+      "title": "Zelda Indigo - Chapter 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-n64-clZeldaIndigoch2.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clagesofempire.html",
+      "title": "Ages Of Empire",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clbotwds.html",
+      "title": "Breath of the Wild DS",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clcsds.html",
+      "title": "Counter Strike DS",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clctgpnitro.html",
+      "title": "CTGP Nitro",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nds-clctgpnitro.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/cldragonquest5ds.html",
+      "title": "Dragon Quest V",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clincrediblesds.html",
+      "title": "Incredibles Rise of the Underminer",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "GamepadHandler is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clinsidestory.html",
+      "title": "Mario & Luigi - Bowser's Inside Story",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/cllozphantomhourglass.html",
+      "title": "Legend of Zelda: Phantom Hourglass",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clnewersmbds.html",
+      "title": "Newer Super Mario Bros DS",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nds-clnewersmbds.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clnintendogslab.html",
+      "title": "Nintendogs - Lab & Friends",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clnsmbuds.html",
+      "title": "New Super Mario Bros U DS",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nds-clnsmbuds.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clnsmbwds.html",
+      "title": "New Super Mario Bros Wii DS",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Unexpected identifier 'ArrayBuffer'"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clpartnersintime.html",
+      "title": "Mario & Luigi - Partners In Time",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokeblack.html",
+      "title": "Pokeblack",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clpokeblack2experimental.html",
+      "title": "Pokeblack2experimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokeblackexperimental.html",
+      "title": "Pokeblackexperimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokeblazeblack2redux.html",
+      "title": "Pokemon Blaze Black 2 Redux",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokediamondexperimental.html",
+      "title": "Pokediamondexperimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clpokegoldenshield.html",
+      "title": "Pokemon Golden Shield",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokeheartgoldexperimental.html",
+      "title": "Pokeheartgoldexperimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clPokeHeartgoldGenerations.html",
+      "title": "Pokemon Heartgold Generations",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokejetblack.html",
+      "title": "Pokemon Jet Black",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokemirrorgold.html",
+      "title": "Pokemon Mirror Gold",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokepearlexperimental.html",
+      "title": "Pokepearlexperimental",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nds-clpokepearlexperimental.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nds/clpokeplatinumrandomized.html",
+      "title": "Pokemon - Platinum Version Randomized",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokerenegadeplat.html",
+      "title": "Pokemon Renegade Platinum",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokesoulsilverexperimental.html",
+      "title": "Pokesoulsilverexperimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokevoltwhite2redux.html",
+      "title": "Pokemon Volt White 2 Redux",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokewhite2experimental.html",
+      "title": "Pokewhite2experimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clpokewhiteexperimental.html",
+      "title": "Pokewhiteexperimental",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nds/clsmgds.html",
+      "title": "Super Mario Galaxy DS",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nds-clsmgds.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/Neo Geo Pocket/clfatalfuryfirstcontact.html",
+      "title": "Fatal Fury - First Contact",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-Neo-Geo-Pocket-clfatalfuryfirstcontact.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/cl100in1nes.html",
+      "title": "100 in 1",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-cl100in1nes.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clannsmb.html",
+      "title": "All night nippon super mario bros",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clannsmb.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clcelestemariodx.html",
+      "title": "Celeste Mario DX",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clcelestemariodx.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/cldemonblade.html",
+      "title": "Demon Blade",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-cldemonblade.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clDKNESCollection.html",
+      "title": "Donkey Kong Collection",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clDKNESCollection.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidash1.2.8.html",
+      "title": "Famidash 1.2.8",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidash2alpha.html",
+      "title": "Famidash2alpha",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidashAlbum1.2.8.html",
+      "title": "Famidash album1.2.8",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "EmulatorJS is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidashBSides1.2.8.html",
+      "title": "Famidash bsides1.2.8",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidashCSides1.2.8.html",
+      "title": "Famidash csides1.2.8",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clfamidashCSides1.2.8.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidashDSides1.2.8.html",
+      "title": "Famidash dsides1.2.8",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clfamidashESides1.2.8.html",
+      "title": "Famidash esides1.2.8",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clfamidashESides1.2.8.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clmariolostlevels.html",
+      "title": "Super Mario Bros. 2 - The Lost Levels",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clmariolostlevels.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/nes/clmvpbaseball.html",
+      "title": "MVP Baseball",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clmvpbaseball.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clsonicinsmw.html",
+      "title": "Sonic in Super Mario World",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clsonicinsmw.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clsupermario3mix.html",
+      "title": "Super Mario Bros. 3 Mix",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clsupertiltbros.html",
+      "title": "Super Tilt Bros",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clsupertiltbros.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/nes/clzelda2thelegendoflink.html",
+      "title": "Zelda 2 the Legend of Link",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-nes-clzelda2thelegendoflink.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clA Walk in The Forest (v1.0).html",
+      "title": "A walk in the forest (v1.0)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clA-Walk-in-The-Forest-v1.0-.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clAcko's Mach Bike Challenge (v1.0).html",
+      "title": "Acko's mach bike challenge (v1.0)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clAcko-s-Mach-Bike-Challenge-v1.0-.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clarceuslegend.html",
+      "title": "Pokemon Arceus Legend",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "window.EJS_STORAGE is not a constructor"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clCeliasStupidROMHack.html",
+      "title": "Celia’s Stupid ROM Hack",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clfrlgips.html",
+      "title": "FRLG.ips",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clfrlgips.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clheartandsoul1.2.1.html",
+      "title": "Heartandsoul1.2.1",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clHoennsLastWish.html",
+      "title": "Pokemon Hoenn’s Last Wish",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clinclementemerald.html",
+      "title": "Pokemon Inclement Emerald",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clinclementemerald.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clInkwell (v1.04).html",
+      "title": "Inkwell (v1.04)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/cllastfirered.html",
+      "title": "Pokemon the Last Fire Red",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-cllastfirered.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clletsgoeevee.html",
+      "title": "Pokemon: Let’s Go, Eevee!",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clletsgoeevee.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clletsgopikachu.html",
+      "title": "Pokemon: Let’s Go, Pikachu!",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clMoemon Emerald Vanilla+ (v1.1.0).html",
+      "title": "Moemon emerald vanilla+ (v1.1.0)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clMoemon-Emerald-Vanilla-v1.1.0-.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clmoonemeraldextremerandomizer.html",
+      "title": "Moonemeraldextremerandomizer",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/cloopsalleevees.html",
+      "title": "Oops All Eevees",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-cloopsalleevees.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeaestheticred.html",
+      "title": "Pokemon Aesthetic Red",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeallin.html",
+      "title": "Pokémon All In",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeallin.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokeAmbrosia.html",
+      "title": "Pokemon Ambrosia",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clPokeAmbrosia.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokebattlefact.html",
+      "title": "Pokemon Battle Factory",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokebattlefact.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeblue.html",
+      "title": "Pokemon Blue Version*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeblue.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeclassic.html",
+      "title": "Pokéclassic",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeclassic.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokecrown.html",
+      "title": "Pokemon Crown",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokecrown.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokecrystaladvanceredux.html",
+      "title": "Pokemon Crystal Advance Redux",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokecrystalclear.html",
+      "title": "Pokemon Crystal Clear",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "Core requires minimum EmulatorJS version of 4.2.2"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokecrystalinheritance.html",
+      "title": "Pokemon Crystal Inheritance",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokecrystallegacy.html",
+      "title": "Pokemon Crystal Legacy",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokedreamstone.html",
+      "title": "Pokemon Dreamstone",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokedreamstone.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeeliteredux.html",
+      "title": "Pokemon Elite Redux",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeelysiuma.html",
+      "title": "Pokemon Elysium A",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeelysiumb.html",
+      "title": "Pokemon Elysium B",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeelysiumb.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemerald47.html",
+      "title": "Pokemon Emerald 47",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemerald47.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldbattlefrontier.html",
+      "title": "Pokemon Emerald Battle Frontier",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldenhanced.html",
+      "title": "Pokemon Emerald Enhanced",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldexceeded.html",
+      "title": "Pokeemeraldexceeded",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemeraldexceeded.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldextendedcut.html",
+      "title": "Pokemon Emerald Extended Cut",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldflow.html",
+      "title": "Pokeemeraldflow",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemeraldflow.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldhorizons.html",
+      "title": "Pokémon Emerald Horizons",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemeraldhorizons.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldimperium.html",
+      "title": "Pokeemeraldimperium",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemeraldimperium.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldlegacy.html",
+      "title": "Pokemon Emerald Legacy",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldrandom.html",
+      "title": "Pokemon Emerald Randomized",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemeraldrandom.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokeEmeraldRogueEX.html",
+      "title": "Pokemon Emerald Rogue EX",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldrto6.html",
+      "title": "Pokemon Emerald Random Team of 6",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldxtreme.html",
+      "title": "Pokémon Emerald Xtreme",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldz.html",
+      "title": "Pokemon Emerald Z",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeexceeded.html",
+      "title": "Pokemon Exceeded",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokefireemerald.html",
+      "title": "Pokémon FireEmerald",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokefireemerald.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokefiregold.html",
+      "title": "Pokémon Fire Gold",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokefiregold.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeflora.html",
+      "title": "Pokemon Flora Sky",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokefrlgplus.html",
+      "title": "Pokemon Firered Leafgreen Plus",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokefuseddimension.html",
+      "title": "Pokemon Fused dimension",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokeFusion3.html",
+      "title": "Pokemon Fusion 3",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clPokeFusion3.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokegaia.html",
+      "title": "Pokemon Gaia",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokegigared.html",
+      "title": "Pokemon Giga Red",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokegschronicles.html",
+      "title": "Pokemon GS Chronicles",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokegschronicles.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokelightplatinum.html",
+      "title": "Pokemon Light Platinum",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokelightplatinum.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokelowbudgetcrystal.html",
+      "title": "Pokémon Low Budget Crystal",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokelowbudgetcrystal.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemegamoemon.html",
+      "title": "Pokemon Mega Moemon",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemegamoemon.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonamnesia.html",
+      "title": "Pokemon Amnesia",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonamnesia.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonbillssecretgarden.html",
+      "title": "Pokemonbillssecretgarden",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemoncrystal.html",
+      "title": "Pokemon Crystal*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemoncrystal.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonemeraldcrest.html",
+      "title": "Pokemon Emerald Crest",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonemeraldcrest.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonemeraldkaizo.html",
+      "title": "Pokemon Emerald Kaizo",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonemeraldkaizo.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonemeraldmini.html",
+      "title": "Pokemon Emerald Mini",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonemeraldmini.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokemonemeraldrouge.html",
+      "title": "Pokemonemeraldrouge",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonemeraldseaglass.html",
+      "title": "Pokemon Emerald Seaglass",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonemeraldseaglass.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonenergizedemerald.html",
+      "title": "Pokemon Energized Emerald",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonevolvedsfdgsdfs.html",
+      "title": "Pokemon Evolved",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonfireredrandomized.html",
+      "title": "Pokemon Firered Randomized",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Core requires minimum EmulatorJS version of 4.2.2"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemongold.html",
+      "title": "Pokemon Gold*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemongold.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonkaizoironfirered.html",
+      "title": "Pokemon Kaizo Iron Fire Red",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonkaizoironfirered.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonlazarus.html",
+      "title": "Pokemon Lazarus",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonmodernemerald.html",
+      "title": "Pokemon Modern Emerald",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "window.EJS_STORAGE is not a constructor"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonperfectemerald5.5.html",
+      "title": "Pokemonperfectemerald5.5",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonpinball.html",
+      "title": "Pokémon Pinball*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonpinball.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonroaringred.html",
+      "title": "Pokémon Roaring Red",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokemonrocketedition.html",
+      "title": "Pokemon Firered Rocket Edition",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clPokemonrocketedition.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonsaiph.html",
+      "title": "Pokémon Saiph",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonsaiph2.html",
+      "title": "Pokémon Saiph 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "EmulatorJS is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonshinsigma.html",
+      "title": "Pokemon Shiny Gold Sigma",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonshinsigma.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonsilver.html",
+      "title": "Pokemon Silver*",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonslgreen.html",
+      "title": "Pokemon Super Luigi Green",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonslgreen.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonsmred.html",
+      "title": "Pokemon Super Mario Red",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonsors.html",
+      "title": "Pokémon Sors",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonsors.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonsors2.html",
+      "title": "Pokémon Sors 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonultimatefusion.html",
+      "title": "Pokemonultimatefusion",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonultimatefusion.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonunbound.html",
+      "title": "Pokemon Unbound",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonunbound.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemoonemerald.html",
+      "title": "Pokemon Moon Emerald",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemoonemerald.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemoongalaxy.html",
+      "title": "Pokémon Moon Galaxy",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemoongalaxy.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokenameless.html",
+      "title": "Pokemon Nameless",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokenameless.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeodyssey.html",
+      "title": "Pokemon Odyssey",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeodyssey2.html",
+      "title": "Pokemon Odyssey 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeperfectfirered.html",
+      "title": "Pokémon Perfect Fire Red",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokepisces.html",
+      "title": "Pokémon Pisces",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokepisces.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokepureblue.html",
+      "title": "Pokémon Pure Blue",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokepureblue.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokepuregreen.html",
+      "title": "Pokémon Pure Green",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokepuregreen.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokepurered.html",
+      "title": "Pokémon Pure Red",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokepurered.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerbynova.html",
+      "title": "Pokémon RBY Nova",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerechargedpink.html",
+      "title": "Pokémon Recharged Pink",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokerechargedpink.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerechargedyellow.html",
+      "title": "Pokemon Recharged Yellow",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokerechargedyellow.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerecordkeepers.html",
+      "title": "Pokémon Record Keepers",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokerecordkeepers.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokered.html",
+      "title": "Pokémon Red Version*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokered.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeremnantsofwah.html",
+      "title": "Pokemon Remnants of Wah",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeretroplatinum.html",
+      "title": "Pokemon Retro Platinum",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerocketedition.html",
+      "title": "Pokémon: Team Rocket Edition",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokerocketedition.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerowe.html",
+      "title": "Pokémon ROWE",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokerunandbun.html",
+      "title": "Pokémon Run and Bun",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokerunandbun.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokescorchedsilver.html",
+      "title": "Pokemon Scorched Silver",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokescorchedsilver.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokescrambledscarlet.html",
+      "title": "Pokemon Scrambled Scarlet",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokesunsky.html",
+      "title": "Pokémon SunSky",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpoketcg1.html",
+      "title": "Pokemon Trading Card Game*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpoketcg1.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpoketcg2.html",
+      "title": "Pokemon Trading Card Game 2*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpoketcg2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokethepit.html",
+      "title": "Pokémon Pit of 100 trials (generation 9)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpoketoomanytypes2.html",
+      "title": "Pokemon Too Many Types 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpoketourmaline.html",
+      "title": "Pokémon Tourmaline Version",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeultraviolet.html",
+      "title": "Pokemon Ultra Violet",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeultraviolet.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeunovaemerald.html",
+      "title": "Pokémon Unova Emerald",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeunovaemerald.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokevega.html",
+      "title": "Pokemon Vega",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokevega.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokevoyager.html",
+      "title": "Pokemon Voyager",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokevoyager.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokewildindigo.html",
+      "title": "Pokemon Wild Indigo",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeyellow.html",
+      "title": "Pokemon Yellow Version*",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeyellow.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeyellowlegacy.html",
+      "title": "Pokemon Yellow Legacy",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokémon Trade&'Stache (V1.1).html",
+      "title": "Pokémon trade&'stache (v1.1)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokémon TWO (v1.1).html",
+      "title": "Pokémon two (v1.1)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokémonstunningsteel.html",
+      "title": "Pokemon Stunning Steel",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clPok-monstunningsteel.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpolishedcrystal.html",
+      "title": "Pokémon Polished Crystal",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clpolishedcrystal.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clradicalred.html",
+      "title": "Pokémon Radical Red",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clrosegold.html",
+      "title": "Pokémon Rose Gold",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clscarletandviolet.html",
+      "title": "Scarletandviolet",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clscarletandviolet.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/clsonicmon.html",
+      "title": "Pokemon Sonicmon",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clsonicmon.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clSovereignoftheskys.html",
+      "title": "Pokemon Sovereign of the Skies",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clsupermariomon.html",
+      "title": "Super Mariomon",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clsupermariomon.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/clswordandshieldultimateplus.html",
+      "title": "Pokemon Sword and Shield Ultimate Plus",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-clswordandshieldultimateplus.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/cltoomanytypes.html",
+      "title": "Pokemon Too Many Types",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/lime.html",
+      "title": "Lime",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-lime.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/lucid.html",
+      "title": "Lucid",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/pokemon/peach.html",
+      "title": "Peach",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/snowwhite.html",
+      "title": "Snowwhite",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-pokemon-snowwhite.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/pokemon/unownking.html",
+      "title": "Unownking",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/psx/clataricollection2.html",
+      "title": "Atari Collection 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/psx/clfinalfantasyVIItheothertetrr.html",
+      "title": "Finalfantasy viitheothertetrr",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/psx/clnfs1.html",
+      "title": "Need for Speed",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/psx/clrainbowsix.html",
+      "title": "Rainbowsix",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/psx/clrainbowsixalt.html",
+      "title": "Rainbowsixalt",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/psx/clvprowrestling2.html",
+      "title": "Virtual Pro Wrestling 2",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/segaGG/clggshinobi2.html",
+      "title": "G. G. Shinobi 2: The Silent Fury",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaGG/clsonictripletrouble.html",
+      "title": "Sonic Triple Trouble",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaGG-clsonictripletrouble.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clknuckleschaotix.html",
+      "title": "Knuckles Chaotix",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clknuckleschaotix.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clmegamansequelsred.html",
+      "title": "Mega Man - The Sequel Wars Episode Red",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clmegamansequelsred.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/segaMD/clMetalSonicHyperdrive.html",
+      "title": "Metal Sonic Hyperdrive",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clMetalSonicHyperdrive.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clmetalsonicrebooted.html",
+      "title": "Metal Sonic Rebooted",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clmkmythgen.html",
+      "title": "clmkmythgen",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clmkmythgen.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/segaMD/clmobiusrevolution.html",
+      "title": "Mobius Evolution",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clordinarysonicromhack.html",
+      "title": "An Ordinary Sonic rom Hack (sonic.exe)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clordinarysonicromhack.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clrocketknight2.html",
+      "title": "Rocketknight2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clrocketknight2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clSnowBrosGenesis.html",
+      "title": "Snow Bros - Nick and Tom",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clSonic & Knuckles + Sonic The Hedgehog 3.html",
+      "title": "Sonic & Knuckles + Sonic The Hedgehog 3",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clSonic-Knuckles-Sonic-The-Hedgehog-3.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic1contemporary.html",
+      "title": "Sonic 1 Contemporary",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clSonic1ScoreRush.html",
+      "title": "Sonic 1 Score Rush",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "EmulatorJS is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clSonic1TheSuperChallenges.html",
+      "title": "Sonic1the super challenges",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic2pinkedition.html",
+      "title": "Sonic 2 Pink Edition",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic2returnofshadow.html",
+      "title": "Sonic 2 Return of Shadow",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonic2returnofshadow.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clSonic2ScoreRush.html",
+      "title": "Sonic 2 Score Rush",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Core requires minimum EmulatorJS version of 4.2.2"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic2timeandplace.html",
+      "title": "Sonic 2 Time and Place",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Core requires minimum EmulatorJS version of 4.2.2"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic3andknuckles.html",
+      "title": "Sonic 3 And Knuckles",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonic3andknuckles.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic3andsally.html",
+      "title": "Sonic 3 And Sally",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonic3andsally.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonic3complete.html",
+      "title": "Sonic 3 Complete",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonic3complete.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicandashuro.html",
+      "title": "Sonic and Ashuro",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicandknuckles.html",
+      "title": "Sonic and Knuckles",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonicandknuckles.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicclassicheroes.html",
+      "title": "Sonic Classic Heroes",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicdeltaorigins.html",
+      "title": "Sonic Delta Origins",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonicdeltaorigins.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicerazor.html",
+      "title": "Sonic Erazor",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicmegamix.html",
+      "title": "Sonic Megamix",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonicmegamix.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/clsonicscorchedquest.html",
+      "title": "Sonic Scorched Quest",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-clsonicscorchedquest.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/cltmnt.html",
+      "title": "Teenage Mutant Ninja Turtles - Shredder's Re-Revenge",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/segaMD/cltoejam&earl.html",
+      "title": "Toejam&earl",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-cltoejam-earl.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/cltoejam&earlpof.html",
+      "title": "Toejam&earlpof",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMD/TheSFactorSoniaAndSilver.html",
+      "title": "The S Factor: Sonia and Silver",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMD-TheSFactorSoniaAndSilver.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/segaMS/clwonderboy3.html",
+      "title": "Wonder Boy 3 - Dragon’s Trap",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-segaMS-clwonderboy3.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/cl100RoomsOfEnemies.html",
+      "title": "100 Rooms Of Enemies",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-cl100RoomsOfEnemies.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clbabykaizo.html",
+      "title": "Baby Kaizo World",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clFinalFight2Plus.html",
+      "title": "Final fight2plus",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clFinalFight3Plus.html",
+      "title": "Final fight3plus",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clFinalFight3Plus.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clfzerobsx.html",
+      "title": "F-Zero 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clfzerobsx.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clihateyou.html",
+      "title": "Ihateyou",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clihateyou.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clJUMP.html",
+      "title": "JUMP",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clkaizomarioworld.html",
+      "title": "Kaizo Mario World",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/cllinktothepast.html",
+      "title": "The Legend of Zelda a Link to the Past",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-cllinktothepast.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clMarioisMissingDoneRight.html",
+      "title": "Mario is Missing Done Right",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clmariosmysterymeat.html",
+      "title": "Mario’s Mystery Meat",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clmariosmysterymeat.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clmegamanandbass.html",
+      "title": "Mega Man and Bass",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clmegamanandbass.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clNewSuperMarioWorld2AroundtheWorld.html",
+      "title": "New Super Mario World 2 - Around the World",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clquickieworld.html",
+      "title": "Quickie World",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clquickieworld.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clsmwplumberallseasons.html",
+      "title": "Super Mario World - A Plumber For All Seasons",
+      "ok": false,
+      "error": "Restart Pause Save State Load State Control Settings Cheats Cache Manager Export Save File Import Save File Netplay Settings Enter Fullscreen Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clSonicinSMW.html",
+      "title": "Sonic in Super Mario World",
+      "ok": false,
+      "error": "Restart Pause Save State Load State Control Settings Cheats Cache Manager Export Save File Import Save File Netplay Settings Enter Fullscreen Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clstarfoxsfx2.html",
+      "title": "Star Fox SFX2 hack (better performance)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clstarfoxsfx2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clsuperdiagonalmario2.html",
+      "title": "Super Diagonal mario 2",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-snes-clsuperdiagonalmario2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clSuperMarioWorldThe SecretOfThe7GoldenStatues.html",
+      "title": "Super Mario World the Secret of the 7 Golden Statues",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clsupernoahsark3D.html",
+      "title": "Super Noah’s Ark 3D",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clwhatamarioworld.html",
+      "title": "What a Mario World!",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Core requires minimum EmulatorJS version of 4.2.2"
+      ]
+    },
+    {
+      "id": "library-source/emulated/snes/clYoshisStrangeQuest.html",
+      "title": "Yoshi’s Strange Quest",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/Wonderswan/clklonoamoonlightmuseum.html",
+      "title": "Klonoa - Moonlight Museum",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/Wonderswan/clmegamanbasscftf.html",
+      "title": "Megaman and Bass: Challenger from the Future",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/Wonderswan/clmmbnws (1).html",
+      "title": "Mmbnws (1)",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-Wonderswan-clmmbnws-1-.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clemujs.html",
+      "title": "EMULATOR",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "Failed to register a ServiceWorker: The origin of the provided scriptURL ('https://cdn.jsdelivr.net') does not match the current origin ('http://127.0.0.1:8030')."
+      ]
+    },
+    {
+      "id": "library-source/emulated/SSF2Arcade.html",
+      "title": "Super Street Fighter 2 - The New Challengers",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-SSF2Arcade.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clXMenCOTAArcade.html",
+      "title": "X-Men - Children of the Atom",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clfamidash1.2.8album.html",
+      "title": "Famidash 1.2.8 Album",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "EmulatorJS is not defined"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clfamidashB-Sides1.2.8.html",
+      "title": "Famidash 1.2.8 B-Sides",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clfamidashB-Sides1.2.8.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clfamidashC-Sides1.2.8.html",
+      "title": "Famidash 1.2.8 C-Sides",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clfamidashC-Sides1.2.8.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clfamidashD-Sides1.2.8.html",
+      "title": "Famidash 1.2.8 D-Sides",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clfamidashE-Sides1.2.8.html",
+      "title": "Famidash 1.2.8 E-Sides",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clfamidash2.html",
+      "title": "Famidash 2 Alpha",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clfamidash2.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsonicinsmb1.html",
+      "title": "Sonic in SMB1",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clsonicinsmb1.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/emulated/rocketknight2.html",
+      "title": "Rocket Knight Adventures 2",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsonicthesuperchallenges.html",
+      "title": "Sonic 1 - The Super Challenges",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/cltoejamandearl.html",
+      "title": "ToeJam & Earl",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-cltoejamandearl.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clopossumcountry.html",
+      "title": "Opossum Country",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function",
+        "Core requires minimum EmulatorJS version of 4.2.2"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpokevolume1.html",
+      "title": "Pokemon Volume 1:  [Rom Show]",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokevolume2.html",
+      "title": "Pokemon Volume 2:  [Rom Show]",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokevolume3.html",
+      "title": "Pokemon Volume 3:  [Rom Show]",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokevolume3.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokevolume4.html",
+      "title": "Pokemon Volume 4:  [Rom Show]",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokevolume4.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clsimpsonsroadrage.html",
+      "title": "Simpson’s Road Rage",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clsimpsonsroadrage.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsupermarioland2.html",
+      "title": "Super Mario Land 2",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clihateyousmw.html",
+      "title": "I hate you",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clihateyousmw.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsonicmegamix5.0a.html",
+      "title": "Sonic Megamix 5.0a LEAKED",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/cldangonronpa64.html",
+      "title": "Danganronpa 64",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-cldangonronpa64.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/mariobuilder64.html",
+      "title": "Mario Builder 64",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clmidwaysgreatesthits.html",
+      "title": "Midway’s Greatest Hits",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clmidwaysgreatesthits.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsms.html",
+      "title": "Super Mario 64 Sunshine",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clsms.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsm64starroad.html",
+      "title": "Super Mario Star Road",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clsm64starroad.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsm64starroadretooled.html",
+      "title": "Super Mario Star Road Retooled",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpawitf.html",
+      "title": "Pokemon A Walk In The Forest Version",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpambc.html",
+      "title": "Pokemon Acko’s Mach Bike Challenge",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clbillssecretgarden.html",
+      "title": "Pokemon Bill’s Secret Garden",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clbillssecretgarden.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemonemeraldflow.html",
+      "title": "Pokemon Emerald Flow",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokemonemeraldflow.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemonemeraldimperium.html",
+      "title": "Pokemon Emerald Imperium",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokemonemeraldimperium.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clPokemonemeraldrogue.html",
+      "title": "Pokemon Emerald Rogue",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpokeexceededemerald.html",
+      "title": "Pokémon Exceeded Emerald",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokeexceededemerald.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clheartandsoul.html",
+      "title": "Pokemon Heart & Soul",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpokemonInkwell.html",
+      "title": "Pokemon Inkwell Version",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemonlime.html",
+      "title": "Pokémon Lime",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemonlucid.html",
+      "title": "Pokemon Lucid",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpmev+.html",
+      "title": "Pokemon: Moemon Emerald Vanilla+ (v1.1.0)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemoonemeraldrandom.html",
+      "title": "Pokemon Moon Emerald Extreme Randomized",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokemoonemeraldrandom.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpokemonpeach.html",
+      "title": "Pokémon Peach",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemonperfectemerald.html",
+      "title": "Pokémon Perfect Emerald",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clpokemonperfectemerald.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clscarletviolet.html",
+      "title": "Pokémon Scarlet Violet",
+      "ok": false,
+      "error": "Settings Network Error",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clsnowywhite.html",
+      "title": "Pokémon Snowy White",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/cltradeandstache.html",
+      "title": "Pokemon Trade & Stache (v1.1)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clpokemontwo.html",
+      "title": "Pokemon TWO (v1.1)",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clunown.html",
+      "title": "Pokemon Unown King",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/emulated/clpokeultimatefusion.html",
+      "title": "Pokemon Ultimate Fusion",
+      "ok": false,
+      "error": "emulator canvas did not start",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/emulated/clmmbnws.html",
+      "title": "Megaman Battle Network WS",
+      "ok": true,
+      "image": "assets/covers/original/emulator-library-source-emulated-clmmbnws.html.jpg",
+      "pageErrors": []
+    }
+  ]
+}

@@ -1,52 +1,88 @@
 {
-  "actualArtwork": 1946,
-  "remaining": 1152,
-  "exactAssetMatches": [],
+  "actualArtwork": 2733,
+  "remaining": 365,
+  "exactAssetMatches": [
+    {
+      "title": "Abandoned3",
+      "id": "library-source/flash/clabandoned3.html",
+      "donor": "library-source/flash/clabandoned32.html"
+    },
+    {
+      "title": "Opossum Country",
+      "id": "library-source/emulated/clopossumcountry.html",
+      "donor": "library-source/emulated/gba/clopposumcountry.html"
+    },
+    {
+      "title": "Super Mario Land 2",
+      "id": "library-source/emulated/clsupermarioland2.html",
+      "donor": "library-source/emulated/gba/clsupermarioland2 (1).html"
+    },
+    {
+      "title": "Midwaysgreatesthitsn64",
+      "id": "library-source/emulated/n64/clmidwaysgreatesthitsn64.html",
+      "donor": "library-source/emulated/clmidwaysgreatesthits.html"
+    },
+    {
+      "title": "Famidash2alpha",
+      "id": "library-source/emulated/nes/clfamidash2alpha.html",
+      "donor": "library-source/emulated/clfamidash2.html"
+    },
+    {
+      "title": "Famidash bsides1.2.8",
+      "id": "library-source/emulated/nes/clfamidashBSides1.2.8.html",
+      "donor": "library-source/emulated/clfamidashB-Sides1.2.8.html"
+    },
+    {
+      "title": "Famidash 1.2.8 E-Sides",
+      "id": "library-source/emulated/clfamidashE-Sides1.2.8.html",
+      "donor": "library-source/emulated/nes/clfamidashESides1.2.8.html"
+    },
+    {
+      "title": "Pokemon A Walk In The Forest Version",
+      "id": "library-source/emulated/clpawitf.html",
+      "donor": "library-source/emulated/pokemon/clA Walk in The Forest (v1.0).html"
+    },
+    {
+      "title": "Pokemon: Moemon Emerald Vanilla+ (v1.1.0)",
+      "id": "library-source/emulated/clpmev+.html",
+      "donor": "library-source/emulated/pokemon/clMoemon Emerald Vanilla+ (v1.1.0).html"
+    },
+    {
+      "title": "Moonemeraldextremerandomizer",
+      "id": "library-source/emulated/pokemon/clmoonemeraldextremerandomizer.html",
+      "donor": "library-source/emulated/clpokemoonemeraldrandom.html"
+    },
+    {
+      "title": "Pokémon Exceeded Emerald",
+      "id": "library-source/emulated/clpokeexceededemerald.html",
+      "donor": "library-source/emulated/pokemon/clpokeemeraldexceeded.html"
+    },
+    {
+      "title": "Pokemonbillssecretgarden",
+      "id": "library-source/emulated/pokemon/clpokemonbillssecretgarden.html",
+      "donor": "library-source/emulated/clbillssecretgarden.html"
+    },
+    {
+      "title": "Pokémon Scarlet Violet",
+      "id": "library-source/emulated/clscarletviolet.html",
+      "donor": "library-source/emulated/pokemon/clscarletandviolet.html"
+    },
+    {
+      "title": "Rocket Knight Adventures 2",
+      "id": "library-source/emulated/rocketknight2.html",
+      "donor": "library-source/emulated/segaMD/clrocketknight2.html"
+    },
+    {
+      "title": "Ihateyou",
+      "id": "library-source/emulated/snes/clihateyou.html",
+      "donor": "library-source/emulated/clihateyousmw.html"
+    }
+  ],
   "needsArtwork": [
-    {
-      "id": "library-source/flash/cl1v1tennis.html",
-      "title": "1 On 1 Tennis",
-      "source": "library-source/flash/cl1v1tennis.html"
-    },
-    {
-      "id": "library-source/flash/cl3pandas.html",
-      "title": "3 Pandas",
-      "source": "library-source/flash/cl3pandas.html"
-    },
-    {
-      "id": "library-source/flash/cl3pandasbrazil.html",
-      "title": "3 Pandas Brazil",
-      "source": "library-source/flash/cl3pandasbrazil.html"
-    },
-    {
-      "id": "library-source/flash/cl3pandasfantasy.html",
-      "title": "3 Pandas Fantasy",
-      "source": "library-source/flash/cl3pandasfantasy.html"
-    },
-    {
-      "id": "library-source/flash/cl3pandasjapan.html",
-      "title": "3 Pandas Japan",
-      "source": "library-source/flash/cl3pandasjapan.html"
-    },
-    {
-      "id": "library-source/flash/cl3pandasnight.html",
-      "title": "3 Pandas Night",
-      "source": "library-source/flash/cl3pandasnight.html"
-    },
-    {
-      "id": "library-source/flash/cl3slices2.html",
-      "title": "3 Slices 2",
-      "source": "library-source/flash/cl3slices2.html"
-    },
     {
       "id": "library-source/flash/cl40xescape.html",
       "title": "40xescape",
       "source": "library-source/flash/cl40xescape.html"
-    },
-    {
-      "id": "library-source/flash/clabandoned3.html",
-      "title": "Abandoned3",
-      "source": "library-source/flash/clabandoned3.html"
     },
     {
       "id": "library-source/flash/clachillies2.html",
@@ -59,119 +95,9 @@
       "source": "library-source/flash/clambulencearush.html"
     },
     {
-      "id": "library-source/flash/clamigopancho2.html",
-      "title": "Amigo Pancho 2",
-      "source": "library-source/flash/clamigopancho2.html"
-    },
-    {
-      "id": "library-source/flash/clamigopancho4.html",
-      "title": "Amigo Pancho 4",
-      "source": "library-source/flash/clamigopancho4.html"
-    },
-    {
-      "id": "library-source/flash/clamigopancho5.html",
-      "title": "Amigo Pancho 5",
-      "source": "library-source/flash/clamigopancho5.html"
-    },
-    {
-      "id": "library-source/flash/clamigopancho6.html",
-      "title": "Amigo Pancho 6",
-      "source": "library-source/flash/clamigopancho6.html"
-    },
-    {
-      "id": "library-source/flash/clarmormayhem2.html",
-      "title": "Armor Mayhem 2",
-      "source": "library-source/flash/clarmormayhem2.html"
-    },
-    {
-      "id": "library-source/flash/clAwesomePirates.html",
-      "title": "Awesome Pirates",
-      "source": "library-source/flash/clAwesomePirates.html"
-    },
-    {
-      "id": "library-source/flash/clbackyardbaseball.html",
-      "title": "Backyard Baseball",
-      "source": "library-source/flash/clbackyardbaseball.html"
-    },
-    {
-      "id": "library-source/flash/clbash.html",
-      "title": "Bash the Computer",
-      "source": "library-source/flash/clbash.html"
-    },
-    {
       "id": "library-source/flash/clbejeweledtwistflash.html",
       "title": "Bejeweledtwistflash",
       "source": "library-source/flash/clbejeweledtwistflash.html"
-    },
-    {
-      "id": "library-source/flash/clbindingofisaccsheeptime.html",
-      "title": "Binding of Isaac Wrath of The Lamb",
-      "source": "library-source/flash/clbindingofisaccsheeptime.html"
-    },
-    {
-      "id": "library-source/flash/clblackjackbattle.html",
-      "title": "Blackjack Battle",
-      "source": "library-source/flash/clblackjackbattle.html"
-    },
-    {
-      "id": "library-source/flash/clbloonspp5.html",
-      "title": "Bloons Player Pack 5",
-      "source": "library-source/flash/clbloonspp5.html"
-    },
-    {
-      "id": "library-source/flash/clbloonsTD1.html",
-      "title": "BTD1",
-      "source": "library-source/flash/clbloonsTD1.html"
-    },
-    {
-      "id": "library-source/flash/clboxheadnightmare.html",
-      "title": "Boxhead Nightmare",
-      "source": "library-source/flash/clboxheadnightmare.html"
-    },
-    {
-      "id": "library-source/flash/clboxinglive-2.html",
-      "title": "Boxing Live 2",
-      "source": "library-source/flash/clboxinglive-2.html"
-    },
-    {
-      "id": "library-source/flash/clbtd5.html",
-      "title": "BTD5",
-      "source": "library-source/flash/clbtd5.html"
-    },
-    {
-      "id": "library-source/flash/clbubbleshooterpirate.html",
-      "title": "Bubble Shooter Pirate",
-      "source": "library-source/flash/clbubbleshooterpirate.html"
-    },
-    {
-      "id": "library-source/flash/clbubbletanks2.html",
-      "title": "Bubble Tanks 2",
-      "source": "library-source/flash/clbubbletanks2.html"
-    },
-    {
-      "id": "library-source/flash/clbubbletanksarenas.html",
-      "title": "Bubble Tanks Arenas",
-      "source": "library-source/flash/clbubbletanksarenas.html"
-    },
-    {
-      "id": "library-source/flash/clbubbletankstd.html",
-      "title": "Bubble Tanks Tower Defense",
-      "source": "library-source/flash/clbubbletankstd.html"
-    },
-    {
-      "id": "library-source/flash/clcactusmccoy.html",
-      "title": "Cactus Mccoy",
-      "source": "library-source/flash/clcactusmccoy.html"
-    },
-    {
-      "id": "library-source/flash/clcareatscar2deluxe.html",
-      "title": "Car Eats Car 2 Deluxe",
-      "source": "library-source/flash/clcareatscar2deluxe.html"
-    },
-    {
-      "id": "library-source/flash/clcheckers.html",
-      "title": "Checkers",
-      "source": "library-source/flash/clcheckers.html"
     },
     {
       "id": "library-source/flash/clchuzzle.html",
@@ -184,56 +110,6 @@
       "source": "library-source/flash/clclashnslash.html"
     },
     {
-      "id": "library-source/flash/clclearvision.html",
-      "title": "Clear Vision",
-      "source": "library-source/flash/clclearvision.html"
-    },
-    {
-      "id": "library-source/flash/clclearvision2.html",
-      "title": "Clear Vision 2",
-      "source": "library-source/flash/clclearvision2.html"
-    },
-    {
-      "id": "library-source/flash/clclearvision3.html",
-      "title": "Clear Vision 3",
-      "source": "library-source/flash/clclearvision3.html"
-    },
-    {
-      "id": "library-source/flash/clcodenamegordon.html",
-      "title": "Codename Gordon",
-      "source": "library-source/flash/clcodenamegordon.html"
-    },
-    {
-      "id": "library-source/flash/clcoverorangejourneyspace.html",
-      "title": "Cover Orange Journey Space",
-      "source": "library-source/flash/clcoverorangejourneyspace.html"
-    },
-    {
-      "id": "library-source/flash/clcoverorangeplayerspack3 (1).html",
-      "title": "Coverorangeplayerspack3 (1)",
-      "source": "library-source/flash/clcoverorangeplayerspack3 (1).html"
-    },
-    {
-      "id": "library-source/flash/clcreeperworld2.html",
-      "title": "Creeper World 2",
-      "source": "library-source/flash/clcreeperworld2.html"
-    },
-    {
-      "id": "library-source/flash/clcrunchball3000.html",
-      "title": "Crunchball 3000",
-      "source": "library-source/flash/clcrunchball3000.html"
-    },
-    {
-      "id": "library-source/flash/clcurveball.html",
-      "title": "Curve Ball",
-      "source": "library-source/flash/clcurveball.html"
-    },
-    {
-      "id": "library-source/flash/cldadgame.html",
-      "title": "Dadgame",
-      "source": "library-source/flash/cldadgame.html"
-    },
-    {
       "id": "library-source/flash/cldeadfrontieroutbreak.html",
       "title": "Dead Frontier Outbreak",
       "source": "library-source/flash/cldeadfrontieroutbreak.html"
@@ -244,179 +120,14 @@
       "source": "library-source/flash/cldeadfrontieroutbreak2.html"
     },
     {
-      "id": "library-source/flash/cldecision2.html",
-      "title": "Decision 2",
-      "source": "library-source/flash/cldecision2.html"
-    },
-    {
-      "id": "library-source/flash/cldiamondhollow2.html",
-      "title": "Diamond Hollow 2",
-      "source": "library-source/flash/cldiamondhollow2.html"
-    },
-    {
-      "id": "library-source/flash/cldontescape2.html",
-      "title": "Don't Escape 2",
-      "source": "library-source/flash/cldontescape2.html"
-    },
-    {
-      "id": "library-source/flash/cldoom2d.html",
-      "title": "Doom 2D",
-      "source": "library-source/flash/cldoom2d.html"
-    },
-    {
-      "id": "library-source/flash/cldouchebaglife.html",
-      "title": "Douchebag Life",
-      "source": "library-source/flash/cldouchebaglife.html"
-    },
-    {
-      "id": "library-source/flash/cldumpling.html",
-      "title": "Dumpling",
-      "source": "library-source/flash/cldumpling.html"
-    },
-    {
-      "id": "library-source/flash/clearntodie2.html",
-      "title": "Earn to Die 2",
-      "source": "library-source/flash/clearntodie2.html"
-    },
-    {
-      "id": "library-source/flash/cleffinghail.html",
-      "title": "Effing Hail",
-      "source": "library-source/flash/cleffinghail.html"
-    },
-    {
-      "id": "library-source/flash/cleffingmachines.html",
-      "title": "Effing Machines",
-      "source": "library-source/flash/cleffingmachines.html"
-    },
-    {
-      "id": "library-source/flash/cleffingzombies.html",
-      "title": "Effing Zombies",
-      "source": "library-source/flash/cleffingzombies.html"
-    },
-    {
-      "id": "library-source/flash/clendlesswar7.html",
-      "title": "Endless War 7",
-      "source": "library-source/flash/clendlesswar7.html"
-    },
-    {
-      "id": "library-source/flash/clexitpath.html",
-      "title": "Exit Path",
-      "source": "library-source/flash/clexitpath.html"
-    },
-    {
-      "id": "library-source/flash/clfactoryballs2.html",
-      "title": "Factory Balls 2",
-      "source": "library-source/flash/clfactoryballs2.html"
-    },
-    {
-      "id": "library-source/flash/clfactoryballs3.html",
-      "title": "Factory Balls 3",
-      "source": "library-source/flash/clfactoryballs3.html"
-    },
-    {
-      "id": "library-source/flash/clfairytalevsonepiece.html",
-      "title": "Fairy Tale vs. One Piece",
-      "source": "library-source/flash/clfairytalevsonepiece.html"
-    },
-    {
-      "id": "library-source/flash/clfattygenius.html",
-      "title": "Fatty Genius",
-      "source": "library-source/flash/clfattygenius.html"
-    },
-    {
-      "id": "library-source/flash/clfeedus3.html",
-      "title": "Feed Us 3",
-      "source": "library-source/flash/clfeedus3.html"
-    },
-    {
-      "id": "library-source/flash/clffaf.html",
-      "title": "Five Fights at Freddies",
-      "source": "library-source/flash/clffaf.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic1.html",
-      "title": "Final Fantasy Sonic X Episode 1",
-      "source": "library-source/flash/clFFsonic1.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic2.html",
-      "title": "Final Fantasy Sonic X Episode 2",
-      "source": "library-source/flash/clFFsonic2.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic3.html",
-      "title": "Final Fantasy Sonic X Episode 3",
-      "source": "library-source/flash/clFFsonic3.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic4.html",
-      "title": "Final Fantasy Sonic X Episode 4",
-      "source": "library-source/flash/clFFsonic4.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic5.html",
-      "title": "Final Fantasy Sonic X Episode 5",
-      "source": "library-source/flash/clFFsonic5.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic61.html",
-      "title": "Final Fantasy Sonic X Episode 6 part 1",
-      "source": "library-source/flash/clFFsonic61.html"
-    },
-    {
-      "id": "library-source/flash/clFFsonic62.html",
-      "title": "Final Fantasy Sonic X Episode 6 part 2",
-      "source": "library-source/flash/clFFsonic62.html"
-    },
-    {
-      "id": "library-source/flash/clfinalninja.html",
-      "title": "Final Ninja",
-      "source": "library-source/flash/clfinalninja.html"
-    },
-    {
-      "id": "library-source/flash/clfloodrunner.html",
-      "title": "Flood Runner",
-      "source": "library-source/flash/clfloodrunner.html"
-    },
-    {
-      "id": "library-source/flash/clfloodrunner2.html",
-      "title": "Flood Runner 2",
-      "source": "library-source/flash/clfloodrunner2.html"
-    },
-    {
-      "id": "library-source/flash/clfloodrunner3.html",
-      "title": "Flood Runner 3",
-      "source": "library-source/flash/clfloodrunner3.html"
-    },
-    {
-      "id": "library-source/flash/clfreerider.html",
-      "title": "Free Rider",
-      "source": "library-source/flash/clfreerider.html"
-    },
-    {
       "id": "library-source/flash/clgachaverse.html",
       "title": "Gachaverse",
       "source": "library-source/flash/clgachaverse.html"
     },
     {
-      "id": "library-source/flash/clgangstabean.html",
-      "title": "Gangsta Bean",
-      "source": "library-source/flash/clgangstabean.html"
-    },
-    {
       "id": "library-source/flash/clgangstabean2.html",
       "title": "Gangsta Bean 2",
       "source": "library-source/flash/clgangstabean2.html"
-    },
-    {
-      "id": "library-source/flash/clgangsterbros.html",
-      "title": "Gangster Bros",
-      "source": "library-source/flash/clgangsterbros.html"
-    },
-    {
-      "id": "library-source/flash/clGettothetopalthoughthereisnotop.html",
-      "title": "Get to the Top Although There Is No Top",
-      "source": "library-source/flash/clGettothetopalthoughthereisnotop.html"
     },
     {
       "id": "library-source/flash/clgswitch.html",
@@ -434,64 +145,9 @@
       "source": "library-source/flash/clhobovszombies.html"
     },
     {
-      "id": "library-source/flash/clhungrypumpkin.html",
-      "title": "Hungry Pumpkin",
-      "source": "library-source/flash/clhungrypumpkin.html"
-    },
-    {
-      "id": "library-source/flash/clindestructotank.html",
-      "title": "IndestructoTank",
-      "source": "library-source/flash/clindestructotank.html"
-    },
-    {
-      "id": "library-source/flash/clindestructotank2.html",
-      "title": "IndestructoTank 2",
-      "source": "library-source/flash/clindestructotank2.html"
-    },
-    {
-      "id": "library-source/flash/clindestructotankae.html",
-      "title": "IndestructoTank Anniversary Edition",
-      "source": "library-source/flash/clindestructotankae.html"
-    },
-    {
-      "id": "library-source/flash/clintospace3.html",
-      "title": "Into Space 3",
-      "source": "library-source/flash/clintospace3.html"
-    },
-    {
-      "id": "library-source/flash/cllearntofly2hacked.html",
-      "title": "Learn to Fly 2 Hacked",
-      "source": "library-source/flash/cllearntofly2hacked.html"
-    },
-    {
-      "id": "library-source/flash/clLearnToFly3Debug.html",
-      "title": "Learn to Fly 3 (debug)",
-      "source": "library-source/flash/clLearnToFly3Debug.html"
-    },
-    {
-      "id": "library-source/flash/cllearntoflyidlehack.html",
-      "title": "Learn to Fly Idle hacked",
-      "source": "library-source/flash/cllearntoflyidlehack.html"
-    },
-    {
-      "id": "library-source/flash/clmadnesscombatdefense.html",
-      "title": "Madness Combat Defense",
-      "source": "library-source/flash/clmadnesscombatdefense.html"
-    },
-    {
-      "id": "library-source/flash/clmadnessgemini.html",
-      "title": "Madness Gemini",
-      "source": "library-source/flash/clmadnessgemini.html"
-    },
-    {
       "id": "library-source/flash/clmadnessinteractive.html",
       "title": "Madness Interactive",
       "source": "library-source/flash/clmadnessinteractive.html"
-    },
-    {
-      "id": "library-source/flash/clmadnesspremediation.html",
-      "title": "Madness Premediation",
-      "source": "library-source/flash/clmadnesspremediation.html"
     },
     {
       "id": "library-source/flash/clmcfpsfbhd.html",
@@ -499,39 +155,9 @@
       "source": "library-source/flash/clmcfpsfbhd.html"
     },
     {
-      "id": "library-source/flash/clminhero.html",
-      "title": "Min Hero",
-      "source": "library-source/flash/clminhero.html"
-    },
-    {
-      "id": "library-source/flash/clmutilate-a-doll.html",
-      "title": "Mutilate a Doll",
-      "source": "library-source/flash/clmutilate-a-doll.html"
-    },
-    {
-      "id": "library-source/flash/clnaturalselection.html",
-      "title": "Natural Selection",
-      "source": "library-source/flash/clnaturalselection.html"
-    },
-    {
-      "id": "library-source/flash/clnblox.html",
-      "title": "Nblox",
-      "source": "library-source/flash/clnblox.html"
-    },
-    {
-      "id": "library-source/flash/clnewsuperbowserworld.html",
-      "title": "New Super Bowser World",
-      "source": "library-source/flash/clnewsuperbowserworld.html"
-    },
-    {
       "id": "library-source/flash/clnickelodeonsuperbrawl2.html",
       "title": "Nickelodeon Super Brawl 2",
       "source": "library-source/flash/clnickelodeonsuperbrawl2.html"
-    },
-    {
-      "id": "library-source/flash/clobeythegame.html",
-      "title": "Obey the Game",
-      "source": "library-source/flash/clobeythegame.html"
     },
     {
       "id": "library-source/flash/clonepiecefighting.html",
@@ -539,124 +165,14 @@
       "source": "library-source/flash/clonepiecefighting.html"
     },
     {
-      "id": "library-source/flash/clpapalouienighthunt2.html",
-      "title": "Papa Louie Night Hunt 2",
-      "source": "library-source/flash/clpapalouienighthunt2.html"
-    },
-    {
-      "id": "library-source/flash/clpapalouiewhenburgersattack.html",
-      "title": "Papa Louie When Burgers Attack",
-      "source": "library-source/flash/clpapalouiewhenburgersattack.html"
-    },
-    {
-      "id": "library-source/flash/clpapalouiewhensundaesattack.html",
-      "title": "Papa Louie When Sundaes Attack",
-      "source": "library-source/flash/clpapalouiewhensundaesattack.html"
-    },
-    {
-      "id": "library-source/flash/clpeacekeeper.html",
-      "title": "Peacekeeper",
-      "source": "library-source/flash/clpeacekeeper.html"
-    },
-    {
-      "id": "library-source/flash/clpenguinpass.html",
-      "title": "Penguin Pass",
-      "source": "library-source/flash/clpenguinpass.html"
-    },
-    {
-      "id": "library-source/flash/clpicosschool.html",
-      "title": "Pico’s School",
-      "source": "library-source/flash/clpicosschool.html"
-    },
-    {
-      "id": "library-source/flash/clpicovsbeardx.html",
-      "title": "Pico Vs Bear DX",
-      "source": "library-source/flash/clpicovsbeardx.html"
-    },
-    {
-      "id": "library-source/flash/clpixelquestlostidols.html",
-      "title": "Pixel Quest - the Lost Idols",
-      "source": "library-source/flash/clpixelquestlostidols.html"
-    },
-    {
-      "id": "library-source/flash/clplazmaburst.html",
-      "title": "Plazma Burst",
-      "source": "library-source/flash/clplazmaburst.html"
-    },
-    {
-      "id": "library-source/flash/clportaldefendersTD.html",
-      "title": "Portal Defenders Tower Defence",
-      "source": "library-source/flash/clportaldefendersTD.html"
-    },
-    {
       "id": "library-source/flash/clpotatomanseeksthetroof.html",
       "title": "Potatoman Seeks The Troof",
       "source": "library-source/flash/clpotatomanseeksthetroof.html"
     },
     {
-      "id": "library-source/flash/clpottyracers.html",
-      "title": "Potty Racers 1",
-      "source": "library-source/flash/clpottyracers.html"
-    },
-    {
-      "id": "library-source/flash/clpottyracers2.html",
-      "title": "Potty Racers 2",
-      "source": "library-source/flash/clpottyracers2.html"
-    },
-    {
-      "id": "library-source/flash/clpottyracers3.html",
-      "title": "Potty Racers 3",
-      "source": "library-source/flash/clpottyracers3.html"
-    },
-    {
-      "id": "library-source/flash/clprecivilationbronzeage.html",
-      "title": "Pre Civilization Bronze Age",
-      "source": "library-source/flash/clprecivilationbronzeage.html"
-    },
-    {
-      "id": "library-source/flash/clprimary.html",
-      "title": "Primary",
-      "source": "library-source/flash/clprimary.html"
-    },
-    {
-      "id": "library-source/flash/clray1.html",
-      "title": "Ray Part 1",
-      "source": "library-source/flash/clray1.html"
-    },
-    {
-      "id": "library-source/flash/clray2.html",
-      "title": "Ray Part 2",
-      "source": "library-source/flash/clray2.html"
-    },
-    {
-      "id": "library-source/flash/clreturnman.html",
-      "title": "Return Man",
-      "source": "library-source/flash/clreturnman.html"
-    },
-    {
       "id": "library-source/flash/clrocketjump.html",
       "title": "Rocket Jump",
       "source": "library-source/flash/clrocketjump.html"
-    },
-    {
-      "id": "library-source/flash/clrubbletroublemoscow.html",
-      "title": "Rubble Trouble 3",
-      "source": "library-source/flash/clrubbletroublemoscow.html"
-    },
-    {
-      "id": "library-source/flash/clrubbletroublenewyork.html",
-      "title": "Rubble Trouble 1",
-      "source": "library-source/flash/clrubbletroublenewyork.html"
-    },
-    {
-      "id": "library-source/flash/clrubbletroubletokyo.html",
-      "title": "Rubble Trouble 2",
-      "source": "library-source/flash/clrubbletroubletokyo.html"
-    },
-    {
-      "id": "library-source/flash/clstickmanstealingdiamond.html",
-      "title": "Henry Stickmin Stealing The Diamond",
-      "source": "library-source/flash/clstickmanstealingdiamond.html"
     },
     {
       "id": "library-source/flash/clstickminairship.html",
@@ -669,44 +185,9 @@
       "source": "library-source/flash/clstickminbreakingbank.html"
     },
     {
-      "id": "library-source/flash/clstickminescapingprison.html",
-      "title": "Henry Stickmin Escaping The Prison",
-      "source": "library-source/flash/clstickminescapingprison.html"
-    },
-    {
-      "id": "library-source/flash/clstickminfleecomplex.html",
-      "title": "Henry Stickmin Fleeing The Complex",
-      "source": "library-source/flash/clstickminfleecomplex.html"
-    },
-    {
       "id": "library-source/flash/cltboidemo.html",
       "title": "Binding of Isaac Demo",
       "source": "library-source/flash/cltboidemo.html"
-    },
-    {
-      "id": "library-source/flash/cltboilambeternal.html",
-      "title": "Binding of Isaac - Wrath of the Lamb Eternal Edition",
-      "source": "library-source/flash/cltboilambeternal.html"
-    },
-    {
-      "id": "library-source/flash/clumstickmangameidkiforgor.html",
-      "title": "Animator Vs Animation Game (Special Edition)",
-      "source": "library-source/flash/clumstickmangameidkiforgor.html"
-    },
-    {
-      "id": "library-source/flash/clupgradecomplete.html",
-      "title": "Upgrade Complete",
-      "source": "library-source/flash/clupgradecomplete.html"
-    },
-    {
-      "id": "library-source/flash/clupgradecomplete2.html",
-      "title": "Upgrade Complete 2",
-      "source": "library-source/flash/clupgradecomplete2.html"
-    },
-    {
-      "id": "library-source/flash/clvex.html",
-      "title": "Vex",
-      "source": "library-source/flash/clvex.html"
     },
     {
       "id": "library-source/flash/clvvvvvv.html",
@@ -714,59 +195,9 @@
       "source": "library-source/flash/clvvvvvv.html"
     },
     {
-      "id": "library-source/flash/clweltling.html",
-      "title": "Weltling",
-      "source": "library-source/flash/clweltling.html"
-    },
-    {
-      "id": "library-source/flash/clwhackyourcomputer.html",
-      "title": "Whack Your Computer",
-      "source": "library-source/flash/clwhackyourcomputer.html"
-    },
-    {
-      "id": "library-source/flash/clwindowsdoors.html",
-      "title": "Windows Doors",
-      "source": "library-source/flash/clwindowsdoors.html"
-    },
-    {
-      "id": "library-source/flash/clworldshardestgame3.html",
-      "title": "World’s Hardest Game 3",
-      "source": "library-source/flash/clworldshardestgame3.html"
-    },
-    {
-      "id": "library-source/flash/clworldshardestgame4.html",
-      "title": "World’s Hardest Game 4",
-      "source": "library-source/flash/clworldshardestgame4.html"
-    },
-    {
       "id": "library-source/flash/clwpnfire.html",
       "title": "Wpn Fire",
       "source": "library-source/flash/clwpnfire.html"
-    },
-    {
-      "id": "library-source/flash/clyouarelucky.html",
-      "title": "You Are Lucky",
-      "source": "library-source/flash/clyouarelucky.html"
-    },
-    {
-      "id": "library-source/flash/clzoinkz.html",
-      "title": "Zoikz Defender",
-      "source": "library-source/flash/clzoinkz.html"
-    },
-    {
-      "id": "library-source/flash/clzombopaclypse2.html",
-      "title": "Zombocalypse 2",
-      "source": "library-source/flash/clzombopaclypse2.html"
-    },
-    {
-      "id": "library-source/flash/riddleuneversityfix.html",
-      "title": "Riddleuneversityfix",
-      "source": "library-source/flash/riddleuneversityfix.html"
-    },
-    {
-      "id": "library-source/html5-games/capuchinsf.html",
-      "title": "Capuchinsf",
-      "source": "library-source/html5-games/capuchinsf.html"
     },
     {
       "id": "library-source/html5-games/cl-3 (1).html",
@@ -774,54 +205,9 @@
       "source": "library-source/html5-games/cl-3 (1).html"
     },
     {
-      "id": "library-source/html5-games/cl2048cupcakes.html",
-      "title": "2048 Cupcakes",
-      "source": "library-source/html5-games/cl2048cupcakes.html"
-    },
-    {
-      "id": "library-source/html5-games/cl2Dshooting.html",
-      "title": "2D Shooting",
-      "source": "library-source/html5-games/cl2Dshooting.html"
-    },
-    {
-      "id": "library-source/html5-games/cl4thandgoal.html",
-      "title": "4th And Goal",
-      "source": "library-source/html5-games/cl4thandgoal.html"
-    },
-    {
-      "id": "library-source/html5-games/cl500calibercontractz.html",
-      "title": "500 Caliber Contractz",
-      "source": "library-source/html5-games/cl500calibercontractz.html"
-    },
-    {
       "id": "library-source/html5-games/cladayintheoffice.html",
       "title": "A Day In The Office",
       "source": "library-source/html5-games/cladayintheoffice.html"
-    },
-    {
-      "id": "library-source/html5-games/cladifferentsnowgrave.html",
-      "title": "Deltarune: A Different Snowgrave",
-      "source": "library-source/html5-games/cladifferentsnowgrave.html"
-    },
-    {
-      "id": "library-source/html5-games/clagameaboutballswithweapons.html",
-      "title": "A Game About Balls With Weapons",
-      "source": "library-source/html5-games/clagameaboutballswithweapons.html"
-    },
-    {
-      "id": "library-source/html5-games/clagariolite.html",
-      "title": "Agar.io Lite",
-      "source": "library-source/html5-games/clagariolite.html"
-    },
-    {
-      "id": "library-source/html5-games/clahoysurvival.html",
-      "title": "Ahoy Survival",
-      "source": "library-source/html5-games/clahoysurvival.html"
-    },
-    {
-      "id": "library-source/html5-games/clallocation.html",
-      "title": "Allocation",
-      "source": "library-source/html5-games/clallocation.html"
     },
     {
       "id": "library-source/html5-games/clamorphous.html",
@@ -834,39 +220,9 @@
       "source": "library-source/html5-games/clancientsins.html"
     },
     {
-      "id": "library-source/html5-games/clarcadevolley.html",
-      "title": "Arcade Volley",
-      "source": "library-source/html5-games/clarcadevolley.html"
-    },
-    {
-      "id": "library-source/html5-games/clarsonate.html",
-      "title": "Arsonate",
-      "source": "library-source/html5-games/clarsonate.html"
-    },
-    {
-      "id": "library-source/html5-games/clarthursnightmare (1).html",
-      "title": "Arthursnightmare (1)",
-      "source": "library-source/html5-games/clarthursnightmare (1).html"
-    },
-    {
-      "id": "library-source/html5-games/clascent.html",
-      "title": "Ascent",
-      "source": "library-source/html5-games/clascent.html"
-    },
-    {
-      "id": "library-source/html5-games/clasdutydemands.html",
-      "title": "As Duty Demands",
-      "source": "library-source/html5-games/clasdutydemands.html"
-    },
-    {
       "id": "library-source/html5-games/clbabychiccoadventure.html",
       "title": "Baby Chicco Adventure",
       "source": "library-source/html5-games/clbabychiccoadventure.html"
-    },
-    {
-      "id": "library-source/html5-games/clbabysniperinvietnam.html",
-      "title": "Baby Sniper In Vietnam",
-      "source": "library-source/html5-games/clbabysniperinvietnam.html"
     },
     {
       "id": "library-source/html5-games/clbackrooms2D.html",
@@ -874,64 +230,9 @@
       "source": "library-source/html5-games/clbackrooms2D.html"
     },
     {
-      "id": "library-source/html5-games/clbadmondaysimulator (1).html",
-      "title": "Badmondaysimulator (1)",
-      "source": "library-source/html5-games/clbadmondaysimulator (1).html"
-    },
-    {
-      "id": "library-source/html5-games/clbadparenting.html",
-      "title": "Bad Parenting",
-      "source": "library-source/html5-games/clbadparenting.html"
-    },
-    {
-      "id": "library-source/html5-games/clbadpiggieslatest.html",
-      "title": "Bad Piggies (LATEST)",
-      "source": "library-source/html5-games/clbadpiggieslatest.html"
-    },
-    {
-      "id": "library-source/html5-games/clbaldiepstein.html",
-      "title": "Jeffery Epstein's Basics in Education and Kidnapping",
-      "source": "library-source/html5-games/clbaldiepstein.html"
-    },
-    {
-      "id": "library-source/html5-games/clbaldisfunnewschoolultimate.html",
-      "title": "Baldi’s Fun New School Ultimate",
-      "source": "library-source/html5-games/clbaldisfunnewschoolultimate.html"
-    },
-    {
-      "id": "library-source/html5-games/clballz.html",
-      "title": "BallZ",
-      "source": "library-source/html5-games/clballz.html"
-    },
-    {
-      "id": "library-source/html5-games/clbas.html",
-      "title": "BAS",
-      "source": "library-source/html5-games/clbas.html"
-    },
-    {
-      "id": "library-source/html5-games/clbatterup.html",
-      "title": "Batter Up",
-      "source": "library-source/html5-games/clbatterup.html"
-    },
-    {
       "id": "library-source/html5-games/clbattles.html",
       "title": "Battles",
       "source": "library-source/html5-games/clbattles.html"
-    },
-    {
-      "id": "library-source/html5-games/clbattlesim.html",
-      "title": "Battle Simulator",
-      "source": "library-source/html5-games/clbattlesim.html"
-    },
-    {
-      "id": "library-source/html5-games/clbigflappytowertinysquare.html",
-      "title": "Big Flappy Tower Tiny Square",
-      "source": "library-source/html5-games/clbigflappytowertinysquare.html"
-    },
-    {
-      "id": "library-source/html5-games/clbitburner.html",
-      "title": "Bit Burner",
-      "source": "library-source/html5-games/clbitburner.html"
     },
     {
       "id": "library-source/html5-games/clblightborne.html",
@@ -939,34 +240,9 @@
       "source": "library-source/html5-games/clblightborne.html"
     },
     {
-      "id": "library-source/html5-games/clblockblastv2.html",
-      "title": "Block Blast 2",
-      "source": "library-source/html5-games/clblockblastv2.html"
-    },
-    {
       "id": "library-source/html5-games/clblockcraftshooter.html",
       "title": "Minecraft Shooter",
       "source": "library-source/html5-games/clblockcraftshooter.html"
-    },
-    {
-      "id": "library-source/html5-games/clbloodtournament.html",
-      "title": "Blood Tournament",
-      "source": "library-source/html5-games/clbloodtournament.html"
-    },
-    {
-      "id": "library-source/html5-games/clbloonsTD6scratch.html",
-      "title": "BTD6 (scratch)",
-      "source": "library-source/html5-games/clbloonsTD6scratch.html"
-    },
-    {
-      "id": "library-source/html5-games/clbobasimulator.html",
-      "title": "Boba Simulator",
-      "source": "library-source/html5-games/clbobasimulator.html"
-    },
-    {
-      "id": "library-source/html5-games/clbobtherobber5.html",
-      "title": "Bob the Robber 5",
-      "source": "library-source/html5-games/clbobtherobber5.html"
     },
     {
       "id": "library-source/html5-games/clboomslingers.html",
@@ -974,39 +250,9 @@
       "source": "library-source/html5-games/clboomslingers.html"
     },
     {
-      "id": "library-source/html5-games/clbottlecracks.html",
-      "title": "Bottle Cracks",
-      "source": "library-source/html5-games/clbottlecracks.html"
-    },
-    {
-      "id": "library-source/html5-games/clbounceback.html",
-      "title": "Bounce Back",
-      "source": "library-source/html5-games/clbounceback.html"
-    },
-    {
-      "id": "library-source/html5-games/clBountyOfOne.html",
-      "title": "Bounty of One",
-      "source": "library-source/html5-games/clBountyOfOne.html"
-    },
-    {
-      "id": "library-source/html5-games/clbrainrot.html",
-      "title": "Also Steal A Brainrot",
-      "source": "library-source/html5-games/clbrainrot.html"
-    },
-    {
-      "id": "library-source/html5-games/clBrawlstars.html",
-      "title": "Brawlstars",
-      "source": "library-source/html5-games/clBrawlstars.html"
-    },
-    {
       "id": "library-source/html5-games/clbreadskate.html",
       "title": "Breadskate Forever",
       "source": "library-source/html5-games/clbreadskate.html"
-    },
-    {
-      "id": "library-source/html5-games/clbuild.html",
-      "title": "Build-Defend",
-      "source": "library-source/html5-games/clbuild.html"
     },
     {
       "id": "library-source/html5-games/clcallofbattle.html",
@@ -1014,74 +260,9 @@
       "source": "library-source/html5-games/clcallofbattle.html"
     },
     {
-      "id": "library-source/html5-games/clcandybox1.html",
-      "title": "Candy Box 1",
-      "source": "library-source/html5-games/clcandybox1.html"
-    },
-    {
-      "id": "library-source/html5-games/clcarcrash3.html",
-      "title": "Car Crash 3",
-      "source": "library-source/html5-games/clcarcrash3.html"
-    },
-    {
-      "id": "library-source/html5-games/clcarkingarena (1).html",
-      "title": "Carkingarena (1)",
-      "source": "library-source/html5-games/clcarkingarena (1).html"
-    },
-    {
-      "id": "library-source/html5-games/clcarkingarena.html",
-      "title": "Car King Arena",
-      "source": "library-source/html5-games/clcarkingarena.html"
-    },
-    {
-      "id": "library-source/html5-games/clcarrampvspolicechase.html",
-      "title": "Car Ramp Vs Police Chase",
-      "source": "library-source/html5-games/clcarrampvspolicechase.html"
-    },
-    {
-      "id": "library-source/html5-games/clCartoonNetworkTableTennisUltimateTournament.html",
-      "title": "Cartoon Network Table Tennis Ultimate Tournament",
-      "source": "library-source/html5-games/clCartoonNetworkTableTennisUltimateTournament.html"
-    },
-    {
       "id": "library-source/html5-games/clcastlewarsmodern.html",
       "title": "Castle Wars Modern",
       "source": "library-source/html5-games/clcastlewarsmodern.html"
-    },
-    {
-      "id": "library-source/html5-games/clceleste2.html",
-      "title": "Celeste 2",
-      "source": "library-source/html5-games/clceleste2.html"
-    },
-    {
-      "id": "library-source/html5-games/clCellToSingularity.html",
-      "title": "Cell to Singularity",
-      "source": "library-source/html5-games/clCellToSingularity.html"
-    },
-    {
-      "id": "library-source/html5-games/clcheeseisthereason.html",
-      "title": "Cheese Is The Reason",
-      "source": "library-source/html5-games/clcheeseisthereason.html"
-    },
-    {
-      "id": "library-source/html5-games/clcheshireinachatroom.html",
-      "title": "Cheshire In a Chatroom",
-      "source": "library-source/html5-games/clcheshireinachatroom.html"
-    },
-    {
-      "id": "library-source/html5-games/clChickenCS.html",
-      "title": "ChickenCS",
-      "source": "library-source/html5-games/clChickenCS.html"
-    },
-    {
-      "id": "library-source/html5-games/clchickenwar.html",
-      "title": "Chickenwar",
-      "source": "library-source/html5-games/clchickenwar.html"
-    },
-    {
-      "id": "library-source/html5-games/clcoffeemaker.html",
-      "title": "Coffee Maker",
-      "source": "library-source/html5-games/clcoffeemaker.html"
     },
     {
       "id": "library-source/html5-games/clcoldpines.html",
@@ -1089,74 +270,9 @@
       "source": "library-source/html5-games/clcoldpines.html"
     },
     {
-      "id": "library-source/html5-games/clcombopool.html",
-      "title": "Combo Pool",
-      "source": "library-source/html5-games/clcombopool.html"
-    },
-    {
-      "id": "library-source/html5-games/clcotlk.html",
-      "title": "Curse of the Lich King",
-      "source": "library-source/html5-games/clcotlk.html"
-    },
-    {
-      "id": "library-source/html5-games/clcreaturecardidle.html",
-      "title": "Creature Card Idle",
-      "source": "library-source/html5-games/clcreaturecardidle.html"
-    },
-    {
       "id": "library-source/html5-games/clcs1.6.html",
       "title": "C.S 1.6",
       "source": "library-source/html5-games/clcs1.6.html"
-    },
-    {
-      "id": "library-source/html5-games/clcustomersupport.html",
-      "title": "Customer Support",
-      "source": "library-source/html5-games/clcustomersupport.html"
-    },
-    {
-      "id": "library-source/html5-games/cldandysworldclicker.html",
-      "title": "Dandy's World Clicker",
-      "source": "library-source/html5-games/cldandysworldclicker.html"
-    },
-    {
-      "id": "library-source/html5-games/cldanktomb.html",
-      "title": "Dank Tomb",
-      "source": "library-source/html5-games/cldanktomb.html"
-    },
-    {
-      "id": "library-source/html5-games/cldasharena.html",
-      "title": "Dash Arena",
-      "source": "library-source/html5-games/cldasharena.html"
-    },
-    {
-      "id": "library-source/html5-games/cldatewithiraq.html",
-      "title": "Date With Iraq",
-      "source": "library-source/html5-games/cldatewithiraq.html"
-    },
-    {
-      "id": "library-source/html5-games/cldemonbluff.html",
-      "title": "Demon Bluff",
-      "source": "library-source/html5-games/cldemonbluff.html"
-    },
-    {
-      "id": "library-source/html5-games/cldimensionalincident.html",
-      "title": "Dimensional Incident",
-      "source": "library-source/html5-games/cldimensionalincident.html"
-    },
-    {
-      "id": "library-source/html5-games/cldiredecks.html",
-      "title": "Dire Decks",
-      "source": "library-source/html5-games/cldiredecks.html"
-    },
-    {
-      "id": "library-source/html5-games/cldoblox.html",
-      "title": "Doblox",
-      "source": "library-source/html5-games/cldoblox.html"
-    },
-    {
-      "id": "library-source/html5-games/cldomeromantik.html",
-      "title": "Dome Romantik",
-      "source": "library-source/html5-games/cldomeromantik.html"
     },
     {
       "id": "library-source/html5-games/cldoomemscripten.html",
@@ -1184,44 +300,9 @@
       "source": "library-source/html5-games/cldrweedgaster.html"
     },
     {
-      "id": "library-source/html5-games/cldukenukem2.html",
-      "title": "Duke Nukem 2",
-      "source": "library-source/html5-games/cldukenukem2.html"
-    },
-    {
-      "id": "library-source/html5-games/cldunedash.html",
-      "title": "Dune Dash",
-      "source": "library-source/html5-games/cldunedash.html"
-    },
-    {
-      "id": "library-source/html5-games/clduskchild.html",
-      "title": "Dusk Child",
-      "source": "library-source/html5-games/clduskchild.html"
-    },
-    {
-      "id": "library-source/html5-games/cldyingdreams.html",
-      "title": "Dying Dreams",
-      "source": "library-source/html5-games/cldyingdreams.html"
-    },
-    {
-      "id": "library-source/html5-games/cledelweiss.html",
-      "title": "Edelweiss",
-      "source": "library-source/html5-games/cledelweiss.html"
-    },
-    {
-      "id": "library-source/html5-games/cledyscarsimulator.html",
-      "title": "Edy’s Car Simulator",
-      "source": "library-source/html5-games/cledyscarsimulator.html"
-    },
-    {
       "id": "library-source/html5-games/cleffinghail.html",
       "title": "Effing Hail",
       "source": "library-source/html5-games/cleffinghail.html"
-    },
-    {
-      "id": "library-source/html5-games/clelasticface.html",
-      "title": "Elastic Face",
-      "source": "library-source/html5-games/clelasticface.html"
     },
     {
       "id": "library-source/html5-games/clelytraflight.html",
@@ -1229,99 +310,9 @@
       "source": "library-source/html5-games/clelytraflight.html"
     },
     {
-      "id": "library-source/html5-games/clenchain.html",
-      "title": "Enchain",
-      "source": "library-source/html5-games/clenchain.html"
-    },
-    {
-      "id": "library-source/html5-games/cleurovisionsim.html",
-      "title": "Euroaural Song Contest 2D",
-      "source": "library-source/html5-games/cleurovisionsim.html"
-    },
-    {
-      "id": "library-source/html5-games/clexoobservation.html",
-      "title": "Exoplanet Observation",
-      "source": "library-source/html5-games/clexoobservation.html"
-    },
-    {
-      "id": "library-source/html5-games/clfallguys.html",
-      "title": "Fall Guys",
-      "source": "library-source/html5-games/clfallguys.html"
-    },
-    {
-      "id": "library-source/html5-games/clfisquarium.html",
-      "title": "Fisquarium",
-      "source": "library-source/html5-games/clfisquarium.html"
-    },
-    {
-      "id": "library-source/html5-games/clfivenightsatbaldisredone.html",
-      "title": "Five Nights at Baldis Redone",
-      "source": "library-source/html5-games/clfivenightsatbaldisredone.html"
-    },
-    {
       "id": "library-source/html5-games/clfivenightsatyoshis.html",
       "title": "Five Nights At Yoshi’s",
       "source": "library-source/html5-games/clfivenightsatyoshis.html"
-    },
-    {
-      "id": "library-source/html5-games/clfluidism.html",
-      "title": "Fluidism",
-      "source": "library-source/html5-games/clfluidism.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnac1.html",
-      "title": "Five Nights at Candy’s 1",
-      "source": "library-source/html5-games/clfnac1.html"
-    },
-    {
-      "id": "library-source/html5-games/clFNAF.html",
-      "title": "FNAF",
-      "source": "library-source/html5-games/clFNAF.html"
-    },
-    {
-      "id": "library-source/html5-games/clFNAF2.html",
-      "title": "FNAF 2",
-      "source": "library-source/html5-games/clFNAF2.html"
-    },
-    {
-      "id": "library-source/html5-games/clFNAF3.html",
-      "title": "FNAF 3",
-      "source": "library-source/html5-games/clFNAF3.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnaf3remastered.html",
-      "title": "FNAF 3 Remastered",
-      "source": "library-source/html5-games/clfnaf3remastered.html"
-    },
-    {
-      "id": "library-source/html5-games/clFNAF4.html",
-      "title": "FNAF 4",
-      "source": "library-source/html5-games/clFNAF4.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnaf4halloween.html",
-      "title": "FNAF 4 Halloween",
-      "source": "library-source/html5-games/clfnaf4halloween.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnafps.html",
-      "title": "FNAF Pizzeria Simulator",
-      "source": "library-source/html5-games/clfnafps.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnafsl.html",
-      "title": "FNAF Sister Location",
-      "source": "library-source/html5-games/clfnafsl.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnafucn.html",
-      "title": "FNAF Ultimate Custom Night",
-      "source": "library-source/html5-games/clfnafucn.html"
-    },
-    {
-      "id": "library-source/html5-games/clfolderdungeon.html",
-      "title": "Folder Dungeon",
-      "source": "library-source/html5-games/clfolderdungeon.html"
     },
     {
       "id": "library-source/html5-games/clfreegemas.html",
@@ -1329,49 +320,9 @@
       "source": "library-source/html5-games/clfreegemas.html"
     },
     {
-      "id": "library-source/html5-games/clfromrusttoash.html",
-      "title": "From Rust To Ash",
-      "source": "library-source/html5-games/clfromrusttoash.html"
-    },
-    {
-      "id": "library-source/html5-games/clgdsubzero.html",
-      "title": "Geometry Dash Subzero (scratch)",
-      "source": "library-source/html5-games/clgdsubzero.html"
-    },
-    {
-      "id": "library-source/html5-games/clGeometryDashWave.html",
-      "title": "Also Geometry Dash Wave",
-      "source": "library-source/html5-games/clGeometryDashWave.html"
-    },
-    {
-      "id": "library-source/html5-games/clgetawayshootoutv2.html",
-      "title": "Getawayshootoutv2",
-      "source": "library-source/html5-games/clgetawayshootoutv2.html"
-    },
-    {
-      "id": "library-source/html5-games/clgettingoverit.html",
-      "title": "Getting Over It (Scratch)",
-      "source": "library-source/html5-games/clgettingoverit.html"
-    },
-    {
-      "id": "library-source/html5-games/clglfighters.html",
-      "title": "GLFighters",
-      "source": "library-source/html5-games/clglfighters.html"
-    },
-    {
       "id": "library-source/html5-games/clgloryhunters.html",
       "title": "Glory Hunters",
       "source": "library-source/html5-games/clgloryhunters.html"
-    },
-    {
-      "id": "library-source/html5-games/clgolfsunday.html",
-      "title": "Golf Sunday",
-      "source": "library-source/html5-games/clgolfsunday.html"
-    },
-    {
-      "id": "library-source/html5-games/clgoogledino.html",
-      "title": "Google Dino",
-      "source": "library-source/html5-games/clgoogledino.html"
     },
     {
       "id": "library-source/html5-games/clgorescriptclassic.html",
@@ -1379,49 +330,9 @@
       "source": "library-source/html5-games/clgorescriptclassic.html"
     },
     {
-      "id": "library-source/html5-games/clgotobed.html",
-      "title": "Go to bed",
-      "source": "library-source/html5-games/clgotobed.html"
-    },
-    {
       "id": "library-source/html5-games/clgrandactionsimulator-ny.html",
       "title": "Grand Action Simulator: New York",
       "source": "library-source/html5-games/clgrandactionsimulator-ny.html"
-    },
-    {
-      "id": "library-source/html5-games/clgrannycreepy.html",
-      "title": "Granny Creepy",
-      "source": "library-source/html5-games/clgrannycreepy.html"
-    },
-    {
-      "id": "library-source/html5-games/clgrannynightmare.html",
-      "title": "Granny Nightmare",
-      "source": "library-source/html5-games/clgrannynightmare.html"
-    },
-    {
-      "id": "library-source/html5-games/clgravitymod.html",
-      "title": "Gravity Mod",
-      "source": "library-source/html5-games/clgravitymod.html"
-    },
-    {
-      "id": "library-source/html5-games/clgreenergrassawaits.html",
-      "title": "Greener Grass Awaits",
-      "source": "library-source/html5-games/clgreenergrassawaits.html"
-    },
-    {
-      "id": "library-source/html5-games/clgrey-box-testing.html",
-      "title": "Grey Box Testing",
-      "source": "library-source/html5-games/clgrey-box-testing.html"
-    },
-    {
-      "id": "library-source/html5-games/clgrowyourgarden.html",
-      "title": "Grow Your Garden",
-      "source": "library-source/html5-games/clgrowyourgarden.html"
-    },
-    {
-      "id": "library-source/html5-games/clgta3.html",
-      "title": "Grand Theft Auto III",
-      "source": "library-source/html5-games/clgta3.html"
     },
     {
       "id": "library-source/html5-games/clgtamods.html",
@@ -1429,54 +340,9 @@
       "source": "library-source/html5-games/clgtamods.html"
     },
     {
-      "id": "library-source/html5-games/clguncho.html",
-      "title": "Guncho",
-      "source": "library-source/html5-games/clguncho.html"
-    },
-    {
-      "id": "library-source/html5-games/clgunknight.html",
-      "title": "Gun Knight",
-      "source": "library-source/html5-games/clgunknight.html"
-    },
-    {
       "id": "library-source/html5-games/clgunnight.html",
       "title": "Gun Night",
       "source": "library-source/html5-games/clgunnight.html"
-    },
-    {
-      "id": "library-source/html5-games/clhandshakes.html",
-      "title": "Handshakes",
-      "source": "library-source/html5-games/clhandshakes.html"
-    },
-    {
-      "id": "library-source/html5-games/clhandulum.html",
-      "title": "Handulam+",
-      "source": "library-source/html5-games/clhandulum.html"
-    },
-    {
-      "id": "library-source/html5-games/clhappyroom.html",
-      "title": "Happy Room",
-      "source": "library-source/html5-games/clhappyroom.html"
-    },
-    {
-      "id": "library-source/html5-games/clHaroldsbadday.html",
-      "title": "Harold's Bad Day",
-      "source": "library-source/html5-games/clHaroldsbadday.html"
-    },
-    {
-      "id": "library-source/html5-games/clhei$t.html",
-      "title": "HEI$T",
-      "source": "library-source/html5-games/clhei$t.html"
-    },
-    {
-      "id": "library-source/html5-games/clhighstakes.html",
-      "title": "High Stakes",
-      "source": "library-source/html5-games/clhighstakes.html"
-    },
-    {
-      "id": "library-source/html5-games/clHil ClimbRacing2.html",
-      "title": "Hil climb racing2",
-      "source": "library-source/html5-games/clHil ClimbRacing2.html"
     },
     {
       "id": "library-source/html5-games/clHiNoHomo.html",
@@ -1484,54 +350,9 @@
       "source": "library-source/html5-games/clHiNoHomo.html"
     },
     {
-      "id": "library-source/html5-games/clhit8ox.html",
-      "title": "HIT8OX",
-      "source": "library-source/html5-games/clhit8ox.html"
-    },
-    {
-      "id": "library-source/html5-games/clhl2doom.html",
-      "title": "Doom But It’s Half Life 2",
-      "source": "library-source/html5-games/clhl2doom.html"
-    },
-    {
-      "id": "library-source/html5-games/clhooked.html",
-      "title": "Hooked",
-      "source": "library-source/html5-games/clhooked.html"
-    },
-    {
-      "id": "library-source/html5-games/clhorntale.html",
-      "title": "Horntale",
-      "source": "library-source/html5-games/clhorntale.html"
-    },
-    {
-      "id": "library-source/html5-games/clhotwax.html",
-      "title": "Hot Wax",
-      "source": "library-source/html5-games/clhotwax.html"
-    },
-    {
-      "id": "library-source/html5-games/clhuggywuggypixel.html",
-      "title": "Huggy Wuggy Pixel",
-      "source": "library-source/html5-games/clhuggywuggypixel.html"
-    },
-    {
-      "id": "library-source/html5-games/clhungryknight.html",
-      "title": "Hungry Knight",
-      "source": "library-source/html5-games/clhungryknight.html"
-    },
-    {
-      "id": "library-source/html5-games/clidlefootballmanager.html",
-      "title": "Idle Football Manager",
-      "source": "library-source/html5-games/clidlefootballmanager.html"
-    },
-    {
       "id": "library-source/html5-games/clinsomniary.html",
       "title": "Insomniary",
       "source": "library-source/html5-games/clinsomniary.html"
-    },
-    {
-      "id": "library-source/html5-games/clintoruins.html",
-      "title": "Into Ruins",
-      "source": "library-source/html5-games/clintoruins.html"
     },
     {
       "id": "library-source/html5-games/clisthatagubby.html",
@@ -1539,124 +360,9 @@
       "source": "library-source/html5-games/clisthatagubby.html"
     },
     {
-      "id": "library-source/html5-games/clitgetssolonelyhere.html",
-      "title": "It Gets So Lonely Here",
-      "source": "library-source/html5-games/clitgetssolonelyhere.html"
-    },
-    {
-      "id": "library-source/html5-games/cljailbreakobbbobob.html",
-      "title": "Jailbreak Obby",
-      "source": "library-source/html5-games/cljailbreakobbbobob.html"
-    },
-    {
-      "id": "library-source/html5-games/cljazzjackrabbit.html",
-      "title": "Jazz Jackrabbit",
-      "source": "library-source/html5-games/cljazzjackrabbit.html"
-    },
-    {
-      "id": "library-source/html5-games/cljefflings.html",
-      "title": "Jefflings",
-      "source": "library-source/html5-games/cljefflings.html"
-    },
-    {
-      "id": "library-source/html5-games/cljsvecx.html",
-      "title": "Jsvecx",
-      "source": "library-source/html5-games/cljsvecx.html"
-    },
-    {
-      "id": "library-source/html5-games/cljustaplatformer.html",
-      "title": "Just a Platformer",
-      "source": "library-source/html5-games/cljustaplatformer.html"
-    },
-    {
-      "id": "library-source/html5-games/cljustaplatformerE.html",
-      "title": "Just a Platformer Editor 1",
-      "source": "library-source/html5-games/cljustaplatformerE.html"
-    },
-    {
-      "id": "library-source/html5-games/cljustaplatformerE2.html",
-      "title": "Just a Platformer Editor 2",
-      "source": "library-source/html5-games/cljustaplatformerE2.html"
-    },
-    {
-      "id": "library-source/html5-games/clkalikan.html",
-      "title": "Kalikan",
-      "source": "library-source/html5-games/clkalikan.html"
-    },
-    {
-      "id": "library-source/html5-games/clkarlson2d.html",
-      "title": "Karlson 2d",
-      "source": "library-source/html5-games/clkarlson2d.html"
-    },
-    {
-      "id": "library-source/html5-games/clkillover.html",
-      "title": "Killover",
-      "source": "library-source/html5-games/clkillover.html"
-    },
-    {
-      "id": "library-source/html5-games/clkimjonguntilepuzzle.html",
-      "title": "Kim Jong Un Tile Puzzle",
-      "source": "library-source/html5-games/clkimjonguntilepuzzle.html"
-    },
-    {
-      "id": "library-source/html5-games/clknockknock.html",
-      "title": "Knockknock",
-      "source": "library-source/html5-games/clknockknock.html"
-    },
-    {
-      "id": "library-source/html5-games/cllaceysflashgames (1).html",
-      "title": "Laceysflashgames (1)",
-      "source": "library-source/html5-games/cllaceysflashgames (1).html"
-    },
-    {
-      "id": "library-source/html5-games/clleafblower.html",
-      "title": "Leaf Blower Revolution",
-      "source": "library-source/html5-games/clleafblower.html"
-    },
-    {
-      "id": "library-source/html5-games/cllegionbreaker.html",
-      "title": "Legionbreaker",
-      "source": "library-source/html5-games/cllegionbreaker.html"
-    },
-    {
-      "id": "library-source/html5-games/clletitconsume.html",
-      "title": "Let It Consume",
-      "source": "library-source/html5-games/clletitconsume.html"
-    },
-    {
-      "id": "library-source/html5-games/clleverwarriors.html",
-      "title": "Lever Warriors",
-      "source": "library-source/html5-games/clleverwarriors.html"
-    },
-    {
       "id": "library-source/html5-games/clLobotemyDash.html",
       "title": "Lobotemy dash",
       "source": "library-source/html5-games/clLobotemyDash.html"
-    },
-    {
-      "id": "library-source/html5-games/cllockthedoor.html",
-      "title": "Lock the Door",
-      "source": "library-source/html5-games/cllockthedoor.html"
-    },
-    {
-      "id": "library-source/html5-games/cllowknight.html",
-      "title": "Low Knight",
-      "source": "library-source/html5-games/cllowknight.html"
-    },
-    {
-      "id": "library-source/html5-games/clluckyblocks.html",
-      "title": "Robby Blocks",
-      "source": "library-source/html5-games/clluckyblocks.html"
-    },
-    {
-      "id": "library-source/html5-games/cllumberobby.html",
-      "title": "Obby For Lumber",
-      "source": "library-source/html5-games/cllumberobby.html"
-    },
-    {
-      "id": "library-source/html5-games/cllummm.html",
-      "title": "Level Up - Mario Minigames Mayhem",
-      "source": "library-source/html5-games/cllummm.html"
     },
     {
       "id": "library-source/html5-games/clmadalinstuntcarsmultiplayerfixed.html",
@@ -1679,26 +385,6 @@
       "source": "library-source/html5-games/clmakesureitsclosed.html"
     },
     {
-      "id": "library-source/html5-games/clmanagod.html",
-      "title": "Mana God",
-      "source": "library-source/html5-games/clmanagod.html"
-    },
-    {
-      "id": "library-source/html5-games/clmarbleracer.html",
-      "title": "Marbleracer",
-      "source": "library-source/html5-games/clmarbleracer.html"
-    },
-    {
-      "id": "library-source/html5-games/clmario64webgl.html",
-      "title": "Super Mario 64 (webgl)",
-      "source": "library-source/html5-games/clmario64webgl.html"
-    },
-    {
-      "id": "library-source/html5-games/clmariovsluigi.html",
-      "title": "Mario VS Luigi Online",
-      "source": "library-source/html5-games/clmariovsluigi.html"
-    },
-    {
       "id": "library-source/html5-games/clmaskedforcesunlimited.html",
       "title": "Masked Forces Unlimited",
       "source": "library-source/html5-games/clmaskedforcesunlimited.html"
@@ -1707,31 +393,6 @@
       "id": "library-source/html5-games/clmedalofhonor.html",
       "title": "Medal Of Honor",
       "source": "library-source/html5-games/clmedalofhonor.html"
-    },
-    {
-      "id": "library-source/html5-games/clmegachess.html",
-      "title": "Megachess",
-      "source": "library-source/html5-games/clmegachess.html"
-    },
-    {
-      "id": "library-source/html5-games/clmeowio.html",
-      "title": "Meowio",
-      "source": "library-source/html5-games/clmeowio.html"
-    },
-    {
-      "id": "library-source/html5-games/clmimic.html",
-      "title": "Mimic",
-      "source": "library-source/html5-games/clmimic.html"
-    },
-    {
-      "id": "library-source/html5-games/clminecart.html",
-      "title": "Minecart",
-      "source": "library-source/html5-games/clminecart.html"
-    },
-    {
-      "id": "library-source/html5-games/clminecraftcasesim.html",
-      "title": "Minecraft Case Sim",
-      "source": "library-source/html5-games/clminecraftcasesim.html"
     },
     {
       "id": "library-source/html5-games/clminicrossword.html",
@@ -1744,44 +405,9 @@
       "source": "library-source/html5-games/clmomimsleeping.html"
     },
     {
-      "id": "library-source/html5-games/clmonstertruckportstunt.html",
-      "title": "Monster Truck Port Stunt",
-      "source": "library-source/html5-games/clmonstertruckportstunt.html"
-    },
-    {
-      "id": "library-source/html5-games/clmotox3mspookyland.html",
-      "title": "MotoX3m Spooky Land",
-      "source": "library-source/html5-games/clmotox3mspookyland.html"
-    },
-    {
-      "id": "library-source/html5-games/clnetattack.html",
-      "title": "Net.Attack",
-      "source": "library-source/html5-games/clnetattack.html"
-    },
-    {
-      "id": "library-source/html5-games/clneverendinglegacy.html",
-      "title": "Neverending Legacy",
-      "source": "library-source/html5-games/clneverendinglegacy.html"
-    },
-    {
-      "id": "library-source/html5-games/clnguidle.html",
-      "title": "NGU Idle",
-      "source": "library-source/html5-games/clnguidle.html"
-    },
-    {
-      "id": "library-source/html5-games/clnightcatsurvival.html",
-      "title": "Nightcat Survival",
-      "source": "library-source/html5-games/clnightcatsurvival.html"
-    },
-    {
       "id": "library-source/html5-games/clnightclubshowdown.html",
       "title": "Nightclub Showdown",
       "source": "library-source/html5-games/clnightclubshowdown.html"
-    },
-    {
-      "id": "library-source/html5-games/clnimrods.html",
-      "title": "Nimrods",
-      "source": "library-source/html5-games/clnimrods.html"
     },
     {
       "id": "library-source/html5-games/clnoobminer.html",
@@ -1789,34 +415,9 @@
       "source": "library-source/html5-games/clnoobminer.html"
     },
     {
-      "id": "library-source/html5-games/clnotyourpawn.html",
-      "title": "Not Your Pawn",
-      "source": "library-source/html5-games/clnotyourpawn.html"
-    },
-    {
-      "id": "library-source/html5-games/clnullkevin.html",
-      "title": "10-103 Null Kevin",
-      "source": "library-source/html5-games/clnullkevin.html"
-    },
-    {
       "id": "library-source/html5-games/clobby-99-will-lose.html",
       "title": "Obby 99% Will Lose",
       "source": "library-source/html5-games/clobby-99-will-lose.html"
-    },
-    {
-      "id": "library-source/html5-games/clobbycart.html",
-      "title": "Obby Cart",
-      "source": "library-source/html5-games/clobbycart.html"
-    },
-    {
-      "id": "library-source/html5-games/clobbyfriends.html",
-      "title": "Obby With Friends",
-      "source": "library-source/html5-games/clobbyfriends.html"
-    },
-    {
-      "id": "library-source/html5-games/clobbyslide.html",
-      "title": "Obby Slide",
-      "source": "library-source/html5-games/clobbyslide.html"
     },
     {
       "id": "library-source/html5-games/clobbyswing.html",
@@ -1824,84 +425,9 @@
       "source": "library-source/html5-games/clobbyswing.html"
     },
     {
-      "id": "library-source/html5-games/clofflineparadise.html",
-      "title": "Offline Paradise",
-      "source": "library-source/html5-games/clofflineparadise.html"
-    },
-    {
-      "id": "library-source/html5-games/clomeganuggetclicker.html",
-      "title": "Omega Nugget Clicker",
-      "source": "library-source/html5-games/clomeganuggetclicker.html"
-    },
-    {
-      "id": "library-source/html5-games/cloneshotold.html",
-      "title": "Oneshot (old)",
-      "source": "library-source/html5-games/cloneshotold.html"
-    },
-    {
-      "id": "library-source/html5-games/cloperius.html",
-      "title": "Operius",
-      "source": "library-source/html5-games/cloperius.html"
-    },
-    {
-      "id": "library-source/html5-games/clpaperio3d.html",
-      "title": "Paper.io 3D",
-      "source": "library-source/html5-games/clpaperio3d.html"
-    },
-    {
-      "id": "library-source/html5-games/clpaperiomania.html",
-      "title": "Paper.io Mania",
-      "source": "library-source/html5-games/clpaperiomania.html"
-    },
-    {
-      "id": "library-source/html5-games/clpenguindiner.html",
-      "title": "Penguin Diner",
-      "source": "library-source/html5-games/clpenguindiner.html"
-    },
-    {
-      "id": "library-source/html5-games/clperfecthotel.html",
-      "title": "Perfect Hotel",
-      "source": "library-source/html5-games/clperfecthotel.html"
-    },
-    {
-      "id": "library-source/html5-games/clpetworld.html",
-      "title": "Pet World",
-      "source": "library-source/html5-games/clpetworld.html"
-    },
-    {
-      "id": "library-source/html5-games/clphasma.html",
-      "title": "Phasma",
-      "source": "library-source/html5-games/clphasma.html"
-    },
-    {
-      "id": "library-source/html5-games/clpicodriller.html",
-      "title": "Pico Driller",
-      "source": "library-source/html5-games/clpicodriller.html"
-    },
-    {
-      "id": "library-source/html5-games/clpicohot.html",
-      "title": "Pico Hot",
-      "source": "library-source/html5-games/clpicohot.html"
-    },
-    {
-      "id": "library-source/html5-games/clpicolife.html",
-      "title": "Pico Life",
-      "source": "library-source/html5-games/clpicolife.html"
-    },
-    {
-      "id": "library-source/html5-games/clpiecesofcake.html",
-      "title": "Pieces of Cake",
-      "source": "library-source/html5-games/clpiecesofcake.html"
-    },
-    {
       "id": "library-source/html5-games/clpint.html",
       "title": "Pretend It’s Not There",
       "source": "library-source/html5-games/clpint.html"
-    },
-    {
-      "id": "library-source/html5-games/clpixelbattlegroundsio.html",
-      "title": "Pixel Battlegrounds.io",
-      "source": "library-source/html5-games/clpixelbattlegroundsio.html"
     },
     {
       "id": "library-source/html5-games/clpixelcombat2.html",
@@ -1909,79 +435,9 @@
       "source": "library-source/html5-games/clpixelcombat2.html"
     },
     {
-      "id": "library-source/html5-games/clpixelgun.html",
-      "title": "Pixel Gun",
-      "source": "library-source/html5-games/clpixelgun.html"
-    },
-    {
       "id": "library-source/html5-games/clpixelspeedrun.html",
       "title": "Pixelspeedrun",
       "source": "library-source/html5-games/clpixelspeedrun.html"
-    },
-    {
-      "id": "library-source/html5-games/clpogo3D.html",
-      "title": "Pogo 3D",
-      "source": "library-source/html5-games/clpogo3D.html"
-    },
-    {
-      "id": "library-source/html5-games/clpokeacademylifeforever.html",
-      "title": "Pokemon Academy Life: Forever!",
-      "source": "library-source/html5-games/clpokeacademylifeforever.html"
-    },
-    {
-      "id": "library-source/html5-games/clpolyold.html",
-      "title": "Poly Track old ver",
-      "source": "library-source/html5-games/clpolyold.html"
-    },
-    {
-      "id": "library-source/html5-games/clporklike.html",
-      "title": "Porklike",
-      "source": "library-source/html5-games/clporklike.html"
-    },
-    {
-      "id": "library-source/html5-games/clporter.html",
-      "title": "Porter",
-      "source": "library-source/html5-games/clporter.html"
-    },
-    {
-      "id": "library-source/html5-games/clpossessquest.html",
-      "title": "Possess Quest",
-      "source": "library-source/html5-games/clpossessquest.html"
-    },
-    {
-      "id": "library-source/html5-games/clprankcalltungtungtungsahurclicker.html",
-      "title": "Prank Call Tung Tung Tung Sahur Clicker",
-      "source": "library-source/html5-games/clprankcalltungtungtungsahurclicker.html"
-    },
-    {
-      "id": "library-source/html5-games/clprestigetree.html",
-      "title": "Prestige Tree",
-      "source": "library-source/html5-games/clprestigetree.html"
-    },
-    {
-      "id": "library-source/html5-games/clprocessortycoon.html",
-      "title": "Processor Tycoon",
-      "source": "library-source/html5-games/clprocessortycoon.html"
-    },
-    {
-      "id": "library-source/html5-games/clprodigyentrapta.html",
-      "title": "Prodigyentrapta",
-      "source": "library-source/html5-games/clprodigyentrapta.html"
-    },
-    {
-      "id": "library-source/html5-games/clprodigyMTKSIKM.html",
-      "title": "Prodigy mtksikm",
-      "source": "library-source/html5-games/clprodigyMTKSIKM.html"
-    },
-    {
-      "id": "library-source/html5-games/clpullfrog.html",
-      "title": "Pullfrog",
-      "source": "library-source/html5-games/clpullfrog.html"
-    },
-    {
-      "id": "library-source/html5-games/clpumpkinrun.html",
-      "title": "Pumpkin Run 64",
-      "source": "library-source/html5-games/clpumpkinrun.html"
     },
     {
       "id": "library-source/html5-games/clpvz2gardenless.html",
@@ -1989,59 +445,9 @@
       "source": "library-source/html5-games/clpvz2gardenless.html"
     },
     {
-      "id": "library-source/html5-games/clQuantumClicker.html",
-      "title": "Quantum Clicker",
-      "source": "library-source/html5-games/clQuantumClicker.html"
-    },
-    {
-      "id": "library-source/html5-games/clrabbithole106.html",
-      "title": "Rabbit Hole 1.0.6",
-      "source": "library-source/html5-games/clrabbithole106.html"
-    },
-    {
-      "id": "library-source/html5-games/clragollhit.html",
-      "title": "Ragollhit",
-      "source": "library-source/html5-games/clragollhit.html"
-    },
-    {
-      "id": "library-source/html5-games/clravenbase.html",
-      "title": "Ravenbase",
-      "source": "library-source/html5-games/clravenbase.html"
-    },
-    {
-      "id": "library-source/html5-games/clreacticore.html",
-      "title": "Reacticore",
-      "source": "library-source/html5-games/clreacticore.html"
-    },
-    {
-      "id": "library-source/html5-games/clredalert.html",
-      "title": "Command and Conquer Red Alert",
-      "source": "library-source/html5-games/clredalert.html"
-    },
-    {
-      "id": "library-source/html5-games/clredtierunner.html",
-      "title": "Red Tie Runner",
-      "source": "library-source/html5-games/clredtierunner.html"
-    },
-    {
-      "id": "library-source/html5-games/clrepobad.html",
-      "title": "R.E.P.O bad",
-      "source": "library-source/html5-games/clrepobad.html"
-    },
-    {
-      "id": "library-source/html5-games/clretropingpong.html",
-      "title": "Retro Ping Pong",
-      "source": "library-source/html5-games/clretropingpong.html"
-    },
-    {
       "id": "library-source/html5-games/clreturntoriddleschool.html",
       "title": "Return to Riddle School",
       "source": "library-source/html5-games/clreturntoriddleschool.html"
-    },
-    {
-      "id": "library-source/html5-games/clrevolutionidle.html",
-      "title": "Revolution Idle",
-      "source": "library-source/html5-games/clrevolutionidle.html"
     },
     {
       "id": "library-source/html5-games/clrh.html",
@@ -2054,69 +460,9 @@
       "source": "library-source/html5-games/clriddlemiddleschool.html"
     },
     {
-      "id": "library-source/html5-games/clrocketleague.html",
-      "title": "Rocket League",
-      "source": "library-source/html5-games/clrocketleague.html"
-    },
-    {
       "id": "library-source/html5-games/clrollerballer.html",
       "title": "Roller Baller",
       "source": "library-source/html5-games/clrollerballer.html"
-    },
-    {
-      "id": "library-source/html5-games/clrunfromwitheredfox.html",
-      "title": "Run from Withered Fox",
-      "source": "library-source/html5-games/clrunfromwitheredfox.html"
-    },
-    {
-      "id": "library-source/html5-games/clrussiancardriver.html",
-      "title": "Russian Car Driver",
-      "source": "library-source/html5-games/clrussiancardriver.html"
-    },
-    {
-      "id": "library-source/html5-games/clrussiansandbox.html",
-      "title": "Russian Sandbox",
-      "source": "library-source/html5-games/clrussiansandbox.html"
-    },
-    {
-      "id": "library-source/html5-games/clsabduel.html",
-      "title": "Steal A Brainrot Duel",
-      "source": "library-source/html5-games/clsabduel.html"
-    },
-    {
-      "id": "library-source/html5-games/clsanty.html",
-      "title": "Santy",
-      "source": "library-source/html5-games/clsanty.html"
-    },
-    {
-      "id": "library-source/html5-games/clsaulgoodmanrun.html",
-      "title": "Saul Goodman Run",
-      "source": "library-source/html5-games/clsaulgoodmanrun.html"
-    },
-    {
-      "id": "library-source/html5-games/clscalethedepths.html",
-      "title": "Scale The Depths",
-      "source": "library-source/html5-games/clscalethedepths.html"
-    },
-    {
-      "id": "library-source/html5-games/clScamptonTheGreatFightRecreate.html",
-      "title": "Scampton The Great Fight Recreate",
-      "source": "library-source/html5-games/clScamptonTheGreatFightRecreate.html"
-    },
-    {
-      "id": "library-source/html5-games/clscarletshift.html",
-      "title": "Scarlet Shift",
-      "source": "library-source/html5-games/clscarletshift.html"
-    },
-    {
-      "id": "library-source/html5-games/clscaryshawarma.html",
-      "title": "Scary Shawarma",
-      "source": "library-source/html5-games/clscaryshawarma.html"
-    },
-    {
-      "id": "library-source/html5-games/clscubabear.html",
-      "title": "Scuba Bear",
-      "source": "library-source/html5-games/clscubabear.html"
     },
     {
       "id": "library-source/html5-games/clseamongrel.html",
@@ -2124,39 +470,9 @@
       "source": "library-source/html5-games/clseamongrel.html"
     },
     {
-      "id": "library-source/html5-games/clself.html",
-      "title": "Self",
-      "source": "library-source/html5-games/clself.html"
-    },
-    {
-      "id": "library-source/html5-games/clshadowcourier.html",
-      "title": "Shadow Courier",
-      "source": "library-source/html5-games/clshadowcourier.html"
-    },
-    {
-      "id": "library-source/html5-games/clshapetransform.html",
-      "title": "Shape Transform",
-      "source": "library-source/html5-games/clshapetransform.html"
-    },
-    {
       "id": "library-source/html5-games/clshift2.html",
       "title": "Shift 2",
       "source": "library-source/html5-games/clshift2.html"
-    },
-    {
-      "id": "library-source/html5-games/clshotout4.html",
-      "title": "Shot Out 4",
-      "source": "library-source/html5-games/clshotout4.html"
-    },
-    {
-      "id": "library-source/html5-games/clshredmill.html",
-      "title": "Shredmill",
-      "source": "library-source/html5-games/clshredmill.html"
-    },
-    {
-      "id": "library-source/html5-games/clsilkmelody.html",
-      "title": "Silk Melody",
-      "source": "library-source/html5-games/clsilkmelody.html"
     },
     {
       "id": "library-source/html5-games/clslenderman.html",
@@ -2164,99 +480,9 @@
       "source": "library-source/html5-games/clslenderman.html"
     },
     {
-      "id": "library-source/html5-games/clslendytubbies.html",
-      "title": "Slendy Tubbies",
-      "source": "library-source/html5-games/clslendytubbies.html"
-    },
-    {
-      "id": "library-source/html5-games/clslipways.html",
-      "title": "Slipways",
-      "source": "library-source/html5-games/clslipways.html"
-    },
-    {
-      "id": "library-source/html5-games/clslope2player.html",
-      "title": "Slope 2 player",
-      "source": "library-source/html5-games/clslope2player.html"
-    },
-    {
-      "id": "library-source/html5-games/clsnakelike.html",
-      "title": "Snakelike",
-      "source": "library-source/html5-games/clsnakelike.html"
-    },
-    {
-      "id": "library-source/html5-games/clsnowboardobby.html",
-      "title": "Snowboardobby",
-      "source": "library-source/html5-games/clsnowboardobby.html"
-    },
-    {
-      "id": "library-source/html5-games/clsnowriderrrr.html",
-      "title": "Alt Snow Rider",
-      "source": "library-source/html5-games/clsnowriderrrr.html"
-    },
-    {
-      "id": "library-source/html5-games/clsodasimulator.html",
-      "title": "Soda Simulator",
-      "source": "library-source/html5-games/clsodasimulator.html"
-    },
-    {
-      "id": "library-source/html5-games/clsonic1mobile.html",
-      "title": "Sonic 1 Mobile",
-      "source": "library-source/html5-games/clsonic1mobile.html"
-    },
-    {
-      "id": "library-source/html5-games/clsonic2mobile.html",
-      "title": "Sonic 2 Mobile",
-      "source": "library-source/html5-games/clsonic2mobile.html"
-    },
-    {
       "id": "library-source/html5-games/clsonicandfallingstar.html",
       "title": "Sonic And The Falling Star",
       "source": "library-source/html5-games/clsonicandfallingstar.html"
-    },
-    {
-      "id": "library-source/html5-games/clsonicrevert.html",
-      "title": "Sonic Revert",
-      "source": "library-source/html5-games/clsonicrevert.html"
-    },
-    {
-      "id": "library-source/html5-games/clsouljumper.html",
-      "title": "Soul Jumper",
-      "source": "library-source/html5-games/clsouljumper.html"
-    },
-    {
-      "id": "library-source/html5-games/clspeedperclick.html",
-      "title": "Speed Per Click",
-      "source": "library-source/html5-games/clspeedperclick.html"
-    },
-    {
-      "id": "library-source/html5-games/clsprunkiclicker.html",
-      "title": "Sprunki Clicker",
-      "source": "library-source/html5-games/clsprunkiclicker.html"
-    },
-    {
-      "id": "library-source/html5-games/clsprunkipyramixed.html",
-      "title": "Sprunki Pyra Mixed",
-      "source": "library-source/html5-games/clsprunkipyramixed.html"
-    },
-    {
-      "id": "library-source/html5-games/clsquidplayground.html",
-      "title": "Squid Playground",
-      "source": "library-source/html5-games/clsquidplayground.html"
-    },
-    {
-      "id": "library-source/html5-games/clstationmeltdown.html",
-      "title": "Station Meltdown",
-      "source": "library-source/html5-games/clstationmeltdown.html"
-    },
-    {
-      "id": "library-source/html5-games/clsteelsurge.html",
-      "title": "Steel Surge Revolution",
-      "source": "library-source/html5-games/clsteelsurge.html"
-    },
-    {
-      "id": "library-source/html5-games/clsteepdescent.html",
-      "title": "Steep Descent",
-      "source": "library-source/html5-games/clsteepdescent.html"
     },
     {
       "id": "library-source/html5-games/clstickmangtacity.html",
@@ -2264,54 +490,9 @@
       "source": "library-source/html5-games/clstickmangtacity.html"
     },
     {
-      "id": "library-source/html5-games/clstreangeropepolice.html",
-      "title": "Amazing Strange Rope Police",
-      "source": "library-source/html5-games/clstreangeropepolice.html"
-    },
-    {
-      "id": "library-source/html5-games/clsugaryspire.html",
-      "title": "Sugary Spire UNHAM",
-      "source": "library-source/html5-games/clsugaryspire.html"
-    },
-    {
-      "id": "library-source/html5-games/clsuikapico.html",
-      "title": "Suika Pico",
-      "source": "library-source/html5-games/clsuikapico.html"
-    },
-    {
-      "id": "library-source/html5-games/clsunandmoon.html",
-      "title": "The Sun and Moon",
-      "source": "library-source/html5-games/clsunandmoon.html"
-    },
-    {
       "id": "library-source/html5-games/clsupercarrush.html",
       "title": "Super Car Rush",
       "source": "library-source/html5-games/clsupercarrush.html"
-    },
-    {
-      "id": "library-source/html5-games/clsuperdarkdeception.html",
-      "title": "Super Dark Deception",
-      "source": "library-source/html5-games/clsuperdarkdeception.html"
-    },
-    {
-      "id": "library-source/html5-games/clsuperpickleballadventure.html",
-      "title": "Super  Pickleball Adventure",
-      "source": "library-source/html5-games/clsuperpickleballadventure.html"
-    },
-    {
-      "id": "library-source/html5-games/clsurvevio.html",
-      "title": "Survev.io",
-      "source": "library-source/html5-games/clsurvevio.html"
-    },
-    {
-      "id": "library-source/html5-games/clsurvivalracev2.html",
-      "title": "Survival Race v2",
-      "source": "library-source/html5-games/clsurvivalracev2.html"
-    },
-    {
-      "id": "library-source/html5-games/clsushiunroll.html",
-      "title": "Sushi Unroll",
-      "source": "library-source/html5-games/clsushiunroll.html"
     },
     {
       "id": "library-source/html5-games/cltacostand.html",
@@ -2329,104 +510,9 @@
       "source": "library-source/html5-games/cltagcm.html"
     },
     {
-      "id": "library-source/html5-games/cltaisei.html",
-      "title": "Taisei Project",
-      "source": "library-source/html5-games/cltaisei.html"
-    },
-    {
       "id": "library-source/html5-games/cltankpixel.html",
       "title": "Tank Pixel",
       "source": "library-source/html5-games/cltankpixel.html"
-    },
-    {
-      "id": "library-source/html5-games/cltelephonetrouble.html",
-      "title": "Telephone Trouble",
-      "source": "library-source/html5-games/cltelephonetrouble.html"
-    },
-    {
-      "id": "library-source/html5-games/cltempoverdose.html",
-      "title": "TEMPOVERDOSE",
-      "source": "library-source/html5-games/cltempoverdose.html"
-    },
-    {
-      "id": "library-source/html5-games/clteod.html",
-      "title": "The End Of Disney",
-      "source": "library-source/html5-games/clteod.html"
-    },
-    {
-      "id": "library-source/html5-games/clterra.html",
-      "title": "Terra",
-      "source": "library-source/html5-games/clterra.html"
-    },
-    {
-      "id": "library-source/html5-games/clthedude.html",
-      "title": "The Dude",
-      "source": "library-source/html5-games/clthedude.html"
-    },
-    {
-      "id": "library-source/html5-games/clthermomorph.html",
-      "title": "Thermomorph",
-      "source": "library-source/html5-games/clthermomorph.html"
-    },
-    {
-      "id": "library-source/html5-games/clthrowapotato.html",
-      "title": "Throw a Potato",
-      "source": "library-source/html5-games/clthrowapotato.html"
-    },
-    {
-      "id": "library-source/html5-games/clthrowapotatoagain.html",
-      "title": "Throw a Potato Again",
-      "source": "library-source/html5-games/clthrowapotatoagain.html"
-    },
-    {
-      "id": "library-source/html5-games/clthwack.html",
-      "title": "Thwack",
-      "source": "library-source/html5-games/clthwack.html"
-    },
-    {
-      "id": "library-source/html5-games/cltiberiandawn.html",
-      "title": "Command and Conquer Tiberian Dawn",
-      "source": "library-source/html5-games/cltiberiandawn.html"
-    },
-    {
-      "id": "library-source/html5-games/cltoastarling.html",
-      "title": "To a Starling",
-      "source": "library-source/html5-games/cltoastarling.html"
-    },
-    {
-      "id": "library-source/html5-games/cltoasterball.html",
-      "title": "Toasterball",
-      "source": "library-source/html5-games/cltoasterball.html"
-    },
-    {
-      "id": "library-source/html5-games/cltommorowandyesterday.html",
-      "title": "Tomorrow And Yesterday",
-      "source": "library-source/html5-games/cltommorowandyesterday.html"
-    },
-    {
-      "id": "library-source/html5-games/cltowerwizard.html",
-      "title": "Tower Wizard",
-      "source": "library-source/html5-games/cltowerwizard.html"
-    },
-    {
-      "id": "library-source/html5-games/cltralalerotralalaescapetungtungtungsahur.html",
-      "title": "Tralalero Tralala Escape Tung Tung Tung Sahur",
-      "source": "library-source/html5-games/cltralalerotralalaescapetungtungtungsahur.html"
-    },
-    {
-      "id": "library-source/html5-games/cltrappedwithjester.html",
-      "title": "Trapped With Jester",
-      "source": "library-source/html5-games/cltrappedwithjester.html"
-    },
-    {
-      "id": "library-source/html5-games/cltrechoroustrials.html",
-      "title": "Treacherous Trials",
-      "source": "library-source/html5-games/cltrechoroustrials.html"
-    },
-    {
-      "id": "library-source/html5-games/cltrechoroustrialspart2.html",
-      "title": "Treacherous Trials Part 2",
-      "source": "library-source/html5-games/cltrechoroustrialspart2.html"
     },
     {
       "id": "library-source/html5-games/cltriachnid.html",
@@ -2434,94 +520,9 @@
       "source": "library-source/html5-games/cltriachnid.html"
     },
     {
-      "id": "library-source/html5-games/cltrucksim.html",
-      "title": "Indian Truck Simulator",
-      "source": "library-source/html5-games/cltrucksim.html"
-    },
-    {
-      "id": "library-source/html5-games/cltsuzukimaze.html",
-      "title": "Tsuzukimaze",
-      "source": "library-source/html5-games/cltsuzukimaze.html"
-    },
-    {
-      "id": "library-source/html5-games/cltungtungbasics.html",
-      "title": "Tung Tung Basics (t cubed or t³)",
-      "source": "library-source/html5-games/cltungtungbasics.html"
-    },
-    {
-      "id": "library-source/html5-games/cltungtunghorror.html",
-      "title": "Tung Sahur Horror",
-      "source": "library-source/html5-games/cltungtunghorror.html"
-    },
-    {
-      "id": "library-source/html5-games/cltungtungtungsahurobby.html",
-      "title": "Tung Tung Tung Sahur Obby",
-      "source": "library-source/html5-games/cltungtungtungsahurobby.html"
-    },
-    {
-      "id": "library-source/html5-games/cltunnelrushbetter.html",
-      "title": "Better Tunnel Rush",
-      "source": "library-source/html5-games/cltunnelrushbetter.html"
-    },
-    {
-      "id": "library-source/html5-games/clucds.html",
-      "title": "Other Car Driving Simulator",
-      "source": "library-source/html5-games/clucds.html"
-    },
-    {
-      "id": "library-source/html5-games/cluckyblockobbyEUOPHRATESRIVER.html",
-      "title": "Lucky Blocks Obby",
-      "source": "library-source/html5-games/cluckyblockobbyEUOPHRATESRIVER.html"
-    },
-    {
-      "id": "library-source/html5-games/clufoswampoddysey.html",
-      "title": "Ufo Swamp Odyssey",
-      "source": "library-source/html5-games/clufoswampoddysey.html"
-    },
-    {
       "id": "library-source/html5-games/cluncannycatgolf.html",
       "title": "Uncanny Cat Golf",
       "source": "library-source/html5-games/cluncannycatgolf.html"
-    },
-    {
-      "id": "library-source/html5-games/clunfairundyne.html",
-      "title": "Unfair Undyne",
-      "source": "library-source/html5-games/clunfairundyne.html"
-    },
-    {
-      "id": "library-source/html5-games/cluno.html",
-      "title": "Uno",
-      "source": "library-source/html5-games/cluno.html"
-    },
-    {
-      "id": "library-source/html5-games/clunonomercy.html",
-      "title": "Uno No Mercy",
-      "source": "library-source/html5-games/clunonomercy.html"
-    },
-    {
-      "id": "library-source/html5-games/clupslash.html",
-      "title": "UpSlash",
-      "source": "library-source/html5-games/clupslash.html"
-    },
-    {
-      "id": "library-source/html5-games/clUZG.html",
-      "title": "UZG",
-      "source": "library-source/html5-games/clUZG.html"
-    },
-    {
-      "id": "library-source/html5-games/clvaportrails.html",
-      "title": "Vapor Trails",
-      "source": "library-source/html5-games/clvaportrails.html"
-    },
-    {
-      "id": "library-source/html5-games/clvillager.html",
-      "title": "Villager",
-      "source": "library-source/html5-games/clvillager.html"
-    },
-    {
-      "id": "library-source/html5-games/clvincentmansionofthedead.html",
-      "title": "Vincent Mansion Of The Dead",
-      "source": "library-source/html5-games/clvincentmansionofthedead.html"
     },
     {
       "id": "library-source/html5-games/clvortex.html",
@@ -2529,29 +530,9 @@
       "source": "library-source/html5-games/clvortex.html"
     },
     {
-      "id": "library-source/html5-games/clwartheknight.html",
-      "title": "War the Knight",
-      "source": "library-source/html5-games/clwartheknight.html"
-    },
-    {
       "id": "library-source/html5-games/clwaterpoolio.html",
       "title": "Waterpool.io",
       "source": "library-source/html5-games/clwaterpoolio.html"
-    },
-    {
-      "id": "library-source/html5-games/clwaverun.html",
-      "title": "Wave Run",
-      "source": "library-source/html5-games/clwaverun.html"
-    },
-    {
-      "id": "library-source/html5-games/clwinterfalling.html",
-      "title": "Winter Falling",
-      "source": "library-source/html5-games/clwinterfalling.html"
-    },
-    {
-      "id": "library-source/html5-games/clwitchcrafttd.html",
-      "title": "Witchcraft td",
-      "source": "library-source/html5-games/clwitchcrafttd.html"
     },
     {
       "id": "library-source/html5-games/clwolfenstein.html",
@@ -2559,39 +540,9 @@
       "source": "library-source/html5-games/clwolfenstein.html"
     },
     {
-      "id": "library-source/html5-games/clyouvs100skibidi.html",
-      "title": "You vs. 100 Skibidi",
-      "source": "library-source/html5-games/clyouvs100skibidi.html"
-    },
-    {
-      "id": "library-source/html5-games/clzenword.html",
-      "title": "Zen Word",
-      "source": "library-source/html5-games/clzenword.html"
-    },
-    {
-      "id": "library-source/html5-games/clzombotronreboot.html",
-      "title": "Zombotron Reboot",
-      "source": "library-source/html5-games/clzombotronreboot.html"
-    },
-    {
       "id": "library-source/html5-games/clÖoo.html",
       "title": "Öoo",
       "source": "library-source/html5-games/clÖoo.html"
-    },
-    {
-      "id": "library-source/html5-games/clʘ.html",
-      "title": "ʘ",
-      "source": "library-source/html5-games/clʘ.html"
-    },
-    {
-      "id": "library-source/html5-games/dta6.html",
-      "title": "Dta6",
-      "source": "library-source/html5-games/dta6.html"
-    },
-    {
-      "id": "library-source/html5-games/redvbluefix.html",
-      "title": "Redvbluefix",
-      "source": "library-source/html5-games/redvbluefix.html"
     },
     {
       "id": "library-source/html5-games/sm64coopdx.html",
@@ -2599,24 +550,9 @@
       "source": "library-source/html5-games/sm64coopdx.html"
     },
     {
-      "id": "library-source/html5-games/Smash Hit Ripoff.html",
-      "title": "Smash hit ripoff",
-      "source": "library-source/html5-games/Smash Hit Ripoff.html"
-    },
-    {
-      "id": "library-source/html5-games/supremeduelistfix.html",
-      "title": "Supremeduelistfix",
-      "source": "library-source/html5-games/supremeduelistfix.html"
-    },
-    {
       "id": "library-source/emulated/arcade/clFinalFight30thAnniversaryHack.html",
       "title": "Final fight30th anniversary hack",
       "source": "library-source/emulated/arcade/clFinalFight30thAnniversaryHack.html"
-    },
-    {
-      "id": "library-source/emulated/arcade/clghoulsandghosts.html",
-      "title": "Ghoulsandghosts",
-      "source": "library-source/emulated/arcade/clghoulsandghosts.html"
     },
     {
       "id": "library-source/emulated/arcade/cljjbahftf.htm",
@@ -2674,39 +610,9 @@
       "source": "library-source/emulated/arcade/cltetrisgrandmaster2.html"
     },
     {
-      "id": "library-source/emulated/arcade/cltmnt2arc.html",
-      "title": "Teenage Mutant Ninja Turtles 2: Turtles In Time",
-      "source": "library-source/emulated/arcade/cltmnt2arc.html"
-    },
-    {
-      "id": "library-source/emulated/arcade/cltmntarc.html",
-      "title": "Teenage Mutant Ninja Turtles 1",
-      "source": "library-source/emulated/arcade/cltmntarc.html"
-    },
-    {
-      "id": "library-source/emulated/arcade/clwbml.html",
-      "title": "Wonder Boy Monster Land",
-      "source": "library-source/emulated/arcade/clwbml.html"
-    },
-    {
-      "id": "library-source/emulated/arcade/clXMenChildrenOfTheAtomArcade.html",
-      "title": "Xmen children of the atom arcade",
-      "source": "library-source/emulated/arcade/clXMenChildrenOfTheAtomArcade.html"
-    },
-    {
       "id": "library-source/emulated/bootleg/cl115in1.html",
       "title": "115 in 1",
       "source": "library-source/emulated/bootleg/cl115in1.html"
-    },
-    {
-      "id": "library-source/emulated/bootleg/clgranddad.html",
-      "title": "7 Grand Dad",
-      "source": "library-source/emulated/bootleg/clgranddad.html"
-    },
-    {
-      "id": "library-source/emulated/bootleg/clnotfinalfantasy7.html",
-      "title": "Notfinalfantasy7",
-      "source": "library-source/emulated/bootleg/clnotfinalfantasy7.html"
     },
     {
       "id": "library-source/emulated/dos/cldaggerfall.html",
@@ -2719,51 +625,6 @@
       "source": "library-source/emulated/dos/clzdoom.html"
     },
     {
-      "id": "library-source/emulated/gba/clakumanorgaiden.html",
-      "title": "Akumanor Gaiden",
-      "source": "library-source/emulated/gba/clakumanorgaiden.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clapotris.html",
-      "title": "Apotris",
-      "source": "library-source/emulated/gba/clapotris.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clbalatrogba.html",
-      "title": "Balatro",
-      "source": "library-source/emulated/gba/clbalatrogba.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clcommanderkeen4.html",
-      "title": "Commander Keen 4",
-      "source": "library-source/emulated/gba/clcommanderkeen4.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clcommanderkeen5.html",
-      "title": "Commander Keen 5",
-      "source": "library-source/emulated/gba/clcommanderkeen5.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clcommanderkeen6.html",
-      "title": "Commander Keen 6",
-      "source": "library-source/emulated/gba/clcommanderkeen6.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cldigdug.html",
-      "title": "Dig Dug",
-      "source": "library-source/emulated/gba/cldigdug.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cldonkeykong94.html",
-      "title": "Donkey Kong 94",
-      "source": "library-source/emulated/gba/cldonkeykong94.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cldragonwarriormonsters.html",
-      "title": "Dragon Warrior Monsters",
-      "source": "library-source/emulated/gba/cldragonwarriormonsters.html"
-    },
-    {
       "id": "library-source/emulated/gba/clearthbound3.html",
       "title": "Earthbound 3",
       "source": "library-source/emulated/gba/clearthbound3.html"
@@ -2774,149 +635,9 @@
       "source": "library-source/emulated/gba/clFIFA07.html"
     },
     {
-      "id": "library-source/emulated/gba/clFIFA2000 (1).html",
-      "title": "Fifa2000 (1)",
-      "source": "library-source/emulated/gba/clFIFA2000 (1).html"
-    },
-    {
-      "id": "library-source/emulated/gba/clfifa2000.html",
-      "title": "FIFA 2000",
-      "source": "library-source/emulated/gba/clfifa2000.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clfinalfantasylegend2.html",
-      "title": "Final Fantasy Legend 2",
-      "source": "library-source/emulated/gba/clfinalfantasylegend2.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clFleurdeLis.html",
-      "title": "Fleur de Lis (video)",
-      "source": "library-source/emulated/gba/clFleurdeLis.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clgameandwatchcollection.html",
-      "title": "Game And Watch Collection",
-      "source": "library-source/emulated/gba/clgameandwatchcollection.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clgamewatchgallery3.html",
-      "title": "Game and Watch Gallery 3",
-      "source": "library-source/emulated/gba/clgamewatchgallery3.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clgrimacebirthday.html",
-      "title": "Grimace’s Birthday",
-      "source": "library-source/emulated/gba/clgrimacebirthday.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clgta2.html",
-      "title": "Grand Theft Auto 2",
-      "source": "library-source/emulated/gba/clgta2.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clhalocombatdevolved.html",
-      "title": "Halo Combat Devolved",
-      "source": "library-source/emulated/gba/clhalocombatdevolved.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clharvestmoon.html",
-      "title": "Harvest Moon",
-      "source": "library-source/emulated/gba/clharvestmoon.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clharvestmoon2.html",
-      "title": "Harvest Moon 2",
-      "source": "library-source/emulated/gba/clharvestmoon2.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clkirbyandtheamzingmirror.html",
-      "title": "Kirby and the Amazing Mirror",
-      "source": "library-source/emulated/gba/clkirbyandtheamzingmirror.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clkirbysdreamland.html",
-      "title": "Kirby’s Dream Land",
-      "source": "library-source/emulated/gba/clkirbysdreamland.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clkirbysdreamland2.html",
-      "title": "Kirby’s Dream Land 2",
-      "source": "library-source/emulated/gba/clkirbysdreamland2.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clkirbytiltandtumble.html",
-      "title": "Kirby Tilt N Tumble",
-      "source": "library-source/emulated/gba/clkirbytiltandtumble.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clklonoaheroes.html",
-      "title": "Klonoa Heroes - The Legendary Star Medal",
-      "source": "library-source/emulated/gba/clklonoaheroes.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clLegacyOfGoku.html",
-      "title": "Dragon Ball Z - The Legacy of Goku 1/2",
-      "source": "library-source/emulated/gba/clLegacyOfGoku.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cllinksawakeningdx.html",
-      "title": "Linksawakeningdx",
-      "source": "library-source/emulated/gba/cllinksawakeningdx.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cllozlinkawakening.html",
-      "title": "Lozlinkawakening",
-      "source": "library-source/emulated/gba/cllozlinkawakening.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cllozminishcap.html",
-      "title": "The Legend of Zelda - Minish Cap",
-      "source": "library-source/emulated/gba/cllozminishcap.html"
-    },
-    {
       "id": "library-source/emulated/gba/cllozoracleofages.html",
       "title": "Legend of Zelda, the - Oracle of Ages",
       "source": "library-source/emulated/gba/cllozoracleofages.html"
-    },
-    {
-      "id": "library-source/emulated/gba/cllozoracleofseasons.html",
-      "title": "Legend of Zelda, the - Oracle of Seasons",
-      "source": "library-source/emulated/gba/cllozoracleofseasons.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clmaddennfl.html",
-      "title": "Madden NFL",
-      "source": "library-source/emulated/gba/clmaddennfl.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clmarioandluigisuperstarsaga.html",
-      "title": "Mario & Luigi - Superstar Saga",
-      "source": "library-source/emulated/gba/clmarioandluigisuperstarsaga.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clmariotennisgb.html",
-      "title": "Mario Tennis",
-      "source": "library-source/emulated/gba/clmariotennisgb.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clmegaman2gba.html",
-      "title": "Mega Man 2",
-      "source": "library-source/emulated/gba/clmegaman2gba.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clmegaman5gb.html",
-      "title": "Mega Man 5",
-      "source": "library-source/emulated/gba/clmegaman5gb.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clmetroid2.html",
-      "title": "Metroid 2",
-      "source": "library-source/emulated/gba/clmetroid2.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clopposumcountry.html",
-      "title": "Opposumcountry",
-      "source": "library-source/emulated/gba/clopposumcountry.html"
     },
     {
       "id": "library-source/emulated/gba/clpokemonvolume1.html",
@@ -2939,11 +660,6 @@
       "source": "library-source/emulated/gba/clpokemonvolume4.html"
     },
     {
-      "id": "library-source/emulated/gba/clpokepicross.html",
-      "title": "Pokemon Picross",
-      "source": "library-source/emulated/gba/clpokepicross.html"
-    },
-    {
       "id": "library-source/emulated/gba/clpyrotoad.html",
       "title": "Pyrotoad",
       "source": "library-source/emulated/gba/clpyrotoad.html"
@@ -2954,29 +670,9 @@
       "source": "library-source/emulated/gba/clshantaegb.html"
     },
     {
-      "id": "library-source/emulated/gba/clskong.html",
-      "title": "Hollow Knight Silksong Demake",
-      "source": "library-source/emulated/gba/clskong.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clsmadvance3.html",
-      "title": "Super Mario Advance 3",
-      "source": "library-source/emulated/gba/clsmadvance3.html"
-    },
-    {
       "id": "library-source/emulated/gba/clsmbdx.html",
       "title": "Super Mario Bros Deluxe",
       "source": "library-source/emulated/gba/clsmbdx.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clsonicadvance2sp.html",
-      "title": "Sonic Advance 2 SP",
-      "source": "library-source/emulated/gba/clsonicadvance2sp.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clsupermariobros3.html",
-      "title": "Super Mario Advance 4",
-      "source": "library-source/emulated/gba/clsupermariobros3.html"
     },
     {
       "id": "library-source/emulated/gba/clsupermarioland.html",
@@ -2984,39 +680,14 @@
       "source": "library-source/emulated/gba/clsupermarioland.html"
     },
     {
-      "id": "library-source/emulated/gba/clsupermarioland2 (1).html",
-      "title": "Supermarioland2 (1)",
-      "source": "library-source/emulated/gba/clsupermarioland2 (1).html"
-    },
-    {
-      "id": "library-source/emulated/gba/clsupermarioland2dx.html",
-      "title": "Super Mario Land 2 DX",
-      "source": "library-source/emulated/gba/clsupermarioland2dx.html"
-    },
-    {
-      "id": "library-source/emulated/gba/clsupermariolanddx.html",
-      "title": "Super Mario Land 1 DX",
-      "source": "library-source/emulated/gba/clsupermariolanddx.html"
-    },
-    {
       "id": "library-source/emulated/gba/clthepit.html",
       "title": "The Pit",
       "source": "library-source/emulated/gba/clthepit.html"
     },
     {
-      "id": "library-source/emulated/gba/clwarioland1.html",
-      "title": "Wario Land 1 - Super Mario Land 3",
-      "source": "library-source/emulated/gba/clwarioland1.html"
-    },
-    {
       "id": "library-source/emulated/gba/clwarioland3.html",
       "title": "Wario Land 3",
       "source": "library-source/emulated/gba/clwarioland3.html"
-    },
-    {
-      "id": "library-source/emulated/gba/simpsonsroadrangeGBA.html",
-      "title": "Simpsonsroadrange gba",
-      "source": "library-source/emulated/gba/simpsonsroadrangeGBA.html"
     },
     {
       "id": "library-source/emulated/Genesis Plus/clsonicmegamix4.html",
@@ -3034,11 +705,6 @@
       "source": "library-source/emulated/n64/clallbossesin1.html"
     },
     {
-      "id": "library-source/emulated/n64/clanimalforestn64.html",
-      "title": "Animal Forest",
-      "source": "library-source/emulated/n64/clanimalforestn64.html"
-    },
-    {
       "id": "library-source/emulated/n64/clB3313.html",
       "title": "B3313 (version 0.7)",
       "source": "library-source/emulated/n64/clB3313.html"
@@ -3049,19 +715,9 @@
       "source": "library-source/emulated/n64/clb3313unabandonedA2.html"
     },
     {
-      "id": "library-source/emulated/n64/cldanganronpa64.html",
-      "title": "Danganronpa64",
-      "source": "library-source/emulated/n64/cldanganronpa64.html"
-    },
-    {
       "id": "library-source/emulated/n64/clddlc64.html",
       "title": "Doki Doki Literature Club 64",
       "source": "library-source/emulated/n64/clddlc64.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clkirby64.html",
-      "title": "Kirby 64",
-      "source": "library-source/emulated/n64/clkirby64.html"
     },
     {
       "id": "library-source/emulated/n64/clmajorasmaskredux.html",
@@ -3079,11 +735,6 @@
       "source": "library-source/emulated/n64/clmariobuilder64.html"
     },
     {
-      "id": "library-source/emulated/n64/clmidwaysgreatesthitsn64.html",
-      "title": "Midwaysgreatesthitsn64",
-      "source": "library-source/emulated/n64/clmidwaysgreatesthitsn64.html"
-    },
-    {
       "id": "library-source/emulated/n64/clmk64ampedup.html",
       "title": "Mario Kart 64 - Amped Up",
       "source": "library-source/emulated/n64/clmk64ampedup.html"
@@ -3097,11 +748,6 @@
       "id": "library-source/emulated/n64/clnatsuki64.html",
       "title": "Natsuki (DDLC) 64",
       "source": "library-source/emulated/n64/clnatsuki64.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clocarinaoftime.html",
-      "title": "The Legend of Zelda Ocarina of Time",
-      "source": "library-source/emulated/n64/clocarinaoftime.html"
     },
     {
       "id": "library-source/emulated/n64/clOotMasterQuest.html",
@@ -3134,16 +780,6 @@
       "source": "library-source/emulated/n64/clpapermariottyd.html"
     },
     {
-      "id": "library-source/emulated/n64/clportal.html",
-      "title": "Portal",
-      "source": "library-source/emulated/n64/clportal.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clquake64.html",
-      "title": "Quake 64",
-      "source": "library-source/emulated/n64/clquake64.html"
-    },
-    {
       "id": "library-source/emulated/n64/clsimcity64.html",
       "title": "SimCity 64",
       "source": "library-source/emulated/n64/clsimcity64.html"
@@ -3152,11 +788,6 @@
       "id": "library-source/emulated/n64/clsm64greenstars.html",
       "title": "Super Mario 64 - The Green Stars",
       "source": "library-source/emulated/n64/clsm64greenstars.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clsm64hiddenstars.html",
-      "title": "Super Mario 64 The Hidden Stars",
-      "source": "library-source/emulated/n64/clsm64hiddenstars.html"
     },
     {
       "id": "library-source/emulated/n64/clSM64Land.html",
@@ -3169,11 +800,6 @@
       "source": "library-source/emulated/n64/clsm64lastimpact.html"
     },
     {
-      "id": "library-source/emulated/n64/clsm64liminaldream.html",
-      "title": "Super Mario 64 - Liminal Dream",
-      "source": "library-source/emulated/n64/clsm64liminaldream.html"
-    },
-    {
       "id": "library-source/emulated/n64/clsm64oot.html",
       "title": "Super Mario 64: Ocarina of Time",
       "source": "library-source/emulated/n64/clsm64oot.html"
@@ -3182,11 +808,6 @@
       "id": "library-source/emulated/n64/clsm64sapphire.html",
       "title": "Super Mario 64 - Sapphire",
       "source": "library-source/emulated/n64/clsm64sapphire.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clsm64yscaled.html",
-      "title": "Super Mario 64 Y Scaled",
-      "source": "library-source/emulated/n64/clsm64yscaled.html"
     },
     {
       "id": "library-source/emulated/n64/clsmashremix.html",
@@ -3219,24 +840,9 @@
       "source": "library-source/emulated/n64/clsonicmushroomblast.html"
     },
     {
-      "id": "library-source/emulated/n64/clsupermario74.html",
-      "title": "Super Mario 74",
-      "source": "library-source/emulated/n64/clsupermario74.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clsupermariostarroad.html",
-      "title": "Supermariostarroad",
-      "source": "library-source/emulated/n64/clsupermariostarroad.html"
-    },
-    {
       "id": "library-source/emulated/n64/clsupermariostarroadretooled.html",
       "title": "Supermariostarroadretooled",
       "source": "library-source/emulated/n64/clsupermariostarroadretooled.html"
-    },
-    {
-      "id": "library-source/emulated/n64/clsupermariosunshine64.html",
-      "title": "Supermariosunshine64",
-      "source": "library-source/emulated/n64/clsupermariosunshine64.html"
     },
     {
       "id": "library-source/emulated/n64/cltelocation.html",
@@ -3254,11 +860,6 @@
       "source": "library-source/emulated/n64/clworldcup98.html"
     },
     {
-      "id": "library-source/emulated/n64/clZeldaIndigoch2.html",
-      "title": "Zelda Indigo - Chapter 2",
-      "source": "library-source/emulated/n64/clZeldaIndigoch2.html"
-    },
-    {
       "id": "library-source/emulated/nds/clagesofempire.html",
       "title": "Ages Of Empire",
       "source": "library-source/emulated/nds/clagesofempire.html"
@@ -3272,11 +873,6 @@
       "id": "library-source/emulated/nds/clcsds.html",
       "title": "Counter Strike DS",
       "source": "library-source/emulated/nds/clcsds.html"
-    },
-    {
-      "id": "library-source/emulated/nds/clctgpnitro.html",
-      "title": "CTGP Nitro",
-      "source": "library-source/emulated/nds/clctgpnitro.html"
     },
     {
       "id": "library-source/emulated/nds/cldragonquest5ds.html",
@@ -3299,19 +895,9 @@
       "source": "library-source/emulated/nds/cllozphantomhourglass.html"
     },
     {
-      "id": "library-source/emulated/nds/clnewersmbds.html",
-      "title": "Newer Super Mario Bros DS",
-      "source": "library-source/emulated/nds/clnewersmbds.html"
-    },
-    {
       "id": "library-source/emulated/nds/clnintendogslab.html",
       "title": "Nintendogs - Lab & Friends",
       "source": "library-source/emulated/nds/clnintendogslab.html"
-    },
-    {
-      "id": "library-source/emulated/nds/clnsmbuds.html",
-      "title": "New Super Mario Bros U DS",
-      "source": "library-source/emulated/nds/clnsmbuds.html"
     },
     {
       "id": "library-source/emulated/nds/clnsmbwds.html",
@@ -3374,11 +960,6 @@
       "source": "library-source/emulated/nds/clpokemirrorgold.html"
     },
     {
-      "id": "library-source/emulated/nds/clpokepearlexperimental.html",
-      "title": "Pokepearlexperimental",
-      "source": "library-source/emulated/nds/clpokepearlexperimental.html"
-    },
-    {
       "id": "library-source/emulated/nds/clpokeplatinumrandomized.html",
       "title": "Pokemon - Platinum Version Randomized",
       "source": "library-source/emulated/nds/clpokeplatinumrandomized.html"
@@ -3409,49 +990,9 @@
       "source": "library-source/emulated/nds/clpokewhiteexperimental.html"
     },
     {
-      "id": "library-source/emulated/nds/clsmgds.html",
-      "title": "Super Mario Galaxy DS",
-      "source": "library-source/emulated/nds/clsmgds.html"
-    },
-    {
-      "id": "library-source/emulated/Neo Geo Pocket/clfatalfuryfirstcontact.html",
-      "title": "Fatal Fury - First Contact",
-      "source": "library-source/emulated/Neo Geo Pocket/clfatalfuryfirstcontact.html"
-    },
-    {
-      "id": "library-source/emulated/nes/cl100in1nes.html",
-      "title": "100 in 1",
-      "source": "library-source/emulated/nes/cl100in1nes.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clannsmb.html",
-      "title": "All night nippon super mario bros",
-      "source": "library-source/emulated/nes/clannsmb.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clcelestemariodx.html",
-      "title": "Celeste Mario DX",
-      "source": "library-source/emulated/nes/clcelestemariodx.html"
-    },
-    {
-      "id": "library-source/emulated/nes/cldemonblade.html",
-      "title": "Demon Blade",
-      "source": "library-source/emulated/nes/cldemonblade.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clDKNESCollection.html",
-      "title": "Donkey Kong Collection",
-      "source": "library-source/emulated/nes/clDKNESCollection.html"
-    },
-    {
       "id": "library-source/emulated/nes/clfamidash1.2.8.html",
       "title": "Famidash 1.2.8",
       "source": "library-source/emulated/nes/clfamidash1.2.8.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clfamidash2alpha.html",
-      "title": "Famidash2alpha",
-      "source": "library-source/emulated/nes/clfamidash2alpha.html"
     },
     {
       "id": "library-source/emulated/nes/clfamidashAlbum1.2.8.html",
@@ -3459,64 +1000,14 @@
       "source": "library-source/emulated/nes/clfamidashAlbum1.2.8.html"
     },
     {
-      "id": "library-source/emulated/nes/clfamidashBSides1.2.8.html",
-      "title": "Famidash bsides1.2.8",
-      "source": "library-source/emulated/nes/clfamidashBSides1.2.8.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clfamidashCSides1.2.8.html",
-      "title": "Famidash csides1.2.8",
-      "source": "library-source/emulated/nes/clfamidashCSides1.2.8.html"
-    },
-    {
       "id": "library-source/emulated/nes/clfamidashDSides1.2.8.html",
       "title": "Famidash dsides1.2.8",
       "source": "library-source/emulated/nes/clfamidashDSides1.2.8.html"
     },
     {
-      "id": "library-source/emulated/nes/clfamidashESides1.2.8.html",
-      "title": "Famidash esides1.2.8",
-      "source": "library-source/emulated/nes/clfamidashESides1.2.8.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clmariolostlevels.html",
-      "title": "Super Mario Bros. 2 - The Lost Levels",
-      "source": "library-source/emulated/nes/clmariolostlevels.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clmvpbaseball.html",
-      "title": "MVP Baseball",
-      "source": "library-source/emulated/nes/clmvpbaseball.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clsonicinsmw.html",
-      "title": "Sonic in Super Mario World",
-      "source": "library-source/emulated/nes/clsonicinsmw.html"
-    },
-    {
       "id": "library-source/emulated/nes/clsupermario3mix.html",
       "title": "Super Mario Bros. 3 Mix",
       "source": "library-source/emulated/nes/clsupermario3mix.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clsupertiltbros.html",
-      "title": "Super Tilt Bros",
-      "source": "library-source/emulated/nes/clsupertiltbros.html"
-    },
-    {
-      "id": "library-source/emulated/nes/clzelda2thelegendoflink.html",
-      "title": "Zelda 2 the Legend of Link",
-      "source": "library-source/emulated/nes/clzelda2thelegendoflink.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clA Walk in The Forest (v1.0).html",
-      "title": "A walk in the forest (v1.0)",
-      "source": "library-source/emulated/pokemon/clA Walk in The Forest (v1.0).html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clAcko's Mach Bike Challenge (v1.0).html",
-      "title": "Acko's mach bike challenge (v1.0)",
-      "source": "library-source/emulated/pokemon/clAcko's Mach Bike Challenge (v1.0).html"
     },
     {
       "id": "library-source/emulated/pokemon/clarceuslegend.html",
@@ -3544,24 +1035,9 @@
       "source": "library-source/emulated/pokemon/clHoennsLastWish.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clinclementemerald.html",
-      "title": "Pokemon Inclement Emerald",
-      "source": "library-source/emulated/pokemon/clinclementemerald.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clInkwell (v1.04).html",
       "title": "Inkwell (v1.04)",
       "source": "library-source/emulated/pokemon/clInkwell (v1.04).html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/cllastfirered.html",
-      "title": "Pokemon the Last Fire Red",
-      "source": "library-source/emulated/pokemon/cllastfirered.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clletsgoeevee.html",
-      "title": "Pokemon: Let’s Go, Eevee!",
-      "source": "library-source/emulated/pokemon/clletsgoeevee.html"
     },
     {
       "id": "library-source/emulated/pokemon/clletsgopikachu.html",
@@ -3569,54 +1045,14 @@
       "source": "library-source/emulated/pokemon/clletsgopikachu.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clMoemon Emerald Vanilla+ (v1.1.0).html",
-      "title": "Moemon emerald vanilla+ (v1.1.0)",
-      "source": "library-source/emulated/pokemon/clMoemon Emerald Vanilla+ (v1.1.0).html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clmoonemeraldextremerandomizer.html",
-      "title": "Moonemeraldextremerandomizer",
-      "source": "library-source/emulated/pokemon/clmoonemeraldextremerandomizer.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/cloopsalleevees.html",
-      "title": "Oops All Eevees",
-      "source": "library-source/emulated/pokemon/cloopsalleevees.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokeaestheticred.html",
       "title": "Pokemon Aesthetic Red",
       "source": "library-source/emulated/pokemon/clpokeaestheticred.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokeallin.html",
-      "title": "Pokémon All In",
-      "source": "library-source/emulated/pokemon/clpokeallin.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clPokeAmbrosia.html",
-      "title": "Pokemon Ambrosia",
-      "source": "library-source/emulated/pokemon/clPokeAmbrosia.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokebattlefact.html",
       "title": "Pokemon Battle Factory",
       "source": "library-source/emulated/pokemon/clpokebattlefact.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeblue.html",
-      "title": "Pokemon Blue Version*",
-      "source": "library-source/emulated/pokemon/clpokeblue.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeclassic.html",
-      "title": "Pokéclassic",
-      "source": "library-source/emulated/pokemon/clpokeclassic.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokecrown.html",
-      "title": "Pokemon Crown",
-      "source": "library-source/emulated/pokemon/clpokecrown.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokecrystaladvanceredux.html",
@@ -3639,11 +1075,6 @@
       "source": "library-source/emulated/pokemon/clpokecrystallegacy.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokedreamstone.html",
-      "title": "Pokemon Dreamstone",
-      "source": "library-source/emulated/pokemon/clpokedreamstone.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokeeliteredux.html",
       "title": "Pokemon Elite Redux",
       "source": "library-source/emulated/pokemon/clpokeeliteredux.html"
@@ -3652,16 +1083,6 @@
       "id": "library-source/emulated/pokemon/clpokeelysiuma.html",
       "title": "Pokemon Elysium A",
       "source": "library-source/emulated/pokemon/clpokeelysiuma.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeelysiumb.html",
-      "title": "Pokemon Elysium B",
-      "source": "library-source/emulated/pokemon/clpokeelysiumb.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeemerald47.html",
-      "title": "Pokemon Emerald 47",
-      "source": "library-source/emulated/pokemon/clpokeemerald47.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokeemeraldbattlefrontier.html",
@@ -3674,11 +1095,6 @@
       "source": "library-source/emulated/pokemon/clpokeemeraldenhanced.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokeemeraldexceeded.html",
-      "title": "Pokeemeraldexceeded",
-      "source": "library-source/emulated/pokemon/clpokeemeraldexceeded.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokeemeraldextendedcut.html",
       "title": "Pokemon Emerald Extended Cut",
       "source": "library-source/emulated/pokemon/clpokeemeraldextendedcut.html"
@@ -3689,24 +1105,9 @@
       "source": "library-source/emulated/pokemon/clpokeemeraldflow.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokeemeraldhorizons.html",
-      "title": "Pokémon Emerald Horizons",
-      "source": "library-source/emulated/pokemon/clpokeemeraldhorizons.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeemeraldimperium.html",
-      "title": "Pokeemeraldimperium",
-      "source": "library-source/emulated/pokemon/clpokeemeraldimperium.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokeemeraldlegacy.html",
       "title": "Pokemon Emerald Legacy",
       "source": "library-source/emulated/pokemon/clpokeemeraldlegacy.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeemeraldrandom.html",
-      "title": "Pokemon Emerald Randomized",
-      "source": "library-source/emulated/pokemon/clpokeemeraldrandom.html"
     },
     {
       "id": "library-source/emulated/pokemon/clPokeEmeraldRogueEX.html",
@@ -3734,16 +1135,6 @@
       "source": "library-source/emulated/pokemon/clpokeexceeded.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokefireemerald.html",
-      "title": "Pokémon FireEmerald",
-      "source": "library-source/emulated/pokemon/clpokefireemerald.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokefiregold.html",
-      "title": "Pokémon Fire Gold",
-      "source": "library-source/emulated/pokemon/clpokefiregold.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokeflora.html",
       "title": "Pokemon Flora Sky",
       "source": "library-source/emulated/pokemon/clpokeflora.html"
@@ -3759,11 +1150,6 @@
       "source": "library-source/emulated/pokemon/clpokefuseddimension.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clPokeFusion3.html",
-      "title": "Pokemon Fusion 3",
-      "source": "library-source/emulated/pokemon/clPokeFusion3.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokegaia.html",
       "title": "Pokemon Gaia",
       "source": "library-source/emulated/pokemon/clpokegaia.html"
@@ -3774,64 +1160,9 @@
       "source": "library-source/emulated/pokemon/clpokegigared.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokegschronicles.html",
-      "title": "Pokemon GS Chronicles",
-      "source": "library-source/emulated/pokemon/clpokegschronicles.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokelightplatinum.html",
-      "title": "Pokemon Light Platinum",
-      "source": "library-source/emulated/pokemon/clpokelightplatinum.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokelowbudgetcrystal.html",
-      "title": "Pokémon Low Budget Crystal",
-      "source": "library-source/emulated/pokemon/clpokelowbudgetcrystal.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemegamoemon.html",
-      "title": "Pokemon Mega Moemon",
-      "source": "library-source/emulated/pokemon/clpokemegamoemon.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonamnesia.html",
-      "title": "Pokemon Amnesia",
-      "source": "library-source/emulated/pokemon/clpokemonamnesia.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonbillssecretgarden.html",
-      "title": "Pokemonbillssecretgarden",
-      "source": "library-source/emulated/pokemon/clpokemonbillssecretgarden.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemoncrystal.html",
-      "title": "Pokemon Crystal*",
-      "source": "library-source/emulated/pokemon/clpokemoncrystal.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonemeraldcrest.html",
-      "title": "Pokemon Emerald Crest",
-      "source": "library-source/emulated/pokemon/clpokemonemeraldcrest.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonemeraldkaizo.html",
-      "title": "Pokemon Emerald Kaizo",
-      "source": "library-source/emulated/pokemon/clpokemonemeraldkaizo.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonemeraldmini.html",
-      "title": "Pokemon Emerald Mini",
-      "source": "library-source/emulated/pokemon/clpokemonemeraldmini.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clPokemonemeraldrouge.html",
       "title": "Pokemonemeraldrouge",
       "source": "library-source/emulated/pokemon/clPokemonemeraldrouge.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonemeraldseaglass.html",
-      "title": "Pokemon Emerald Seaglass",
-      "source": "library-source/emulated/pokemon/clpokemonemeraldseaglass.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokemonenergizedemerald.html",
@@ -3849,16 +1180,6 @@
       "source": "library-source/emulated/pokemon/clpokemonfireredrandomized.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokemongold.html",
-      "title": "Pokemon Gold*",
-      "source": "library-source/emulated/pokemon/clpokemongold.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonkaizoironfirered.html",
-      "title": "Pokemon Kaizo Iron Fire Red",
-      "source": "library-source/emulated/pokemon/clpokemonkaizoironfirered.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokemonlazarus.html",
       "title": "Pokemon Lazarus",
       "source": "library-source/emulated/pokemon/clpokemonlazarus.html"
@@ -3874,19 +1195,9 @@
       "source": "library-source/emulated/pokemon/clpokemonperfectemerald5.5.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokemonpinball.html",
-      "title": "Pokémon Pinball*",
-      "source": "library-source/emulated/pokemon/clpokemonpinball.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokemonroaringred.html",
       "title": "Pokémon Roaring Red",
       "source": "library-source/emulated/pokemon/clpokemonroaringred.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clPokemonrocketedition.html",
-      "title": "Pokemon Firered Rocket Edition",
-      "source": "library-source/emulated/pokemon/clPokemonrocketedition.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokemonsaiph.html",
@@ -3899,29 +1210,14 @@
       "source": "library-source/emulated/pokemon/clpokemonsaiph2.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokemonshinsigma.html",
-      "title": "Pokemon Shiny Gold Sigma",
-      "source": "library-source/emulated/pokemon/clpokemonshinsigma.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokemonsilver.html",
       "title": "Pokemon Silver*",
       "source": "library-source/emulated/pokemon/clpokemonsilver.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokemonslgreen.html",
-      "title": "Pokemon Super Luigi Green",
-      "source": "library-source/emulated/pokemon/clpokemonslgreen.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokemonsmred.html",
       "title": "Pokemon Super Mario Red",
       "source": "library-source/emulated/pokemon/clpokemonsmred.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemonsors.html",
-      "title": "Pokémon Sors",
-      "source": "library-source/emulated/pokemon/clpokemonsors.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokemonsors2.html",
@@ -3934,24 +1230,9 @@
       "source": "library-source/emulated/pokemon/clpokemonultimatefusion.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokemonunbound.html",
-      "title": "Pokemon Unbound",
-      "source": "library-source/emulated/pokemon/clpokemonunbound.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokemoonemerald.html",
       "title": "Pokemon Moon Emerald",
       "source": "library-source/emulated/pokemon/clpokemoonemerald.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokemoongalaxy.html",
-      "title": "Pokémon Moon Galaxy",
-      "source": "library-source/emulated/pokemon/clpokemoongalaxy.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokenameless.html",
-      "title": "Pokemon Nameless",
-      "source": "library-source/emulated/pokemon/clpokenameless.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokeodyssey.html",
@@ -3969,49 +1250,9 @@
       "source": "library-source/emulated/pokemon/clpokeperfectfirered.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokepisces.html",
-      "title": "Pokémon Pisces",
-      "source": "library-source/emulated/pokemon/clpokepisces.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokepureblue.html",
-      "title": "Pokémon Pure Blue",
-      "source": "library-source/emulated/pokemon/clpokepureblue.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokepuregreen.html",
-      "title": "Pokémon Pure Green",
-      "source": "library-source/emulated/pokemon/clpokepuregreen.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokepurered.html",
-      "title": "Pokémon Pure Red",
-      "source": "library-source/emulated/pokemon/clpokepurered.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokerbynova.html",
       "title": "Pokémon RBY Nova",
       "source": "library-source/emulated/pokemon/clpokerbynova.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokerechargedpink.html",
-      "title": "Pokémon Recharged Pink",
-      "source": "library-source/emulated/pokemon/clpokerechargedpink.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokerechargedyellow.html",
-      "title": "Pokemon Recharged Yellow",
-      "source": "library-source/emulated/pokemon/clpokerechargedyellow.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokerecordkeepers.html",
-      "title": "Pokémon Record Keepers",
-      "source": "library-source/emulated/pokemon/clpokerecordkeepers.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokered.html",
-      "title": "Pokémon Red Version*",
-      "source": "library-source/emulated/pokemon/clpokered.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokeremnantsofwah.html",
@@ -4024,24 +1265,9 @@
       "source": "library-source/emulated/pokemon/clpokeretroplatinum.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokerocketedition.html",
-      "title": "Pokémon: Team Rocket Edition",
-      "source": "library-source/emulated/pokemon/clpokerocketedition.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokerowe.html",
       "title": "Pokémon ROWE",
       "source": "library-source/emulated/pokemon/clpokerowe.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokerunandbun.html",
-      "title": "Pokémon Run and Bun",
-      "source": "library-source/emulated/pokemon/clpokerunandbun.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokescorchedsilver.html",
-      "title": "Pokemon Scorched Silver",
-      "source": "library-source/emulated/pokemon/clpokescorchedsilver.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokescrambledscarlet.html",
@@ -4052,16 +1278,6 @@
       "id": "library-source/emulated/pokemon/clpokesunsky.html",
       "title": "Pokémon SunSky",
       "source": "library-source/emulated/pokemon/clpokesunsky.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpoketcg1.html",
-      "title": "Pokemon Trading Card Game*",
-      "source": "library-source/emulated/pokemon/clpoketcg1.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpoketcg2.html",
-      "title": "Pokemon Trading Card Game 2*",
-      "source": "library-source/emulated/pokemon/clpoketcg2.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokethepit.html",
@@ -4079,34 +1295,9 @@
       "source": "library-source/emulated/pokemon/clpoketourmaline.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clpokeultraviolet.html",
-      "title": "Pokemon Ultra Violet",
-      "source": "library-source/emulated/pokemon/clpokeultraviolet.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeunovaemerald.html",
-      "title": "Pokémon Unova Emerald",
-      "source": "library-source/emulated/pokemon/clpokeunovaemerald.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokevega.html",
-      "title": "Pokemon Vega",
-      "source": "library-source/emulated/pokemon/clpokevega.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokevoyager.html",
-      "title": "Pokemon Voyager",
-      "source": "library-source/emulated/pokemon/clpokevoyager.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clpokewildindigo.html",
       "title": "Pokemon Wild Indigo",
       "source": "library-source/emulated/pokemon/clpokewildindigo.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpokeyellow.html",
-      "title": "Pokemon Yellow Version*",
-      "source": "library-source/emulated/pokemon/clpokeyellow.html"
     },
     {
       "id": "library-source/emulated/pokemon/clpokeyellowlegacy.html",
@@ -4124,16 +1315,6 @@
       "source": "library-source/emulated/pokemon/clPokémon TWO (v1.1).html"
     },
     {
-      "id": "library-source/emulated/pokemon/clPokémonstunningsteel.html",
-      "title": "Pokemon Stunning Steel",
-      "source": "library-source/emulated/pokemon/clPokémonstunningsteel.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clpolishedcrystal.html",
-      "title": "Pokémon Polished Crystal",
-      "source": "library-source/emulated/pokemon/clpolishedcrystal.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clradicalred.html",
       "title": "Pokémon Radical Red",
       "source": "library-source/emulated/pokemon/clradicalred.html"
@@ -4144,39 +1325,14 @@
       "source": "library-source/emulated/pokemon/clrosegold.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clscarletandviolet.html",
-      "title": "Scarletandviolet",
-      "source": "library-source/emulated/pokemon/clscarletandviolet.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clsonicmon.html",
-      "title": "Pokemon Sonicmon",
-      "source": "library-source/emulated/pokemon/clsonicmon.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/clSovereignoftheskys.html",
       "title": "Pokemon Sovereign of the Skies",
       "source": "library-source/emulated/pokemon/clSovereignoftheskys.html"
     },
     {
-      "id": "library-source/emulated/pokemon/clsupermariomon.html",
-      "title": "Super Mariomon",
-      "source": "library-source/emulated/pokemon/clsupermariomon.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/clswordandshieldultimateplus.html",
-      "title": "Pokemon Sword and Shield Ultimate Plus",
-      "source": "library-source/emulated/pokemon/clswordandshieldultimateplus.html"
-    },
-    {
       "id": "library-source/emulated/pokemon/cltoomanytypes.html",
       "title": "Pokemon Too Many Types",
       "source": "library-source/emulated/pokemon/cltoomanytypes.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/lime.html",
-      "title": "Lime",
-      "source": "library-source/emulated/pokemon/lime.html"
     },
     {
       "id": "library-source/emulated/pokemon/lucid.html",
@@ -4187,11 +1343,6 @@
       "id": "library-source/emulated/pokemon/peach.html",
       "title": "Peach",
       "source": "library-source/emulated/pokemon/peach.html"
-    },
-    {
-      "id": "library-source/emulated/pokemon/snowwhite.html",
-      "title": "Snowwhite",
-      "source": "library-source/emulated/pokemon/snowwhite.html"
     },
     {
       "id": "library-source/emulated/pokemon/unownking.html",
@@ -4239,29 +1390,9 @@
       "source": "library-source/emulated/segaGG/clsonictripletrouble.html"
     },
     {
-      "id": "library-source/emulated/segaMD/clknuckleschaotix.html",
-      "title": "Knuckles Chaotix",
-      "source": "library-source/emulated/segaMD/clknuckleschaotix.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clmegamansequelsred.html",
-      "title": "Mega Man - The Sequel Wars Episode Red",
-      "source": "library-source/emulated/segaMD/clmegamansequelsred.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clMetalSonicHyperdrive.html",
-      "title": "Metal Sonic Hyperdrive",
-      "source": "library-source/emulated/segaMD/clMetalSonicHyperdrive.html"
-    },
-    {
       "id": "library-source/emulated/segaMD/clmetalsonicrebooted.html",
       "title": "Metal Sonic Rebooted",
       "source": "library-source/emulated/segaMD/clmetalsonicrebooted.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clmkmythgen.html",
-      "title": "clmkmythgen",
-      "source": "library-source/emulated/segaMD/clmkmythgen.html"
     },
     {
       "id": "library-source/emulated/segaMD/clmobiusrevolution.html",
@@ -4269,24 +1400,9 @@
       "source": "library-source/emulated/segaMD/clmobiusrevolution.html"
     },
     {
-      "id": "library-source/emulated/segaMD/clordinarysonicromhack.html",
-      "title": "An Ordinary Sonic rom Hack (sonic.exe)",
-      "source": "library-source/emulated/segaMD/clordinarysonicromhack.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clrocketknight2.html",
-      "title": "Rocketknight2",
-      "source": "library-source/emulated/segaMD/clrocketknight2.html"
-    },
-    {
       "id": "library-source/emulated/segaMD/clSnowBrosGenesis.html",
       "title": "Snow Bros - Nick and Tom",
       "source": "library-source/emulated/segaMD/clSnowBrosGenesis.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clSonic & Knuckles + Sonic The Hedgehog 3.html",
-      "title": "Sonic & Knuckles + Sonic The Hedgehog 3",
-      "source": "library-source/emulated/segaMD/clSonic & Knuckles + Sonic The Hedgehog 3.html"
     },
     {
       "id": "library-source/emulated/segaMD/clsonic1contemporary.html",
@@ -4309,11 +1425,6 @@
       "source": "library-source/emulated/segaMD/clsonic2pinkedition.html"
     },
     {
-      "id": "library-source/emulated/segaMD/clsonic2returnofshadow.html",
-      "title": "Sonic 2 Return of Shadow",
-      "source": "library-source/emulated/segaMD/clsonic2returnofshadow.html"
-    },
-    {
       "id": "library-source/emulated/segaMD/clSonic2ScoreRush.html",
       "title": "Sonic 2 Score Rush",
       "source": "library-source/emulated/segaMD/clSonic2ScoreRush.html"
@@ -4324,39 +1435,14 @@
       "source": "library-source/emulated/segaMD/clsonic2timeandplace.html"
     },
     {
-      "id": "library-source/emulated/segaMD/clsonic3andknuckles.html",
-      "title": "Sonic 3 And Knuckles",
-      "source": "library-source/emulated/segaMD/clsonic3andknuckles.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clsonic3andsally.html",
-      "title": "Sonic 3 And Sally",
-      "source": "library-source/emulated/segaMD/clsonic3andsally.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clsonic3complete.html",
-      "title": "Sonic 3 Complete",
-      "source": "library-source/emulated/segaMD/clsonic3complete.html"
-    },
-    {
       "id": "library-source/emulated/segaMD/clsonicandashuro.html",
       "title": "Sonic and Ashuro",
       "source": "library-source/emulated/segaMD/clsonicandashuro.html"
     },
     {
-      "id": "library-source/emulated/segaMD/clsonicandknuckles.html",
-      "title": "Sonic and Knuckles",
-      "source": "library-source/emulated/segaMD/clsonicandknuckles.html"
-    },
-    {
       "id": "library-source/emulated/segaMD/clsonicclassicheroes.html",
       "title": "Sonic Classic Heroes",
       "source": "library-source/emulated/segaMD/clsonicclassicheroes.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/clsonicdeltaorigins.html",
-      "title": "Sonic Delta Origins",
-      "source": "library-source/emulated/segaMD/clsonicdeltaorigins.html"
     },
     {
       "id": "library-source/emulated/segaMD/clsonicerazor.html",
@@ -4379,29 +1465,9 @@
       "source": "library-source/emulated/segaMD/cltmnt.html"
     },
     {
-      "id": "library-source/emulated/segaMD/cltoejam&earl.html",
-      "title": "Toejam&earl",
-      "source": "library-source/emulated/segaMD/cltoejam&earl.html"
-    },
-    {
       "id": "library-source/emulated/segaMD/cltoejam&earlpof.html",
       "title": "Toejam&earlpof",
       "source": "library-source/emulated/segaMD/cltoejam&earlpof.html"
-    },
-    {
-      "id": "library-source/emulated/segaMD/TheSFactorSoniaAndSilver.html",
-      "title": "The S Factor: Sonia and Silver",
-      "source": "library-source/emulated/segaMD/TheSFactorSoniaAndSilver.html"
-    },
-    {
-      "id": "library-source/emulated/segaMS/clwonderboy3.html",
-      "title": "Wonder Boy 3 - Dragon’s Trap",
-      "source": "library-source/emulated/segaMS/clwonderboy3.html"
-    },
-    {
-      "id": "library-source/emulated/snes/cl100RoomsOfEnemies.html",
-      "title": "100 Rooms Of Enemies",
-      "source": "library-source/emulated/snes/cl100RoomsOfEnemies.html"
     },
     {
       "id": "library-source/emulated/snes/clbabykaizo.html",
@@ -4412,21 +1478,6 @@
       "id": "library-source/emulated/snes/clFinalFight2Plus.html",
       "title": "Final fight2plus",
       "source": "library-source/emulated/snes/clFinalFight2Plus.html"
-    },
-    {
-      "id": "library-source/emulated/snes/clFinalFight3Plus.html",
-      "title": "Final fight3plus",
-      "source": "library-source/emulated/snes/clFinalFight3Plus.html"
-    },
-    {
-      "id": "library-source/emulated/snes/clfzerobsx.html",
-      "title": "F-Zero 2",
-      "source": "library-source/emulated/snes/clfzerobsx.html"
-    },
-    {
-      "id": "library-source/emulated/snes/clihateyou.html",
-      "title": "Ihateyou",
-      "source": "library-source/emulated/snes/clihateyou.html"
     },
     {
       "id": "library-source/emulated/snes/clJUMP.html",
@@ -4449,11 +1500,6 @@
       "source": "library-source/emulated/snes/clMarioisMissingDoneRight.html"
     },
     {
-      "id": "library-source/emulated/snes/clmariosmysterymeat.html",
-      "title": "Mario’s Mystery Meat",
-      "source": "library-source/emulated/snes/clmariosmysterymeat.html"
-    },
-    {
       "id": "library-source/emulated/snes/clmegamanandbass.html",
       "title": "Mega Man and Bass",
       "source": "library-source/emulated/snes/clmegamanandbass.html"
@@ -4464,11 +1510,6 @@
       "source": "library-source/emulated/snes/clNewSuperMarioWorld2AroundtheWorld.html"
     },
     {
-      "id": "library-source/emulated/snes/clquickieworld.html",
-      "title": "Quickie World",
-      "source": "library-source/emulated/snes/clquickieworld.html"
-    },
-    {
       "id": "library-source/emulated/snes/clsmwplumberallseasons.html",
       "title": "Super Mario World - A Plumber For All Seasons",
       "source": "library-source/emulated/snes/clsmwplumberallseasons.html"
@@ -4477,16 +1518,6 @@
       "id": "library-source/emulated/snes/clSonicinSMW.html",
       "title": "Sonic in Super Mario World",
       "source": "library-source/emulated/snes/clSonicinSMW.html"
-    },
-    {
-      "id": "library-source/emulated/snes/clstarfoxsfx2.html",
-      "title": "Star Fox SFX2 hack (better performance)",
-      "source": "library-source/emulated/snes/clstarfoxsfx2.html"
-    },
-    {
-      "id": "library-source/emulated/snes/clsuperdiagonalmario2.html",
-      "title": "Super Diagonal mario 2",
-      "source": "library-source/emulated/snes/clsuperdiagonalmario2.html"
     },
     {
       "id": "library-source/emulated/snes/clSuperMarioWorldThe SecretOfThe7GoldenStatues.html",
@@ -4519,74 +1550,9 @@
       "source": "library-source/emulated/Wonderswan/clmegamanbasscftf.html"
     },
     {
-      "id": "library-source/emulated/Wonderswan/clmmbnws (1).html",
-      "title": "Mmbnws (1)",
-      "source": "library-source/emulated/Wonderswan/clmmbnws (1).html"
-    },
-    {
-      "id": "library-source/html5-games/clSINGLEFILE.html",
-      "title": "clSINGLEFILE",
-      "source": "library-source/html5-games/clSINGLEFILE.html"
-    },
-    {
-      "id": "library-source/html5-games/npm.html",
-      "title": "npm",
-      "source": "library-source/html5-games/npm.html"
-    },
-    {
       "id": "library-source/html5-games/codeorg.html",
       "title": "codeorg",
       "source": "library-source/html5-games/codeorg.html"
-    },
-    {
-      "id": "library-source/html5-games/unpkg.html",
-      "title": "unpkg",
-      "source": "library-source/html5-games/unpkg.html"
-    },
-    {
-      "id": "library-source/html5-games/esm.html",
-      "title": "esm",
-      "source": "library-source/html5-games/esm.html"
-    },
-    {
-      "id": "library-source/html5-games/Skypack.html",
-      "title": "Skypack",
-      "source": "library-source/html5-games/Skypack.html"
-    },
-    {
-      "id": "library-source/html5-games/clarewethereyet.html",
-      "title": "Are We There Yet",
-      "source": "library-source/html5-games/clarewethereyet.html"
-    },
-    {
-      "id": "library-source/html5-games/clbankrobbery1.html",
-      "title": "Bank Robbery 1",
-      "source": "library-source/html5-games/clbankrobbery1.html"
-    },
-    {
-      "id": "library-source/html5-games/clbrawlstarsremake.html",
-      "title": "Brawl Stars (REMAKE)",
-      "source": "library-source/html5-games/clbrawlstarsremake.html"
-    },
-    {
-      "id": "library-source/html5-games/clcapuchin.html",
-      "title": "Capuchin",
-      "source": "library-source/html5-games/clcapuchin.html"
-    },
-    {
-      "id": "library-source/html5-games/cldta6.html",
-      "title": "DTA 6",
-      "source": "library-source/html5-games/cldta6.html"
-    },
-    {
-      "id": "library-source/html5-games/clHilClimbRacing2.html",
-      "title": "Hill Climb Racing 2 (scratch)",
-      "source": "library-source/html5-games/clHilClimbRacing2.html"
-    },
-    {
-      "id": "library-source/html5-games/clegionbreaker.html",
-      "title": "Legion Breaker",
-      "source": "library-source/html5-games/clegionbreaker.html"
     },
     {
       "id": "library-source/html5-games/clLobotomyDash.html",
@@ -4594,39 +1560,9 @@
       "source": "library-source/html5-games/clLobotomyDash.html"
     },
     {
-      "id": "library-source/html5-games/marbleracer.html",
-      "title": "Marble Racer",
-      "source": "library-source/html5-games/marbleracer.html"
-    },
-    {
-      "id": "library-source/html5-games/clprodigy.html",
-      "title": "Prodigy (old version by Entrapta)",
-      "source": "library-source/html5-games/clprodigy.html"
-    },
-    {
-      "id": "library-source/html5-games/clsmashhitripoff.html",
-      "title": "Smashhitripoff",
-      "source": "library-source/html5-games/clsmashhitripoff.html"
-    },
-    {
-      "id": "library-source/html5-games/clsnowboard.html",
-      "title": "Snowboard Obby",
-      "source": "library-source/html5-games/clsnowboard.html"
-    },
-    {
       "id": "library-source/html5-games/clsonicandfallingstar.htm",
       "title": "Sonicandfallingstar",
       "source": "library-source/html5-games/clsonicandfallingstar.htm"
-    },
-    {
-      "id": "library-source/html5-games/clmelee.html",
-      "title": "Super Smash Bros. Melee",
-      "source": "library-source/html5-games/clmelee.html"
-    },
-    {
-      "id": "library-source/html5-games/cltzusukimaze.html",
-      "title": "Tzusuki Maze",
-      "source": "library-source/html5-games/cltzusukimaze.html"
     },
     {
       "id": "library-source/html5-games/cltungtunghorror.htm",
@@ -4644,29 +1580,9 @@
       "source": "library-source/html5-games/clastrawasm.html"
     },
     {
-      "id": "library-source/html5-games/clayuncraft.html",
-      "title": "Ayuncraft",
-      "source": "library-source/html5-games/clayuncraft.html"
-    },
-    {
       "id": "library-source/html5-games/clcodercraft.html",
       "title": "CoderCraft",
       "source": "library-source/html5-games/clcodercraft.html"
-    },
-    {
-      "id": "library-source/html5-games/clebclient.html",
-      "title": "EB Client",
-      "source": "library-source/html5-games/clebclient.html"
-    },
-    {
-      "id": "library-source/html5-games/cleaglerforge.html",
-      "title": "Eaglerforge",
-      "source": "library-source/html5-games/cleaglerforge.html"
-    },
-    {
-      "id": "library-source/html5-games/cleaglercraft262.html",
-      "title": "Eaglercraft 26.2",
-      "source": "library-source/html5-games/cleaglercraft262.html"
     },
     {
       "id": "library-source/html5-games/cleaglercraftlite.html",
@@ -4679,39 +1595,14 @@
       "source": "library-source/html5-games/Cleaglercraftmagic.html"
     },
     {
-      "id": "library-source/html5-games/cleaglercraftnebula.html",
-      "title": "Eaglercraft Nebula",
-      "source": "library-source/html5-games/cleaglercraftnebula.html"
-    },
-    {
-      "id": "library-source/html5-games/cloddfuture.html",
-      "title": "EaglerCraft Odd Future",
-      "source": "library-source/html5-games/cloddfuture.html"
-    },
-    {
-      "id": "library-source/html5-games/cleaglercraftshadow.html",
-      "title": "Eaglercraft Shadow",
-      "source": "library-source/html5-games/cleaglercraftshadow.html"
-    },
-    {
       "id": "library-source/html5-games/cleaglercraftsky.html",
       "title": "cleaglercraftsky",
       "source": "library-source/html5-games/cleaglercraftsky.html"
     },
     {
-      "id": "library-source/html5-games/cleaglercrafttech.html",
-      "title": "cleaglercrafttech",
-      "source": "library-source/html5-games/cleaglercrafttech.html"
-    },
-    {
       "id": "library-source/html5-games/cleaglerultimate.html",
       "title": "Eaglercraft Ultimate",
       "source": "library-source/html5-games/cleaglerultimate.html"
-    },
-    {
-      "id": "library-source/html5-games/clwinston.html",
-      "title": "Eaglercraft Winston Horror",
-      "source": "library-source/html5-games/clwinston.html"
     },
     {
       "id": "library-source/html5-games/cleaglercraftx116.html",
@@ -4724,44 +1615,9 @@
       "source": "library-source/html5-games/cleaglercraftx1206.html"
     },
     {
-      "id": "library-source/html5-games/clexploremodpack.html",
-      "title": "Explore Modpack",
-      "source": "library-source/html5-games/clexploremodpack.html"
-    },
-    {
-      "id": "library-source/html5-games/clfuschiax.html",
-      "title": "Fuschia X",
-      "source": "library-source/html5-games/clfuschiax.html"
-    },
-    {
-      "id": "library-source/html5-games/clGXClient.html",
-      "title": "GX Client",
-      "source": "library-source/html5-games/clGXClient.html"
-    },
-    {
-      "id": "library-source/html5-games/cljmoclient.html",
-      "title": "JMO Client",
-      "source": "library-source/html5-games/cljmoclient.html"
-    },
-    {
-      "id": "library-source/html5-games/cljustinclient.html",
-      "title": "Justin Client",
-      "source": "library-source/html5-games/cljustinclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clkeroseneclient.html",
-      "title": "Kerosene Client",
-      "source": "library-source/html5-games/clkeroseneclient.html"
-    },
-    {
       "id": "library-source/html5-games/clkozmoclient.html",
       "title": "Kozmo Client",
       "source": "library-source/html5-games/clkozmoclient.html"
-    },
-    {
-      "id": "library-source/html5-games/cllambdaclient.html",
-      "title": "Lambda Client",
-      "source": "library-source/html5-games/cllambdaclient.html"
     },
     {
       "id": "library-source/html5-games/cllumineclient.html",
@@ -4784,46 +1640,6 @@
       "source": "library-source/html5-games/clmodernclientv2.html"
     },
     {
-      "id": "library-source/html5-games/clprismarine.html",
-      "title": "Minecraft Prismarine Client",
-      "source": "library-source/html5-games/clprismarine.html"
-    },
-    {
-      "id": "library-source/html5-games/EaglercraftZ_1.11.2.html",
-      "title": "Minecraft 1.11.2",
-      "source": "library-source/html5-games/EaglercraftZ_1.11.2.html"
-    },
-    {
-      "id": "library-source/html5-games/Eaglercraft-Beta-1.7.3-Offline.html",
-      "title": "Minecraft 1.7.3",
-      "source": "library-source/html5-games/Eaglercraft-Beta-1.7.3-Offline.html"
-    },
-    {
-      "id": "library-source/html5-games/EaglercraftX 1.8.8(u29).html",
-      "title": "Minecraft 1.8.8 (EaglecraftX)",
-      "source": "library-source/html5-games/EaglercraftX 1.8.8(u29).html"
-    },
-    {
-      "id": "library-source/html5-games/EaglercraftL_1.9_v0_7_0_Offline_Signed.html",
-      "title": "Minecraft 1.9",
-      "source": "library-source/html5-games/EaglercraftL_1.9_v0_7_0_Offline_Signed.html"
-    },
-    {
-      "id": "library-source/html5-games/clnitclient.html",
-      "title": "Nit Client",
-      "source": "library-source/html5-games/clnitclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clnovaclient.html",
-      "title": "Nova Client",
-      "source": "library-source/html5-games/clnovaclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clpiclient.html",
-      "title": "Pi Client",
-      "source": "library-source/html5-games/clpiclient.html"
-    },
-    {
       "id": "library-source/html5-games/clpixel.html",
       "title": "Pixel Client",
       "source": "library-source/html5-games/clpixel.html"
@@ -4834,34 +1650,9 @@
       "source": "library-source/html5-games/clprecisionclient.html"
     },
     {
-      "id": "library-source/html5-games/clprismclient.html",
-      "title": "Prism Client",
-      "source": "library-source/html5-games/clprismclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clrebornclient.html",
-      "title": "Reborn Client",
-      "source": "library-source/html5-games/clrebornclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clreflexclient.html",
-      "title": "Reflex Client",
-      "source": "library-source/html5-games/clreflexclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clresentclient.html",
-      "title": "Resent Client",
-      "source": "library-source/html5-games/clresentclient.html"
-    },
-    {
       "id": "library-source/html5-games/clskyfactory.html",
       "title": "Skyfactory",
       "source": "library-source/html5-games/clskyfactory.html"
-    },
-    {
-      "id": "library-source/html5-games/clsolar.html",
-      "title": "Solar Client",
-      "source": "library-source/html5-games/clsolar.html"
     },
     {
       "id": "library-source/html5-games/clstarlike.html",
@@ -4869,69 +1660,9 @@
       "source": "library-source/html5-games/clstarlike.html"
     },
     {
-      "id": "library-source/html5-games/cltuffclient.html",
-      "title": "Tuff Client",
-      "source": "library-source/html5-games/cltuffclient.html"
-    },
-    {
       "id": "library-source/html5-games/clut15tuffclient.html",
       "title": "UT15 Tuff Client",
       "source": "library-source/html5-games/clut15tuffclient.html"
-    },
-    {
-      "id": "library-source/html5-games/cluwuclient.html",
-      "title": "UwU Client",
-      "source": "library-source/html5-games/cluwuclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clwurst.html",
-      "title": "Wurst Client",
-      "source": "library-source/html5-games/clwurst.html"
-    },
-    {
-      "id": "library-source/html5-games/clzetaclient.html",
-      "title": "Zeta Client",
-      "source": "library-source/html5-games/clzetaclient.html"
-    },
-    {
-      "id": "library-source/html5-games/clanemonesfall.html",
-      "title": "Friday Night Funkin vs Anemones Fall",
-      "source": "library-source/html5-games/clanemonesfall.html"
-    },
-    {
-      "id": "library-source/html5-games/claftertheweek.html",
-      "title": "FNF After The Week",
-      "source": "library-source/html5-games/claftertheweek.html"
-    },
-    {
-      "id": "library-source/html5-games/clantipathy.html",
-      "title": "FNF Antipathy",
-      "source": "library-source/html5-games/clantipathy.html"
-    },
-    {
-      "id": "library-source/html5-games/claflac.html",
-      "title": "Friday Night Funkin vs Aflac",
-      "source": "library-source/html5-games/claflac.html"
-    },
-    {
-      "id": "library-source/html5-games/clvsasgore.html",
-      "title": "Friday Night Funkin Vs. Asgore",
-      "source": "library-source/html5-games/clvsasgore.html"
-    },
-    {
-      "id": "library-source/html5-games/clbill.html",
-      "title": "Friday Night Funkin VS Bill Cipher",
-      "source": "library-source/html5-games/clbill.html"
-    },
-    {
-      "id": "library-source/html5-games/clblackout.html",
-      "title": "Friday Night Funkin Blackout VS Raven",
-      "source": "library-source/html5-games/clblackout.html"
-    },
-    {
-      "id": "library-source/html5-games/clclaymore.html",
-      "title": "FNF - Claymore",
-      "source": "library-source/html5-games/clclaymore.html"
     },
     {
       "id": "library-source/html5-games/cldeadair.html",
@@ -4939,289 +1670,9 @@
       "source": "library-source/html5-games/cldeadair.html"
     },
     {
-      "id": "library-source/html5-games/clfnfdusttale.html",
-      "title": "FNF: DustTale Remastered v2.0",
-      "source": "library-source/html5-games/clfnfdusttale.html"
-    },
-    {
-      "id": "library-source/html5-games/Vs. Among Us Skeld Symphony.html",
-      "title": "Friday Night Funkin – Vs. Among Us Skeld Symphony",
-      "source": "library-source/html5-games/Vs. Among Us Skeld Symphony.html"
-    },
-    {
-      "id": "library-source/html5-games/BaddiesNightmare.html",
-      "title": "FNF - Baddies Nightmare",
-      "source": "library-source/html5-games/BaddiesNightmare.html"
-    },
-    {
-      "id": "library-source/html5-games/BenDrowned.html",
-      "title": "FNF - Ben Drowned",
-      "source": "library-source/html5-games/BenDrowned.html"
-    },
-    {
-      "id": "library-source/html5-games/clbunzobunny.html",
-      "title": "FNF VS Bunzo Bunny",
-      "source": "library-source/html5-games/clbunzobunny.html"
-    },
-    {
-      "id": "library-source/html5-games/clblourpleGuy.html",
-      "title": "FNF - Blourple Guy (Ourple Guy B-Sides)",
-      "source": "library-source/html5-games/clblourpleGuy.html"
-    },
-    {
-      "id": "library-source/html5-games/clbanbuds.html",
-      "title": "Friday Night Funkin Banbuds Interview",
-      "source": "library-source/html5-games/clbanbuds.html"
-    },
-    {
-      "id": "library-source/html5-games/clsayorisnotebook.html",
-      "title": "Friday Night Funkin; Sayori’s Notebook",
-      "source": "library-source/html5-games/clsayorisnotebook.html"
-    },
-    {
-      "id": "library-source/html5-games/clsilver.html",
-      "title": "Friday Night Funkin VS Silver",
-      "source": "library-source/html5-games/clsilver.html"
-    },
-    {
-      "id": "library-source/html5-games/clcamilla.html",
-      "title": "FNF VS Camellia",
-      "source": "library-source/html5-games/clcamilla.html"
-    },
-    {
-      "id": "library-source/html5-games/CartoonFrenzy.html",
-      "title": "FNF - Cartoon Frenzy",
-      "source": "library-source/html5-games/CartoonFrenzy.html"
-    },
-    {
-      "id": "library-source/html5-games/clcreepypastabuteveryonesingsit.html",
-      "title": "FNF - CreepyPasta but Everyone Sings it",
-      "source": "library-source/html5-games/clcreepypastabuteveryonesingsit.html"
-    },
-    {
       "id": "library-source/html5-games/clcreepynightfunkin.html",
       "title": "Creepy Night Funkin",
       "source": "library-source/html5-games/clcreepynightfunkin.html"
-    },
-    {
-      "id": "library-source/html5-games/clcrimsonmadness.html",
-      "title": "FNF - Crimson Madness",
-      "source": "library-source/html5-games/clcrimsonmadness.html"
-    },
-    {
-      "id": "library-source/html5-games/Classified.html",
-      "title": "FNF - Classified",
-      "source": "library-source/html5-games/Classified.html"
-    },
-    {
-      "id": "library-source/html5-games/clcreepyinternetstories.html",
-      "title": "FNF - Creepy internet Stories",
-      "source": "library-source/html5-games/clcreepyinternetstories.html"
-    },
-    {
-      "id": "library-source/html5-games/clclover.html",
-      "title": "FNF - Clover Cave In",
-      "source": "library-source/html5-games/clclover.html"
-    },
-    {
-      "id": "library-source/html5-games/ConfrontingYourself.html",
-      "title": "FNF - Confronting Yourself FF Mix",
-      "source": "library-source/html5-games/ConfrontingYourself.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfcyclesencore.html",
-      "title": "FNF - Cycles Encore",
-      "source": "library-source/html5-games/clfnfcyclesencore.html"
-    },
-    {
-      "id": "library-source/html5-games/EletedSystemOverload.html",
-      "title": "FNF - Eteled System Overload",
-      "source": "library-source/html5-games/EletedSystemOverload.html"
-    },
-    {
-      "id": "library-source/html5-games/clorigamiking.html",
-      "title": "Friday Night Funkin vs Origami King",
-      "source": "library-source/html5-games/clorigamiking.html"
-    },
-    {
-      "id": "library-source/html5-games/FunkinForHire.html",
-      "title": "FNF Funkin For Hire Dorkly Sonic",
-      "source": "library-source/html5-games/FunkinForHire.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnffreakpostor.html",
-      "title": "FNF Freakpostor [Vs. Cartoon Cat]",
-      "source": "library-source/html5-games/clfnffreakpostor.html"
-    },
-    {
-      "id": "library-source/html5-games/clfamilyguycorrupted.html",
-      "title": "FNF Family Guy Corrupted",
-      "source": "library-source/html5-games/clfamilyguycorrupted.html"
-    },
-    {
-      "id": "library-source/html5-games/cljurassic.html",
-      "title": "FNF Jurassic Park Breakout",
-      "source": "library-source/html5-games/cljurassic.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfhd.html",
-      "title": "FNF - HD",
-      "source": "library-source/html5-games/clfnfhd.html"
-    },
-    {
-      "id": "library-source/html5-games/ImpostorB3Remixed.html",
-      "title": "FNF - Impostor B3 Remixed",
-      "source": "library-source/html5-games/ImpostorB3Remixed.html"
-    },
-    {
-      "id": "library-source/html5-games/ImpostorExpansion.html",
-      "title": "FNF - Impostor Expansion",
-      "source": "library-source/html5-games/ImpostorExpansion.html"
-    },
-    {
-      "id": "library-source/html5-games/ImpostorGetaway.html",
-      "title": "FNF - Impostor Getaway",
-      "source": "library-source/html5-games/ImpostorGetaway.html"
-    },
-    {
-      "id": "library-source/html5-games/ImpostorTaintedFate.html",
-      "title": "FNF - Impostor Tainted Fate",
-      "source": "library-source/html5-games/ImpostorTaintedFate.html"
-    },
-    {
-      "id": "library-source/html5-games/ImpostorWhiteParasite.html",
-      "title": "FNF - Impostor White Parasite",
-      "source": "library-source/html5-games/ImpostorWhiteParasite.html"
-    },
-    {
-      "id": "library-source/html5-games/InsanityPsychosisRemake.html",
-      "title": "FNF - Insanity Psychosis Remake",
-      "source": "library-source/html5-games/InsanityPsychosisRemake.html"
-    },
-    {
-      "id": "library-source/html5-games/LimeImpostor.html",
-      "title": "FNF - Lime Impostor",
-      "source": "library-source/html5-games/LimeImpostor.html"
-    },
-    {
-      "id": "library-source/html5-games/clmami.html",
-      "title": "FNF Mami",
-      "source": "library-source/html5-games/clmami.html"
-    },
-    {
-      "id": "library-source/html5-games/clmandela.html",
-      "title": "Friday Night Funkin: Mandela Catalogue",
-      "source": "library-source/html5-games/clmandela.html"
-    },
-    {
-      "id": "library-source/html5-games/clfunkinmix.html",
-      "title": "Friday Night Funkin - Mix",
-      "source": "library-source/html5-games/clfunkinmix.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfvoiidsides.html",
-      "title": "FNF - Matt Voiid Sides",
-      "source": "library-source/html5-games/clfnfvoiidsides.html"
-    },
-    {
-      "id": "library-source/html5-games/MinusEteled.html",
-      "title": "FNF - Minus Eteled",
-      "source": "library-source/html5-games/MinusEteled.html"
-    },
-    {
-      "id": "library-source/html5-games/MungusMadness.html",
-      "title": "FNF - Mungus Madness",
-      "source": "library-source/html5-games/MungusMadness.html"
-    },
-    {
-      "id": "library-source/html5-games/clomnipresent.html",
-      "title": "Friday Night Funkin - Omnipresent",
-      "source": "library-source/html5-games/clomnipresent.html"
-    },
-    {
-      "id": "library-source/html5-games/ParasiteOriginsBlackness.html",
-      "title": "FNF - Parasite Origins - Blackness",
-      "source": "library-source/html5-games/ParasiteOriginsBlackness.html"
-    },
-    {
-      "id": "library-source/html5-games/PastelImpostor.html",
-      "title": "FNF - Pastel Impostor",
-      "source": "library-source/html5-games/PastelImpostor.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfpreyhd.html",
-      "title": "Friday Night Funkin' Prey HD",
-      "source": "library-source/html5-games/clfnfpreyhd.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfpreygoodfuture.html",
-      "title": "Friday Night Funkin' Prey Good Future",
-      "source": "library-source/html5-games/clfnfpreygoodfuture.html"
-    },
-    {
-      "id": "library-source/html5-games/SecretHistories.html",
-      "title": "FNF - Secret Histories",
-      "source": "library-source/html5-games/SecretHistories.html"
-    },
-    {
-      "id": "library-source/html5-games/clshaggy.html",
-      "title": "Friday Night Funkin’: Shaggy x Matt 4 keys",
-      "source": "library-source/html5-games/clshaggy.html"
-    },
-    {
-      "id": "library-source/html5-games/clmegacd.html",
-      "title": "FNF - Sonic Mega CD",
-      "source": "library-source/html5-games/clmegacd.html"
-    },
-    {
-      "id": "library-source/html5-games/SundayNightSuicidev2.html",
-      "title": "FNF - Sunday Night Suicide v2",
-      "source": "library-source/html5-games/SundayNightSuicidev2.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnftrepidation.html",
-      "title": "Friday Night Funkin’ Trepidation",
-      "source": "library-source/html5-games/clfnftrepidation.html"
-    },
-    {
-      "id": "library-source/html5-games/clLSE.html",
-      "title": "Friday Night Funkin - Longest Solo Ever",
-      "source": "library-source/html5-games/clLSE.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfundertale.html",
-      "title": "Friday Night Funkin’ Undertale",
-      "source": "library-source/html5-games/clfnfundertale.html"
-    },
-    {
-      "id": "library-source/html5-games/UnknownSufferingA&SR.html",
-      "title": "FNF - Unknown Suffering - Awe And Saster Remix",
-      "source": "library-source/html5-games/UnknownSufferingA&SR.html"
-    },
-    {
-      "id": "library-source/html5-games/UnknownSufferingReanimated.html",
-      "title": "FNF - Unknown Suffering Reanimated",
-      "source": "library-source/html5-games/UnknownSufferingReanimated.html"
-    },
-    {
-      "id": "library-source/html5-games/VlooGuy.html",
-      "title": "FNF - Vloo Guy (Ourple Guy D-Sides)",
-      "source": "library-source/html5-games/VlooGuy.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfstridentcrisis.html",
-      "title": "FNF Vs. Bambi: Strident Crisis",
-      "source": "library-source/html5-games/clfnfstridentcrisis.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfbfdi26.html",
-      "title": "Friday Night Funkin Vs. BFDI 26",
-      "source": "library-source/html5-games/clfnfbfdi26.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfchara.html",
-      "title": "Friday Night Funkin' - V.S Chara",
-      "source": "library-source/html5-games/clfnfchara.html"
     },
     {
       "id": "library-source/html5-games/clfnfdocumic.txtv3.html",
@@ -5229,59 +1680,9 @@
       "source": "library-source/html5-games/clfnfdocumic.txtv3.html"
     },
     {
-      "id": "library-source/html5-games/clherobrinereborn.html",
-      "title": "Friday Night Funkin VS Herobrine Reborn",
-      "source": "library-source/html5-games/clherobrinereborn.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfimposter3.html",
-      "title": "Friday Night Funkin VS Impostor v3",
-      "source": "library-source/html5-games/clfnfimposter3.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfpokepastaperdition.html",
-      "title": "Friday Night Funkin' VS Pokepasta Perdition",
-      "source": "library-source/html5-games/clfnfpokepastaperdition.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfretrospecter.html",
-      "title": "FNF vs RetroSpecter",
-      "source": "library-source/html5-games/clfnfretrospecter.html"
-    },
-    {
-      "id": "library-source/html5-games/clriddler.html",
-      "title": "FNF vs Riddler",
-      "source": "library-source/html5-games/clriddler.html"
-    },
-    {
       "id": "library-source/html5-games/clxevent.html",
       "title": "Friday Night Funkin X-Event",
       "source": "library-source/html5-games/clxevent.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfvstabi.html",
-      "title": "Friday Night Funkin': Vs. Tabi V2 Restored",
-      "source": "library-source/html5-games/clfnfvstabi.html"
-    },
-    {
-      "id": "library-source/html5-games/clfnfhotline.html",
-      "title": "Hotline 024",
-      "source": "library-source/html5-games/clfnfhotline.html"
-    },
-    {
-      "id": "library-source/html5-games/clhorrormickeymouse.html",
-      "title": "Horror Mouse",
-      "source": "library-source/html5-games/clhorrormickeymouse.html"
-    },
-    {
-      "id": "library-source/html5-games/clastrosdreamland.html",
-      "title": "Astro’s Dreamland",
-      "source": "library-source/html5-games/clastrosdreamland.html"
-    },
-    {
-      "id": "library-source/html5-games/classroommaxxing.html",
-      "title": "Classroom Maxxing",
-      "source": "library-source/html5-games/classroommaxxing.html"
     },
     {
       "id": "library-source/flash/cl40escape.html",
@@ -5289,99 +1690,9 @@
       "source": "library-source/flash/cl40escape.html"
     },
     {
-      "id": "library-source/flash/clabandoned32.html",
-      "title": "Abandoned 3",
-      "source": "library-source/flash/clabandoned32.html"
-    },
-    {
-      "id": "library-source/flash/clcoverorangeplayerspack.html",
-      "title": "Cover Orange Players Pack",
-      "source": "library-source/flash/clcoverorangeplayerspack.html"
-    },
-    {
       "id": "library-source/flash/clheliattack3.html",
       "title": "Heli Attack 3",
       "source": "library-source/flash/clheliattack3.html"
-    },
-    {
-      "id": "library-source/flash/clriddleuniversity.html",
-      "title": "Riddle University",
-      "source": "library-source/flash/clriddleuniversity.html"
-    },
-    {
-      "id": "library-source/flash/clsandsofthecoliseum.html",
-      "title": "Sands of the Coliseum",
-      "source": "library-source/flash/clsandsofthecoliseum.html"
-    },
-    {
-      "id": "library-source/flash/clscarymazegame.html",
-      "title": "Scary Maze Game",
-      "source": "library-source/flash/clscarymazegame.html"
-    },
-    {
-      "id": "library-source/flash/clscoobydoocreepyrun.html",
-      "title": "Scooby Doo Creepy Run",
-      "source": "library-source/flash/clscoobydoocreepyrun.html"
-    },
-    {
-      "id": "library-source/flash/clscoobydoozombiehunger.html",
-      "title": "Scooby Doo Zombie Hunter",
-      "source": "library-source/flash/clscoobydoozombiehunger.html"
-    },
-    {
-      "id": "library-source/flash/clservingupmadness.html",
-      "title": "Serving Up Madness",
-      "source": "library-source/flash/clservingupmadness.html"
-    },
-    {
-      "id": "library-source/flash/clshc1.html",
-      "title": "Sift Heads Cartels Act 1",
-      "source": "library-source/flash/clshc1.html"
-    },
-    {
-      "id": "library-source/flash/clskywire2.html",
-      "title": "Skywire 2",
-      "source": "library-source/flash/clskywire2.html"
-    },
-    {
-      "id": "library-source/flash/clsnailbob3.html",
-      "title": "Snail Bob 3",
-      "source": "library-source/flash/clsnailbob3.html"
-    },
-    {
-      "id": "library-source/flash/clsnailbob4space.html",
-      "title": "Snail Bob 4",
-      "source": "library-source/flash/clsnailbob4space.html"
-    },
-    {
-      "id": "library-source/flash/clsnailbob5lovestory.html",
-      "title": "Snail Bob 5 Love Story",
-      "source": "library-source/flash/clsnailbob5lovestory.html"
-    },
-    {
-      "id": "library-source/flash/clsolitaire.html",
-      "title": "Solitaire",
-      "source": "library-source/flash/clsolitaire.html"
-    },
-    {
-      "id": "library-source/flash/clspaceiskey.html",
-      "title": "Space is Key",
-      "source": "library-source/flash/clspaceiskey.html"
-    },
-    {
-      "id": "library-source/flash/clspaceiskey2.html",
-      "title": "Space is Key 2",
-      "source": "library-source/flash/clspaceiskey2.html"
-    },
-    {
-      "id": "library-source/flash/clspaceiskeyxmas.html",
-      "title": "Space is Key Xmas",
-      "source": "library-source/flash/clspaceiskeyxmas.html"
-    },
-    {
-      "id": "library-source/flash/clSpongebobPowerKartGrandPrix.html",
-      "title": "Spongebob PowerKart Grand Prix",
-      "source": "library-source/flash/clSpongebobPowerKartGrandPrix.html"
     },
     {
       "id": "library-source/flash/clsteakandjake.html",
@@ -5389,59 +1700,14 @@
       "source": "library-source/flash/clsteakandjake.html"
     },
     {
-      "id": "library-source/flash/clstickmanswat.html",
-      "title": "Stick Man SWAT",
-      "source": "library-source/flash/clstickmanswat.html"
-    },
-    {
-      "id": "library-source/flash/clspecialmission.html",
-      "title": "Special Mission",
-      "source": "library-source/flash/clspecialmission.html"
-    },
-    {
       "id": "library-source/flash/clsuma.html",
       "title": "Suma",
       "source": "library-source/flash/clsuma.html"
     },
     {
-      "id": "library-source/flash/clsuperfighters.html",
-      "title": "Super Fighters",
-      "source": "library-source/flash/clsuperfighters.html"
-    },
-    {
-      "id": "library-source/flash/clsupersmashflash2.html",
-      "title": "Super Smash Flash 2",
-      "source": "library-source/flash/clsupersmashflash2.html"
-    },
-    {
       "id": "library-source/flash/clterritorywar2.html",
       "title": "Territory War 2",
       "source": "library-source/flash/clterritorywar2.html"
-    },
-    {
-      "id": "library-source/flash/clthedeepestsleep.html",
-      "title": "The Deepest Sleep",
-      "source": "library-source/flash/clthedeepestsleep.html"
-    },
-    {
-      "id": "library-source/flash/cltheenchantedcave2.html",
-      "title": "The Enchanted Cave 2",
-      "source": "library-source/flash/cltheenchantedcave2.html"
-    },
-    {
-      "id": "library-source/flash/clthesodorrace.html",
-      "title": "The Sodor Race",
-      "source": "library-source/flash/clthesodorrace.html"
-    },
-    {
-      "id": "library-source/flash/clthesunforthevampire.html",
-      "title": "The Sun For The Vampire",
-      "source": "library-source/flash/clthesunforthevampire.html"
-    },
-    {
-      "id": "library-source/flash/clthisistheonlyleveltoo.html",
-      "title": "This is the Only Level Too",
-      "source": "library-source/flash/clthisistheonlyleveltoo.html"
     },
     {
       "id": "library-source/flash/cltrollfacequest1.html",
@@ -5534,54 +1800,14 @@
       "source": "library-source/emulated/clfamidash1.2.8album.html"
     },
     {
-      "id": "library-source/emulated/clfamidashB-Sides1.2.8.html",
-      "title": "Famidash 1.2.8 B-Sides",
-      "source": "library-source/emulated/clfamidashB-Sides1.2.8.html"
-    },
-    {
-      "id": "library-source/emulated/clfamidashC-Sides1.2.8.html",
-      "title": "Famidash 1.2.8 C-Sides",
-      "source": "library-source/emulated/clfamidashC-Sides1.2.8.html"
-    },
-    {
       "id": "library-source/emulated/clfamidashD-Sides1.2.8.html",
       "title": "Famidash 1.2.8 D-Sides",
       "source": "library-source/emulated/clfamidashD-Sides1.2.8.html"
     },
     {
-      "id": "library-source/emulated/clfamidashE-Sides1.2.8.html",
-      "title": "Famidash 1.2.8 E-Sides",
-      "source": "library-source/emulated/clfamidashE-Sides1.2.8.html"
-    },
-    {
-      "id": "library-source/emulated/clfamidash2.html",
-      "title": "Famidash 2 Alpha",
-      "source": "library-source/emulated/clfamidash2.html"
-    },
-    {
-      "id": "library-source/emulated/clsonicinsmb1.html",
-      "title": "Sonic in SMB1",
-      "source": "library-source/emulated/clsonicinsmb1.html"
-    },
-    {
-      "id": "library-source/emulated/rocketknight2.html",
-      "title": "Rocket Knight Adventures 2",
-      "source": "library-source/emulated/rocketknight2.html"
-    },
-    {
       "id": "library-source/emulated/clsonicthesuperchallenges.html",
       "title": "Sonic 1 - The Super Challenges",
       "source": "library-source/emulated/clsonicthesuperchallenges.html"
-    },
-    {
-      "id": "library-source/emulated/cltoejamandearl.html",
-      "title": "ToeJam & Earl",
-      "source": "library-source/emulated/cltoejamandearl.html"
-    },
-    {
-      "id": "library-source/emulated/clopossumcountry.html",
-      "title": "Opossum Country",
-      "source": "library-source/emulated/clopossumcountry.html"
     },
     {
       "id": "library-source/emulated/clpokevolume1.html",
@@ -5599,34 +1825,9 @@
       "source": "library-source/emulated/clpokevolume3.html"
     },
     {
-      "id": "library-source/emulated/clpokevolume4.html",
-      "title": "Pokemon Volume 4:  [Rom Show]",
-      "source": "library-source/emulated/clpokevolume4.html"
-    },
-    {
-      "id": "library-source/emulated/clsimpsonsroadrage.html",
-      "title": "Simpson’s Road Rage",
-      "source": "library-source/emulated/clsimpsonsroadrage.html"
-    },
-    {
-      "id": "library-source/emulated/clsupermarioland2.html",
-      "title": "Super Mario Land 2",
-      "source": "library-source/emulated/clsupermarioland2.html"
-    },
-    {
-      "id": "library-source/emulated/clihateyousmw.html",
-      "title": "I hate you",
-      "source": "library-source/emulated/clihateyousmw.html"
-    },
-    {
       "id": "library-source/emulated/clsonicmegamix5.0a.html",
       "title": "Sonic Megamix 5.0a LEAKED",
       "source": "library-source/emulated/clsonicmegamix5.0a.html"
-    },
-    {
-      "id": "library-source/emulated/cldangonronpa64.html",
-      "title": "Danganronpa 64",
-      "source": "library-source/emulated/cldangonronpa64.html"
     },
     {
       "id": "library-source/emulated/mariobuilder64.html",
@@ -5634,29 +1835,9 @@
       "source": "library-source/emulated/mariobuilder64.html"
     },
     {
-      "id": "library-source/emulated/clmidwaysgreatesthits.html",
-      "title": "Midway’s Greatest Hits",
-      "source": "library-source/emulated/clmidwaysgreatesthits.html"
-    },
-    {
-      "id": "library-source/emulated/clsms.html",
-      "title": "Super Mario 64 Sunshine",
-      "source": "library-source/emulated/clsms.html"
-    },
-    {
-      "id": "library-source/emulated/clsm64starroad.html",
-      "title": "Super Mario Star Road",
-      "source": "library-source/emulated/clsm64starroad.html"
-    },
-    {
       "id": "library-source/emulated/clsm64starroadretooled.html",
       "title": "Super Mario Star Road Retooled",
       "source": "library-source/emulated/clsm64starroadretooled.html"
-    },
-    {
-      "id": "library-source/emulated/clpawitf.html",
-      "title": "Pokemon A Walk In The Forest Version",
-      "source": "library-source/emulated/clpawitf.html"
     },
     {
       "id": "library-source/emulated/clpambc.html",
@@ -5664,29 +1845,14 @@
       "source": "library-source/emulated/clpambc.html"
     },
     {
-      "id": "library-source/emulated/clbillssecretgarden.html",
-      "title": "Pokemon Bill’s Secret Garden",
-      "source": "library-source/emulated/clbillssecretgarden.html"
-    },
-    {
       "id": "library-source/emulated/clpokemonemeraldflow.html",
       "title": "Pokemon Emerald Flow",
       "source": "library-source/emulated/clpokemonemeraldflow.html"
     },
     {
-      "id": "library-source/emulated/clpokemonemeraldimperium.html",
-      "title": "Pokemon Emerald Imperium",
-      "source": "library-source/emulated/clpokemonemeraldimperium.html"
-    },
-    {
       "id": "library-source/emulated/clPokemonemeraldrogue.html",
       "title": "Pokemon Emerald Rogue",
       "source": "library-source/emulated/clPokemonemeraldrogue.html"
-    },
-    {
-      "id": "library-source/emulated/clpokeexceededemerald.html",
-      "title": "Pokémon Exceeded Emerald",
-      "source": "library-source/emulated/clpokeexceededemerald.html"
     },
     {
       "id": "library-source/emulated/clheartandsoul.html",
@@ -5709,29 +1875,9 @@
       "source": "library-source/emulated/clpokemonlucid.html"
     },
     {
-      "id": "library-source/emulated/clpmev+.html",
-      "title": "Pokemon: Moemon Emerald Vanilla+ (v1.1.0)",
-      "source": "library-source/emulated/clpmev+.html"
-    },
-    {
-      "id": "library-source/emulated/clpokemoonemeraldrandom.html",
-      "title": "Pokemon Moon Emerald Extreme Randomized",
-      "source": "library-source/emulated/clpokemoonemeraldrandom.html"
-    },
-    {
       "id": "library-source/emulated/clpokemonpeach.html",
       "title": "Pokémon Peach",
       "source": "library-source/emulated/clpokemonpeach.html"
-    },
-    {
-      "id": "library-source/emulated/clpokemonperfectemerald.html",
-      "title": "Pokémon Perfect Emerald",
-      "source": "library-source/emulated/clpokemonperfectemerald.html"
-    },
-    {
-      "id": "library-source/emulated/clscarletviolet.html",
-      "title": "Pokémon Scarlet Violet",
-      "source": "library-source/emulated/clscarletviolet.html"
     },
     {
       "id": "library-source/emulated/clsnowywhite.html",
@@ -5757,11 +1903,6 @@
       "id": "library-source/emulated/clpokeultimatefusion.html",
       "title": "Pokemon Ultimate Fusion",
       "source": "library-source/emulated/clpokeultimatefusion.html"
-    },
-    {
-      "id": "library-source/emulated/clmmbnws.html",
-      "title": "Megaman Battle Network WS",
-      "source": "library-source/emulated/clmmbnws.html"
     }
   ]
 }

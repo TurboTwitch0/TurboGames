@@ -1,0 +1,1238 @@
+{
+  "generatedAt": "2026-10-21T01:32:26.814Z",
+  "attempted": 198,
+  "captured": 158,
+  "failed": 40,
+  "results": [
+    {
+      "id": "library-source/flash/cl1v1tennis.html",
+      "title": "1 On 1 Tennis",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl1v1tennis.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl3pandas.html",
+      "title": "3 Pandas",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl3pandas.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl3pandasbrazil.html",
+      "title": "3 Pandas Brazil",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl3pandasbrazil.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl3pandasfantasy.html",
+      "title": "3 Pandas Fantasy",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl3pandasfantasy.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl3pandasjapan.html",
+      "title": "3 Pandas Japan",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl3pandasjapan.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl3pandasnight.html",
+      "title": "3 Pandas Night",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl3pandasnight.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl3slices2.html",
+      "title": "3 Slices 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cl3slices2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl40xescape.html",
+      "title": "40xescape",
+      "ok": false,
+      "error": "missing game canvas",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clabandoned3.html",
+      "title": "Abandoned3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clabandoned3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clachillies2.html",
+      "title": "Achilles 2",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clambulencearush.html",
+      "title": "Ambulencearush",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clamigopancho2.html",
+      "title": "Amigo Pancho 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clamigopancho2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clamigopancho4.html",
+      "title": "Amigo Pancho 4",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clamigopancho4.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clamigopancho5.html",
+      "title": "Amigo Pancho 5",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clamigopancho5.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clamigopancho6.html",
+      "title": "Amigo Pancho 6",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clamigopancho6.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clarmormayhem2.html",
+      "title": "Armor Mayhem 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clarmormayhem2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clAwesomePirates.html",
+      "title": "Awesome Pirates",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clAwesomePirates.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbackyardbaseball.html",
+      "title": "Backyard Baseball",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbackyardbaseball.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbash.html",
+      "title": "Bash the Computer",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbash.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbejeweledtwistflash.html",
+      "title": "Bejeweledtwistflash",
+      "ok": false,
+      "error": "Ruffle panic screen",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clbindingofisaccsheeptime.html",
+      "title": "Binding of Isaac Wrath of The Lamb",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbindingofisaccsheeptime.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clblackjackbattle.html",
+      "title": "Blackjack Battle",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clblackjackbattle.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbloonspp5.html",
+      "title": "Bloons Player Pack 5",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbloonspp5.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbloonsTD1.html",
+      "title": "BTD1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbloonsTD1.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clboxheadnightmare.html",
+      "title": "Boxhead Nightmare",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clboxheadnightmare.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clboxinglive-2.html",
+      "title": "Boxing Live 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clboxinglive-2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbtd5.html",
+      "title": "BTD5",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbtd5.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbubbleshooterpirate.html",
+      "title": "Bubble Shooter Pirate",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbubbleshooterpirate.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbubbletanks2.html",
+      "title": "Bubble Tanks 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbubbletanks2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbubbletanksarenas.html",
+      "title": "Bubble Tanks Arenas",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbubbletanksarenas.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clbubbletankstd.html",
+      "title": "Bubble Tanks Tower Defense",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clbubbletankstd.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcactusmccoy.html",
+      "title": "Cactus Mccoy",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcactusmccoy.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcareatscar2deluxe.html",
+      "title": "Car Eats Car 2 Deluxe",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcareatscar2deluxe.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcheckers.html",
+      "title": "Checkers",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcheckers.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clchuzzle.html",
+      "title": "Chuzzle",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clclashnslash.html",
+      "title": "Clash N Slash",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clclearvision.html",
+      "title": "Clear Vision",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clclearvision.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clclearvision2.html",
+      "title": "Clear Vision 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clclearvision2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clclearvision3.html",
+      "title": "Clear Vision 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clclearvision3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcodenamegordon.html",
+      "title": "Codename Gordon",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcodenamegordon.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcoverorangejourneyspace.html",
+      "title": "Cover Orange Journey Space",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcoverorangejourneyspace.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcoverorangeplayerspack3 (1).html",
+      "title": "Coverorangeplayerspack3 (1)",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcoverorangeplayerspack3-1-.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcreeperworld2.html",
+      "title": "Creeper World 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcreeperworld2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcrunchball3000.html",
+      "title": "Crunchball 3000",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcrunchball3000.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcurveball.html",
+      "title": "Curve Ball",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcurveball.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldadgame.html",
+      "title": "Dadgame",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldadgame.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldeadfrontieroutbreak.html",
+      "title": "Dead Frontier Outbreak",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cldeadfrontieroutbreak2.html",
+      "title": "Dead Frontier Outbreak 2",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cldecision2.html",
+      "title": "Decision 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldecision2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldiamondhollow2.html",
+      "title": "Diamond Hollow 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldiamondhollow2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldontescape2.html",
+      "title": "Don't Escape 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldontescape2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldoom2d.html",
+      "title": "Doom 2D",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldoom2d.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldouchebaglife.html",
+      "title": "Douchebag Life",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldouchebaglife.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cldumpling.html",
+      "title": "Dumpling",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cldumpling.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clearntodie2.html",
+      "title": "Earn to Die 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clearntodie2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cleffinghail.html",
+      "title": "Effing Hail",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cleffinghail.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cleffingmachines.html",
+      "title": "Effing Machines",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cleffingmachines.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cleffingzombies.html",
+      "title": "Effing Zombies",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cleffingzombies.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clendlesswar7.html",
+      "title": "Endless War 7",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clendlesswar7.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clexitpath.html",
+      "title": "Exit Path",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clexitpath.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfactoryballs2.html",
+      "title": "Factory Balls 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfactoryballs2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfactoryballs3.html",
+      "title": "Factory Balls 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfactoryballs3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfairytalevsonepiece.html",
+      "title": "Fairy Tale vs. One Piece",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfairytalevsonepiece.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfattygenius.html",
+      "title": "Fatty Genius",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfattygenius.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfeedus3.html",
+      "title": "Feed Us 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfeedus3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clffaf.html",
+      "title": "Five Fights at Freddies",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clffaf.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic1.html",
+      "title": "Final Fantasy Sonic X Episode 1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic1.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic2.html",
+      "title": "Final Fantasy Sonic X Episode 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic3.html",
+      "title": "Final Fantasy Sonic X Episode 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic4.html",
+      "title": "Final Fantasy Sonic X Episode 4",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic4.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic5.html",
+      "title": "Final Fantasy Sonic X Episode 5",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic5.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic61.html",
+      "title": "Final Fantasy Sonic X Episode 6 part 1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic61.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clFFsonic62.html",
+      "title": "Final Fantasy Sonic X Episode 6 part 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clFFsonic62.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfinalninja.html",
+      "title": "Final Ninja",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfinalninja.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfloodrunner.html",
+      "title": "Flood Runner",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfloodrunner.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfloodrunner2.html",
+      "title": "Flood Runner 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfloodrunner2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfloodrunner3.html",
+      "title": "Flood Runner 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfloodrunner3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clfreerider.html",
+      "title": "Free Rider",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clfreerider.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clgachaverse.html",
+      "title": "Gachaverse",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clgangstabean.html",
+      "title": "Gangsta Bean",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clgangstabean.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clgangstabean2.html",
+      "title": "Gangsta Bean 2",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clgangsterbros.html",
+      "title": "Gangster Bros",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clgangsterbros.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clGettothetopalthoughthereisnotop.html",
+      "title": "Get to the Top Although There Is No Top",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clGettothetopalthoughthereisnotop.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clgswitch.html",
+      "title": "G-Switch",
+      "ok": false,
+      "error": "play screen remained visible",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clgswitch2.html",
+      "title": "G-Switch 2",
+      "ok": false,
+      "error": "play screen remained visible",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clhobovszombies.html",
+      "title": "Hobo vs. Zombies",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clhungrypumpkin.html",
+      "title": "Hungry Pumpkin",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clhungrypumpkin.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clindestructotank.html",
+      "title": "IndestructoTank",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clindestructotank.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clindestructotank2.html",
+      "title": "IndestructoTank 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clindestructotank2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clindestructotankae.html",
+      "title": "IndestructoTank Anniversary Edition",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clindestructotankae.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clintospace3.html",
+      "title": "Into Space 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clintospace3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cllearntofly2hacked.html",
+      "title": "Learn to Fly 2 Hacked",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cllearntofly2hacked.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clLearnToFly3Debug.html",
+      "title": "Learn to Fly 3 (debug)",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clLearnToFly3Debug.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cllearntoflyidlehack.html",
+      "title": "Learn to Fly Idle hacked",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cllearntoflyidlehack.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clmadnesscombatdefense.html",
+      "title": "Madness Combat Defense",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clmadnesscombatdefense.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clmadnessgemini.html",
+      "title": "Madness Gemini",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clmadnessgemini.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clmadnessinteractive.html",
+      "title": "Madness Interactive",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clmadnessinteractive.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clmadnesspremediation.html",
+      "title": "Madness Premediation",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clmadnesspremediation.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clmcfpsfbhd.html",
+      "title": "Madness Combat FPS Fueled by Hot Dogs",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clminhero.html",
+      "title": "Min Hero",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clminhero.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clmutilate-a-doll.html",
+      "title": "Mutilate a Doll",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clmutilate-a-doll.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clnaturalselection.html",
+      "title": "Natural Selection",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clnaturalselection.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clnblox.html",
+      "title": "Nblox",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clnblox.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clnewsuperbowserworld.html",
+      "title": "New Super Bowser World",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clnewsuperbowserworld.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clnickelodeonsuperbrawl2.html",
+      "title": "Nickelodeon Super Brawl 2",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clobeythegame.html",
+      "title": "Obey the Game",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clobeythegame.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clonepiecefighting.html",
+      "title": "One Piece Fighting",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clonepiecefighting.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpapalouienighthunt2.html",
+      "title": "Papa Louie Night Hunt 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpapalouienighthunt2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpapalouiewhenburgersattack.html",
+      "title": "Papa Louie When Burgers Attack",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpapalouiewhenburgersattack.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpapalouiewhensundaesattack.html",
+      "title": "Papa Louie When Sundaes Attack",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpapalouiewhensundaesattack.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpeacekeeper.html",
+      "title": "Peacekeeper",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpeacekeeper.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpenguinpass.html",
+      "title": "Penguin Pass",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpenguinpass.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpicosschool.html",
+      "title": "Pico’s School",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpicosschool.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpicovsbeardx.html",
+      "title": "Pico Vs Bear DX",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpicovsbeardx.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpixelquestlostidols.html",
+      "title": "Pixel Quest - the Lost Idols",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpixelquestlostidols.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clplazmaburst.html",
+      "title": "Plazma Burst",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clplazmaburst.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clportaldefendersTD.html",
+      "title": "Portal Defenders Tower Defence",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clportaldefendersTD.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpotatomanseeksthetroof.html",
+      "title": "Potatoman Seeks The Troof",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clpottyracers.html",
+      "title": "Potty Racers 1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpottyracers.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpottyracers2.html",
+      "title": "Potty Racers 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpottyracers2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clpottyracers3.html",
+      "title": "Potty Racers 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clpottyracers3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clprecivilationbronzeage.html",
+      "title": "Pre Civilization Bronze Age",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clprecivilationbronzeage.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clprimary.html",
+      "title": "Primary",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clprimary.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clray1.html",
+      "title": "Ray Part 1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clray1.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clray2.html",
+      "title": "Ray Part 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clray2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clreturnman.html",
+      "title": "Return Man",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clreturnman.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clrocketjump.html",
+      "title": "Rocket Jump",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": [
+        "Cannot read properties of undefined (reading 'setRelayUrl')"
+      ]
+    },
+    {
+      "id": "library-source/flash/clrubbletroublemoscow.html",
+      "title": "Rubble Trouble 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clrubbletroublemoscow.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clrubbletroublenewyork.html",
+      "title": "Rubble Trouble 1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clrubbletroublenewyork.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clrubbletroubletokyo.html",
+      "title": "Rubble Trouble 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clrubbletroubletokyo.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clstickmanstealingdiamond.html",
+      "title": "Henry Stickmin Stealing The Diamond",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clstickmanstealingdiamond.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clstickminairship.html",
+      "title": "Henry Stickmin Infiltrating The Airship",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clstickminbreakingbank.html",
+      "title": "Henry Stickmin Breaking The Bank",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clstickminescapingprison.html",
+      "title": "Henry Stickmin Escaping The Prison",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clstickminescapingprison.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clstickminfleecomplex.html",
+      "title": "Henry Stickmin Fleeing The Complex",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clstickminfleecomplex.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cltboidemo.html",
+      "title": "Binding of Isaac Demo",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltboilambeternal.html",
+      "title": "Binding of Isaac - Wrath of the Lamb Eternal Edition",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cltboilambeternal.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clumstickmangameidkiforgor.html",
+      "title": "Animator Vs Animation Game (Special Edition)",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clumstickmangameidkiforgor.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clupgradecomplete.html",
+      "title": "Upgrade Complete",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clupgradecomplete.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clupgradecomplete2.html",
+      "title": "Upgrade Complete 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clupgradecomplete2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clvex.html",
+      "title": "Vex",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clvex.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clvvvvvv.html",
+      "title": "VVVVVV",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clvvvvvv.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clweltling.html",
+      "title": "Weltling",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clweltling.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clwhackyourcomputer.html",
+      "title": "Whack Your Computer",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clwhackyourcomputer.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clwindowsdoors.html",
+      "title": "Windows Doors",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clwindowsdoors.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clworldshardestgame3.html",
+      "title": "World’s Hardest Game 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clworldshardestgame3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clworldshardestgame4.html",
+      "title": "World’s Hardest Game 4",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clworldshardestgame4.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clwpnfire.html",
+      "title": "Wpn Fire",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clyouarelucky.html",
+      "title": "You Are Lucky",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clyouarelucky.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clzoinkz.html",
+      "title": "Zoikz Defender",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clzoinkz.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clzombopaclypse2.html",
+      "title": "Zombocalypse 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clzombopaclypse2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/riddleuneversityfix.html",
+      "title": "Riddleuneversityfix",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-riddleuneversityfix.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cl40escape.html",
+      "title": "40xescape",
+      "ok": false,
+      "error": "missing game canvas",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clabandoned32.html",
+      "title": "Abandoned 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clabandoned32.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clcoverorangeplayerspack.html",
+      "title": "Cover Orange Players Pack",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clcoverorangeplayerspack.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clheliattack3.html",
+      "title": "Heli Attack 3",
+      "ok": false,
+      "error": "missing game canvas",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clriddleuniversity.html",
+      "title": "Riddle University",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clriddleuniversity.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsandsofthecoliseum.html",
+      "title": "Sands of the Coliseum",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsandsofthecoliseum.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clscarymazegame.html",
+      "title": "Scary Maze Game",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clscarymazegame.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clscoobydoocreepyrun.html",
+      "title": "Scooby Doo Creepy Run",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clscoobydoocreepyrun.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clscoobydoozombiehunger.html",
+      "title": "Scooby Doo Zombie Hunter",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clscoobydoozombiehunger.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clservingupmadness.html",
+      "title": "Serving Up Madness",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clservingupmadness.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clshc1.html",
+      "title": "Sift Heads Cartels Act 1",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clshc1.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clskywire2.html",
+      "title": "Skywire 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clskywire2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsnailbob3.html",
+      "title": "Snail Bob 3",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsnailbob3.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsnailbob4space.html",
+      "title": "Snail Bob 4",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsnailbob4space.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsnailbob5lovestory.html",
+      "title": "Snail Bob 5 Love Story",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsnailbob5lovestory.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsolitaire.html",
+      "title": "Solitaire",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsolitaire.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clspaceiskey.html",
+      "title": "Space is Key",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clspaceiskey.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clspaceiskey2.html",
+      "title": "Space is Key 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clspaceiskey2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clspaceiskeyxmas.html",
+      "title": "Space is Key Xmas",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clspaceiskeyxmas.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clSpongebobPowerKartGrandPrix.html",
+      "title": "Spongebob PowerKart Grand Prix",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clSpongebobPowerKartGrandPrix.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsteakandjake.html",
+      "title": "Steak and Jake",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clstickmanswat.html",
+      "title": "Stick Man SWAT",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clstickmanswat.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clspecialmission.html",
+      "title": "Special Mission",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clspecialmission.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsuma.html",
+      "title": "Suma",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clsuperfighters.html",
+      "title": "Super Fighters",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsuperfighters.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clsupersmashflash2.html",
+      "title": "Super Smash Flash 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clsupersmashflash2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clterritorywar2.html",
+      "title": "Territory War 2",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/clthedeepestsleep.html",
+      "title": "The Deepest Sleep",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clthedeepestsleep.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cltheenchantedcave2.html",
+      "title": "The Enchanted Cave 2",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-cltheenchantedcave2.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clthesodorrace.html",
+      "title": "The Sodor Race",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clthesodorrace.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clthesunforthevampire.html",
+      "title": "The Sun For The Vampire",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clthesunforthevampire.html.jpg"
+    },
+    {
+      "id": "library-source/flash/clthisistheonlyleveltoo.html",
+      "title": "This is the Only Level Too",
+      "ok": true,
+      "image": "assets/covers/original/flash-library-source-flash-clthisistheonlyleveltoo.html.jpg"
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest1.html",
+      "title": "Troll Face Quest 1",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest2.html",
+      "title": "Troll Face Quest 2",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest3.html",
+      "title": "Troll Face Quest 3",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest4.html",
+      "title": "Troll Face Quest 4",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest5.html",
+      "title": "Troll Face Quest 5",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest6.html",
+      "title": "Troll Face Quest 6",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest7.html",
+      "title": "Troll Face Quest 7",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest8.html",
+      "title": "Troll Face Quest 8",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest9.html",
+      "title": "Troll Face Quest 9",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest10.html",
+      "title": "Troll Face Quest 10",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest11.html",
+      "title": "Troll Face Quest 11",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest12.html",
+      "title": "Troll Face Quest 12",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltrollfacequest13.html",
+      "title": "Troll Face Quest 13",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/flash/cltupertariotros.html",
+      "title": "Tuper Tario Tros",
+      "ok": false,
+      "error": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ruffle-player') to be visible\u001b[22m\n",
+      "pageErrors": []
+    }
+  ]
+}

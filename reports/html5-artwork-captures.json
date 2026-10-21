@@ -1,0 +1,1090 @@
+{
+  "generatedAt": "2026-10-21T01:51:59.200Z",
+  "attempted": 141,
+  "captured": 89,
+  "failed": 52,
+  "results": [
+    {
+      "id": "library-source/html5-games/cl-3 (1).html",
+      "title": "3 (1)",
+      "ok": false,
+      "error": "LOADING... 111.21 MB / 111.21 MB",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cladayintheoffice.html",
+      "title": "A Day In The Office",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cladayintheoffice.html.jpg",
+      "pageErrors": [
+        "Engine is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cladifferentsnowgrave.html",
+      "title": "Deltarune: A Different Snowgrave",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cladifferentsnowgrave.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clamorphous.html",
+      "title": "Amorphous +",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clancientsins.html",
+      "title": "Ancient Sins",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clancientsins.html.jpg",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clbabychiccoadventure.html",
+      "title": "Baby Chicco Adventure",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "gadgets is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clbabysniperinvietnam.html",
+      "title": "Baby Sniper In Vietnam",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clbabysniperinvietnam.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clbackrooms2D.html",
+      "title": "Backrooms 2D",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clbackrooms2D.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clbaldisfunnewschoolultimate.html",
+      "title": "Baldi’s Fun New School Ultimate",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clbaldisfunnewschoolultimate.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clbattles.html",
+      "title": "Battles",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clblightborne.html",
+      "title": "Blightborne",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clblockcraftshooter.html",
+      "title": "Minecraft Shooter",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clblockcraftshooter.html.jpg",
+      "pageErrors": [
+        "YaGames is not defined",
+        "Failed to register a ServiceWorker: The origin of the provided scriptURL ('https://cdn.jsdelivr.net') does not match the current origin ('http://127.0.0.1:8030')."
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clbloonsTD6scratch.html",
+      "title": "BTD6 (scratch)",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clbloonsTD6scratch.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clboomslingers.html",
+      "title": "Boom Slingers",
+      "ok": false,
+      "error": "LOADING... 50%",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clBrawlstars.html",
+      "title": "Brawlstars",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clBrawlstars.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clbreadskate.html",
+      "title": "Breadskate Forever",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clbreadskate.html.jpg",
+      "pageErrors": [
+        "GameMaker_Init is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clcallofbattle.html",
+      "title": "Call of Battle",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clcallofbattle.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clcastlewarsmodern.html",
+      "title": "Castle Wars Modern",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clcastlewarsmodern.html.jpg",
+      "pageErrors": [
+        "Failed to fetch",
+        "c3_callFunction is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clcheeseisthereason.html",
+      "title": "Cheese Is The Reason",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clcheeseisthereason.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clcoldpines.html",
+      "title": "Cold Pines",
+      "ok": false,
+      "error": "Loading Cold Pines...",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clcs1.6.html",
+      "title": "C.S 1.6",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clcs1.6.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clcustomersupport.html",
+      "title": "Customer Support",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clcustomersupport.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cldomeromantik.html",
+      "title": "Dome Romantik",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cldomeromantik.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cldoomemscripten.html",
+      "title": "Doom Emscripten",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cldoomemscripten.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cldoomori.html",
+      "title": "Doomori",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cldoomori.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cldreader.html",
+      "title": "Dreader",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cldreader.html.jpg",
+      "pageErrors": [
+        "gadgets is not defined",
+        "Cannot read properties of undefined (reading 'csi')"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cldriverussia.html",
+      "title": "Drive In Russia",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cldriverussia.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cldrweedgaster.html",
+      "title": "Dr. Weed Gaster",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cldrweedgaster.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleffinghail.html",
+      "title": "Effing Hail",
+      "ok": false,
+      "error": "Ruffle failed to load.",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clelytraflight.html",
+      "title": "Elytra Flight",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clelytraflight.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clfallguys.html",
+      "title": "Fall Guys",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clfallguys.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clfivenightsatbaldisredone.html",
+      "title": "Five Nights at Baldis Redone",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clfivenightsatbaldisredone.html.jpg",
+      "pageErrors": [
+        "Merge failed for WebGL FNAB Redone 101.wasm"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clfivenightsatyoshis.html",
+      "title": "Five Nights At Yoshi’s",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clfivenightsatyoshis.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clfreegemas.html",
+      "title": "Freegemas",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clfreegemas.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clgettingoverit.html",
+      "title": "Getting Over It (Scratch)",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clgettingoverit.html.jpg",
+      "pageErrors": [
+        "scaffolding is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clgloryhunters.html",
+      "title": "Glory Hunters",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clgorescriptclassic.html",
+      "title": "Gorescript Classic",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clgrandactionsimulator-ny.html",
+      "title": "Grand Action Simulator: New York",
+      "ok": false,
+      "error": "Loading...",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clgrey-box-testing.html",
+      "title": "Grey Box Testing",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clgrey-box-testing.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clgtamods.html",
+      "title": "GTA Mods",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clgtamods.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clgunknight.html",
+      "title": "Gun Knight",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clgunknight.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clgunnight.html",
+      "title": "Gun Night",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clHiNoHomo.html",
+      "title": "Hi No Homo",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clHiNoHomo.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clhl2doom.html",
+      "title": "Doom But It’s Half Life 2",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clhl2doom.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clhooked.html",
+      "title": "Hooked",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clhooked.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clinsomniary.html",
+      "title": "Insomniary",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clinsomniary.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clisthatagubby.html",
+      "title": "Is That a Gubby? (Baldi mod)",
+      "ok": false,
+      "error": "LOADING... 58.19 MB / 120.00 MB",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clleafblower.html",
+      "title": "Leaf Blower Revolution",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clleafblower.html.jpg",
+      "pageErrors": [
+        "Failed to execute 'exitFullscreen' on 'Document': Document not active"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cllegionbreaker.html",
+      "title": "Legionbreaker",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cllegionbreaker.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clLobotemyDash.html",
+      "title": "Lobotemy dash",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clLobotemyDash.html.jpg",
+      "pageErrors": [
+        "StartUnityInstance is not a function"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clluckyblocks.html",
+      "title": "Robby Blocks",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clluckyblocks.html.jpg",
+      "pageErrors": [
+        "No parent to post message",
+        "No parent to post message"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clmadalinstuntcarsmultiplayerfixed.html",
+      "title": "Madalin Stunt Cars Multiplayer",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clmadalinstuntcarsmultiplayerfixed.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clmadnesss2010.html",
+      "title": "Madness 2010",
+      "ok": false,
+      "error": "Ruffle failed to load. ]]>",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clmagetoweridle.html",
+      "title": "Mage Tower Idle Defense",
+      "ok": false,
+      "error": "LOADING ...",
+      "pageErrors": [
+        "Failed to fetch",
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clmakesureitsclosed.html",
+      "title": "Make Sure Its Closed",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "UnityLoader is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clmariovsluigi.html",
+      "title": "Mario VS Luigi Online",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clmariovsluigi.html.jpg",
+      "pageErrors": [
+        "createUnityInstance is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clmaskedforcesunlimited.html",
+      "title": "Masked Forces Unlimited",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clmaskedforcesunlimited.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clmedalofhonor.html",
+      "title": "Medal Of Honor",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clminicrossword.html",
+      "title": "Mini Crossword",
+      "ok": false,
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8030/library-source/html5-games/clminicrossword.html\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clmomimsleeping.html",
+      "title": "Mom I’m Sleeping",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clmomimsleeping.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clnightclubshowdown.html",
+      "title": "Nightclub Showdown",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clnightclubshowdown.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clnimrods.html",
+      "title": "Nimrods",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clnimrods.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clnoobminer.html",
+      "title": "Noob Miner",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clobby-99-will-lose.html",
+      "title": "Obby 99% Will Lose",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clobby-99-will-lose.html.jpg",
+      "pageErrors": [
+        "StartUnityInstance is not a function"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clobbyswing.html",
+      "title": "Obby Swing",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clobbyswing.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clofflineparadise.html",
+      "title": "Offline Paradise",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clofflineparadise.html.jpg",
+      "pageErrors": [
+        "window.parent.maeExportApis_ is not a function"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clomeganuggetclicker.html",
+      "title": "Omega Nugget Clicker",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clomeganuggetclicker.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cloneshotold.html",
+      "title": "Oneshot (old)",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cloneshotold.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clpint.html",
+      "title": "Pretend It’s Not There",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clpint.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clpixelcombat2.html",
+      "title": "Pixel Combat 2",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clpixelcombat2.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clpixelspeedrun.html",
+      "title": "Pixelspeedrun",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clprocessortycoon.html",
+      "title": "Processor Tycoon",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clprocessortycoon.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clpvz2gardenless.html",
+      "title": "Pvz2gardenless",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clpvz2gardenless.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clreturntoriddleschool.html",
+      "title": "Return to Riddle School",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clrh.html",
+      "title": "Rhythm Hell",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clrh.html.jpg",
+      "pageErrors": [
+        "Uncaught (in promise) abort(\"both async and sync fetching of the wasm failed\") at Error"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clriddlemiddleschool.html",
+      "title": "Riddle Middle School",
+      "ok": false,
+      "error": "Ruffle failed to load. ]]>",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clrollerballer.html",
+      "title": "Roller Baller",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clrussiancardriver.html",
+      "title": "Russian Car Driver",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clrussiancardriver.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clsaulgoodmanrun.html",
+      "title": "Saul Goodman Run",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsaulgoodmanrun.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clseamongrel.html",
+      "title": "Sea Mongrel",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clseamongrel.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clshift2.html",
+      "title": "Shift 2",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Error: Failed to load Ruffle WASM"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clslenderman.html",
+      "title": "Slenderman: The 8 Pages",
+      "ok": false,
+      "error": "LOADING...",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clsodasimulator.html",
+      "title": "Soda Simulator",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsodasimulator.html.jpg",
+      "pageErrors": [
+        "A user gesture is required to request Pointer Lock.",
+        "Failed to load worklet module script: http://127.0.0.1:8030/library-source/html5-games/ggj2025.audio.worklet.js (HTTP status: 404)"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clsonicandfallingstar.html",
+      "title": "Sonic And The Falling Star",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsonicandfallingstar.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clsteepdescent.html",
+      "title": "Steep Descent",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsteepdescent.html.jpg",
+      "pageErrors": [
+        "ConsumePurchases is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clstickmangtacity.html",
+      "title": "Stickman gta City",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clstickmangtacity.html.jpg",
+      "pageErrors": [
+        "Offset is outside the bounds of the DataView"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clsupercarrush.html",
+      "title": "Super Car Rush",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsupercarrush.html.jpg",
+      "pageErrors": [
+        "gadgets is not defined",
+        "gadgets is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clsushiunroll.html",
+      "title": "Sushi Unroll",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsushiunroll.html.jpg",
+      "pageErrors": [
+        "Permissions check failed"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cltacostand.html",
+      "title": "Taco Stand",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cltacostand.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltagc3.html",
+      "title": "Also Tag",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltagcm.html",
+      "title": "Tag (coolmathgames)",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cltagcm.html.jpg",
+      "pageErrors": [
+        "GameMaker_Init is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cltankpixel.html",
+      "title": "Tank Pixel",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clthermomorph.html",
+      "title": "Thermomorph",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clthermomorph.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltrechoroustrialspart2.html",
+      "title": "Treacherous Trials Part 2",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cltrechoroustrialspart2.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltriachnid.html",
+      "title": "Triachnid",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltsuzukimaze.html",
+      "title": "Tsuzukimaze",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cltsuzukimaze.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cluncannycatgolf.html",
+      "title": "Uncanny Cat Golf",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cluncannycatgolf.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clvortex.html",
+      "title": "Vortex",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clvortex.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clwartheknight.html",
+      "title": "War the Knight",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clwartheknight.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clwaterpoolio.html",
+      "title": "Waterpool.io",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clwaterpoolio.html.jpg",
+      "pageErrors": [
+        "YaGames is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clwolfenstein.html",
+      "title": "Wolfenstein 3D Emscripten",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clwolfenstein.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clzenword.html",
+      "title": "Zen Word",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clzenword.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clÖoo.html",
+      "title": "Öoo",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cl-oo.html.jpg",
+      "pageErrors": [
+        "GameMaker_Init is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/sm64coopdx.html",
+      "title": "Sm64coopdx",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-sm64coopdx.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/codeorg.html",
+      "title": "codeorg",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clarewethereyet.html",
+      "title": "Are We There Yet",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clarewethereyet.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clLobotomyDash.html",
+      "title": "Lobotomy Dash",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clLobotomyDash.html.jpg",
+      "pageErrors": [
+        "StartUnityInstance is not a function"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clsonicandfallingstar.htm",
+      "title": "Sonicandfallingstar",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clsonicandfallingstar.htm.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltungtunghorror.htm",
+      "title": "Tungtunghorror",
+      "ok": false,
+      "error": "loading... 0%",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clarchimedesclient.html",
+      "title": "Archimedes Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clastrawasm.html",
+      "title": "Astra Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clcodercraft.html",
+      "title": "CoderCraft",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cleaglerforge.html",
+      "title": "Eaglerforge",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cleaglerforge.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglercraftlite.html",
+      "title": "Eaglercraft Lite",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/Cleaglercraftmagic.html",
+      "title": "Cleaglercraftmagic",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglercraftshadow.html",
+      "title": "Eaglercraft Shadow",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cleaglercraftshadow.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglercraftsky.html",
+      "title": "cleaglercraftsky",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglercrafttech.html",
+      "title": "cleaglercrafttech",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cleaglercrafttech.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglerultimate.html",
+      "title": "Eaglercraft Ultimate",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglercraftx116.html",
+      "title": "EaglercraftX 1.16",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cleaglercraftx1206.html",
+      "title": "EaglercraftX 1.20.6",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clexploremodpack.html",
+      "title": "Explore Modpack",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clexploremodpack.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clGXClient.html",
+      "title": "GX Client",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clGXClient.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clkozmoclient.html",
+      "title": "Kozmo Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/cllumineclient.html",
+      "title": "Lumine Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clmegaclient.html",
+      "title": "Mega Client",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clmegaclient.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clmodernclient.html",
+      "title": "Modern Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clmodernclientv2.html",
+      "title": "Modern Client (v2)",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/EaglercraftL_1.9_v0_7_0_Offline_Signed.html",
+      "title": "Minecraft 1.9",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-EaglercraftL_1.9_v0_7_0_Offline_Signed.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clpixel.html",
+      "title": "Pixel Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clprecisionclient.html",
+      "title": "Precision Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "Failed to fetch"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clresentclient.html",
+      "title": "Resent Client",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clresentclient.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clskyfactory.html",
+      "title": "Skyfactory",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clstarlike.html",
+      "title": "Starlike Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cltuffclient.html",
+      "title": "Tuff Client",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-cltuffclient.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clut15tuffclient.html",
+      "title": "UT15 Tuff Client",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clwurst.html",
+      "title": "Wurst Client",
+      "ok": true,
+      "image": "assets/covers/original/html5-library-source-html5-games-clwurst.html.jpg",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/cldeadair.html",
+      "title": "FNF - Dead Air",
+      "ok": false,
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8030/library-source/html5-games/cldeadair.html\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clcreepynightfunkin.html",
+      "title": "Creepy Night Funkin",
+      "ok": false,
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8030/library-source/html5-games/clcreepynightfunkin.html\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "pageErrors": []
+    },
+    {
+      "id": "library-source/html5-games/clfnfdocumic.txtv3.html",
+      "title": "Friday Night Funkin: Vs. Documic.txt v3",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "lime is not defined"
+      ]
+    },
+    {
+      "id": "library-source/html5-games/clxevent.html",
+      "title": "Friday Night Funkin X-Event",
+      "ok": false,
+      "error": "no rendered game content",
+      "pageErrors": [
+        "lime is not defined"
+      ]
+    }
+  ]
+}

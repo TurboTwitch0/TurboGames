@@ -1,4 +1,4 @@
-# Catalog repair progress — 2026-10-20
+# Catalog repair progress — 2026-10-21
 
 ## Changes prepared locally
 
@@ -11,12 +11,12 @@
 ## Evidence and limits
 
 - Catalog: 3,098 entries. Local audit found no missing required resources.
-- Syntax scan: 8,497 classic scripts and 38 modules; no syntax failures.
+- Syntax scan: 8,496 classic scripts and 39 modules; no syntax failures.
 - Remote audit: 3,536 literal dependencies checked; 122 failed URL checks. Some are optional portal scripts or temporary access failures, so this is not a count of broken games.
 - Shared resolver: 88 retrieved real Unity loaders passed URL-resolution checks. This is not 88 complete game playthroughs.
 - Original failing Unity launcher: failed before shared repair, started and entered fullscreen after repair. See shared-unity-check.json.
-- Artwork: 1,946 sourced covers; 1,152 entries still use illustrations. See artwork-pending.json for the complete remaining list.
-- This batch added 288 exact-title game-page thumbnails, 16 exact emulator images, application screenshots, and identical-asset matches.
+- Artwork: 2,733 sourced covers or verified title/game screens; 365 entries still use illustrations. See artwork-pending.json for the complete remaining list.
+- This batch added 766 validated Flash, HTML5, and emulator captures, six more exact web images, and 15 identical-asset matches. Blank, loading, and error screens were rejected with a pixel-variation check.
 
 ## Pending
 

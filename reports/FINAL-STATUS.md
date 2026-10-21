@@ -1,11 +1,11 @@
 # TurboGames update status
 
-## October 19: Ruffle deployment fix
+## October 21: artwork and player update
 
-Fixed the confirmed Ruffle WASM CORS failure by adding cross-origin headers for `/vendor/*`. The local server now uses the same `_headers` rules as production. Before/after browser checks reproduced the failure and confirmed two Flash games start after the fix; both WASM variants load from isolated frames. See `ruffle-cors-fix.md`. The user must redeploy the corrected `_headers` file to update the live site. Previously downloaded full archives predate this patch.
+The confirmed Ruffle WASM CORS failure remains fixed through cross-origin headers for `/vendor/*`. The local server uses the same `_headers` rules as production. Before/after browser checks reproduced the failure and confirmed two Flash games start after the fix; both WASM variants load from isolated frames. See `ruffle-cors-fix.md`.
 
 - **3,098 catalog entries**, each with a local square cover image.
-- **1,619 sourced images** and **1,479 original illustrated covers**. See ARTWORK.md and artwork.json for provenance.
+- **2,733 sourced images or verified game screens** and **365 original illustrated covers**. See ARTWORK.md and artwork.json for provenance.
 - **488 distinct source launchers repaired**, plus shared player compatibility fixes. Includes all 403 broken Flash $1 paths, seven missing-file pages, original creator files, malformed inline scripts, bad CDN paths and emulator configuration errors.
 - **19 source templates omitted** from the playable catalog. Original template files remain in the source collection.
 - **28 entries still need source assets** from a removed upstream repository. They are marked Needs source. Exact URLs and checks are in unavailable-game-sources.json. No unrelated game was substituted.

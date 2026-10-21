@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-20T23:28:43.443612+00:00",
+  "generated_at": "2026-10-21T01:59:21.423086+00:00",
   "method": "Static HTML scan of every imported launcher; remote runtime dependencies and game play not verified.",
   "file_count": 3114,
-  "total_bytes": 978716208,
+  "total_bytes": 978717401,
   "summary": {
     "source-template": 19,
     "structural-pass": 3061,
@@ -10,7 +10,7 @@
     "redirect": 4
   },
   "external_hosts": {
-    "cdn.jsdelivr.net": 5775,
+    "cdn.jsdelivr.net": 5780,
     "fonts.googleapis.com": 815,
     "www.google.com": 807,
     "www.googletagmanager.com": 112,
@@ -9166,7 +9166,7 @@
     },
     {
       "path": "library-source/emulated/n64/clsouthparkn64.html",
-      "bytes": 3343,
+      "bytes": 3455,
       "issues": [],
       "external_resource_count": 2,
       "external_resources": [
@@ -36288,7 +36288,7 @@
     },
     {
       "path": "library-source/html5-games/clchampionisland.html",
-      "bytes": 16183,
+      "bytes": 16635,
       "issues": [],
       "external_resource_count": 7,
       "external_resources": [
@@ -53930,7 +53930,7 @@
     },
     {
       "path": "library-source/html5-games/cllittlerunmo.html",
-      "bytes": 8365,
+      "bytes": 8641,
       "issues": [],
       "external_resource_count": 3,
       "external_resources": [
@@ -55220,9 +55220,41 @@
     },
     {
       "path": "library-source/html5-games/clmonkeymart.html",
-      "bytes": 12862,
+      "bytes": 13215,
       "issues": [],
-      "external_resource_count": 0
+      "external_resource_count": 5,
+      "external_resources": [
+        {
+          "tag": "script",
+          "attribute": "src",
+          "url": "patch/js/poki-sdk.js",
+          "optional": false
+        },
+        {
+          "tag": "img",
+          "attribute": "src",
+          "url": "load_bar_bg.png",
+          "optional": true
+        },
+        {
+          "tag": "img",
+          "attribute": "src",
+          "url": "load_bar_fg.png",
+          "optional": true
+        },
+        {
+          "tag": "script",
+          "attribute": "src",
+          "url": "dmloader.js",
+          "optional": false
+        },
+        {
+          "tag": "script",
+          "attribute": "src",
+          "url": "GameAnalytics.js",
+          "optional": false
+        }
+      ]
     },
     {
       "path": "library-source/html5-games/clmonsterderby.html",
