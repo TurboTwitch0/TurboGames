@@ -1,7 +1,7 @@
 {
   "items": 3098,
-  "source_artwork": 1626,
-  "illustrated_covers": 1472,
+  "source_artwork": 1946,
+  "illustrated_covers": 1152,
   "omitted_templates": [
     "library-source/emulated/000_Templates/ArcadeTemplate.html",
     "library-source/emulated/000_Templates/ArcadeTemplate2+parts.html",
@@ -13,14 +13,14 @@
     "library-source/emulated/000_Templates/NDSTemplate.html",
     "library-source/emulated/000_Templates/NDSTemplate2+Parts.html",
     "library-source/emulated/000_Templates/NDSTemplate2+PartsExperimental.html",
-    "library-source/emulated/000_Templates/NeoGeoPCTemplate.html",
     "library-source/emulated/000_Templates/NESTemplate.html",
+    "library-source/emulated/000_Templates/NeoGeoPCTemplate.html",
     "library-source/emulated/000_Templates/PS1Template.html",
+    "library-source/emulated/000_Templates/SMSTemplate.html",
+    "library-source/emulated/000_Templates/SNESTemplate.html",
     "library-source/emulated/000_Templates/SegaCDTemplate.html",
     "library-source/emulated/000_Templates/SegaGameGearTemplate.html",
     "library-source/emulated/000_Templates/SegaGenesisTemplate.html",
-    "library-source/emulated/000_Templates/SMSTemplate.html",
-    "library-source/emulated/000_Templates/SNESTemplate.html",
     "library-source/emulated/000_Templates/WonderSwanTemplate.html"
   ]
 }

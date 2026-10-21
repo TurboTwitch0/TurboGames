@@ -113,7 +113,7 @@
     const badge = document.createElement("span");
     badge.className = "card-category";
     badge.textContent = item.sourceStatus === "unavailable" ? "Needs source" : item.category;
-    if (item.sourceStatus === "unavailable") button.title = "The original game asset host is unavailable; a matching replacement is still needed.";
+    if (item.sourceStatus === "unavailable") button.title = item.sourceIssue || "A matching playable source is still needed.";
     art.append(image, play, badge);
     const name = document.createElement("span");
     name.className = "card-name";
@@ -149,6 +149,12 @@
     manualSaveHint = false;
     const config = { turboGames: 1, nonce, parentOrigin: location.origin, local: readSave(item), session: sessionSaves.get(item.id) || {} };
     frame.title = item.title;
+    if (item.sourceStatus === "unavailable") {
+      frame.removeAttribute("srcdoc");
+      frame.src = "about:blank";
+      playerStatus.textContent = item.sourceIssue || "This game needs a working source before it can be played.";
+      return;
+    }
     playerStatus.textContent = `Loading ${item.title}…`;
     frame.removeAttribute("srcdoc");
     frame.src = "about:blank";
@@ -185,7 +191,7 @@
     loadItem(item);
   }
   frame.addEventListener("load", () => {
-    if (activeItem && frame.hasAttribute("srcdoc")) playerStatus.textContent = activeItem.sourceStatus === "unavailable" ? "This game's original asset host is unavailable. A matching replacement is still needed." : manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
+    if (activeItem && frame.hasAttribute("srcdoc")) playerStatus.textContent = manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
   });
   frame.setAttribute("sandbox", "allow-scripts allow-forms allow-pointer-lock allow-modals allow-popups allow-presentation allow-downloads");
   frame.setAttribute("referrerpolicy", "no-referrer");

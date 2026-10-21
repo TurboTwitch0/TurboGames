@@ -1,10 +1,10 @@
-<!-- Ultimate Game Stash file--> 
+<!-- Ultimate Game Stash file-->
 <!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
 
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>
 <head>
-    <base href="https://cdn.jsdelivr.net/gh/gn-math/assets@main/302/">
+    <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/lil%20runmo/">
 	<meta charset='utf-8' />
 	<meta name='viewport' content='width=device-width, user-scalable=no' />
 	<title>Little Runmo - The Game 1.3</title>
@@ -121,7 +121,29 @@
 
 </head>
 <body>
-	<script src="main.js"></script>
+	<script>
+	(() => {
+		const target = "Little Runmo - The Game.pck";
+		const originalFetch = window.fetch.bind(window);
+		let merged;
+		const waiting = [];
+		window.fetch = (url, ...args) => {
+			if (!String(url).endsWith(target)) return originalFetch(url, ...args);
+			if (merged) return Promise.resolve(new Response(merged));
+			return new Promise(resolve => waiting.push(resolve));
+		};
+		(async () => {
+			const parts = [];
+			for (let number = 1; number <= 6; number++) {
+				const response = await originalFetch(`${target}.part${number}`);
+				if (!response.ok) throw new Error(`Missing ${target}.part${number}`);
+				parts.push(await response.arrayBuffer());
+			}
+			merged = new Blob(parts, { type: "application/octet-stream" });
+			waiting.splice(0).forEach(resolve => resolve(new Response(merged)));
+		})().catch(error => console.error("Runmo data merge failed:", error));
+	})();
+	</script>
     <div id="loading-text" style="color: white; font-family: cursive; font-size: 48px; text-align: center; margin-top: 20px;">LOADING...</div>
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />

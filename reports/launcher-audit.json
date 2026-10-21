@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-20T18:59:26.203219+00:00",
+  "generated_at": "2026-10-20T23:28:43.443612+00:00",
   "method": "Static HTML scan of every imported launcher; remote runtime dependencies and game play not verified.",
   "file_count": 3114,
-  "total_bytes": 978561716,
+  "total_bytes": 978716208,
   "summary": {
     "source-template": 19,
     "structural-pass": 3061,
@@ -10,7 +10,7 @@
     "redirect": 4
   },
   "external_hosts": {
-    "cdn.jsdelivr.net": 5783,
+    "cdn.jsdelivr.net": 5775,
     "fonts.googleapis.com": 815,
     "www.google.com": 807,
     "www.googletagmanager.com": 112,
@@ -97,6 +97,7 @@
     "onesignal.com": 1,
     "btloader.com": 1,
     "cadmus.script.ac": 1,
+    "game-cdn.poki.com": 1,
     "15605090-224671951343969579.preview.editmysite.com": 1,
     "cdn-factory.marketjs.com": 1,
     "cdn1.kongregate.com": 1,
@@ -9165,7 +9166,7 @@
     },
     {
       "path": "library-source/emulated/n64/clsouthparkn64.html",
-      "bytes": 3424,
+      "bytes": 3343,
       "issues": [],
       "external_resource_count": 2,
       "external_resources": [
@@ -31624,7 +31625,7 @@
     },
     {
       "path": "library-source/html5-games/clantimatterdimensions.html",
-      "bytes": 2761,
+      "bytes": 2717,
       "issues": [],
       "external_resource_count": 21,
       "external_resources": [
@@ -31733,13 +31734,13 @@
         {
           "tag": "script",
           "attribute": "src",
-          "url": "js/app.aefa5ffd.js",
+          "url": "js/app.8440675a.js",
           "optional": false
         },
         {
           "tag": "link",
           "attribute": "href",
-          "url": "css/app.ddbf5a9f.css",
+          "url": "css/app.f051904f.css",
           "optional": false
         },
         {
@@ -34865,7 +34866,7 @@
     },
     {
       "path": "library-source/html5-games/clblumgiracers.html",
-      "bytes": 2599,
+      "bytes": 161375,
       "issues": [],
       "external_resource_count": 7,
       "external_resources": [
@@ -34890,6 +34891,12 @@
         {
           "tag": "script",
           "attribute": "src",
+          "url": "//game-cdn.poki.com/scripts/v2/poki-sdk.js",
+          "optional": false
+        },
+        {
+          "tag": "script",
+          "attribute": "src",
           "url": "scripts/supportcheck.js",
           "optional": false
         },
@@ -34897,12 +34904,6 @@
           "tag": "script",
           "attribute": "src",
           "url": "scripts/offlineclient.js",
-          "optional": false
-        },
-        {
-          "tag": "script",
-          "attribute": "src",
-          "url": "scripts/main-edit.js",
           "optional": false
         },
         {
@@ -36287,7 +36288,7 @@
     },
     {
       "path": "library-source/html5-games/clchampionisland.html",
-      "bytes": 16603,
+      "bytes": 16183,
       "issues": [],
       "external_resource_count": 7,
       "external_resources": [
@@ -39487,20 +39488,14 @@
     },
     {
       "path": "library-source/html5-games/clcyberbungracing.html",
-      "bytes": 5133,
+      "bytes": 1088,
       "issues": [],
-      "external_resource_count": 2,
+      "external_resource_count": 1,
       "external_resources": [
         {
           "tag": "script",
           "attribute": "src",
-          "url": "https://cdn.jsdelivr.net/gh/comt7xc6/a@main/Build/CyberCarsPunkRacing.loader.js",
-          "optional": false
-        },
-        {
-          "tag": "script",
-          "attribute": "src",
-          "url": "https://cdn.jsdelivr.net/gh/comt7xc6/a@main/Build//CyberCarsPunkRacing.loader.js",
+          "url": "patch/poki/master-loader.js",
           "optional": false
         }
       ]
@@ -53935,9 +53930,9 @@
     },
     {
       "path": "library-source/html5-games/cllittlerunmo.html",
-      "bytes": 7706,
+      "bytes": 8365,
       "issues": [],
-      "external_resource_count": 4,
+      "external_resource_count": 3,
       "external_resources": [
         {
           "tag": "link",
@@ -53950,12 +53945,6 @@
           "attribute": "href",
           "url": "Little Runmo - The Game.apple-touch-icon.png",
           "optional": true
-        },
-        {
-          "tag": "script",
-          "attribute": "src",
-          "url": "main.js",
-          "optional": false
         },
         {
           "tag": "script",
@@ -55231,41 +55220,9 @@
     },
     {
       "path": "library-source/html5-games/clmonkeymart.html",
-      "bytes": 13215,
+      "bytes": 12862,
       "issues": [],
-      "external_resource_count": 5,
-      "external_resources": [
-        {
-          "tag": "script",
-          "attribute": "src",
-          "url": "patch/js/poki-sdk.js",
-          "optional": false
-        },
-        {
-          "tag": "img",
-          "attribute": "src",
-          "url": "load_bar_bg.png",
-          "optional": true
-        },
-        {
-          "tag": "img",
-          "attribute": "src",
-          "url": "load_bar_fg.png",
-          "optional": true
-        },
-        {
-          "tag": "script",
-          "attribute": "src",
-          "url": "dmloader.js",
-          "optional": false
-        },
-        {
-          "tag": "script",
-          "attribute": "src",
-          "url": "GameAnalytics.js",
-          "optional": false
-        }
-      ]
+      "external_resource_count": 0
     },
     {
       "path": "library-source/html5-games/clmonsterderby.html",

@@ -14,6 +14,8 @@ for item in items:
  item['image']=cover['image'];item['imageType']=cover.get('type','source-artwork')
 if missing:raise SystemExit('Missing image coverage: '+str(missing[:10]))
 path.write_text('window.TURBO_CATALOG = '+json.dumps(items,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
-report={'items':len(items),'source_artwork':sum(x['imageType']=='source-artwork' for x in items),'illustrated_covers':sum(x['imageType']!='source-artwork' for x in items),'omitted_templates':[x['source'] for x in removed]}
+previous_report=ROOT/'reports/catalog-build.json'
+previous_omitted=json.loads(previous_report.read_text()).get('omitted_templates',[]) if previous_report.exists() else []
+report={'items':len(items),'source_artwork':sum(x['imageType']=='source-artwork' for x in items),'illustrated_covers':sum(x['imageType']!='source-artwork' for x in items),'omitted_templates':sorted(set(previous_omitted+[x['source'] for x in removed]))}
 (ROOT/'reports').mkdir(exist_ok=True);(ROOT/'reports/catalog-build.json').write_text(json.dumps(report,indent=2),encoding='utf8')
 print(json.dumps({k:v for k,v in report.items() if k!='omitted_templates'}))

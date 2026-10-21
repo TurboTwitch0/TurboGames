@@ -1,0 +1,68 @@
+{
+  "method": "GET prefix checks, not gameplay validation",
+  "checks": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/monkey%20mart%20v6.3/dmloader.js",
+      "status": 200,
+      "bytesRead": 30926
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/monkey%20mart%20v6.3/poki-sdk.js",
+      "status": 200,
+      "bytesRead": 3214
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/monkey%20mart%20v6.3/GameAnalytics.js",
+      "status": 200,
+      "bytesRead": 89874
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/monkey%20mart%20v6.3/MonkeyMart.wasm",
+      "status": 200,
+      "bytesRead": 2000000
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/monkey%20mart%20v6.3/MonkeyMart_wasm.js",
+      "status": 200,
+      "bytesRead": 276950
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/monkey%20mart%20v6.3/archive/archive_files.json",
+      "status": 200,
+      "bytesRead": 531
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/blumgi%20racers/scripts/main.js",
+      "status": 200,
+      "bytesRead": 159126
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/blumgi%20racers/scripts/supportcheck.js",
+      "status": 200,
+      "bytesRead": 2436
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/blumgi%20racers/scripts/offlineclient.js",
+      "status": 200,
+      "bytesRead": 603
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/blumgi%20racers/scripts/register-sw.js",
+      "status": 200,
+      "bytesRead": 303
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@9cf433220236bb0471ab3a68ec8fe3e0a2799e36/blumgi%20racers/box2d.wasm.js",
+      "status": 200,
+      "bytesRead": 282532
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/playgroundfree/playgroundfree.github.io@main/bfdi-branches/bfdi.js",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/playgroundfree/playgroundfree.github.io@main/bfdi-branches/main.js",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

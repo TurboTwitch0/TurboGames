@@ -1,0 +1,11 @@
+{
+  "method": "Browser startup checks through the TurboGames player; these are startup checks, not complete playthroughs.",
+  "repairs": [
+    { "title": "Blumgi Racers", "canvas": true, "errors": 0, "failedRequests": 0 },
+    { "title": "Champion Island", "canvas": true, "errors": 0, "failedRequests": 0 },
+    { "title": "South Park", "canvas": true, "errors": 0, "failedRequests": 0 },
+    { "title": "Little Runmo", "canvas": true, "errors": 0, "failedRequests": 0, "note": "Large data merge remained on the loading screen during the short startup check." },
+    { "title": "Cyber Cars Punk Racing", "canvas": true, "errors": 0, "failedRequests": 0, "note": "Reached the Unity loading screen during the short startup check." },
+    { "title": "Monkey Mart", "available": false, "note": "The matching build redirects its own frame to Poki. The catalog now reports this instead of opening a broken player." }
+  ]
+}

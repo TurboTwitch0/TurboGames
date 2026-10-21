@@ -1,0 +1,114 @@
+{
+  "library-source/emulated/arcade/claof3.html": {
+    "image": "assets/covers/original/eeff2d7878ae21c244e64994.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Art%20of%20Fighting%203%20-%20The%20Path%20of%20the%20Warrior%20%28Korean%20release%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Art of Fighting 3 - The Path of the Warrior (Korean release)"
+  },
+  "library-source/emulated/arcade/cldbz2.html": {
+    "image": "assets/covers/original/a6be2e0d5145f7cea59903c9.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Snaps/Dragonball%20Z%202%20-%20Super%20Battle.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Dragonball Z 2 - Super Battle"
+  },
+  "library-source/emulated/arcade/clfatalfury.html": {
+    "image": "assets/covers/original/04df13bb34f528e79a7ce582.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Fatal%20Fury%20-%20King%20of%20Fighters%20_%20Garou%20Densetsu%20-%20Shukumei%20no%20Tatakai%20%28NGM-033%20~%20NGH-033%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Fatal Fury - King of Fighters _ Garou Densetsu - Shukumei no Tatakai (NGM-033 ~ NGH-033)"
+  },
+  "library-source/emulated/arcade/clhyperstreetfighter2.html": {
+    "image": "assets/covers/original/f6be96add2b422021d6b63f4.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Snaps/Hyper%20Street%20Fighter%202_%20The%20Anniversary%20Edition%20%28Asia%20040202%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Hyper Street Fighter 2_ The Anniversary Edition (Asia 040202)"
+  },
+  "library-source/emulated/arcade/clLastBlade.html": {
+    "image": "assets/covers/original/2a9c67b923bcde4a045dd366.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Last%20Blade%20_%20Bakumatsu%20Roman%20-%20Gekka%20no%20Kenshi%2C%20The%20%28set%201%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Last Blade _ Bakumatsu Roman - Gekka no Kenshi, The (set 1)"
+  },
+  "library-source/emulated/arcade/clmegamanfighters.html": {
+    "image": "assets/covers/original/2b179d529e19c6feb1255276.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Snaps/Mega%20Man%202_%20The%20Power%20Fighters%20%28Asia%20960708%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Mega Man 2_ The Power Fighters (Asia 960708)"
+  },
+  "library-source/emulated/arcade/clmetalslug.html": {
+    "image": "assets/covers/original/2110b5a2a935869330387df3.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Metal%20Slug%20-%20Super%20Vehicle-001.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Metal Slug - Super Vehicle-001"
+  },
+  "library-source/emulated/arcade/clmetalslug2.html": {
+    "image": "assets/covers/original/c5a2392ea232ae1a928ce96b.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Metal%20Slug%202%20-%20Super%20Vehicle-001-II.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Metal Slug 2 - Super Vehicle-001-II"
+  },
+  "library-source/emulated/arcade/clmspacmangalaga.html": {
+    "image": "assets/covers/original/91435c23910cbe45e54b5aa4.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Ms.%20Pac-Man_Galaga%20-%2020th%20Anniversary%20Class%20of%201981%20Reunion%20%28V1.04%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Ms. Pac-Man_Galaga - 20th Anniversary Class of 1981 Reunion (V1.04)"
+  },
+  "library-source/emulated/arcade/clRealBoutFatalFury.html": {
+    "image": "assets/covers/original/2fa70058b5fc753665dd9f3a.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Real%20Bout%20Fatal%20Fury%20_%20Real%20Bout%20Garou%20Densetsu%20%28NGM-095%20~%20NGH-095%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Real Bout Fatal Fury _ Real Bout Garou Densetsu (NGM-095 ~ NGH-095)"
+  },
+  "library-source/emulated/arcade/clRealBoutFatalFury2.html": {
+    "image": "assets/covers/original/f3600da2ca472d28199d0493.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Real%20Bout%20Fatal%20Fury%202%20-%20The%20Newcomers%20%28Korean%20release%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Real Bout Fatal Fury 2 - The Newcomers (Korean release)"
+  },
+  "library-source/emulated/arcade/clsnkvscapcom.html": {
+    "image": "assets/covers/original/4bff8d38b5cdd0a470b4f90d.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/SNK%20vs.%20Capcom%20-%20SVC%20Chaos%20%28JAMMA%20PCB%2C%20NEO-MVH%20MVO%20PCB%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "SNK vs. Capcom - SVC Chaos (JAMMA PCB, NEO-MVH MVO PCB)"
+  },
+  "library-source/emulated/arcade/clStreetFighter2Arcade.html": {
+    "image": "assets/covers/original/1e0226c9a8d28bc36169675a.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Street%20Fighter%20II%20-%20The%20World%20Warrior%20%28US%20910206%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Street Fighter II - The World Warrior (US 910206)"
+  },
+  "library-source/emulated/dos/clhacx.html": {
+    "image": "assets/covers/original/b3a49713681b3902d7b2e60f.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/DOS/master/Named_Snaps/HacX%20%281997%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "HacX (1997)"
+  },
+  "library-source/emulated/gba/clgoodboygalaxy.html": {
+    "image": "assets/covers/original/76f2647d95fb1d7faad40998.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Goodboy%20Galaxy%20%28World%29%20%28Ar%29%20%28Demo%29%20%28Aftermarket%29%20%28Unl%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Goodboy Galaxy (World) (Ar) (Demo) (Aftermarket) (Unl)"
+  },
+  "library-source/emulated/clspaceinvaders95.html": {
+    "image": "assets/covers/original/1a4176ee5e33cdafcf678c98.png",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/MAME/master/Named_Boxarts/Space%20Invaders%20%2795%20-%20Attack%20Of%20The%20Lunar%20Loonies%20%28World%29.png",
+    "attribution": "Exact game artwork from libretro-thumbnails; rights remain with respective creators.",
+    "matchedTitle": "Space Invaders '95 - Attack Of The Lunar Loonies (World)"
+  }
+}
