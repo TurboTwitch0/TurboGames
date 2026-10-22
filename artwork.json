@@ -20389,5 +20389,12 @@
     "type": "source-artwork",
     "source": "http://weavesilk.com/img/silk_thumb.png",
     "attribution": "Game icon or artwork referenced by the imported game HTML; rights remain with game creator"
+  },
+  "library-source/html5-games/clbackrooms3dmultiplayer.html": {
+    "image": "assets/covers/original/backrooms-3d-multiplayer-screenshot.png",
+    "type": "source-artwork",
+    "source": "library-source/html5-games/clbackrooms3dmultiplayer.html",
+    "attribution": "Actual gameplay screenshot captured from the bundled game source.",
+    "captureType": "gameplay"
   }
 }
