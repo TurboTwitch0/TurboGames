@@ -9,6 +9,10 @@
 /library-source/*
   Access-Control-Allow-Origin: *
 
+/games/backrooms3d/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=0, must-revalidate
+
 /player-compat.js
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=0, must-revalidate
