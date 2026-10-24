@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T20:56:30.943845+00:00",
+  "checked_at": "2026-10-24T20:59:31.817944+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -10,13 +10,14 @@
   },
   "remote": {
     "discovered": 3550,
-    "checked": 20,
-    "skipped": 3530,
+    "checked": 3550,
+    "skipped": 0,
     "counts": {
-      "reachable": 19,
-      "http-error": 1
+      "reachable": 3433,
+      "http-error": 103,
+      "connection-error": 14
     },
-    "issues": 1
+    "issues": 117
   },
   "errors": [],
   "remote_issue_examples": [
@@ -24,6 +25,151 @@
       "source": "library-source/html5-games/clantipathy.html",
       "result": "http-error",
       "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clorigamiking.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clfearassessment.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clcarcrash3.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/cljourneydownhill.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/cljourneydownhill.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmakesureitsclosed.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clretrobowl.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clretrobowl.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clapesvshelium.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clbaldisbasics.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/cljailbreakobbbobob.html",
+      "result": "http-error",
+      "status": 400
+    },
+    {
+      "source": "library-source/html5-games/clgrindcraft.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/flash/clthisistheonlylevel.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clmariovsluigi.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clgdbreeze.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clblockblast.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clomegalayers.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clAdventureCapatalist.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clclashofvikings.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/flash/clrocketjump.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clancientsins.html",
+      "result": "http-error",
+      "status": 400
+    },
+    {
+      "source": "library-source/html5-games/clsupersantakicker.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clkanyezone.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/psx/clgta.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/psx/clwipeout2097.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/psx/clfinalfantasyVII.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/psx/clfinalfantasyVIId2.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/psx/clpersona2.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/nds/clpokeblack.html",
+      "result": "connection-error",
+      "status": null
     }
   ]
 }
