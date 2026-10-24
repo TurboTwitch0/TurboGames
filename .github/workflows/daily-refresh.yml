@@ -1,0 +1,74 @@
+name: Daily catalog refresh
+
+on:
+  schedule:
+    # An off-peak minute; GitHub schedules use UTC.
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check refresh logic
+        run: python3 -m unittest discover -s tools -p 'test_daily_refresh.py' -v
+
+      - name: Refresh catalog and check existing sources
+        id: refresh
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: python3 tools/daily_refresh.py --remote-budget 600
+
+      - name: Publish run summary
+        if: always()
+        run: |
+          if [ -f .daily-refresh/daily-status.md ]; then
+            cat .daily-refresh/daily-status.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "The refresh did not finish. Check the job log and attached reports." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Attach detailed reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-refresh-reports
+          path: .daily-refresh/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Commit refreshed catalog and status
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.js reports/catalog-build.json reports/daily-status.json reports/daily-status.md
+          if git diff --cached --quiet; then
+            echo "Catalog and reports are already current."
+          else
+            git commit -m "Refresh existing catalog and daily source health"
+            git push origin HEAD:main
+          fi

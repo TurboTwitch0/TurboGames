@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-24T20:56:30.943845+00:00",
+  "result": "attention",
+  "catalog_entries": 3099,
+  "local": {
+    "catalog_problems": 0,
+    "required_launcher_problems": 0,
+    "syntax_failures": 0,
+    "launcher_files_scanned": 3115
+  },
+  "remote": {
+    "discovered": 3550,
+    "checked": 20,
+    "skipped": 3530,
+    "counts": {
+      "reachable": 19,
+      "http-error": 1
+    },
+    "issues": 1
+  },
+  "errors": [],
+  "remote_issue_examples": [
+    {
+      "source": "library-source/html5-games/clantipathy.html",
+      "result": "http-error",
+      "status": 404
+    }
+  ]
+}
