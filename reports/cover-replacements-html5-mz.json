@@ -1,0 +1,95 @@
+{
+  "library-source/html5-games/clmario64webgl.html": {
+    "image": "assets/covers/curated/html5-mz/super-mario-64-webgl-ac0d38af81.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/588.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Nintendo",
+    "matchedTitle": "Super Mario 64 (webgl)",
+    "quality": "verified-cover"
+  },
+  "library-source/html5-games/clmotox3mspookyland.html": {
+    "image": "assets/covers/curated/html5-mz/motox3m-spooky-land-af7941bb34.webp",
+    "type": "source-artwork",
+    "source": "https://www3.minijuegosgratis.com/v3/games/thumbnails/230453_1.jpg",
+    "attribution": "Original artwork from the exact-title Miniplay game page; rights remain with the game creator.",
+    "matchedTitle": "Moto X3M: Spooky Land",
+    "quality": "verified-cover",
+    "sourcePage": "https://www.miniplay.com/game/moto-x3m-spooky-land"
+  },
+  "library-source/html5-games/clpenguindiner.html": {
+    "image": "assets/covers/curated/html5-mz/penguin-diner-d1d29b37e8.webp",
+    "type": "source-artwork",
+    "source": "https://www4.minijuegosgratis.com/v3/games/thumbnails/9651_1.jpg",
+    "attribution": "Original artwork from the exact-title Miniplay game page; rights remain with the game creator.",
+    "matchedTitle": "Penguin Diner",
+    "quality": "verified-cover",
+    "sourcePage": "https://www.miniplay.com/game/penguin-diner"
+  },
+  "library-source/html5-games/clragollhit.html": {
+    "image": "assets/covers/curated/html5-mz/ragollhit-b272273f2d.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/44.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Kids Games LLC",
+    "matchedTitle": "Ragollhit",
+    "quality": "verified-cover"
+  },
+  "library-source/html5-games/clsabduel.html": {
+    "image": "assets/covers/curated/html5-mz/steal-a-brainrot-duel-01b8547d49.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/kelsimsk/zarara/main/TemplateData/logo.png",
+    "attribution": "Game icon or artwork referenced by the imported game HTML; rights remain with game creator",
+    "matchedTitle": "Steal A Brainrot Duel",
+    "quality": "verified-cover"
+  },
+  "library-source/html5-games/clslendytubbies.html": {
+    "image": "assets/covers/curated/html5-mz/slendy-tubbies-d3409dad98.webp",
+    "type": "source-artwork",
+    "source": "https://www2.minijuegosgratis.com/v3/games/thumbnails/211001_1.jpg",
+    "attribution": "Original artwork from the exact-title Miniplay game page; rights remain with the game creator.",
+    "matchedTitle": "Slendytubbies",
+    "quality": "verified-cover",
+    "sourcePage": "https://www.miniplay.com/game/slendytubbies"
+  },
+  "library-source/html5-games/clsonicrevert.html": {
+    "image": "assets/covers/curated/html5-mz/sonic-revert-0fe6050858.webp",
+    "type": "source-artwork",
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/229450_1.jpg",
+    "attribution": "Original artwork from the exact-title Miniplay game page; rights remain with the game creator.",
+    "matchedTitle": "Sonic Revert",
+    "quality": "verified-cover",
+    "sourcePage": "https://www.miniplay.com/game/sonic-revert"
+  },
+  "library-source/html5-games/clstationmeltdown.html": {
+    "image": "assets/covers/curated/html5-mz/station-meltdown-992176b62f.webp",
+    "type": "source-artwork",
+    "source": "https://www3.minijuegosgratis.com/v3/games/thumbnails/240922_1.jpg",
+    "attribution": "Original artwork from the exact-title Miniplay game page; rights remain with the game creator.",
+    "matchedTitle": "Station Meltdown",
+    "quality": "verified-cover",
+    "sourcePage": "https://www.miniplay.com/game/station-meltdown"
+  },
+  "library-source/html5-games/cltagcm.html": {
+    "image": "assets/covers/curated/html5-mz/tag-coolmathgames-db9e117c7b.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/627.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: WeLoPlay",
+    "matchedTitle": "Tag (coolmathgames)",
+    "quality": "verified-cover"
+  },
+  "library-source/html5-games/cluncannycatgolf.html": {
+    "image": "assets/covers/curated/html5-mz/uncanny-cat-golf-13eb0426c6.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/Stinkalistic/UGS/main/MISC/catgolf/Uncanny%20Cat%20Golf.apple-touch-icon.png",
+    "attribution": "Game icon or artwork referenced by the imported game HTML; rights remain with game creator",
+    "matchedTitle": "Uncanny Cat Golf",
+    "quality": "verified-cover"
+  },
+  "library-source/html5-games/sm64coopdx.html": {
+    "image": "assets/covers/curated/html5-mz/sm64coopdx-ac0d38af81.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/588.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Nintendo",
+    "matchedTitle": "Sm64coopdx",
+    "quality": "verified-cover"
+  }
+}

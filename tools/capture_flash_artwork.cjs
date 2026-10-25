@@ -12,7 +12,7 @@ const catalog = JSON.parse(catalogText.split('=', 2)[1].trim().replace(/;$/, '')
 const artworkPath = path.join(root, 'artwork.json');
 const artwork = JSON.parse(fs.readFileSync(artworkPath, 'utf8'));
 const jobs = catalog.filter(item => item.category === 'flash' && artwork[item.id]?.type !== 'source-artwork');
-const outputDir = path.join(root, 'assets', 'covers', 'original');
+const outputDir = path.join(root, '.artwork-review', 'flash');
 fs.mkdirSync(outputDir, { recursive: true });
 
 const safeName = id => id.replace(/[^a-zA-Z0-9._-]+/g, '-');
@@ -46,16 +46,9 @@ async function capture(browser, item) {
       return { ok: true };
     });
     if (!state.ok) throw new Error(state.reason);
-    const relative = `assets/covers/original/flash-${safeName(item.id)}.jpg`;
+    const relative = `.artwork-review/flash/flash-${safeName(item.id)}.jpg`;
     await page.screenshot({ path: path.join(root, relative), type: 'jpeg', quality: 84 });
-    artwork[item.id] = {
-      image: relative,
-      type: 'source-artwork',
-      source: item.source,
-      attribution: 'Actual title/game screen captured from the bundled Flash source; rights remain with respective creators.',
-      captureType: 'game title screen'
-    };
-    return { id: item.id, title: item.title, ok: true, image: relative };
+    return { id: item.id, title: item.title, ok: true, image: relative, quality: 'unreviewed-candidate' };
   } catch (error) {
     return { id: item.id, title: item.title, ok: false, error: error.message, pageErrors: failures.slice(0, 3) };
   } finally {
@@ -85,7 +78,6 @@ async function capture(browser, item) {
   }
   await Promise.all(Array.from({ length: concurrency }, worker));
   await browser.close();
-  fs.writeFileSync(artworkPath, JSON.stringify(artwork, null, 2) + '\n');
   const report = {
     generatedAt: new Date().toISOString(),
     attempted: jobs.length,

@@ -11,3 +11,4 @@ node_modules/
 .daily-refresh/
 .DS_Store
 Thumbs.db
+.artwork-review/

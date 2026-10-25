@@ -343,7 +343,14 @@ def main():
     previous = json.loads(output.read_text()) if output.exists() else {}
     extra_path = ROOT / 'artwork-emulator.json'
     if extra_path.exists():
-        previous.update(json.loads(extra_path.read_text()))
+        imported = json.loads(extra_path.read_text())
+        # Keep reviewed source covers selected in artwork.json as the authority.
+        # The emulator sidecar is a fallback for entries without reviewed artwork.
+        for key, value in imported.items():
+            current = previous.get(key, {})
+            if current.get('quality', '').startswith('verified-'):
+                continue
+            previous[key] = value
     mapping, folder_images = ({}, {}) if args.offline else load_upstream_indexes()
     results = {}
 

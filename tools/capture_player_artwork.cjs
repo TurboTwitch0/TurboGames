@@ -10,7 +10,7 @@ const catalog = JSON.parse(fs.readFileSync(path.join(root, 'catalog.js'), 'utf8'
 const artworkPath = path.join(root, 'artwork.json');
 const artwork = JSON.parse(fs.readFileSync(artworkPath, 'utf8'));
 const jobs = catalog.filter(item => artwork[item.id]?.type !== 'source-artwork' && item.sourceStatus !== 'unavailable');
-const outputDir = path.join(root, 'assets', 'covers', 'original');
+const outputDir = path.join(root, '.artwork-review', 'player');
 fs.mkdirSync(outputDir, { recursive: true });
 const safeName = id => id.replace(/[^a-zA-Z0-9._-]+/g, '-');
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -56,14 +56,9 @@ async function capture(browser, item) {
       return { ok: true };
     });
     if (!state.ok) throw new Error(state.reason);
-    const relative = `assets/covers/original/player-${safeName(item.id)}.jpg`;
+    const relative = `.artwork-review/player/player-${safeName(item.id)}.jpg`;
     await page.locator('#game-frame').screenshot({ path: path.join(root, relative), type: 'jpeg', quality: 84, timeout: 30000 });
-    artwork[item.id] = {
-      image: relative, type: 'source-artwork', source: item.source,
-      attribution: 'Actual title/game screen captured through the TurboGames player; rights remain with respective creators.',
-      captureType: `${item.category} title screen`
-    };
-    return { id: item.id, title: item.title, category: item.category, ok: true, image: relative, pageErrors: errors.slice(0, 3) };
+    return { id: item.id, title: item.title, category: item.category, ok: true, image: relative, quality: 'unreviewed-candidate', pageErrors: errors.slice(0, 3) };
   } catch (error) {
     return { id: item.id, title: item.title, category: item.category, ok: false, error: error.message, pageErrors: errors.slice(0, 3) };
   } finally { await page.close(); }
@@ -84,7 +79,6 @@ async function capture(browser, item) {
   }
   await Promise.all(Array.from({ length: concurrency }, worker));
   await browser.close();
-  fs.writeFileSync(artworkPath, JSON.stringify(artwork, null, 2) + '\n');
   const report = { generatedAt: new Date().toISOString(), attempted: jobs.length,
     captured: results.filter(x => x.ok).length, failed: results.filter(x => !x.ok).length, results };
   fs.writeFileSync(path.join(root, 'reports', 'player-artwork-captures.json'), JSON.stringify(report, null, 2) + '\n');

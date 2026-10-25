@@ -1,0 +1,1612 @@
+{
+  "note": "No exact-title artwork candidate passed metadata matching; replaced the loading, error, engine, or nearly blank capture with an explicitly labeled original title illustration.",
+  "replaced": [
+    {
+      "id": "library-source/flash/cl3slices2.html",
+      "title": "3 Slices 2",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-cl3slices2.html.jpg",
+      "newImage": "assets/covers/illustrated/3-slices-2-6652edcc7067.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clabandoned3.html",
+      "title": "Abandoned3",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clabandoned32.html.jpg",
+      "newImage": "assets/covers/illustrated/abandoned3-b182198710ee.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clboxinglive-2.html",
+      "title": "Boxing Live 2",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clboxinglive-2.html.jpg",
+      "newImage": "assets/covers/illustrated/boxing-live-2-fc636e362031.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clclearvision.html",
+      "title": "Clear Vision",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clclearvision.html.jpg",
+      "newImage": "assets/covers/illustrated/clear-vision-d83d827332fb.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clclearvision2.html",
+      "title": "Clear Vision 2",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clclearvision2.html.jpg",
+      "newImage": "assets/covers/illustrated/clear-vision-2-f47218ae7aaf.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/cldadgame.html",
+      "title": "Dadgame",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-cldadgame.html.jpg",
+      "newImage": "assets/covers/illustrated/dadgame-e398eabee2f8.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/cldouchebaglife.html",
+      "title": "Douchebag Life",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-cldouchebaglife.html.jpg",
+      "newImage": "assets/covers/illustrated/douchebag-life-6565a43f79ef.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clexitpath.html",
+      "title": "Exit Path",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clexitpath.html.jpg",
+      "newImage": "assets/covers/illustrated/exit-path-d3fcb7db066a.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clfactoryballs2.html",
+      "title": "Factory Balls 2",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clfactoryballs2.html.jpg",
+      "newImage": "assets/covers/illustrated/factory-balls-2-a0e354be60d2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clfactoryballs3.html",
+      "title": "Factory Balls 3",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clfactoryballs3.html.jpg",
+      "newImage": "assets/covers/illustrated/factory-balls-3-1e13099ed964.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clgangstabean.html",
+      "title": "Gangsta Bean",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clgangstabean.html.jpg",
+      "newImage": "assets/covers/illustrated/gangsta-bean-712c01e47451.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clgangsterbros.html",
+      "title": "Gangster Bros",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clgangsterbros.html.jpg",
+      "newImage": "assets/covers/illustrated/gangster-bros-138acd4679cb.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clindestructotank.html",
+      "title": "IndestructoTank",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clindestructotank.html.jpg",
+      "newImage": "assets/covers/illustrated/indestructotank-efe03a118c8e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clplazmaburst.html",
+      "title": "Plazma Burst",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clplazmaburst.html.jpg",
+      "newImage": "assets/covers/illustrated/plazma-burst-7030842315a2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clpottyracers3.html",
+      "title": "Potty Racers 3",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clpottyracers3.html.jpg",
+      "newImage": "assets/covers/illustrated/potty-racers-3-de0037302028.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clweltling.html",
+      "title": "Weltling",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clweltling.html.jpg",
+      "newImage": "assets/covers/illustrated/weltling-7dcf5ee948ac.svg",
+      "reason": [
+        "visible-engine-interface"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clzombopaclypse2.html",
+      "title": "Zombocalypse 2",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clzombopaclypse2.html.jpg",
+      "newImage": "assets/covers/illustrated/zombocalypse-2-043dcec009cd.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cladifferentsnowgrave.html",
+      "title": "Deltarune: A Different Snowgrave",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cladifferentsnowgrave.html.jpg",
+      "newImage": "assets/covers/illustrated/deltarune-a-different-snowgrave-b54a3a3e3a12.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clarcadevolley.html",
+      "title": "Arcade Volley",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clarcadevolley.html.jpg",
+      "newImage": "assets/covers/illustrated/arcade-volley-d6964d53214a.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clasdutydemands.html",
+      "title": "As Duty Demands",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clasdutydemands.html.jpg",
+      "newImage": "assets/covers/illustrated/as-duty-demands-b2e65ac122a8.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clbaldiepstein.html",
+      "title": "Jeffery Epstein's Basics in Education and Kidnapping",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clbaldiepstein.html.jpg",
+      "newImage": "assets/covers/illustrated/jeffery-epstein-s-basics-in-education-and-kid-6f2286da2a7b.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clbas.html",
+      "title": "BAS",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clbas.html.jpg",
+      "newImage": "assets/covers/illustrated/bas-e0cc2df93bf3.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clbloonsTD6scratch.html",
+      "title": "BTD6 (scratch)",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clbloonsTD6scratch.html.jpg",
+      "newImage": "assets/covers/illustrated/btd6-scratch-abe13e63a87e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clcandybox1.html",
+      "title": "Candy Box 1",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clcandybox1.html.jpg",
+      "newImage": "assets/covers/illustrated/candy-box-1-91fa784e6d0c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clcarcrash3.html",
+      "title": "Car Crash 3",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clcarcrash3.html.jpg",
+      "newImage": "assets/covers/illustrated/car-crash-3-d6025a03f742.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clCartoonNetworkTableTennisUltimateTournament.html",
+      "title": "Cartoon Network Table Tennis Ultimate Tournament",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clCartoonNetworkTableTennisUltimateTournament.html.jpg",
+      "newImage": "assets/covers/illustrated/cartoon-network-table-tennis-ultimate-tournam-1febb4629b97.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clceleste2.html",
+      "title": "Celeste 2",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clceleste2.html.jpg",
+      "newImage": "assets/covers/illustrated/celeste-2-0f99e5ed19e2.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cldandysworldclicker.html",
+      "title": "Dandy's World Clicker",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cldandysworldclicker.html.jpg",
+      "newImage": "assets/covers/illustrated/dandy-s-world-clicker-911bed49b891.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cldimensionalincident.html",
+      "title": "Dimensional Incident",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cldimensionalincident.html.jpg",
+      "newImage": "assets/covers/illustrated/dimensional-incident-d16fdaf9bcac.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clexoobservation.html",
+      "title": "Exoplanet Observation",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clexoobservation.html.jpg",
+      "newImage": "assets/covers/illustrated/exoplanet-observation-24c2b33567a9.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clfnac1.html",
+      "title": "Five Nights at Candy’s 1",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clfnac1.html.jpg",
+      "newImage": "assets/covers/illustrated/five-nights-at-candy-s-1-db7ea4615574.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clfnaf4halloween.html",
+      "title": "FNAF 4 Halloween",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clfnaf4halloween.html.jpg",
+      "newImage": "assets/covers/illustrated/fnaf-4-halloween-9d825dbfa712.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clGeometryDashWave.html",
+      "title": "Also Geometry Dash Wave",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clGeometryDashWave.html.jpg",
+      "newImage": "assets/covers/illustrated/also-geometry-dash-wave-aad135ee9751.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clgettingoverit.html",
+      "title": "Getting Over It (Scratch)",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clgettingoverit.html.jpg",
+      "newImage": "assets/covers/illustrated/getting-over-it-scratch-b4ab2e57da76.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clgta3.html",
+      "title": "Grand Theft Auto III",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clgta3.html.jpg",
+      "newImage": "assets/covers/illustrated/grand-theft-auto-iii-b8ec60efb520.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clkimjonguntilepuzzle.html",
+      "title": "Kim Jong Un Tile Puzzle",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clkimjonguntilepuzzle.html.jpg",
+      "newImage": "assets/covers/illustrated/kim-jong-un-tile-puzzle-20edb2c48bef.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cllowknight.html",
+      "title": "Low Knight",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cllowknight.html.jpg",
+      "newImage": "assets/covers/illustrated/low-knight-bcb866cd3d00.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clluckyblocks.html",
+      "title": "Robby Blocks",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clluckyblocks.html.jpg",
+      "newImage": "assets/covers/illustrated/robby-blocks-0578e8f1fe56.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clobbyfriends.html",
+      "title": "Obby With Friends",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clobbyfriends.html.jpg",
+      "newImage": "assets/covers/illustrated/obby-with-friends-a049b56a6d11.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clomeganuggetclicker.html",
+      "title": "Omega Nugget Clicker",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clomeganuggetclicker.html.jpg",
+      "newImage": "assets/covers/illustrated/omega-nugget-clicker-7346a95aa3a8.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clpetworld.html",
+      "title": "Pet World",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clpetworld.html.jpg",
+      "newImage": "assets/covers/illustrated/pet-world-711c9df92b47.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clpixelbattlegroundsio.html",
+      "title": "Pixel Battlegrounds.io",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clpixelbattlegroundsio.html.jpg",
+      "newImage": "assets/covers/illustrated/pixel-battlegrounds-io-28694a5a5de4.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clprankcalltungtungtungsahurclicker.html",
+      "title": "Prank Call Tung Tung Tung Sahur Clicker",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clprankcalltungtungtungsahurclicker.html.jpg",
+      "newImage": "assets/covers/illustrated/prank-call-tung-tung-tung-sahur-clicker-d06270c91fe2.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clprodigyMTKSIKM.html",
+      "title": "Prodigy mtksikm",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clprodigyMTKSIKM.html.jpg",
+      "newImage": "assets/covers/illustrated/prodigy-mtksikm-b294cf5e95b2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clpumpkinrun.html",
+      "title": "Pumpkin Run 64",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clpumpkinrun.html.jpg",
+      "newImage": "assets/covers/illustrated/pumpkin-run-64-e4c221b4d083.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clreacticore.html",
+      "title": "Reacticore",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clreacticore.html.jpg",
+      "newImage": "assets/covers/illustrated/reacticore-358f940c5d5d.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clredalert.html",
+      "title": "Command and Conquer Red Alert",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clredalert.html.jpg",
+      "newImage": "assets/covers/illustrated/command-and-conquer-red-alert-9af5f38318c0.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-launcher-prompt"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clrepobad.html",
+      "title": "R.E.P.O bad",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clrepobad.html.jpg",
+      "newImage": "assets/covers/illustrated/r-e-p-o-bad-d37078593f90.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clrunfromwitheredfox.html",
+      "title": "Run from Withered Fox",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clrunfromwitheredfox.html.jpg",
+      "newImage": "assets/covers/illustrated/run-from-withered-fox-480e77a6903c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsaulgoodmanrun.html",
+      "title": "Saul Goodman Run",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsaulgoodmanrun.html.jpg",
+      "newImage": "assets/covers/illustrated/saul-goodman-run-dca3c9dca338.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-load-error"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clScamptonTheGreatFightRecreate.html",
+      "title": "Scampton The Great Fight Recreate",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clScamptonTheGreatFightRecreate.html.jpg",
+      "newImage": "assets/covers/illustrated/scampton-the-great-fight-recreate-709d48cb8e66.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clscubabear.html",
+      "title": "Scuba Bear",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clscubabear.html.jpg",
+      "newImage": "assets/covers/illustrated/scuba-bear-e2cfa3cfb51d.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsodasimulator.html",
+      "title": "Soda Simulator",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsodasimulator.html.jpg",
+      "newImage": "assets/covers/illustrated/soda-simulator-d160d9f4d461.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsteepdescent.html",
+      "title": "Steep Descent",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsteepdescent.html.jpg",
+      "newImage": "assets/covers/illustrated/steep-descent-09ee2cfa7046.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsugaryspire.html",
+      "title": "Sugary Spire UNHAM",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsugaryspire.html.jpg",
+      "newImage": "assets/covers/illustrated/sugary-spire-unham-37c738f4a69a.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsuikapico.html",
+      "title": "Suika Pico",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsuikapico.html.jpg",
+      "newImage": "assets/covers/illustrated/suika-pico-a4462dc63c33.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsuperpickleballadventure.html",
+      "title": "Super  Pickleball Adventure",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsuperpickleballadventure.html.jpg",
+      "newImage": "assets/covers/illustrated/super-pickleball-adventure-8c12bc5d323f.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltelephonetrouble.html",
+      "title": "Telephone Trouble",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltelephonetrouble.html.jpg",
+      "newImage": "assets/covers/illustrated/telephone-trouble-a47fa692d3a1.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clteod.html",
+      "title": "The End Of Disney",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clteod.html.jpg",
+      "newImage": "assets/covers/illustrated/the-end-of-disney-d18b50fc10d1.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clterra.html",
+      "title": "Terra",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clterra.html.jpg",
+      "newImage": "assets/covers/illustrated/terra-28be0b4e3ddb.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltiberiandawn.html",
+      "title": "Command and Conquer Tiberian Dawn",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltiberiandawn.html.jpg",
+      "newImage": "assets/covers/illustrated/command-and-conquer-tiberian-dawn-cfa65d94f8cd.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-launcher-prompt"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltrechoroustrials.html",
+      "title": "Treacherous Trials",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltrechoroustrials.html.jpg",
+      "newImage": "assets/covers/illustrated/treacherous-trials-737ee3d8a38f.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltrechoroustrialspart2.html",
+      "title": "Treacherous Trials Part 2",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltrechoroustrialspart2.html.jpg",
+      "newImage": "assets/covers/illustrated/treacherous-trials-part-2-f3d9997d030a.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltsuzukimaze.html",
+      "title": "Tsuzukimaze",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltsuzukimaze.html.jpg",
+      "newImage": "assets/covers/illustrated/tsuzukimaze-108b6234bbe5.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltungtunghorror.html",
+      "title": "Tung Sahur Horror",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltungtunghorror.html.jpg",
+      "newImage": "assets/covers/illustrated/tung-sahur-horror-fe21d6b0df09.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltungtungtungsahurobby.html",
+      "title": "Tung Tung Tung Sahur Obby",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltungtungtungsahurobby.html.jpg",
+      "newImage": "assets/covers/illustrated/tung-tung-tung-sahur-obby-20360450a156.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clucds.html",
+      "title": "Other Car Driving Simulator",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clucds.html.jpg",
+      "newImage": "assets/covers/illustrated/other-car-driving-simulator-3ca38f2718de.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clunfairundyne.html",
+      "title": "Unfair Undyne",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clunfairundyne.html.jpg",
+      "newImage": "assets/covers/illustrated/unfair-undyne-2748a6aeef08.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clvillager.html",
+      "title": "Villager",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clvillager.html.jpg",
+      "newImage": "assets/covers/illustrated/villager-37a828e72ffd.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clwinterfalling.html",
+      "title": "Winter Falling",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clwinterfalling.html.jpg",
+      "newImage": "assets/covers/illustrated/winter-falling-0af381fac4f1.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clzombotronreboot.html",
+      "title": "Zombotron Reboot",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clzombotronreboot.html.jpg",
+      "newImage": "assets/covers/illustrated/zombotron-reboot-1951146f495e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clʘ.html",
+      "title": "ʘ",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cl-.html.jpg",
+      "newImage": "assets/covers/illustrated/game-7335c7ed0069.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/arcade/cltmnt2arc.html",
+      "title": "Teenage Mutant Ninja Turtles 2: Turtles In Time",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-arcade-cltmnt2arc.html.jpg",
+      "newImage": "assets/covers/illustrated/teenage-mutant-ninja-turtles-2-turtles-in-tim-640de487fc7a.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/arcade/clwbml.html",
+      "title": "Wonder Boy Monster Land",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-arcade-clwbml.html.jpg",
+      "newImage": "assets/covers/illustrated/wonder-boy-monster-land-50d94d3a84cb.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/arcade/clXMenChildrenOfTheAtomArcade.html",
+      "title": "Xmen children of the atom arcade",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-arcade-clXMenChildrenOfTheAtomArcade.html.jpg",
+      "newImage": "assets/covers/illustrated/xmen-children-of-the-atom-arcade-e177cf5da873.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/gba/clsupermariobros3.html",
+      "title": "Super Mario Advance 4",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-gba-clsupermariobros3.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-advance-4-767c7cb54f93.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/n64/cldanganronpa64.html",
+      "title": "Danganronpa64",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-n64-cldanganronpa64.html.jpg",
+      "newImage": "assets/covers/illustrated/danganronpa64-bb876f73fa8a.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64hiddenstars.html",
+      "title": "Super Mario 64 The Hidden Stars",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-n64-clsm64hiddenstars.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-64-the-hidden-stars-ff57e346cb68.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64liminaldream.html",
+      "title": "Super Mario 64 - Liminal Dream",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-n64-clsm64liminaldream.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-64-liminal-dream-8123874bc235.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/n64/clsm64yscaled.html",
+      "title": "Super Mario 64 Y Scaled",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-n64-clsm64yscaled.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-64-y-scaled-8fe1186c6679.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/n64/clsupermariostarroad.html",
+      "title": "Supermariostarroad",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-n64-clsupermariostarroad.html.jpg",
+      "newImage": "assets/covers/illustrated/supermariostarroad-1e23d3843634.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/n64/clsupermariosunshine64.html",
+      "title": "Supermariosunshine64",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-n64-clsupermariosunshine64.html.jpg",
+      "newImage": "assets/covers/illustrated/supermariosunshine64-3da8f0191c7e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/nds/clsmgds.html",
+      "title": "Super Mario Galaxy DS",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-nds-clsmgds.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-galaxy-ds-b7b4907bceac.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/Neo Geo Pocket/clfatalfuryfirstcontact.html",
+      "title": "Fatal Fury - First Contact",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-Neo-Geo-Pocket-clfatalfuryfirstcontact.html.jpg",
+      "newImage": "assets/covers/illustrated/fatal-fury-first-contact-306602ffcbc6.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/nes/cldemonblade.html",
+      "title": "Demon Blade",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-nes-cldemonblade.html.jpg",
+      "newImage": "assets/covers/illustrated/demon-blade-7f1b48b3f252.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/nes/clmvpbaseball.html",
+      "title": "MVP Baseball",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-nes-clmvpbaseball.html.jpg",
+      "newImage": "assets/covers/illustrated/mvp-baseball-b88fb2d4b842.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clAcko's Mach Bike Challenge (v1.0).html",
+      "title": "Acko's mach bike challenge (v1.0)",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clAcko-s-Mach-Bike-Challenge-v1.0-.html.jpg",
+      "newImage": "assets/covers/illustrated/acko-s-mach-bike-challenge-v1-0-35c143ff0530.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clinclementemerald.html",
+      "title": "Pokemon Inclement Emerald",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clinclementemerald.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-inclement-emerald-923ef3536bcf.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/cllastfirered.html",
+      "title": "Pokemon the Last Fire Red",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-cllastfirered.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-the-last-fire-red-92c85662011f.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clPokeAmbrosia.html",
+      "title": "Pokemon Ambrosia",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clPokeAmbrosia.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-ambrosia-eaf00d52210a.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeclassic.html",
+      "title": "Pokéclassic",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeclassic.html.jpg",
+      "newImage": "assets/covers/illustrated/pok-classic-ee0f6e3470ea.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokecrown.html",
+      "title": "Pokemon Crown",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokecrown.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-crown-f99d4bb29125.svg",
+      "reason": [
+        "visible-engine-interface"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokedreamstone.html",
+      "title": "Pokemon Dreamstone",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokedreamstone.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-dreamstone-38183b12d959.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokeemeraldhorizons.html",
+      "title": "Pokémon Emerald Horizons",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokeemeraldhorizons.html.jpg",
+      "newImage": "assets/covers/illustrated/pok-mon-emerald-horizons-3c4d838335c7.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokelowbudgetcrystal.html",
+      "title": "Pokémon Low Budget Crystal",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokelowbudgetcrystal.html.jpg",
+      "newImage": "assets/covers/illustrated/pok-mon-low-budget-crystal-5c5301cb9fc0.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemoncrystal.html",
+      "title": "Pokemon Crystal*",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemoncrystal.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-crystal-96c8791ae5fd.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemonemeraldkaizo.html",
+      "title": "Pokemon Emerald Kaizo",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemonemeraldkaizo.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-emerald-kaizo-c2ac10f3307c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokemongold.html",
+      "title": "Pokemon Gold*",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokemongold.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-gold-c45b037bee0e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpokevega.html",
+      "title": "Pokemon Vega",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpokevega.html.jpg",
+      "newImage": "assets/covers/illustrated/pokemon-vega-f11edd41b980.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clpolishedcrystal.html",
+      "title": "Pokémon Polished Crystal",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clpolishedcrystal.html.jpg",
+      "newImage": "assets/covers/illustrated/pok-mon-polished-crystal-0a93b48a07c2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/clsupermariomon.html",
+      "title": "Super Mariomon",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-clsupermariomon.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mariomon-6f22f4075dff.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/pokemon/lime.html",
+      "title": "Lime",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-pokemon-lime.html.jpg",
+      "newImage": "assets/covers/illustrated/lime-517356297a09.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/segaMD/clrocketknight2.html",
+      "title": "Rocketknight2",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-segaMD-clrocketknight2.html.jpg",
+      "newImage": "assets/covers/illustrated/rocketknight2-dbfd4a9cbe52.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/segaMS/clwonderboy3.html",
+      "title": "Wonder Boy 3 - Dragon’s Trap",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-segaMS-clwonderboy3.html.jpg",
+      "newImage": "assets/covers/illustrated/wonder-boy-3-dragon-s-trap-bbdcbbaee567.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/snes/cl100RoomsOfEnemies.html",
+      "title": "100 Rooms Of Enemies",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-snes-cl100RoomsOfEnemies.html.jpg",
+      "newImage": "assets/covers/illustrated/100-rooms-of-enemies-fe742f38219c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/snes/clFinalFight3Plus.html",
+      "title": "Final fight3plus",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-snes-clFinalFight3Plus.html.jpg",
+      "newImage": "assets/covers/illustrated/final-fight3plus-b8b93e142af2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/snes/clmariosmysterymeat.html",
+      "title": "Mario’s Mystery Meat",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-snes-clmariosmysterymeat.html.jpg",
+      "newImage": "assets/covers/illustrated/mario-s-mystery-meat-0c370c945a6c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/snes/clquickieworld.html",
+      "title": "Quickie World",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-snes-clquickieworld.html.jpg",
+      "newImage": "assets/covers/illustrated/quickie-world-2aa722610311.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/snes/clstarfoxsfx2.html",
+      "title": "Star Fox SFX2 hack (better performance)",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-snes-clstarfoxsfx2.html.jpg",
+      "newImage": "assets/covers/illustrated/star-fox-sfx2-hack-better-performance-b68d1fda6e39.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/snes/clsuperdiagonalmario2.html",
+      "title": "Super Diagonal mario 2",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-snes-clsuperdiagonalmario2.html.jpg",
+      "newImage": "assets/covers/illustrated/super-diagonal-mario-2-31a721e8a93c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clbankrobbery1.html",
+      "title": "Bank Robbery 1",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clbankrobbery1.html.jpg",
+      "newImage": "assets/covers/illustrated/bank-robbery-1-745b8b333ee1.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clayuncraft.html",
+      "title": "Ayuncraft",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clayuncraft.html.jpg",
+      "newImage": "assets/covers/illustrated/ayuncraft-c2ef63ca2135.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cleaglercraftnebula.html",
+      "title": "Eaglercraft Nebula",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cleaglercraftnebula.html.jpg",
+      "newImage": "assets/covers/illustrated/eaglercraft-nebula-2cd3841e346a.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cloddfuture.html",
+      "title": "EaglerCraft Odd Future",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cloddfuture.html.jpg",
+      "newImage": "assets/covers/illustrated/eaglercraft-odd-future-b26e8e3f8607.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cleaglercrafttech.html",
+      "title": "cleaglercrafttech",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cleaglercrafttech.html.jpg",
+      "newImage": "assets/covers/illustrated/cleaglercrafttech-3ac1b7dcf62c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clfuschiax.html",
+      "title": "Fuschia X",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clfuschiax.html.jpg",
+      "newImage": "assets/covers/illustrated/fuschia-x-e9e9f583ecda.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cljustinclient.html",
+      "title": "Justin Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cljustinclient.html.jpg",
+      "newImage": "assets/covers/illustrated/justin-client-a86dd2be5921.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clkeroseneclient.html",
+      "title": "Kerosene Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clkeroseneclient.html.jpg",
+      "newImage": "assets/covers/illustrated/kerosene-client-0acbf59f6324.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cllambdaclient.html",
+      "title": "Lambda Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cllambdaclient.html.jpg",
+      "newImage": "assets/covers/illustrated/lambda-client-92d218ece5d6.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clprismarine.html",
+      "title": "Minecraft Prismarine Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clprismarine.html.jpg",
+      "newImage": "assets/covers/illustrated/minecraft-prismarine-client-5823cc152c32.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/EaglercraftZ_1.11.2.html",
+      "title": "Minecraft 1.11.2",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-EaglercraftZ_1.11.2.html.jpg",
+      "newImage": "assets/covers/illustrated/minecraft-1-11-2-c5fef6ea872e.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/Eaglercraft-Beta-1.7.3-Offline.html",
+      "title": "Minecraft 1.7.3",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-Eaglercraft-Beta-1.7.3-Offline.html.jpg",
+      "newImage": "assets/covers/illustrated/minecraft-1-7-3-6bd36b6ae85e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/EaglercraftX 1.8.8(u29).html",
+      "title": "Minecraft 1.8.8 (EaglecraftX)",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-EaglercraftX-1.8.8-u29-.html.jpg",
+      "newImage": "assets/covers/illustrated/minecraft-1-8-8-eaglecraftx-eda0577c8772.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/EaglercraftL_1.9_v0_7_0_Offline_Signed.html",
+      "title": "Minecraft 1.9",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-EaglercraftL_1.9_v0_7_0_Offline_Signed.html.jpg",
+      "newImage": "assets/covers/illustrated/minecraft-1-9-87c3ccf59c0e.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clnitclient.html",
+      "title": "Nit Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clnitclient.html.jpg",
+      "newImage": "assets/covers/illustrated/nit-client-319bb3ebbe21.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clrebornclient.html",
+      "title": "Reborn Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clrebornclient.html.jpg",
+      "newImage": "assets/covers/illustrated/reborn-client-c7ff9461b24c.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clresentclient.html",
+      "title": "Resent Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clresentclient.html.jpg",
+      "newImage": "assets/covers/illustrated/resent-client-9a878a72113a.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clsolar.html",
+      "title": "Solar Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clsolar.html.jpg",
+      "newImage": "assets/covers/illustrated/solar-client-53cb9e158133.svg",
+      "reason": [
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cltuffclient.html",
+      "title": "Tuff Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cltuffclient.html.jpg",
+      "newImage": "assets/covers/illustrated/tuff-client-92707aa55f91.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cluwuclient.html",
+      "title": "UwU Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-cluwuclient.html.jpg",
+      "newImage": "assets/covers/illustrated/uwu-client-da1e5aefa5a2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clwurst.html",
+      "title": "Wurst Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clwurst.html.jpg",
+      "newImage": "assets/covers/illustrated/wurst-client-ca62d5408af7.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clzetaclient.html",
+      "title": "Zeta Client",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clzetaclient.html.jpg",
+      "newImage": "assets/covers/illustrated/zeta-client-94f343a59a4d.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clfnfpokepastaperdition.html",
+      "title": "Friday Night Funkin' VS Pokepasta Perdition",
+      "category": "games",
+      "previousImage": "assets/covers/original/html5-library-source-html5-games-clfnfpokepastaperdition.html.jpg",
+      "newImage": "assets/covers/illustrated/friday-night-funkin-vs-pokepasta-perdition-5f7e0a886d8f.svg",
+      "reason": [
+        "nearly-blank-image",
+        "visible-loading-text"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/Nikehub.html",
+      "title": "Nikehub",
+      "category": "games",
+      "previousImage": "assets/covers/downloaded/nikehub-ad1d61059784.webp",
+      "newImage": "assets/covers/illustrated/nikehub-ad1d61059784.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clabandoned32.html",
+      "title": "Abandoned 3",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clabandoned32.html.jpg",
+      "newImage": "assets/covers/illustrated/abandoned-3-a126984025c6.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clstickmanswat.html",
+      "title": "Stick Man SWAT",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clstickmanswat.html.jpg",
+      "newImage": "assets/covers/illustrated/stick-man-swat-fea52f5c6b2d.svg",
+      "reason": [
+        "visible-engine-interface"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/flash/clspecialmission.html",
+      "title": "Special Mission",
+      "category": "flash",
+      "previousImage": "assets/covers/original/flash-library-source-flash-clspecialmission.html.jpg",
+      "newImage": "assets/covers/illustrated/special-mission-ab104338ba97.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/rocketknight2.html",
+      "title": "Rocket Knight Adventures 2",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-segaMD-clrocketknight2.html.jpg",
+      "newImage": "assets/covers/illustrated/rocket-knight-adventures-2-70a5cf763c6f.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/cldangonronpa64.html",
+      "title": "Danganronpa 64",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-cldangonronpa64.html.jpg",
+      "newImage": "assets/covers/illustrated/danganronpa-64-273471717284.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/clsms.html",
+      "title": "Super Mario 64 Sunshine",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-clsms.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-64-sunshine-6b0add207e9f.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/emulated/clsm64starroad.html",
+      "title": "Super Mario Star Road",
+      "category": "emulator",
+      "previousImage": "assets/covers/original/emulator-library-source-emulated-clsm64starroad.html.jpg",
+      "newImage": "assets/covers/illustrated/super-mario-star-road-bc539b1e95d4.svg",
+      "reason": [
+        "nearly-blank-image",
+        "repeated-identical-cover"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/cldoswasmx.html",
+      "title": "DOS Wasm X",
+      "category": "apps",
+      "previousImage": "assets/covers/original/dos-wasm-x-screenshot.png",
+      "newImage": "assets/covers/illustrated/dos-wasm-x-b4805ab83ac2.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    },
+    {
+      "id": "library-source/html5-games/clpico8edu.html",
+      "title": "Pico 8 edu",
+      "category": "apps",
+      "previousImage": "assets/covers/original/pico-8-edu-screenshot.png",
+      "newImage": "assets/covers/illustrated/pico-8-edu-0e5dbbc67e2d.svg",
+      "reason": [
+        "nearly-blank-image"
+      ],
+      "replacementType": "original-title-illustration"
+    }
+  ]
+}

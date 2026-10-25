@@ -1,0 +1,288 @@
+{
+  "library-source/flash/clambulencearush.html": {
+    "image": "assets/covers/curated/flash/ambulencearush-891edf226ddd.webp",
+    "type": "source-artwork",
+    "source": "https://www3.minijuegosgratis.com/v3/games/thumbnails/13349_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/ambulance-rush",
+    "attribution": "Original game thumbnail from its exact-title Miniplay page; rights remain with respective creators.",
+    "matchedTitle": "Ambulance Rush",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cl3pandas.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/22943_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/3-pandas",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "3 Pandas",
+    "image": "assets/covers/curated/flash/3-pandas-4803c772d4e5.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clbejeweledtwistflash.html": {
+    "image": "assets/covers/curated/flash/bejeweledtwistflash-bb0f22cedb59.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Bejeweled%20Twist%20%28USA%29%20%28NDSi%20Enhanced%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clcareatscar2deluxe.html": {
+    "source": "https://www2.minijuegosgratis.com/v3/games/thumbnails/200914_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/car-eats-car-2-deluxe",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Car Eats Car 2 Deluxe",
+    "image": "assets/covers/curated/flash/car-eats-car-2-deluxe-6a5a77ca74ea.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clbloonsTD1.html": {
+    "source": "https://www1.minijuegosgratis.com/v3/games/thumbnails/8749_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/bloons-tower-defense",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Bloons Tower Defense",
+    "image": "assets/covers/curated/flash/btd1-ebff031e05b8.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clcoverorangeplayerspack3 (1).html": {
+    "image": "assets/covers/curated/flash/coverorangeplayerspack3-1-3b23b6491913.webp",
+    "type": "source-artwork",
+    "source": "https://www3.minijuegosgratis.com/v3/games/thumbnails/21777_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/cover-orange-players-pack-3",
+    "attribution": "Original game thumbnail from its exact-title Miniplay page; rights remain with respective creators.",
+    "matchedTitle": "Cover Orange: Players Pack 3",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cldoom2d.html": {
+    "image": "assets/covers/curated/flash/doom-2d-521f5232e612.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/libretro-thumbnails/DOS/master/Named_Boxarts/DOOM%202D%20%281996%29.png",
+    "attribution": "Game artwork belongs to its respective rights holders. Thumbnail source: libretro-thumbnails.",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clfeedus3.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/21303_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/feed-us-3",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Feed Us 3",
+    "image": "assets/covers/curated/flash/feed-us-3-ea7d4d4004f9.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cllearntoflyidlehack.html": {
+    "image": "assets/covers/curated/flash/learn-to-fly-idle-hacked-a46c034c1be5.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/343.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Light Bringer Games",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cllearntofly2hacked.html": {
+    "image": "assets/covers/curated/flash/learn-to-fly-2-hacked-538da8a95cc7.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/341.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Light Bringer Games",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clLearnToFly3Debug.html": {
+    "image": "assets/covers/curated/flash/learn-to-fly-3-debug-78ad88c24d88.webp",
+    "type": "source-artwork",
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/342.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Light Bringer Games",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clpapalouiewhensundaesattack.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/207834_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/papa-louie-3-when-sundaes-attack",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Papa Louie 3: When Sundaes Attack!",
+    "image": "assets/covers/curated/flash/papa-louie-when-sundaes-attack-d6ab3005c191.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clstickmanstealingdiamond.html": {
+    "source": "https://raw.githubusercontent.com/3kh0/3kh0-lite/main/projects/stealingthediamond/stealingthediamond.jpg",
+    "attribution": "Game artwork from 3kh0-lite project catalog; rights remain with game creators",
+    "matchedTitle": "Stealing the Diamond",
+    "image": "assets/covers/curated/flash/henry-stickmin-stealing-the-diamond-0e4214b45901.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clstickminbreakingbank.html": {
+    "source": "https://raw.githubusercontent.com/3kh0/3kh0-lite/main/projects/breakingthebank/breakingthebank.png",
+    "attribution": "Game artwork from 3kh0-lite project catalog; rights remain with game creators",
+    "matchedTitle": "Breaking the Bank",
+    "image": "assets/covers/curated/flash/henry-stickmin-breaking-the-bank-8e892c257751.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clstickminairship.html": {
+    "source": "https://www1.minijuegosgratis.com/v3/games/thumbnails/200051_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/infiltrating-the-airship",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Infiltrating the Airship",
+    "image": "assets/covers/curated/flash/henry-stickmin-infiltrating-the-airship-df8cefb085e9.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clstickminfleecomplex.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/212117_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/fleeing-the-complex",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Fleeing the Complex",
+    "image": "assets/covers/curated/flash/henry-stickmin-fleeing-the-complex-4637355db2e8.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clumstickmangameidkiforgor.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/6257_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/animator-vs-animation",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Animator vs. Animation",
+    "image": "assets/covers/curated/flash/animator-vs-animation-game-special-edition-fdff4c751ea8.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clstickminescapingprison.html": {
+    "source": "https://www3.minijuegosgratis.com/v3/games/thumbnails/14977_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/escaping-the-prison",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Escaping the Prison",
+    "image": "assets/covers/curated/flash/henry-stickmin-escaping-the-prison-0c309f8c1bb4.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clworldshardestgame4.html": {
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/105.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Stevie Critoph",
+    "matchedTitle": "The World's Hardest Game 4",
+    "image": "assets/covers/curated/flash/world-s-hardest-game-4-cd3682cd1071.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clworldshardestgame3.html": {
+    "source": "https://raw.githubusercontent.com/gn-math/covers/main/104.png",
+    "attribution": "Game artwork from GN Math cover catalog; creator: Stevie Critoph",
+    "matchedTitle": "The World's Hardest Game 3",
+    "image": "assets/covers/curated/flash/world-s-hardest-game-3-121d9be15dc5.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cltboidemo.html": {
+    "source": "https://www4.minijuegosgratis.com/v3/games/thumbnails/208354_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/the-binding-of-isaac",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "The Binding of Isaac",
+    "image": "assets/covers/curated/flash/binding-of-isaac-demo-ef3496e3120d.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clheliattack3.html": {
+    "source": "https://www1.minijuegosgratis.com/v3/games/thumbnails/4419_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/heli-attack-3",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Heli Attack 3",
+    "image": "assets/covers/curated/flash/heli-attack-3-213930e6bb14.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clsandsofthecoliseum.html": {
+    "source": "https://www3.minijuegosgratis.com/v3/games/thumbnails/21551_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/sands-of-the-coliseum",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Sands of the Coliseum",
+    "image": "assets/covers/curated/flash/sands-of-the-coliseum-662932f9914c.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clthedeepestsleep.html": {
+    "source": "https://www4.minijuegosgratis.com/v3/games/thumbnails/204705_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/the-deepest-sleep",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "The Deepest Sleep",
+    "image": "assets/covers/curated/flash/the-deepest-sleep-23d6202c056b.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/clsuperfighters.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/18523_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/superfighters",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Superfighters",
+    "image": "assets/covers/curated/flash/super-fighters-eebae877124d.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cltrollfacequest1.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/19641_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/trollface-quest",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Trollface Quest",
+    "image": "assets/covers/curated/flash/troll-face-quest-1-de4b2f8fdad5.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cltrollfacequest2.html": {
+    "source": "https://www4.minijuegosgratis.com/v3/games/thumbnails/22953_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/trollface-quest-2",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Trollface Quest 2",
+    "image": "assets/covers/curated/flash/troll-face-quest-2-5804fbb5b6bc.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cltrollfacequest3.html": {
+    "source": "https://www5.minijuegosgratis.com/v3/games/thumbnails/200764_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/trollface-quest-3",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Trollface Quest 3",
+    "image": "assets/covers/curated/flash/troll-face-quest-3-8e8de11ea4e0.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cltrollfacequest4.html": {
+    "source": "https://www2.minijuegosgratis.com/v3/games/thumbnails/202670_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/trollface-quest-4",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Trollface Quest 4",
+    "image": "assets/covers/curated/flash/troll-face-quest-4-3bda86ed0070.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  },
+  "library-source/flash/cltrollfacequest13.html": {
+    "source": "https://www1.minijuegosgratis.com/v3/games/thumbnails/209638_1.jpg",
+    "sourcePage": "https://www.miniplay.com/game/trollface-quest-13",
+    "attribution": "Original cover artwork from the exact game page on Miniplay; rights remain with its creators.",
+    "matchedTitle": "Trollface Quest 13",
+    "image": "assets/covers/curated/flash/troll-face-quest-13-42c2768c559e.webp",
+    "type": "source-artwork",
+    "quality": "verified-cover",
+    "review": "Exact title metadata and visual contact-sheet review"
+  }
+}

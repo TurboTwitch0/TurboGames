@@ -1,7 +1,7 @@
 {
   "items": 3099,
-  "source_artwork": 2734,
-  "illustrated_covers": 365,
+  "source_artwork": 2620,
+  "illustrated_covers": 479,
   "omitted_templates": [
     "library-source/emulated/000_Templates/ArcadeTemplate.html",
     "library-source/emulated/000_Templates/ArcadeTemplate2+parts.html",
