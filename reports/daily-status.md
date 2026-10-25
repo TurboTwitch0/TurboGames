@@ -1,6 +1,6 @@
 # Daily TurboGames refresh
 
-Checked at: 2026-10-24T20:59:31.817944+00:00
+Checked at: 2026-10-25T15:00:40.509264+00:00
 
 Result: **attention**.
 
@@ -11,7 +11,7 @@ Result: **attention**.
 | Required launcher resource problems | 0 |
 | Inline JavaScript syntax failures | 0 |
 | Fresh remote URL checks | 3550 / 3550 |
-| Remote URLs requiring attention | 117 |
+| Remote URLs requiring attention | 190 |
 | Remote URLs deferred or skipped | 0 |
 
 The existing catalog and local artwork mappings are rebuilt. No new games are imported.
@@ -22,33 +22,33 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 
 ## Remote issues (sample)
 
-- library-source/html5-games/clantipathy.html: http-error (HTTP 404)
-- library-source/html5-games/clorigamiking.html: http-error (HTTP 404)
-- library-source/html5-games/clfearassessment.html: http-error (HTTP 404)
-- library-source/html5-games/clcarcrash3.html: http-error (HTTP 404)
-- library-source/html5-games/cljourneydownhill.html: http-error (HTTP 403)
-- library-source/html5-games/cljourneydownhill.html: http-error (HTTP 403)
-- library-source/html5-games/clmakesureitsclosed.html: http-error (HTTP 404)
-- library-source/html5-games/clretrobowl.html: http-error (HTTP 404)
-- library-source/html5-games/clretrobowl.html: http-error (HTTP 404)
-- library-source/html5-games/clapesvshelium.html: http-error (HTTP 404)
-- library-source/html5-games/clbaldisbasics.html: http-error (HTTP 404)
-- library-source/html5-games/cljailbreakobbbobob.html: http-error (HTTP 400)
-- library-source/html5-games/clgrindcraft.html: http-error (HTTP 404)
-- library-source/flash/clthisistheonlylevel.html: http-error (HTTP 404)
-- library-source/html5-games/clmariovsluigi.html: http-error (HTTP 404)
-- library-source/html5-games/clgdbreeze.html: http-error (HTTP 404)
-- library-source/html5-games/clblockblast.html: http-error (HTTP 404)
-- library-source/html5-games/clomegalayers.html: http-error (HTTP 403)
-- library-source/html5-games/clAdventureCapatalist.html: http-error (HTTP 404)
-- library-source/html5-games/clclashofvikings.html: http-error (HTTP 403)
-- library-source/flash/clrocketjump.html: http-error (HTTP 404)
-- library-source/html5-games/clancientsins.html: http-error (HTTP 400)
-- library-source/html5-games/clsupersantakicker.html: http-error (HTTP 404)
-- library-source/html5-games/clkanyezone.html: connection-error
-- library-source/emulated/psx/clgta.html: connection-error
-- library-source/emulated/psx/clwipeout2097.html: connection-error
-- library-source/emulated/psx/clfinalfantasyVII.html: connection-error
-- library-source/emulated/psx/clfinalfantasyVIId2.html: connection-error
-- library-source/emulated/psx/clpersona2.html: connection-error
-- library-source/emulated/nds/clpokeblack.html: connection-error
+- library-source/emulated/bootleg/claction52nes.html: http-error (HTTP 403)
+- library-source/emulated/gba/clFleurdeLis.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokecrystaladvanceredux.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokeemeraldextendedcut.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clheartandsoul1.2.1.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokemoonemerald.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokecrystalclear.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokepureblue.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokewildindigo.html: connection-error
+- library-source/emulated/gba/clkirbysdreamland2.html: http-error (HTTP 403)
+- library-source/emulated/arcade/clStreetFighter2Arcade.html: http-error (HTTP 403)
+- library-source/emulated/arcade/clSegaSonicTheHedgehog.html: http-error (HTTP 403)
+- library-source/emulated/arcade/clXMenVSStreetFighter.html: http-error (HTTP 403)
+- library-source/emulated/nes/cl100in1nes.html: http-error (HTTP 403)
+- library-source/emulated/nes/clfamidashAlbum1.2.8.html: http-error (HTTP 403)
+- library-source/emulated/nes/cliceclimber.html: http-error (HTTP 403)
+- library-source/emulated/snes/cl100RoomsOfEnemies.html: http-error (HTTP 403)
+- library-source/emulated/segaMS/clhangonsms.html: http-error (HTTP 403)
+- library-source/emulated/segaMD/clshinobirevenge.html: http-error (HTTP 403)
+- library-source/emulated/arcade/cldonkeykong.html: http-error (HTTP 403)
+- library-source/emulated/arcade/clmariobrosarc.html: http-error (HTTP 403)
+- library-source/emulated/arcade/clxmenarc.html: http-error (HTTP 403)
+- library-source/html5-games/clcuttherope.html: http-error (HTTP 404)
+- library-source/html5-games/clbloodmoney.html: http-error (HTTP 403)
+- library-source/html5-games/clbaconmaydie.html: http-error (HTTP 404)
+- library-source/html5-games/cldemonbluff.html: http-error (HTTP 403)
+- library-source/html5-games/claviamastersbuggy.html: http-error (HTTP 403)
+- library-source/html5-games/clbearsus.html: http-error (HTTP 403)
+- library-source/html5-games/clcookieclickermodmenu.html: http-error (HTTP 404)
+- library-source/html5-games/clcookieclicker.html: http-error (HTTP 403)

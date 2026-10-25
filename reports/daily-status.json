@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24T20:59:31.817944+00:00",
+  "checked_at": "2026-10-25T15:00:40.509264+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,163 +13,163 @@
     "checked": 3550,
     "skipped": 0,
     "counts": {
-      "reachable": 3433,
-      "http-error": 103,
-      "connection-error": 14
+      "reachable": 3360,
+      "http-error": 174,
+      "connection-error": 16
     },
-    "issues": 117
+    "issues": 190
   },
   "errors": [],
   "remote_issue_examples": [
     {
-      "source": "library-source/html5-games/clantipathy.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clorigamiking.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clfearassessment.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcarcrash3.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/cljourneydownhill.html",
+      "source": "library-source/emulated/bootleg/claction52nes.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/cljourneydownhill.html",
+      "source": "library-source/emulated/gba/clFleurdeLis.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/clmakesureitsclosed.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clretrobowl.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clretrobowl.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clapesvshelium.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clbaldisbasics.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/cljailbreakobbbobob.html",
-      "result": "http-error",
-      "status": 400
-    },
-    {
-      "source": "library-source/html5-games/clgrindcraft.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/flash/clthisistheonlylevel.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmariovsluigi.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clgdbreeze.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clblockblast.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clomegalayers.html",
+      "source": "library-source/emulated/pokemon/clpokecrystaladvanceredux.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/clAdventureCapatalist.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clclashofvikings.html",
+      "source": "library-source/emulated/pokemon/clpokeemeraldextendedcut.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/flash/clrocketjump.html",
+      "source": "library-source/emulated/pokemon/clheartandsoul1.2.1.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokemoonemerald.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokecrystalclear.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokepureblue.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokewildindigo.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/gba/clkirbysdreamland2.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/arcade/clStreetFighter2Arcade.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/arcade/clSegaSonicTheHedgehog.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/arcade/clXMenVSStreetFighter.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/nes/cl100in1nes.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/nes/clfamidashAlbum1.2.8.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/nes/cliceclimber.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/snes/cl100RoomsOfEnemies.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/segaMS/clhangonsms.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/segaMD/clshinobirevenge.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/arcade/cldonkeykong.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/arcade/clmariobrosarc.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/arcade/clxmenarc.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clcuttherope.html",
       "result": "http-error",
       "status": 404
     },
     {
-      "source": "library-source/html5-games/clancientsins.html",
+      "source": "library-source/html5-games/clbloodmoney.html",
       "result": "http-error",
-      "status": 400
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clsupersantakicker.html",
+      "source": "library-source/html5-games/clbaconmaydie.html",
       "result": "http-error",
       "status": 404
     },
     {
-      "source": "library-source/html5-games/clkanyezone.html",
-      "result": "connection-error",
-      "status": null
+      "source": "library-source/html5-games/cldemonbluff.html",
+      "result": "http-error",
+      "status": 403
     },
     {
-      "source": "library-source/emulated/psx/clgta.html",
-      "result": "connection-error",
-      "status": null
+      "source": "library-source/html5-games/claviamastersbuggy.html",
+      "result": "http-error",
+      "status": 403
     },
     {
-      "source": "library-source/emulated/psx/clwipeout2097.html",
-      "result": "connection-error",
-      "status": null
+      "source": "library-source/html5-games/clbearsus.html",
+      "result": "http-error",
+      "status": 403
     },
     {
-      "source": "library-source/emulated/psx/clfinalfantasyVII.html",
-      "result": "connection-error",
-      "status": null
+      "source": "library-source/html5-games/clcookieclickermodmenu.html",
+      "result": "http-error",
+      "status": 404
     },
     {
-      "source": "library-source/emulated/psx/clfinalfantasyVIId2.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/psx/clpersona2.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/nds/clpokeblack.html",
-      "result": "connection-error",
-      "status": null
+      "source": "library-source/html5-games/clcookieclicker.html",
+      "result": "http-error",
+      "status": 403
     }
   ]
 }
