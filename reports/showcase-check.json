@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "Three named catalog games have one selected card, direct choices, and a live position status",
+    "Stage keyboard navigation, arrows, side cards, and named choices select games; other focused controls keep their keys; selection does not autoplay",
+    "Each selected Play opens its matching route and requests its actual source; each selected Save persists and appears in the real Saved library",
+    "Browse opens each selected game’s real category, where the matching catalog title is discoverable",
+    "Touch swipes inside the stage select one adjacent game; outside gestures do not select; vertical gestures retain native page scrolling",
+    "Featured layout fits 1440px, 390px, and 320px without document overflow; stage controls remain in view and have 44px touch targets",
+    "Reduced motion removes stage transitions, animations, and 3D effects while preserving selection; existing embeds hide the stage"
+  ],
+  "screenshots": [
+    "/tmp/turbogames-showcase-1440.png",
+    "/tmp/turbogames-showcase-390.png",
+    "/tmp/turbogames-showcase-320.png"
+  ],
+  "featured": [
+    {
+      "id": "orbit-breaker",
+      "title": "Orbit Breaker"
+    },
+    {
+      "id": "little-match",
+      "title": "Little Match"
+    },
+    {
+      "id": "library-source/html5-games/cl2048.html",
+      "title": "2048"
+    }
+  ]
+}

@@ -18,6 +18,7 @@ Original identity and local exports for the existing TurboGames product. Promise
 | `promo-portrait.svg` / `.png` | Portrait launch artwork; 1080 × 1350 |
 | `product-desktop.png` | Actual redesigned product capture; 1440 × 1040 |
 | `product-mobile.png` | Actual redesigned mobile collection capture (`?view=all`, scrolled to catalog); 390 × 844 |
+| `product-showcase-mobile.png` | Actual mobile featured game stage, scrolled into view; 390 × 844 |
 | `launch-copy.md` | Draft copy, image alt text and product claim limits |
 | `FONT-LICENSE.txt` | License for locally outlined DejaVu type glyphs |
 | `SHA256SUMS.txt` | SHA-256 checksums for exported files, excluding the archive and manifest itself |
@@ -40,9 +41,9 @@ From the repository root with its local development server running:
 python3 tools/export_brand_kit.py --capture-url http://127.0.0.1:8002/
 ```
 
-To refresh vectors and PNGs using existing screenshots, omit `--capture-url`. `--brand-only` exports the identity and style guide without capturing or using product screenshots.
+To refresh vectors and PNGs using existing screenshots, omit `--capture-url`. `--brand-only` exports the identity and style guide without capturing or using product screenshots. `--showcase-only` refreshes screenshots and campaign exports while preserving the existing identity, style guide and launch copy; it also writes `showcase-update.json` with changed export paths, public URLs and hashes.
 
-The generator uses local Python `fontTools`, Pillow, Playwright, installed DejaVu fonts, and `/usr/bin/chromium`. The capture waits for the local catalog and cover images, then records the desktop landing view and mobile All collection scrolled to the catalog, with no fictional controls or substituted game imagery. No paid service, hosted design vendor or external publishing is involved. The decorative frame and geometric stripes are artwork; the visible app interfaces are actual screenshots.
+The generator uses local Python `fontTools`, Pillow, Playwright, installed DejaVu fonts, and `/usr/bin/chromium`. The capture waits for the local catalog and cover images, then records the desktop landing view, mobile All collection scrolled to the catalog, and mobile featured game stage scrolled into view, with no fictional controls or substituted game imagery. No paid service, hosted design vendor or external publishing is involved. The decorative frame and geometric stripes are artwork; the visible app interfaces are actual screenshots.
 
 ## Rights and claims
 

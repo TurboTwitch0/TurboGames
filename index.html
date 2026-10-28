@@ -47,15 +47,21 @@
             <div class="hero-actions"><a class="primary-action" href="#catalog">Explore the collection <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><button id="hero-saved" class="secondary-action" type="button">Your saved picks <span aria-hidden="true">♡</span></button></div>
             <div class="collection-stats"><span><strong id="total-titles">3,099</strong> titles in the collection</span><span>Saved in this browser</span></div>
           </div>
-          <div class="hero-showcase">
-            <svg class="showcase-spark" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8v84M8 50h84M20 20l60 60M20 80l60-60"/></svg>
-            <div class="preview-window">
-              <div class="preview-bar"><span class="preview-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>ONE FROM THE COLLECTION</span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></div>
-              <div class="preview-stage"><img src="assets/brand/orbit-preview.webp" width="720" height="480" alt="Actual Orbit Breaker game canvas with colored targets, a ball, and a lime paddle" /><span class="preview-label">ARCADE / MOUSE OR TOUCH</span></div>
-              <div class="preview-details"><div><p class="eyebrow">A LITTLE BREAK, ON US</p><h2>Orbit Breaker</h2></div><button id="hero-save" class="hero-save" type="button" aria-label="Save Orbit Breaker" aria-pressed="false">♡</button></div>
-              <button id="hero-play" class="preview-play" type="button">Play Orbit Breaker <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="m6 3 11 7L6 17Z"/></svg></button>
+          <div class="hero-showcase dimensional-showcase">
+            <div class="showcase-heading"><span class="eyebrow">THE FEATURED ROTATION</span><span id="featured-status" role="status" aria-live="polite">1 of 3 — Orbit Breaker</span></div>
+            <div id="featured-stage" class="featured-stage preview-stage" role="region" tabindex="0" aria-label="Featured games" aria-roledescription="carousel" aria-describedby="featured-help">
+              <div class="stage-light" aria-hidden="true"></div><div class="stage-ring ring-back" aria-hidden="true"></div><div class="stage-ring ring-front" aria-hidden="true"></div>
+              <div id="featured-cards" class="featured-cards"></div>
+              <span class="stage-floor-label" aria-hidden="true">TURBO / SELECT YOUR NEXT PLAY</span>
             </div>
-            <p class="preview-caption"><span aria-hidden="true">↳</span> A real game from the library. Give it a go.</p>
+            <div class="featured-navigation">
+              <button id="featured-prev" class="stage-arrow" type="button" aria-label="Previous featured game" aria-controls="featured-cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+              <div id="featured-dots" class="featured-dots" aria-label="Choose a featured game"></div>
+              <button id="featured-next" class="stage-arrow" type="button" aria-label="Next featured game" aria-controls="featured-cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+            </div>
+            <div class="featured-details"><div class="featured-copy"><p id="featured-meta" class="eyebrow">ARCADE / MOUSE OR TOUCH</p><h2 id="featured-title">Orbit Breaker</h2><p id="featured-description">Steer the paddle. Break the orbiting stars.</p></div><button id="hero-save" class="hero-save" type="button" aria-label="Save Orbit Breaker" aria-pressed="false">♡</button></div>
+            <div class="featured-actions"><button id="hero-play" class="preview-play" type="button">Play Orbit Breaker <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="m6 3 11 7L6 17Z"/></svg></button><button id="featured-browse" class="featured-browse" type="button">Browse Games <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
+            <p id="featured-help" class="featured-help">Choose a card, use the arrows, or swipe. Keyboard: ← →, Home and End.</p>
           </div>
         </section>
         <section class="feature-ribbon" aria-label="Make the collection yours">

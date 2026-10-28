@@ -47,6 +47,14 @@
   let loadController;
   let manualSaveHint = false;
   let feedbackTimer;
+  const featuredGames = [
+    { id: "orbit-breaker", image: "assets/brand/orbit-preview.webp", meta: "ARCADE / MOUSE OR TOUCH", description: "Steer the paddle. Break the orbiting stars.", accent: "#d6ff64" },
+    { id: "little-match", meta: "PUZZLE / MATCH PAIRS", description: "Turn a few cards. Find the matching pairs.", accent: "#a9adff" },
+    { id: "library-source/html5-games/cl2048.html", meta: "PUZZLE / ARROW KEYS", description: "Slide, combine, and build your way to 2048.", accent: "#ffb58c" }
+  ].map(feature => ({ ...feature, item: byId.get(feature.id) })).filter(feature => feature.item && feature.item.sourceStatus !== "unavailable");
+  let featuredIndex = 0;
+  const featuredCards = [];
+  const featuredDots = [];
 
   const coverHue = text => [...text].reduce((value, char) => (value * 31 + char.charCodeAt(0)) % 360, 17);
   const localSource = item => item.source.split("/").map(encodeURIComponent).join("/");
@@ -124,6 +132,101 @@
       if (button.dataset.saveId === item.id) updateSaveButton(button, item);
     });
     tellAction(saved ? `${item.title} saved${durable ? " to your shortlist" : " for this tab"}.` : `${item.title} removed from Saved.`);
+  }
+  function selectFeatured(index) {
+    if (!featuredGames.length) return;
+    featuredIndex = (index + featuredGames.length) % featuredGames.length;
+    const selected = featuredGames[featuredIndex];
+    featuredCards.forEach((card, cardIndex) => {
+      const distance = (cardIndex - featuredIndex + featuredGames.length) % featuredGames.length;
+      card.dataset.position = distance === 0 ? "current" : distance === 1 ? "next" : "previous";
+      card.setAttribute("aria-label", `${distance === 0 ? "Play" : "Feature"} ${featuredGames[cardIndex].item.title}`);
+      featuredDots[cardIndex].setAttribute("aria-pressed", String(distance === 0));
+    });
+    document.querySelector("#featured-title").textContent = selected.item.title;
+    document.querySelector("#featured-meta").textContent = selected.meta;
+    document.querySelector("#featured-description").textContent = selected.description;
+    document.querySelector("#featured-status").textContent = `${featuredIndex + 1} of ${featuredGames.length} — ${selected.item.title}`;
+    document.querySelector(".hero-showcase").style.setProperty("--stage-accent", selected.accent);
+    const play = document.querySelector("#hero-play");
+    play.firstChild.textContent = `Play ${selected.item.title} `;
+    play.setAttribute("aria-label", `Play ${selected.item.title}`);
+    updateSaveButton(document.querySelector("#hero-save"), selected.item);
+    const browse = document.querySelector("#featured-browse");
+    browse.firstChild.textContent = `Browse ${categoryNames[selected.item.category]} `;
+  }
+  function initializeShowcase() {
+    const stage = document.querySelector("#featured-stage");
+    const cards = document.querySelector("#featured-cards");
+    const dots = document.querySelector("#featured-dots");
+    featuredGames.forEach((feature, index) => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "featured-card";
+      card.dataset.featureId = feature.id;
+      const art = document.createElement("span");
+      art.className = "featured-art";
+      const image = document.createElement("img");
+      image.src = feature.image || feature.item.image;
+      image.alt = index === 0 ? "Actual Orbit Breaker game canvas with colored targets, a ball, and a lime paddle" : `${feature.item.title} artwork from the existing TurboGames catalog`;
+      image.width = 400;
+      image.height = 400;
+      image.decoding = "async";
+      art.append(image);
+      const caption = document.createElement("span");
+      caption.className = "featured-card-caption";
+      const number = document.createElement("span");
+      number.className = "featured-card-number";
+      number.textContent = `TURBO / 0${index + 1}`;
+      const title = document.createElement("strong");
+      title.textContent = feature.item.title;
+      caption.append(number, title);
+      card.append(art, caption);
+      card.addEventListener("click", () => index === featuredIndex ? openItem(feature.item) : selectFeatured(index));
+      cards.append(card);
+      featuredCards.push(card);
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Show ${feature.item.title}`);
+      dot.setAttribute("aria-controls", "featured-cards");
+      dot.textContent = `0${index + 1}`;
+      dot.addEventListener("click", () => selectFeatured(index));
+      dots.append(dot);
+      featuredDots.push(dot);
+    });
+    document.querySelector("#featured-prev").addEventListener("click", () => selectFeatured(featuredIndex - 1));
+    document.querySelector("#featured-next").addEventListener("click", () => selectFeatured(featuredIndex + 1));
+    stage.addEventListener("keydown", event => {
+      let next;
+      if (event.key === "ArrowRight") next = featuredIndex + 1;
+      else if (event.key === "ArrowLeft") next = featuredIndex - 1;
+      else if (event.key === "Home") next = 0;
+      else if (event.key === "End") next = featuredGames.length - 1;
+      else if (event.key === "Enter" && event.target === stage) { event.preventDefault(); openItem(featuredGames[featuredIndex].item); return; }
+      if (next === undefined) return;
+      event.preventDefault();
+      selectFeatured(next);
+      if (event.target !== stage) featuredCards[featuredIndex].focus({ preventScroll: true });
+    });
+    let touchOrigin;
+    let suppressClickUntil = 0;
+    stage.addEventListener("pointerdown", event => {
+      if (event.pointerType === "touch" || event.pointerType === "pen") touchOrigin = { x: event.clientX, y: event.clientY };
+    });
+    stage.addEventListener("pointercancel", () => { touchOrigin = undefined; });
+    stage.addEventListener("pointerup", event => {
+      if (!touchOrigin) return;
+      const dx = event.clientX - touchOrigin.x;
+      const dy = event.clientY - touchOrigin.y;
+      touchOrigin = undefined;
+      if (Math.abs(dx) < 44 || Math.abs(dx) < Math.abs(dy) * 1.4) return;
+      suppressClickUntil = Date.now() + 400;
+      selectFeatured(featuredIndex + (dx < 0 ? 1 : -1));
+    });
+    stage.addEventListener("click", event => {
+      if (Date.now() < suppressClickUntil) { event.preventDefault(); event.stopImmediatePropagation(); }
+    }, true);
+    selectFeatured(0);
   }
   function updateLibraryCounts() {
     document.querySelector("#saved-count").textContent = favorites.size;
@@ -379,12 +482,16 @@
     document.querySelector("#catalog").scrollIntoView({ block: "start" });
     tabs.find(tab => tab.dataset.category === "saved").focus({ preventScroll: true });
   });
-  const heroItem = byId.get("orbit-breaker");
-  if (heroItem) {
-    const heroSave = document.querySelector("#hero-save");
-    updateSaveButton(heroSave, heroItem);
-    heroSave.addEventListener("click", () => toggleFavorite(heroItem));
-    document.querySelector("#hero-play").addEventListener("click", () => openItem(heroItem));
+  initializeShowcase();
+  if (featuredGames.length) {
+    document.querySelector("#hero-save").addEventListener("click", () => toggleFavorite(featuredGames[featuredIndex].item));
+    document.querySelector("#hero-play").addEventListener("click", () => openItem(featuredGames[featuredIndex].item));
+    document.querySelector("#featured-browse").addEventListener("click", () => {
+      const selectedCategory = featuredGames[featuredIndex].item.category;
+      resetCollection(selectedCategory);
+      document.querySelector("#catalog").scrollIntoView({ block: "start" });
+      tabs.find(tab => tab.dataset.category === selectedCategory)?.focus({ preventScroll: true });
+    });
   }
   document.querySelectorAll("a.brand").forEach(link => link.addEventListener("click", event => {
     event.preventDefault();

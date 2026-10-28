@@ -12,10 +12,13 @@ import argparse
 import base64
 import hashlib
 import html
+import io
 import json
 import mimetypes
 from pathlib import Path
 import shutil
+import subprocess
+import tarfile
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 import zipfile
 from xml.etree import ElementTree
@@ -158,7 +161,9 @@ def build_brand_sheet():
 
 def build_campaign():
     desktop = OUT / "product-desktop.png"
-    mobile = OUT / "product-mobile.png"
+    mobile = OUT / "product-showcase-mobile.png"
+    if not mobile.exists():
+        mobile = OUT / "product-mobile.png"
     if not desktop.exists() or not mobile.exists():
         return []
     # The screenshots below are unretouched captures of the actual local product.
@@ -172,10 +177,10 @@ def build_campaign():
     body += rect(48, 482, 395, 58, LIME, 18)
     body += text(74, 518, 17, "BROWSE / SEARCH / SAVE", INK, "mono", .3)
     body += text(51, 590, 12, "SAVED & RECENT STAY IN THIS BROWSER", MUTED, "mono", .5)
-    body += '<g transform="rotate(-5 955 325)">'
-    body += rect(584, 81, 766, 560, "#000000", 28)
-    body += rect(577, 69, 766, 560, "#2C333B", 28)
-    body += photo(desktop, 585, 77, 750, 544, 22, "social-desktop")
+    body += '<g transform="rotate(-5 856 320)">'
+    body += rect(543, 98, 640, 470, "#000000", 28)
+    body += rect(536, 86, 640, 470, "#2C333B", 28)
+    body += photo(desktop, 544, 94, 624, 454, 22, "social-desktop")
     body += '</g>'
     write("social-landscape.svg", svg(1200, 630, "TurboGames — Find your next play", body, "Landscape launch image with the actual redesigned TurboGames desktop interface. Browse 3,099 titles; Saved and Recent remain in this browser."))
 
@@ -248,6 +253,7 @@ Original identity and local exports for the existing TurboGames product. Promise
 | `promo-portrait.svg` / `.png` | Portrait launch artwork; 1080 × 1350 |
 | `product-desktop.png` | Actual redesigned product capture; 1440 × 1040 |
 | `product-mobile.png` | Actual redesigned mobile collection capture (`?view=all`, scrolled to catalog); 390 × 844 |
+| `product-showcase-mobile.png` | Actual mobile featured game stage, scrolled into view; 390 × 844 |
 | `launch-copy.md` | Draft copy, image alt text and product claim limits |
 | `FONT-LICENSE.txt` | License for locally outlined DejaVu type glyphs |
 | `SHA256SUMS.txt` | SHA-256 checksums for exported files, excluding the archive and manifest itself |
@@ -270,9 +276,9 @@ From the repository root with its local development server running:
 python3 tools/export_brand_kit.py --capture-url http://127.0.0.1:8002/
 ```
 
-To refresh vectors and PNGs using existing screenshots, omit `--capture-url`. `--brand-only` exports the identity and style guide without capturing or using product screenshots.
+To refresh vectors and PNGs using existing screenshots, omit `--capture-url`. `--brand-only` exports the identity and style guide without capturing or using product screenshots. `--showcase-only` refreshes screenshots and campaign exports while preserving the existing identity, style guide and launch copy; it also writes `showcase-update.json` with changed export paths, public URLs and hashes.
 
-The generator uses local Python `fontTools`, Pillow, Playwright, installed DejaVu fonts, and `/usr/bin/chromium`. The capture waits for the local catalog and cover images, then records the desktop landing view and mobile All collection scrolled to the catalog, with no fictional controls or substituted game imagery. No paid service, hosted design vendor or external publishing is involved. The decorative frame and geometric stripes are artwork; the visible app interfaces are actual screenshots.
+The generator uses local Python `fontTools`, Pillow, Playwright, installed DejaVu fonts, and `/usr/bin/chromium`. The capture waits for the local catalog and cover images, then records the desktop landing view, mobile All collection scrolled to the catalog, and mobile featured game stage scrolled into view, with no fictional controls or substituted game imagery. No paid service, hosted design vendor or external publishing is involved. The decorative frame and geometric stripes are artwork; the visible app interfaces are actual screenshots.
 
 ## Rights and claims
 
@@ -290,24 +296,84 @@ def capture(url):
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
-        for name, width, height, mobile in [("desktop", 1440, 1040, False), ("mobile", 390, 844, True)]:
-            context = browser.new_context(viewport={"width": width, "height": height}, device_scale_factor=1, is_mobile=mobile, has_touch=mobile, reduced_motion="reduce")
+        for name, width, height, mobile in [("desktop", 1440, 1040, False), ("mobile", 390, 844, True), ("showcase-mobile", 390, 844, True)]:
+            context = browser.new_context(viewport={"width": width, "height": height}, device_scale_factor=1, is_mobile=mobile, has_touch=mobile, reduced_motion="no-preference")
             page = context.new_page()
             target_url = url
-            if mobile:
+            if name == "mobile":
                 parts = urlsplit(url)
                 query = dict(parse_qsl(parts.query))
                 query["view"] = "all"
                 target_url = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), "catalog"))
             page.goto(target_url, wait_until="domcontentloaded")
             page.wait_for_selector("#game-grid .game-card")
-            if mobile:
+            if name == "mobile":
                 page.evaluate('document.querySelector("#catalog").scrollIntoView({block:"start", behavior:"instant"})')
                 page.evaluate("() => new Promise(requestAnimationFrame)")
+            elif name == "showcase-mobile":
+                page.locator(".hero-showcase").wait_for(state="visible")
+                page.evaluate('window.scrollTo({top: Math.max(0, document.querySelector(".hero-showcase").getBoundingClientRect().top + window.scrollY - 120), behavior:"instant"})')
+                page.evaluate("() => new Promise(requestAnimationFrame)")
             page.evaluate("""async () => { await document.fonts.ready; await Promise.all([...document.images].filter(i => i.getBoundingClientRect().top < innerHeight).map(i => i.complete ? Promise.resolve() : new Promise(r => { i.onload=r; i.onerror=r; }))); }""")
+            page.wait_for_timeout(750)
             page.screenshot(path=str(OUT / f"product-{name}.png"), animations="disabled")
             context.close()
         browser.close()
+
+
+def update_showcase_readme():
+    """Add capture instructions without rewriting protected identity or copy files."""
+    path = OUT / "README.md"
+    content = path.read_text(encoding="utf-8")
+    mobile_row = "| `product-mobile.png` | Actual redesigned mobile collection capture (`?view=all`, scrolled to catalog); 390 × 844 |"
+    showcase_row = "| `product-showcase-mobile.png` | Actual mobile featured game stage, scrolled into view; 390 × 844 |"
+    if showcase_row not in content:
+        content = content.replace(mobile_row, mobile_row + "\n" + showcase_row)
+    old = "`--brand-only` exports the identity and style guide without capturing or using product screenshots."
+    addition = " `--showcase-only` refreshes screenshots and campaign exports while preserving the existing identity, style guide and launch copy; it also writes `showcase-update.json` with changed export paths, public URLs and hashes."
+    if addition.strip() not in content:
+        content = content.replace(old, old + addition)
+    content = content.replace("then records the desktop landing view and mobile All collection scrolled to the catalog,", "then records the desktop landing view, mobile All collection scrolled to the catalog, and mobile featured game stage scrolled into view,")
+    path.write_text(content, encoding="utf-8")
+
+
+def export_hashes(baseline_commit=None):
+    if baseline_commit:
+        packed = subprocess.run(["git", "archive", "--format=tar", baseline_commit, "outputs/turbogames-brand-kit"], cwd=ROOT, check=True, stdout=subprocess.PIPE).stdout
+        with tarfile.open(fileobj=io.BytesIO(packed)) as archive:
+            return {Path(item.name).name: hashlib.sha256(archive.extractfile(item).read()).hexdigest() for item in archive.getmembers() if item.isfile() and Path(item.name).name != "showcase-update.json"}
+    return {path.name: hashlib.sha256(path.read_bytes()).hexdigest() for path in OUT.iterdir() if path.is_file() and path.name != "showcase-update.json"}
+
+
+def write_showcase_update(before, baseline_commit):
+    """Record only changed exports; omit this JSON from the kit to avoid hash cycles."""
+    from PIL import Image
+    base_url = "https://turbogames.vercel.app/outputs/turbogames-brand-kit/"
+    entries = []
+    for path in sorted(OUT.iterdir()):
+        if not path.is_file() or path.name == "showcase-update.json":
+            continue
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        if before.get(path.name) == digest:
+            continue
+        item = {
+            "name": path.name,
+            "committed_path": str(path.relative_to(ROOT)),
+            "path": "/" + str(path.relative_to(ROOT)),
+            "url": base_url + path.name,
+            "type": mimetypes.guess_type(path.name)[0] or "application/octet-stream",
+            "bytes": path.stat().st_size,
+            "sha256": digest,
+        }
+        if path.suffix == ".png":
+            with Image.open(path) as image:
+                item["width"], item["height"] = image.size
+        elif path.suffix == ".svg":
+            element = ElementTree.parse(path).getroot()
+            item["width"] = int(element.get("width"))
+            item["height"] = int(element.get("height"))
+        entries.append(item)
+    write("showcase-update.json", json.dumps({"version": 1, "baseline_commit": baseline_commit, "base_url": base_url, "assets": entries}, indent=2) + "\n")
 
 
 def render(names):
@@ -362,7 +428,24 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--capture-url", help="Local redesigned app to capture before exporting campaign art")
     parser.add_argument("--brand-only", action="store_true", help="Export only original identity and visual guide")
+    parser.add_argument("--showcase-only", action="store_true", help="Refresh screenshot and campaign exports, preserving identity, brand sheet and launch copy")
+    parser.add_argument("--baseline-commit", help="Published commit used as the baseline for showcase-update.json")
     args = parser.parse_args()
+    if args.brand_only and args.showcase_only:
+        parser.error("--brand-only and --showcase-only cannot be combined")
+    if args.showcase_only:
+        before = export_hashes(args.baseline_commit)
+        if args.capture_url:
+            capture(args.capture_url)
+        names = build_campaign()
+        if len(names) != 2:
+            parser.error("Showcase exports require existing product screenshots or --capture-url")
+        update_showcase_readme()
+        render(names)
+        build_archive()
+        write_showcase_update(before, args.baseline_commit)
+        print(f"Refreshed {', '.join(names)} and screenshot exports in {OUT}")
+        return
     build_identity()
     build_brand_sheet()
     names = ["turbogames-mark", "turbogames-mark-dark", "turbogames-mark-mono", "logo-light", "logo-dark", "brand-sheet"]
