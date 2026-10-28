@@ -2,7 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const { chromium } = require('playwright');
+const { chromium, request } = require('playwright');
 
 const site = process.env.TURBO_TEST_URL || 'http://127.0.0.1:8002/';
 const reportPath = process.env.TURBO_REPORT_PATH || path.join(__dirname, '../reports/discovery-check.json');
@@ -24,8 +24,23 @@ async function run() {
   });
   const checks = [];
   const report = { passed: false, site, checks };
+  let api;
   try {
     const page = await browser.newPage({ viewport: { width: 1200, height: 850 } });
+    if (!['127.0.0.1', 'localhost'].includes(new URL(site).hostname)) {
+      // Use the environment's trusted HTTP client for hosted checks, matching
+      // browser-check.cjs; keep proxy routing and TLS verification enabled.
+      const proxy = process.env.HTTPS_PROXY || process.env.HTTP_PROXY;
+      api = await request.newContext({ ...(proxy ? { proxy: { server: proxy } } : {}), timeout: 25000 });
+      await page.context().route(/^https?:\/\//, async route => {
+        const incoming = route.request();
+        try {
+          const response = await api.fetch(incoming.url(), { method: incoming.method(), headers: incoming.headers(), ...(incoming.postDataBuffer() ? { data: incoming.postDataBuffer() } : {}), failOnStatusCode: false });
+          await route.fulfill({ response });
+          await response.dispose();
+        } catch { await route.abort().catch(() => {}); }
+      });
+    }
     const pageErrors = [];
     page.on('pageerror', error => pageErrors.push(error.message));
     const tab = category => page.locator('.tab[data-category="' + category + '"]');
@@ -235,6 +250,7 @@ async function run() {
     fs.mkdirSync(path.dirname(reportPath), { recursive: true });
     fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
     await browser.close();
+    await api?.dispose();
   }
 }
 
