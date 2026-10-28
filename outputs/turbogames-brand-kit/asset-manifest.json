@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "base_url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/",
+  "assets": [
+    {
+      "name": "FONT-LICENSE.txt",
+      "path": "/outputs/turbogames-brand-kit/FONT-LICENSE.txt",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/FONT-LICENSE.txt",
+      "type": "text/plain",
+      "bytes": 2456,
+      "sha256": "957782547b3ab3b552a170f0b6342a7feee1a91ca4f8522e08ee9b27e00b48ea"
+    },
+    {
+      "name": "README.md",
+      "path": "/outputs/turbogames-brand-kit/README.md",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/README.md",
+      "type": "text/markdown",
+      "bytes": 4105,
+      "sha256": "f55d6eccc3ce5059927ed40caa15a6034c639fef66bd4da42ed0230daabf5d80"
+    },
+    {
+      "name": "brand-sheet.png",
+      "path": "/outputs/turbogames-brand-kit/brand-sheet.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/brand-sheet.png",
+      "type": "image/png",
+      "bytes": 205963,
+      "sha256": "ab6487a36d89c518daa7bba1b8f820a962a004b9c6a34f3a66a88be56a34edde",
+      "width": 1600,
+      "height": 1800
+    },
+    {
+      "name": "brand-sheet.svg",
+      "path": "/outputs/turbogames-brand-kit/brand-sheet.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/brand-sheet.svg",
+      "type": "image/svg+xml",
+      "bytes": 212281,
+      "sha256": "39e9c4889b5ddae1f0682a0bcc5da95e7391fd018f898cb4d9be58aabce7ed13",
+      "width": 1600,
+      "height": 1800
+    },
+    {
+      "name": "launch-copy.md",
+      "path": "/outputs/turbogames-brand-kit/launch-copy.md",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/launch-copy.md",
+      "type": "text/markdown",
+      "bytes": 1862,
+      "sha256": "5ea1a4a3954823044e81e14dcfe390bc15831a05a2e3bebf1b8930cdd8443cbd"
+    },
+    {
+      "name": "logo-dark.png",
+      "path": "/outputs/turbogames-brand-kit/logo-dark.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/logo-dark.png",
+      "type": "image/png",
+      "bytes": 28325,
+      "sha256": "17db2a58f613e98b77542bf6c4fdb9c2c50ccaaec4b1ed18bd5313610ee5b9b8",
+      "width": 1528,
+      "height": 288
+    },
+    {
+      "name": "logo-dark.svg",
+      "path": "/outputs/turbogames-brand-kit/logo-dark.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/logo-dark.svg",
+      "type": "image/svg+xml",
+      "bytes": 4158,
+      "sha256": "146373bdbb47bd0a686979aaf057a1b168991309ab2fbc2fd15a3714d45bd3dd",
+      "width": 382,
+      "height": 72
+    },
+    {
+      "name": "logo-light.png",
+      "path": "/outputs/turbogames-brand-kit/logo-light.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/logo-light.png",
+      "type": "image/png",
+      "bytes": 28421,
+      "sha256": "0cc42afcef335b77c688944dfe79c8e7fd91386b536861fd95871c09a3dad79f",
+      "width": 1528,
+      "height": 288
+    },
+    {
+      "name": "logo-light.svg",
+      "path": "/outputs/turbogames-brand-kit/logo-light.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/logo-light.svg",
+      "type": "image/svg+xml",
+      "bytes": 4159,
+      "sha256": "ff62a7fbb8babcb5373574f3217276bc6939f6470d04ff410c07266efadf870a",
+      "width": 382,
+      "height": 72
+    },
+    {
+      "name": "product-desktop.png",
+      "path": "/outputs/turbogames-brand-kit/product-desktop.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/product-desktop.png",
+      "type": "image/png",
+      "bytes": 208332,
+      "sha256": "cf0b2f0ce796173e8e27f6128d9695b9d7471c0d8a4311cf2bf35ec45d2b1dfe",
+      "width": 1440,
+      "height": 1040
+    },
+    {
+      "name": "product-mobile.png",
+      "path": "/outputs/turbogames-brand-kit/product-mobile.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/product-mobile.png",
+      "type": "image/png",
+      "bytes": 108718,
+      "sha256": "fd5974c3e5d519d7831b14a9a2140272146cc3bb1cb21e876338ae521d126a4d",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "promo-portrait.png",
+      "path": "/outputs/turbogames-brand-kit/promo-portrait.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/promo-portrait.png",
+      "type": "image/png",
+      "bytes": 231158,
+      "sha256": "e89a2da15c08142a5d57ca5f280e1638a997a063acdedf0d57609aa36fa278c7",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "name": "promo-portrait.svg",
+      "path": "/outputs/turbogames-brand-kit/promo-portrait.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/promo-portrait.svg",
+      "type": "image/svg+xml",
+      "bytes": 469006,
+      "sha256": "bcf43aadad2fbde1fde849e8209a8d0ffcf8ce6bf392aef6c45508ab792fe5a3",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "name": "social-landscape.png",
+      "path": "/outputs/turbogames-brand-kit/social-landscape.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/social-landscape.png",
+      "type": "image/png",
+      "bytes": 145470,
+      "sha256": "833ef1941aeb9a7d0174fc2f55deddd6d9ba715ad12b1c8e428b8b3008fd46c9",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "name": "social-landscape.svg",
+      "path": "/outputs/turbogames-brand-kit/social-landscape.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/social-landscape.svg",
+      "type": "image/svg+xml",
+      "bytes": 310347,
+      "sha256": "7fd2d5302db344f71cd62df4d1dde142c5c177e274f6b98673a322bfea32ee20",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "name": "turbogames-mark-dark.png",
+      "path": "/outputs/turbogames-brand-kit/turbogames-mark-dark.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/turbogames-mark-dark.png",
+      "type": "image/png",
+      "bytes": 12353,
+      "sha256": "6ea0ad7c65c1acc940925a51b29afe3cb65b5f0f7ed5bd2415461ff12a289b53",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "turbogames-mark-dark.svg",
+      "path": "/outputs/turbogames-brand-kit/turbogames-mark-dark.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/turbogames-mark-dark.svg",
+      "type": "image/svg+xml",
+      "bytes": 436,
+      "sha256": "2ac8debc70d5d46d2e476f4d9e622142891950a87048038502e03a9bd409263f",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "name": "turbogames-mark-mono.png",
+      "path": "/outputs/turbogames-brand-kit/turbogames-mark-mono.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/turbogames-mark-mono.png",
+      "type": "image/png",
+      "bytes": 12232,
+      "sha256": "5f29166751075ddae907182b21d2346a7d7c3b52724040efce831c75491e1215",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "turbogames-mark-mono.svg",
+      "path": "/outputs/turbogames-brand-kit/turbogames-mark-mono.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/turbogames-mark-mono.svg",
+      "type": "image/svg+xml",
+      "bytes": 442,
+      "sha256": "eb3bbde9c505405253819e986bb67c262a0ef2682791be55b2e6cec5759bcc0c",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "name": "turbogames-mark.png",
+      "path": "/outputs/turbogames-brand-kit/turbogames-mark.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/turbogames-mark.png",
+      "type": "image/png",
+      "bytes": 12054,
+      "sha256": "fc69545675af0fac8ee0274896b1381e6d852d35ddce0aca034fde618d9941bb",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "turbogames-mark.svg",
+      "path": "/outputs/turbogames-brand-kit/turbogames-mark.svg",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/turbogames-mark.svg",
+      "type": "image/svg+xml",
+      "bytes": 490,
+      "sha256": "be4d2e58742bfa929c666077ba65c85619f3a5b2be3ce884e9ddc7799a1a836e",
+      "width": 96,
+      "height": 96
+    }
+  ]
+}

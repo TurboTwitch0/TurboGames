@@ -35,5 +35,15 @@
 /styles.css
   Cache-Control: public, max-age=0, must-revalidate
 
+/brand.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/embed-guide.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/outputs/turbogames-brand-kit/TurboGames-brand-kit.zip
+  Content-Disposition: attachment; filename="TurboGames-brand-kit.zip"
+  Cache-Control: public, max-age=0, must-revalidate
+
 /google-sites.html
   Cache-Control: public, max-age=0, must-revalidate

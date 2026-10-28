@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "Slash focuses search with visible feedback; Tab and Enter launch Orbit Breaker; Escape closes the player",
+    "The loading treatment stays visible during a held local source request and hides when the game is ready",
+    "Hero Save persists the real favorite; Saved opens the real collection; card and hero removal stay synchronized",
+    "A failed source replaces loading with useful recovery; Retry restores loading and opens the original game",
+    "Rendered images have alt text or decorative context; the SVG logo and original Orbit preview load",
+    "Reduced motion disables decorative animations and transitions",
+    "Home, Saved, and player fit 1440px, 390px, and 320px viewports without document overflow"
+  ],
+  "screenshots": [
+    "/tmp/turbogames-brand-1440.png",
+    "/tmp/turbogames-brand-390.png",
+    "/tmp/turbogames-brand-320.png"
+  ]
+}

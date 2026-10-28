@@ -18,6 +18,8 @@
   const hideUnavailable = document.querySelector("#hide-unavailable");
   const libraryNote = document.querySelector("#library-note");
   const recovery = document.querySelector("#player-recovery");
+  const loading = document.querySelector("#player-loading");
+  const feedback = document.querySelector("#action-feedback");
   const categoryNames = { popular: "Popular", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
   const parameters = new URLSearchParams(location.search);
   const embedded = parameters.get("embed") === "1" || window.self !== window.top;
@@ -44,6 +46,7 @@
   let pendingSave;
   let loadController;
   let manualSaveHint = false;
+  let feedbackTimer;
 
   const coverHue = text => [...text].reduce((value, char) => (value * 31 + char.charCodeAt(0)) % 360, 17);
   const localSource = item => item.source.split("/").map(encodeURIComponent).join("/");
@@ -94,8 +97,33 @@
   window.addEventListener("pagehide", flushSave);
 
   function persistLibrary(key, value) {
-    try { localStorage.setItem(`turbogames:${key}`, JSON.stringify(value)); }
-    catch { libraryNote.textContent = "Browser storage is unavailable. Your library will last for this tab."; }
+    try { localStorage.setItem(`turbogames:${key}`, JSON.stringify(value)); return true; }
+    catch { libraryNote.textContent = "Browser storage is unavailable. Your library will last for this tab."; return false; }
+  }
+  function tellAction(message) {
+    clearTimeout(feedbackTimer);
+    feedback.textContent = message;
+    feedback.hidden = false;
+    feedbackTimer = setTimeout(() => { feedback.hidden = true; }, 2600);
+  }
+  function updateSaveButton(button, item) {
+    const saved = favorites.has(item.id);
+    button.dataset.saveId = item.id;
+    button.textContent = saved ? "♥" : "♡";
+    button.setAttribute("aria-pressed", String(saved));
+    button.setAttribute("aria-label", `${saved ? "Unsave" : "Save"} ${item.title}`);
+    button.title = saved ? "Remove from Saved" : "Save for later";
+  }
+  function toggleFavorite(item) {
+    const saved = !favorites.has(item.id);
+    saved ? favorites.add(item.id) : favorites.delete(item.id);
+    const durable = persistLibrary("favorites", [...favorites]);
+    updateLibraryCounts();
+    if (category === "saved") render();
+    document.querySelectorAll("[data-save-id]").forEach(button => {
+      if (button.dataset.saveId === item.id) updateSaveButton(button, item);
+    });
+    tellAction(saved ? `${item.title} saved${durable ? " to your shortlist" : " for this tab"}.` : `${item.title} removed from Saved.`);
   }
   function updateLibraryCounts() {
     document.querySelector("#saved-count").textContent = favorites.size;
@@ -177,7 +205,7 @@
     const play = document.createElement("span");
     play.className = "card-play";
     play.setAttribute("aria-hidden", "true");
-    play.textContent = "▶";
+    play.innerHTML = '<svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="m6 3 11 7L6 17Z"/></svg>';
     const badge = document.createElement("span");
     badge.className = "card-category";
     badge.textContent = item.sourceStatus === "unavailable" ? "Needs source" : item.category;
@@ -192,21 +220,8 @@
     const save = document.createElement("button");
     save.type = "button";
     save.className = "save-game";
-    const updateSave = () => {
-      const saved = favorites.has(item.id);
-      save.textContent = saved ? "♥" : "♡";
-      save.setAttribute("aria-pressed", String(saved));
-      save.setAttribute("aria-label", `${saved ? "Unsave" : "Save"} ${item.title}`);
-      save.title = saved ? "Remove from Saved" : "Save for later";
-    };
-    updateSave();
-    save.addEventListener("click", () => {
-      favorites.has(item.id) ? favorites.delete(item.id) : favorites.add(item.id);
-      persistLibrary("favorites", [...favorites]);
-      updateLibraryCounts();
-      if (category === "saved") render();
-      else updateSave();
-    });
+    updateSaveButton(save, item);
+    save.addEventListener("click", () => toggleFavorite(item));
     card.append(button, save);
     return card;
   }
@@ -225,6 +240,7 @@
     grid.replaceChildren();
     count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}`;
     const noLibrary = !search.value.trim() && (category === "saved" && favorites.size === 0 || category === "recent" && recent.length === 0);
+    document.querySelector("#empty-icon").textContent = noLibrary ? category === "saved" ? "♡" : "↶" : "⌕";
     document.querySelector("#empty-title").textContent = noLibrary ? category === "saved" ? "Your favorites, all together" : "Pick up where you left off" : "No matches yet";
     document.querySelector("#empty-description").textContent = noLibrary ? category === "saved" ? "Tap the heart on any title to save it here in this browser." : "Open a game and it will appear here for a quick return." : "Try fewer words, another category, or reset your filters.";
     document.querySelector("#clear-search").textContent = noLibrary ? "Explore all titles" : "Reset filters";
@@ -252,12 +268,14 @@
     frame = nextFrame;
     frame.title = item.title;
     recovery.hidden = true;
+    loading.hidden = false;
+    loading.querySelector("h3").textContent = `Opening ${item.title}…`;
     if (item.sourceStatus === "unavailable") {
       playerStatus.textContent = item.sourceIssue || "This game needs a working source before it can be played.";
       showRecovery(item.sourceIssue || "The original game files are unavailable. Choose another title from the collection.", true);
       return;
     }
-    playerStatus.textContent = `Loading ${item.title}…`;
+    playerStatus.textContent = "";
     try {
       const source = new URL(localSource(item), document.baseURI);
       const response = await fetch(source, { signal: loadController.signal });
@@ -283,6 +301,7 @@
     }
   }
   function showRecovery(message, missing = false) {
+    loading.hidden = true;
     playerStatus.textContent = "";
     document.querySelector("#recovery-title").textContent = missing ? "This title needs a new source" : "This game couldn't load";
     document.querySelector("#recovery-description").textContent = message;
@@ -316,7 +335,10 @@
     }
   }
   function onFrameLoad(event) {
-    if (event.currentTarget === frame && activeItem && frame.hasAttribute("srcdoc")) playerStatus.textContent = manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
+    if (event.currentTarget === frame && activeItem && frame.hasAttribute("srcdoc")) {
+      loading.hidden = true;
+      playerStatus.textContent = manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
+    }
   }
   frame.addEventListener("load", onFrameLoad);
   frame.setAttribute("sandbox", "allow-scripts allow-forms allow-pointer-lock allow-modals allow-popups allow-presentation allow-downloads");
@@ -352,6 +374,18 @@
     render();
   }
   document.querySelector("#clear-search").addEventListener("click", () => { resetCollection(); search.focus(); });
+  document.querySelector("#hero-saved").addEventListener("click", () => {
+    resetCollection("saved");
+    document.querySelector("#catalog").scrollIntoView({ block: "start" });
+    tabs.find(tab => tab.dataset.category === "saved").focus({ preventScroll: true });
+  });
+  const heroItem = byId.get("orbit-breaker");
+  if (heroItem) {
+    const heroSave = document.querySelector("#hero-save");
+    updateSaveButton(heroSave, heroItem);
+    heroSave.addEventListener("click", () => toggleFavorite(heroItem));
+    document.querySelector("#hero-play").addEventListener("click", () => openItem(heroItem));
+  }
   document.querySelectorAll("a.brand").forEach(link => link.addEventListener("click", event => {
     event.preventDefault();
     resetCollection("popular");
@@ -377,6 +411,7 @@
     frame.removeAttribute("src");
     playerStatus.textContent = "";
     recovery.hidden = true;
+    loading.hidden = true;
     if (category === "recent") render();
   });
   dialog.addEventListener("cancel", event => { event.preventDefault(); closePlayer(); });

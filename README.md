@@ -2,6 +2,14 @@
 
 TurboGames is a static, searchable library with **3,099 games and apps**, square cover images, category tabs, and an isolated fullscreen player. No package install or build step is needed.
 
+## Brand and launch assets
+
+The original **Find your next play** identity uses shared tokens in `brand.css`, native SVG icons, and logo assets in `assets/brand/`. The landing page previews the existing Orbit Breaker game; its Play and Save actions use the same player and library as the catalog. Loading, recovery, empty collections, mobile browsing, and the Google Sites helper share the same visual system. Motion respects the device's reduced-motion setting.
+
+The exportable [brand and launch kit](outputs/turbogames-brand-kit/README.md) includes a [downloadable ZIP](outputs/turbogames-brand-kit/TurboGames-brand-kit.zip), a visual style guide, SVG/PNG logos, 1200×630 landscape artwork, 1080×1350 portrait artwork, actual desktop/mobile captures, and launch copy. Its [asset manifest](outputs/turbogames-brand-kit/asset-manifest.json) lists public download URLs, dimensions, and SHA-256 hashes. Product screenshots and existing game artwork retain their source attribution; promotion copy describes browser-local libraries and varying title availability accurately.
+
+Regenerate the kit with `python3 tools/export_brand_kit.py --capture-url http://127.0.0.1:8002/` while the local server runs. Run `node tools/brand-check.cjs` for focused keyboard, preview, favorite synchronization, loading/recovery, reduced-motion, and narrow-layout checks in addition to the discovery checks below.
+
 ## Find a title and return to it
 
 Search within a category or choose **All** to search the full catalog. Search tolerates punctuation and accents, supports multiple words, and keeps the query when switching categories. The collection can be sorted by title or filtered to hide entries with missing sources.

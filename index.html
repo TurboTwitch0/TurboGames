@@ -3,46 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#101014" />
-    <meta name="description" content="Discover thousands of games, save your favorites, and pick up where you left off in TurboGames." />
-    <title>TurboGames — play something good</title>
+    <meta name="theme-color" content="#0e1013" />
+    <meta name="description" content="Find your next play. Search the TurboGames collection, save a shortlist, and return through Recent in your browser." />
+    <meta property="og:title" content="TurboGames — Find your next play." />
+    <meta property="og:description" content="Search the collection. Save the good ones. Come back for another play." />
+    <meta property="og:image" content="https://turbogames.vercel.app/outputs/turbogames-brand-kit/social-landscape.png" />
+    <meta property="og:image:alt" content="The original TurboGames identity beside an actual preview of its redesigned game collection" />
+    <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://turbogames.vercel.app/" /><meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>TurboGames — Find your next play.</title>
+    <link rel="stylesheet" href="brand.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="assets/fallback-cover.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/brand/turbogames-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="outputs/turbogames-brand-kit/turbogames-mark.png" />
     <script src="catalog.js" defer></script>
     <script src="app.js" defer></script>
     <script src="ads-config.js" defer></script>
     <script src="ads.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#catalog">Skip to the collection</a>
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="#top" aria-label="TurboGames home">
-          <span class="brand-mark" aria-hidden="true">T</span>
+          <img class="brand-symbol" src="assets/brand/turbogames-mark.svg" width="40" height="40" alt="" />
           <span>Turbo<span class="brand-accent">Games</span></span>
         </a>
         <label class="searchbox">
-          <span class="search-icon" aria-hidden="true">⌕</span>
+          <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
           <input id="search" type="search" autocomplete="off" placeholder="Search games, apps, and more" aria-label="Search all games and apps" />
           <kbd>/</kbd>
         </label>
-        <div class="topbar-note"><span class="status-dot"></span> Your next favorite is here</div>
+        <div class="topbar-note"><span class="status-dot"></span> FIND YOUR NEXT PLAY</div>
       </header>
 
       <main id="top">
         <section class="welcome" aria-labelledby="welcome-title">
           <div class="welcome-copy">
-            <p class="eyebrow"><span class="sparkle">✳</span> THE ARCADE IS OPEN</p>
-            <h1 id="welcome-title">A little fun<br />goes a <span>long way.</span></h1>
-            <p class="intro">Find your next favorite in a collection of games, apps, emulators, and other good stuff.</p>
-            <a class="jump-link" href="#catalog">Explore the collection <span aria-hidden="true">↓</span></a>
-            <div class="collection-stats"><span><strong id="total-titles">3,099</strong> titles to explore</span><span>Saved on your device</span></div>
+            <p class="eyebrow"><span class="sparkle" aria-hidden="true">✦</span> BIG COLLECTION. LITTLE ESCAPE.</p>
+            <h1 id="welcome-title">Find your<br />next <span>play.</span></h1>
+            <p class="intro">For the just-one-more kind of curious. Find a game, keep a shortlist, and come back to the good ones.</p>
+            <div class="hero-actions"><a class="primary-action" href="#catalog">Explore the collection <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><button id="hero-saved" class="secondary-action" type="button">Your saved picks <span aria-hidden="true">♡</span></button></div>
+            <div class="collection-stats"><span><strong id="total-titles">3,099</strong> titles in the collection</span><span>Saved in this browser</span></div>
           </div>
-          <div class="welcome-art" aria-hidden="true">
-            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-            <div class="art-card art-card-back">✦</div>
-            <div class="art-card art-card-front"><span>PRESS<br />PLAY</span><b>▶</b></div>
-            <span class="art-star star-one">✳</span><span class="art-star star-two">✦</span>
+          <div class="hero-showcase">
+            <svg class="showcase-spark" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8v84M8 50h84M20 20l60 60M20 80l60-60"/></svg>
+            <div class="preview-window">
+              <div class="preview-bar"><span class="preview-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>ONE FROM THE COLLECTION</span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></div>
+              <div class="preview-stage"><img src="assets/brand/orbit-preview.webp" width="720" height="480" alt="Actual Orbit Breaker game canvas with colored targets, a ball, and a lime paddle" /><span class="preview-label">ARCADE / MOUSE OR TOUCH</span></div>
+              <div class="preview-details"><div><p class="eyebrow">A LITTLE BREAK, ON US</p><h2>Orbit Breaker</h2></div><button id="hero-save" class="hero-save" type="button" aria-label="Save Orbit Breaker" aria-pressed="false">♡</button></div>
+              <button id="hero-play" class="preview-play" type="button">Play Orbit Breaker <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="m6 3 11 7L6 17Z"/></svg></button>
+            </div>
+            <p class="preview-caption"><span aria-hidden="true">↳</span> A real game from the library. Give it a go.</p>
           </div>
+        </section>
+        <section class="feature-ribbon" aria-label="Make the collection yours">
+          <div><span class="feature-number">01</span><p><strong>Find your thing.</strong><span>Search titles. Explore categories.</span></p></div>
+          <div><span class="feature-number">02</span><p><strong>Keep the good ones.</strong><span>Tap a heart. Build your local shortlist.</span></p></div>
+          <div><span class="feature-number">03</span><p><strong>Come back for more.</strong><span>Return to opened titles through Recent.</span></p></div>
         </section>
 
         <aside id="catalog-ad" class="ad-placement" aria-label="Advertisement" hidden>
@@ -51,7 +70,7 @@
 
         <section id="catalog" class="catalog-section" aria-labelledby="catalog-title">
           <div class="section-heading">
-            <div><p class="eyebrow">PICK YOUR MOOD</p><h2 id="catalog-title">The collection</h2></div>
+            <div><p class="eyebrow">GOOD STUFF, ALL IN ONE PLACE</p><h2 id="catalog-title">The collection</h2></div>
             <p id="result-count" class="result-count" aria-live="polite"></p>
           </div>
           <nav class="tabs" aria-label="Browse collection">
@@ -75,7 +94,7 @@
           <div id="game-grid" class="game-grid"></div>
           <button id="load-more" class="load-more" type="button" hidden>Show more</button>
           <div id="empty-state" class="empty-state" hidden>
-            <span class="empty-icon" aria-hidden="true">⌕</span>
+            <span id="empty-icon" class="empty-icon" aria-hidden="true">⌕</span>
             <h3 id="empty-title">No matches yet</h3>
             <p id="empty-description">Try another search or pick a different tab.</p>
             <button id="clear-search" class="text-button" type="button">Explore all titles</button>
@@ -83,7 +102,7 @@
         </section>
       </main>
 
-      <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">T</span><span>Turbo<span class="brand-accent">Games</span></span></a><a href="google-sites.html">Add to Google Sites</a><a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/preview">UGS collection &amp; credits</a></footer>
+      <footer class="footer"><div><a class="brand footer-brand" href="#top"><img class="brand-symbol" src="assets/brand/turbogames-mark.svg" width="36" height="36" alt="" /><span>Turbo<span class="brand-accent">Games</span></span></a><p>Find your next play. Keep it close.</p></div><div class="footer-links"><a href="google-sites.html">Add to Google Sites ↗</a><a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/preview">UGS collection &amp; credits ↗</a><span>Saved &amp; Recent stay in this browser.<br />Some games need their original online assets.</span></div></footer>
     </div>
 
     <dialog id="game-dialog" class="game-dialog" aria-labelledby="dialog-title">
@@ -91,13 +110,14 @@
       <div class="dialog-bar">
         <div class="dialog-title-wrap"><span class="dialog-led"></span><h2 id="dialog-title">Game</h2></div>
         <div class="dialog-actions">
-          <a id="open-game-tab" class="icon-button" href="#" target="_blank" rel="noopener noreferrer" title="Open in new tab" aria-label="Open game in new tab">↗</a>
-          <button id="reload-game" class="icon-button" type="button" title="Restart game" aria-label="Restart game">↻</button>
-          <button id="fullscreen-button" class="icon-button" type="button" title="Go fullscreen" aria-label="Go fullscreen">⛶</button>
-          <button id="close-dialog" class="icon-button close-button" type="button" title="Close game" aria-label="Close game">×</button>
+          <a id="open-game-tab" class="icon-button" href="#" target="_blank" rel="noopener noreferrer" title="Open in new tab" aria-label="Open game in new tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M10 5H5v14h14v-5"/></svg></a>
+          <button id="reload-game" class="icon-button" type="button" title="Restart game" aria-label="Restart game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M19.5 11a8 8 0 1 0-1 6M20 12 16 7"/></svg></button>
+          <button id="fullscreen-button" class="icon-button" type="button" title="Go fullscreen" aria-label="Go fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></button>
+          <button id="close-dialog" class="icon-button close-button" type="button" title="Close game" aria-label="Close game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         </div>
       </div>
       <p id="player-status" class="player-status" role="status"></p>
+      <div id="player-loading" class="player-loading" role="status" hidden><img src="assets/brand/turbogames-mark.svg" width="64" height="64" alt="" /><span class="eyebrow">A LITTLE PLAY IS ON THE WAY</span><h3>Opening your next play<span aria-hidden="true">…</span></h3><p>Getting the game page ready. Some titles then download their own assets.</p><span class="loading-track" aria-hidden="true"><i></i></span></div>
       <div id="player-recovery" class="player-recovery" hidden>
         <span class="recovery-icon" aria-hidden="true">↻</span>
         <h3 id="recovery-title">This game couldn't load</h3>
@@ -107,5 +127,6 @@
       <iframe id="game-frame" title="Game window" allow="autoplay; fullscreen; gamepad; clipboard-read; clipboard-write" allowfullscreen></iframe>
       </div>
     </dialog>
+    <div id="action-feedback" class="action-feedback" role="status" aria-live="polite" hidden></div>
   </body>
 </html>

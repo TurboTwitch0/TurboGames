@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101014">
+  <meta name="theme-color" content="#0e1013">
   <title>Put TurboGames on Google Sites</title>
+  <link rel="icon" href="assets/brand/turbogames-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="brand.css">
   <style>
     :root{color-scheme:dark;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#f5f3f7;background:#101014;line-height:1.6}*{box-sizing:border-box}body{margin:0;padding:40px 20px}main{max-width:800px;margin:auto}a{color:#d7ff66}header{margin-bottom:30px}.brand{display:inline-flex;align-items:center;gap:10px;font-size:22px;font-weight:750;text-decoration:none;letter-spacing:-.7px}.mark{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#d7ff66;color:#101014;transform:rotate(-7deg)}h1{font-size:clamp(29px,6vw,43px);line-height:1.15;letter-spacing:-1.5px;margin:24px 0 14px}p{color:#b9b7c4;margin:0 0 20px}.steps{padding:0;list-style:none;counter-reset:step;display:grid;gap:15px;margin:30px 0}.steps>li{position:relative;padding:22px 22px 22px 67px;background:#19191f;border:1px solid #30303a;border-radius:14px;counter-increment:step}.steps>li:before{content:counter(step);position:absolute;left:22px;top:22px;border-radius:50%;width:28px;height:28px;background:#d7ff66;color:#101014;text-align:center;font-weight:750}.steps strong{display:block;font-size:17px;margin-bottom:5px}.steps p{font-size:14px;margin:0}form{padding:25px;background:#19191f;border:1px solid #30303a;border-radius:14px}label{display:block;font-weight:650;margin-bottom:8px}input,textarea,button{font:inherit}input,textarea{color:#f5f3f7;background:#101014;border:1px solid #484653;border-radius:8px;width:100%;padding:12px;outline:none}input:focus,textarea:focus{border-color:#d7ff66;box-shadow:0 0 0 3px #d7ff661c}input{font-size:16px}textarea{font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;resize:vertical;min-height:170px}button,.button-link{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid transparent;border-radius:8px;font-weight:700;text-decoration:none;cursor:pointer;font-size:14px;background:#d7ff66;color:#141510}button:hover,.button-link:hover{background:#e3ff98}button.secondary,.button-link.secondary{border-color:#484653;background:#26252d;color:#f5f3f7}button.secondary:hover,.button-link.secondary:hover{border-color:#9d99ab;background:#302e39}.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:13px}.hint{font-size:13px;margin:9px 0 0;color:#a09dab}#message{min-height:24px;margin:12px 0 0;font-size:14px}#message.error{color:#ffaaa8}#result{margin-top:25px;padding-top:25px;border-top:1px solid #36343f}#result h2{font-size:20px;margin:0 0 8px}.output-label{margin-top:20px;font-size:14px}.note{border-left:3px solid #d7ff66;padding-left:16px;margin-top:27px;font-size:14px}footer{margin-top:35px;font-size:13px;color:#92909d}[hidden]{display:none!important}@media(max-width:520px){body{padding:25px 14px}.steps>li{padding:18px 18px 18px 56px}.steps>li:before{left:16px;top:18px}form{padding:18px}.row>*{flex:1 1 auto}}
   </style>
+  <link rel="stylesheet" href="embed-guide.css">
 </head>
 <body>
 <main>
   <header>
-    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">T</span>TurboGames</a>
-    <h1>Your arcade.<br>Your Google Site.</h1>
-    <p>Host the TurboGames folder, then add it to your Google Site with an embed. This helper works on your computer, too.</p>
+    <a class="brand" href="index.html"><img src="assets/brand/turbogames-mark.svg" width="40" height="40" alt="">TurboGames</a>
+    <h1>Your collection.<br><span>Your Google Site.</span></h1>
+    <p>Take your next play with you. Use the hosted TurboGames address below to create a Google Sites embed with search, categories, and the game player.</p>
   </header>
   <ol class="steps">
-    <li><strong>Put TurboGames online</strong><p>Extract the download. Upload the folder containing <code>index.html</code> to <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer">Netlify Drop</a>, or another static website host. Copy its HTTPS website address.</p></li>
+    <li><strong>Choose your arcade address</strong><p>Use this site's public HTTPS address, or the address of your own existing TurboGames deployment. A downloaded folder or ZIP needs to be hosted before it can be embedded.</p></li>
     <li><strong>Make your embed below</strong><p>Paste the website address into this helper. Use the address of your deployed TurboGames site.</p></li>
     <li><strong>Add it to Google Sites</strong><p>Open your site editor. Choose <b>Insert → Embed → Embed code</b>, paste the code, then choose <b>Next → Insert</b>. Make the embed wide and tall, then publish your Google Site.</p></li>
   </ol>
