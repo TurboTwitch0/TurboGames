@@ -15,8 +15,8 @@
       "path": "/outputs/turbogames-brand-kit/README.md",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/README.md",
       "type": "text/markdown",
-      "bytes": 4474,
-      "sha256": "1b9857cb731157b4b3b5460000c4623d07a9c49b429c2d7911bbc21449e39c7e"
+      "bytes": 4653,
+      "sha256": "f59183f75cec24f58b8484b98ea431bbcfd94074116c5f475582637e5f1365b4"
     },
     {
       "name": "brand-sheet.png",
@@ -91,8 +91,18 @@
       "path": "/outputs/turbogames-brand-kit/product-desktop.png",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/product-desktop.png",
       "type": "image/png",
-      "bytes": 276032,
-      "sha256": "cca26bec36d6aef0196c1f08e91d6fe53bb7ce9596da9b941b5b6aaffffa1c50",
+      "bytes": 276033,
+      "sha256": "73d6ac9fe8b7e1a6287a6c0a02c4792be286259b417d82fb4cd0546a38dfc501",
+      "width": 1440,
+      "height": 1040
+    },
+    {
+      "name": "product-discovery.png",
+      "path": "/outputs/turbogames-brand-kit/product-discovery.png",
+      "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/product-discovery.png",
+      "type": "image/png",
+      "bytes": 259047,
+      "sha256": "33a0fd7093ed2ffef67c5ce5e30afeadfca0e69b698459998d4fd93fbda2bc9e",
       "width": 1440,
       "height": 1040
     },
@@ -101,8 +111,8 @@
       "path": "/outputs/turbogames-brand-kit/product-mobile.png",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/product-mobile.png",
       "type": "image/png",
-      "bytes": 108798,
-      "sha256": "814ad22fb5766dddc4e3dc213c3b59189efe39a644441f33a26202351be7e3dd",
+      "bytes": 79176,
+      "sha256": "0c89e67ea8ff4d0cd3045d34261b5bec37884dfffb5a4e8287eaeafec3aa3274",
       "width": 390,
       "height": 844
     },
@@ -111,8 +121,8 @@
       "path": "/outputs/turbogames-brand-kit/product-showcase-mobile.png",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/product-showcase-mobile.png",
       "type": "image/png",
-      "bytes": 115839,
-      "sha256": "df665dfc56afca8d9d83f594c67bfc95bb16a801cffcbfca230286cbda858a09",
+      "bytes": 116004,
+      "sha256": "3fb571a027c239c6311147f6e6516891c3ea5428bb924cffb71670e6d027c5fc",
       "width": 390,
       "height": 844
     },
@@ -121,8 +131,8 @@
       "path": "/outputs/turbogames-brand-kit/promo-portrait.png",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/promo-portrait.png",
       "type": "image/png",
-      "bytes": 246035,
-      "sha256": "a6aea4d486b0138d04860356e3c0153558f819c32d3cb9f0c9cd9597cfb6031a",
+      "bytes": 246135,
+      "sha256": "4e71f71fd5619e0439bf8e5f3afa0b73445a4f6dfeaae593f213506189edb943",
       "width": 1080,
       "height": 1350
     },
@@ -131,8 +141,8 @@
       "path": "/outputs/turbogames-brand-kit/promo-portrait.svg",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/promo-portrait.svg",
       "type": "image/svg+xml",
-      "bytes": 568766,
-      "sha256": "6452fdca101ed0c048397ebbdb1ef4a86aa91382346d97c7f6619b5c2951ab16",
+      "bytes": 568986,
+      "sha256": "27abf726b5e5bbd5ffaa07b3762754b51a88009c88b321774f906618857107f6",
       "width": 1080,
       "height": 1350
     },
@@ -141,8 +151,8 @@
       "path": "/outputs/turbogames-brand-kit/social-landscape.png",
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/social-landscape.png",
       "type": "image/png",
-      "bytes": 162989,
-      "sha256": "ea69b46914c4ef98c5e495f66b7f0f59faea359088471c75bccb8dde5311c1f3",
+      "bytes": 162985,
+      "sha256": "97d732885364a604413d8f3cd9b14f239f79f484ae086ea35d515d130702a185",
       "width": 1200,
       "height": 630
     },
@@ -152,7 +162,7 @@
       "url": "https://turbogames.vercel.app/outputs/turbogames-brand-kit/social-landscape.svg",
       "type": "image/svg+xml",
       "bytes": 400615,
-      "sha256": "b985c0d0d6b6cbd05987daca47f38982ca4666cf3c87055b2cfa0f555c9c576e",
+      "sha256": "075e435bfd8f9eec8e1645a1418d0181c4a2e29f0284636448dd29209448c495",
       "width": 1200,
       "height": 630
     },

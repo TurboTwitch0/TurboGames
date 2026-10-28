@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "A fresh browser shows no fabricated Recent shelf or unsolicited quick pick",
+    "A scoped pick uses the matching real cover, saves to the existing library, launches Orbit, and returns through Recent with Back/Forward intact",
+    "Unsaving the only Saved pick closes its preview, updates storage, disables empty picking, and recovers keyboard focus to the Saved tab",
+    "Recent shows at most three real entries in recency order; Saved picks exclude known missing sources and avoid repeats; dismiss restores focus; empty pools disable picking",
+    "Changing the search, category, sorting, or source filter invalidates the old pick",
+    "Individual filter chips preserve other filters; Search all broadens the scope; clearing query preserves scope and restores search focus; Reset clears all filters",
+    "Quick-search shortcuts find real titles across the collection while preserving sorting and source filters",
+    "Keyboard can open and dismiss a pick with visible focus and restored position; new controls honor reduced motion",
+    "Two real tabs synchronize the return shelf after a game launch and external recent clearing; quick-pick Save state follows other-tab favorite changes without a reload",
+    "Homepage, active filters, and quick picks fit 1440px, 390px, and 320px; controls are 44px; Google Sites retains scoped picking without Recent shelf"
+  ],
+  "screenshots": [
+    "/tmp/turbogames-quick-play-1440.png",
+    "/tmp/turbogames-quick-play-390.png",
+    "/tmp/turbogames-quick-play-320.png"
+  ]
+}

@@ -254,6 +254,7 @@ Original identity and local exports for the existing TurboGames product. Promise
 | `product-desktop.png` | Actual redesigned product capture; 1440 × 1040 |
 | `product-mobile.png` | Actual redesigned mobile collection capture (`?view=all`, scrolled to catalog); 390 × 844 |
 | `product-showcase-mobile.png` | Actual mobile featured game stage, scrolled into view; 390 × 844 |
+| `product-discovery.png` | Actual collection quick-pick preview for Orbit Breaker; 1440 × 1040 |
 | `launch-copy.md` | Draft copy, image alt text and product claim limits |
 | `FONT-LICENSE.txt` | License for locally outlined DejaVu type glyphs |
 | `SHA256SUMS.txt` | SHA-256 checksums for exported files, excluding the archive and manifest itself |
@@ -278,7 +279,7 @@ python3 tools/export_brand_kit.py --capture-url http://127.0.0.1:8002/
 
 To refresh vectors and PNGs using existing screenshots, omit `--capture-url`. `--brand-only` exports the identity and style guide without capturing or using product screenshots. `--showcase-only` refreshes screenshots and campaign exports while preserving the existing identity, style guide and launch copy; it also writes `showcase-update.json` with changed export paths, public URLs and hashes.
 
-The generator uses local Python `fontTools`, Pillow, Playwright, installed DejaVu fonts, and `/usr/bin/chromium`. The capture waits for the local catalog and cover images, then records the desktop landing view, mobile All collection scrolled to the catalog, and mobile featured game stage scrolled into view, with no fictional controls or substituted game imagery. No paid service, hosted design vendor or external publishing is involved. The decorative frame and geometric stripes are artwork; the visible app interfaces are actual screenshots.
+The generator uses local Python `fontTools`, Pillow, Playwright, installed DejaVu fonts, and `/usr/bin/chromium`. The capture waits for the local catalog and cover images, then records the desktop landing view, mobile All collection scrolled to the catalog, mobile featured game stage scrolled into view, and an Orbit Breaker quick-pick preview, with no fictional controls or substituted game imagery. Each capture uses a fresh browser profile. No paid service, hosted design vendor or external publishing is involved. The decorative frame and geometric stripes are artwork; the visible app interfaces are actual screenshots.
 
 ## Rights and claims
 
@@ -296,7 +297,7 @@ def capture(url):
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox", "--disable-dev-shm-usage"])
-        for name, width, height, mobile in [("desktop", 1440, 1040, False), ("mobile", 390, 844, True), ("showcase-mobile", 390, 844, True)]:
+        for name, width, height, mobile in [("desktop", 1440, 1040, False), ("mobile", 390, 844, True), ("showcase-mobile", 390, 844, True), ("discovery", 1440, 1040, False)]:
             context = browser.new_context(viewport={"width": width, "height": height}, device_scale_factor=1, is_mobile=mobile, has_touch=mobile, reduced_motion="no-preference")
             page = context.new_page()
             target_url = url
@@ -305,6 +306,11 @@ def capture(url):
                 query = dict(parse_qsl(parts.query))
                 query["view"] = "all"
                 target_url = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), "catalog"))
+            elif name == "discovery":
+                parts = urlsplit(url)
+                query = dict(parse_qsl(parts.query))
+                query.update({"view": "all", "q": "orbit breaker"})
+                target_url = urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), ""))
             page.goto(target_url, wait_until="domcontentloaded")
             page.wait_for_selector("#game-grid .game-card")
             if name == "mobile":
@@ -313,6 +319,11 @@ def capture(url):
             elif name == "showcase-mobile":
                 page.locator(".hero-showcase").wait_for(state="visible")
                 page.evaluate('window.scrollTo({top: Math.max(0, document.querySelector(".hero-showcase").getBoundingClientRect().top + window.scrollY - 120), behavior:"instant"})')
+                page.evaluate("() => new Promise(requestAnimationFrame)")
+            elif name == "discovery":
+                page.locator("#pick-game").click()
+                page.locator("#quick-pick[data-pick-id='orbit-breaker']").wait_for(state="visible")
+                page.evaluate('window.scrollTo({top: 0, behavior:"instant"})')
                 page.evaluate("() => new Promise(requestAnimationFrame)")
             page.evaluate("""async () => { await document.fonts.ready; await Promise.all([...document.images].filter(i => i.getBoundingClientRect().top < innerHeight).map(i => i.complete ? Promise.resolve() : new Promise(r => { i.onload=r; i.onerror=r; }))); }""")
             page.wait_for_timeout(750)
@@ -329,11 +340,16 @@ def update_showcase_readme():
     showcase_row = "| `product-showcase-mobile.png` | Actual mobile featured game stage, scrolled into view; 390 × 844 |"
     if showcase_row not in content:
         content = content.replace(mobile_row, mobile_row + "\n" + showcase_row)
+    discovery_row = "| `product-discovery.png` | Actual collection quick-pick preview for Orbit Breaker; 1440 × 1040 |"
+    if discovery_row not in content:
+        content = content.replace(showcase_row, showcase_row + "\n" + discovery_row)
     old = "`--brand-only` exports the identity and style guide without capturing or using product screenshots."
     addition = " `--showcase-only` refreshes screenshots and campaign exports while preserving the existing identity, style guide and launch copy; it also writes `showcase-update.json` with changed export paths, public URLs and hashes."
     if addition.strip() not in content:
         content = content.replace(old, old + addition)
     content = content.replace("then records the desktop landing view and mobile All collection scrolled to the catalog,", "then records the desktop landing view, mobile All collection scrolled to the catalog, and mobile featured game stage scrolled into view,")
+    content = content.replace("then records the desktop landing view, mobile All collection scrolled to the catalog, and mobile featured game stage scrolled into view,", "then records the desktop landing view, mobile All collection scrolled to the catalog, mobile featured game stage scrolled into view, and an Orbit Breaker quick-pick preview,")
+    content = content.replace("with no fictional controls or substituted game imagery. No paid service", "with no fictional controls or substituted game imagery. Each capture uses a fresh browser profile. No paid service")
     path.write_text(content, encoding="utf-8")
 
 

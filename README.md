@@ -18,11 +18,17 @@ For the latest showcase-only export delta, use `--showcase-only --baseline-commi
 
 Search within a category or choose **All** to search the full catalog. Search tolerates punctuation and accents, supports multiple words, and keeps the query when switching categories. The collection can be sorted by title or filtered to hide entries with missing sources.
 
+**Pick for me** previews a random title from the current results before opening anything. Play, Save, and Another pick use the same catalog and library; another pick avoids repeating the current title when alternatives exist. Known missing sources are excluded, but this is not a compatibility or gameplay guarantee. Changing a filter dismisses the old preview. Arcade, Racing, Puzzle, and Mario shortcuts run real full-catalog searches.
+
+Active search, availability, and sorting chips can be removed independently. A scoped search offers **Search all titles** without losing the query or other filters. The search field also has a keyboard-accessible clear button. On returning to the homepage, **Jump back in** surfaces up to three recently opened titles with their existing covers and links to the full Recent collection. No account, cloud sync, or new game is added.
+
 Use the heart on a card to keep it in **Saved**. **Recent** lists the last 24 successfully opened game pages. These lists stay in the current browser profile; no account is required. If browser storage is blocked or full, the current tab keeps its latest game saves and library changes until it closes.
 
 Collection filters are preserved in the URL, such as `/?view=games&q=mario&sort=title-asc`. A game opens at `/?play=orbit-breaker`, so it can be bookmarked or linked from the TurboUniverse hub. Browser Back returns to the collection, Forward reopens the game, and closing a direct game link clears its play parameter. Failed game-page downloads offer a retry; known missing sources explain the problem and offer a return to browsing.
 
 Run `node tools/ui-check.cjs` and `node tools/discovery-check.cjs` against the local development server on port 8002 to check discovery, browser navigation, game storage, fullscreen, Google Sites embedding, and mobile layout. Set `TURBO_TEST_URL` to check another deployment.
+
+Run `node tools/quick-play-check.cjs` for the focused recent shelf, scoped preview, favorites, filter controls, quick searches, focus recovery, keyboard/touch, reduced-motion, and narrow/embedded layout checks. Its report is `reports/quick-play-check.json` by default.
 
 ## Daily GitHub refresh
 

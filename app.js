@@ -20,6 +20,9 @@
   const recovery = document.querySelector("#player-recovery");
   const loading = document.querySelector("#player-loading");
   const feedback = document.querySelector("#action-feedback");
+  const pickButton = document.querySelector("#pick-game");
+  const quickPick = document.querySelector("#quick-pick");
+  const recentShelf = document.querySelector("#recent-shelf");
   const categoryNames = { popular: "Popular", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
   const parameters = new URLSearchParams(location.search);
   const embedded = parameters.get("embed") === "1" || window.self !== window.top;
@@ -47,6 +50,7 @@
   let loadController;
   let manualSaveHint = false;
   let feedbackTimer;
+  let pickedItem;
   const featuredGames = [
     { id: "orbit-breaker", image: "assets/brand/orbit-preview.webp", meta: "ARCADE / MOUSE OR TOUCH", description: "Steer the paddle. Break the orbiting stars.", accent: "#d6ff64" },
     { id: "little-match", meta: "PUZZLE / MATCH PAIRS", description: "Turn a few cards. Find the matching pairs.", accent: "#a9adff" },
@@ -133,7 +137,10 @@
         if (item) updateSaveButton(button, item);
       });
     }
-    if (event.key === null || event.key === "turbogames:recent") recent = readLibrary("recent").slice(0, 24);
+    if (event.key === null || event.key === "turbogames:recent") {
+      recent = readLibrary("recent").slice(0, 24);
+      renderRecentShelf();
+    }
     if (event.key === null || event.key === "turbogames:favorites" || event.key === "turbogames:recent") {
       updateLibraryCounts();
       if (category === "saved" || category === "recent") render();
@@ -253,6 +260,109 @@
     recent = [item.id, ...recent.filter(id => id !== item.id)].slice(0, 24);
     persistLibrary("recent", recent);
     updateLibraryCounts();
+    renderRecentShelf();
+  }
+  function renderRecentShelf() {
+    const shelf = document.querySelector("#recent-shelf-grid");
+    shelf.replaceChildren();
+    const recentItems = recent.map(id => byId.get(id)).filter(item => item && item.sourceStatus !== "unavailable").slice(0, 3);
+    recentShelf.hidden = recentItems.length === 0;
+    for (const item of recentItems) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "recent-pick";
+      button.dataset.recentId = item.id;
+      button.setAttribute("aria-label", `Open ${item.title} again`);
+      const image = document.createElement("img");
+      image.src = item.image || "assets/fallback-cover.svg";
+      image.alt = "";
+      image.width = 80;
+      image.height = 80;
+      image.loading = "lazy";
+      image.addEventListener("error", () => { image.src = "assets/fallback-cover.svg"; }, { once: true });
+      const copy = document.createElement("span");
+      copy.className = "recent-pick-copy";
+      const meta = document.createElement("span");
+      meta.textContent = categoryNames[item.category] || item.category;
+      const title = document.createElement("strong");
+      title.textContent = item.title;
+      copy.append(meta, title);
+      const arrow = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      arrow.setAttribute("class", "recent-pick-arrow");
+      arrow.setAttribute("viewBox", "0 0 24 24");
+      arrow.setAttribute("aria-hidden", "true");
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("d", "M5 19 19 5M5 5h14v14");
+      arrow.append(path);
+      button.append(image, copy, arrow);
+      button.addEventListener("click", () => openItem(item));
+      shelf.append(button);
+    }
+  }
+  function dismissPick(restoreFocus = false) {
+    quickPick.hidden = true;
+    pickButton.setAttribute("aria-expanded", "false");
+    pickedItem = undefined;
+    delete quickPick.dataset.pickId;
+    if (restoreFocus) pickButton.focus();
+  }
+  function chooseQuickPick() {
+    const candidates = visible.filter(item => item.sourceStatus !== "unavailable");
+    if (!candidates.length) return;
+    const alternatives = candidates.filter(item => item.id !== pickedItem?.id);
+    const pool = alternatives.length ? alternatives : candidates;
+    pickedItem = pool[Math.floor(Math.random() * pool.length)];
+    quickPick.dataset.pickId = pickedItem.id;
+    const image = document.querySelector("#pick-cover");
+    image.src = pickedItem.image || "assets/fallback-cover.svg";
+    image.alt = `${pickedItem.title} cover`;
+    document.querySelector("#pick-title").textContent = pickedItem.title;
+    document.querySelector("#pick-category").textContent = categoryNames[pickedItem.category] || pickedItem.category;
+    document.querySelector("#pick-context").textContent = `Picked from ${candidates.length.toLocaleString()} matching ${candidates.length === 1 ? "title" : "titles"}. Known missing sources are left out.`;
+    document.querySelector("#pick-again").disabled = candidates.length < 2;
+    document.querySelector("#pick-play").setAttribute("aria-label", `Play ${pickedItem.title}`);
+    updateSaveButton(document.querySelector("#pick-save"), pickedItem);
+    quickPick.hidden = false;
+    pickButton.setAttribute("aria-expanded", "true");
+  }
+  function updateDiscoveryTools() {
+    const hasQuery = Boolean(search.value.trim());
+    document.querySelector("#clear-query").hidden = !search.value;
+    document.querySelector("#quick-searches").hidden = hasQuery || !["all", "popular"].includes(category);
+    pickButton.disabled = !visible.some(item => item.sourceStatus !== "unavailable");
+    pickButton.title = pickButton.disabled ? "No titles with sources in this view. Try another search or category." : "Preview a random title from this view";
+    const activeFilters = document.querySelector("#active-filters");
+    activeFilters.replaceChildren();
+    const filters = [
+      { key: "q", label: hasQuery ? `Search: ${search.value.trim()}` : "" },
+      { key: "available", label: hideUnavailable.checked ? "Missing sources hidden" : "" },
+      { key: "sort", label: sort.value !== "recommended" ? sort.selectedOptions[0].textContent : "" }
+    ].filter(filter => filter.label);
+    for (const filter of filters) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.filter = filter.key;
+      button.setAttribute("aria-label", `Remove ${filter.label}`);
+      const label = document.createElement("span");
+      label.textContent = filter.label;
+      const cross = document.createElement("span");
+      cross.textContent = "×";
+      cross.setAttribute("aria-hidden", "true");
+      button.append(label, cross);
+      button.addEventListener("click", () => {
+        clearTimeout(searchTimer);
+        const target = filter.key === "q" ? search : filter.key === "sort" ? sort : hideUnavailable;
+        if (filter.key === "q") search.value = "";
+        else if (filter.key === "sort") sort.value = "recommended";
+        else hideUnavailable.checked = false;
+        writeFilters();
+        render();
+        target.focus({ preventScroll: true });
+      });
+      activeFilters.append(button);
+    }
+    document.querySelector("#filter-summary").hidden = !filters.length;
+    document.querySelector("#search-all-results").hidden = !hasQuery || ["all", "popular"].includes(category);
   }
   function updateTabs() {
     tabs.forEach(tab => {
@@ -353,7 +463,10 @@
     more.textContent = `Show more (${Math.max(0, visible.length - displayed)} remaining)`;
   }
   function render() {
+    const pickHadFocus = quickPick.contains(document.activeElement);
+    dismissPick();
     visible = filteredItems();
+    updateDiscoveryTools();
     document.body.classList.toggle("is-browsing", category !== "popular" || Boolean(search.value.trim()));
     document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : "The collection";
     displayed = 96;
@@ -367,6 +480,7 @@
     empty.hidden = visible.length > 0;
     grid.hidden = visible.length === 0;
     appendCards(0);
+    if (pickHadFocus) (pickButton.disabled ? tabs.find(tab => tab.dataset.category === category) : pickButton)?.focus({ preventScroll: true });
   }
 
   async function loadItem(item) {
@@ -473,6 +587,8 @@
     });
   });
   search.addEventListener("input", () => {
+    document.querySelector("#clear-query").hidden = !search.value;
+    dismissPick();
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => {
       if (category === "popular" && search.value.trim()) category = "all";
@@ -498,6 +614,59 @@
     resetCollection("saved");
     document.querySelector("#catalog").scrollIntoView({ block: "start" });
     tabs.find(tab => tab.dataset.category === "saved").focus({ preventScroll: true });
+  });
+  document.querySelector("#clear-query").addEventListener("click", () => {
+    clearTimeout(searchTimer);
+    search.value = "";
+    writeFilters();
+    render();
+    search.focus();
+  });
+  document.querySelector("#reset-filters").addEventListener("click", () => { resetCollection(); search.focus(); });
+  document.querySelector("#search-all-results").addEventListener("click", () => {
+    clearTimeout(searchTimer);
+    category = "all";
+    updateTabs();
+    writeFilters();
+    render();
+    search.focus({ preventScroll: true });
+  });
+  document.querySelectorAll("#quick-searches [data-query]").forEach(button => button.addEventListener("click", () => {
+    clearTimeout(searchTimer);
+    category = "all";
+    search.value = button.dataset.query;
+    updateTabs();
+    writeFilters();
+    render();
+    search.focus({ preventScroll: true });
+  }));
+  document.querySelector("#see-recent").addEventListener("click", () => {
+    resetCollection("recent");
+    document.querySelector("#catalog").scrollIntoView({ block: "start" });
+    tabs.find(tab => tab.dataset.category === "recent").focus({ preventScroll: true });
+  });
+  pickButton.addEventListener("click", () => {
+    clearTimeout(searchTimer);
+    // A click may arrive during the search debounce; pick from the current input.
+    if (category === "popular" && search.value.trim()) category = "all";
+    updateTabs();
+    writeFilters();
+    render();
+    chooseQuickPick();
+    if (pickedItem) {
+      document.querySelector("#pick-title").focus({ preventScroll: true });
+      quickPick.scrollIntoView({ block: "nearest" });
+    }
+  });
+  document.querySelector("#pick-again").addEventListener("click", chooseQuickPick);
+  document.querySelector("#pick-play").addEventListener("click", () => { if (pickedItem) openItem(pickedItem); });
+  document.querySelector("#pick-save").addEventListener("click", () => { if (pickedItem) toggleFavorite(pickedItem); });
+  document.querySelector("#dismiss-pick").addEventListener("click", () => dismissPick(true));
+  quickPick.addEventListener("keydown", event => {
+    if (event.key === "Escape") { event.preventDefault(); dismissPick(true); }
+  });
+  document.querySelector("#pick-cover").addEventListener("error", event => {
+    if (!event.currentTarget.src.endsWith("/assets/fallback-cover.svg")) event.currentTarget.src = "assets/fallback-cover.svg";
   });
   initializeShowcase();
   if (featuredGames.length) {
@@ -565,6 +734,7 @@
   });
   readFilters();
   updateLibraryCounts();
+  renderRecentShelf();
   document.querySelector("#total-titles").textContent = items.length.toLocaleString();
   render();
   const requested = byId.get(parameters.get("play"));

@@ -30,11 +30,12 @@
           <img class="brand-symbol" src="assets/brand/turbogames-mark.svg" width="40" height="40" alt="" />
           <span>Turbo<span class="brand-accent">Games</span></span>
         </a>
-        <label class="searchbox">
+        <div class="searchbox">
           <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
           <input id="search" type="search" autocomplete="off" placeholder="Search games, apps, and more" aria-label="Search all games and apps" />
+          <button id="clear-query" class="clear-query" type="button" aria-label="Clear search" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
           <kbd>/</kbd>
-        </label>
+        </div>
         <div class="topbar-note"><span class="status-dot"></span> FIND YOUR NEXT PLAY</div>
       </header>
 
@@ -64,6 +65,11 @@
             <p id="featured-help" class="featured-help">Choose a card, use the arrows, or swipe. Keyboard: ← →, Home and End.</p>
           </div>
         </section>
+        <section id="recent-shelf" class="recent-shelf" aria-labelledby="recent-shelf-title" hidden>
+          <div class="recent-shelf-heading"><div><p class="eyebrow">YOUR LAST GOOD FINDS</p><h2 id="recent-shelf-title">Jump back in.</h2></div><button id="see-recent" class="text-button" type="button">See all Recent <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
+          <div id="recent-shelf-grid" class="recent-shelf-grid"></div>
+          <p class="shelf-note">Recently opened in this browser. Progress support varies by game.</p>
+        </section>
         <section class="feature-ribbon" aria-label="Make the collection yours">
           <div><span class="feature-number">01</span><p><strong>Find your thing.</strong><span>Search titles. Explore categories.</span></p></div>
           <div><span class="feature-number">02</span><p><strong>Keep the good ones.</strong><span>Tap a heart. Build your local shortlist.</span></p></div>
@@ -77,8 +83,14 @@
         <section id="catalog" class="catalog-section" aria-labelledby="catalog-title">
           <div class="section-heading">
             <div><p class="eyebrow">GOOD STUFF, ALL IN ONE PLACE</p><h2 id="catalog-title">The collection</h2></div>
-            <p id="result-count" class="result-count" aria-live="polite"></p>
+            <div class="collection-summary"><p id="result-count" class="result-count" aria-live="polite"></p><button id="pick-game" class="pick-game" type="button" aria-controls="quick-pick" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></svg>Pick for me <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
           </div>
+          <div id="quick-pick" class="quick-pick" role="region" aria-label="Your quick pick" hidden>
+            <div class="pick-art"><img id="pick-cover" src="assets/fallback-cover.svg" alt="" width="400" height="400" /><span class="pick-art-label" aria-hidden="true">A LITTLE SERENDIPITY</span></div>
+            <div class="pick-copy"><p class="eyebrow">YOUR QUICK PICK <span id="pick-category"></span></p><h3 id="pick-title" tabindex="-1" aria-live="polite"></h3><p id="pick-context" class="pick-context"></p><div class="pick-actions"><button id="pick-play" class="primary-action" type="button">Play this title <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="m6 3 11 7L6 17Z"/></svg></button><button id="pick-again" class="pick-again" type="button">Another pick <span aria-hidden="true">↻</span></button><button id="pick-save" class="pick-save" type="button" aria-label="Save quick pick" aria-pressed="false">♡</button></div><p class="pick-note">Some titles need their original online assets. This is a random pick, ready when you are.</p></div>
+            <button id="dismiss-pick" class="dismiss-pick" type="button" aria-label="Dismiss quick pick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
+          </div>
+          <div id="quick-searches" class="quick-searches" aria-label="Quick searches"><span>START SOMEWHERE</span><button type="button" data-query="arcade">Arcade <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="racing">Racing <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="puzzle">Puzzle <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="mario">Mario <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
           <nav class="tabs" aria-label="Browse collection">
             <button class="tab is-active" data-category="popular" type="button">Popular <span class="tab-icon">✦</span></button>
             <button class="tab" data-category="all" type="button">All</button>
@@ -97,6 +109,7 @@
               <label class="sort-label" for="sort">Sort <select id="sort"><option value="recommended">Recommended</option><option value="title-asc">Title: A–Z</option><option value="title-desc">Title: Z–A</option></select></label>
             </div>
           </div>
+          <div id="filter-summary" class="filter-summary" hidden><div id="active-filters" class="active-filters" aria-label="Active filters"></div><button id="search-all-results" class="text-button" type="button" hidden>Search all titles <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button id="reset-filters" class="text-button reset-filters" type="button">Reset all</button></div>
           <div id="game-grid" class="game-grid"></div>
           <button id="load-more" class="load-more" type="button" hidden>Show more</button>
           <div id="empty-state" class="empty-state" hidden>
