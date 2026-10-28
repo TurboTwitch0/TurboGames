@@ -2,6 +2,16 @@
 
 TurboGames is a static, searchable library with **3,099 games and apps**, square cover images, category tabs, and an isolated fullscreen player. No package install or build step is needed.
 
+## Find a title and return to it
+
+Search within a category or choose **All** to search the full catalog. Search tolerates punctuation and accents, supports multiple words, and keeps the query when switching categories. The collection can be sorted by title or filtered to hide entries with missing sources.
+
+Use the heart on a card to keep it in **Saved**. **Recent** lists the last 24 successfully opened game pages. These lists stay in the current browser profile; no account is required. If browser storage is blocked or full, the current tab keeps its latest game saves and library changes until it closes.
+
+Collection filters are preserved in the URL, such as `/?view=games&q=mario&sort=title-asc`. A game opens at `/?play=orbit-breaker`, so it can be bookmarked or linked from the TurboUniverse hub. Browser Back returns to the collection, Forward reopens the game, and closing a direct game link clears its play parameter. Failed game-page downloads offer a retry; known missing sources explain the problem and offer a return to browsing.
+
+Run `node tools/ui-check.cjs` and `node tools/discovery-check.cjs` against the local development server on port 8002 to check discovery, browser navigation, game storage, fullscreen, Google Sites embedding, and mobile layout. Set `TURBO_TEST_URL` to check another deployment.
+
 ## Daily GitHub refresh
 
 The [Daily catalog refresh workflow](https://github.com/TurboTwitch0/TurboGames/actions/workflows/daily-refresh.yml) runs every day at 11:23 UTC (morning in Central Time). It checks the existing library and rebuilds the catalog using the local artwork mappings. It does not import new games.

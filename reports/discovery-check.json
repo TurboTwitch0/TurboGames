@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "Search stays scoped to the selected category and survives tab changes",
+    "Multiword search tolerates capitalization and punctuation",
+    "Saved games persist after reload and appear in the Saved collection",
+    "Launch updates the URL; Back closes, Forward reopens, and Recent records the game",
+    "Closing a direct game link removes its play parameter",
+    "A failed game download shows recovery and Retry opens the playable original",
+    "Hide unavailable filters known missing sources; opening one explains the issue without a futile retry",
+    "A–Z and Z–A sorting reorder the Apps collection and remain in the shareable URL",
+    "A storage quota failure keeps the latest in-memory game save on restart and reopen",
+    "The 390px mobile layout has no horizontal overflow and player controls are at least 44px"
+  ],
+  "screenshot": "/tmp/turbogames-discovery-mobile.png"
+}

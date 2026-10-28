@@ -9,16 +9,31 @@
   const tabs = [...document.querySelectorAll(".tab")];
   const dialog = document.querySelector("#game-dialog");
   const playerSurface = document.querySelector("#player-surface");
-  const frame = document.querySelector("#game-frame");
+  let frame = document.querySelector("#game-frame");
   const dialogTitle = document.querySelector("#dialog-title");
   const playerStatus = document.querySelector("#player-status");
   const openTab = document.querySelector("#open-game-tab");
   const more = document.querySelector("#load-more");
+  const sort = document.querySelector("#sort");
+  const hideUnavailable = document.querySelector("#hide-unavailable");
+  const libraryNote = document.querySelector("#library-note");
+  const recovery = document.querySelector("#player-recovery");
+  const categoryNames = { popular: "Popular", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
   const parameters = new URLSearchParams(location.search);
   const embedded = parameters.get("embed") === "1" || window.self !== window.top;
   document.documentElement.classList.toggle("is-embedded", embedded);
   const sessionSaves = new Map();
   const memorySaves = new Map();
+  function readLibrary(key) {
+    try {
+      const data = JSON.parse(localStorage.getItem(`turbogames:${key}`) || "[]");
+      return Array.isArray(data) ? [...new Set(data.filter(id => typeof id === "string" && byId.has(id)))] : [];
+    } catch { return []; }
+  }
+  const favorites = new Set(readLibrary("favorites"));
+  let recent = readLibrary("recent").slice(0, 24);
+  const normalize = text => text.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  const searchable = new Map(items.map(item => [item.id, normalize([item.title, item.category, ...(item.tags || [])].join(" "))]));
   let category = "popular";
   let displayed = 96;
   let visible = [];
@@ -42,6 +57,7 @@
     return result;
   };
   function readSave(item) {
+    if (memorySaves.has(item.id)) return cleanValues(memorySaves.get(item.id));
     try { return cleanValues(JSON.parse(localStorage.getItem(saveKey(item)) || "{}")); }
     catch { return cleanValues(memorySaves.get(item.id)); }
   }
@@ -77,21 +93,73 @@
   });
   window.addEventListener("pagehide", flushSave);
 
-  function filteredItems() {
-    const query = search.value.trim().toLocaleLowerCase();
-    return items.filter(item => {
-      const matchesCategory = query || (category === "popular" ? item.featured : item.category === category);
-      const text = [item.title, item.category, ...(item.tags || [])].join(" ").toLocaleLowerCase();
-      return matchesCategory && (!query || text.includes(query));
+  function persistLibrary(key, value) {
+    try { localStorage.setItem(`turbogames:${key}`, JSON.stringify(value)); }
+    catch { libraryNote.textContent = "Browser storage is unavailable. Your library will last for this tab."; }
+  }
+  function updateLibraryCounts() {
+    document.querySelector("#saved-count").textContent = favorites.size;
+    document.querySelector("#recent-count").textContent = recent.length;
+  }
+  function rememberItem(item) {
+    recent = [item.id, ...recent.filter(id => id !== item.id)].slice(0, 24);
+    persistLibrary("recent", recent);
+    updateLibraryCounts();
+  }
+  function updateTabs() {
+    tabs.forEach(tab => {
+      const active = tab.dataset.category === category;
+      tab.classList.toggle("is-active", active);
+      tab.setAttribute("aria-pressed", String(active));
     });
+    const selected = tabs.find(tab => tab.dataset.category === category);
+    const bar = selected?.parentElement;
+    if (bar) {
+      const bounds = selected.getBoundingClientRect();
+      const viewport = bar.getBoundingClientRect();
+      if (bounds.left < viewport.left) bar.scrollLeft -= viewport.left - bounds.left;
+      else if (bounds.right > viewport.right) bar.scrollLeft += bounds.right - viewport.right;
+    }
+    search.setAttribute("aria-label", category === "all" || category === "popular" ? "Search all games and apps" : `Search ${categoryNames[category].toLowerCase()}`);
+  }
+  function writeFilters() {
+    const url = new URL(location.href);
+    const values = { view: category === "popular" ? "" : category, q: search.value.trim(), sort: sort.value === "recommended" ? "" : sort.value, available: hideUnavailable.checked ? "1" : "" };
+    for (const [key, value] of Object.entries(values)) value ? url.searchParams.set(key, value) : url.searchParams.delete(key);
+    history.replaceState(history.state, "", url);
+  }
+  function readFilters() {
+    const params = new URLSearchParams(location.search);
+    category = Object.hasOwn(categoryNames, params.get("view")) ? params.get("view") : "popular";
+    search.value = params.get("q") || "";
+    if (category === "popular" && search.value.trim()) category = "all";
+    sort.value = ["title-asc", "title-desc"].includes(params.get("sort")) ? params.get("sort") : "recommended";
+    hideUnavailable.checked = params.get("available") === "1";
+    updateTabs();
+  }
+
+  function filteredItems() {
+    const query = normalize(search.value);
+    const terms = query.split(/\s+/).filter(Boolean);
+    const matches = items.filter(item => {
+      const matchesCategory = category === "all" || (category === "popular" ? item.featured : category === "saved" ? favorites.has(item.id) : category === "recent" ? recent.includes(item.id) : item.category === category);
+      const text = searchable.get(item.id);
+      return matchesCategory && (!hideUnavailable.checked || item.sourceStatus !== "unavailable") && (!query || terms.every(term => text.includes(term)) || text.replaceAll(" ", "").includes(query.replaceAll(" ", "")));
+    });
+    if (sort.value !== "recommended") return matches.sort((a, b) => (sort.value === "title-asc" ? 1 : -1) * a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" }));
+    if (category === "recent") return matches.sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
+    if (query) return matches.sort((a, b) => Number(normalize(b.title).startsWith(query)) - Number(normalize(a.title).startsWith(query)) || Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
+    return matches;
   }
 
   function createCard(item, index) {
+    const card = document.createElement("article");
+    card.className = `game-card${item.sourceStatus === "unavailable" ? " source-unavailable" : ""}`;
+    card.style.setProperty("--card-index", Math.min(index, 9));
+    card.style.setProperty("--cover-hue", coverHue(item.id));
     const button = document.createElement("button");
-    button.className = `game-card${item.sourceStatus === "unavailable" ? " source-unavailable" : ""}`;
+    button.className = "card-launch";
     button.type = "button";
-    button.style.setProperty("--card-index", Math.min(index, 9));
-    button.style.setProperty("--cover-hue", coverHue(item.id));
     button.setAttribute("aria-label", `Open ${item.title}`);
     const art = document.createElement("span");
     art.className = "card-art";
@@ -118,9 +186,29 @@
     const name = document.createElement("span");
     name.className = "card-name";
     name.textContent = item.title;
+    name.title = item.title;
     button.append(art, name);
     button.addEventListener("click", () => openItem(item));
-    return button;
+    const save = document.createElement("button");
+    save.type = "button";
+    save.className = "save-game";
+    const updateSave = () => {
+      const saved = favorites.has(item.id);
+      save.textContent = saved ? "♥" : "♡";
+      save.setAttribute("aria-pressed", String(saved));
+      save.setAttribute("aria-label", `${saved ? "Unsave" : "Save"} ${item.title}`);
+      save.title = saved ? "Remove from Saved" : "Save for later";
+    };
+    updateSave();
+    save.addEventListener("click", () => {
+      favorites.has(item.id) ? favorites.delete(item.id) : favorites.add(item.id);
+      persistLibrary("favorites", [...favorites]);
+      updateLibraryCounts();
+      if (category === "saved") render();
+      else updateSave();
+    });
+    card.append(button, save);
+    return card;
   }
   function appendCards(start) {
     const fragment = document.createDocumentFragment();
@@ -131,9 +219,15 @@
   }
   function render() {
     visible = filteredItems();
+    document.body.classList.toggle("is-browsing", category !== "popular" || Boolean(search.value.trim()));
+    document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : "The collection";
     displayed = 96;
     grid.replaceChildren();
-    count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"}${search.value.trim() ? " · all categories" : ""}`;
+    count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}`;
+    const noLibrary = !search.value.trim() && (category === "saved" && favorites.size === 0 || category === "recent" && recent.length === 0);
+    document.querySelector("#empty-title").textContent = noLibrary ? category === "saved" ? "Your favorites, all together" : "Pick up where you left off" : "No matches yet";
+    document.querySelector("#empty-description").textContent = noLibrary ? category === "saved" ? "Tap the heart on any title to save it here in this browser." : "Open a game and it will appear here for a quick return." : "Try fewer words, another category, or reset your filters.";
+    document.querySelector("#clear-search").textContent = noLibrary ? "Explore all titles" : "Reset filters";
     empty.hidden = visible.length > 0;
     grid.hidden = visible.length === 0;
     appendCards(0);
@@ -148,16 +242,22 @@
     const nonce = activeNonce;
     manualSaveHint = false;
     const config = { turboGames: 1, nonce, parentOrigin: location.origin, local: readSave(item), session: sessionSaves.get(item.id) || {} };
+    // Set srcdoc before insertion: a fresh iframe replaces its initial blank
+    // document instead of adding child navigations to the browser Back stack.
+    const nextFrame = frame.cloneNode(false);
+    nextFrame.removeAttribute("srcdoc");
+    nextFrame.removeAttribute("src");
+    nextFrame.addEventListener("load", onFrameLoad);
+    frame.remove();
+    frame = nextFrame;
     frame.title = item.title;
+    recovery.hidden = true;
     if (item.sourceStatus === "unavailable") {
-      frame.removeAttribute("srcdoc");
-      frame.src = "about:blank";
       playerStatus.textContent = item.sourceIssue || "This game needs a working source before it can be played.";
+      showRecovery(item.sourceIssue || "The original game files are unavailable. Choose another title from the collection.", true);
       return;
     }
     playerStatus.textContent = `Loading ${item.title}…`;
-    frame.removeAttribute("srcdoc");
-    frame.src = "about:blank";
     try {
       const source = new URL(localSource(item), document.baseURI);
       const response = await fetch(source, { signal: loadController.signal });
@@ -176,11 +276,27 @@
       const doctype = html.match(/^\uFEFF?\s*<!doctype[^>]*>/i);
       html = doctype ? html.slice(0, doctype[0].length) + bootstrap + html.slice(doctype[0].length) : bootstrap + html;
       frame.srcdoc = html;
+      playerSurface.append(frame);
+      rememberItem(item);
     } catch (error) {
-      if (error.name !== "AbortError" && activeNonce === nonce) playerStatus.textContent = "This game could not load. Try Restart game or Open game in new tab.";
+      if (error.name !== "AbortError" && activeNonce === nonce) showRecovery("The game page could not be downloaded. Check your connection and try again.");
     }
   }
-  function openItem(item) {
+  function showRecovery(message, missing = false) {
+    playerStatus.textContent = "";
+    document.querySelector("#recovery-title").textContent = missing ? "This title needs a new source" : "This game couldn't load";
+    document.querySelector("#recovery-description").textContent = message;
+    document.querySelector("#retry-game").hidden = missing;
+    recovery.hidden = false;
+  }
+  function openItem(item, navigate = true) {
+    clearTimeout(searchTimer);
+    writeFilters();
+    if (navigate) {
+      const url = new URL(location.href);
+      url.searchParams.set("play", item.id);
+      history.pushState({ ...history.state, turboPlayer: true }, "", url);
+    }
     dialogTitle.textContent = item.title;
     const fullSite = new URL(location.href);
     fullSite.searchParams.delete("embed");
@@ -190,40 +306,90 @@
     if (!dialog.open) dialog.showModal();
     loadItem(item);
   }
-  frame.addEventListener("load", () => {
-    if (activeItem && frame.hasAttribute("srcdoc")) playerStatus.textContent = manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
-  });
+  function closePlayer() {
+    if (history.state?.turboPlayer) history.back();
+    else {
+      const url = new URL(location.href);
+      url.searchParams.delete("play");
+      history.replaceState(history.state, "", url);
+      dialog.close();
+    }
+  }
+  function onFrameLoad(event) {
+    if (event.currentTarget === frame && activeItem && frame.hasAttribute("srcdoc")) playerStatus.textContent = manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
+  }
+  frame.addEventListener("load", onFrameLoad);
   frame.setAttribute("sandbox", "allow-scripts allow-forms allow-pointer-lock allow-modals allow-popups allow-presentation allow-downloads");
   frame.setAttribute("referrerpolicy", "no-referrer");
   tabs.forEach(tab => {
-    tab.setAttribute("aria-pressed", String(tab.dataset.category === category));
     tab.addEventListener("click", () => {
+      clearTimeout(searchTimer);
       category = tab.dataset.category;
-      search.value = "";
-      tabs.forEach(other => {
-        const active = other === tab;
-        other.classList.toggle("is-active", active);
-        other.setAttribute("aria-pressed", String(active));
-      });
+      updateTabs();
+      writeFilters();
       render();
     });
   });
-  search.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(render, 120); });
+  search.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      if (category === "popular" && search.value.trim()) category = "all";
+      updateTabs();
+      writeFilters();
+      render();
+    }, 120);
+  });
+  for (const input of [sort, hideUnavailable]) input.addEventListener("change", () => { writeFilters(); render(); });
   more.addEventListener("click", () => { const start = displayed; displayed += 96; appendCards(start); });
-  document.querySelector("#clear-search").addEventListener("click", () => { search.value = ""; search.focus(); render(); });
-  document.querySelector("#close-dialog").addEventListener("click", () => dialog.close());
+  function resetCollection(nextCategory = "all") {
+    clearTimeout(searchTimer);
+    search.value = "";
+    category = nextCategory;
+    sort.value = "recommended";
+    hideUnavailable.checked = false;
+    updateTabs();
+    writeFilters();
+    render();
+  }
+  document.querySelector("#clear-search").addEventListener("click", () => { resetCollection(); search.focus(); });
+  document.querySelectorAll("a.brand").forEach(link => link.addEventListener("click", event => {
+    event.preventDefault();
+    resetCollection("popular");
+    const url = new URL(location.href);
+    url.hash = "";
+    history.replaceState(history.state, "", url);
+    window.scrollTo(0, 0);
+  }));
+  document.querySelector("#close-dialog").addEventListener("click", closePlayer);
+  document.querySelector("#return-to-collection").addEventListener("click", closePlayer);
+  document.querySelector("#retry-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
   document.querySelector("#reload-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
   dialog.addEventListener("close", () => {
+    // A queued close event can arrive after Forward has already reopened it.
+    if (dialog.open) return;
     if (document.fullscreenElement === playerSurface) document.exitFullscreen().catch(() => {});
     flushSave();
     loadController?.abort();
     activeItem = undefined;
     activeNonce = undefined;
+    frame.remove();
     frame.removeAttribute("srcdoc");
-    frame.src = "about:blank";
+    frame.removeAttribute("src");
     playerStatus.textContent = "";
+    recovery.hidden = true;
+    if (category === "recent") render();
   });
-  dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener("cancel", event => { event.preventDefault(); closePlayer(); });
+  dialog.addEventListener("click", event => { if (event.target === dialog) closePlayer(); });
+  window.addEventListener("popstate", () => {
+    clearTimeout(searchTimer);
+    readFilters();
+    render();
+    const item = byId.get(new URLSearchParams(location.search).get("play"));
+    if (item) {
+      if (!dialog.open || activeItem?.id !== item.id) openItem(item, false);
+    } else if (dialog.open) dialog.close();
+  });
   document.querySelector("#fullscreen-button").addEventListener("click", async () => {
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
@@ -238,7 +404,16 @@
       event.preventDefault(); search.focus();
     }
   });
+  readFilters();
+  updateLibraryCounts();
+  document.querySelector("#total-titles").textContent = items.length.toLocaleString();
   render();
   const requested = byId.get(parameters.get("play"));
-  if (requested) openItem(requested);
+  if (requested) openItem(requested, false);
+  else if (parameters.has("play")) {
+    libraryNote.textContent = "That title isn't in this catalog. Search the collection to find another.";
+    const url = new URL(location.href);
+    url.searchParams.delete("play");
+    history.replaceState(history.state, "", url);
+  }
 })();
