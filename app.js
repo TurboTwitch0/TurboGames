@@ -122,6 +122,23 @@
     button.setAttribute("aria-label", `${saved ? "Unsave" : "Save"} ${item.title}`);
     button.title = saved ? "Remove from Saved" : "Save for later";
   }
+  window.addEventListener("storage", event => {
+    try { if (event.storageArea !== localStorage) return; }
+    catch { return; }
+    if (event.key === null || event.key === "turbogames:favorites") {
+      favorites.clear();
+      for (const id of readLibrary("favorites")) favorites.add(id);
+      document.querySelectorAll("[data-save-id]").forEach(button => {
+        const item = byId.get(button.dataset.saveId);
+        if (item) updateSaveButton(button, item);
+      });
+    }
+    if (event.key === null || event.key === "turbogames:recent") recent = readLibrary("recent").slice(0, 24);
+    if (event.key === null || event.key === "turbogames:favorites" || event.key === "turbogames:recent") {
+      updateLibraryCounts();
+      if (category === "saved" || category === "recent") render();
+    }
+  });
   function toggleFavorite(item) {
     const saved = !favorites.has(item.id);
     saved ? favorites.add(item.id) : favorites.delete(item.id);
