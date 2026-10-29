@@ -13,6 +13,13 @@
   const dialogTitle = document.querySelector("#dialog-title");
   const playerStatus = document.querySelector("#player-status");
   const openTab = document.querySelector("#open-game-tab");
+  const playerSave = document.querySelector("#save-active-game");
+  const shareGame = document.querySelector("#share-game");
+  const playerShare = document.querySelector("#player-share");
+  const shareLink = document.querySelector("#game-share-link");
+  const copyLink = document.querySelector("#copy-game-link");
+  const shareFeedback = document.querySelector("#share-feedback");
+  let shareGeneration = 0;
   const more = document.querySelector("#load-more");
   const sort = document.querySelector("#sort");
   const hideUnavailable = document.querySelector("#hide-unavailable");
@@ -24,6 +31,11 @@
   const quickPick = document.querySelector("#quick-pick");
   const recentShelf = document.querySelector("#recent-shelf");
   const categoryNames = { popular: "Popular", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
+  const categoryTotals = items.reduce((totals, item) => {
+    totals[item.category] = (totals[item.category] || 0) + 1;
+    if (item.featured) totals.popular += 1;
+    return totals;
+  }, { all: items.length, popular: 0 });
   const parameters = new URLSearchParams(location.search);
   const embedded = parameters.get("embed") === "1" || window.self !== window.top;
   document.documentElement.classList.toggle("is-embedded", embedded);
@@ -255,6 +267,11 @@
   function updateLibraryCounts() {
     document.querySelector("#saved-count").textContent = favorites.size;
     document.querySelector("#recent-count").textContent = recent.length;
+    document.querySelectorAll("[data-library-count]").forEach(node => {
+      const value = node.dataset.libraryCount === "saved" ? favorites.size : recent.length;
+      node.textContent = value;
+      node.hidden = value === 0;
+    });
   }
   function rememberItem(item) {
     recent = [item.id, ...recent.filter(id => id !== item.id)].slice(0, 24);
@@ -370,6 +387,9 @@
       tab.classList.toggle("is-active", active);
       tab.setAttribute("aria-pressed", String(active));
     });
+    document.querySelectorAll("[data-library-view]").forEach(button => {
+      button.setAttribute("aria-pressed", String(button.dataset.libraryView === category));
+    });
     const selected = tabs.find(tab => tab.dataset.category === category);
     const bar = selected?.parentElement;
     if (bar) {
@@ -483,11 +503,32 @@
     if (pickHadFocus) (pickButton.disabled ? tabs.find(tab => tab.dataset.category === category) : pickButton)?.focus({ preventScroll: true });
   }
 
+  function closeSharePanel(restoreFocus = false) {
+    shareGeneration++;
+    playerShare.hidden = true;
+    shareGame.setAttribute("aria-expanded", "false");
+    copyLink.disabled = false;
+    copyLink.textContent = "Copy link";
+    shareFeedback.textContent = "Select the link or use Copy link.";
+    if (restoreFocus && dialog.open) shareGame.focus({ preventScroll: true });
+  }
+  function syncPlayerTools(item) {
+    closeSharePanel();
+    updateSaveButton(playerSave, item);
+    document.querySelector("#player-save-feedback").textContent = "";
+    document.querySelector("#player-category").textContent = `${categoryNames[item.category] || "Collection"} / TURBOGAMES`;
+    const link = new URL(location.href);
+    link.search = "";
+    link.hash = "";
+    link.searchParams.set("play", item.id);
+    shareLink.value = link.href;
+  }
   async function loadItem(item) {
     flushSave();
     loadController?.abort();
     loadController = new AbortController();
     activeItem = item;
+    syncPlayerTools(item);
     activeNonce = globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random()}`;
     const nonce = activeNonce;
     manualSaveHint = false;
@@ -615,6 +656,11 @@
     document.querySelector("#catalog").scrollIntoView({ block: "start" });
     tabs.find(tab => tab.dataset.category === "saved").focus({ preventScroll: true });
   });
+  document.querySelectorAll("[data-library-view]").forEach(button => button.addEventListener("click", () => {
+    resetCollection(button.dataset.libraryView);
+    document.querySelector("#catalog").scrollIntoView({ block: "start" });
+    tabs.find(tab => tab.dataset.category === category)?.focus({ preventScroll: true });
+  }));
   document.querySelector("#clear-query").addEventListener("click", () => {
     clearTimeout(searchTimer);
     search.value = "";
@@ -691,9 +737,56 @@
   document.querySelector("#return-to-collection").addEventListener("click", closePlayer);
   document.querySelector("#retry-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
   document.querySelector("#reload-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
+  playerSave.addEventListener("click", () => {
+    if (!activeItem) return;
+    toggleFavorite(activeItem);
+    document.querySelector("#player-save-feedback").textContent = feedback.textContent;
+  });
+  shareGame.addEventListener("click", () => {
+    if (!activeItem) return;
+    if (!playerShare.hidden) { closeSharePanel(true); return; }
+    playerShare.hidden = false;
+    shareGame.setAttribute("aria-expanded", "true");
+    shareFeedback.textContent = "Select the link or use Copy link.";
+    shareLink.focus({ preventScroll: true });
+    shareLink.select();
+  });
+  document.querySelector("#close-share").addEventListener("click", () => closeSharePanel(true));
+  playerShare.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      event.stopPropagation();
+      closeSharePanel(true);
+    }
+  });
+  shareLink.addEventListener("click", () => shareLink.select());
+  copyLink.addEventListener("click", async () => {
+    const generation = shareGeneration;
+    const value = shareLink.value;
+    if (!activeItem || !value) return;
+    copyLink.disabled = true;
+    copyLink.textContent = "Copying…";
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
+      await navigator.clipboard.writeText(value);
+      if (generation !== shareGeneration || playerShare.hidden) return;
+      shareFeedback.textContent = "Link copied. Share it wherever you like.";
+      copyLink.textContent = "Copied";
+    } catch {
+      if (generation !== shareGeneration || playerShare.hidden) return;
+      copyLink.textContent = "Copy link";
+      shareFeedback.textContent = "Automatic copying is unavailable. The link is selected; use your browser's Copy command.";
+      shareLink.focus({ preventScroll: true });
+      shareLink.select();
+    } finally {
+      if (generation === shareGeneration) copyLink.disabled = false;
+    }
+  });
   dialog.addEventListener("close", () => {
     // A queued close event can arrive after Forward has already reopened it.
     if (dialog.open) return;
+    closeSharePanel();
+    shareLink.value = "";
     if (document.fullscreenElement === playerSurface) document.exitFullscreen().catch(() => {});
     flushSave();
     loadController?.abort();
@@ -707,7 +800,11 @@
     loading.hidden = true;
     if (category === "recent") render();
   });
-  dialog.addEventListener("cancel", event => { event.preventDefault(); closePlayer(); });
+  dialog.addEventListener("cancel", event => {
+    event.preventDefault();
+    if (!playerShare.hidden) closeSharePanel(true);
+    else closePlayer();
+  });
   dialog.addEventListener("click", event => { if (event.target === dialog) closePlayer(); });
   window.addEventListener("popstate", () => {
     clearTimeout(searchTimer);
@@ -727,12 +824,26 @@
       openTab.focus();
     }
   });
+  document.addEventListener("fullscreenchange", () => {
+    const expanded = Boolean(document.fullscreenElement);
+    const button = document.querySelector("#fullscreen-button");
+    const label = expanded ? "Exit fullscreen" : "Go fullscreen";
+    button.setAttribute("aria-label", label);
+    button.title = label;
+    button.setAttribute("aria-pressed", String(expanded));
+    button.querySelector("path").setAttribute("d", expanded
+      ? "M4 9h5V4M15 4v5h5M20 15h-5v5M9 20v-5H4"
+      : "M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5");
+  });
   document.addEventListener("keydown", event => {
     if (event.key === "/" && document.activeElement !== search && !dialog.open && !["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName)) {
       event.preventDefault(); search.focus();
     }
   });
   readFilters();
+  document.querySelectorAll("[data-scope-count]").forEach(node => {
+    node.textContent = (categoryTotals[node.dataset.scopeCount] || 0).toLocaleString();
+  });
   updateLibraryCounts();
   renderRecentShelf();
   document.querySelector("#total-titles").textContent = items.length.toLocaleString();

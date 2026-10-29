@@ -8,6 +8,8 @@ The original **Find your next play** identity uses shared tokens in `brand.css`,
 
 The homepage's manual featured rotation stages Orbit Breaker, Little Match, and 2048 using existing artwork, perspective cards, and restrained lighting. Choose a side card, use Previous/Next or the named selectors, or swipe horizontally on touch screens. When the stage has focus, Left/Right, Home/End, and Enter are available. Play, Save, and Browse Games follow the selected title. There is no autoplay; vertical scrolling remains native, and reduced motion uses a flat 2D presentation. Collection and embedded views continue to bypass the stage.
 
+Persistent **Saved** and **Recent** shortcuts keep the browser-local library reachable from the sticky header, including on phones. Desktop collection views use a category sidebar with actual catalog counts; smaller screens and Google Sites retain horizontally scrollable categories. The shared library updates across tabs. Navigation styles live in `library.css`.
+
 The exportable [brand and launch kit](outputs/turbogames-brand-kit/README.md) includes a [downloadable ZIP](outputs/turbogames-brand-kit/TurboGames-brand-kit.zip), a visual style guide, SVG/PNG logos, 1200×630 landscape artwork, 1080×1350 portrait artwork, actual desktop/mobile captures, and launch copy. Its [asset manifest](outputs/turbogames-brand-kit/asset-manifest.json) lists public download URLs, dimensions, and SHA-256 hashes. Product screenshots and existing game artwork retain their source attribution; promotion copy describes browser-local libraries and varying title availability accurately.
 
 Regenerate the kit with `python3 tools/export_brand_kit.py --capture-url http://127.0.0.1:8002/` while the local server runs. Run `node tools/brand-check.cjs` for focused keyboard, preview, favorite synchronization, loading/recovery, reduced-motion, and narrow-layout checks in addition to the discovery checks below.
@@ -26,9 +28,13 @@ Use the heart on a card to keep it in **Saved**. **Recent** lists the last 24 su
 
 Collection filters are preserved in the URL, such as `/?view=games&q=mario&sort=title-asc`. A game opens at `/?play=orbit-breaker`, so it can be bookmarked or linked from the TurboUniverse hub. Browser Back returns to the collection, Forward reopens the game, and closing a direct game link clears its play parameter. Failed game-page downloads offer a retry; known missing sources explain the problem and offer a return to browsing.
 
+The existing player has a **Save for later** heart and a **Share** panel. Shared links contain the current title only, without the user's collection search or embed settings. Copy uses the browser's clipboard API; when copying is unavailable, the real link stays selected for manual copying. Escape closes Share before closing the game. Phone controls use two rows so the title and six 44px controls fit; landscape switches to a compact toolbar. Fullscreen labels follow the actual browser state. Player styles live in `player-tools.css`.
+
 Run `node tools/ui-check.cjs` and `node tools/discovery-check.cjs` against the local development server on port 8002 to check discovery, browser navigation, game storage, fullscreen, Google Sites embedding, and mobile layout. Set `TURBO_TEST_URL` to check another deployment.
 
 Run `node tools/quick-play-check.cjs` for the focused recent shelf, scoped preview, favorites, filter controls, quick searches, focus recovery, keyboard/touch, reduced-motion, and narrow/embedded layout checks. Its report is `reports/quick-play-check.json` by default.
+
+Run `node tools/library-navigation-check.cjs` and `node tools/player-tools-check.cjs` for the persistent library shortcuts, real category counts, cross-tab updates, player favorites, native/manual link copying, fullscreen state, focus recovery, and phone/landscape layout checks. Both support `TURBO_TEST_URL` and `TURBO_REPORT_PATH` for checking a deployment without changing committed local reports.
 
 ## Daily GitHub refresh
 

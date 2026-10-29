@@ -1,0 +1,61 @@
+/* The library stays close, from the wide collection to a small phone. */
+.library-shortcuts { display: flex; gap: 8px; flex-shrink: 0; }
+.library-shortcut { position: relative; display: flex; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 10px 12px; border: 1px solid #424d5d; border-radius: 12px; background: #191d248c; color: var(--ink); font-size: 11px; transition: background .18s, border-color .18s; }
+.library-shortcut svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.library-shortcut:hover { border-color: var(--violet); background: #a9adff12; }
+.library-shortcut[aria-pressed=true] { color: var(--violet); border-color: var(--violet); background: #a9adff15; }
+.shortcut-count { display: grid; place-items: center; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 6px; background: #ffffff09; color: var(--muted); font: 8px var(--mono); }
+.library-shortcut[aria-pressed=true] .shortcut-count { background: #a9adff20; color: var(--violet); }
+.collection-content { min-width: 0; }
+.tabs .sidebar-label, .tabs .sidebar-note, .scope-count { display: none; }
+.collection-content .quick-searches { margin: 0 0 22px; }
+.collection-content .collection-toolbar { flex-wrap: wrap; gap: 8px 18px; }
+.recent-shelf-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+
+@media (min-width: 1101px) {
+  .catalog-layout { display: grid; grid-template-columns: 196px minmax(0, 1fr); align-items: start; gap: 30px; }
+  .catalog-layout > .tabs { position: sticky; top: 120px; display: flex; flex-direction: column; align-items: stretch; gap: 4px; padding: 14px; max-height: calc(100dvh - 142px); overflow-y: auto; overflow-x: hidden; border: 1px solid #414b5b70; border-radius: 20px; background: linear-gradient(150deg, #1c212a, #15191f); }
+  .catalog-layout .tab { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 44px; width: 100%; padding: 10px 12px; text-align: left; font-size: 12px; }
+  .catalog-layout .tab.library-tab { border-color: transparent; }
+  .catalog-layout .scope-count { display: inline; font: 9px var(--mono); opacity: .7; }
+  .catalog-layout .tab-count { margin-left: 0; }
+  .tabs .sidebar-label { display: block; margin: 4px 10px 8px; color: var(--muted); font: 8px var(--mono); letter-spacing: 1.3px; }
+  .tabs .library-label { margin-top: 13px; padding-top: 19px; border-top: 1px solid var(--line); }
+  .tabs .sidebar-note { display: block; margin: 16px 10px 6px; padding-top: 15px; border-top: 1px solid var(--line); color: var(--muted); font: 8px/1.9 var(--mono); }
+  .collection-content .collection-toolbar { padding-top: 0; padding-bottom: 23px; }
+  .collection-content .collection-filters { gap: 12px; margin-left: auto; }
+  .collection-content .game-grid { gap: 26px 18px; }
+  .collection-content .quick-pick { grid-template-columns: 155px minmax(0, 1fr); gap: 25px; padding: 23px 58px 23px 21px; }
+  .collection-content .pick-copy h3 { font-size: 34px; }
+}
+@media (max-width: 1100px) {
+  .library-shortcut { width: 44px; height: 44px; padding: 0; }
+  .shortcut-label { display: none; }
+  .shortcut-count { position: absolute; top: 2px; right: 2px; min-width: 15px; height: 15px; padding: 0 3px; font-size: 7px; }
+  .collection-content { padding-top: 23px; }
+  .collection-content .quick-searches { margin-bottom: 15px; }
+}
+@media (max-width: 760px) {
+  .topbar { min-height: 125px; padding: 16px 0; flex-wrap: wrap; gap: 12px; }
+  .topbar > .brand { margin-right: auto; }
+  .library-shortcuts { order: 1; margin-left: auto; }
+  .searchbox { order: 2; flex: 1 1 100%; width: 100%; max-width: none; height: 45px; margin: 0; }
+  .catalog-section { scroll-margin-top: 145px; }
+  .recent-shelf-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .topbar { gap: 10px; }
+  .topbar > .brand { gap: 8px; font-size: 21px; }
+  .library-shortcuts { gap: 5px; }
+  .library-shortcut svg { width: 19px; height: 19px; }
+  .collection-content { padding-top: 21px; }
+  .collection-content .quick-searches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 18px; }
+  .quick-searches > span { grid-column: 1 / -1; }
+  .quick-searches button { justify-content: space-between; min-width: 0; padding: 10px 15px; }
+}
+/* Google Sites gets the same shortcuts with the existing compact catalog. */
+.is-embedded .catalog-layout { display: block; }
+.is-embedded .catalog-layout > .tabs { position: static; display: flex; flex-direction: row; align-items: center; max-height: none; overflow-x: auto; padding: 6px; gap: 5px; background: var(--panel); border-color: var(--line); border-radius: 16px; }
+.is-embedded .catalog-layout .tab { display: block; width: auto; padding: 11px 15px; white-space: nowrap; }
+.is-embedded .sidebar-label, .is-embedded .sidebar-note, .is-embedded .scope-count { display: none !important; }
+.is-embedded .collection-content { padding-top: 22px; }

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "Player Save updates the real browser-local library and accessible feedback without navigating or adding history",
+    "Share generates only the actual play route; a trusted user click writes that exact link to the real native clipboard",
+    "A denied clipboard request selects the link with honest recovery; Escape or Close dismisses Share first and restores keyboard focus",
+    "The active game Save button stays synchronized with real favorite changes made in another tab",
+    "Restart and Back/Forward reset stale sharing without losing favorites; a controlled failed download recovers through the actual Retry flow",
+    "Six 44px controls, consistent toolbar/frame/recovery offsets, usable game space, and sharing fit desktop,390px,320px,and landscape screens",
+    "Fullscreen label, icon state, and pressed state track the actual API and revert on exit; blocked fullscreen retains the new-tab recovery",
+    "Known missing-source recovery still offers real Save and Share without pretending the game works; the next Escape closes the player and clears the direct play route"
+  ],
+  "screenshots": [
+    "/tmp/turbogames-player-tools-desktop.png",
+    "/tmp/turbogames-player-tools-mobile.png",
+    "/tmp/turbogames-player-tools-narrow.png",
+    "/tmp/turbogames-player-tools-landscape.png"
+  ]
+}

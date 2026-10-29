@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "Persistent Saved and Recent shortcuts open real collections, reset stale filters, and synchronize active navigation",
+    "Header favorite counts follow real changes from another tab; empty counters stay hidden and Saved remains accurate",
+    "Sidebar counts match the unchanged catalog and keep category names accessible",
+    "Library shortcuts work with keyboard focus and reduced motion",
+    "Navigation fits 1440/1024/760/520/390/320px, has 44px targets and real touch activation, and keeps Google Sites compact"
+  ]
+}

@@ -15,6 +15,8 @@
     <title>TurboGames — Find your next play.</title>
     <link rel="stylesheet" href="brand.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="library.css" />
+    <link rel="stylesheet" href="player-tools.css" />
     <link rel="icon" href="assets/brand/turbogames-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="outputs/turbogames-brand-kit/turbogames-mark.png" />
     <script src="catalog.js" defer></script>
@@ -36,7 +38,10 @@
           <button id="clear-query" class="clear-query" type="button" aria-label="Clear search" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
           <kbd>/</kbd>
         </div>
-        <div class="topbar-note"><span class="status-dot"></span> FIND YOUR NEXT PLAY</div>
+        <nav class="library-shortcuts" aria-label="Your library">
+          <button id="header-saved" class="library-shortcut" data-library-view="saved" type="button" aria-label="Open your Saved titles" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8a5.5 5.5 0 0 0-7.8 0L12 7l-1-1.2a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg><span class="shortcut-label">Saved</span><span class="shortcut-count" data-library-count="saved" aria-hidden="true">0</span></button>
+          <button id="header-recent" class="library-shortcut" data-library-view="recent" type="button" aria-label="Open recently opened titles" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.7 7M3 4v7h7M12 7v5l3 2"/></svg><span class="shortcut-label">Recent</span><span class="shortcut-count" data-library-count="recent" aria-hidden="true">0</span></button>
+        </nav>
       </header>
 
       <main id="top">
@@ -85,23 +90,28 @@
             <div><p class="eyebrow">GOOD STUFF, ALL IN ONE PLACE</p><h2 id="catalog-title">The collection</h2></div>
             <div class="collection-summary"><p id="result-count" class="result-count" aria-live="polite"></p><button id="pick-game" class="pick-game" type="button" aria-controls="quick-pick" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></svg>Pick for me <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
           </div>
+          <div class="catalog-layout">
+          <nav class="tabs" aria-label="Browse collection">
+            <span class="sidebar-label" aria-hidden="true">DISCOVER</span>
+            <button class="tab is-active" data-category="popular" type="button"><span>Popular <span class="tab-icon" aria-hidden="true">✦</span></span><span class="scope-count" data-scope-count="popular" aria-hidden="true"></span></button>
+            <button class="tab" data-category="all" type="button"><span>All</span><span class="scope-count" data-scope-count="all" aria-hidden="true"></span></button>
+            <button class="tab" data-category="games" type="button"><span>Games</span><span class="scope-count" data-scope-count="games" aria-hidden="true"></span></button>
+            <button class="tab" data-category="flash" type="button"><span>Flash</span><span class="scope-count" data-scope-count="flash" aria-hidden="true"></span></button>
+            <button class="tab" data-category="apps" type="button"><span>Apps</span><span class="scope-count" data-scope-count="apps" aria-hidden="true"></span></button>
+            <button class="tab" data-category="emulator" type="button"><span>Emulator</span><span class="scope-count" data-scope-count="emulator" aria-hidden="true"></span></button>
+            <button class="tab" data-category="misc" type="button"><span>Misc</span><span class="scope-count" data-scope-count="misc" aria-hidden="true"></span></button>
+            <span class="sidebar-label library-label" aria-hidden="true">YOUR LIBRARY</span>
+            <button class="tab library-tab" data-category="saved" type="button"><span>Saved</span><span id="saved-count" class="tab-count" aria-hidden="true">0</span></button>
+            <button class="tab library-tab" data-category="recent" type="button"><span>Recent</span><span id="recent-count" class="tab-count" aria-hidden="true">0</span></button>
+            <p class="sidebar-note">Your library stays in this browser.<br />Find something worth keeping.</p>
+          </nav>
+          <div class="collection-content">
           <div id="quick-pick" class="quick-pick" role="region" aria-label="Your quick pick" hidden>
             <div class="pick-art"><img id="pick-cover" src="assets/fallback-cover.svg" alt="" width="400" height="400" /><span class="pick-art-label" aria-hidden="true">A LITTLE SERENDIPITY</span></div>
             <div class="pick-copy"><p class="eyebrow">YOUR QUICK PICK <span id="pick-category"></span></p><h3 id="pick-title" tabindex="-1" aria-live="polite"></h3><p id="pick-context" class="pick-context"></p><div class="pick-actions"><button id="pick-play" class="primary-action" type="button">Play this title <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="m6 3 11 7L6 17Z"/></svg></button><button id="pick-again" class="pick-again" type="button">Another pick <span aria-hidden="true">↻</span></button><button id="pick-save" class="pick-save" type="button" aria-label="Save quick pick" aria-pressed="false">♡</button></div><p class="pick-note">Some titles need their original online assets. This is a random pick, ready when you are.</p></div>
             <button id="dismiss-pick" class="dismiss-pick" type="button" aria-label="Dismiss quick pick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg></button>
           </div>
           <div id="quick-searches" class="quick-searches" aria-label="Quick searches"><span>START SOMEWHERE</span><button type="button" data-query="arcade">Arcade <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="racing">Racing <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="puzzle">Puzzle <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="mario">Mario <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
-          <nav class="tabs" aria-label="Browse collection">
-            <button class="tab is-active" data-category="popular" type="button">Popular <span class="tab-icon">✦</span></button>
-            <button class="tab" data-category="all" type="button">All</button>
-            <button class="tab" data-category="games" type="button">Games</button>
-            <button class="tab" data-category="flash" type="button">Flash</button>
-            <button class="tab" data-category="apps" type="button">Apps</button>
-            <button class="tab" data-category="emulator" type="button">Emulator</button>
-            <button class="tab" data-category="misc" type="button">Misc</button>
-            <button class="tab library-tab" data-category="saved" type="button">Saved <span id="saved-count" class="tab-count">0</span></button>
-            <button class="tab library-tab" data-category="recent" type="button">Recent <span id="recent-count" class="tab-count">0</span></button>
-          </nav>
           <div class="collection-toolbar">
             <p id="library-note" class="library-note" role="status">Save favorites with the heart. Your library stays in this browser.</p>
             <div class="collection-filters">
@@ -118,6 +128,8 @@
             <p id="empty-description">Try another search or pick a different tab.</p>
             <button id="clear-search" class="text-button" type="button">Explore all titles</button>
           </div>
+          </div>
+          </div>
         </section>
       </main>
 
@@ -127,14 +139,24 @@
     <dialog id="game-dialog" class="game-dialog" aria-labelledby="dialog-title">
       <div id="player-surface" class="player-surface">
       <div class="dialog-bar">
-        <div class="dialog-title-wrap"><span class="dialog-led"></span><h2 id="dialog-title">Game</h2></div>
+        <div class="dialog-title-wrap"><span class="dialog-led"></span><div class="player-title-copy"><span id="player-category" class="player-category">TURBOGAMES / PLAYER</span><h2 id="dialog-title">Game</h2></div></div>
         <div class="dialog-actions">
+          <button id="save-active-game" class="icon-button player-save" type="button" title="Save for later" aria-label="Save this game" aria-pressed="false">♡</button>
+          <button id="share-game" class="icon-button" type="button" title="Share game" aria-label="Share game" aria-controls="player-share" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 13 4-4M8.5 15.5l-1 1a4.2 4.2 0 0 1-6-6l4-4a4.2 4.2 0 0 1 6 0M15.5 8.5l1-1a4.2 4.2 0 0 1 6 6l-4 4a4.2 4.2 0 0 1-6 0" transform="translate(1 -1) scale(.9)"/></svg></button>
           <a id="open-game-tab" class="icon-button" href="#" target="_blank" rel="noopener noreferrer" title="Open in new tab" aria-label="Open game in new tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M10 5H5v14h14v-5"/></svg></a>
           <button id="reload-game" class="icon-button" type="button" title="Restart game" aria-label="Restart game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M19.5 11a8 8 0 1 0-1 6M20 12 16 7"/></svg></button>
-          <button id="fullscreen-button" class="icon-button" type="button" title="Go fullscreen" aria-label="Go fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></button>
+          <button id="fullscreen-button" class="icon-button" type="button" title="Go fullscreen" aria-label="Go fullscreen" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></button>
           <button id="close-dialog" class="icon-button close-button" type="button" title="Close game" aria-label="Close game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
         </div>
+        <span id="player-save-feedback" class="player-sr-status" role="status"></span>
       </div>
+      <section id="player-share" class="player-share" aria-labelledby="player-share-title" hidden>
+        <div class="player-share-heading"><div><span class="eyebrow">GOOD FINDS ARE FOR SHARING</span><h3 id="player-share-title">Take this game with you.</h3></div><button id="close-share" class="icon-button" type="button" aria-label="Close share panel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+        <p class="player-share-description">A direct link to this title. Game progress isn't included.</p>
+        <label for="game-share-link" class="player-share-label">Game link</label>
+        <div class="player-share-controls"><input id="game-share-link" type="url" readonly spellcheck="false" autocomplete="off" /><button id="copy-game-link" type="button">Copy link</button></div>
+        <p id="share-feedback" class="share-feedback" role="status" aria-live="polite">Select the link or use Copy link.</p>
+      </section>
       <p id="player-status" class="player-status" role="status"></p>
       <div id="player-loading" class="player-loading" role="status" hidden><img src="assets/brand/turbogames-mark.svg" width="64" height="64" alt="" /><span class="eyebrow">A LITTLE PLAY IS ON THE WAY</span><h3>Opening your next play<span aria-hidden="true">…</span></h3><p>Getting the game page ready. Some titles then download their own assets.</p><span class="loading-track" aria-hidden="true"><i></i></span></div>
       <div id="player-recovery" class="player-recovery" hidden>
