@@ -1,4 +1,15 @@
 /* The library stays close, from the wide collection to a small phone. */
+.genre-section { margin: 0 0 26px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+.genre-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 14px; }
+.genre-heading h3 { margin: 0; font-size: 16px; }
+.genre-heading p { margin: 0; color: var(--muted); font-size: 11px; }
+.genre-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.genre-filters button { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; padding: 9px 13px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: transparent; font-size: 12px; text-align: left; }
+.genre-filters button:hover { border-color: var(--violet); }
+.genre-filters button[aria-pressed=true] { color: #11150b; background: var(--lime, #d6ff64); border-color: var(--lime, #d6ff64); }
+.genre-filters button:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; }
+.genre-count { font: 9px var(--mono); opacity: .7; }
+@media (max-width: 520px) { .genre-section { padding: 14px; } .genre-filters { gap: 6px; } .genre-filters button { flex: 1 1 auto; justify-content: space-between; font-size: 11px; padding: 9px 11px; } }
 .library-shortcuts { display: flex; gap: 8px; flex-shrink: 0; }
 .library-shortcut { position: relative; display: flex; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 10px 12px; border: 1px solid #424d5d; border-radius: 12px; background: #191d248c; color: var(--ink); font-size: 11px; transition: background .18s, border-color .18s; }
 .library-shortcut svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }

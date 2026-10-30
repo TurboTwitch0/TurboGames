@@ -18,6 +18,16 @@ For the latest showcase-only export delta, use `--showcase-only --baseline-commi
 
 ## Find a title and return to it
 
+**Play by category** adds Action, Adventure & RPG, Arcade, Puzzle & Strategy,
+Racing, Sports, Horror, and Rhythm alongside the existing collection tabs.
+Categories combine with search, Saved/Recent, source type, sorting, and availability.
+Their counts reflect the current collection and other filters. Share or bookmark
+`/?view=all&genre=racing` to reopen the category. **All genres** includes every
+catalog title, including titles without a confident genre classification.
+The maintained rules and explicit metadata support live in `game-categories.js`;
+the daily catalog refresh retains this separate classification layer.
+Run `node --test tools/category-model.test.cjs` for classification regressions.
+
 Search within a category or choose **All** to search the full catalog. Search tolerates punctuation and accents, supports multiple words, and keeps the query when switching categories. The collection can be sorted by title or filtered to hide entries with missing sources.
 
 **Pick for me** previews a random title from the current results before opening anything. Play, Save, and Another pick use the same catalog and library; another pick avoids repeating the current title when alternatives exist. Known missing sources are excluded, but this is not a compatibility or gameplay guarantee. Changing a filter dismisses the old preview. Arcade, Racing, Puzzle, and Mario shortcuts run real full-catalog searches.

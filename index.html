@@ -20,6 +20,7 @@
     <link rel="icon" href="assets/brand/turbogames-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="outputs/turbogames-brand-kit/turbogames-mark.png" />
     <script src="catalog.js" defer></script>
+    <script src="game-categories.js" defer></script>
     <script src="app.js" defer></script>
     <script src="ads-config.js" defer></script>
     <script src="ads.js" defer></script>
@@ -106,6 +107,10 @@
             <p class="sidebar-note">Your library stays in this browser.<br />Find something worth keeping.</p>
           </nav>
           <div class="collection-content">
+          <section class="genre-section" aria-labelledby="genre-heading">
+            <div class="genre-heading"><h3 id="genre-heading">Play by category</h3><p>Find your kind of game in any collection.</p></div>
+            <div id="genre-filters" class="genre-filters" role="group" aria-label="Game categories"></div>
+          </section>
           <div id="quick-pick" class="quick-pick" role="region" aria-label="Your quick pick" hidden>
             <div class="pick-art"><img id="pick-cover" src="assets/fallback-cover.svg" alt="" width="400" height="400" /><span class="pick-art-label" aria-hidden="true">A LITTLE SERENDIPITY</span></div>
             <div class="pick-copy"><p class="eyebrow">YOUR QUICK PICK <span id="pick-category"></span></p><h3 id="pick-title" tabindex="-1" aria-live="polite"></h3><p id="pick-context" class="pick-context"></p><div class="pick-actions"><button id="pick-play" class="primary-action" type="button">Play this title <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="m6 3 11 7L6 17Z"/></svg></button><button id="pick-again" class="pick-again" type="button">Another pick <span aria-hidden="true">↻</span></button><button id="pick-save" class="pick-save" type="button" aria-label="Save quick pick" aria-pressed="false">♡</button></div><p class="pick-note">Some titles need their original online assets. This is a random pick, ready when you are.</p></div>
