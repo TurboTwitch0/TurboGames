@@ -1,6 +1,11 @@
 (() => {
   "use strict";
   const items = window.TURBO_CATALOG || [];
+  const gameCategories = window.TurboGameCategories;
+  const genresById = new Map(items.map(item => [item.id, gameCategories.genresFor(item)]));
+  const genreNames = new Map(gameCategories.categories.map(genre => [genre.id, genre.label]));
+  const genreButtons = [];
+  let genre = "all";
   const byId = new Map(items.map(item => [item.id, item]));
   const search = document.querySelector("#search");
   const grid = document.querySelector("#game-grid");
@@ -351,6 +356,7 @@
     const activeFilters = document.querySelector("#active-filters");
     activeFilters.replaceChildren();
     const filters = [
+      { key: "genre", label: genre !== "all" ? `Category: ${genreNames.get(genre)}` : "" },
       { key: "q", label: hasQuery ? `Search: ${search.value.trim()}` : "" },
       { key: "available", label: hideUnavailable.checked ? "Missing sources hidden" : "" },
       { key: "sort", label: sort.value !== "recommended" ? sort.selectedOptions[0].textContent : "" }
@@ -368,8 +374,9 @@
       button.append(label, cross);
       button.addEventListener("click", () => {
         clearTimeout(searchTimer);
-        const target = filter.key === "q" ? search : filter.key === "sort" ? sort : hideUnavailable;
-        if (filter.key === "q") search.value = "";
+        const target = filter.key === "genre" ? genreButtons[0] : filter.key === "q" ? search : filter.key === "sort" ? sort : hideUnavailable;
+        if (filter.key === "genre") genre = "all";
+        else if (filter.key === "q") search.value = "";
         else if (filter.key === "sort") sort.value = "recommended";
         else hideUnavailable.checked = false;
         writeFilters();
@@ -379,7 +386,44 @@
       activeFilters.append(button);
     }
     document.querySelector("#filter-summary").hidden = !filters.length;
-    document.querySelector("#search-all-results").hidden = !hasQuery || ["all", "popular"].includes(category);
+    document.querySelector("#search-all-results").hidden = !hasQuery || (["all", "popular"].includes(category) && genre === "all");
+  }
+  function initializeGenres() {
+    const container = document.querySelector("#genre-filters");
+    for (const definition of gameCategories.categories) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.genre = definition.id;
+      const label = document.createElement("span");
+      label.textContent = definition.label;
+      const total = document.createElement("span");
+      total.className = "genre-count";
+      total.setAttribute("aria-hidden", "true");
+      button.append(label, total);
+      button.addEventListener("click", () => {
+        clearTimeout(searchTimer);
+        genre = definition.id;
+        if (category === "popular") category = "all";
+        updateTabs();
+        writeFilters();
+        render();
+      });
+      container.append(button);
+      genreButtons.push(button);
+    }
+  }
+  function updateGenres() {
+    const totals = new Map(gameCategories.categories.map(definition => [definition.id, 0]));
+    const matches = filteredItems(true);
+    totals.set("all", matches.length);
+    for (const item of matches) for (const id of genresById.get(item.id)) totals.set(id, totals.get(id) + 1);
+    for (const button of genreButtons) {
+      const id = button.dataset.genre;
+      const total = totals.get(id);
+      button.setAttribute("aria-pressed", String(id === genre));
+      button.setAttribute("aria-label", `${genreNames.get(id)}: ${total.toLocaleString()} ${total === 1 ? "title" : "titles"}`);
+      button.querySelector(".genre-count").textContent = total.toLocaleString();
+    }
   }
   function updateTabs() {
     tabs.forEach(tab => {
@@ -402,27 +446,28 @@
   }
   function writeFilters() {
     const url = new URL(location.href);
-    const values = { view: category === "popular" ? "" : category, q: search.value.trim(), sort: sort.value === "recommended" ? "" : sort.value, available: hideUnavailable.checked ? "1" : "" };
+    const values = { view: category === "popular" && !search.value.trim() && genre === "all" ? "" : category, genre: genre === "all" ? "" : genre, q: search.value.trim(), sort: sort.value === "recommended" ? "" : sort.value, available: hideUnavailable.checked ? "1" : "" };
     for (const [key, value] of Object.entries(values)) value ? url.searchParams.set(key, value) : url.searchParams.delete(key);
     history.replaceState(history.state, "", url);
   }
   function readFilters() {
     const params = new URLSearchParams(location.search);
     category = Object.hasOwn(categoryNames, params.get("view")) ? params.get("view") : "popular";
+    genre = genreNames.has(params.get("genre")) ? params.get("genre") : "all";
     search.value = params.get("q") || "";
-    if (category === "popular" && search.value.trim()) category = "all";
+    if (category === "popular" && !params.has("view") && (search.value.trim() || genre !== "all")) category = "all";
     sort.value = ["title-asc", "title-desc"].includes(params.get("sort")) ? params.get("sort") : "recommended";
     hideUnavailable.checked = params.get("available") === "1";
     updateTabs();
   }
 
-  function filteredItems() {
+  function filteredItems(ignoreGenre = false) {
     const query = normalize(search.value);
     const terms = query.split(/\s+/).filter(Boolean);
     const matches = items.filter(item => {
-      const matchesCategory = category === "all" || (category === "popular" ? item.featured : category === "saved" ? favorites.has(item.id) : category === "recent" ? recent.includes(item.id) : item.category === category);
+      const matchesCategory = (ignoreGenre && category === "popular") || category === "all" || (category === "popular" ? item.featured : category === "saved" ? favorites.has(item.id) : category === "recent" ? recent.includes(item.id) : item.category === category);
       const text = searchable.get(item.id);
-      return matchesCategory && (!hideUnavailable.checked || item.sourceStatus !== "unavailable") && (!query || terms.every(term => text.includes(term)) || text.replaceAll(" ", "").includes(query.replaceAll(" ", "")));
+      return matchesCategory && (ignoreGenre || genre === "all" || genresById.get(item.id).includes(genre)) && (!hideUnavailable.checked || item.sourceStatus !== "unavailable") && (!query || terms.every(term => text.includes(term)) || text.replaceAll(" ", "").includes(query.replaceAll(" ", "")));
     });
     if (sort.value !== "recommended") return matches.sort((a, b) => (sort.value === "title-asc" ? 1 : -1) * a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" }));
     if (category === "recent") return matches.sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
@@ -486,12 +531,13 @@
     const pickHadFocus = quickPick.contains(document.activeElement);
     dismissPick();
     visible = filteredItems();
+    updateGenres();
     updateDiscoveryTools();
-    document.body.classList.toggle("is-browsing", category !== "popular" || Boolean(search.value.trim()));
+    document.body.classList.toggle("is-browsing", category !== "popular" || genre !== "all" || Boolean(search.value.trim()));
     document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : "The collection";
     displayed = 96;
     grid.replaceChildren();
-    count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}`;
+    count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}${genre !== "all" ? ` · ${genreNames.get(genre)}` : ""}`;
     const noLibrary = !search.value.trim() && (category === "saved" && favorites.size === 0 || category === "recent" && recent.length === 0);
     document.querySelector("#empty-icon").textContent = noLibrary ? category === "saved" ? "♡" : "↶" : "⌕";
     document.querySelector("#empty-title").textContent = noLibrary ? category === "saved" ? "Your favorites, all together" : "Pick up where you left off" : "No matches yet";
@@ -622,6 +668,7 @@
     tab.addEventListener("click", () => {
       clearTimeout(searchTimer);
       category = tab.dataset.category;
+      if (category === "popular") genre = "all";
       updateTabs();
       writeFilters();
       render();
@@ -644,6 +691,7 @@
     clearTimeout(searchTimer);
     search.value = "";
     category = nextCategory;
+    genre = "all";
     sort.value = "recommended";
     hideUnavailable.checked = false;
     updateTabs();
@@ -672,6 +720,7 @@
   document.querySelector("#search-all-results").addEventListener("click", () => {
     clearTimeout(searchTimer);
     category = "all";
+    genre = "all";
     updateTabs();
     writeFilters();
     render();
@@ -680,6 +729,7 @@
   document.querySelectorAll("#quick-searches [data-query]").forEach(button => button.addEventListener("click", () => {
     clearTimeout(searchTimer);
     category = "all";
+    genre = "all";
     search.value = button.dataset.query;
     updateTabs();
     writeFilters();
@@ -840,6 +890,7 @@
       event.preventDefault(); search.focus();
     }
   });
+  initializeGenres();
   readFilters();
   document.querySelectorAll("[data-scope-count]").forEach(node => {
     node.textContent = (categoryTotals[node.dataset.scopeCount] || 0).toLocaleString();
