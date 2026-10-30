@@ -88,6 +88,13 @@ An optional, labeled AdSense display placement is prepared but disabled. See **M
 
 ## Images and repaired sources
 
+Generic covers now use crisp, genre-themed vector artwork with larger, wrapped
+game titles. Existing source artwork stays intact. Missing images receive a
+title-specific cover instead of the same generic fallback. Letterboxed Potty
+Racers thumbnails use tighter framing, and the first four grid covers load eagerly.
+`cover-art.js` keeps the vector treatment separate from the generated catalog.
+Run `node --test tools/cover-art.test.cjs tools/category-model.test.cjs` to check it.
+
 Every catalog entry has a local image: sourced artwork where available and original illustrated covers for other titles. Attribution and repeatable import scripts are described in **ARTWORK.md**.
 
 The update repairs hundreds of launcher bugs, replaces missing files from verified sources, and includes local Ruffle 0.7.1. Detailed evidence and remaining limitations are in **reports/FINAL-STATUS.md** and the adjacent repair manifests.

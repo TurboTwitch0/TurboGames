@@ -3,6 +3,9 @@
   const items = window.TURBO_CATALOG || [];
   const gameCategories = window.TurboGameCategories;
   const genresById = new Map(items.map(item => [item.id, gameCategories.genresFor(item)]));
+  const fallbackCover = item => window.TurboCoverArt?.coverFor(item, genresById.get(item.id)?.[0] || "arcade") || "assets/fallback-cover.svg";
+  const coverSource = item => item.imageType === "illustrated" || !item.image ? fallbackCover(item) : item.image;
+  const boxedCovers = new Set(["library-source/flash/clpottyracers.html", "library-source/flash/clpottyracers2.html"]);
   const genreNames = new Map(gameCategories.categories.map(genre => [genre.id, genre.label]));
   const genreButtons = [];
   let genre = "all";
@@ -208,7 +211,8 @@
       const art = document.createElement("span");
       art.className = "featured-art";
       const image = document.createElement("img");
-      image.src = feature.image || feature.item.image;
+      image.src = feature.image || coverSource(feature.item);
+      image.addEventListener("error", () => { image.alt = `${feature.item.title} cover illustration`; image.src = fallbackCover(feature.item); }, { once: true });
       image.alt = index === 0 ? "Actual Orbit Breaker game canvas with colored targets, a ball, and a lime paddle" : `${feature.item.title} artwork from the existing TurboGames catalog`;
       image.width = 400;
       image.height = 400;
@@ -296,12 +300,12 @@
       button.dataset.recentId = item.id;
       button.setAttribute("aria-label", `Open ${item.title} again`);
       const image = document.createElement("img");
-      image.src = item.image || "assets/fallback-cover.svg";
+      image.src = coverSource(item);
       image.alt = "";
       image.width = 80;
       image.height = 80;
       image.loading = "lazy";
-      image.addEventListener("error", () => { image.src = "assets/fallback-cover.svg"; }, { once: true });
+      image.addEventListener("error", () => { image.src = fallbackCover(item); }, { once: true });
       const copy = document.createElement("span");
       copy.className = "recent-pick-copy";
       const meta = document.createElement("span");
@@ -336,7 +340,7 @@
     pickedItem = pool[Math.floor(Math.random() * pool.length)];
     quickPick.dataset.pickId = pickedItem.id;
     const image = document.querySelector("#pick-cover");
-    image.src = pickedItem.image || "assets/fallback-cover.svg";
+    image.src = coverSource(pickedItem);
     image.alt = `${pickedItem.title} cover`;
     document.querySelector("#pick-title").textContent = pickedItem.title;
     document.querySelector("#pick-category").textContent = categoryNames[pickedItem.category] || pickedItem.category;
@@ -487,15 +491,16 @@
     const art = document.createElement("span");
     art.className = "card-art";
     const image = document.createElement("img");
-    image.className = "card-image";
-    image.src = item.image || "assets/fallback-cover.svg";
+    image.className = "card-image" + (boxedCovers.has(item.id) ? " is-letterboxed" : "");
+    image.src = coverSource(item);
     image.alt = `${item.title} cover`;
-    image.loading = "lazy";
+    image.loading = index < 4 ? "eager" : "lazy";
     image.decoding = "async";
     image.width = 400;
     image.height = 400;
     image.addEventListener("error", () => {
-      if (!image.src.endsWith("/assets/fallback-cover.svg")) image.src = "assets/fallback-cover.svg";
+      image.classList.remove("is-letterboxed");
+      image.src = fallbackCover(item);
     }, { once: true });
     const play = document.createElement("span");
     play.className = "card-play";
@@ -762,7 +767,9 @@
     if (event.key === "Escape") { event.preventDefault(); dismissPick(true); }
   });
   document.querySelector("#pick-cover").addEventListener("error", event => {
-    if (!event.currentTarget.src.endsWith("/assets/fallback-cover.svg")) event.currentTarget.src = "assets/fallback-cover.svg";
+    if (!pickedItem) return;
+    const source = fallbackCover(pickedItem);
+    if (event.currentTarget.getAttribute("src") !== source) event.currentTarget.src = source;
   });
   initializeShowcase();
   if (featuredGames.length) {
