@@ -1,33 +1,26 @@
-<!DOCTYPE html>
-
-
-<!-- Ultimate Game Stash file--> 
-<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
-<!-- Made by Genizy--> 
-
+<!doctype html>
 <html lang="en">
-  <head>
-    
-    
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-WX5VS54ZDW');
-    </script>
-    <base href="https://cdn.jsdelivr.net/gh/gn-math/assets@main/113/">
-    <meta charset="UTF-8" />
-    <link rel="icon" href="icon32.png" sizes="32x32">
-    <link rel="icon" href="icon180.png" sizes="180x180">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ruffle Player</title>
-    <script type="module" crossorigin src="assets/index-Tc6MTS1z.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-ZTuZXFCc.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruffle emulator</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; background: #101414; color: #f5f4ea; font-family: system-ui, sans-serif; }
+    body { display: flex; flex-direction: column; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 14px; border-bottom: 1px solid #ffffff26; }
+    p { margin: 2px 0 0; color: #b9c6bf; font-size: 12px; }
+    a { flex-shrink: 0; color: #dbf896; font-size: 13px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid #dbf896; outline-offset: 4px; }
+    iframe { display: block; flex: 1; min-height: 0; width: 100%; border: 0; background: #161616; }
+    @media (max-width: 480px) { header { padding: 8px; } strong { font-size: 13px; } p { max-width: 190px; font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Official Ruffle player</strong><p>Choose a SWF file or a sample to begin.</p></div>
+    <a href="https://ruffle.rs/demo/" target="_blank" rel="noopener noreferrer">Open full site ↗</a>
+  </header>
+  <iframe src="https://ruffle.rs/demo/" title="Official Ruffle player" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="no-referrer"></iframe>
+</body>
 </html>

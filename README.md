@@ -99,6 +99,6 @@ Every catalog entry has a local image: sourced artwork where available and origi
 
 The update repairs hundreds of launcher bugs, replaces missing files from verified sources, and includes local Ruffle 0.7.1. Detailed evidence and remaining limitations are in **reports/FINAL-STATUS.md** and the adjacent repair manifests.
 
-Some launchers still need assets from third-party hosts. Entries whose removed asset host was confirmed unavailable have a **Needs source** badge; they are retained in the collection, rather than replaced with a different game. Their exact URLs are listed in **reports/unavailable-game-sources.json**.
+Some launchers still need assets from third-party hosts. Entries with confirmed missing or blocked core game files have a **Needs source** badge and show a recovery message before opening the player. They remain in the collection with their original IDs and source paths. Evidence is recorded in **reports/unavailable-game-sources.json** and **reports/confirmed-source-repairs-2026-11-01.json**. Reviewed availability flags live in `catalog.js`; the daily artwork rebuild preserves them. Optional scripts, legacy-only files, and transient network failures are reviewed separately.
 
 LocalStorage and cookies are saved separately for each game. IndexedDB compatibility in isolated game frames is temporary: use the game's **Save State / Export Save** controls to retain emulator progress across closing the game.

@@ -22,6 +22,7 @@
     <script src="catalog.js" defer></script>
     <script src="game-categories.js" defer></script>
     <script src="cover-art.js" defer></script>
+    <script src="source-recovery.js" defer></script>
     <script src="app.js" defer></script>
     <script src="ads-config.js" defer></script>
     <script src="ads.js" defer></script>
@@ -169,7 +170,7 @@
         <span class="recovery-icon" aria-hidden="true">↻</span>
         <h3 id="recovery-title">This game couldn't load</h3>
         <p id="recovery-description">Try loading it again or return to the collection.</p>
-        <div class="recovery-actions"><button id="retry-game" class="load-more" type="button">Try again</button><button id="return-to-collection" class="text-button" type="button">Back to collection</button></div>
+        <div class="recovery-actions"><a id="creator-site-link" class="load-more" target="_blank" rel="noopener noreferrer" hidden>Play on creator’s website ↗</a><button id="retry-game" class="load-more" type="button">Try again</button><button id="return-to-collection" class="text-button" type="button">Back to collection</button></div>
       </div>
       <iframe id="game-frame" title="Game window" allow="autoplay; fullscreen; gamepad; clipboard-read; clipboard-write" allowfullscreen></iframe>
       </div>
