@@ -665,6 +665,10 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 
       const style = document.createElement("style");
       style.textContent = `
+		#topBar > .tatar-menu-entry { padding: 0 6px; }
+		#tatar-mod-menu-button { cursor: pointer; line-height: 18px; padding: 2px 8px; }
+		#tatar-mod-menu-button:hover, #tatar-mod-menu-button:focus-visible { color: #fff; border-color: #fff; }
+		#tatar-mod-menu-button:focus-visible { outline: 2px solid #fff8aa; outline-offset: 1px; }
 		.inputThing {
 			width: 80px;
 			margin-left: 8px;
@@ -690,7 +694,14 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 	`;
       document.head.appendChild(style);
 
-      setTimeout(() => {
+      let tatarMenuInitialized = false;
+      function initializeTatarMenu() {
+        if (tatarMenuInitialized) return;
+        if (!window.Game || !Game.ready || !Array.isArray(Game.Notes) || typeof Game.UpdateNotes !== "function") {
+          setTimeout(initializeTatarMenu, 250);
+          return;
+        }
+        tatarMenuInitialized = true;
         Game.Notes.push({
           title: "Game Injected",
           desc: "The game has succesfully been injected with Tatar Mod Menu press Control X to open! made by sexyplankton btw",
@@ -701,12 +712,28 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 
         Game.UpdateNotes();
 
+        const topBar = document.getElementById("topBar");
+        if (topBar && !document.getElementById("tatar-mod-menu-button")) {
+          const entry = document.createElement("div");
+          entry.className = "tatar-menu-entry";
+          const button = document.createElement("button");
+          button.id = "tatar-mod-menu-button";
+          button.type = "button";
+          button.className = "option smallFancyButton";
+          button.textContent = "Mod menu";
+          button.title = "Open Tatar Mod Menu (Ctrl+X)";
+          button.addEventListener("click", injectMenu);
+          entry.appendChild(button);
+          topBar.prepend(entry);
+        }
+
         document.addEventListener("keydown", function (event) {
           if (event.ctrlKey && event.key.toLowerCase() === "x") {
             injectMenu();
           }
         });
-      }, 500);
+      }
+      setTimeout(initializeTatarMenu, 500);
 
       function injectMenu() {
         const menu = document.getElementById("menu");
