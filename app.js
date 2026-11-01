@@ -33,6 +33,7 @@
   const hideUnavailable = document.querySelector("#hide-unavailable");
   const libraryNote = document.querySelector("#library-note");
   const recovery = document.querySelector("#player-recovery");
+  const creatorLink = document.querySelector("#creator-site-link");
   const loading = document.querySelector("#player-loading");
   const feedback = document.querySelector("#action-feedback");
   const pickButton = document.querySelector("#pick-game");
@@ -594,6 +595,7 @@
     frame = nextFrame;
     frame.title = item.title;
     recovery.hidden = true;
+    window.TurboSourceRecovery.setCreatorLink(creatorLink, null);
     loading.hidden = false;
     loading.querySelector("h3").textContent = `Opening ${item.title}…`;
     if (item.sourceStatus === "unavailable") {
@@ -629,7 +631,8 @@
   function showRecovery(message, missing = false) {
     loading.hidden = true;
     playerStatus.textContent = "";
-    document.querySelector("#recovery-title").textContent = missing ? "This title needs a new source" : "This game couldn't load";
+    const hasCreatorLink = window.TurboSourceRecovery.setCreatorLink(creatorLink, missing ? activeItem?.externalUrl : null);
+    document.querySelector("#recovery-title").textContent = hasCreatorLink ? "Play on the creator’s website" : missing ? "This title needs a new source" : "This game couldn't load";
     document.querySelector("#recovery-description").textContent = message;
     document.querySelector("#retry-game").hidden = missing;
     recovery.hidden = false;

@@ -1,0 +1,46 @@
+{
+  "checked_date": "2026-11-01",
+  "method": "Review of the daily report followed by fresh requests for the exact required files. Optional SDKs, legacy-only scripts, and temporary timeouts do not automatically disable entries.",
+  "availability_source": "catalog.js; tools/build_catalog.py preserves sourceStatus and sourceIssue while rebuilding artwork mappings",
+  "restored_original_sites": [
+    {
+      "source": "library-source/flash/clruffle.html",
+      "title": "Ruffle emulator",
+      "url": "https://ruffle.rs/demo/",
+      "reason": "The previous gn-math copy's required module is blocked by jsDelivr. Use the original Ruffle project's player."
+    }
+  ],
+  "creator_site_links": [
+    {
+      "source": "library-source/html5-games/cldontyoulectureme.html",
+      "title": "DON'T YOU LECTURE ME WITH YOUR THIRTY DOLLAR WEBSITE",
+      "url": "https://thirtydollar.website/",
+      "reason": "The embedded gn-math copy's required scripts are blocked by jsDelivr. The original creator's site works directly, but its storage and sound loading do not work in the existing isolated frame. Offer an explicit link from the recovery card; keep the player sandbox unchanged."
+    }
+  ],
+  "needs_source": [
+    {
+      "sources": ["library-source/flash/cltanktrouble.html"],
+      "required_url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/swf/TankTrouble2.1.swf",
+      "status": 404
+    },
+    {
+      "sources": ["library-source/flash/clbejeweledtwist.html", "library-source/flash/clbejeweledtwistflash.html"],
+      "required_url": "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/swf/multifile/bejeweledtwist/BejeweledTwist1.swf",
+      "status": 404
+    },
+    {
+      "sources": ["library-source/html5-games/clslopeplus.html"],
+      "required_url": "https://cdn.jsdelivr.net/gh/gn-math/assets@51462750d29b68ac1e33887c1bf13d9c478d5ead/198/Build/UnityLoader.js",
+      "status": 403,
+      "response": "User gn-math is blocked."
+    },
+    {
+      "sources": ["library-source/html5-games/cldontyoulectureme.html"],
+      "required_url": "https://cdn.jsdelivr.net/gh/gn-math/assets@main/352/%E2%96%B6.js?v=8a",
+      "status": 403,
+      "response": "User gn-math is blocked.",
+      "external_url": "https://thirtydollar.website/"
+    }
+  ]
+}
