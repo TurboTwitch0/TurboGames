@@ -1,122 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-    <!-- Custom PreHead code is injected here -->
-    
-
-    <head>
-<base href="https://cdn.jsdelivr.net/gh/TheRareOcelot/gamedump@main/Breadskate/">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta charset="utf-8"/>
-
-        <!-- Builtin injector for disabling cache -->
-        <meta http-equiv="pragma" content="no-cache"/>
-
-        <!-- Set the title bar of the page -->
-        <title>Created with GameMaker</title>
-
-        <!-- Custom PreStyle code is injected here -->
-        
-
-        <!-- Set the background colour of the document -->
-        <style>
-            body {
-                background: #0;
-                color: #cccccc;
-                margin: 0px;
-                padding: 0px;
-                border: 0px;
-            }
-
-            canvas {
-                image-rendering: optimizeSpeed;
-                -webkit-interpolation-mode: nearest-neighbor;
-                -ms-touch-action: none;
-                touch-action: none;
-                margin: 0px;
-                padding: 0px;
-                border: 0px;
-                width: 100vw;
-                height: 100vh;
-            }
-            :-webkit-full-screen #canvas {
-                width: 100%;
-                height: 100%;
-            }
-            :-webkit-full-screen {
-                width: 100%;
-                height: 100%;
-            }
-            
-            /* Custom Runner Styles */
-            div.gm4html5_div_class {
-                margin: 0px;
-                padding: 0px;
-                border: 0px;
-            }
-            div.gm4html5_login {
-                padding: 20px;
-                position: absolute;
-                border: solid 2px #000000;
-                background-color: #404040;
-                color:#00ff00;
-                border-radius: 15px;
-                box-shadow: #101010 20px 20px 40px;
-            }
-            div.gm4html5_cancel_button {
-                float: right;
-            }
-            div.gm4html5_login_button {
-                float: left;
-            }
-            div.gm4html5_login_header {
-                text-align: center;
-            }
-            /* END - Custom Runner Styles */
-            
-        </style>
-
-        <!-- Custom PostStyle code is injected here -->
-        
-
-        <!-- Builtin injector for injecting flurry analytics code -->
-        
-    </head>
-
-    <!-- Custom PostHead code is injected here -->
-    
-
-    <!-- Custom PreBody code is injected here -->
-    
-
-    <body>
-        <div class="gm4html5_div_class" id="gm4html5_div_id">
-            
-            <!-- Builtin injector for splash screen -->
-            
-
-            <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas">
-                <p>Your browser doesn't support HTML5 canvas.</p>
-            </canvas>
-        </div>
-
-        <!-- Run the game code -->
-        <script type="text/javascript" src="html5game/Topskate.js?cachebust=336418708"></script>
-
-        <!-- Builtin injector for injecting runner path -->
-        
-
-        <script>window.onload = GameMaker_Init;</script>
-
-        <!-- Builtin injector for injecting google analytics code -->
-        
-
-    </body>
-
-    <!-- Custom PostBody code is injected here -->
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BREADSKATE Forever</title>
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; background: #141414; color: #ddd; }
+    body { display: flex; flex-direction: column; font: 12px/1.4 system-ui, sans-serif; }
+    #game-viewport { flex: 1; min-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    iframe { flex: none; width: 960px; height: 640px; border: 0; background: #141414; transform: scale(var(--game-scale, 1)); }
+    p { flex: none; margin: 0; padding: 6px 10px; text-align: center; }
+    a { color: #ddd; }
+    a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <!-- Creator-hosted build linked by https://sirmilkman.itch.io/breadskate-forever.
+       It retains the original Topskate.js build (cachebust=336418708), replacing
+       the removed gamedump copy without copying third-party game assets. -->
+  <div id="game-viewport">
+    <iframe title="BREADSKATE Forever" src="https://html-classic.itch.zone/html/13327050/index.html?v=1782560171" allow="autoplay; fullscreen; gamepad" allowfullscreen></iframe>
+  </div>
+  <p><a href="https://sirmilkman.itch.io/breadskate-forever" target="_blank" rel="noopener noreferrer">BREADSKATE Forever · sirmilkman &amp; Oroshibu · Creator page</a></p>
+  <script>
+    // The original game uses a fixed 960×640 canvas. Keep its viewport intact
+    // and scale the frame, so narrow and short players do not crop its controls.
+    const viewport = document.querySelector('#game-viewport');
+    const fitGame = () => viewport.style.setProperty('--game-scale', Math.min(viewport.clientWidth / 960, viewport.clientHeight / 640));
+    new ResizeObserver(fitGame).observe(viewport);
+    fitGame();
+  </script>
+</body>
 </html>
