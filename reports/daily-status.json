@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T18:51:40.613023+00:00",
+  "checked_at": "2026-11-06T18:07:56.930020+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,43 +13,33 @@
     "checked": 3552,
     "skipped": 0,
     "counts": {
-      "reachable": 3407,
-      "http-error": 109,
-      "connection-error": 36
+      "http-error": 128,
+      "reachable": 3415,
+      "connection-error": 9
     },
-    "issues": 145
+    "issues": 137
   },
   "errors": [],
   "remote_issue_examples": [
     {
-      "source": "library-source/html5-games/clcuttherope.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clbaconmaydie.html",
+      "source": "library-source/html5-games/clself.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
+      "source": "library-source/html5-games/clslope3.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
+      "source": "library-source/html5-games/clsortthecourt.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
+      "source": "library-source/html5-games/clspelunky.html",
       "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clfunnyshooter2.html",
-      "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
       "source": "library-source/html5-games/clUltimatecardrivingsimulator.html",
@@ -57,9 +47,24 @@
       "status": 404
     },
     {
+      "source": "library-source/html5-games/clwackyflip.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
       "source": "library-source/html5-games/clfnfanimation.html",
       "result": "http-error",
       "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clfnfstarlightmayhem.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clfnftooslowfran.html",
+      "result": "http-error",
+      "status": 403
     },
     {
       "source": "library-source/html5-games/cl10minutestildawn.html",
@@ -69,7 +74,7 @@
     {
       "source": "library-source/html5-games/clmelee.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
       "source": "library-source/html5-games/cldubstep.html",
@@ -107,6 +112,16 @@
       "status": 404
     },
     {
+      "source": "library-source/html5-games/cljustaplatformerE.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clnguidle.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
       "source": "library-source/html5-games/clslopeplus.html",
       "result": "http-error",
       "status": 403
@@ -137,6 +152,11 @@
       "status": 403
     },
     {
+      "source": "library-source/emulated/segaMS/wolfchild.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
       "source": "library-source/html5-games/clDigOutofPrison.html",
       "result": "http-error",
       "status": 404
@@ -148,26 +168,6 @@
     },
     {
       "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clsnipershot.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/emulated/nds/kimmunicator.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clBFDIBranches.html",
       "result": "http-error",
       "status": 404
     }
