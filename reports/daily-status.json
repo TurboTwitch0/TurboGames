@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T18:07:56.930020+00:00",
+  "checked_at": "2026-11-06T18:09:59.638326+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,31 +13,16 @@
     "checked": 3552,
     "skipped": 0,
     "counts": {
-      "http-error": 128,
-      "reachable": 3415,
-      "connection-error": 9
+      "reachable": 3425,
+      "http-error": 117,
+      "connection-error": 10
     },
-    "issues": 137
+    "issues": 127
   },
   "errors": [],
   "remote_issue_examples": [
     {
-      "source": "library-source/html5-games/clself.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clslope3.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clsortthecourt.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clspelunky.html",
+      "source": "library-source/html5-games/cltagcm.html",
       "result": "http-error",
       "status": 403
     },
@@ -47,7 +32,72 @@
       "status": 404
     },
     {
-      "source": "library-source/html5-games/clwackyflip.html",
+      "source": "library-source/emulated/nds/clmariokartds.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/nds/clsuperscribblenauts.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/nes/clmariolostlevels.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/nds/cldrawntolife.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokeelysiuma.html",
+      "result": "connection-error",
+      "status": null
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokeelysiumb.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/gba/clchainofmemories.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/gba/clpacmanworldg.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokecrown.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokeemeraldz.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/pokemon/clpokegschronicles.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/n64/clnatsuki64.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/emulated/dos/clquake.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clfnfdusttale.html",
       "result": "http-error",
       "status": 403
     },
@@ -57,12 +107,7 @@
       "status": 404
     },
     {
-      "source": "library-source/html5-games/clfnfstarlightmayhem.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clfnftooslowfran.html",
+      "source": "library-source/emulated/pokemon/clpolishedcrystal.html",
       "result": "http-error",
       "status": 403
     },
@@ -117,11 +162,6 @@
       "status": 403
     },
     {
-      "source": "library-source/html5-games/clnguidle.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
       "source": "library-source/html5-games/clslopeplus.html",
       "result": "http-error",
       "status": 403
@@ -130,46 +170,6 @@
       "source": "library-source/html5-games/clslopeplus.html",
       "result": "http-error",
       "status": 403
-    },
-    {
-      "source": "library-source/html5-games/cldontyoulectureme.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/cldontyoulectureme.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/cldontyoulectureme.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clmoneyrush.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/segaMS/wolfchild.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clDigOutofPrison.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Daily TurboGames refresh
 
-Checked at: 2026-11-06T18:07:56.930020+00:00
+Checked at: 2026-11-06T18:09:59.638326+00:00
 
 Result: **attention**.
 
@@ -11,7 +11,7 @@ Result: **attention**.
 | Required launcher resource problems | 0 |
 | Inline JavaScript syntax failures | 0 |
 | Fresh remote URL checks | 3552 / 3552 |
-| Remote URLs requiring attention | 137 |
+| Remote URLs requiring attention | 127 |
 | Remote URLs deferred or skipped | 0 |
 
 The existing catalog and local artwork mappings are rebuilt. No new games are imported.
@@ -22,15 +22,24 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 
 ## Remote issues (sample)
 
-- library-source/html5-games/clself.html: http-error (HTTP 403)
-- library-source/html5-games/clslope3.html: http-error (HTTP 403)
-- library-source/html5-games/clsortthecourt.html: http-error (HTTP 403)
-- library-source/html5-games/clspelunky.html: http-error (HTTP 403)
+- library-source/html5-games/cltagcm.html: http-error (HTTP 403)
 - library-source/html5-games/clUltimatecardrivingsimulator.html: http-error (HTTP 404)
-- library-source/html5-games/clwackyflip.html: http-error (HTTP 403)
+- library-source/emulated/nds/clmariokartds.html: connection-error
+- library-source/emulated/nds/clsuperscribblenauts.html: connection-error
+- library-source/emulated/nes/clmariolostlevels.html: http-error (HTTP 403)
+- library-source/emulated/nds/cldrawntolife.html: connection-error
+- library-source/emulated/pokemon/clpokeelysiuma.html: connection-error
+- library-source/emulated/pokemon/clpokeelysiumb.html: http-error (HTTP 403)
+- library-source/emulated/gba/clchainofmemories.html: http-error (HTTP 403)
+- library-source/emulated/gba/clpacmanworldg.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokecrown.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokeemeraldz.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokegschronicles.html: http-error (HTTP 403)
+- library-source/emulated/n64/clnatsuki64.html: http-error (HTTP 403)
+- library-source/emulated/dos/clquake.html: http-error (HTTP 403)
+- library-source/html5-games/clfnfdusttale.html: http-error (HTTP 403)
 - library-source/html5-games/clfnfanimation.html: http-error (HTTP 404)
-- library-source/html5-games/clfnfstarlightmayhem.html: http-error (HTTP 403)
-- library-source/html5-games/clfnftooslowfran.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpolishedcrystal.html: http-error (HTTP 403)
 - library-source/html5-games/cl10minutestildawn.html: http-error (HTTP 404)
 - library-source/html5-games/clmelee.html: http-error (HTTP 404)
 - library-source/html5-games/cldubstep.html: http-error (HTTP 404)
@@ -41,14 +50,5 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 - library-source/html5-games/cldreadheadparkour.html: http-error (HTTP 404)
 - library-source/html5-games/clkimjonguntilepuzzle.html: http-error (HTTP 404)
 - library-source/html5-games/cljustaplatformerE.html: http-error (HTTP 403)
-- library-source/html5-games/clnguidle.html: http-error (HTTP 403)
 - library-source/html5-games/clslopeplus.html: http-error (HTTP 403)
 - library-source/html5-games/clslopeplus.html: http-error (HTTP 403)
-- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
-- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
-- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
-- library-source/html5-games/clmoneyrush.html: http-error (HTTP 403)
-- library-source/emulated/segaMS/wolfchild.html: http-error (HTTP 403)
-- library-source/html5-games/clDigOutofPrison.html: http-error (HTTP 404)
-- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
-- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
