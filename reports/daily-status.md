@@ -1,6 +1,6 @@
 # Daily TurboGames refresh
 
-Checked at: 2026-11-07T16:56:39.196355+00:00
+Checked at: 2026-11-08T17:10:06.777143+00:00
 
 Result: **attention**.
 
@@ -11,7 +11,7 @@ Result: **attention**.
 | Required launcher resource problems | 0 |
 | Inline JavaScript syntax failures | 0 |
 | Fresh remote URL checks | 3552 / 3552 |
-| Remote URLs requiring attention | 189 |
+| Remote URLs requiring attention | 198 |
 | Remote URLs deferred or skipped | 0 |
 
 The existing catalog and local artwork mappings are rebuilt. No new games are imported.
@@ -22,33 +22,33 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 
 ## Remote issues (sample)
 
-- library-source/html5-games/clrh.html: http-error (HTTP 403)
-- library-source/html5-games/clrh.html: http-error (HTTP 403)
-- library-source/html5-games/clrh.html: connection-error
-- library-source/html5-games/thiefpuzzle.html: http-error (HTTP 403)
-- library-source/html5-games/clgta3.html: http-error (HTTP 403)
-- library-source/html5-games/clDigOutofPrison.html: http-error (HTTP 404)
-- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
-- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
-- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
-- library-source/html5-games/clsnipershot.html: http-error (HTTP 404)
-- library-source/html5-games/clobbycart.html: http-error (HTTP 403)
-- library-source/html5-games/clBFDIBranches.html: http-error (HTTP 404)
-- library-source/html5-games/clBFDIBranches.html: http-error (HTTP 404)
-- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
-- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
-- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
-- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
-- library-source/html5-games/clredvsbluewar.html: http-error (HTTP 404)
-- library-source/html5-games/FunkinForHire.html: http-error (HTTP 403)
-- library-source/html5-games/clfnfdocumic.txtv3.html: http-error (HTTP 404)
-- library-source/html5-games/ConfrontingYourself.html: http-error (HTTP 404)
-- library-source/html5-games/clmattv3.html: http-error (HTTP 403)
-- library-source/emulated/pokemon/clpokemonsaiph2.html: connection-error
-- library-source/emulated/gba/clmegamanbattlechipchallenge.html: http-error (HTTP 404)
-- library-source/emulated/gba/clmegamanbn5tc.html: http-error (HTTP 404)
-- library-source/emulated/gba/clmegamanbn5tp.html: http-error (HTTP 404)
-- library-source/emulated/gba/clmegamanbn6cf.html: http-error (HTTP 404)
-- library-source/emulated/gba/clmegamanbn6cg.html: http-error (HTTP 404)
-- library-source/emulated/segaMD/clOutrunGenesis.html: http-error (HTTP 404)
-- library-source/emulated/segaMD/clSonic1TheSuperChallenges.html: http-error (HTTP 404)
+- library-source/html5-games/clwebecomewhatwebehold.html: http-error (HTTP 403)
+- library-source/html5-games/clwebecomewhatwebehold.html: http-error (HTTP 403)
+- library-source/html5-games/clwebecomewhatwebehold.html: http-error (HTTP 403)
+- library-source/html5-games/clwebecomewhatwebehold.html: http-error (HTTP 403)
+- library-source/html5-games/clwebecomewhatwebehold.html: http-error (HTTP 403)
+- library-source/html5-games/clenchain.html: http-error (HTTP 403)
+- library-source/html5-games/clgeometryvibes.html: connection-error
+- library-source/html5-games/clkilltheiceagebabyadventure.html: http-error (HTTP 403)
+- library-source/html5-games/clnimrods.html: http-error (HTTP 403)
+- library-source/emulated/gba/clapotris.html: http-error (HTTP 403)
+- library-source/html5-games/cledelweiss.html: http-error (HTTP 403)
+- library-source/emulated/gba/clhalocombatdevolved.html: http-error (HTTP 403)
+- library-source/emulated/gba/clopposumcountry.html: http-error (HTTP 403)
+- library-source/html5-games/clsoniccdmobile.html: http-error (HTTP 403)
+- library-source/emulated/n64/clexcitebike64.html: connection-error
+- library-source/emulated/n64/clkirby64.html: connection-error
+- library-source/emulated/clXMenCOTAArcade.html: connection-error
+- library-source/emulated/atari2600/cldragster.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokemonbillssecretgarden.html: connection-error
+- library-source/emulated/pokemon/clCeliasStupidROMHack.html: connection-error
+- library-source/emulated/pokemon/clpokemonemeraldcrest.html: connection-error
+- library-source/emulated/gba/cldonkeykong94.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokeemeraldimperium.html: connection-error
+- library-source/emulated/pokemon/clPokeEmeraldRogueEX.html: connection-error
+- library-source/emulated/pokemon/clpokeemeraldxtreme.html: connection-error
+- library-source/emulated/pokemon/clpokefireemerald.html: connection-error
+- library-source/emulated/pokemon/clHoennsLastWish.html: connection-error
+- library-source/emulated/clpokemonperfectemerald.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clpokecrystaladvanceredux.html: connection-error
+- library-source/emulated/pokemon/clpokecrystallegacy.html: http-error (HTTP 403)
