@@ -1,0 +1,265 @@
+{
+  "game": "hextris",
+  "purpose": "Exact existing launcher dependencies hosted locally; no game identity substitution.",
+  "upstream_base": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/",
+  "files": [
+    {
+      "path": "favicon.ico",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/favicon.ico",
+      "bytes": 99678,
+      "sha256": "a849056b6e8e6a563584ed7acab98a501d179eb29b3510e94d330822d19e909c"
+    },
+    {
+      "path": "images/android.png",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/images/android.png",
+      "bytes": 6233,
+      "sha256": "c12ace27b8163f75119ece9e5c9f8c9e9b263f5870c4922d720ba2764bf780f9"
+    },
+    {
+      "path": "images/appstore.svg",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/images/appstore.svg",
+      "bytes": 11484,
+      "sha256": "687b901972500e1da498160a39d0dbd8e7dcbc783eb8ef0dc466fed272ee0c35"
+    },
+    {
+      "path": "images/btn_help.svg",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/images/btn_help.svg",
+      "bytes": 2777,
+      "sha256": "bf3be804a4eed3a251be745482d0ac1d7d547cadfc3dff45445de74b9c27a601"
+    },
+    {
+      "path": "images/btn_pause.svg",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/images/btn_pause.svg",
+      "bytes": 767,
+      "sha256": "c6c9abcc90aff7cfdc6185f843c888dff56f5a25dc35493b53cab8a1c7237bb7"
+    },
+    {
+      "path": "images/btn_restart.svg",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/images/btn_restart.svg",
+      "bytes": 1167,
+      "sha256": "509a39c4a349368e2cfb8df8dd20f1915388d190daf07e822180eece031dbc47"
+    },
+    {
+      "path": "js/Block.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/Block.js",
+      "bytes": 5951,
+      "sha256": "8dc16633cf4443126d66b2b4851d113067a8dfe52c85db30531c8920c039110c"
+    },
+    {
+      "path": "js/Hex.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/Hex.js",
+      "bytes": 4999,
+      "sha256": "282f80c1f6d2b0309413b796f25a393473113f38b5dd09051fe4f9502f9a53ca"
+    },
+    {
+      "path": "js/Text.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/Text.js",
+      "bytes": 600,
+      "sha256": "7eb73bf9f10b97f2fb00d5af182ba8f649723cc82fdcae66b131eafc2d754a75"
+    },
+    {
+      "path": "js/checking.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/checking.js",
+      "bytes": 2894,
+      "sha256": "9f8761f25c184013fbbaf29d0e6141e3064c0b103132c6f97a1c93d8e0595821"
+    },
+    {
+      "path": "js/comboTimer.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/comboTimer.js",
+      "bytes": 2230,
+      "sha256": "90c9df8009abb46fd92d51a9631e4e67a9fd2095080a373a7c0e8ff1fc599a9b"
+    },
+    {
+      "path": "js/initialization.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/initialization.js",
+      "bytes": 6898,
+      "sha256": "6db0722340b9f7955810769425c8c8283629f59889b952a18cfb665cf0fe0134"
+    },
+    {
+      "path": "js/input.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/input.js",
+      "bytes": 4951,
+      "sha256": "3ed2ddd4ab2739d101ee9437f942b68e6992fe535cb5535b3f89045bc1ec81d0"
+    },
+    {
+      "path": "js/main.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/main.js",
+      "bytes": 9744,
+      "sha256": "c481c6ae3609f39d821b39c867a1c1ef56248a9a963d9dc6619d94c8a2f56c97"
+    },
+    {
+      "path": "js/math.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/math.js",
+      "bytes": 318,
+      "sha256": "032789a4e1b7f509dd0d1f70becc6dd8de1429b9d36c12bce64de5fe320afc9e"
+    },
+    {
+      "path": "js/render.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/render.js",
+      "bytes": 3525,
+      "sha256": "bcf83391093e3980abd1e12fdfcc6364735c2d79f0fe74006905e1d83e537c13"
+    },
+    {
+      "path": "js/save-state.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/save-state.js",
+      "bytes": 1343,
+      "sha256": "22ab1cb924fc3e7be06222e449c338385832cd7b6067ec1cbae3955b700675c6"
+    },
+    {
+      "path": "js/update.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/update.js",
+      "bytes": 1840,
+      "sha256": "f6983acf1cee3e09d1f71d6ddfe1badba4ee4394734d8a99cb231db249a87c1a"
+    },
+    {
+      "path": "js/view.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/view.js",
+      "bytes": 7424,
+      "sha256": "665f9c1a38ee006d36579593695f92c1810551899e034d142363f12d9151e5a0"
+    },
+    {
+      "path": "js/wavegen.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/js/wavegen.js",
+      "bytes": 5391,
+      "sha256": "05c9b4f996ea32f0aabf1e99ce4cb9ab8fe4cc4596dde9b2c06f63c8400e8150"
+    },
+    {
+      "path": "style/fa/css/font-awesome.min.css",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fa/css/font-awesome.min.css",
+      "bytes": 20738,
+      "sha256": "9a7cda42c42af18959cb35e978afebf83e4a2dd578151bfd53b68e942d112f5a"
+    },
+    {
+      "path": "style/fa/fonts/fontawesome-webfont.eot",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fa/fonts/fontawesome-webfont.eot",
+      "bytes": 72449,
+      "sha256": "9f8288933d2c87ab3cdbdbda5c9fa1e1e139b01c7c1d1983f91a13be85173975"
+    },
+    {
+      "path": "style/fa/fonts/fontawesome-webfont.svg",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fa/fonts/fontawesome-webfont.svg",
+      "bytes": 249690,
+      "sha256": "436eba68301de970d57ee546f58fb3764670d34d6904beb1e72c1026018ae199"
+    },
+    {
+      "path": "style/fa/fonts/fontawesome-webfont.ttf",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fa/fonts/fontawesome-webfont.ttf",
+      "bytes": 141564,
+      "sha256": "c2a9333b008247abd42354df966498b4c2f1aa51a10b7e178a4f5df2edea4ce1"
+    },
+    {
+      "path": "style/fa/fonts/fontawesome-webfont.woff",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fa/fonts/fontawesome-webfont.woff",
+      "bytes": 83760,
+      "sha256": "66db52b456efe7e29cec11fa09421d03cb09e37ed1b567307ec0444fd605ce31"
+    },
+    {
+      "path": "style/fa/fonts/fontawesome-webfontd41d.eot",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fa/fonts/fontawesome-webfontd41d.eot",
+      "bytes": 72449,
+      "sha256": "9f8288933d2c87ab3cdbdbda5c9fa1e1e139b01c7c1d1983f91a13be85173975"
+    },
+    {
+      "path": "style/fonts/Exo2-ExtraLight.otf",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fonts/Exo2-ExtraLight.otf",
+      "bytes": 64996,
+      "sha256": "a5a6d21b8dbdded88e8c6b87fbe1a3ae92a5513633b55e50009676089c3955ef"
+    },
+    {
+      "path": "style/fonts/Exo2-Regular.otf",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fonts/Exo2-Regular.otf",
+      "bytes": 65552,
+      "sha256": "ebfec5f5c1598340e24229201189409665e92b1251bbaf225d16959e272a443f"
+    },
+    {
+      "path": "style/fonts/Exo2-SemiBold.otf",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/fonts/Exo2-SemiBold.otf",
+      "bytes": 68732,
+      "sha256": "b40e64b126fd0c400c618e264c6cf3479477b69cc33e2ef363daef63c1d0c794"
+    },
+    {
+      "path": "style/rrssb.css",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/rrssb.css",
+      "bytes": 10978,
+      "sha256": "0c5cd0d327b63e346fcc637d5bb31630d4767d2f22a40132850f1d3da1f233b1"
+    },
+    {
+      "path": "style/style.css",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/style/style.css",
+      "bytes": 7972,
+      "sha256": "cb929922ca57dea3e46e0972482ca183d20865d58431b55fc1c94e3f65aef04d"
+    },
+    {
+      "path": "vendor/hammer.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/hammer.min.js",
+      "bytes": 13710,
+      "sha256": "f91094848368717989484b6fe060675e4f7ae194f3fe85650aca413b9e987271"
+    },
+    {
+      "path": "vendor/jquery.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/jquery.js",
+      "bytes": 92593,
+      "sha256": "ee120ee3cca09a6e21325332e3294444d16406a355b8b0c33dbd9cc3ea3fbe2c"
+    },
+    {
+      "path": "vendor/js.cookie.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/js.cookie.js",
+      "bytes": 3242,
+      "sha256": "dd972387609461c36da7be13326bc22f48a89c3df0aad539c80f16d65046ff72"
+    },
+    {
+      "path": "vendor/jsonfn.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/jsonfn.min.js",
+      "bytes": 809,
+      "sha256": "5f0502c3c48812393a14ebc4a51785085903b713a0df8eb8533fafea8bb529a9"
+    },
+    {
+      "path": "vendor/keypress.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/keypress.min.js",
+      "bytes": 9985,
+      "sha256": "e3a60e96762936ce21bdb27f95176ef0eeac75b962ccaade28861ab14af8d11d"
+    },
+    {
+      "path": "vendor/rrssb.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/rrssb.min.js",
+      "bytes": 4972,
+      "sha256": "974e9bf2a21cc47e20182eb5a3daaf40d0e69a13989c8e10d4014f4aae5987ce"
+    },
+    {
+      "path": "vendor/sweet-alert.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/vendor/sweet-alert.min.js",
+      "bytes": 10424,
+      "sha256": "ac46ed6a8364a5004cfc46372e42ccde232cee43e6594dd4233a486311c3d439"
+    },
+    {
+      "path": "images/btn_back.svg",
+      "url": "https://raw.githubusercontent.com/Hextris/hextris/gh-pages/images/btn_back.svg",
+      "bytes": 1210,
+      "sha256": "84b7c15aecae54ca3359b80d147d585f34beb86cd9f7fcf2686bb6df5650b976"
+    },
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/Hextris/hextris/gh-pages/LICENSE.md",
+      "bytes": 35178,
+      "sha256": "ccb349b4132ed7737f25e5adebfe61f3d52dca33708df1e50352320438d1d4c2"
+    },
+    {
+      "path": "images/btn_resume.svg",
+      "url": "https://raw.githubusercontent.com/Hextris/hextris/gh-pages/images/btn_resume.svg",
+      "bytes": 1119,
+      "sha256": "6e27c24cbcd2d7ed0f8bbdfc717f8c85c86499d865964bbed487663d0fbe5593"
+    }
+  ],
+  "unavailable_optional_candidates": [
+    {
+      "path": "LICENSE",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "LICENSE.txt",
+      "url": "https://cdn.jsdelivr.net/gh/Nailington/3kh0-assets@aeb371b7e88542fd5e61eeed9e967a446d84fe1b/hextris/LICENSE.txt",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

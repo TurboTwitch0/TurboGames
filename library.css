@@ -1,4 +1,5 @@
 /* The library stays close, from the wide collection to a small phone. */
+.starter-tab:not(.is-active){color:var(--lime);border-color:#d6ff6438;background:#d6ff6406}.starter-note{margin:0 0 22px;padding:16px 19px;border:1px solid #d6ff6440;border-radius:14px;background:#d6ff6408;color:#ced7bc;font-size:12px;line-height:1.7}
 .genre-section { margin: 0 0 26px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
 .genre-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 14px; }
 .genre-heading h3 { margin: 0; font-size: 16px; }

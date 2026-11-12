@@ -1,6 +1,10 @@
 # Allow the arcade to be embedded on Google Sites.
 # Do not add X-Frame-Options or a restrictive frame-ancestors policy here.
 
+# Derived previews use source-content/recipe hashes in their filenames.
+/assets/covers/thumbs/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # Isolated game frames have an opaque origin. Ruffle fetches its WASM
 # from this directory and needs CORS even when the arcade uses this host.
 /vendor/*

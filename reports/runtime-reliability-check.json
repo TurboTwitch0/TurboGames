@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "method": "Actual browser startup and input checks; outside game/CDN hosts blocked for localized classics. No complete catalog playthrough claim.",
+  "checks": [
+    "Unity loader declarations are wrapped before startup; relative StreamingAssets resolve against the true creator base, frozen options and callback arguments are preserved, and denied optional Cache API falls back to absence",
+    "Startup notices carry only a neutral detail and hostname; private query/stack/message contents stay inside the frame and known optional analytics errors are ignored",
+    "2048 starts and responds to real game input with all outside game/CDN hosts blocked",
+    "Hextris starts and responds to real game input with all outside game/CDN hosts blocked",
+    "Bloons loads its local SWF and responds to Ruffle activation with outside hosts blocked; a separate settled visual check confirms the original game menu",
+    "Run loads its local SWF and responds to Ruffle activation with outside hosts blocked; a separate settled visual check confirms the original game menu",
+    "The exact existing Block Blast Unity build initializes with every outside host blocked; all four local build requests return 200 and the real loading overlay is dismissed"
+  ],
+  "games": [
+    {
+      "title": "2048",
+      "inputReadyMs": 1225,
+      "state": {
+        "tiles": 7
+      }
+    },
+    {
+      "title": "Hextris",
+      "inputReadyMs": 1486,
+      "state": {
+        "gameState": 1,
+        "position": 1,
+        "blocks": 6
+      }
+    },
+    {
+      "title": "Bloons",
+      "engineActivationMs": 1980,
+      "state": {
+        "playing": true,
+        "frameRate": 50,
+        "width": 640,
+        "height": 480,
+        "swf": "../../vendor/games/bloons/bloons.swf",
+        "script": "http://127.0.0.1:8002/vendor/ruffle/ruffle.js"
+      }
+    },
+    {
+      "title": "Run",
+      "engineActivationMs": 2262,
+      "state": {
+        "playing": true,
+        "frameRate": 30,
+        "width": 550,
+        "height": 400,
+        "swf": "../../vendor/games/run/run_1.swf",
+        "script": "http://127.0.0.1:8002/vendor/ruffle/ruffle.js"
+      }
+    },
+    {
+      "title": "Block Blast",
+      "unityInitializationMs": 1421,
+      "sceneSnapshotAfterMs": 10473,
+      "state": {
+        "loadingHidden": true,
+        "width": 1131,
+        "height": 693
+      },
+      "buildResponses": [
+        {
+          "file": "BlockBlast1.1-8.loader.js",
+          "status": 200
+        },
+        {
+          "file": "BlockBlast1.1-8.framework.js.unityweb",
+          "status": 200
+        },
+        {
+          "file": "BlockBlast1.1-8.wasm.unityweb",
+          "status": 200
+        },
+        {
+          "file": "BlockBlast1.1-8.data.unityweb",
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "blockedOptionalHosts": [
+    "www.google-analytics.com"
+  ]
+}

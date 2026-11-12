@@ -2,6 +2,18 @@
 
 TurboGames is a static, searchable library with **3,099 games and apps**, square cover images, category tabs, and an isolated fullscreen player. No package install or build step is needed.
 
+## Reliability and loading
+
+**Start here** offers a curated set of existing games with their core files hosted on TurboGames. It combines the existing Orbit Breaker and Little Match with localized classics. Flash still downloads the shared Ruffle emulator on first use; local hosting does not make every game instant.
+
+The compatibility layer fixes modern Unity's relative StreamingAssets resolution inside an opaque player and treats a denied optional Cache API as unavailable, allowing the loader's normal HTTP fallback. It preserves the sandbox and per-game saves. Failed startup scripts report a short, nonblocking message without exposing query values, error text, or stack traces to the parent.
+
+Large prepared HTML games navigate directly in a fresh isolated iframe, rather than copying tens of megabytes through the parent's fetch/text/replace/srcdoc path. The same nonce-scoped save bridge initializes before their original scripts. A size hint identifies large pages; actual game assets can be much larger. Slow downloads offer cancel/new-tab actions, and an unresponsive game-page fetch times out with Retry. One unsupported legacy parent-call wrapper retains its existing launch path.
+
+The catalog includes generated genre hints, while the search index is built only when needed. Original artwork and credits are preserved; `tools/optimize_covers.py` creates smaller 384px WebP previews with content/recipe hashes. `tools/build_catalog.py` validates each preview against its original source hash and falls back to the original when stale. Eleven additional covers now use verified publisher/creator art or a reviewed title-menu capture. Remaining illustrations are still identified as illustrations.
+
+Focused checks: `node tools/runtime-reliability-check.cjs`, `node tools/native-launch-check.cjs`, and `node tools/launch-feedback-check.cjs`. They distinguish actual game input/menu checks from controlled error/storage fixtures. `node tools/performance-check.cjs` compares six fresh local phone-sized Chromium contexts at 4× CPU slowdown against commit `e792405`; those measurements are not real Chromebook/network timings or complete-catalog playthroughs. See the corresponding reports in `reports/` and the exact localized-source provenance in `vendor/games/`.
+
 ## Brand and launch assets
 
 The original **Find your next play** identity uses shared tokens in `brand.css`, native SVG icons, and logo assets in `assets/brand/`. The landing page previews the existing Orbit Breaker game; its Play and Save actions use the same player and library as the catalog. Loading, recovery, empty collections, mobile browsing, and the Google Sites helper share the same visual system. Motion respects the device's reduced-motion setting.

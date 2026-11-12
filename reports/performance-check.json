@@ -1,0 +1,405 @@
+{
+  "passed": true,
+  "method": "Controlled local Chromium startup comparison: three fresh contexts per mode,390×844 viewport,4× CPU slowdown. Both modes fulfill app.js and catalog.js from memory identically; current HTML,CSS and every other script are shared. Images use the real local server. Metrics are sampled750ms after the first cards enter the DOM. No game is opened. This is not a real Chromebook, a simulated slow connection, or a universal gameplay-time claim.",
+  "site": "http://127.0.0.1:8002/",
+  "baseline": "e792405",
+  "cpuSlowdown": 4,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "sampleWindowAfterFirstCardsMs": 750,
+  "scriptInputs": {
+    "before": {
+      "app.js": {
+        "bytes": 47465,
+        "sha256": "6f06250302f67c8c4f3501157f3a5aff8f7185184f70f9bd6460854f0a6228ae"
+      },
+      "catalog.js": {
+        "bytes": 1011594,
+        "sha256": "bb7d3ab92c87ec8bb4f5957a34ad88a509a7217cb7a390583950d92e738913dc"
+      }
+    },
+    "after": {
+      "app.js": {
+        "bytes": 53137,
+        "sha256": "f91ba75c2257dd97b0b4c947cd3b4828ec68f8cc64994af182e3fbb9916f8d60"
+      },
+      "catalog.js": {
+        "bytes": 1050282,
+        "sha256": "6446eb711046e2c18ef9b684381895b4bfba2a3da716bad843c78e9cc5c8561b"
+      }
+    }
+  },
+  "checks": [
+    "Six fresh contexts use the same current page and identical memory-fulfilled script mechanism, with alternating modes and4× CPU slowdown",
+    "All3099 catalog entries and three sampled query result sets match across all baseline/current samples",
+    "Median completed homepage image bytes750ms after first cards are lower; CPU/FCP timings are recorded without a noise-sensitive pass threshold"
+  ],
+  "samples": [
+    {
+      "mode": "before",
+      "trial": 1,
+      "fcpMs": 420,
+      "cardsReadyMs": 673.6999999880791,
+      "sampledAtMs": 1436.9000000059605,
+      "largestLongTaskMs": 242,
+      "totalLongTaskMs": 242,
+      "imageEncodedBodyBytes": 351594,
+      "imageResponsesCompleted": 8,
+      "completedResources": 20,
+      "catalogCount": 3099,
+      "visibleCards": 39,
+      "longTasks": [
+        {
+          "start": 436.2999999821186,
+          "duration": 242
+        }
+      ],
+      "requestsStarted": 21,
+      "imageRequestsStarted": 8,
+      "queries": {
+        "Orbit Breaker": {
+          "resultCount": 1,
+          "renderedIds": [
+            "orbit-breaker"
+          ]
+        },
+        "tetris": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+            "library-source/emulated/gba/cltetrisgba.html",
+            "library-source/emulated/n64/cltetris64.html",
+            "library-source/emulated/nes/cltengentetris.html",
+            "library-source/emulated/nes/cltetris.html",
+            "library-source/emulated/snes/cltetrisattack.html",
+            "library-source/emulated/cltetrisgb.html"
+          ]
+        },
+        "puzzle": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/clpuzzlebobble.html",
+            "little-match",
+            "library-source/html5-games/clkimjonguntilepuzzle.html",
+            "library-source/html5-games/clNutsandBoltsScrewingPuzzle.html",
+            "library-source/html5-games/thiefpuzzle.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turbo.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turboalt.html"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "after",
+      "trial": 1,
+      "fcpMs": 392,
+      "cardsReadyMs": 638.4000000059605,
+      "sampledAtMs": 1395.4000000059605,
+      "largestLongTaskMs": 208,
+      "totalLongTaskMs": 208,
+      "imageEncodedBodyBytes": 22394,
+      "imageResponsesCompleted": 5,
+      "completedResources": 17,
+      "catalogCount": 3099,
+      "visibleCards": 39,
+      "longTasks": [
+        {
+          "start": 431.69999998807907,
+          "duration": 208
+        }
+      ],
+      "requestsStarted": 18,
+      "imageRequestsStarted": 5,
+      "queries": {
+        "Orbit Breaker": {
+          "resultCount": 1,
+          "renderedIds": [
+            "orbit-breaker"
+          ]
+        },
+        "tetris": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+            "library-source/emulated/gba/cltetrisgba.html",
+            "library-source/emulated/n64/cltetris64.html",
+            "library-source/emulated/nes/cltengentetris.html",
+            "library-source/emulated/nes/cltetris.html",
+            "library-source/emulated/snes/cltetrisattack.html",
+            "library-source/emulated/cltetrisgb.html"
+          ]
+        },
+        "puzzle": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/clpuzzlebobble.html",
+            "little-match",
+            "library-source/html5-games/clkimjonguntilepuzzle.html",
+            "library-source/html5-games/clNutsandBoltsScrewingPuzzle.html",
+            "library-source/html5-games/thiefpuzzle.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turbo.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turboalt.html"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "before",
+      "trial": 2,
+      "fcpMs": 436,
+      "cardsReadyMs": 711,
+      "sampledAtMs": 1466.4000000059605,
+      "largestLongTaskMs": 276,
+      "totalLongTaskMs": 276,
+      "imageEncodedBodyBytes": 351594,
+      "imageResponsesCompleted": 8,
+      "completedResources": 20,
+      "catalogCount": 3099,
+      "visibleCards": 39,
+      "longTasks": [
+        {
+          "start": 439.7000000178814,
+          "duration": 276
+        }
+      ],
+      "requestsStarted": 21,
+      "imageRequestsStarted": 8,
+      "queries": {
+        "Orbit Breaker": {
+          "resultCount": 1,
+          "renderedIds": [
+            "orbit-breaker"
+          ]
+        },
+        "tetris": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+            "library-source/emulated/gba/cltetrisgba.html",
+            "library-source/emulated/n64/cltetris64.html",
+            "library-source/emulated/nes/cltengentetris.html",
+            "library-source/emulated/nes/cltetris.html",
+            "library-source/emulated/snes/cltetrisattack.html",
+            "library-source/emulated/cltetrisgb.html"
+          ]
+        },
+        "puzzle": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/clpuzzlebobble.html",
+            "little-match",
+            "library-source/html5-games/clkimjonguntilepuzzle.html",
+            "library-source/html5-games/clNutsandBoltsScrewingPuzzle.html",
+            "library-source/html5-games/thiefpuzzle.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turbo.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turboalt.html"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "after",
+      "trial": 2,
+      "fcpMs": 404,
+      "cardsReadyMs": 593.0999999940395,
+      "sampledAtMs": 1349.0999999940395,
+      "largestLongTaskMs": 169,
+      "totalLongTaskMs": 169,
+      "imageEncodedBodyBytes": 22394,
+      "imageResponsesCompleted": 5,
+      "completedResources": 17,
+      "catalogCount": 3099,
+      "visibleCards": 39,
+      "longTasks": [
+        {
+          "start": 428.30000001192093,
+          "duration": 169
+        }
+      ],
+      "requestsStarted": 18,
+      "imageRequestsStarted": 5,
+      "queries": {
+        "Orbit Breaker": {
+          "resultCount": 1,
+          "renderedIds": [
+            "orbit-breaker"
+          ]
+        },
+        "tetris": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+            "library-source/emulated/gba/cltetrisgba.html",
+            "library-source/emulated/n64/cltetris64.html",
+            "library-source/emulated/nes/cltengentetris.html",
+            "library-source/emulated/nes/cltetris.html",
+            "library-source/emulated/snes/cltetrisattack.html",
+            "library-source/emulated/cltetrisgb.html"
+          ]
+        },
+        "puzzle": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/clpuzzlebobble.html",
+            "little-match",
+            "library-source/html5-games/clkimjonguntilepuzzle.html",
+            "library-source/html5-games/clNutsandBoltsScrewingPuzzle.html",
+            "library-source/html5-games/thiefpuzzle.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turbo.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turboalt.html"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "before",
+      "trial": 3,
+      "fcpMs": 400,
+      "cardsReadyMs": 674.1999999880791,
+      "sampledAtMs": 1429.0999999940395,
+      "largestLongTaskMs": 258,
+      "totalLongTaskMs": 258,
+      "imageEncodedBodyBytes": 351594,
+      "imageResponsesCompleted": 8,
+      "completedResources": 20,
+      "catalogCount": 3099,
+      "visibleCards": 39,
+      "longTasks": [
+        {
+          "start": 421.69999998807907,
+          "duration": 258
+        }
+      ],
+      "requestsStarted": 21,
+      "imageRequestsStarted": 8,
+      "queries": {
+        "Orbit Breaker": {
+          "resultCount": 1,
+          "renderedIds": [
+            "orbit-breaker"
+          ]
+        },
+        "tetris": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+            "library-source/emulated/gba/cltetrisgba.html",
+            "library-source/emulated/n64/cltetris64.html",
+            "library-source/emulated/nes/cltengentetris.html",
+            "library-source/emulated/nes/cltetris.html",
+            "library-source/emulated/snes/cltetrisattack.html",
+            "library-source/emulated/cltetrisgb.html"
+          ]
+        },
+        "puzzle": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/clpuzzlebobble.html",
+            "little-match",
+            "library-source/html5-games/clkimjonguntilepuzzle.html",
+            "library-source/html5-games/clNutsandBoltsScrewingPuzzle.html",
+            "library-source/html5-games/thiefpuzzle.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turbo.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turboalt.html"
+          ]
+        }
+      }
+    },
+    {
+      "mode": "after",
+      "trial": 3,
+      "fcpMs": 444,
+      "cardsReadyMs": 581.9000000059605,
+      "sampledAtMs": 1338,
+      "largestLongTaskMs": 157,
+      "totalLongTaskMs": 232,
+      "imageEncodedBodyBytes": 22394,
+      "imageResponsesCompleted": 5,
+      "completedResources": 17,
+      "catalogCount": 3099,
+      "visibleCards": 39,
+      "longTasks": [
+        {
+          "start": 89.40000000596046,
+          "duration": 75
+        },
+        {
+          "start": 428,
+          "duration": 157
+        }
+      ],
+      "requestsStarted": 18,
+      "imageRequestsStarted": 5,
+      "queries": {
+        "Orbit Breaker": {
+          "resultCount": 1,
+          "renderedIds": [
+            "orbit-breaker"
+          ]
+        },
+        "tetris": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/cltetrisgrandmaster2.html",
+            "library-source/emulated/gba/cltetrisgba.html",
+            "library-source/emulated/n64/cltetris64.html",
+            "library-source/emulated/nes/cltengentetris.html",
+            "library-source/emulated/nes/cltetris.html",
+            "library-source/emulated/snes/cltetrisattack.html",
+            "library-source/emulated/cltetrisgb.html"
+          ]
+        },
+        "puzzle": {
+          "resultCount": 7,
+          "renderedIds": [
+            "library-source/emulated/arcade/clpuzzlebobble.html",
+            "little-match",
+            "library-source/html5-games/clkimjonguntilepuzzle.html",
+            "library-source/html5-games/clNutsandBoltsScrewingPuzzle.html",
+            "library-source/html5-games/thiefpuzzle.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turbo.html",
+            "library-source/emulated/psx/clsuperpuzzlefighter2turboalt.html"
+          ]
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    "/tmp/turbogames-performance-before.png",
+    "/tmp/turbogames-performance-after.png"
+  ],
+  "medians": {
+    "before": {
+      "fcpMs": 420,
+      "cardsReadyMs": 674.2,
+      "largestLongTaskMs": 258,
+      "totalLongTaskMs": 258,
+      "imageEncodedBodyBytes": 351594,
+      "requestsStarted": 21,
+      "imageRequestsStarted": 8,
+      "completedResources": 20
+    },
+    "after": {
+      "fcpMs": 404,
+      "cardsReadyMs": 593.1,
+      "largestLongTaskMs": 169,
+      "totalLongTaskMs": 208,
+      "imageEncodedBodyBytes": 22394,
+      "requestsStarted": 18,
+      "imageRequestsStarted": 5,
+      "completedResources": 17
+    }
+  },
+  "reductionPercent": {
+    "fcpMs": 3.81,
+    "cardsReadyMs": 12.03,
+    "largestLongTaskMs": 34.5,
+    "totalLongTaskMs": 19.38,
+    "imageEncodedBodyBytes": 93.63,
+    "requestsStarted": 14.29,
+    "imageRequestsStarted": 37.5,
+    "completedResources": 15
+  }
+}

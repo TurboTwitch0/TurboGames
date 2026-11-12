@@ -1,0 +1,90 @@
+{
+  "checked_date": "2026-11-12",
+  "method": "Actual Chromium isolated-player checks with trusted session HTTP proxy/TLS validation. Optional analytics were returned204 by the test harness to isolate required game resources. SwiftShader is used for the post-fix Unity test; this is a test-process software renderer, not a hosted browser configuration change. No full playthrough claim.",
+  "titles": [
+    {
+      "title": "Block Blast",
+      "source": "library-source/html5-games/clblockblast.html",
+      "before": {
+        "observed": "Unity loading screen stayed up; required build data/wasm/framework were never requested.",
+        "critical_errors": [
+          "Failed to construct 'URL': Invalid URL",
+          "Failed to read the 'serviceWorker' property from 'Navigator': Service worker is disabled because the context is sandboxed and lacks the 'allow-same-origin' flag."
+        ]
+      },
+      "source_repair": [
+        "Make StreamingAssets URL explicitly point to the original game CDN. Unity resolves it against document.URL, which is about:srcdoc in the isolated player.",
+        "Register the original service worker only when it shares the current page origin; handle registration rejection. Imported copies otherwise cannot register a third-party-origin worker."
+      ],
+      "shared_repair": "player-compat.js (parent-owned): when the sandboxed Cache API getter throws, expose it as unavailable so Unity takes its own HTTP download fallback instead of synchronously throwing.",
+      "after": {
+        "test_path": "Normal current local player and shared compatibility script; no injected cache shim in this final run.",
+        "renderer": "Chromium test process uses SwiftShader software WebGL.",
+        "checkpoint_seconds": 24,
+        "unity_initialization_resolved": true,
+        "canvas": {
+          "id": "unity-canvas",
+          "w": 1054,
+          "h": 656
+        },
+        "page_errors": [],
+        "dialogs": [],
+        "required_failed_requests": [],
+        "remote_bytes": 10263285,
+        "visual_evidence": "Actual colored puzzle board and tutorial, after the Unity loading overlay disappeared.",
+        "screenshot": "/tmp/clblockblast-after.png",
+        "non_fatal_console_output": [
+          "<color=#0099bc><b>DOTWEEN \u25ba </b></color>Couldn't load Modules system\n"
+        ],
+        "required_build_responses": [
+          {
+            "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.loader.js",
+            "status": 200,
+            "bytes": 44220
+          },
+          {
+            "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.framework.js.unityweb",
+            "status": 200,
+            "bytes": 75795
+          },
+          {
+            "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.wasm.unityweb",
+            "status": 200,
+            "bytes": 7531483
+          },
+          {
+            "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.data.unityweb",
+            "status": 200,
+            "bytes": 2608575
+          }
+        ]
+      },
+      "local_core_repair": {
+        "asset_directory": "vendor/games/block-blast",
+        "files": 11,
+        "bytes": 10272416,
+        "original_compiled_game_unchanged": true,
+        "urls_and_sha256": "vendor/games/block-blast/PROVENANCE.json",
+        "verification_report": "reports/block-blast-local-check.json",
+        "visual_evidence": "Actual puzzle board after the Unity intro, with outside game/CDN hosts blocked.",
+        "screenshot": "/tmp/turbogames-local-block-blast.png"
+      }
+    },
+    {
+      "title": "Grindcraft",
+      "source": "library-source/html5-games/clgrindcraft.html",
+      "source_changed": false,
+      "observed": "Original title screen renders; clicking Play enters the actual crafting-grid gameplay.",
+      "required_resource_observation": "Game JS, CMG adapter, image assets, fonts, XML data and maps returned200.",
+      "page_error": "Legacy analytics debug code reads window.top.location.href across the isolated frame boundary; it does not prevent the tested Play action.",
+      "remaining_limit": "37 source sound MP3 requests failed404/403; matching OGG probes also404. Audio files are unavailable in the pinned original asset repository. The game was not disabled or replaced.",
+      "screenshot": "/tmp/clgrindcraft-after.png",
+      "remote_bytes": 4923973,
+      "pinned_audio_directory": "https://github.com/bubbls/UGS-Assets/tree/0e38748f1d1544dd8243bdcc74390c6027059038/grindcraft/sounds",
+      "pinned_audio_directory_verified_contents": [
+        "1up.ogg"
+      ]
+    }
+  ],
+  "result": "Block Blast source startup repaired and verified together with parent shared Cache API fix. Grindcraft gameplay independently verified; retained source and documented missing audio instead of disabling a functioning title."
+}

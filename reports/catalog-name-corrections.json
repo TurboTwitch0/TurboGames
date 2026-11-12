@@ -1,0 +1,18 @@
+{
+  "method": "Display-name corrections preserve game IDs, sources, saved-library keys and legacy search aliases.",
+  "corrections": [
+    {
+      "id": "library-source/emulated/n64/clddlc64.html",
+      "before": "Doki Doki Literature Club 64",
+      "after": "Doki Doki Mario 64",
+      "evidence": "https://romhacking.com/hack/doki-doki-mario-64 and existing source ROM filename Doki Doki Mario64.z64",
+      "legacy_search_alias_preserved": true
+    },
+    {
+      "id": "library-source/html5-games/!.html",
+      "before": "!",
+      "after": "Crank It!",
+      "evidence": "Existing source HTML title is Crank It!"
+    }
+  ]
+}

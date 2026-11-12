@@ -1,0 +1,106 @@
+{
+  "method": "Real isolated-player browser startup checks; external HTTP uses inherited trusted proxy and TLS verification. No completeplaythrough guarantee. URLs in this report omit query and fragment values.",
+  "results": [
+    {
+      "title": "2048",
+      "source": "library-source/html5-games/cl2048.html",
+      "elapsedMs": 12727,
+      "state": {
+        "title": "2048",
+        "text": "2048\n0\n\nJoin the numbers and get to the 2048 tile!\n\nGet Hint\nAuto-run\n2\n2\n\nHOW TO PLAY: Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!\n\nCreated by Gabriele Cirulli. Based on 1024 by Veewo Studio and conceptually similar to Threes by Asher Vollmer.\n\nAI solver by Matt Overlan\n\nTweet Donate\n1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i",
+        "canvas": 0,
+        "tiles": 2,
+        "scripts": 12,
+        "iframe": 0,
+        "dimensions": [
+          1131,
+          693
+        ]
+      },
+      "errors": [],
+      "failed": [],
+      "responses": []
+    },
+    {
+      "title": "Hextris",
+      "source": "library-source/html5-games/clhextris.html",
+      "elapsedMs": 12516,
+      "state": {
+        "title": "Hextris",
+        "text": "HIGH SCORE\nHIGH SCORE\n0\nFACEBOOK\nTWITTER",
+        "canvas": 1,
+        "tiles": 0,
+        "scripts": 29,
+        "iframe": 0,
+        "dimensions": [
+          1131,
+          693
+        ]
+      },
+      "errors": [
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "failed": [
+        {
+          "url": "http://www.google-analytics.com/analytics.js",
+          "error": "apiRequestContext.fetch: socket hang up"
+        }
+      ],
+      "responses": []
+    },
+    {
+      "title": "Bloons",
+      "source": "library-source/flash/clbloons.html",
+      "elapsedMs": 12669,
+      "state": {
+        "title": "really cool flash game",
+        "text": "]]>",
+        "canvas": 1,
+        "tiles": 0,
+        "scripts": 5,
+        "iframe": 0,
+        "dimensions": [
+          1131,
+          693
+        ]
+      },
+      "errors": [
+        "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ],
+      "failed": [
+        {
+          "url": "http://mochibot.com/my/core.swf",
+          "status": 403
+        }
+      ],
+      "responses": [
+        {
+          "url": "http://mochibot.com/my/core.swf",
+          "status": 403,
+          "bytes": 26,
+          "type": "text/plain"
+        }
+      ]
+    },
+    {
+      "title": "Run",
+      "source": "library-source/flash/clrun.html",
+      "elapsedMs": 12922,
+      "state": {
+        "title": "really cool flash game",
+        "text": "]]>",
+        "canvas": 1,
+        "tiles": 0,
+        "scripts": 5,
+        "iframe": 0,
+        "dimensions": [
+          1131,
+          693
+        ]
+      },
+      "errors": [],
+      "failed": [],
+      "responses": []
+    }
+  ]
+}

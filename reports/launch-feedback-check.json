@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "checks": [
+    "Start here is a shareable collection of existing self-hosted picks; the complete 3,099-entry catalog remains available",
+    "Real script failures produce a nonblocking warning; Restart clears it and stale nonce reports are rejected",
+    "A held download shows real slow-load choices after 12 seconds; cancel aborts and returns to browsing without invented progress",
+    "A 60-second game-page timeout offers recovery and Retry launches the real original game",
+    "Large game pages have an honest size hint, and the changed collection fits 390px and 320px layouts"
+  ]
+}

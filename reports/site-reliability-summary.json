@@ -1,0 +1,57 @@
+{
+  "catalog_entries": 3099,
+  "inventory_ids_preserved": true,
+  "missing_sources_marked": 33,
+  "reviewed_cover_replacements": 11,
+  "source_artwork": 2631,
+  "illustrations": 468,
+  "native_large_launchers": 36,
+  "self_hosted_starter_games": [
+    "2048",
+    "Hextris",
+    "Block Blast",
+    "Run",
+    "Bloons",
+    "Orbit Breaker",
+    "Little Match"
+  ],
+  "controlled_local_benchmark": {
+    "cpu_slowdown": 4,
+    "viewport": "390x844",
+    "samples": 6,
+    "before": {
+      "fcpMs": 420,
+      "cardsReadyMs": 674.2,
+      "largestLongTaskMs": 258,
+      "totalLongTaskMs": 258,
+      "imageEncodedBodyBytes": 351594,
+      "requestsStarted": 21,
+      "imageRequestsStarted": 8,
+      "completedResources": 20
+    },
+    "after": {
+      "fcpMs": 404,
+      "cardsReadyMs": 593.1,
+      "largestLongTaskMs": 169,
+      "totalLongTaskMs": 208,
+      "imageEncodedBodyBytes": 22394,
+      "requestsStarted": 18,
+      "imageRequestsStarted": 5,
+      "completedResources": 17
+    },
+    "limit": "Controlled startup comparison, not real-device network or gameplay timings."
+  },
+  "optimized_previews": {
+    "optimized_previews": 2558,
+    "original_bytes": 82384706,
+    "preview_bytes": 39939638,
+    "reduction_percent": 51.5,
+    "method": "384px maximum edge, WebP82, unchanged source images and provenance; no synthetic artwork"
+  },
+  "limits": [
+    "The entire catalog has not received complete playthroughs.",
+    "Large games retain their original download and hardware requirements.",
+    "Some imported games still require unavailable third-party assets; known missing sources stay marked.",
+    "Classroom Maxxing keeps its previous launch path pending a separate legacy-parent-call review."
+  ]
+}

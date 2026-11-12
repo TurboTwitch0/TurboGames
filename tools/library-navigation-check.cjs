@@ -58,7 +58,8 @@ const reportPath = process.env.TURBO_REPORT_PATH || 'reports/library-navigation-
     await go('view=all');
     const counts = await page.evaluate(() => [...document.querySelectorAll('[data-scope-count]')].map(node => {
       const key = node.dataset.scopeCount;
-      return { key, count: Number(node.textContent.replaceAll(',', '')), expected: window.TURBO_CATALOG.filter(item => key === 'all' || (key === 'popular' ? item.featured : item.category === key)).length };
+      const starters = new Set(['orbit-breaker', 'little-match', 'library-source/html5-games/cl2048.html', 'library-source/html5-games/clhextris.html', 'library-source/html5-games/clblockblast.html', 'library-source/flash/clbloons.html', 'library-source/flash/clrun.html']);
+      return { key, count: Number(node.textContent.replaceAll(',', '')), expected: window.TURBO_CATALOG.filter(item => key === 'all' || (key === 'popular' ? item.featured : key === 'starters' ? starters.has(item.id) : item.category === key)).length };
     }));
     assert.ok(counts.every(item => item.count === item.expected));
     assert.equal(await page.getByRole('button', { name: 'Games', exact: true }).count(), 1);

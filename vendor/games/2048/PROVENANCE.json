@@ -1,0 +1,164 @@
+{
+  "game": "2048",
+  "purpose": "Exact existing launcher dependencies hosted locally; no game identity substitution.",
+  "upstream_base": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/LICENSE.txt",
+      "bytes": 1083,
+      "sha256": "57e12c39a6ad9d98b2e451065bfdfbd15fc9e0c2ed3bf4dc1d09acab41ff02fc"
+    },
+    {
+      "path": "favicon.ico",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/favicon.ico",
+      "bytes": 4286,
+      "sha256": "392935e5853c28b5cd4ebd9ee2fc06bcfd87523c1e4bf059d948dcd0b5708b00"
+    },
+    {
+      "path": "js/ai.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/ai.js",
+      "bytes": 4356,
+      "sha256": "a816d4192e5703410913f73847fd84fd53fec54425522723a779f8f12dc5db9f"
+    },
+    {
+      "path": "js/animframe_polyfill.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/animframe_polyfill.js",
+      "bytes": 872,
+      "sha256": "b9ba80189171d8158b60f7a88d05deb69269c20aa6f901b6cae590668e9bb0bb"
+    },
+    {
+      "path": "js/application.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/application.js",
+      "bytes": 234,
+      "sha256": "86f6e21b5d8c6f840276a47f98c5d0c4b68da41662e1b8833add48ac46644084"
+    },
+    {
+      "path": "js/game_manager.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/game_manager.js",
+      "bytes": 2163,
+      "sha256": "217c4cd61754b1b8d0ba9a9b56977d08618c82f858b8c5f19a3f94142b3a4cf7"
+    },
+    {
+      "path": "js/grid.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/grid.js",
+      "bytes": 15248,
+      "sha256": "0ba311109f2a906e2f925284cfd158bb6d34e520048810fb0d666a3a7f0771a1"
+    },
+    {
+      "path": "js/hammer.min.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/hammer.min.js",
+      "bytes": 13252,
+      "sha256": "50f3a5ea2c19aa1d6b9e83cd0800a57e17c430d2ac1fbd69f7fb812f1e08680a"
+    },
+    {
+      "path": "js/html_actuator.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/html_actuator.js",
+      "bytes": 4483,
+      "sha256": "a0f05bf9355ae9d076545abdf76b21f4ad943dffeff8db7bb7a0f0ee1a8cdbc1"
+    },
+    {
+      "path": "js/keyboard_input_manager.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/keyboard_input_manager.js",
+      "bytes": 2463,
+      "sha256": "7255c269f68ac8c38c47c8d924597ffcd4b5eff08a1222eddb7a8593360b88b8"
+    },
+    {
+      "path": "js/tile.js",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/js/tile.js",
+      "bytes": 748,
+      "sha256": "17b4e36dd125d5b1fa35a8424d2274437994c4d181d62cce5de773883d50dfd2"
+    },
+    {
+      "path": "meta/icon_bitcoin.png",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/meta/icon_bitcoin.png",
+      "bytes": 18221,
+      "sha256": "2f6e32c63bf4afd7c6a81842457c492704dde975172c9708fd176367ec87892e"
+    },
+    {
+      "path": "style/ai.css",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/ai.css",
+      "bytes": 724,
+      "sha256": "d01d06c36143432436f07402cf113511e55e8067a15352254559e17a01564105"
+    },
+    {
+      "path": "style/fonts/ClearSans-Bold-webfont.eot",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Bold-webfont.eot",
+      "bytes": 23821,
+      "sha256": "820a4c29047173d9284d9cdba13e8c2788b76b06cf2efb7b3d2841966a11b2c5"
+    },
+    {
+      "path": "style/fonts/ClearSans-Bold-webfont.svg",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Bold-webfont.svg",
+      "bytes": 79206,
+      "sha256": "a669c919329969e1538d8bce550d37495587be1aceb587242eac901f4abaae36"
+    },
+    {
+      "path": "style/fonts/ClearSans-Bold-webfont.woff",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Bold-webfont.woff",
+      "bytes": 27120,
+      "sha256": "b16e36cc53aa72023c67ab31c38290de77905dd2285f331189b2236100b8f849"
+    },
+    {
+      "path": "style/fonts/ClearSans-Light-webfont.eot",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Light-webfont.eot",
+      "bytes": 25570,
+      "sha256": "77ef51b080b166fcf499df857408a5ba77acc5289053a8684d152aa0a2741e06"
+    },
+    {
+      "path": "style/fonts/ClearSans-Light-webfont.svg",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Light-webfont.svg",
+      "bytes": 96271,
+      "sha256": "5080487cca23fe9b6dae38256b7b4f6ff714e91861ccb9f01c43b9ef84069f71"
+    },
+    {
+      "path": "style/fonts/ClearSans-Light-webfont.woff",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Light-webfont.woff",
+      "bytes": 28700,
+      "sha256": "465697ff07395574f9771970ca020bf64019dfbd96c2c64ba419c5d074336d90"
+    },
+    {
+      "path": "style/fonts/ClearSans-Regular-webfont.eot",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Regular-webfont.eot",
+      "bytes": 23490,
+      "sha256": "4d1fe136c3c876669fbfb56c419ca7d875bce3c133999021b67588520d98963d"
+    },
+    {
+      "path": "style/fonts/ClearSans-Regular-webfont.svg",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Regular-webfont.svg",
+      "bytes": 82674,
+      "sha256": "5d7fbc7adb4b5909809d02e48db0981c11ff99981b9e2bdecbca51d90cb057b3"
+    },
+    {
+      "path": "style/fonts/ClearSans-Regular-webfont.woff",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/ClearSans-Regular-webfont.woff",
+      "bytes": 26764,
+      "sha256": "8c94cd2fdc93f5a86f1761c0ce14bb695f20e16dc1a585ccad7f0289bd3dbc76"
+    },
+    {
+      "path": "style/fonts/clear-sans.css",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/fonts/clear-sans.css",
+      "bytes": 1078,
+      "sha256": "ada5fc5f508d57bf4f8d32ac354f1ebfc25b75c991948aa920f9d25defea5307"
+    },
+    {
+      "path": "style/main.css",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/style/main.css",
+      "bytes": 15888,
+      "sha256": "143b58276ea6b768025a463175d664eb0dce9e262f44ec50bfbff05e751e5826"
+    },
+    {
+      "path": "img/spinner.gif",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/img/spinner.gif",
+      "bytes": 673,
+      "sha256": "43a526a07a078d736e5c9d67d8479dd54072b7e5c6ddd2cd466f86a086e49ef5"
+    }
+  ],
+  "unavailable_optional_candidates": [
+    {
+      "path": "LICENSE",
+      "url": "https://cdn.jsdelivr.net/gh/ovolve/2048-AI@master/LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

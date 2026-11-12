@@ -1,0 +1,13 @@
+{
+  "game": "run",
+  "purpose": "The same SWF already referenced by the existing catalog launcher, served locally to remove the external startup dependency.",
+  "files": [
+    {
+      "path": "run_1.swf",
+      "url": "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@ac4c12101769d255671f8c92fb2008d9459efb45/run_1.swf",
+      "bytes": 1510911,
+      "sha256": "2e8de08a6b3c9d22ca3659090449903db3f435f99b73d3f27b9971ed8c49de89"
+    }
+  ],
+  "rights": "Original game and credits retained; no new license or ownership asserted."
+}

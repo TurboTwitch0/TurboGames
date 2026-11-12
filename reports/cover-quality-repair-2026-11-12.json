@@ -1,0 +1,240 @@
+{
+  "generatedAt": "2026-11-12T15:24:40.387181+00:00",
+  "scope": "Focused visual review of39 Popular entries plus11 selected illustrated entries; no exhaustive catalog scan.",
+  "popularReviewed": 39,
+  "replacements": 11,
+  "changes": [
+    {
+      "id": "library-source/html5-games/clbankrobbery1.html",
+      "title": "Bank Robbery 1",
+      "before": "assets/covers/illustrated/bank-robbery-1-745b8b333ee1.svg",
+      "after": "assets/covers/curated/verified-2026-11/bank-robbery-1-f63ceebc2f97.jpg",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://imgs.crazygames.com/bank-robbery/20220318131504/bank-robbery-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+      "sourcePage": "https://www.crazygames.com/game/bank-robbery",
+      "matchedTitle": "🎮 Bank Robbery 🕹️ Play on CrazyGames",
+      "matchEvidence": "The source asset base is genizy/cg-rip/bank-robbery; first-game catalog suffix 1 corresponds to the publisher Bank Robbery page.",
+      "dimensions": [
+        712,
+        400
+      ],
+      "bytes": 289759,
+      "sha256": "f63ceebc2f975d4aebb1e78829048f8e12face4f3cc140d2cde37e152b9cb93c",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clrollerballer.html",
+      "title": "Roller Baller",
+      "before": "assets/covers/illustrated/roller-baller-d2c636b919d9.svg",
+      "after": "assets/covers/curated/verified-2026-11/roller-baller-22d2f9357a81.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://www.coolmathgames.com/sites/default/files/Roller%20Baller%20OG%20Image.png",
+      "sourcePage": "https://www.coolmathgames.com/0-roller-baller?variant=next",
+      "matchedTitle": "Roller Baller - Play it Online at Coolmath Games",
+      "matchEvidence": "Game/source title matches the publisher or creator exact-title page; metadata and resulting image visually reviewed.",
+      "dimensions": [
+        1156,
+        649
+      ],
+      "bytes": 752824,
+      "sha256": "22d2f9357a81674208c2e9209bcb67af44f9f8990e2259703d30e186b2e9d61a",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clnoobminer.html",
+      "title": "Noob Miner",
+      "before": "assets/covers/illustrated/noob-miner-66279326622d.svg",
+      "after": "assets/covers/curated/verified-2026-11/noob-miner-1faed8a03c40.jpg",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://imgs.crazygames.com/noob-miner-escape-from-prison/20221215185816/noob-miner-escape-from-prison-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+      "sourcePage": "https://www.crazygames.com/game/noob-miner-escape-from-prison",
+      "matchedTitle": "🎮 Noob Miner: Escape From Prison 🕹️ Play on CrazyGames",
+      "matchEvidence": "Game/source title matches the publisher or creator exact-title page; metadata and resulting image visually reviewed.",
+      "dimensions": [
+        1024,
+        575
+      ],
+      "bytes": 277242,
+      "sha256": "1faed8a03c4076c7d0728bf305e7867dcd948868deedaabe6433dcd96a7a4b07",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clsuperpickleballadventure.html",
+      "title": "Super  Pickleball Adventure",
+      "before": "assets/covers/illustrated/super-pickleball-adventure-8c12bc5d323f.svg",
+      "after": "assets/covers/curated/verified-2026-11/super-pickleball-adventure-0e4eed25cff7.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://www.coolmathgames.com/sites/default/files/Super%20Pickleball%20Adventure%20OG%20Image.png",
+      "sourcePage": "https://www.coolmathgames.com/0-super-pickleball-adventure?variant=next",
+      "matchedTitle": "Super Pickleball Adventure - Play at Coolmath Games",
+      "matchEvidence": "Game/source title matches the publisher or creator exact-title page; metadata and resulting image visually reviewed.",
+      "dimensions": [
+        1207,
+        661
+      ],
+      "bytes": 130892,
+      "sha256": "0e4eed25cff7aecaefbdcc89afcb4cb25cb2036939ac5a422b56f6ce6b5ca4c7",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clgrandactionsimulator-ny.html",
+      "title": "Grand Action Simulator: New York",
+      "before": "assets/covers/illustrated/grand-action-simulator-new-york-e4a0fb59bcb3.svg",
+      "after": "assets/covers/curated/verified-2026-11/grand-action-simulator-new-york-c894155a88fd.jpg",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://imgs.crazygames.com/grand-action-simulator-new-york-car-gang_16x9/20260130024153/grand-action-simulator-new-york-car-gang_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop",
+      "sourcePage": "https://www.crazygames.com/game/grand-action-simulator-new-york-car-gang",
+      "matchedTitle": "🎮 Grand Action Simulator: New York 🕹️ Play on CrazyGames",
+      "matchEvidence": "Game/source title matches the publisher or creator exact-title page; metadata and resulting image visually reviewed.",
+      "dimensions": [
+        1130,
+        630
+      ],
+      "bytes": 711589,
+      "sha256": "c894155a88fd1b9f197c6e981660d95e930236a0299922142a518d3d6f863edf",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clscubabear.html",
+      "title": "Scuba Bear",
+      "before": "assets/covers/illustrated/scuba-bear-e2cfa3cfb51d.svg",
+      "after": "assets/covers/curated/verified-2026-11/scuba-bear-e34bff972e23.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://www.coolmathgames.com/sites/default/files/scuba-bear.png",
+      "sourcePage": "https://www.coolmathgames.com/0-scuba-bear?variant=next",
+      "matchedTitle": "Scuba Bear - Play it Online at Coolmath Games",
+      "matchEvidence": "Game/source title matches the publisher or creator exact-title page; metadata and resulting image visually reviewed.",
+      "dimensions": [
+        600,
+        350
+      ],
+      "bytes": 14736,
+      "sha256": "e34bff972e232eb44cd810724be14272015e75f5ab031b1fb7aaaccbefdaa9d4",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clCartoonNetworkTableTennisUltimateTournament.html",
+      "title": "Cartoon Network Table Tennis Ultimate Tournament",
+      "before": "assets/covers/illustrated/cartoon-network-table-tennis-ultimate-tournam-1febb4629b97.svg",
+      "after": "assets/covers/curated/verified-2026-11/cartoon-network-table-tennis-ultimate-tournament-25e8026bf3b2.jpg",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://www4.minijuegosgratis.com/v3/games/thumbnails/226868_1.jpg",
+      "sourcePage": "https://www.miniplay.com/game/table-tennis-ultimate-tournament",
+      "matchedTitle": "Table Tennis Ultimate Tournament",
+      "matchEvidence": "Game/source title matches the publisher or creator exact-title page; metadata and resulting image visually reviewed.",
+      "dimensions": [
+        300,
+        206
+      ],
+      "bytes": 19420,
+      "sha256": "25e8026bf3b2780d0deb51daedc4db1942fbac016059ed83ed1bb8ffca69dff8",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clceleste2.html",
+      "title": "Celeste 2",
+      "before": "assets/covers/illustrated/celeste-2-0f99e5ed19e2.svg",
+      "after": "assets/covers/curated/verified-2026-11/celeste-2-158cd3f5951c.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://img.itch.zone/aW1nLzUwNTA4NDAucG5n/original/5KxkXW.png",
+      "sourcePage": "https://maddymakesgamesinc.itch.io/celeste-classic-2",
+      "matchedTitle": "Celeste Classic 2 by Maddy Makes Games, Extremely OK Games, Noel",
+      "matchEvidence": "Catalog sequel is a PICO-8 cartridge; creator page is Celeste Classic2 and artwork explicitly reads Celeste2 Lani’sTrek.",
+      "dimensions": [
+        384,
+        384
+      ],
+      "bytes": 2695,
+      "sha256": "158cd3f5951c725ca81c5eac1f905a6be384dbb50d7abb2937180e2eec99ebe5",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/emulated/n64/clddlc64.html",
+      "title": "Doki Doki Literature Club 64",
+      "before": "assets/covers/illustrated/doki-doki-literature-club-64-095b814ce310.svg",
+      "after": "assets/covers/curated/verified-2026-11/doki-doki-literature-club-64-1fe7caa2d093.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://api.romhacking.com/game/doki-doki-mario-64/Dokidokilogo.png",
+      "sourcePage": "https://romhacking.com/hack/doki-doki-mario-64",
+      "matchedTitle": "Doki Doki Mario 64",
+      "matchEvidence": "Source gameconfig ROM filename is Doki Doki Mario 64.z64; the creator project page and Kaze Emanuar logo match that exact ROM hack.",
+      "dimensions": [
+        320,
+        240
+      ],
+      "bytes": 43920,
+      "sha256": "1fe7caa2d0939402fbbdb02b3c22d77ba63ce387eb9425f0783fd105b09d446c",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/clslenderman.html",
+      "title": "Slenderman: The 8 Pages",
+      "before": "assets/covers/illustrated/slenderman-the-8-pages-5d2bdd57c244.svg",
+      "after": "assets/covers/curated/verified-2026-11/slenderman-the-8-pages-c5224ab95fd9.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "https://raw.githubusercontent.com/gn-math/covers/main/451.png",
+      "sourcePage": "https://github.com/gn-math/assets/blob/main/zones.json",
+      "matchedTitle": "Slender: The 8 Pages",
+      "matchEvidence": "Bundled Unity title is Slender and source asset directory is slender; GN Math zone451 names Slender: The 8 Pages.",
+      "dimensions": [
+        256,
+        256
+      ],
+      "bytes": 32728,
+      "sha256": "c5224ab95fd93c7af19a912510c1d4952e83689eb50cdf1ed77764448117a8a5",
+      "fit": "contain",
+      "reviewed": true
+    },
+    {
+      "id": "library-source/html5-games/cladifferentsnowgrave.html",
+      "title": "Deltarune: A Different Snowgrave",
+      "before": "assets/covers/illustrated/deltarune-a-different-snowgrave-b54a3a3e3a12.svg",
+      "after": "assets/covers/curated/verified-2026-11/deltarune-a-different-snowgrave-6e7a71f41a3b.png",
+      "beforeType": "illustrated",
+      "afterType": "source-artwork",
+      "source": "library-source/html5-games/cladifferentsnowgrave.html",
+      "sourcePage": "library-source/html5-games/cladifferentsnowgrave.html",
+      "matchedTitle": "[Scratch Release] - DELTARUNE: A different snowgrave",
+      "matchEvidence": "Captured the actual game canvas after the TurboWarp green-flag launch; menu explicitly reads Deltarune: A Different Snowgrave. No page errors; launcher/loading frame rejected.",
+      "dimensions": [
+        800,
+        600
+      ],
+      "bytes": 11742,
+      "sha256": "6e7a71f41a3b192513ebca445b06036432ec8be20cb33228f2665c7b8b845333",
+      "fit": "contain",
+      "reviewed": true
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "title": "BAS",
+      "reason": "PICO8 shell and subsequent black canvas; neither is usable actual game artwork. Illustration retained."
+    },
+    {
+      "title": "Deltarune: A Different Snowgrave",
+      "reason": "Initial green-flag/warning launcher rejected; used actual rendered title menu after launch instead."
+    }
+  ],
+  "retainedSourceArtwork": "All existing source-artwork records and files remain unchanged.",
+  "limitations": "These are11 verified cover replacements, not a claim that every cover is now official artwork or that imported games all play completely."
+}

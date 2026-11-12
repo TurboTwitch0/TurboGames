@@ -1,0 +1,78 @@
+{
+  "title": "Block Blast Puzzle",
+  "product_version": "1.1",
+  "source_launcher": "library-source/html5-games/clblockblast.html",
+  "purpose": "Exact same working Unity build previously loaded by this launcher, served locally to remove the outside CDN startup dependency. No replacementgame or gamecode modification.",
+  "upstream_base": "https://cdn.jsdelivr.net/gh/bubblfan/bl/",
+  "compressed_build_bytes": 10263285,
+  "total_bytes": 10272416,
+  "files": [
+    {
+      "path": "Build/BlockBlast1.1-8.data.unityweb",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.data.unityweb",
+      "bytes": 2608575,
+      "sha256": "dbb15b02b3f2a3eee8981518b51261ff85b35d83a6d120f66d72334721ffcf08"
+    },
+    {
+      "path": "Build/BlockBlast1.1-8.framework.js.unityweb",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.framework.js.unityweb",
+      "bytes": 75795,
+      "sha256": "04c90b6d5f3c42e014f8a47325f4b16141756493a7910fe6374ba6e82055643f"
+    },
+    {
+      "path": "Build/BlockBlast1.1-8.loader.js",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.loader.js",
+      "bytes": 44220,
+      "sha256": "e400a2b78588508cdd1c1db75fb50180e44534240401c03e082d8658a833cfa9"
+    },
+    {
+      "path": "Build/BlockBlast1.1-8.wasm.unityweb",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/Build/BlockBlast1.1-8.wasm.unityweb",
+      "bytes": 7531483,
+      "sha256": "f503ce2213a25ef9855fb4969a4e3bb45f472eb1d0a6f8c9878b3cfee799ee98"
+    },
+    {
+      "path": "TemplateData/favicon.ico",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/TemplateData/favicon.ico",
+      "bytes": 2305,
+      "sha256": "9c13beb90ee8f70580d52a21d5233970d1c89e71e4a34a462c22610941c3c77f"
+    },
+    {
+      "path": "TemplateData/icons/unity-logo-dark.png",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/TemplateData/icons/unity-logo-dark.png",
+      "bytes": 5615,
+      "sha256": "2a17a891a3b95af68c081f18842ac29b562a383caf70fdd29f7cdfd8b372c936"
+    },
+    {
+      "path": "TemplateData/progress-bar-empty-dark.png",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/TemplateData/progress-bar-empty-dark.png",
+      "bytes": 96,
+      "sha256": "bbee7131afe8a3365906240d89184dc86234c119467f390bc4bc6802328fdb4d"
+    },
+    {
+      "path": "TemplateData/progress-bar-full-dark.png",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/TemplateData/progress-bar-full-dark.png",
+      "bytes": 74,
+      "sha256": "3306a6244dcb3926fca38a28e3ced589df8ff1beed955eb17c0bbf01c918bc62"
+    },
+    {
+      "path": "TemplateData/style.css",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/TemplateData/style.css",
+      "bytes": 823,
+      "sha256": "4230a772734db64deef334b52c64df189a7eac805013b533bf67f934677606be"
+    },
+    {
+      "path": "TemplateData/unity-logo-dark.png",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/TemplateData/unity-logo-dark.png",
+      "bytes": 3042,
+      "sha256": "c1b72d26c096487dabc948b54bc203f8dac7ed4e3f5733918798e858acb4b159"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "url": "https://cdn.jsdelivr.net/gh/bubblfan/bl/manifest.webmanifest",
+      "bytes": 388,
+      "sha256": "85ae674c4081cac00615567c83a4a7492bccc42d8afcf74a543d392621bd8903"
+    }
+  ],
+  "license_note": "No additional upstream license file was obtained from the repository license endpoint. Original game/company credits retained; no new ownership or license asserted."
+}

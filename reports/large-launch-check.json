@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "method": "Actual local Chromium navigation and storage/history checks. The Colorbox Mustard title screen was visually reviewed after25seconds; this is not a full playthrough or an assurance that all36prepared games run.",
+  "checks": [
+    "A fresh sandboxed native iframe receives the existing nonce-scoped config through iframe.name before insertion.",
+    "The real compatibility runtime restores local/session values, keeps parent DOM access blocked, and emits per-game save messages.",
+    "Close/Back and Forward reopen with saved counter state and add exactly one top-level history entry.",
+    "Colorbox Mustard uses its real HTTP document URL, no srcdoc attribute and zero parent HTML fetches; local asset requests and save seed succeed.",
+    "Colorbox Mustard reached its actual title screen after25seconds with no JavaScript or failed-request errors. Its132427082-byte local project data remains intrinsically large.",
+    "Preparation is idempotent: the second run changes zero files. All32unmodified game bodies and four exact existing standalone export guards are recorded with before/after SHA256 hashes."
+  ],
+  "prototype": {
+    "passed": true,
+    "first": {
+      "seed": "local-seed",
+      "counter": "1",
+      "session": "session-seed",
+      "isolated": true,
+      "url": "http://127.0.0.1:8002/.artwork-review/large-launch-prototype/game.html",
+      "mode": "CSS1Compat",
+      "memoryIDB": true
+    },
+    "reopened": {
+      "seed": "local-seed",
+      "counter": "2",
+      "session": "session-seed",
+      "isolated": true,
+      "url": "http://127.0.0.1:8002/.artwork-review/large-launch-prototype/game.html",
+      "mode": "CSS1Compat",
+      "memoryIDB": true
+    },
+    "historyEntriesAdded": 1
+  },
+  "colorbox": {
+    "title": "Colorbox Mustard",
+    "method": "Native prepared source with25-second observation; not a full playthrough",
+    "state": {
+      "text": "",
+      "canvas": 1,
+      "storageSeed": "local-seed",
+      "canvasSizes": [
+        {
+          "w": 906,
+          "h": 680
+        }
+      ]
+    },
+    "errors": [],
+    "failed": [],
+    "resources": [
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard.html",
+        "status": 200,
+        "bytes": "3854547"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part01.bin",
+        "status": 200,
+        "bytes": "20971520"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part02.bin",
+        "status": 200,
+        "bytes": "20971520"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part03.bin",
+        "status": 200,
+        "bytes": "20971520"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part04.bin",
+        "status": 200,
+        "bytes": "20971520"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part05.bin",
+        "status": 200,
+        "bytes": "20971520"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part06.bin",
+        "status": 200,
+        "bytes": "20971520"
+      },
+      {
+        "url": "http://127.0.0.1:8002/library-source/html5-games/clColorboxmustard-assets/project.part07.bin",
+        "status": 200,
+        "bytes": "6597962"
+      }
+    ]
+  },
+  "visual_review": {
+    "path": ".artwork-review/large-launch-prototype/colorbox-native-ready.png",
+    "actual_title_screen": true
+  },
+  "limitations": [
+    "Only the transport fixture and one actual large game were browser-checked here. Other prepared titles retain their source-specific dependencies and device requirements.",
+    "Classroom Maxxing was left on the existing srcdoc path because its parent-export call was not a safe standalone match."
+  ]
+}

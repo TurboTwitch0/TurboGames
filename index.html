@@ -53,7 +53,7 @@
             <p class="eyebrow"><span class="sparkle" aria-hidden="true">✦</span> BIG COLLECTION. LITTLE ESCAPE.</p>
             <h1 id="welcome-title">Find your<br />next <span>play.</span></h1>
             <p class="intro">For the just-one-more kind of curious. Find a game, keep a shortlist, and come back to the good ones.</p>
-            <div class="hero-actions"><a class="primary-action" href="#catalog">Explore the collection <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><button id="hero-saved" class="secondary-action" type="button">Your saved picks <span aria-hidden="true">♡</span></button></div>
+            <div class="hero-actions"><a id="hero-starters" class="primary-action" href="?view=starters#catalog">Play starter picks <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><button id="hero-saved" class="secondary-action" type="button">Your saved picks <span aria-hidden="true">♡</span></button></div>
             <div class="collection-stats"><span><strong id="total-titles">3,099</strong> titles in the collection</span><span>Saved in this browser</span></div>
           </div>
           <div class="hero-showcase dimensional-showcase">
@@ -96,6 +96,7 @@
           <div class="catalog-layout">
           <nav class="tabs" aria-label="Browse collection">
             <span class="sidebar-label" aria-hidden="true">DISCOVER</span>
+            <button class="tab starter-tab" data-category="starters" type="button"><span>Start here</span><span class="scope-count" data-scope-count="starters" aria-hidden="true"></span></button>
             <button class="tab is-active" data-category="popular" type="button"><span>Popular <span class="tab-icon" aria-hidden="true">✦</span></span><span class="scope-count" data-scope-count="popular" aria-hidden="true"></span></button>
             <button class="tab" data-category="all" type="button"><span>All</span><span class="scope-count" data-scope-count="all" aria-hidden="true"></span></button>
             <button class="tab" data-category="games" type="button"><span>Games</span><span class="scope-count" data-scope-count="games" aria-hidden="true"></span></button>
@@ -109,6 +110,7 @@
             <p class="sidebar-note">Your library stays in this browser.<br />Find something worth keeping.</p>
           </nav>
           <div class="collection-content">
+          <p id="starter-note" class="starter-note" hidden>A few tested picks with their core game files hosted on TurboGames. Some need a keyboard. Flash games download the shared emulator on first play.</p>
           <section class="genre-section" aria-labelledby="genre-heading">
             <div class="genre-heading"><h3 id="genre-heading">Play by category</h3><p>Find your kind of game in any collection.</p></div>
             <div id="genre-filters" class="genre-filters" role="group" aria-label="Game categories"></div>
@@ -165,7 +167,7 @@
         <p id="share-feedback" class="share-feedback" role="status" aria-live="polite">Select the link or use Copy link.</p>
       </section>
       <p id="player-status" class="player-status" role="status"></p>
-      <div id="player-loading" class="player-loading" role="status" hidden><img src="assets/brand/turbogames-mark.svg" width="64" height="64" alt="" /><span class="eyebrow">A LITTLE PLAY IS ON THE WAY</span><h3>Opening your next play<span aria-hidden="true">…</span></h3><p>Getting the game page ready. Some titles then download their own assets.</p><span class="loading-track" aria-hidden="true"><i></i></span></div>
+      <div id="player-loading" class="player-loading" role="status" hidden><img src="assets/brand/turbogames-mark.svg" width="64" height="64" alt="" /><span class="eyebrow">A LITTLE PLAY IS ON THE WAY</span><h3>Opening your next play<span aria-hidden="true">…</span></h3><p id="download-status" aria-live="off">Getting the game page ready. Some titles then download their own assets.</p><progress id="launch-progress" aria-label="Game page loading"></progress><div id="slow-loading" class="slow-loading" hidden><p>Still loading. Large games and their original asset hosts can take longer.</p><div><button id="cancel-loading" class="text-button" type="button">Cancel and browse</button><a id="loading-new-tab" class="text-button" target="_blank" rel="noopener noreferrer">Open in new tab <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></div>
       <div id="player-recovery" class="player-recovery" hidden>
         <span class="recovery-icon" aria-hidden="true">↻</span>
         <h3 id="recovery-title">This game couldn't load</h3>

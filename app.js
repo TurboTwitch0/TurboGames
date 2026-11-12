@@ -2,14 +2,18 @@
   "use strict";
   const items = window.TURBO_CATALOG || [];
   const gameCategories = window.TurboGameCategories;
-  const genresById = new Map(items.map(item => [item.id, gameCategories.genresFor(item)]));
+  const allowedGenres = new Set(gameCategories.categories.map(category => category.id));
+  const genresById = new Map(items.map(item => [item.id, Array.isArray(item.genreHints) ? item.genreHints.filter(id => allowedGenres.has(id)) : gameCategories.genresFor(item)]));
   const fallbackCover = item => window.TurboCoverArt?.coverFor(item, genresById.get(item.id)?.[0] || "arcade") || "assets/fallback-cover.svg";
   const coverSource = item => item.imageType === "illustrated" || !item.image ? fallbackCover(item) : item.image;
   const boxedCovers = new Set(["library-source/flash/clpottyracers.html", "library-source/flash/clpottyracers2.html"]);
+  const fitCover = (image, item) => image.classList.toggle("is-letterboxed", item.imageFit === "contain" || boxedCovers.has(item.id));
   const genreNames = new Map(gameCategories.categories.map(genre => [genre.id, genre.label]));
   const genreButtons = [];
   let genre = "all";
   const byId = new Map(items.map(item => [item.id, item]));
+  const starterIds = new Set(["library-source/html5-games/cl2048.html", "library-source/html5-games/clhextris.html", "library-source/html5-games/clblockblast.html", "library-source/flash/clrun.html", "library-source/flash/clbloons.html", "orbit-breaker", "little-match"]);
+  const starterRank = new Map([...starterIds].map((id, index) => [id, index]));
   const search = document.querySelector("#search");
   const grid = document.querySelector("#game-grid");
   const empty = document.querySelector("#empty-state");
@@ -39,12 +43,12 @@
   const pickButton = document.querySelector("#pick-game");
   const quickPick = document.querySelector("#quick-pick");
   const recentShelf = document.querySelector("#recent-shelf");
-  const categoryNames = { popular: "Popular", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
+  const categoryNames = { popular: "Popular", starters: "Start here", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
   const categoryTotals = items.reduce((totals, item) => {
     totals[item.category] = (totals[item.category] || 0) + 1;
     if (item.featured) totals.popular += 1;
     return totals;
-  }, { all: items.length, popular: 0 });
+  }, { all: items.length, popular: 0, starters: items.filter(item => starterIds.has(item.id)).length });
   const parameters = new URLSearchParams(location.search);
   const embedded = parameters.get("embed") === "1" || window.self !== window.top;
   document.documentElement.classList.toggle("is-embedded", embedded);
@@ -59,7 +63,11 @@
   const favorites = new Set(readLibrary("favorites"));
   let recent = readLibrary("recent").slice(0, 24);
   const normalize = text => text.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
-  const searchable = new Map(items.map(item => [item.id, normalize([item.title, item.category, ...(item.tags || [])].join(" "))]));
+  const searchable = new Map();
+  function searchText(item) {
+    if (!searchable.has(item.id)) searchable.set(item.id, normalize([item.title, item.category, ...(item.tags || [])].join(" ")));
+    return searchable.get(item.id);
+  }
   let category = "popular";
   let displayed = 96;
   let visible = [];
@@ -69,7 +77,10 @@
   let saveTimer;
   let pendingSave;
   let loadController;
+  let launchTimer;
+  let runtimeIssue = "";
   let manualSaveHint = false;
+  const manualSaveMessage = () => activeItem?.category === "emulator" ? "Use the game's Save / Export controls to keep emulator progress." : "Some game data lasts only for this session. Use an in-game Save / Export option if available.";
   let feedbackTimer;
   let pickedItem;
   const featuredGames = [
@@ -110,11 +121,17 @@
     if (!activeItem || event.source !== frame.contentWindow) return;
     const message = event.data;
     if (!message || message.nonce !== activeNonce) return;
+    if (message.type === "turbogames:status" && message.code === "runtime-error") {
+      const host = typeof message.assetHost === "string" && /^[a-z0-9.-]{1,160}$/i.test(message.assetHost) ? ` from ${message.assetHost}` : "";
+      runtimeIssue = `This game reported a loading error${host}. You can restart it or try Open in new tab.`;
+      playerStatus.textContent = runtimeIssue;
+      return;
+    }
     if (message.type === "turbogames:status" && message.code === "manual-saves") {
       manualSaveHint = true;
-      playerStatus.textContent = "Use the game's Save / Export controls to keep emulator progress.";
+      playerStatus.textContent = manualSaveMessage();
       const nonce = activeNonce;
-      setTimeout(() => { if (activeNonce === nonce) playerStatus.textContent = ""; }, 12000);
+      setTimeout(() => { if (activeNonce === nonce) playerStatus.textContent = runtimeIssue; }, 12000);
       return;
     }
     if (message.type !== "turbogames:storage") return;
@@ -213,6 +230,7 @@
       art.className = "featured-art";
       const image = document.createElement("img");
       image.src = feature.image || coverSource(feature.item);
+      if (!feature.image) fitCover(image, feature.item);
       image.addEventListener("error", () => { image.alt = `${feature.item.title} cover illustration`; image.src = fallbackCover(feature.item); }, { once: true });
       image.alt = index === 0 ? "Actual Orbit Breaker game canvas with colored targets, a ball, and a lime paddle" : `${feature.item.title} artwork from the existing TurboGames catalog`;
       image.width = 400;
@@ -302,6 +320,7 @@
       button.setAttribute("aria-label", `Open ${item.title} again`);
       const image = document.createElement("img");
       image.src = coverSource(item);
+      fitCover(image, item);
       image.alt = "";
       image.width = 80;
       image.height = 80;
@@ -342,6 +361,7 @@
     quickPick.dataset.pickId = pickedItem.id;
     const image = document.querySelector("#pick-cover");
     image.src = coverSource(pickedItem);
+    fitCover(image, pickedItem);
     image.alt = `${pickedItem.title} cover`;
     document.querySelector("#pick-title").textContent = pickedItem.title;
     document.querySelector("#pick-category").textContent = categoryNames[pickedItem.category] || pickedItem.category;
@@ -470,11 +490,14 @@
     const query = normalize(search.value);
     const terms = query.split(/\s+/).filter(Boolean);
     const matches = items.filter(item => {
-      const matchesCategory = (ignoreGenre && category === "popular") || category === "all" || (category === "popular" ? item.featured : category === "saved" ? favorites.has(item.id) : category === "recent" ? recent.includes(item.id) : item.category === category);
-      const text = searchable.get(item.id);
-      return matchesCategory && (ignoreGenre || genre === "all" || genresById.get(item.id).includes(genre)) && (!hideUnavailable.checked || item.sourceStatus !== "unavailable") && (!query || terms.every(term => text.includes(term)) || text.replaceAll(" ", "").includes(query.replaceAll(" ", "")));
+      const matchesCategory = (ignoreGenre && category === "popular") || category === "all" || (category === "popular" ? item.featured : category === "starters" ? starterIds.has(item.id) : category === "saved" ? favorites.has(item.id) : category === "recent" ? recent.includes(item.id) : item.category === category);
+      if (!matchesCategory || (!ignoreGenre && genre !== "all" && !genresById.get(item.id).includes(genre)) || (hideUnavailable.checked && item.sourceStatus === "unavailable")) return false;
+      if (!query) return true;
+      const text = searchText(item);
+      return terms.every(term => text.includes(term)) || text.replaceAll(" ", "").includes(query.replaceAll(" ", ""));
     });
     if (sort.value !== "recommended") return matches.sort((a, b) => (sort.value === "title-asc" ? 1 : -1) * a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" }));
+    if (category === "starters") return matches.sort((a, b) => starterRank.get(a.id) - starterRank.get(b.id));
     if (category === "recent") return matches.sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
     if (query) return matches.sort((a, b) => Number(normalize(b.title).startsWith(query)) - Number(normalize(a.title).startsWith(query)) || Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
     return matches;
@@ -492,10 +515,11 @@
     const art = document.createElement("span");
     art.className = "card-art";
     const image = document.createElement("img");
-    image.className = "card-image" + (boxedCovers.has(item.id) ? " is-letterboxed" : "");
+    image.className = "card-image";
+    fitCover(image, item);
     image.src = coverSource(item);
     image.alt = `${item.title} cover`;
-    image.loading = index < 4 ? "eager" : "lazy";
+    image.loading = document.body.classList.contains("is-browsing") && index < 4 ? "eager" : "lazy";
     image.decoding = "async";
     image.width = 400;
     image.height = 400;
@@ -512,6 +536,13 @@
     badge.textContent = item.sourceStatus === "unavailable" ? "Needs source" : item.category;
     if (item.sourceStatus === "unavailable") button.title = item.sourceIssue || "A matching playable source is still needed.";
     art.append(image, play, badge);
+    if (item.sourceBytes > 2 * 1024 * 1024) {
+      const size = document.createElement("span");
+      size.className = "card-size";
+      size.textContent = "Large game";
+      size.title = `Game page: ${(item.sourceBytes / 1048576).toFixed(1)} MB before compression, plus any additional game assets.`;
+      art.append(size);
+    }
     const name = document.createElement("span");
     name.className = "card-name";
     name.textContent = item.title;
@@ -540,7 +571,8 @@
     updateGenres();
     updateDiscoveryTools();
     document.body.classList.toggle("is-browsing", category !== "popular" || genre !== "all" || Boolean(search.value.trim()));
-    document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : "The collection";
+    document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : category === "starters" ? "A good place to start" : "The collection";
+    document.querySelector("#starter-note").hidden = category !== "starters";
     displayed = 96;
     grid.replaceChildren();
     count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}${genre !== "all" ? ` · ${genreNames.get(genre)}` : ""}`;
@@ -577,6 +609,7 @@
   }
   async function loadItem(item) {
     flushSave();
+    clearTimeout(launchTimer);
     loadController?.abort();
     loadController = new AbortController();
     activeItem = item;
@@ -584,12 +617,15 @@
     activeNonce = globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random()}`;
     const nonce = activeNonce;
     manualSaveHint = false;
+    runtimeIssue = "";
     const config = { turboGames: 1, nonce, parentOrigin: location.origin, local: readSave(item), session: sessionSaves.get(item.id) || {} };
     // Set srcdoc before insertion: a fresh iframe replaces its initial blank
     // document instead of adding child navigations to the browser Back stack.
     const nextFrame = frame.cloneNode(false);
     nextFrame.removeAttribute("srcdoc");
     nextFrame.removeAttribute("src");
+    nextFrame.removeAttribute("name");
+    delete nextFrame.dataset.nativeLaunch;
     nextFrame.addEventListener("load", onFrameLoad);
     frame.remove();
     frame = nextFrame;
@@ -598,17 +634,60 @@
     window.TurboSourceRecovery.setCreatorLink(creatorLink, null);
     loading.hidden = false;
     loading.querySelector("h3").textContent = `Opening ${item.title}…`;
+    document.querySelector("#slow-loading").hidden = true;
+    document.querySelector("#loading-new-tab").href = openTab.href;
+    const downloadStatus = document.querySelector("#download-status");
+    const progress = document.querySelector("#launch-progress");
+    progress.removeAttribute("value");
+    downloadStatus.textContent = item.sourceBytes > 2 * 1024 * 1024 ? `Large game page: ${(item.sourceBytes / 1048576).toFixed(1)} MB before compression. Additional assets may be larger, and slower devices can take longer.` : "Getting the game page ready. Some titles then download their own assets.";
+    launchTimer = setTimeout(() => { if (activeNonce === nonce && !loading.hidden) document.querySelector("#slow-loading").hidden = false; }, 12000);
     if (item.sourceStatus === "unavailable") {
       playerStatus.textContent = item.sourceIssue || "This game needs a working source before it can be played.";
       showRecovery(item.sourceIssue || "The original game files are unavailable. Choose another title from the collection.", true);
       return;
     }
     playerStatus.textContent = "";
+    let timedOut = false;
+    const requestController = loadController;
+    const requestTimeout = setTimeout(() => { timedOut = true; requestController.abort(); }, 60000);
     try {
       const source = new URL(localSource(item), document.baseURI);
+      if (item.directLaunch) {
+        const response = await fetch(source, { method: "HEAD", signal: loadController.signal });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        if (activeNonce !== nonce) return;
+        // Prepared large pages install the same isolated storage bridge before
+        // their game scripts. Native navigation avoids copying their embedded
+        // tens of megabytes through fetch/text/replace/srcdoc in this page.
+        frame.name = JSON.stringify(config);
+        frame.dataset.nativeLaunch = "1";
+        frame.src = source.href;
+        playerSurface.append(frame);
+        return;
+      }
       const response = await fetch(source, { signal: loadController.signal });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      let html = await response.text();
+      let html;
+      if (response.body?.getReader) {
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        const chunks = [];
+        let received = 0;
+        let lastUpdate = 0;
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          chunks.push(decoder.decode(value, { stream: true }));
+          received += value.byteLength;
+          if (activeNonce === nonce && performance.now() - lastUpdate > 200) {
+            const amount = received < 1048576 ? `${Math.ceil(received / 1024)} KB` : `${(received / 1048576).toFixed(1)} MB`;
+            downloadStatus.textContent = `Downloaded ${amount} of the game page. Game assets may load next.`;
+            lastUpdate = performance.now();
+          }
+        }
+        chunks.push(decoder.decode());
+        html = chunks.join("");
+      } else html = await response.text();
       if (activeNonce !== nonce) return;
       html = html.replace(/(<script\b[^>]*>\s*)window\.parent\.maeExportApis_\(\);(\s*<\/script>)/g, "$1try { window.parent.maeExportApis_?.(); } catch (e) {}$2");
       const ruffleRuntime = new URL("vendor/ruffle/ruffle.js", document.baseURI).href;
@@ -625,10 +704,11 @@
       playerSurface.append(frame);
       rememberItem(item);
     } catch (error) {
-      if (error.name !== "AbortError" && activeNonce === nonce) showRecovery("The game page could not be downloaded. Check your connection and try again.");
-    }
+      if (activeNonce === nonce && (timedOut || error.name !== "AbortError")) showRecovery(timedOut ? "The game page took too long to download. Check your connection, then try again or choose a smaller game." : "The game page could not be downloaded. Check your connection and try again.");
+    } finally { clearTimeout(requestTimeout); }
   }
   function showRecovery(message, missing = false) {
+    clearTimeout(launchTimer);
     loading.hidden = true;
     playerStatus.textContent = "";
     const hasCreatorLink = window.TurboSourceRecovery.setCreatorLink(creatorLink, missing ? activeItem?.externalUrl : null);
@@ -664,9 +744,11 @@
     }
   }
   function onFrameLoad(event) {
-    if (event.currentTarget === frame && activeItem && frame.hasAttribute("srcdoc")) {
+    if (event.currentTarget === frame && activeItem && (frame.hasAttribute("srcdoc") || frame.dataset.nativeLaunch === "1")) {
+      clearTimeout(launchTimer);
       loading.hidden = true;
-      playerStatus.textContent = manualSaveHint ? "Use the game's Save / Export controls to keep emulator progress." : "";
+      playerStatus.textContent = runtimeIssue || (manualSaveHint ? manualSaveMessage() : "");
+      if (frame.dataset.nativeLaunch === "1") rememberItem(activeItem);
     }
   }
   frame.addEventListener("load", onFrameLoad);
@@ -711,6 +793,12 @@
     resetCollection("saved");
     document.querySelector("#catalog").scrollIntoView({ block: "start" });
     tabs.find(tab => tab.dataset.category === "saved").focus({ preventScroll: true });
+  });
+  document.querySelector("#hero-starters").addEventListener("click", event => {
+    event.preventDefault();
+    resetCollection("starters");
+    document.querySelector("#catalog").scrollIntoView({ block: "start" });
+    tabs.find(tab => tab.dataset.category === "starters").focus({ preventScroll: true });
   });
   document.querySelectorAll("[data-library-view]").forEach(button => button.addEventListener("click", () => {
     resetCollection(button.dataset.libraryView);
@@ -794,6 +882,7 @@
     window.scrollTo(0, 0);
   }));
   document.querySelector("#close-dialog").addEventListener("click", closePlayer);
+  document.querySelector("#cancel-loading").addEventListener("click", closePlayer);
   document.querySelector("#return-to-collection").addEventListener("click", closePlayer);
   document.querySelector("#retry-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
   document.querySelector("#reload-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
@@ -849,6 +938,7 @@
     shareLink.value = "";
     if (document.fullscreenElement === playerSurface) document.exitFullscreen().catch(() => {});
     flushSave();
+    clearTimeout(launchTimer);
     loadController?.abort();
     activeItem = undefined;
     activeNonce = undefined;

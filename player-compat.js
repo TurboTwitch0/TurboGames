@@ -5,6 +5,19 @@
   try { config = window.__TURBOGAMES_CONFIG__ || JSON.parse(window.name); } catch { return; }
   if (config?.turboGames !== 1 || typeof config.nonce !== "string" || !/^https?:\/\//.test(config.parentOrigin)) return;
   delete window.__TURBOGAMES_CONFIG__;
+  try {
+    const namedConfig = JSON.parse(window.name);
+    if (namedConfig?.turboGames === 1 && namedConfig.nonce === config.nonce) window.name = "";
+  } catch { /* A game's own window name is preserved. */ }
+  if (window.__TURBOGAMES_COMPAT_NONCE__ === config.nonce) return;
+  window.__TURBOGAMES_COMPAT_NONCE__ = config.nonce;
+  // Unity's optional asset cache probes window.caches before it falls back to
+  // regular HTTP. The opaque-frame getter throws instead of returning absent.
+  // Expose absence only in that denied case; never replace a usable Cache API.
+  try { void window.caches; }
+  catch {
+    try { Object.defineProperty(window, "caches", { configurable: true, value: undefined }); } catch {}
+  }
   // Legacy Unity loaders often treat merged blob assets as relative paths.
   // Preserve complete asset URLs without changing their relative-path resolver.
   const wrappedUnity = new WeakSet();
@@ -35,6 +48,63 @@
       set: value => { unity = prepareUnity(value); }
     });
   } catch { /* A game with a non-configurable global keeps its own loader. */ }
+  // Modern Unity loaders resolve StreamingAssets against document.URL. In an
+  // isolated srcdoc player that URL is about:srcdoc, while document.baseURI is
+  // the real launcher/creator asset base. Normalize the configuration before
+  // the loader's own script.onload callback starts the game.
+  const wrappedUnityInstances = new WeakSet();
+  function prepareUnityInstance() {
+    const original = window.createUnityInstance;
+    if (typeof original !== "function" || wrappedUnityInstances.has(original)) return;
+    function createUnityInstance(...args) {
+      const options = args[1];
+      if (options && typeof options === "object") {
+        try {
+          args[1] = { ...options, streamingAssetsUrl: new URL(options.streamingAssetsUrl || "StreamingAssets", document.baseURI).href };
+        } catch { /* Let the original loader report genuinely invalid options. */ }
+      }
+      return original.apply(this, args);
+    }
+    wrappedUnityInstances.add(createUnityInstance);
+    try { window.createUnityInstance = createUnityInstance; } catch { /* Read-only games keep their own runtime. */ }
+  }
+  document.addEventListener("load", event => {
+    if (event.target?.tagName === "SCRIPT") prepareUnityInstance();
+  }, true);
+  window.addEventListener("load", prepareUnityInstance, { once: true });
+  prepareUnityInstance();
+  // Surface startup trouble without suppressing the original error or replacing
+  // a running game. Only a neutral message and asset hostname leave the frame.
+  // Large native documents may still be streaming long after this first
+  // bootstrap. Keep startup reporting open until their DOM is ready, then
+  // allow a bounded window for asynchronous engine downloads.
+  let readyAt = document.readyState === "loading" ? Infinity : Date.now();
+  document.addEventListener("DOMContentLoaded", () => { readyAt = Date.now(); }, { once: true });
+  let runtimeReports = 0;
+  const optionalHosts = /(?:^|\.)(?:google-analytics\.com|googletagmanager\.com|googlesyndication\.com|doubleclick\.net|googleadservices\.com|adinplay\.com|btloader\.com|onesignal\.com|mochibot\.com)$/i;
+  function reportStartupError(detail, source = "") {
+    if (Date.now() - readyAt > 90000 || runtimeReports >= 3) return;
+    let assetHost = "";
+    try {
+      if (!source) throw new Error("No asset source");
+      const url = new URL(source, document.baseURI);
+      if (optionalHosts.test(url.hostname) || /\/gh\/st39\/sdk(?:@|\/)/i.test(url.pathname)) return;
+      if (/^https?:$/.test(url.protocol)) assetHost = url.hostname;
+    } catch {}
+    runtimeReports++;
+    try { parent.postMessage({ type: "turbogames:status", nonce: config.nonce, code: "runtime-error", detail, assetHost }, config.parentOrigin); } catch {}
+  }
+  const optionalContextError = error => /(?:service\s*worker|serviceWorker|(?:set|assign).*domain.*sandbox)/i.test(error?.message || "");
+  window.addEventListener("error", event => {
+    if (event.target && event.target !== window) {
+      if (event.target.tagName === "SCRIPT" && event.target.getAttribute("src")?.trim()) reportStartupError("A game script could not be downloaded.", event.target.src);
+      return;
+    }
+    if (!optionalContextError(event)) reportStartupError("The game reported a startup script error.", event.filename || "");
+  }, true);
+  window.addEventListener("unhandledrejection", event => {
+    if (!optionalContextError(event.reason)) reportStartupError("A game startup operation failed.");
+  });
   function install(kind, initial) {
     const values = Object.create(null);
     for (const [key, value] of Object.entries(initial || {})) if (typeof value === "string") values[key] = value;

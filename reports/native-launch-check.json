@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "method": "Real existing Colorbox Mustard HTML in the integrated player. Its large project parts are paused to avoid downloading another132MB; this is not a gameplay test. Separate actual title-screen evidence is in large-launch-check.json.",
+  "checks": [
+    "The integrated player uses a parent HEAD and native child document GET, with no parent HTML GET or srcdoc copy; the real source URL and standards mode are retained",
+    "The real compatibility bridge restores local saves, isolates the parent DOM, clears the config transport name, and installs the temporary IndexedDB fallback",
+    "Close/Back and Forward reopen the real native title with local/session/cookie state preserved and only one added top-level history entry",
+    "Switching to a normal Orbit Breaker launch clears native frame attributes, keeps game saves separate, and rejects a stale native nonce"
+  ],
+  "sourceRequests": [
+    {
+      "method": "HEAD",
+      "type": "fetch",
+      "owner": "parent"
+    },
+    {
+      "method": "GET",
+      "type": "document",
+      "owner": "child"
+    },
+    {
+      "method": "HEAD",
+      "type": "fetch",
+      "owner": "parent"
+    },
+    {
+      "method": "GET",
+      "type": "document",
+      "owner": "child"
+    }
+  ],
+  "bulkRequestsPaused": 2
+}

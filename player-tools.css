@@ -1,4 +1,8 @@
 /* Player utilities stay inside the existing isolated game surface. */
+.featured-art img.is-letterboxed,.recent-pick img.is-letterboxed,#pick-cover.is-letterboxed{object-fit:contain;background:#111823}
+.card-size{position:absolute;top:10px;left:10px;max-width:calc(100% - 76px);padding:6px 8px;border:1px solid #ffb58c55;border-radius:6px;background:#201b16ed;color:#ffd1b5;font:8px var(--mono);letter-spacing:.3px}
+#launch-progress{display:block;width:min(250px,80%);height:5px;margin-top:25px;accent-color:var(--lime);border:0;border-radius:8px}
+.slow-loading{max-width:460px;margin-top:20px;padding-top:14px;border-top:1px solid var(--line)}.slow-loading>p{font-size:11px}.slow-loading>div{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;margin-top:8px}.slow-loading a{display:inline-flex;align-items:center;text-decoration:none}
 .player-surface{--player-toolbar-height:78px}
 .dialog-bar{height:var(--player-toolbar-height);background:linear-gradient(105deg,#202631,#181d25);padding:0 15px 0 23px}
 .player-title-copy{min-width:0}.player-category{display:block;margin-bottom:6px;color:var(--muted);font:8px/1 var(--mono);letter-spacing:1.1px;text-transform:uppercase}.dialog-title-wrap h2{font-size:15px;letter-spacing:-.2px}
