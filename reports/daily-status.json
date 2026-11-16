@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-15T17:51:46.019435+00:00",
+  "checked_at": "2026-11-16T21:09:54.786391+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,113 +13,28 @@
     "checked": 3522,
     "skipped": 0,
     "counts": {
-      "reachable": 3393,
-      "connection-error": 16,
-      "http-error": 113
+      "reachable": 3287,
+      "http-error": 168,
+      "connection-error": 67
     },
-    "issues": 129
+    "issues": 235
   },
   "errors": [],
   "remote_issue_examples": [
     {
-      "source": "library-source/emulated/n64/clsouthparkn64.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/pokemon/clpokefireemerald.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/pokemon/clpokerbynova.html",
+      "source": "library-source/html5-games/clidlefootballmanager.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/emulated/pokemon/clpokeretroplatinum.html",
+      "source": "library-source/html5-games/clidlefootballmanager.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/emulated/arcade/clmspacmangalaga.html",
+      "source": "library-source/html5-games/clleaderstrike.html",
       "result": "http-error",
       "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/clSSF2Arcade.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/clsuperstreetfighter2turbojp.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/clXMenVSStreetFighter.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/n64/clnflblitzspecial.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/n64/clpapermarioblackpit.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/arcade/clnbajamte.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clcuttherope.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/flash/cltrollfacequest10.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/flash/cltrollfacequest6.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/flash/cltrollfacequest7.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clwaterworks.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clbaconmaydie.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
     },
     {
       "source": "library-source/html5-games/clfunnyshooter2.html",
@@ -127,49 +42,134 @@
       "status": 404
     },
     {
-      "source": "library-source/html5-games/clUltimatecardrivingsimulator.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/emulated/n64/clnbalive2000.html",
-      "result": "connection-error",
-      "status": null
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clfnfanimation.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/cl10minutestildawn.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clmelee.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/cldubstep.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clspiralroll.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clspiralroll.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
     },
     {
-      "source": "library-source/html5-games/clspiralroll.html",
+      "source": "library-source/html5-games/clmrmine.html",
       "result": "http-error",
-      "status": 404
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/clmrmine.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
+      "source": "library-source/html5-games/cloddbotout.html",
+      "result": "http-error",
+      "status": 403
     }
   ]
 }
