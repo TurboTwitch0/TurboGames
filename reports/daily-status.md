@@ -1,6 +1,6 @@
 # Daily TurboGames refresh
 
-Checked at: 2026-11-16T21:09:54.786391+00:00
+Checked at: 2026-11-17T19:56:56.996309+00:00
 
 Result: **attention**.
 
@@ -11,7 +11,7 @@ Result: **attention**.
 | Required launcher resource problems | 0 |
 | Inline JavaScript syntax failures | 0 |
 | Fresh remote URL checks | 3522 / 3522 |
-| Remote URLs requiring attention | 235 |
+| Remote URLs requiring attention | 122 |
 | Remote URLs deferred or skipped | 0 |
 
 The existing catalog and local artwork mappings are rebuilt. No new games are imported.
@@ -22,33 +22,33 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 
 ## Remote issues (sample)
 
-- library-source/html5-games/clidlefootballmanager.html: http-error (HTTP 403)
-- library-source/html5-games/clidlefootballmanager.html: http-error (HTTP 403)
-- library-source/html5-games/clleaderstrike.html: http-error (HTTP 403)
-- library-source/html5-games/clfunnyshooter2.html: http-error (HTTP 404)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
-- library-source/html5-games/cloddbotout.html: http-error (HTTP 403)
+- library-source/html5-games/cldubstep.html: http-error (HTTP 404)
+- library-source/html5-games/clspiralroll.html: http-error (HTTP 404)
+- library-source/html5-games/clspiralroll.html: http-error (HTTP 404)
+- library-source/html5-games/clspiralroll.html: http-error (HTTP 404)
+- library-source/html5-games/clblockcraftshooter.html: http-error (HTTP 403)
+- library-source/html5-games/cldreadheadparkour.html: http-error (HTTP 403)
+- library-source/html5-games/clkimjonguntilepuzzle.html: http-error (HTTP 404)
+- library-source/html5-games/clslopeplus.html: http-error (HTTP 403)
+- library-source/html5-games/clslopeplus.html: http-error (HTTP 403)
+- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
+- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
+- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
+- library-source/html5-games/clmoneyrush.html: http-error (HTTP 403)
+- library-source/html5-games/clDigOutofPrison.html: http-error (HTTP 404)
+- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
+- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
+- library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
+- library-source/html5-games/clsnipershot.html: http-error (HTTP 404)
+- library-source/html5-games/clBFDIBranches.html: http-error (HTTP 404)
+- library-source/html5-games/clBFDIBranches.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clredvsbluewar.html: http-error (HTTP 404)
+- library-source/html5-games/clfnfdocumic.txtv3.html: http-error (HTTP 404)
+- library-source/html5-games/ConfrontingYourself.html: http-error (HTTP 404)
+- library-source/emulated/gba/clmegamanbattlechipchallenge.html: http-error (HTTP 404)
+- library-source/emulated/gba/clmegamanbn5tc.html: http-error (HTTP 404)
+- library-source/emulated/gba/clmegamanbn5tp.html: http-error (HTTP 404)
