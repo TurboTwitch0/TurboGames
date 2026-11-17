@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "method": "Actual browser discovery, filtering, and a small original-game history flow. This is not a complete catalog gameplay test.",
+  "checks": [
+    "Genre IDs and human-readable labels find the actual matching catalog, including 2048 and Block Blast for puzzle and RPG/strategy aliases",
+    "Multiword queries intersect genre and source terms; selected genres stay scoped and apps/misc receive no fabricated genre matches",
+    "Saved and Recent searches stay inside their browser-local library while finding a racing title whose name does not contain racing",
+    "Keyboard-activated Arcade/Racing/Puzzle shortcuts select real genres; Mario remains a text search, preserving sort/availability and reloadable URLs",
+    "Punctuation and empty results remain honest; the original game launches and Back/Forward preserve genre, query, and the complete 3,099-entry inventory"
+  ],
+  "genreQueries": {
+    "puzzle": 67,
+    "racing": 71,
+    "arcade": 174,
+    "strategy": 65,
+    "RPG": 379
+  },
+  "before": {
+    "puzzle": {
+      "results": "7 items · All titles",
+      "genreMatches": 65,
+      "knownVisible": []
+    },
+    "racing": {
+      "results": "11 items · All titles",
+      "genreMatches": 70,
+      "knownVisible": []
+    },
+    "arcade": {
+      "results": "121 items · All titles",
+      "genreMatches": 174,
+      "knownVisible": []
+    }
+  }
+}

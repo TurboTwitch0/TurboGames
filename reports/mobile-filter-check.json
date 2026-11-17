@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "site": "http://127.0.0.1:8002/",
+  "method": "Actual native-dialog, touch, keyboard and existing-game browser checks. Before-row positions were captured locally before this change.",
+  "checks": [
+    "Phone starters show the complete first game row at 390px and 320px; one-copy filters stay in a closed native sheet until requested",
+    "Touch selections immediately update genre/sort/availability and honest result counts; Apply closes, and Reset preserves the current search and collection",
+    "Keyboard opens the native modal, Tab/ShiftTab stay inside, Slash cannot escape, and Escape/Close restore visible opener focus",
+    "Removing main-page filter chips focuses the visible filter opener; clearing the search still focuses the search field",
+    "Widening closes and restores the original single controls with focused Sort and selected values; shrinking closes the sheet and focuses its visible opener",
+    "Filtered cards save and launch the existing Orbit game; Back/Forward preserves the collection and closes the filter sheet before reopening a player",
+    "The Google Sites/landscape sheet scrolls to usable 44px controls, honors reduced motion, and has no horizontal overflow or parent JavaScript errors"
+  ],
+  "firstCards": [
+    {
+      "width": 390,
+      "y": 529.875,
+      "bottom": 748.375,
+      "height": 218.5,
+      "viewport": 844
+    },
+    {
+      "width": 320,
+      "y": 550.265625,
+      "bottom": 733.765625,
+      "height": 183.5,
+      "viewport": 844
+    }
+  ],
+  "screenshots": [
+    "/tmp/turbo-mobile-filters-after-390.png",
+    "/tmp/turbo-mobile-filters-after-320.png"
+  ],
+  "baseline": [
+    {
+      "width": 390,
+      "y": 850.265625,
+      "bottom": 1068.765625,
+      "height": 218.5,
+      "viewport": 844,
+      "screenshot": "/tmp/turbo-mobile-filters-before-390.png"
+    },
+    {
+      "width": 320,
+      "y": 920.65625,
+      "bottom": 1104.15625,
+      "height": 183.5,
+      "viewport": 844,
+      "screenshot": "/tmp/turbo-mobile-filters-before-320.png"
+    }
+  ]
+}

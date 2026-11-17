@@ -42,7 +42,11 @@ Run `node --test tools/category-model.test.cjs` for classification regressions.
 
 Search within a category or choose **All** to search the full catalog. Search tolerates punctuation and accents, supports multiple words, and keeps the query when switching categories. The collection can be sorted by title or filtered to hide entries with missing sources.
 
-**Pick for me** previews a random title from the current results before opening anything. Play, Save, and Another pick use the same catalog and library; another pick avoids repeating the current title when alternatives exist. Known missing sources are excluded, but this is not a compatibility or gameplay guarantee. Changing a filter dismisses the old preview. Arcade, Racing, Puzzle, and Mario shortcuts run real full-catalog searches.
+Search also matches the catalog's actual genre metadata and labels, so a query such as `puzzle` finds classified games even when the word is absent from their titles. The Arcade, Racing, and Puzzle shortcuts apply their real genre filters; Mario remains a title search. The index is still built lazily.
+
+On phone-sized screens, **Filters** opens a native sheet containing the existing category, sort, and missing-source controls. Changes apply immediately, and **Show titles** returns to the collection. Reset inside the sheet preserves the current search and source collection. Desktop layouts keep the same controls inline. Resizing moves the actual controls, retains their values, and restores keyboard focus; no duplicate inputs or separate mobile state are created.
+
+**Pick for me** previews a random title from the current results before opening anything. Play, Save, and Another pick use the same catalog and library; another pick avoids repeating the current title when alternatives exist. Known missing sources are excluded, but this is not a compatibility or gameplay guarantee. Changing a filter dismisses the old preview. Discovery shortcuts browse the full catalog while preserving sorting and source filters.
 
 Active search, availability, and sorting chips can be removed independently. A scoped search offers **Search all titles** without losing the query or other filters. The search field also has a keyboard-accessible clear button. On returning to the homepage, **Jump back in** surfaces up to three recently opened titles with their existing covers and links to the full Recent collection. No account, cloud sync, or new game is added.
 
@@ -57,6 +61,8 @@ Run `node tools/ui-check.cjs` and `node tools/discovery-check.cjs` against the l
 Run `node tools/quick-play-check.cjs` for the focused recent shelf, scoped preview, favorites, filter controls, quick searches, focus recovery, keyboard/touch, reduced-motion, and narrow/embedded layout checks. Its report is `reports/quick-play-check.json` by default.
 
 Run `node tools/library-navigation-check.cjs` and `node tools/player-tools-check.cjs` for the persistent library shortcuts, real category counts, cross-tab updates, player favorites, native/manual link copying, fullscreen state, focus recovery, and phone/landscape layout checks. Both support `TURBO_TEST_URL` and `TURBO_REPORT_PATH` for checking a deployment without changing committed local reports.
+
+Run `node tools/genre-search-check.cjs` and `node tools/mobile-filter-check.cjs` for genre-aware matching, real category shortcuts, the phone filter sheet, single-control DOM restoration, touch/keyboard focus, and the first visible Starter row. These checks also support `TURBO_TEST_URL` and `TURBO_REPORT_PATH`.
 
 ## Daily GitHub refresh
 

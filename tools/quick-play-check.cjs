@@ -197,11 +197,14 @@ async function run() {
     for (const query of quickSearches) {
       await go({ view: 'all', sort: 'title-asc', available: '1' });
       await page.locator('#quick-searches [data-query="' + query + '"]').click();
-      await filterState({ view: 'all', q: query, sort: 'title-asc', available: true });
+      const isGenre = ['arcade', 'racing', 'puzzle'].includes(query);
+      await filterState({ view: 'all', q: isGenre ? '' : query, sort: 'title-asc', available: true });
+      assert.equal(new URL(page.url()).searchParams.get('genre'), isGenre ? query : null);
+      if (isGenre) assert.equal(await page.locator('#genre-filters [data-genre="' + query + '"]').getAttribute('aria-pressed'), 'true');
       assert.ok(await page.locator('.card-launch').count(), 'The ' + query + ' shortcut must find actual titles');
       assert.equal(await page.locator('#quick-searches').isVisible(), false, 'Shortcuts should yield to the selected query');
     }
-    report.checks.push('Quick-search shortcuts find real titles across the collection while preserving sorting and source filters');
+    report.checks.push('Genre shortcuts select actual categories and Mario stays a title search; sorting and source filters are preserved');
 
     await go({ view: 'games', q: 'Orbit Breaker' });
     await pick.focus();

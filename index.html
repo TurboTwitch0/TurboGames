@@ -110,7 +110,7 @@
             <p class="sidebar-note">Your library stays in this browser.<br />Find something worth keeping.</p>
           </nav>
           <div class="collection-content">
-          <p id="starter-note" class="starter-note" hidden>A few tested picks with their core game files hosted on TurboGames. Some need a keyboard. Flash games download the shared emulator on first play.</p>
+          <p id="starter-note" class="starter-note" hidden>These picks use game files hosted here. Some need a keyboard; Flash downloads an emulator on first play.</p>
           <section class="genre-section" aria-labelledby="genre-heading">
             <div class="genre-heading"><h3 id="genre-heading">Play by category</h3><p>Find your kind of game in any collection.</p></div>
             <div id="genre-filters" class="genre-filters" role="group" aria-label="Game categories"></div>
@@ -122,6 +122,7 @@
           </div>
           <div id="quick-searches" class="quick-searches" aria-label="Quick searches"><span>START SOMEWHERE</span><button type="button" data-query="arcade">Arcade <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="racing">Racing <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="puzzle">Puzzle <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button type="button" data-query="mario">Mario <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
           <div class="collection-toolbar">
+            <button id="open-mobile-filters" class="mobile-filter-toggle" type="button" aria-controls="mobile-filter-dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg><span>Filters</span><span id="mobile-filter-count" class="mobile-filter-count" hidden>0</span></button>
             <p id="library-note" class="library-note" role="status">Save favorites with the heart. Your library stays in this browser.</p>
             <div class="collection-filters">
               <label class="availability-filter"><input id="hide-unavailable" type="checkbox" /> Hide missing sources</label>
@@ -144,6 +145,14 @@
 
       <footer class="footer"><div><a class="brand footer-brand" href="#top"><img class="brand-symbol" src="assets/brand/turbogames-mark.svg" width="36" height="36" alt="" /><span>Turbo<span class="brand-accent">Games</span></span></a><p>Find your next play. Keep it close.</p></div><div class="footer-links"><a href="google-sites.html">Add to Google Sites ↗</a><a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/preview">UGS collection &amp; credits ↗</a><span>Saved &amp; Recent stay in this browser.<br />Some games need their original online assets.</span></div></footer>
     </div>
+
+    <dialog id="mobile-filter-dialog" class="mobile-filter-dialog" aria-labelledby="mobile-filter-title">
+      <div class="mobile-filter-shell">
+        <header class="mobile-filter-header"><div><p class="eyebrow">FIND YOUR KIND OF PLAY</p><h2 id="mobile-filter-title">Filters</h2></div><button id="close-mobile-filters" class="icon-button" type="button" aria-label="Close filters" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></header>
+        <div id="mobile-filter-content" class="mobile-filter-content"></div>
+        <footer class="mobile-filter-footer"><p id="mobile-filter-results" role="status" aria-live="polite"></p><div><button id="reset-mobile-filters" class="text-button" type="button">Reset filters</button><button id="apply-mobile-filters" class="primary-action" type="button">Show titles</button></div></footer>
+      </div>
+    </dialog>
 
     <dialog id="game-dialog" class="game-dialog" aria-labelledby="dialog-title">
       <div id="player-surface" class="player-surface">

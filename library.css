@@ -71,3 +71,44 @@
 .is-embedded .catalog-layout .tab { display: block; width: auto; padding: 11px 15px; white-space: nowrap; }
 .is-embedded .sidebar-label, .is-embedded .sidebar-note, .is-embedded .scope-count { display: none !important; }
 .is-embedded .collection-content { padding-top: 22px; }
+
+/* Keep the games in view on phones; the same controls move into this sheet. */
+.mobile-filter-toggle { display: none; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 10px 14px; border: 1px solid #596579; border-radius: 12px; background: var(--panel); color: var(--ink); font-size: 12px; font-weight: 650; scroll-margin-top: 145px; scroll-margin-bottom: 22px; }
+.mobile-filter-toggle:hover { border-color: var(--violet); background: #a9adff12; }
+.mobile-filter-toggle svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.mobile-filter-count { display: grid; place-items: center; min-width: 19px; height: 19px; padding: 0 4px; border-radius: 6px; background: var(--lime); color: var(--bg); font: 9px var(--mono); }
+.mobile-filter-dialog { position: fixed; inset: auto 8px max(8px, env(safe-area-inset-bottom)); width: calc(100vw - 16px); max-width: 620px; max-height: calc(100dvh - 24px); margin: 0 auto; padding: 0; overflow: hidden; border: 1px solid #657189; border-radius: 24px; color: var(--ink); background: #191f28; box-shadow: 0 24px 90px #0009; }
+.mobile-filter-dialog::backdrop { background: #080b0fbd; backdrop-filter: blur(4px); }
+.mobile-filter-shell { display: flex; flex-direction: column; max-height: calc(100dvh - 24px); }
+.mobile-filter-header { display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 16px; padding: 21px 21px 18px; border-bottom: 1px solid var(--line); }
+.mobile-filter-header .eyebrow { margin-bottom: 7px; font-size: 7px; color: var(--violet); letter-spacing: 1.2px; }
+.mobile-filter-header h2 { margin: 0; font-size: 28px; line-height: 1.05; letter-spacing: -1px; }
+.mobile-filter-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 22px; }
+.mobile-filter-content .genre-section { margin: 0 0 22px; padding: 0; border: 0; background: transparent; }
+.mobile-filter-content .genre-heading { margin-bottom: 17px; }
+.mobile-filter-content .genre-heading h3 { font-size: 15px; }
+.mobile-filter-content .genre-heading p { font-size: 10px; }
+.mobile-filter-content .genre-filters { gap: 8px; }
+.mobile-filter-content .genre-filters button { flex: 1 1 auto; min-height: 46px; justify-content: space-between; padding: 11px 13px; font-size: 12px; }
+.mobile-filter-content .collection-filters { display: flex; flex-direction: column; align-items: stretch; width: 100%; gap: 12px; margin: 0; padding-top: 19px; border-top: 1px solid var(--line); }
+.mobile-filter-content .availability-filter, .mobile-filter-content .sort-label { justify-content: space-between; width: 100%; min-height: 46px; margin: 0; font-size: 12px; }
+.mobile-filter-content .availability-filter { flex-direction: row-reverse; }
+.mobile-filter-content .sort-label select { min-height: 46px; max-width: none; width: 65%; font-size: 12px; }
+.mobile-filter-footer { flex-shrink: 0; padding: 15px 21px 19px; border-top: 1px solid var(--line); background: #191f28; }
+.mobile-filter-footer > p { margin: 0 0 11px; color: var(--muted); font: 10px var(--mono); }
+.mobile-filter-footer > div { display: flex; align-items: center; gap: 8px; }
+.mobile-filter-footer .primary-action { flex: 1; width: auto; min-width: 0; min-height: 46px; padding: 12px 14px; font-size: 12px; }
+.mobile-filter-footer .text-button { min-height: 46px; padding: 10px 9px; font-size: 11px; }
+.mobile-filter-dialog button:disabled { cursor: default; opacity: .45; }
+@media (max-width: 760px) {
+  .mobile-filter-toggle { display: inline-flex; flex-shrink: 0; }
+  .collection-content .collection-toolbar { align-items: center; flex-direction: row; flex-wrap: wrap; gap: 12px; padding: 0 0 19px; }
+  .collection-toolbar .library-note { flex: 1; min-width: 0; font-size: 10px; line-height: 1.6; }
+  .collection-content .starter-note { padding: 14px 16px; margin-bottom: 19px; font-size: 12px; }
+  .collection-content .quick-searches { margin-bottom: 19px; }
+}
+@media (max-width: 360px) {
+  .mobile-filter-header { padding: 18px 17px 16px; }
+  .mobile-filter-content { padding: 19px 17px; }
+  .mobile-filter-footer { padding: 13px 17px 17px; }
+}

@@ -96,9 +96,9 @@ const round = value => Math.round(value * 100) / 100;
           report.screenshots.push(screenshot);
         }
         const queries = {};
-        // Mario intentionally gains the corrected Doki Doki Mario 64 title;
-        // compare unaffected queries rather than treating that fix as a loss.
-        for (const query of ['Orbit Breaker', 'tetris', 'puzzle']) {
+        // Genre keywords intentionally broaden with genre-aware discovery;
+        // compare unaffected title queries rather than treating that as a loss.
+        for (const query of ['Orbit Breaker', 'tetris', 'hextris']) {
           await page.locator('#search').fill(query);
           await page.waitForFunction(query => new URL(location.href).searchParams.get('q') === query, query);
           queries[query] = await page.evaluate(() => ({

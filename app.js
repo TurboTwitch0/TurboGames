@@ -43,6 +43,10 @@
   const pickButton = document.querySelector("#pick-game");
   const quickPick = document.querySelector("#quick-pick");
   const recentShelf = document.querySelector("#recent-shelf");
+  const mobileFilterDialog = document.querySelector("#mobile-filter-dialog");
+  const mobileFilterContent = document.querySelector("#mobile-filter-content");
+  const mobileFilterToggle = document.querySelector("#open-mobile-filters");
+  const narrowFilters = window.matchMedia("(max-width: 760px)");
   const categoryNames = { popular: "Popular", starters: "Start here", all: "All titles", games: "Games", flash: "Flash", apps: "Apps", emulator: "Emulator", misc: "Misc", saved: "Saved", recent: "Recent" };
   const categoryTotals = items.reduce((totals, item) => {
     totals[item.category] = (totals[item.category] || 0) + 1;
@@ -65,7 +69,10 @@
   const normalize = text => text.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
   const searchable = new Map();
   function searchText(item) {
-    if (!searchable.has(item.id)) searchable.set(item.id, normalize([item.title, item.category, ...(item.tags || [])].join(" ")));
+    if (!searchable.has(item.id)) {
+      const genres = (genresById.get(item.id) || []).flatMap(id => [id, genreNames.get(id) || ""]);
+      searchable.set(item.id, normalize([item.title, item.category, ...(item.tags || []), ...genres].join(" ")));
+    }
     return searchable.get(item.id);
   }
   let category = "popular";
@@ -375,7 +382,7 @@
   function updateDiscoveryTools() {
     const hasQuery = Boolean(search.value.trim());
     document.querySelector("#clear-query").hidden = !search.value;
-    document.querySelector("#quick-searches").hidden = hasQuery || !["all", "popular"].includes(category);
+    document.querySelector("#quick-searches").hidden = hasQuery || genre !== "all" || !["all", "popular"].includes(category);
     pickButton.disabled = !visible.some(item => item.sourceStatus !== "unavailable");
     pickButton.title = pickButton.disabled ? "No titles with sources in this view. Try another search or category." : "Preview a random title from this view";
     const activeFilters = document.querySelector("#active-filters");
@@ -406,7 +413,8 @@
         else hideUnavailable.checked = false;
         writeFilters();
         render();
-        target.focus({ preventScroll: true });
+        const visibleTarget = mobileFilterContent.contains(target) && !mobileFilterDialog.open ? mobileFilterToggle : target;
+        visibleTarget.focus({ preventScroll: true });
       });
       activeFilters.append(button);
     }
@@ -576,6 +584,7 @@
     displayed = 96;
     grid.replaceChildren();
     count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}${genre !== "all" ? ` · ${genreNames.get(genre)}` : ""}`;
+    updateMobileFilterSummary();
     const noLibrary = !search.value.trim() && (category === "saved" && favorites.size === 0 || category === "recent" && recent.length === 0);
     document.querySelector("#empty-icon").textContent = noLibrary ? category === "saved" ? "♡" : "↶" : "⌕";
     document.querySelector("#empty-title").textContent = noLibrary ? category === "saved" ? "Your favorites, all together" : "Pick up where you left off" : "No matches yet";
@@ -585,6 +594,91 @@
     grid.hidden = visible.length === 0;
     appendCards(0);
     if (pickHadFocus) (pickButton.disabled ? tabs.find(tab => tab.dataset.category === category) : pickButton)?.focus({ preventScroll: true });
+  }
+
+  function updateMobileFilterSummary() {
+    const active = Number(genre !== "all") + Number(sort.value !== "recommended") + Number(hideUnavailable.checked);
+    const badge = document.querySelector("#mobile-filter-count");
+    badge.textContent = active;
+    badge.hidden = active === 0;
+    mobileFilterToggle.setAttribute("aria-label", active ? `Filters, ${active} active` : "Filters");
+    document.querySelector("#mobile-filter-results").textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "title" : "titles"} · ${categoryNames[category]}`;
+    document.querySelector("#apply-mobile-filters").textContent = `Show ${visible.length.toLocaleString()} ${visible.length === 1 ? "title" : "titles"}`;
+    document.querySelector("#reset-mobile-filters").disabled = active === 0;
+  }
+  function closeMobileFilters(restoreFocus = true, showResults = false) {
+    if (mobileFilterDialog.open) mobileFilterDialog.close();
+    mobileFilterToggle.setAttribute("aria-expanded", "false");
+    if (restoreFocus && narrowFilters.matches && !dialog.open) {
+      if (showResults) document.querySelector("#catalog").scrollIntoView({ block: "start", behavior: "instant" });
+      mobileFilterToggle.focus({ preventScroll: true });
+      if (!showResults) mobileFilterToggle.scrollIntoView({ block: "nearest", behavior: "instant" });
+    }
+  }
+  function initializeMobileFilters() {
+    const genreSection = document.querySelector(".genre-section");
+    const options = document.querySelector(".collection-filters");
+    const genreHome = document.createComment("genre filters home");
+    const optionsHome = document.createComment("collection options home");
+    genreSection.before(genreHome);
+    options.before(optionsHome);
+    const syncLayout = () => {
+      const focused = document.activeElement;
+      if (narrowFilters.matches) {
+        const movingFocus = genreSection.contains(focused) || options.contains(focused);
+        mobileFilterContent.append(genreSection, options);
+        if (movingFocus) mobileFilterToggle.focus();
+      } else {
+        const restore = mobileFilterDialog.contains(focused) || focused === mobileFilterToggle;
+        closeMobileFilters(false);
+        genreHome.after(genreSection);
+        optionsHome.after(options);
+        if (restore) {
+          const target = genreSection.contains(focused) || options.contains(focused) ? focused : genreSection.querySelector('[aria-pressed="true"]') || genreButtons[0];
+          target?.focus();
+        }
+      }
+    };
+    mobileFilterToggle.addEventListener("click", () => {
+      if (!narrowFilters.matches || dialog.open) return;
+      updateMobileFilterSummary();
+      mobileFilterDialog.showModal();
+      mobileFilterToggle.setAttribute("aria-expanded", "true");
+      document.querySelector("#close-mobile-filters").focus();
+    });
+    document.querySelector("#close-mobile-filters").addEventListener("click", () => closeMobileFilters());
+    document.querySelector("#apply-mobile-filters").addEventListener("click", () => closeMobileFilters(true, true));
+    document.querySelector("#reset-mobile-filters").addEventListener("click", () => {
+      clearTimeout(searchTimer);
+      genre = "all";
+      sort.value = "recommended";
+      hideUnavailable.checked = false;
+      writeFilters();
+      render();
+      genreButtons[0].focus({ preventScroll: true });
+    });
+    mobileFilterDialog.addEventListener("cancel", event => { event.preventDefault(); closeMobileFilters(); });
+    mobileFilterDialog.addEventListener("keydown", event => {
+      if (event.key !== "Tab" || event.ctrlKey || event.metaKey || event.altKey) return;
+      const targets = [...mobileFilterDialog.querySelectorAll('button:not([disabled]), input:not([disabled]), select:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])')]
+        .filter(node => node.tabIndex >= 0 && node.getClientRects().length > 0);
+      const first = targets[0];
+      const last = targets.at(-1);
+      if (!first) return;
+      const active = document.activeElement;
+      if (event.shiftKey ? active === first || !targets.includes(active) : active === last || !targets.includes(active)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      }
+    });
+    mobileFilterDialog.addEventListener("click", event => { if (event.target === mobileFilterDialog) closeMobileFilters(); });
+    mobileFilterDialog.addEventListener("close", () => {
+      mobileFilterToggle.setAttribute("aria-expanded", "false");
+      if (narrowFilters.matches && !dialog.open) mobileFilterToggle.focus({ preventScroll: true });
+    });
+    if (narrowFilters.addEventListener) narrowFilters.addEventListener("change", syncLayout);
+    else narrowFilters.addListener(syncLayout);
+    syncLayout();
   }
 
   function closeSharePanel(restoreFocus = false) {
@@ -718,6 +812,7 @@
     recovery.hidden = false;
   }
   function openItem(item, navigate = true) {
+    closeMobileFilters(false);
     clearTimeout(searchTimer);
     writeFilters();
     if (navigate) {
@@ -825,11 +920,13 @@
   document.querySelectorAll("#quick-searches [data-query]").forEach(button => button.addEventListener("click", () => {
     clearTimeout(searchTimer);
     category = "all";
-    genre = "all";
-    search.value = button.dataset.query;
+    const query = button.dataset.query;
+    genre = query !== "all" && genreNames.has(query) ? query : "all";
+    search.value = genre === "all" ? query : "";
     updateTabs();
     writeFilters();
     render();
+    document.querySelector("#catalog").scrollIntoView({ block: "start" });
     search.focus({ preventScroll: true });
   }));
   document.querySelector("#see-recent").addEventListener("click", () => {
@@ -986,11 +1083,12 @@
       : "M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5");
   });
   document.addEventListener("keydown", event => {
-    if (event.key === "/" && document.activeElement !== search && !dialog.open && !["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName)) {
+    if (event.key === "/" && document.activeElement !== search && !dialog.open && !mobileFilterDialog.open && !["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName)) {
       event.preventDefault(); search.focus();
     }
   });
   initializeGenres();
+  initializeMobileFilters();
   readFilters();
   document.querySelectorAll("[data-scope-count]").forEach(node => {
     node.textContent = (categoryTotals[node.dataset.scopeCount] || 0).toLocaleString();
