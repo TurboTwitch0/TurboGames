@@ -7,7 +7,10 @@
   const fallbackCover = item => window.TurboCoverArt?.coverFor(item, genresById.get(item.id)?.[0] || "arcade") || "assets/fallback-cover.svg";
   const coverSource = item => item.imageType === "illustrated" || !item.image ? fallbackCover(item) : item.image;
   const boxedCovers = new Set(["library-source/flash/clpottyracers.html", "library-source/flash/clpottyracers2.html"]);
-  const fitCover = (image, item) => image.classList.toggle("is-letterboxed", item.imageFit === "contain" || boxedCovers.has(item.id));
+  function fitCover(image, item) {
+    image.classList.toggle("is-contained", item?.imageFit === "contain");
+    image.classList.toggle("is-letterboxed", boxedCovers.has(item?.id));
+  }
   const genreNames = new Map(gameCategories.categories.map(genre => [genre.id, genre.label]));
   const genreButtons = [];
   let genre = "all";
@@ -252,7 +255,11 @@
       const image = document.createElement("img");
       image.src = feature.image || coverSource(feature.item);
       if (!feature.image) fitCover(image, feature.item);
-      image.addEventListener("error", () => { image.alt = `${feature.item.title} cover illustration`; image.src = fallbackCover(feature.item); }, { once: true });
+      image.addEventListener("error", () => {
+        fitCover(image);
+        image.alt = `${feature.item.title} cover illustration`;
+        image.src = fallbackCover(feature.item);
+      }, { once: true });
       image.alt = index === 0 ? "Actual Orbit Breaker game canvas with colored targets, a ball, and a lime paddle" : `${feature.item.title} artwork from the existing TurboGames catalog`;
       image.width = 400;
       image.height = 400;
@@ -346,7 +353,10 @@
       image.width = 80;
       image.height = 80;
       image.loading = "lazy";
-      image.addEventListener("error", () => { image.src = fallbackCover(item); }, { once: true });
+      image.addEventListener("error", () => {
+        fitCover(image);
+        image.src = fallbackCover(item);
+      }, { once: true });
       const copy = document.createElement("span");
       copy.className = "recent-pick-copy";
       const meta = document.createElement("span");
@@ -567,7 +577,7 @@
     image.width = 400;
     image.height = 400;
     image.addEventListener("error", () => {
-      image.classList.remove("is-letterboxed");
+      fitCover(image);
       image.src = fallbackCover(item);
     }, { once: true });
     const play = document.createElement("span");
@@ -1029,7 +1039,10 @@
   document.querySelector("#pick-cover").addEventListener("error", event => {
     if (!pickedItem) return;
     const source = fallbackCover(pickedItem);
-    if (event.currentTarget.getAttribute("src") !== source) event.currentTarget.src = source;
+    if (event.currentTarget.getAttribute("src") !== source) {
+      fitCover(event.currentTarget);
+      event.currentTarget.src = source;
+    }
   });
   initializeShowcase();
   if (featuredGames.length) {
