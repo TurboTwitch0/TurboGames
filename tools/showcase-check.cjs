@@ -113,7 +113,7 @@ async function run() {
       const currentName = await page.locator('.featured-card[data-position="current"]').evaluate(node =>
         [node.getAttribute('aria-label'), node.textContent, ...[...node.querySelectorAll('img')].map(image => image.alt)].join(' '));
       assert.ok(currentName.includes(items[index].title), 'The current card must represent ' + items[index].title);
-      assert.match(await page.locator('#hero-play').textContent(), new RegExp(items[index].title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+      assert.equal(await page.locator('#hero-play').getAttribute('aria-label'), 'Play ' + items[index].title);
       assert.equal(await page.locator('#hero-save').getAttribute('data-save-id'), items[index].id);
     };
     await selected(0);
@@ -200,7 +200,7 @@ async function run() {
     await stage.waitFor({ state: 'visible' });
     await selected(0);
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'true');
-    await page.locator('#hero-saved').click();
+    await page.locator('#header-saved').click();
     assert.equal(new URL(page.url()).searchParams.get('view'), 'saved');
     for (const item of items) {
       const card = page.locator('.game-card').filter({ has: page.getByRole('button', { name: 'Open ' + item.title, exact: true }) });

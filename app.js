@@ -101,9 +101,9 @@
   let feedbackTimer;
   let pickedItem;
   const featuredGames = [
-    { id: "orbit-breaker", image: "assets/brand/orbit-preview.webp", meta: "ARCADE / MOUSE OR TOUCH", description: "Steer the paddle. Break the orbiting stars.", accent: "#d6ff64" },
-    { id: "little-match", meta: "PUZZLE / MATCH PAIRS", description: "Turn a few cards. Find the matching pairs.", accent: "#a9adff" },
-    { id: "library-source/html5-games/cl2048.html", meta: "PUZZLE / ARROW KEYS", description: "Slide, combine, and build your way to 2048.", accent: "#ffb58c" }
+    { id: "orbit-breaker", image: "assets/brand/orbit-preview.webp", controls: "Mouse or touch", accent: "#d6ff64" },
+    { id: "little-match", controls: "Click or tap to match", accent: "#a9adff" },
+    { id: "library-source/html5-games/cl2048.html", controls: "Arrow keys or swipe", accent: "#ffb58c" }
   ].map(feature => ({ ...feature, item: byId.get(feature.id) })).filter(feature => feature.item && feature.item.sourceStatus !== "unavailable");
   let featuredIndex = 0;
   const featuredCards = [];
@@ -230,12 +230,10 @@
       featuredDots[cardIndex].setAttribute("aria-pressed", String(distance === 0));
     });
     document.querySelector("#featured-title").textContent = selected.item.title;
-    document.querySelector("#featured-meta").textContent = selected.meta;
-    document.querySelector("#featured-description").textContent = selected.description;
+    document.querySelector("#featured-meta").textContent = selected.controls;
     document.querySelector("#featured-status").textContent = `${featuredIndex + 1} of ${featuredGames.length} — ${selected.item.title}`;
-    document.querySelector(".hero-showcase").style.setProperty("--stage-accent", selected.accent);
+    document.querySelector(".welcome").style.setProperty("--stage-accent", selected.accent);
     const play = document.querySelector("#hero-play");
-    play.firstChild.textContent = `Play ${selected.item.title} `;
     play.setAttribute("aria-label", `Play ${selected.item.title}`);
     updateSaveButton(document.querySelector("#hero-save"), selected.item);
     const browse = document.querySelector("#featured-browse");
@@ -267,12 +265,7 @@
       art.append(image);
       const caption = document.createElement("span");
       caption.className = "featured-card-caption";
-      const number = document.createElement("span");
-      number.className = "featured-card-number";
-      number.textContent = `TURBO / 0${index + 1}`;
-      const title = document.createElement("strong");
-      title.textContent = feature.item.title;
-      caption.append(number, title);
+      caption.textContent = feature.item.title;
       card.append(art, caption);
       card.addEventListener("click", () => index === featuredIndex ? openItem(feature.item) : selectFeatured(index));
       cards.append(card);
@@ -281,7 +274,6 @@
       dot.type = "button";
       dot.setAttribute("aria-label", `Show ${feature.item.title}`);
       dot.setAttribute("aria-controls", "featured-cards");
-      dot.textContent = `0${index + 1}`;
       dot.addEventListener("click", () => selectFeatured(index));
       dots.append(dot);
       featuredDots.push(dot);
@@ -396,7 +388,7 @@
     image.alt = `${pickedItem.title} cover`;
     document.querySelector("#pick-title").textContent = pickedItem.title;
     document.querySelector("#pick-category").textContent = categoryNames[pickedItem.category] || pickedItem.category;
-    document.querySelector("#pick-context").textContent = `Picked from ${candidates.length.toLocaleString()} matching ${candidates.length === 1 ? "title" : "titles"}. Known missing sources are left out.`;
+    document.querySelector("#pick-context").textContent = `From ${candidates.length.toLocaleString()} ${candidates.length === 1 ? "matching title" : "matching titles"}.`;
     document.querySelector("#pick-again").disabled = candidates.length < 2;
     document.querySelector("#pick-play").setAttribute("aria-label", `Play ${pickedItem.title}`);
     updateSaveButton(document.querySelector("#pick-save"), pickedItem);
@@ -630,7 +622,7 @@
     updateGenres(matches);
     updateDiscoveryTools();
     document.body.classList.toggle("is-browsing", category !== "popular" || genre !== "all" || Boolean(search.value.trim()));
-    document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : category === "starters" ? "A good place to start" : "The collection";
+    document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved" : category === "recent" ? "Recently opened" : category === "starters" ? "Starter games" : "Browse";
     document.querySelector("#starter-note").hidden = category !== "starters";
     displayed = 96;
     grid.replaceChildren();
@@ -638,9 +630,9 @@
     updateMobileFilterSummary();
     const noLibrary = !search.value.trim() && (category === "saved" && favorites.size === 0 || category === "recent" && recent.length === 0);
     document.querySelector("#empty-icon").textContent = noLibrary ? category === "saved" ? "♡" : "↶" : "⌕";
-    document.querySelector("#empty-title").textContent = noLibrary ? category === "saved" ? "Your favorites, all together" : "Pick up where you left off" : "No matches yet";
-    document.querySelector("#empty-description").textContent = noLibrary ? category === "saved" ? "Tap the heart on any title to save it here in this browser." : "Open a game and it will appear here for a quick return." : "Try fewer words, another category, or reset your filters.";
-    document.querySelector("#clear-search").textContent = noLibrary ? "Explore all titles" : "Reset filters";
+    document.querySelector("#empty-title").textContent = noLibrary ? category === "saved" ? "Nothing saved yet" : "No recent titles" : "No matches";
+    document.querySelector("#empty-description").textContent = noLibrary ? category === "saved" ? "Tap a heart to save a title." : "Open a game to add it here." : "Try another search or reset the filters.";
+    document.querySelector("#clear-search").textContent = noLibrary ? "Browse all" : "Reset filters";
     empty.hidden = visible.length > 0;
     grid.hidden = visible.length === 0;
     appendCards(0);
@@ -738,14 +730,14 @@
     shareGame.setAttribute("aria-expanded", "false");
     copyLink.disabled = false;
     copyLink.textContent = "Copy link";
-    shareFeedback.textContent = "Select the link or use Copy link.";
+    shareFeedback.textContent = "";
     if (restoreFocus && dialog.open) shareGame.focus({ preventScroll: true });
   }
   function syncPlayerTools(item) {
     closeSharePanel();
     updateSaveButton(playerSave, item);
     document.querySelector("#player-save-feedback").textContent = "";
-    document.querySelector("#player-category").textContent = `${categoryNames[item.category] || "Collection"} / TURBOGAMES`;
+    document.querySelector("#player-category").textContent = categoryNames[item.category] || "Game";
     const link = new URL(location.href);
     link.search = "";
     link.hash = "";
@@ -785,7 +777,7 @@
     const downloadStatus = document.querySelector("#download-status");
     const progress = document.querySelector("#launch-progress");
     progress.removeAttribute("value");
-    downloadStatus.textContent = item.sourceBytes > 2 * 1024 * 1024 ? `Large game page: ${(item.sourceBytes / 1048576).toFixed(1)} MB before compression. Additional assets may be larger, and slower devices can take longer.` : "Getting the game page ready. Some titles then download their own assets.";
+    downloadStatus.textContent = item.sourceBytes > 2 * 1024 * 1024 ? `Game page: ${(item.sourceBytes / 1048576).toFixed(1)} MB uncompressed. More files may load.` : "";
     launchTimer = setTimeout(() => { if (activeNonce === nonce && !loading.hidden) document.querySelector("#slow-loading").hidden = false; }, 12000);
     if (item.sourceStatus === "unavailable") {
       playerStatus.textContent = item.sourceIssue || "This game needs a working source before it can be played.";
@@ -830,7 +822,7 @@
           received += value.byteLength;
           if (activeNonce === nonce && performance.now() - lastUpdate > 200) {
             const amount = received < 1048576 ? `${Math.ceil(received / 1024)} KB` : `${(received / 1048576).toFixed(1)} MB`;
-            downloadStatus.textContent = `Downloaded ${amount} of the game page. Game assets may load next.`;
+            downloadStatus.textContent = `Game page: ${amount} downloaded.`;
             lastUpdate = performance.now();
           }
         }
@@ -966,11 +958,6 @@
     render();
   }
   document.querySelector("#clear-search").addEventListener("click", () => { resetCollection(); search.focus(); });
-  document.querySelector("#hero-saved").addEventListener("click", () => {
-    resetCollection("saved");
-    document.querySelector("#catalog").scrollIntoView({ block: "start" });
-    tabs.find(tab => tab.dataset.category === "saved").focus({ preventScroll: true });
-  });
   document.querySelector("#hero-starters").addEventListener("click", event => {
     event.preventDefault();
     resetCollection("starters");
@@ -1078,7 +1065,7 @@
     if (!playerShare.hidden) { closeSharePanel(true); return; }
     playerShare.hidden = false;
     shareGame.setAttribute("aria-expanded", "true");
-    shareFeedback.textContent = "Select the link or use Copy link.";
+    shareFeedback.textContent = "";
     shareLink.focus({ preventScroll: true });
     shareLink.select();
   });
@@ -1101,12 +1088,12 @@
       if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
       await navigator.clipboard.writeText(value);
       if (generation !== shareGeneration || playerShare.hidden) return;
-      shareFeedback.textContent = "Link copied. Share it wherever you like.";
+      shareFeedback.textContent = "Link copied.";
       copyLink.textContent = "Copied";
     } catch {
       if (generation !== shareGeneration || playerShare.hidden) return;
       copyLink.textContent = "Copy link";
-      shareFeedback.textContent = "Automatic copying is unavailable. The link is selected; use your browser's Copy command.";
+      shareFeedback.textContent = "Automatic copying is unavailable. Copy the selected link.";
       shareLink.focus({ preventScroll: true });
       shareLink.select();
     } finally {
@@ -1181,7 +1168,6 @@
   });
   updateLibraryCounts();
   renderRecentShelf();
-  document.querySelector("#total-titles").textContent = items.length.toLocaleString();
   render();
   const requested = byId.get(parameters.get("play"));
   if (requested) openItem(requested, false);

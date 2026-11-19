@@ -149,7 +149,7 @@ async function run() {
     checks.push('The loading treatment stays visible during a held local source request and hides when the game is ready');
 
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'false');
-    await focusByTab('#hero-save', 'Shift+Tab');
+    await focusByTab('#hero-save');
     await assertFocusRing('#hero-save');
     await page.keyboard.press('Enter');
     await page.waitForFunction(() => document.querySelector('#hero-save').getAttribute('aria-pressed') === 'true');
@@ -158,7 +158,7 @@ async function run() {
     await page.reload({ waitUntil: 'domcontentloaded' });
     await page.locator('#hero-play').waitFor({ state: 'visible' });
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'true');
-    await page.locator('#hero-saved').click();
+    await page.locator('#header-saved').click();
     await page.waitForFunction(() => document.querySelector('.tab[data-category="saved"]').getAttribute('aria-pressed') === 'true');
     assert.equal(new URL(page.url()).searchParams.get('view'), 'saved');
     assert.match(await page.locator('#catalog-title').textContent(), /saved/i);
@@ -175,7 +175,7 @@ async function run() {
     await page.locator('#hero-save').click();
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'false');
     assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('turbogames:favorites'))), []);
-    await page.locator('#hero-saved').click();
+    await page.locator('#header-saved').click();
     await page.locator('#empty-state').waitFor({ state: 'visible' });
     assert.equal(await page.locator('.card-launch').count(), 0);
     checks.push('Hero Save persists the real favorite; Saved opens the real collection; card and hero removal stay synchronized');
@@ -250,7 +250,7 @@ async function run() {
       assert.ok(closeBounds && closeBounds.x >= 0 && closeBounds.x + closeBounds.width <= width,
         'Close control must remain in the ' + width + 'px viewport');
       await closePlayer();
-      await page.locator('#hero-saved').click();
+      await page.locator('#header-saved').click();
       await page.locator('#empty-state').waitFor({ state: 'visible' });
       await assertNoOverflow(width + 'px Saved collection');
     }

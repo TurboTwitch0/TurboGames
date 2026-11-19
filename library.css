@@ -3,7 +3,6 @@
 .genre-section { margin: 0 0 26px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
 .genre-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 14px; }
 .genre-heading h3 { margin: 0; font-size: 16px; }
-.genre-heading p { margin: 0; color: var(--muted); font-size: 11px; }
 .genre-filters { display: flex; flex-wrap: wrap; gap: 8px; }
 .genre-filters button { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; padding: 9px 13px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: transparent; font-size: 12px; text-align: left; }
 .genre-filters button:hover { border-color: var(--violet); }
@@ -19,7 +18,8 @@
 .shortcut-count { display: grid; place-items: center; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 6px; background: #ffffff09; color: var(--muted); font: 8px var(--mono); }
 .library-shortcut[aria-pressed=true] .shortcut-count { background: #a9adff20; color: var(--violet); }
 .collection-content { min-width: 0; }
-.tabs .sidebar-label, .tabs .sidebar-note, .scope-count { display: none; }
+.tabs .sidebar-label, .scope-count { display: none; }
+.library-note:empty { position: absolute; width: 1px; height: 1px; overflow: hidden; }
 .collection-content .quick-searches { margin: 0 0 22px; }
 .collection-content .collection-toolbar { flex-wrap: wrap; gap: 8px 18px; }
 .recent-shelf-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
@@ -33,7 +33,6 @@
   .catalog-layout .tab-count { margin-left: 0; }
   .tabs .sidebar-label { display: block; margin: 4px 10px 8px; color: var(--muted); font: 8px var(--mono); letter-spacing: 1.3px; }
   .tabs .library-label { margin-top: 13px; padding-top: 19px; border-top: 1px solid var(--line); }
-  .tabs .sidebar-note { display: block; margin: 16px 10px 6px; padding-top: 15px; border-top: 1px solid var(--line); color: var(--muted); font: 8px/1.9 var(--mono); }
   .collection-content .collection-toolbar { padding-top: 0; padding-bottom: 23px; }
   .collection-content .collection-filters { gap: 12px; margin-left: auto; }
   .collection-content .game-grid { gap: 26px 18px; }
@@ -60,16 +59,16 @@
   .topbar > .brand { gap: 8px; font-size: 21px; }
   .library-shortcuts { gap: 5px; }
   .library-shortcut svg { width: 19px; height: 19px; }
-  .collection-content { padding-top: 21px; }
-  .collection-content .quick-searches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 18px; }
-  .quick-searches > span { grid-column: 1 / -1; }
-  .quick-searches button { justify-content: space-between; min-width: 0; padding: 10px 15px; }
+  .collection-content { padding-top: 16px; }
+  .collection-content .quick-searches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: 14px; }
+  .quick-searches button { justify-content: center; min-width: 0; padding: 10px 4px; }
+  .quick-searches button svg { display: none; }
 }
 /* Google Sites gets the same shortcuts with the existing compact catalog. */
 .is-embedded .catalog-layout { display: block; }
 .is-embedded .catalog-layout > .tabs { position: static; display: flex; flex-direction: row; align-items: center; max-height: none; overflow-x: auto; padding: 6px; gap: 5px; background: var(--panel); border-color: var(--line); border-radius: 16px; }
 .is-embedded .catalog-layout .tab { display: block; width: auto; padding: 11px 15px; white-space: nowrap; }
-.is-embedded .sidebar-label, .is-embedded .sidebar-note, .is-embedded .scope-count { display: none !important; }
+.is-embedded .sidebar-label, .is-embedded .scope-count { display: none !important; }
 .is-embedded .collection-content { padding-top: 22px; }
 
 /* Keep the games in view on phones; the same controls move into this sheet. */
@@ -81,13 +80,11 @@
 .mobile-filter-dialog::backdrop { background: #080b0fbd; backdrop-filter: blur(4px); }
 .mobile-filter-shell { display: flex; flex-direction: column; max-height: calc(100dvh - 24px); }
 .mobile-filter-header { display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 16px; padding: 21px 21px 18px; border-bottom: 1px solid var(--line); }
-.mobile-filter-header .eyebrow { margin-bottom: 7px; font-size: 7px; color: var(--violet); letter-spacing: 1.2px; }
 .mobile-filter-header h2 { margin: 0; font-size: 28px; line-height: 1.05; letter-spacing: -1px; }
 .mobile-filter-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 22px; }
 .mobile-filter-content .genre-section { margin: 0 0 22px; padding: 0; border: 0; background: transparent; }
 .mobile-filter-content .genre-heading { margin-bottom: 17px; }
 .mobile-filter-content .genre-heading h3 { font-size: 15px; }
-.mobile-filter-content .genre-heading p { font-size: 10px; }
 .mobile-filter-content .genre-filters { gap: 8px; }
 .mobile-filter-content .genre-filters button { flex: 1 1 auto; min-height: 46px; justify-content: space-between; padding: 11px 13px; font-size: 12px; }
 .mobile-filter-content .collection-filters { display: flex; flex-direction: column; align-items: stretch; width: 100%; gap: 12px; margin: 0; padding-top: 19px; border-top: 1px solid var(--line); }
@@ -105,7 +102,7 @@
   .collection-content .collection-toolbar { align-items: center; flex-direction: row; flex-wrap: wrap; gap: 12px; padding: 0 0 19px; }
   .collection-toolbar .library-note { flex: 1; min-width: 0; font-size: 10px; line-height: 1.6; }
   .collection-content .starter-note { padding: 14px 16px; margin-bottom: 19px; font-size: 12px; }
-  .collection-content .quick-searches { margin-bottom: 19px; }
+  .collection-content .quick-searches { margin-bottom: 12px; }
 }
 @media (max-width: 360px) {
   .mobile-filter-header { padding: 18px 17px 16px; }
