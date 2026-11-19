@@ -2146,10 +2146,14 @@
     "matchedTitle": "My Friend Pedro Arena"
   },
   "library-source/flash/cln.html": {
-    "image": "assets/covers/downloaded/n-e72199e13dba.webp",
+    "image": "assets/covers/curated/verified-2026-11/n-title-demo-f4f797e13037.webp",
     "type": "source-artwork",
-    "source": "https://www.thewayoftheninja.org/images/PlayOnline.gif",
-    "attribution": "N game screenshot from the official Metanet Software website: https://www.thewayoftheninja.org/n.html"
+    "source": "library-source/flash/cln.html",
+    "sourcePage": "https://www.thewayoftheninja.org/n.html",
+    "attribution": "Metanet Software. N v1.2 title menu with the game's running demo, captured from the original launcher in Ruffle.",
+    "captureType": "game title menu with live demo",
+    "matchEvidence": "Captured from the exact n-game.swf loaded by the existing launcher, after the initial screen and loading text cleared. Only the unused side margins were cropped.",
+    "fit": "contain"
   },
   "library-source/flash/clnaturalselection.html": {
     "image": "assets/covers/original/flash-library-source-flash-clnaturalselection.html.jpg",

@@ -4,6 +4,7 @@
   let config;
   try { config = window.__TURBOGAMES_CONFIG__ || JSON.parse(window.name); } catch { return; }
   if (config?.turboGames !== 1 || typeof config.nonce !== "string" || !/^https?:\/\//.test(config.parentOrigin)) return;
+  const nativeLaunch = document.currentScript?.dataset.turbogamesDirect === "1";
   delete window.__TURBOGAMES_CONFIG__;
   try {
     const namedConfig = JSON.parse(window.name);
@@ -178,5 +179,16 @@
     }
     try { Object.defineProperty(window, "indexedDB", { configurable: true, value: database }); } catch {}
     window.__turboMemoryIndexedDB = true;
+  }
+  if (nativeLaunch) {
+    // The parent cannot inspect a sandboxed native document. This confirms
+    // that the prepared game document parsed, independently of later assets.
+    const reportDocumentReady = () => parent.postMessage({
+      type: "turbogames:status",
+      nonce: config.nonce,
+      code: "native-document-ready"
+    }, config.parentOrigin);
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", reportDocumentReady, { once: true });
+    else reportDocumentReady();
   }
 })();

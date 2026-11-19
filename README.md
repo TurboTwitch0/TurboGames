@@ -8,7 +8,7 @@ TurboGames is a static, searchable library with **3,099 games and apps**, square
 
 The compatibility layer fixes modern Unity's relative StreamingAssets resolution inside an opaque player and treats a denied optional Cache API as unavailable, allowing the loader's normal HTTP fallback. It preserves the sandbox and per-game saves. Failed startup scripts report a short, nonblocking message without exposing query values, error text, or stack traces to the parent.
 
-Large prepared HTML games navigate directly in a fresh isolated iframe, rather than copying tens of megabytes through the parent's fetch/text/replace/srcdoc path. The same nonce-scoped save bridge initializes before their original scripts. A size hint identifies large pages; actual game assets can be much larger. Slow downloads offer cancel/new-tab actions, and an unresponsive game-page fetch times out with Retry. One unsupported legacy parent-call wrapper retains its existing launch path.
+Large prepared HTML games navigate directly in a fresh isolated iframe. The same nonce-scoped save bridge initializes before their original scripts and confirms when the prepared document has parsed. This clears the loading screen as the title's remaining assets load. A failed native navigation offers Retry and stays out of Recent. A stalled fetch or availability probe times out after 60 seconds, while native document startup has a separate two-minute limit after the probe. Slow launches offer cancel and new-tab actions. The size hint describes the game page, and additional assets can be much larger. One legacy parent-call wrapper retains its existing launch path.
 
 The catalog includes generated genre hints, while the search index is built only when needed. Original artwork and credits are preserved; `tools/optimize_covers.py` creates smaller 384px WebP previews with content/recipe hashes. `tools/build_catalog.py` validates each preview against its original source hash and falls back to the original when stale. Eleven additional covers now use verified publisher/creator art or a reviewed title-menu capture. Remaining illustrations are still identified as illustrations.
 
@@ -41,6 +41,8 @@ the daily catalog refresh retains this separate classification layer.
 Run `node --test tools/category-model.test.cjs` for classification regressions.
 
 Search within a category or choose **All** to search the full catalog. Search tolerates punctuation and accents, supports multiple words, and keeps the query when switching categories. The collection can be sorted by title or filtered to hide entries with missing sources.
+
+Recommended results prioritize complete title matches such as **Slope** before variants such as **Slope 3**. Press **Enter** in the search field to jump to the first result. Activate that result to open the game.
 
 Search also matches the catalog's actual genre metadata and labels, so a query such as `puzzle` finds classified games even when the word is absent from their titles. The Arcade, Racing, and Puzzle shortcuts apply their real genre filters; Mario remains a title search. The index is still built lazily.
 

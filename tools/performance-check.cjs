@@ -103,7 +103,7 @@ const round = value => Math.round(value * 100) / 100;
           await page.waitForFunction(query => new URL(location.href).searchParams.get('q') === query, query);
           queries[query] = await page.evaluate(() => ({
             resultCount: Number(document.querySelector('#result-count').textContent.match(/[\d,]+/)[0].replaceAll(',', '')),
-            renderedIds: [...document.querySelectorAll('#game-grid [data-save-id]')].map(node => node.dataset.saveId)
+            renderedIds: [...document.querySelectorAll('#game-grid [data-save-id]')].map(node => node.dataset.saveId).sort()
           }));
         }
         assert.deepEqual(errors, [], `${mode}${trial}: parent JavaScript errors`);

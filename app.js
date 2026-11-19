@@ -67,13 +67,17 @@
   const favorites = new Set(readLibrary("favorites"));
   let recent = readLibrary("recent").slice(0, 24);
   const normalize = text => text.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
-  const searchable = new Map();
-  function searchText(item) {
-    if (!searchable.has(item.id)) {
-      const genres = (genresById.get(item.id) || []).flatMap(id => [id, genreNames.get(id) || ""]);
-      searchable.set(item.id, normalize([item.title, item.category, ...(item.tags || []), ...genres].join(" ")));
+  const searchIndex = new Map();
+  const titleCollator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+  function searchEntry(item) {
+    let entry = searchIndex.get(item.id);
+    if (!entry) {
+      const genres = genresById.get(item.id).flatMap(id => [id, genreNames.get(id)]);
+      const text = normalize([item.title, item.category, ...(item.tags || []), ...genres].join(" "));
+      entry = { text, compact: text.replaceAll(" ", "") };
+      searchIndex.set(item.id, entry);
     }
-    return searchable.get(item.id);
+    return entry;
   }
   let category = "popular";
   let displayed = 96;
@@ -85,6 +89,9 @@
   let pendingSave;
   let loadController;
   let launchTimer;
+  let nativeStartupTimer;
+  const nativeStartupLimit = 120000;
+  const nativeReadyGrace = 1500;
   let runtimeIssue = "";
   let manualSaveHint = false;
   const manualSaveMessage = () => activeItem?.category === "emulator" ? "Use the game's Save / Export controls to keep emulator progress." : "Some game data lasts only for this session. Use an in-game Save / Export option if available.";
@@ -128,6 +135,13 @@
     if (!activeItem || event.source !== frame.contentWindow) return;
     const message = event.data;
     if (!message || message.nonce !== activeNonce) return;
+    if (message.type === "turbogames:status" && message.code === "native-document-ready") {
+      if (dialog.open && frame.dataset.nativeLaunch === "1" && !loading.hidden) {
+        finishLoading();
+        rememberItem(activeItem);
+      }
+      return;
+    }
     if (message.type === "turbogames:status" && message.code === "runtime-error") {
       const host = typeof message.assetHost === "string" && /^[a-z0-9.-]{1,160}$/i.test(message.assetHost) ? ` from ${message.assetHost}` : "";
       runtimeIssue = `This game reported a loading error${host}. You can restart it or try Open in new tab.`;
@@ -445,9 +459,8 @@
       genreButtons.push(button);
     }
   }
-  function updateGenres() {
+  function updateGenres(matches) {
     const totals = new Map(gameCategories.categories.map(definition => [definition.id, 0]));
-    const matches = filteredItems(true);
     totals.set("all", matches.length);
     for (const item of matches) for (const id of genresById.get(item.id)) totals.set(id, totals.get(id) + 1);
     for (const button of genreButtons) {
@@ -494,21 +507,43 @@
     updateTabs();
   }
 
-  function filteredItems(ignoreGenre = false) {
-    const query = normalize(search.value);
-    const terms = query.split(/\s+/).filter(Boolean);
-    const matches = items.filter(item => {
-      const matchesCategory = (ignoreGenre && category === "popular") || category === "all" || (category === "popular" ? item.featured : category === "starters" ? starterIds.has(item.id) : category === "saved" ? favorites.has(item.id) : category === "recent" ? recent.includes(item.id) : item.category === category);
-      if (!matchesCategory || (!ignoreGenre && genre !== "all" && !genresById.get(item.id).includes(genre)) || (hideUnavailable.checked && item.sourceStatus === "unavailable")) return false;
+  function matchingItems(query, terms, compactQuery) {
+    // Genre counts on Popular describe the collection the genre shortcuts open.
+    const matchesCollection = {
+      popular: () => true,
+      all: () => true,
+      starters: item => starterIds.has(item.id),
+      saved: item => favorites.has(item.id),
+      recent: item => recent.includes(item.id)
+    }[category] || (item => item.category === category);
+    const availableOnly = hideUnavailable.checked;
+    return items.filter(item => {
+      if (!matchesCollection(item) || (availableOnly && item.sourceStatus === "unavailable")) return false;
       if (!query) return true;
-      const text = searchText(item);
-      return terms.every(term => text.includes(term)) || text.replaceAll(" ", "").includes(query.replaceAll(" ", ""));
+      const entry = searchEntry(item);
+      return terms.every(term => entry.text.includes(term)) || entry.compact.includes(compactQuery);
     });
-    if (sort.value !== "recommended") return matches.sort((a, b) => (sort.value === "title-asc" ? 1 : -1) * a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" }));
+  }
+  function sortMatches(matches, query, terms, compactQuery) {
+    if (sort.value !== "recommended") {
+      const direction = sort.value === "title-asc" ? 1 : -1;
+      return matches.sort((a, b) => direction * titleCollator.compare(a.title, b.title));
+    }
     if (category === "starters") return matches.sort((a, b) => starterRank.get(a.id) - starterRank.get(b.id));
     if (category === "recent") return matches.sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
-    if (query) return matches.sort((a, b) => Number(normalize(b.title).startsWith(query)) - Number(normalize(a.title).startsWith(query)) || Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
-    return matches;
+    if (!query) return matches;
+    const ranks = new Map(matches.map(item => {
+      const entry = searchEntry(item);
+      const title = entry.title ??= normalize(item.title);
+      const compactTitle = entry.compactTitle ??= title.replaceAll(" ", "");
+      if (title === query || compactTitle === compactQuery) return [item.id, 3];
+      if (title.startsWith(query)) return [item.id, 2];
+      if (terms.every(term => title.includes(term)) || compactTitle.includes(compactQuery)) return [item.id, 1];
+      return [item.id, 0];
+    }));
+    return matches.sort((a, b) => ranks.get(b.id) - ranks.get(a.id)
+      || Number(a.sourceStatus === "unavailable") - Number(b.sourceStatus === "unavailable")
+      || Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
   }
 
   function createCard(item, index) {
@@ -575,8 +610,14 @@
   function render() {
     const pickHadFocus = quickPick.contains(document.activeElement);
     dismissPick();
-    visible = filteredItems();
-    updateGenres();
+    const query = normalize(search.value);
+    const terms = query ? query.split(" ") : [];
+    const compactQuery = query.replaceAll(" ", "");
+    const matches = matchingItems(query, terms, compactQuery);
+    const scoped = matches.filter(item => (category !== "popular" || item.featured)
+      && (genre === "all" || genresById.get(item.id).includes(genre)));
+    visible = sortMatches(scoped, query, terms, compactQuery);
+    updateGenres(matches);
     updateDiscoveryTools();
     document.body.classList.toggle("is-browsing", category !== "popular" || genre !== "all" || Boolean(search.value.trim()));
     document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved for later" : category === "recent" ? "Recently opened" : category === "starters" ? "A good place to start" : "The collection";
@@ -704,6 +745,7 @@
   async function loadItem(item) {
     flushSave();
     clearTimeout(launchTimer);
+    clearTimeout(nativeStartupTimer);
     loadController?.abort();
     loadController = new AbortController();
     activeItem = item;
@@ -756,6 +798,9 @@
         frame.name = JSON.stringify(config);
         frame.dataset.nativeLaunch = "1";
         frame.src = source.href;
+        nativeStartupTimer = setTimeout(() => {
+          failNativeStartup(nonce, "The game page took too long to start. Try again or choose another game.");
+        }, nativeStartupLimit);
         playerSurface.append(frame);
         return;
       }
@@ -803,6 +848,7 @@
   }
   function showRecovery(message, missing = false) {
     clearTimeout(launchTimer);
+    clearTimeout(nativeStartupTimer);
     loading.hidden = true;
     playerStatus.textContent = "";
     const hasCreatorLink = window.TurboSourceRecovery.setCreatorLink(creatorLink, missing ? activeItem?.externalUrl : null);
@@ -838,13 +884,29 @@
       dialog.close();
     }
   }
+  function finishLoading() {
+    clearTimeout(launchTimer);
+    clearTimeout(nativeStartupTimer);
+    loading.hidden = true;
+    playerStatus.textContent = runtimeIssue || (manualSaveHint ? manualSaveMessage() : "");
+  }
+  function failNativeStartup(nonce, message) {
+    if (activeNonce !== nonce || !dialog.open || loading.hidden) return;
+    frame.remove();
+    showRecovery(message);
+  }
   function onFrameLoad(event) {
-    if (event.currentTarget === frame && activeItem && (frame.hasAttribute("srcdoc") || frame.dataset.nativeLaunch === "1")) {
-      clearTimeout(launchTimer);
-      loading.hidden = true;
-      playerStatus.textContent = runtimeIssue || (manualSaveHint ? manualSaveMessage() : "");
-      if (frame.dataset.nativeLaunch === "1") rememberItem(activeItem);
-    }
+    if (event.currentTarget !== frame || !activeItem || !dialog.open) return;
+    if (frame.dataset.nativeLaunch === "1") {
+      if (loading.hidden) return;
+      // Failed native navigations fire load as well. Give a successful page's
+      // queued bridge acknowledgement a chance to arrive before recovering.
+      const nonce = activeNonce;
+      clearTimeout(nativeStartupTimer);
+      nativeStartupTimer = setTimeout(() => {
+        failNativeStartup(nonce, "The game page didn't start. Check your connection and try again.");
+      }, nativeReadyGrace);
+    } else if (frame.hasAttribute("srcdoc")) finishLoading();
   }
   frame.addEventListener("load", onFrameLoad);
   frame.setAttribute("sandbox", "allow-scripts allow-forms allow-pointer-lock allow-modals allow-popups allow-presentation allow-downloads");
@@ -859,16 +921,26 @@
       render();
     });
   });
+  function applySearch() {
+    clearTimeout(searchTimer);
+    if (category === "popular" && search.value.trim()) category = "all";
+    updateTabs();
+    writeFilters();
+    render();
+  }
   search.addEventListener("input", () => {
     document.querySelector("#clear-query").hidden = !search.value;
     dismissPick();
     clearTimeout(searchTimer);
-    searchTimer = setTimeout(() => {
-      if (category === "popular" && search.value.trim()) category = "all";
-      updateTabs();
-      writeFilters();
-      render();
-    }, 120);
+    searchTimer = setTimeout(applySearch, 120);
+  });
+  search.addEventListener("keydown", event => {
+    if (event.key !== "Enter" || event.isComposing || event.repeat || !search.value.trim()) return;
+    event.preventDefault();
+    if (new URLSearchParams(location.search).get("q") !== search.value.trim()) applySearch();
+    const target = grid.querySelector(".card-launch") || document.querySelector("#clear-search");
+    target.focus({ preventScroll: true });
+    target.scrollIntoView({ block: "center", behavior: "instant" });
   });
   for (const input of [sort, hideUnavailable]) input.addEventListener("change", () => { writeFilters(); render(); });
   more.addEventListener("click", () => { const start = displayed; displayed += 96; appendCards(start); });
@@ -1036,6 +1108,7 @@
     if (document.fullscreenElement === playerSurface) document.exitFullscreen().catch(() => {});
     flushSave();
     clearTimeout(launchTimer);
+    clearTimeout(nativeStartupTimer);
     loadController?.abort();
     activeItem = undefined;
     activeNonce = undefined;

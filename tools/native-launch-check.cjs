@@ -18,6 +18,7 @@ function siteURL(parameters = {}) {
     args: ['--no-sandbox', '--disable-dev-shm-usage'] });
   let api;
   let releaseParts;
+  let releaseDocument;
   const partGate = new Promise(resolve => { releaseParts = resolve; });
   const report = { passed: false, site,
     method: 'Real existing Colorbox Mustard HTML in the integrated player. Its large project parts are paused to avoid downloading another132MB; this is not a gameplay test. Separate actual title-screen evidence is in large-launch-check.json.',
@@ -120,6 +121,51 @@ function siteURL(parameters = {}) {
     assert.equal(await page.evaluate(id => JSON.parse(localStorage.getItem('turbogames:save:' + id) || '{}')['native-roundtrip'], nativeId), 'saved');
     report.checks.push('Switching to a normal Orbit Breaker launch clears native frame attributes, keeps game saves separate, and rejects a stale native nonce');
     await closePlayer();
+
+    await page.evaluate(() => localStorage.removeItem('turbogames:recent'));
+    const nativeUrl = new URL(item.source, site).href;
+    const nativePlayUrl = siteURL({ play: nativeId });
+    const assertNativeRecovery = async expectedMessage => {
+      await page.locator('#player-recovery').waitFor({ state: 'visible' });
+      assert.match(await page.locator('#recovery-description').textContent(), expectedMessage);
+      assert.equal(await page.locator('#game-frame').count(), 0, 'A failed native document must be removed');
+      assert.equal(await page.evaluate(id => JSON.parse(localStorage.getItem('turbogames:recent') || '[]').includes(id), nativeId), false);
+    };
+    for (const result of ['http', 'network']) {
+      await page.route(nativeUrl, route => {
+        if (route.request().method() === 'HEAD') return route.fallback();
+        if (result === 'network') return route.abort('connectionfailed');
+        return route.fulfill({ status: 503, contentType: 'text/html', body: '<!doctype html><title>Service unavailable</title>' });
+      });
+      await page.goto(nativePlayUrl, { waitUntil: 'domcontentloaded' });
+      await assertNativeRecovery(/didn't start/);
+      await page.unroute(nativeUrl);
+    }
+    report.checks.push('A native document HTTP error or connection failure after a successful HEAD shows recovery and is excluded from Recent');
+
+    await page.clock.install();
+    const documentGate = new Promise(resolve => { releaseDocument = resolve; });
+    let markDocumentStarted;
+    const documentStarted = new Promise(resolve => { markDocumentStarted = resolve; });
+    await page.route(nativeUrl, async route => {
+      if (route.request().method() === 'HEAD') return route.fallback();
+      markDocumentStarted();
+      await documentGate;
+      await route.abort().catch(() => {});
+    });
+    await page.goto(nativePlayUrl, { waitUntil: 'domcontentloaded' });
+    await documentStarted;
+    await page.clock.fastForward(12500);
+    assert.equal(await page.locator('#slow-loading').isVisible(), true);
+    await page.clock.fastForward(108000);
+    await assertNativeRecovery(/too long to start/);
+    releaseDocument();
+    await page.unroute(nativeUrl);
+    await page.locator('#retry-game').click();
+    await nativeFrame();
+    assert.equal(await page.evaluate(id => JSON.parse(localStorage.getItem('turbogames:recent') || '[]').includes(id), nativeId), true);
+    report.checks.push('A held native navigation shows slow-load controls, times out, and retries into the real prepared game document with saves intact');
+
     assert.ok(heldParts > 0, 'Bulk project requests must be paused, not downloaded');
     assert.deepEqual(errors, []);
     report.sourceRequests = sourceRequests;
@@ -129,6 +175,7 @@ function siteURL(parameters = {}) {
   } catch (error) { report.error = error.stack; throw error; }
   finally {
     releaseParts();
+    releaseDocument?.();
     fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
     if (api) await api.dispose();
     await browser.close();

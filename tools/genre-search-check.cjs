@@ -124,6 +124,23 @@ function urlFor(parameters = {}) {
     }
     report.checks.push('Keyboard-activated Arcade/Racing/Puzzle shortcuts select real genres; Mario remains a text search, preserving sort/availability and reloadable URLs');
 
+    await go({ view: 'all' });
+    const search = page.locator('#search');
+    await search.fill('SLOPE!');
+    await search.press('Enter');
+    const exact = page.locator('#game-grid .card-launch').first();
+    assert.equal(await exact.getAttribute('aria-label'), 'Open Slope');
+    assert.equal(await exact.evaluate(node => document.activeElement === node), true);
+    assert.equal(await page.locator('#game-dialog').evaluate(node => node.open), false);
+    await checkResults({ view: 'all', q: 'SLOPE!' });
+    await search.fill('tetris');
+    await search.press('Enter');
+    assert.equal(await exact.getAttribute('aria-label'), 'Open Tetris');
+    await search.fill('qxz-no-exact-title-00301');
+    await search.press('Enter');
+    assert.equal(await page.locator('#clear-search').evaluate(node => document.activeElement === node), true);
+    report.checks.push('Exact title matches beat variants, and Enter focuses the first result or the empty-state action without opening a game');
+
     await go({ view: 'all', q: 'ORBIT... BREAKER!' });
     assert.deepEqual(await renderedIds(), ['orbit-breaker']);
     await go({ view: 'all', q: 'qxz-unfindable-turbo-00991' });
