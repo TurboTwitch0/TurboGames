@@ -1,16 +1,16 @@
 :root {
   color-scheme: dark;
-  --bg: #0e1013;
-  --panel: #191d24;
-  --panel-raised: #232933;
-  --ink: #f7f5ee;
-  --muted: #a5adb9;
-  --line: #303640;
+  --bg: #0b1018;
+  --panel: #151e2b;
+  --panel-raised: #1d2939;
+  --ink: #f1f5fa;
+  --muted: #a8b6c7;
+  --line: #2d3a4b;
   --lime: #d6ff64;
   --violet: #a9adff;
   --peach: #ffb58c;
   --pink: #ffb58c;
-  --blue: #a9adff;
+  --blue: #75d7e5;
   --radius-sm: 12px;
   --radius: 20px;
   --radius-lg: 28px;

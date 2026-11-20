@@ -17,6 +17,13 @@
   const byId = new Map(items.map(item => [item.id, item]));
   const starterIds = new Set(["library-source/html5-games/cl2048.html", "library-source/html5-games/clhextris.html", "library-source/html5-games/clblockblast.html", "library-source/flash/clrun.html", "library-source/flash/clbloons.html", "orbit-breaker", "little-match"]);
   const starterRank = new Map([...starterIds].map((id, index) => [id, index]));
+  const popularRank = new Map([
+    "library-source/flash/clrun.html",
+    "library-source/html5-games/clbasketrandom.html",
+    "library-source/html5-games/clescaperoad-2.html",
+    "library-source/flash/clbloons.html",
+    "library-source/html5-games/cldrivemady.html"
+  ].map((id, index) => [id, index]));
   const search = document.querySelector("#search");
   const grid = document.querySelector("#game-grid");
   const empty = document.querySelector("#empty-state");
@@ -533,7 +540,13 @@
     }
     if (category === "starters") return matches.sort((a, b) => starterRank.get(a.id) - starterRank.get(b.id));
     if (category === "recent") return matches.sort((a, b) => recent.indexOf(a.id) - recent.indexOf(b.id));
-    if (!query) return matches;
+    if (!query) {
+      if (category === "popular") {
+        const rank = item => popularRank.get(item.id) ?? popularRank.size;
+        return matches.sort((a, b) => rank(a) - rank(b));
+      }
+      return matches;
+    }
     const ranks = new Map(matches.map(item => {
       const entry = searchEntry(item);
       const title = entry.title ??= normalize(item.title);
