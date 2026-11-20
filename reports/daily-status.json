@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-19T19:33:41.538309+00:00",
+  "checked_at": "2026-11-20T19:11:28.419290+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,54 +13,14 @@
     "checked": 3522,
     "skipped": 0,
     "counts": {
-      "reachable": 3394,
-      "http-error": 122,
-      "connection-error": 6
+      "reachable": 3391,
+      "http-error": 120,
+      "connection-error": 11
     },
-    "issues": 128
+    "issues": 131
   },
   "errors": [],
   "remote_issue_examples": [
-    {
-      "source": "library-source/html5-games/clbaconmaydie.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clfunnyshooter2.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clsuperonionboy2.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clUltimatecardrivingsimulator.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/emulated/pokemon/clpokepisces.html",
-      "result": "http-error",
-      "status": 403
-    },
     {
       "source": "library-source/html5-games/clfnfanimation.html",
       "result": "http-error",
@@ -144,30 +104,70 @@
     {
       "source": "library-source/html5-games/clDigOutofPrison.html",
       "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clmonkeymart.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/emulated/arcade/clmegamanfighters.html",
-      "result": "http-error",
       "status": 403
     },
     {
+      "source": "library-source/html5-games/clmonkeymart.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clmonkeymart.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clmonkeymart.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
       "source": "library-source/html5-games/clsnipershot.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clBFDIBranches.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clBFDIBranches.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clredvsbluewar.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clfnfdocumic.txtv3.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/ConfrontingYourself.html",
       "result": "http-error",
       "status": 404
     }

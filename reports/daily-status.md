@@ -1,6 +1,6 @@
 # Daily TurboGames refresh
 
-Checked at: 2026-11-19T19:33:41.538309+00:00
+Checked at: 2026-11-20T19:11:28.419290+00:00
 
 Result: **attention**.
 
@@ -11,7 +11,7 @@ Result: **attention**.
 | Required launcher resource problems | 0 |
 | Inline JavaScript syntax failures | 0 |
 | Fresh remote URL checks | 3522 / 3522 |
-| Remote URLs requiring attention | 128 |
+| Remote URLs requiring attention | 131 |
 | Remote URLs deferred or skipped | 0 |
 
 The existing catalog and local artwork mappings are rebuilt. No new games are imported.
@@ -22,14 +22,6 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 
 ## Remote issues (sample)
 
-- library-source/html5-games/clbaconmaydie.html: http-error (HTTP 404)
-- library-source/html5-games/clcreaturecardidle.html: http-error (HTTP 404)
-- library-source/html5-games/clcreaturecardidle.html: http-error (HTTP 404)
-- library-source/html5-games/clcreaturecardidle.html: http-error (HTTP 404)
-- library-source/html5-games/clfunnyshooter2.html: http-error (HTTP 403)
-- library-source/html5-games/clsuperonionboy2.html: http-error (HTTP 403)
-- library-source/html5-games/clUltimatecardrivingsimulator.html: http-error (HTTP 404)
-- library-source/emulated/pokemon/clpokepisces.html: http-error (HTTP 403)
 - library-source/html5-games/clfnfanimation.html: http-error (HTTP 404)
 - library-source/html5-games/cl10minutestildawn.html: http-error (HTTP 404)
 - library-source/html5-games/clmelee.html: http-error (HTTP 404)
@@ -46,9 +38,17 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 - library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
 - library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
 - library-source/html5-games/clmoneyrush.html: http-error (HTTP 403)
-- library-source/html5-games/clDigOutofPrison.html: http-error (HTTP 404)
+- library-source/html5-games/clDigOutofPrison.html: http-error (HTTP 403)
 - library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
 - library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
 - library-source/html5-games/clmonkeymart.html: http-error (HTTP 404)
-- library-source/emulated/arcade/clmegamanfighters.html: http-error (HTTP 403)
 - library-source/html5-games/clsnipershot.html: http-error (HTTP 404)
+- library-source/html5-games/clBFDIBranches.html: http-error (HTTP 404)
+- library-source/html5-games/clBFDIBranches.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clprismarine.html: http-error (HTTP 404)
+- library-source/html5-games/clredvsbluewar.html: http-error (HTTP 404)
+- library-source/html5-games/clfnfdocumic.txtv3.html: http-error (HTTP 404)
+- library-source/html5-games/ConfrontingYourself.html: http-error (HTTP 404)
