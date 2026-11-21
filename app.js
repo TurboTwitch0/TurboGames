@@ -108,9 +108,9 @@
   let feedbackTimer;
   let pickedItem;
   const featuredGames = [
-    { id: "orbit-breaker", image: "assets/brand/orbit-preview.webp", controls: "Mouse or touch", accent: "#d6ff64" },
-    { id: "little-match", controls: "Click or tap to match", accent: "#a9adff" },
-    { id: "library-source/html5-games/cl2048.html", controls: "Arrow keys or swipe", accent: "#ffb58c" }
+    { id: "orbit-breaker", image: "assets/brand/orbit-preview.webp", type: "Arcade", controls: "Mouse or touch", description: "Move the paddle to break the orbiting stars.", accent: "#d6ff64" },
+    { id: "little-match", type: "Puzzle", controls: "Click or tap", description: "Flip the cards and find all eight pairs.", accent: "#a9adff" },
+    { id: "library-source/html5-games/cl2048.html", type: "Puzzle", controls: "Arrow keys or swipe", description: "Slide and combine tiles to reach 2048.", accent: "#ffb58c" }
   ].map(feature => ({ ...feature, item: byId.get(feature.id) })).filter(feature => feature.item && feature.item.sourceStatus !== "unavailable");
   let featuredIndex = 0;
   const featuredCards = [];
@@ -237,8 +237,10 @@
       featuredDots[cardIndex].setAttribute("aria-pressed", String(distance === 0));
     });
     document.querySelector("#featured-title").textContent = selected.item.title;
-    document.querySelector("#featured-meta").textContent = selected.controls;
-    document.querySelector("#featured-status").textContent = `${featuredIndex + 1} of ${featuredGames.length} — ${selected.item.title}`;
+    document.querySelector("#featured-description").textContent = selected.description;
+    document.querySelector("#featured-meta").textContent = `${selected.type} · ${selected.controls}`;
+    document.querySelector("#featured-position").textContent = `${featuredIndex + 1} of ${featuredGames.length}`;
+    document.querySelector("#featured-status-title").textContent = ` — ${selected.item.title}`;
     document.querySelector(".welcome").style.setProperty("--stage-accent", selected.accent);
     const play = document.querySelector("#hero-play");
     play.setAttribute("aria-label", `Play ${selected.item.title}`);
@@ -327,6 +329,8 @@
       node.textContent = value;
       node.hidden = value === 0;
     });
+    document.querySelector("#ribbon-saved-detail").textContent = favorites.size ? `${favorites.size} saved in this browser` : "Keep your favorites here";
+    document.querySelector("#ribbon-recent-detail").textContent = recent.length ? `${recent.length} recently opened` : "Reopen a recent game";
   }
   function rememberItem(item) {
     recent = [item.id, ...recent.filter(id => id !== item.id)].slice(0, 24);
@@ -395,7 +399,7 @@
     image.alt = `${pickedItem.title} cover`;
     document.querySelector("#pick-title").textContent = pickedItem.title;
     document.querySelector("#pick-category").textContent = categoryNames[pickedItem.category] || pickedItem.category;
-    document.querySelector("#pick-context").textContent = `From ${candidates.length.toLocaleString()} ${candidates.length === 1 ? "matching title" : "matching titles"}.`;
+    document.querySelector("#pick-context").textContent = `From ${candidates.length.toLocaleString()} ${candidates.length === 1 ? "matching title" : "matching titles"}. Picks skip known missing sources, but some games still need files from their original sites.`;
     document.querySelector("#pick-again").disabled = candidates.length < 2;
     document.querySelector("#pick-play").setAttribute("aria-label", `Play ${pickedItem.title}`);
     updateSaveButton(document.querySelector("#pick-save"), pickedItem);
@@ -790,7 +794,7 @@
     const downloadStatus = document.querySelector("#download-status");
     const progress = document.querySelector("#launch-progress");
     progress.removeAttribute("value");
-    downloadStatus.textContent = item.sourceBytes > 2 * 1024 * 1024 ? `Game page: ${(item.sourceBytes / 1048576).toFixed(1)} MB uncompressed. More files may load.` : "";
+    downloadStatus.textContent = item.sourceBytes > 2 * 1024 * 1024 ? `Game page: ${(item.sourceBytes / 1048576).toFixed(1)} MB uncompressed. More files may load.` : "Loading the game page. Some games download more files after opening.";
     launchTimer = setTimeout(() => { if (activeNonce === nonce && !loading.hidden) document.querySelector("#slow-loading").hidden = false; }, 12000);
     if (item.sourceStatus === "unavailable") {
       playerStatus.textContent = item.sourceIssue || "This game needs a working source before it can be played.";
@@ -835,7 +839,7 @@
           received += value.byteLength;
           if (activeNonce === nonce && performance.now() - lastUpdate > 200) {
             const amount = received < 1048576 ? `${Math.ceil(received / 1024)} KB` : `${(received / 1048576).toFixed(1)} MB`;
-            downloadStatus.textContent = `Game page: ${amount} downloaded.`;
+            downloadStatus.textContent = `Game page: ${amount} downloaded. More files may load.`;
             lastUpdate = performance.now();
           }
         }
@@ -971,6 +975,11 @@
     render();
   }
   document.querySelector("#clear-search").addEventListener("click", () => { resetCollection(); search.focus(); });
+  document.querySelector("#ribbon-search").addEventListener("click", () => {
+    resetCollection();
+    window.scrollTo({ top: 0, behavior: "instant" });
+    search.focus({ preventScroll: true });
+  });
   document.querySelector("#hero-starters").addEventListener("click", event => {
     event.preventDefault();
     resetCollection("starters");
@@ -1106,7 +1115,7 @@
     } catch {
       if (generation !== shareGeneration || playerShare.hidden) return;
       copyLink.textContent = "Copy link";
-      shareFeedback.textContent = "Automatic copying is unavailable. Copy the selected link.";
+      shareFeedback.textContent = "Automatic copying is unavailable. Use your browser’s Copy command on the selected link.";
       shareLink.focus({ preventScroll: true });
       shareLink.select();
     } finally {
@@ -1179,6 +1188,7 @@
   document.querySelectorAll("[data-scope-count]").forEach(node => {
     node.textContent = (categoryTotals[node.dataset.scopeCount] || 0).toLocaleString();
   });
+  document.querySelector("#total-titles").textContent = items.length.toLocaleString();
   updateLibraryCounts();
   renderRecentShelf();
   render();

@@ -52,30 +52,51 @@
           <div class="welcome-copy">
             <p class="featured-label">Featured</p>
             <h1 id="featured-title">Orbit Breaker</h1>
-            <p id="featured-meta" class="featured-meta">Mouse or touch</p>
+            <p id="featured-description" class="featured-description">Move the paddle to break the orbiting stars.</p>
+            <p id="featured-meta" class="featured-meta">Arcade · Mouse or touch</p>
             <div class="featured-actions">
               <button id="hero-play" class="preview-play" type="button" aria-label="Play Orbit Breaker"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="m6 3 11 7L6 17Z"/></svg> Play</button>
               <button id="hero-save" class="hero-save" type="button" aria-label="Save Orbit Breaker" aria-pressed="false">♡</button>
               <button id="featured-browse" class="featured-browse" type="button">Browse Games <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button>
             </div>
-            <a id="hero-starters" class="starter-link" href="?view=starters#catalog">Start here <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+            <div class="hero-links">
+              <a id="hero-starters" class="starter-link" href="?view=starters#catalog">Start here <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+              <button id="hero-saved" class="starter-link" type="button" data-library-view="saved">Your saved picks</button>
+            </div>
           </div>
           <div class="hero-showcase">
-            <p id="featured-status" class="player-sr-status" role="status" aria-live="polite">1 of 3 — Orbit Breaker</p>
-            <p id="featured-help" class="player-sr-status">Use Left or Right to choose a game and Enter to play. You can also swipe or select a card.</p>
             <div id="featured-stage" class="featured-stage" role="region" tabindex="0" aria-label="Featured games" aria-roledescription="carousel" aria-describedby="featured-help">
               <div id="featured-cards" class="featured-cards"></div>
             </div>
-            <div class="featured-navigation">
-              <button id="featured-prev" class="stage-arrow" type="button" aria-label="Previous featured game" aria-controls="featured-cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
-              <div id="featured-dots" class="featured-dots" aria-label="Choose a featured game"></div>
-              <button id="featured-next" class="stage-arrow" type="button" aria-label="Next featured game" aria-controls="featured-cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+            <div class="featured-footer">
+              <div class="featured-navigation">
+                <button id="featured-prev" class="stage-arrow" type="button" aria-label="Previous featured game" aria-controls="featured-cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+                <div id="featured-dots" class="featured-dots" aria-label="Choose a featured game"></div>
+                <button id="featured-next" class="stage-arrow" type="button" aria-label="Next featured game" aria-controls="featured-cards"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+              </div>
+              <p id="featured-status" class="featured-status" role="status" aria-live="polite"><span id="featured-position">1 of 3</span><span id="featured-status-title" class="player-sr-status"> — Orbit Breaker</span></p>
             </div>
+            <p id="featured-help" class="featured-help">Swipe or use the arrow keys. <span class="player-sr-status">Press Enter to play the selected game.</span></p>
           </div>
         </section>
+        <nav id="feature-ribbon" class="feature-ribbon" aria-label="Arcade shortcuts">
+          <button id="ribbon-search" class="ribbon-action" type="button">
+            <span class="ribbon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></svg></span>
+            <span class="ribbon-copy"><strong>Find a game</strong><span><span id="total-titles"></span> titles to explore</span></span>
+          </button>
+          <button id="ribbon-saved" class="ribbon-action" type="button" data-library-view="saved">
+            <span class="ribbon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8a5.5 5.5 0 0 0-7.8 0L12 7l-1-1.2a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+            <span class="ribbon-copy"><strong>Saved games</strong><span id="ribbon-saved-detail">Keep your favorites here</span></span>
+          </button>
+          <button id="ribbon-recent" class="ribbon-action" type="button" data-library-view="recent">
+            <span class="ribbon-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.7 7M3 4v7h7M12 7v5l3 2"/></svg></span>
+            <span class="ribbon-copy"><strong>Jump back in</strong><span id="ribbon-recent-detail">Reopen a recent game</span></span>
+          </button>
+        </nav>
         <section id="recent-shelf" class="recent-shelf" aria-labelledby="recent-shelf-title" hidden>
           <div class="recent-shelf-heading"><h2 id="recent-shelf-title">Recently opened</h2><button id="see-recent" class="text-button" type="button">View all <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
           <div id="recent-shelf-grid" class="recent-shelf-grid"></div>
+          <p class="shelf-note">Recent titles stay in this browser. Progress depends on the game.</p>
         </section>
 
         <aside id="catalog-ad" class="ad-placement" aria-label="Advertisement" hidden>
@@ -135,7 +156,7 @@
         </section>
       </main>
 
-      <footer class="footer"><a class="brand footer-brand" href="#top"><img class="brand-symbol" src="assets/brand/turbogames-mark.svg" width="36" height="36" alt="" /><span>Turbo<span class="brand-accent">Games</span></span></a><div class="footer-links"><a href="google-sites.html">Add to Google Sites ↗</a><a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/preview">Credits ↗</a><span>Saved and Recent stay in this browser.</span></div></footer>
+      <footer class="footer"><a class="brand footer-brand" href="#top"><img class="brand-symbol" src="assets/brand/turbogames-mark.svg" width="36" height="36" alt="" /><span>Turbo<span class="brand-accent">Games</span></span></a><div class="footer-links"><a href="google-sites.html">Add to Google Sites ↗</a><a href="https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/preview">Credits ↗</a><span>Your library and supported game saves stay in this browser.<br />Some games load files from their original sites.</span></div></footer>
     </div>
 
     <dialog id="mobile-filter-dialog" class="mobile-filter-dialog" aria-labelledby="mobile-filter-title">
@@ -162,13 +183,13 @@
       </div>
       <section id="player-share" class="player-share" aria-labelledby="player-share-title" hidden>
         <div class="player-share-heading"><h3 id="player-share-title">Share game</h3><button id="close-share" class="icon-button" type="button" aria-label="Close share panel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
-        <p class="player-share-description">This link opens the game separately from your save.</p>
+        <p class="player-share-description">Use Copy link to share the game. The link does not include your progress.</p>
         <label for="game-share-link" class="player-share-label">Game link</label>
         <div class="player-share-controls"><input id="game-share-link" type="url" readonly spellcheck="false" autocomplete="off" /><button id="copy-game-link" type="button">Copy link</button></div>
         <p id="share-feedback" class="share-feedback" role="status" aria-live="polite"></p>
       </section>
       <p id="player-status" class="player-status" role="status"></p>
-      <div id="player-loading" class="player-loading" role="status" hidden><img src="assets/brand/turbogames-mark.svg" width="64" height="64" alt="" /><h3>Opening game…</h3><p id="download-status" aria-live="off"></p><progress id="launch-progress" aria-label="Game page loading"></progress><div id="slow-loading" class="slow-loading" hidden><p>This game is taking longer to load.</p><div><button id="cancel-loading" class="text-button" type="button">Cancel and browse</button><a id="loading-new-tab" class="text-button" target="_blank" rel="noopener noreferrer">Open in new tab <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></div>
+      <div id="player-loading" class="player-loading" role="status" hidden><img src="assets/brand/turbogames-mark.svg" width="64" height="64" alt="" /><h3>Opening game…</h3><p id="download-status" aria-live="off"></p><progress id="launch-progress" aria-label="Game page loading"></progress><div id="slow-loading" class="slow-loading" hidden><p>Still loading. Large games and files from other sites can take longer.</p><div><button id="cancel-loading" class="text-button" type="button">Cancel and browse</button><a id="loading-new-tab" class="text-button" target="_blank" rel="noopener noreferrer">Open in new tab <svg class="arrow-up-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></div>
       <div id="player-recovery" class="player-recovery" hidden>
         <span class="recovery-icon" aria-hidden="true">↻</span>
         <h3 id="recovery-title">This game couldn't load</h3>

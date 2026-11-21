@@ -18,7 +18,9 @@ Focused checks: `node tools/runtime-reliability-check.cjs`, `node tools/native-l
 
 The original **Find your next play** identity uses shared tokens in `brand.css`, native SVG icons, and logo assets in `assets/brand/`. The landing page previews the existing Orbit Breaker game; its Play and Save actions use the same player and library as the catalog. Loading, recovery, empty collections, mobile browsing, and the Google Sites helper share the same visual system. Motion respects the device's reduced-motion setting.
 
-The homepage pairs a large featured preview with selectable thumbnails for Orbit Breaker, Little Match, and 2048. Select a thumbnail, use Previous/Next or the named selectors, or swipe horizontally on touch screens. When the preview has focus, Left/Right, Home/End, and Enter are available. Play, Save, and Browse Games follow the selected title. The default Popular view starts with a handpicked mix of games. Collection cards keep Save below their square covers.
+The homepage pairs a large featured preview with selectable thumbnails for Orbit Breaker, Little Match, and 2048. Each selection shows its own description, controls, and position. Select a thumbnail, use Previous/Next or the named selectors, or swipe horizontally on touch screens. When the preview has focus, Left/Right, Home/End, and Enter are available. Play, Save, and Browse Games follow the selected title. The default Popular view starts with a handpicked mix of games. Collection cards keep Save below their square covers.
+
+The homepage shortcuts focus the full catalog search, open Saved, and open Recent. They show the current catalog size and browser-local library counts. Run `node tools/restored-home-check.cjs` for these actions, featured metadata, game launch history, and phone and embed behavior.
 
 Persistent **Saved** and **Recent** shortcuts keep the browser-local library reachable from the sticky header, including on phones. Desktop collection views use a category sidebar with actual catalog counts; smaller screens and Google Sites retain horizontally scrollable categories. The shared library updates across tabs. Navigation styles live in `library.css`.
 
