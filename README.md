@@ -56,7 +56,7 @@ Active search, availability, and sorting chips can be removed independently. A s
 
 Use the heart on a card to keep it in **Saved**. **Recent** lists the last 24 successfully opened game pages. These lists stay in the current browser profile; no account is required. If browser storage is blocked or full, the current tab keeps its latest game saves and library changes until it closes.
 
-Favorite edits merge with the latest browser library across tabs; browsers with the Web Locks API also serialize simultaneous writes. A failed favorite write stays in the current tab and is retried with its next favorite edit. Keyboard Unsave keeps focus on the nearest remaining card, and **Show more** focuses the first newly revealed title without collapsing a previously loaded Saved collection.
+Favorite edits re-read and merge the storage visible to each tab. Web Locks coordinate cooperating tabs where available, but cross-tab preservation remains best effort even with locks. A failed favorite write stays in the current tab and is retried with its next favorite edit. Keyboard Unsave keeps focus on the nearest remaining card, and **Show more** focuses the first newly revealed title without collapsing a previously loaded Saved collection.
 
 Collection filters are preserved in the URL, such as `/?view=games&q=mario&sort=title-asc`. A game opens at `/?play=orbit-breaker`, so it can be bookmarked or linked from the TurboUniverse hub. Browser Back returns to the collection, Forward reopens the game, and closing a direct game link clears its play parameter. Failed game-page downloads offer a retry; known missing sources explain the problem and offer a return to browsing.
 
