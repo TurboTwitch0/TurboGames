@@ -56,6 +56,8 @@ Active search, availability, and sorting chips can be removed independently. A s
 
 Use the heart on a card to keep it in **Saved**. **Recent** lists the last 24 successfully opened game pages. These lists stay in the current browser profile; no account is required. If browser storage is blocked or full, the current tab keeps its latest game saves and library changes until it closes.
 
+Favorite edits merge with the latest browser library across tabs; browsers with the Web Locks API also serialize simultaneous writes. A failed favorite write stays in the current tab and is retried with its next favorite edit. Keyboard Unsave keeps focus on the nearest remaining card, and **Show more** focuses the first newly revealed title without collapsing a previously loaded Saved collection.
+
 Collection filters are preserved in the URL, such as `/?view=games&q=mario&sort=title-asc`. A game opens at `/?play=orbit-breaker`, so it can be bookmarked or linked from the TurboUniverse hub. Browser Back returns to the collection, Forward reopens the game, and closing a direct game link clears its play parameter. Failed game-page downloads offer a retry; known missing sources explain the problem and offer a return to browsing.
 
 The existing player has a **Save for later** heart and a **Share** panel. Shared links contain the current title only, without the user's collection search or embed settings. Copy uses the browser's clipboard API; when copying is unavailable, the real link stays selected for manual copying. Escape closes Share before closing the game. Phone controls use two rows so the title and six 44px controls fit; landscape switches to a compact toolbar. Fullscreen labels follow the actual browser state. Player styles live in `player-tools.css`.
@@ -65,6 +67,8 @@ Run `node tools/ui-check.cjs` and `node tools/discovery-check.cjs` against the l
 Run `node tools/quick-play-check.cjs` for the focused recent shelf, scoped preview, favorites, filter controls, quick searches, focus recovery, keyboard/touch, reduced-motion, and narrow/embedded layout checks. Its report is `reports/quick-play-check.json` by default.
 
 Run `node tools/library-navigation-check.cjs` and `node tools/player-tools-check.cjs` for the persistent library shortcuts, real category counts, cross-tab updates, player favorites, native/manual link copying, fullscreen state, focus recovery, and phone/landscape layout checks. Both support `TURBO_TEST_URL` and `TURBO_REPORT_PATH` for checking a deployment without changing committed local reports.
+
+Run `node tools/library-state-check.cjs` for keyboard focus after Unsave and Show more, stale and simultaneous tab edits, rapid clicks, and recovery when storage or Web Locks are denied. It also checks tab-local favorites when storage is fully blocked and focus visibility at 320px.
 
 Run `node tools/genre-search-check.cjs` and `node tools/mobile-filter-check.cjs` for genre-aware matching, real category shortcuts, the phone filter sheet, single-control DOM restoration, touch/keyboard focus, and the first visible Starter row. These checks also support `TURBO_TEST_URL` and `TURBO_REPORT_PATH`.
 

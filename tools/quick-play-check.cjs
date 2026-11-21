@@ -90,6 +90,7 @@ async function run() {
     assert.equal(orbit.id, 'orbit-breaker', 'A single-result search must pick that result');
     assert.equal(await page.locator('#pick-save').getAttribute('aria-pressed'), 'false');
     await page.locator('#pick-save').click();
+    await page.waitForFunction(() => document.querySelector('#pick-save').getAttribute('aria-pressed') === 'true');
     assert.equal(await page.locator('#pick-save').getAttribute('aria-pressed'), 'true');
     assert.ok(await page.evaluate(() => JSON.parse(localStorage.getItem('turbogames:favorites')).includes('orbit-breaker')));
     await page.locator('#pick-play').click();
@@ -115,6 +116,7 @@ async function run() {
     assert.equal((await pickedItem()).id, 'orbit-breaker');
     await page.locator('#pick-save').focus();
     await page.keyboard.press('Enter');
+    await panel.waitFor({ state: 'hidden' });
     assert.equal(await panel.isVisible(), false, 'Unsaving the sole Saved pick must close its stale preview');
     assert.equal(await pick.isDisabled(), true, 'An empty Saved library cannot supply a pick');
     assert.equal(await page.locator('.tab[data-category="saved"]').evaluate(node => node === document.activeElement), true,

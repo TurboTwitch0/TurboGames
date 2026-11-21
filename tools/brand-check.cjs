@@ -171,8 +171,10 @@ async function run() {
     await page.locator('#hero-save').waitFor({ state: 'visible' });
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'false');
     await page.locator('#hero-save').click();
+    await page.waitForFunction(() => document.querySelector('#hero-save').getAttribute('aria-pressed') === 'true');
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'true');
     await page.locator('#hero-save').click();
+    await page.waitForFunction(() => document.querySelector('#hero-save').getAttribute('aria-pressed') === 'false');
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'false');
     assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('turbogames:favorites'))), []);
     await page.locator('#header-saved').click();

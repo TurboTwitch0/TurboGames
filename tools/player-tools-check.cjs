@@ -61,6 +61,8 @@ async function run() {
     await gameOpen();
     const initial = await page.evaluate(() => ({ url: location.href, history: history.length }));
     await page.locator('#save-active-game').click();
+    await page.waitForFunction(() => document.querySelector('#save-active-game').getAttribute('aria-pressed') === 'true'
+      && document.querySelector('#player-save-feedback').textContent.includes('saved'));
     assert.equal(await page.locator('#save-active-game').getAttribute('aria-pressed'), 'true');
     assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('turbogames:favorites')).includes('orbit-breaker')), true);
     assert.match(await page.locator('#player-save-feedback').textContent(), /saved/);
@@ -174,6 +176,8 @@ async function run() {
 
     await page.setViewportSize({ width: 1440, height: 1000 });
     await page.locator('#fullscreen-button').click();
+    await page.waitForFunction(() => document.fullscreenElement
+      || document.querySelector('#player-status').textContent.includes('Fullscreen is blocked'));
     if (await page.evaluate(() => Boolean(document.fullscreenElement))) {
       await page.waitForFunction(() => document.querySelector('#fullscreen-button').getAttribute('aria-pressed') === 'true');
       assert.equal(await page.locator('#fullscreen-button').getAttribute('aria-label'), 'Exit fullscreen');
@@ -192,6 +196,7 @@ async function run() {
     await page.goto(siteURL({ play: missing }), { waitUntil: 'domcontentloaded' });
     await page.locator('#player-recovery').waitFor({ state: 'visible' });
     await page.locator('#save-active-game').click();
+    await page.waitForFunction(() => document.querySelector('#save-active-game').getAttribute('aria-pressed') === 'true');
     assert.equal(await page.locator('#save-active-game').getAttribute('aria-pressed'), 'true');
     await page.locator('#share-game').click();
     assert.equal(new URL(await page.locator('#game-share-link').inputValue()).searchParams.get('play'), missing);

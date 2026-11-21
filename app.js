@@ -46,6 +46,8 @@
   const sort = document.querySelector("#sort");
   const hideUnavailable = document.querySelector("#hide-unavailable");
   const libraryNote = document.querySelector("#library-note");
+  const libraryStorageWarning = "Browser storage is unavailable. Your library will last for this tab.";
+  const failedLibraryWrites = new Set();
   const recovery = document.querySelector("#player-recovery");
   const creatorLink = document.querySelector("#creator-site-link");
   const loading = document.querySelector("#player-loading");
@@ -68,13 +70,15 @@
   document.documentElement.classList.toggle("is-embedded", embedded);
   const sessionSaves = new Map();
   const memorySaves = new Map();
-  function readLibrary(key) {
+  function readLibrary(key, fallback = []) {
     try {
       const data = JSON.parse(localStorage.getItem(`turbogames:${key}`) || "[]");
       return Array.isArray(data) ? [...new Set(data.filter(id => typeof id === "string" && byId.has(id)))] : [];
-    } catch { return []; }
+    } catch { return fallback; }
   }
   const favorites = new Set(readLibrary("favorites"));
+  const pendingFavorites = new Map();
+  const favoriteIntents = new Map();
   let recent = readLibrary("recent").slice(0, 24);
   const normalize = text => text.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
   const searchIndex = new Map();
@@ -178,8 +182,12 @@
   window.addEventListener("pagehide", flushSave);
 
   function persistLibrary(key, value) {
-    try { localStorage.setItem(`turbogames:${key}`, JSON.stringify(value)); return true; }
-    catch { libraryNote.textContent = "Browser storage is unavailable. Your library will last for this tab."; return false; }
+    try {
+      localStorage.setItem(`turbogames:${key}`, JSON.stringify(value));
+      failedLibraryWrites.delete(key);
+      if (!failedLibraryWrites.size && libraryNote.textContent === libraryStorageWarning) libraryNote.textContent = "";
+      return true;
+    } catch { failedLibraryWrites.add(key); libraryNote.textContent = libraryStorageWarning; return false; }
   }
   function tellAction(message) {
     clearTimeout(feedbackTimer);
@@ -195,12 +203,19 @@
     button.setAttribute("aria-label", `${saved ? "Unsave" : "Save"} ${item.title}`);
     button.title = saved ? "Remove from Saved" : "Save for later";
   }
+  function favoriteSnapshot() {
+    const latest = new Set(readLibrary("favorites", [...favorites]));
+    for (const [id, saved] of pendingFavorites) saved ? latest.add(id) : latest.delete(id);
+    return latest;
+  }
   window.addEventListener("storage", event => {
     try { if (event.storageArea !== localStorage) return; }
     catch { return; }
     if (event.key === null || event.key === "turbogames:favorites") {
+      if (event.key === null) pendingFavorites.clear();
+      const latest = favoriteSnapshot();
       favorites.clear();
-      for (const id of readLibrary("favorites")) favorites.add(id);
+      for (const id of latest) favorites.add(id);
       document.querySelectorAll("[data-save-id]").forEach(button => {
         const item = byId.get(button.dataset.saveId);
         if (item) updateSaveButton(button, item);
@@ -212,19 +227,43 @@
     }
     if (event.key === null || event.key === "turbogames:favorites" || event.key === "turbogames:recent") {
       updateLibraryCounts();
-      if (category === "saved" || category === "recent") render();
+      if (category === "saved" || category === "recent") render({ preserveGrid: true });
     }
   });
-  function toggleFavorite(item) {
-    const saved = !favorites.has(item.id);
-    saved ? favorites.add(item.id) : favorites.delete(item.id);
-    const durable = persistLibrary("favorites", [...favorites]);
-    updateLibraryCounts();
-    if (category === "saved") render();
-    document.querySelectorAll("[data-save-id]").forEach(button => {
-      if (button.dataset.saveId === item.id) updateSaveButton(button, item);
-    });
-    tellAction(saved ? `${item.title} saved${durable ? " to your shortlist" : " for this tab"}.` : `${item.title} removed from Saved.`);
+  async function toggleFavorite(item) {
+    // Preserve every click's intent while a different tab holds the shared lock.
+    const saved = !(favoriteIntents.get(item.id)?.saved ?? favorites.has(item.id));
+    const intent = { saved };
+    favoriteIntents.set(item.id, intent);
+    const apply = () => {
+      const latest = favoriteSnapshot();
+      saved ? latest.add(item.id) : latest.delete(item.id);
+      const durable = persistLibrary("favorites", [...latest]);
+      if (durable) pendingFavorites.clear();
+      else pendingFavorites.set(item.id, saved);
+      favorites.clear();
+      for (const id of latest) favorites.add(id);
+      if (favoriteIntents.get(item.id) === intent) favoriteIntents.delete(item.id);
+      updateLibraryCounts();
+      if (category === "saved") render({ preserveGrid: true });
+      document.querySelectorAll("[data-save-id]").forEach(button => {
+        const game = byId.get(button.dataset.saveId);
+        if (game) updateSaveButton(button, game);
+      });
+      const message = saved ? `${item.title} saved${durable ? " to your shortlist" : " for this tab"}.` : `${item.title} removed from Saved${durable ? "" : " for this tab"}.`;
+      tellAction(message);
+      return message;
+    };
+    let started = false;
+    try {
+      if (navigator.locks?.request) {
+        return await navigator.locks.request("turbogames:favorites", () => { started = true; return apply(); });
+      }
+    } catch (error) {
+      if (started) throw error;
+      // Storage and locks can be denied independently in embedded browsers.
+    }
+    return apply();
   }
   function selectFeatured(index) {
     if (!featuredGames.length) return;
@@ -568,6 +607,7 @@
   function createCard(item, index) {
     const card = document.createElement("article");
     card.className = `game-card${item.sourceStatus === "unavailable" ? " source-unavailable" : ""}`;
+    card.dataset.gameId = item.id;
     card.style.setProperty("--card-index", Math.min(index, 9));
     card.style.setProperty("--cover-hue", coverHue(item.id));
     const button = document.createElement("button");
@@ -626,8 +666,13 @@
     more.hidden = displayed >= visible.length;
     more.textContent = `Show more (${Math.max(0, visible.length - displayed)} remaining)`;
   }
-  function render() {
+  function render({ preserveGrid = false } = {}) {
     const pickHadFocus = quickPick.contains(document.activeElement);
+    const focusedCard = preserveGrid ? document.activeElement?.closest(".game-card") : null;
+    const focusedId = focusedCard?.dataset.gameId;
+    const focusedIndex = focusedCard ? [...grid.children].indexOf(focusedCard) : -1;
+    const focusedControl = document.activeElement?.classList.contains("save-game") ? ".save-game" : ".card-launch";
+    const previousLimit = displayed;
     dismissPick();
     const query = normalize(search.value);
     const terms = query ? query.split(" ") : [];
@@ -641,7 +686,9 @@
     document.body.classList.toggle("is-browsing", category !== "popular" || genre !== "all" || Boolean(search.value.trim()));
     document.querySelector("#catalog-title").textContent = category === "saved" ? "Saved" : category === "recent" ? "Recently opened" : category === "starters" ? "Starter games" : "Browse";
     document.querySelector("#starter-note").hidden = category !== "starters";
-    displayed = 96;
+    displayed = preserveGrid ? previousLimit : 96;
+    const focusedResult = focusedId ? visible.findIndex(item => item.id === focusedId) : -1;
+    if (focusedResult >= displayed) displayed = Math.ceil((focusedResult + 1) / 96) * 96;
     grid.replaceChildren();
     count.textContent = `${visible.length.toLocaleString()} ${visible.length === 1 ? "item" : "items"} · ${categoryNames[category]}${genre !== "all" ? ` · ${genreNames.get(genre)}` : ""}`;
     updateMobileFilterSummary();
@@ -653,7 +700,13 @@
     empty.hidden = visible.length > 0;
     grid.hidden = visible.length === 0;
     appendCards(0);
-    if (pickHadFocus) (pickButton.disabled ? tabs.find(tab => tab.dataset.category === category) : pickButton)?.focus({ preventScroll: true });
+    if (focusedCard) {
+      const cards = [...grid.children];
+      const nextCard = cards.find(card => card.dataset.gameId === focusedId) || cards[Math.min(focusedIndex, cards.length - 1)];
+      const nextControl = nextCard?.querySelector(focusedControl) || document.querySelector("#clear-search");
+      nextControl.focus({ preventScroll: true });
+      nextControl.scrollIntoView({ block: "nearest", behavior: "instant" });
+    } else if (pickHadFocus) (pickButton.disabled ? tabs.find(tab => tab.dataset.category === category) : pickButton)?.focus({ preventScroll: true });
   }
 
   function updateMobileFilterSummary() {
@@ -962,7 +1015,14 @@
     target.scrollIntoView({ block: "center", behavior: "instant" });
   });
   for (const input of [sort, hideUnavailable]) input.addEventListener("change", () => { writeFilters(); render(); });
-  more.addEventListener("click", () => { const start = displayed; displayed += 96; appendCards(start); });
+  more.addEventListener("click", () => {
+    const start = displayed;
+    displayed += 96;
+    appendCards(start);
+    const nextCard = grid.children[start]?.querySelector(".card-launch");
+    nextCard?.focus({ preventScroll: true });
+    nextCard?.scrollIntoView({ block: "center", behavior: "instant" });
+  });
   function resetCollection(nextCategory = "all") {
     clearTimeout(searchTimer);
     search.value = "";
@@ -1077,10 +1137,11 @@
   document.querySelector("#return-to-collection").addEventListener("click", closePlayer);
   document.querySelector("#retry-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
   document.querySelector("#reload-game").addEventListener("click", () => { if (activeItem) loadItem(activeItem); });
-  playerSave.addEventListener("click", () => {
-    if (!activeItem) return;
-    toggleFavorite(activeItem);
-    document.querySelector("#player-save-feedback").textContent = feedback.textContent;
+  playerSave.addEventListener("click", async () => {
+    const item = activeItem;
+    if (!item) return;
+    const message = await toggleFavorite(item);
+    if (dialog.open && activeItem?.id === item.id) document.querySelector("#player-save-feedback").textContent = message;
   });
   shareGame.addEventListener("click", () => {
     if (!activeItem) return;

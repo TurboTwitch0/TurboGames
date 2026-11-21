@@ -83,6 +83,8 @@
 
 /* Keep the artwork clear by placing the favorite button in the title strip. */
 .game-card { animation: none; }
+.game-card :is(.card-launch,.save-game),#clear-search { scroll-margin-top: 116px; scroll-margin-bottom: 24px; }
+@media(max-width:760px) { .game-card :is(.card-launch,.save-game),#clear-search { scroll-margin-top: 145px; } }
 .game-card .card-launch {
   display: grid;
   grid-template-rows: auto 52px;

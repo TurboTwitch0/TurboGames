@@ -60,6 +60,7 @@ const reportPath = process.env.TURBO_REPORT_PATH || 'reports/restored-home-check
     report.checks.push('Real catalog total and visible featured position and description reflect the homepage and currently selected game');
 
     await page.locator('#hero-save').click();
+    await page.waitForFunction(() => document.querySelector('#hero-save').getAttribute('aria-pressed') === 'true');
     assert.equal(await page.locator('#hero-save').getAttribute('aria-pressed'), 'true');
     await page.locator('#hero-saved').focus();
     await page.keyboard.press('Enter');
