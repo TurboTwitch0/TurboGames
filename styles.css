@@ -1,6 +1,6 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html{scroll-behavior:smooth}
+html{scroll-behavior:auto}
 body{margin:0;background:var(--bg);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
 button,input,select{font:inherit}button{color:inherit}a{color:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}
 button{cursor:pointer}button:disabled{cursor:wait}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--lime);outline-offset:4px}

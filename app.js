@@ -97,6 +97,7 @@
   let displayed = 96;
   let visible = [];
   let activeItem;
+  let playerReturnFocus;
   let activeNonce;
   let searchTimer;
   let saveTimer;
@@ -944,8 +945,42 @@
     fullSite.searchParams.set("play", item.id);
     fullSite.hash = "";
     openTab.href = fullSite.href;
-    if (!dialog.open) dialog.showModal();
+    if (!dialog.open) {
+      let opener = document.activeElement;
+      // Forward recreates catalog buttons before reopening the player.
+      if (opener === document.body) opener = [...grid.children].find(node => node.dataset.gameId === item.id)?.querySelector(".card-launch") || opener;
+      const card = opener?.closest(".game-card");
+      playerReturnFocus = {
+        opener,
+        gameId: card?.dataset.gameId,
+        index: card ? [...grid.children].indexOf(card) : -1,
+        recentId: opener?.dataset.recentId,
+        quickPick: quickPick.contains(opener),
+      };
+      dialog.showModal();
+    }
     loadItem(item);
+  }
+  function restorePlayerFocus() {
+    const previous = playerReturnFocus;
+    playerReturnFocus = undefined;
+    let target;
+    if (previous?.gameId) {
+      const cards = [...grid.children];
+      const card = cards.find(node => node.dataset.gameId === previous.gameId) || cards[Math.min(previous.index, cards.length - 1)];
+      target = card?.querySelector(".card-launch") || document.querySelector("#clear-search");
+    } else if (previous?.recentId) {
+      target = [...document.querySelectorAll(".recent-pick")].find(node => node.dataset.recentId === previous.recentId);
+    } else if (previous?.quickPick) target = pickButton;
+    else if (previous?.opener?.isConnected && previous.opener.getClientRects().length) target = previous.opener;
+    if (!target || target.disabled || !target.getClientRects().length || target === document.body || dialog.contains(target)) {
+      target = !empty.hidden ? document.querySelector("#clear-search") : search;
+    }
+    target.focus({ preventScroll: true });
+    // History may restore its old viewport after the queued dialog close event.
+    setTimeout(() => {
+      if (!dialog.open && document.activeElement === target) target.scrollIntoView({ block: "nearest", behavior: "instant" });
+    }, 0);
   }
   function closePlayer() {
     if (history.state?.turboPlayer) history.back();
@@ -1041,6 +1076,7 @@
     search.focus({ preventScroll: true });
   });
   document.querySelector("#hero-starters").addEventListener("click", event => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     resetCollection("starters");
     document.querySelector("#catalog").scrollIntoView({ block: "start" });
@@ -1125,6 +1161,7 @@
     });
   }
   document.querySelectorAll("a.brand").forEach(link => link.addEventListener("click", event => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     resetCollection("popular");
     const url = new URL(location.href);
@@ -1201,7 +1238,8 @@
     playerStatus.textContent = "";
     recovery.hidden = true;
     loading.hidden = true;
-    if (category === "recent") render();
+    if (category === "recent") render({ preserveGrid: true });
+    restorePlayerFocus();
   });
   dialog.addEventListener("cancel", event => {
     event.preventDefault();
@@ -1212,8 +1250,8 @@
   window.addEventListener("popstate", () => {
     clearTimeout(searchTimer);
     readFilters();
-    render();
     const item = byId.get(new URLSearchParams(location.search).get("play"));
+    render({ preserveGrid: dialog.open && !item });
     if (item) {
       if (!dialog.open || activeItem?.id !== item.id) openItem(item, false);
     } else if (dialog.open) dialog.close();
