@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-22T18:37:22.000366+00:00",
+  "checked_at": "2026-11-23T22:46:47.506923+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,161 +13,161 @@
     "checked": 3522,
     "skipped": 0,
     "counts": {
-      "reachable": 3349,
-      "http-error": 160,
-      "connection-error": 13
+      "reachable": 3414,
+      "http-error": 101,
+      "connection-error": 7
     },
-    "issues": 173
+    "issues": 108
   },
   "errors": [],
   "remote_issue_examples": [
     {
-      "source": "library-source/emulated/atarilynx/clscrapyarddog.html",
+      "source": "library-source/html5-games/clcreaturecardidle.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clcreaturecardidle.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clcreaturecardidle.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clfunnyshooter2.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clUltimatecardrivingsimulator.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clfnfanimation.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/cl10minutestildawn.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clmelee.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/cldubstep.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clspiralroll.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clspiralroll.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clspiralroll.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clblockcraftshooter.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/clbadmondaysimulator (1).html",
+      "source": "library-source/html5-games/cldreadheadparkour.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clkimjonguntilepuzzle.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clslopeplus.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/clklifur.html",
+      "source": "library-source/html5-games/clslopeplus.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/cljustaplatformer.html",
+      "source": "library-source/html5-games/cldontyoulectureme.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/html5-games/cljustaplatformer.html",
+      "source": "library-source/html5-games/cldontyoulectureme.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/emulated/clXMenCOTAArcade.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/pokemon/clpokeemerald47.html",
+      "source": "library-source/html5-games/cldontyoulectureme.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/emulated/pokemon/clpokescrambledscarlet.html",
+      "source": "library-source/html5-games/clmoneyrush.html",
       "result": "http-error",
       "status": 403
     },
     {
-      "source": "library-source/emulated/segaMD/clmonsterworld4.html",
+      "source": "library-source/html5-games/clDigOutofPrison.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/segaMD/clsonicscorchedquest.html",
+      "source": "library-source/html5-games/clmonkeymart.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/segaGG/clsonicchaos.html",
+      "source": "library-source/html5-games/clmonkeymart.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/arcade/clfroggerarcade.html",
+      "source": "library-source/html5-games/clmonkeymart.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/arcade/clMarvelSuperHeroesArcade.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/arcade/clXMenVSStreetFighter.html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/nds/cladvancewarsdualstrike (1).html",
-      "result": "connection-error",
-      "status": null
-    },
-    {
-      "source": "library-source/emulated/nes/cl1942nes.html",
+      "source": "library-source/html5-games/clsnipershot.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/nes/cldarkwingduck.html",
+      "source": "library-source/html5-games/clBFDIBranches.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/nes/clroadrunnernes.html",
+      "source": "library-source/html5-games/clBFDIBranches.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/snes/cltmntturtlesintime.html",
+      "source": "library-source/html5-games/clprismarine.html",
       "result": "http-error",
-      "status": 403
+      "status": 404
     },
     {
-      "source": "library-source/emulated/segaGG/claxbattler.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/segaMD/cldrrobotnikmbm.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/segaMS/clphantasystar.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/segaMD/clphantasystar3.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/segaGG/clggshinobi2.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/claof2.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/clarmwrestarc.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/clfatalfury.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/emulated/arcade/cltmnt2arc.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clgrowdenio.html",
-      "result": "http-error",
-      "status": 403
-    },
-    {
-      "source": "library-source/html5-games/clcuttherope.html",
+      "source": "library-source/html5-games/clprismarine.html",
       "result": "http-error",
       "status": 404
     }
