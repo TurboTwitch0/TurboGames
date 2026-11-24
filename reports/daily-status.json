@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-23T22:46:47.506923+00:00",
+  "checked_at": "2026-11-24T21:23:24.620439+00:00",
   "result": "attention",
   "catalog_entries": 3099,
   "local": {
@@ -13,44 +13,14 @@
     "checked": 3522,
     "skipped": 0,
     "counts": {
-      "reachable": 3414,
-      "http-error": 101,
-      "connection-error": 7
+      "reachable": 3407,
+      "http-error": 109,
+      "connection-error": 6
     },
-    "issues": 108
+    "issues": 115
   },
   "errors": [],
   "remote_issue_examples": [
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clcreaturecardidle.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clfunnyshooter2.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clUltimatecardrivingsimulator.html",
-      "result": "http-error",
-      "status": 404
-    },
-    {
-      "source": "library-source/html5-games/clfnfanimation.html",
-      "result": "http-error",
-      "status": 404
-    },
     {
       "source": "library-source/html5-games/cl10minutestildawn.html",
       "result": "http-error",
@@ -152,6 +122,11 @@
       "status": 404
     },
     {
+      "source": "library-source/emulated/nds/kimmunicator.html",
+      "result": "http-error",
+      "status": 403
+    },
+    {
       "source": "library-source/html5-games/clBFDIBranches.html",
       "result": "http-error",
       "status": 404
@@ -168,6 +143,31 @@
     },
     {
       "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clprismarine.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clredvsbluewar.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/clfnfdocumic.txtv3.html",
+      "result": "http-error",
+      "status": 404
+    },
+    {
+      "source": "library-source/html5-games/ConfrontingYourself.html",
       "result": "http-error",
       "status": 404
     }
