@@ -83,9 +83,38 @@ async function run() {
     assert.deepEqual(await page.evaluate(() => ({ url: location.href, history: history.length })), initial);
     report.checks.push('Share generates only the actual play route; a trusted user click writes that exact link to the real native clipboard');
 
-    // Controlled denial fixture exercises manual recovery without declaring success.
     await page.evaluate(() => {
       window.__turboClipboardWrite = navigator.clipboard.writeText;
+      window.__turboCopyAttempts = 0;
+      Object.defineProperty(navigator.clipboard, 'writeText', {
+        configurable: true,
+        value: () => {
+          window.__turboCopyAttempts++;
+          return new Promise((resolve, reject) => Object.assign(window, { finishTestCopy: resolve, denyTestCopy: reject }));
+        }
+      });
+    });
+    const copy = page.locator('#copy-game-link');
+    await copy.focus();
+    await page.keyboard.press('Enter');
+    assert.equal(await copy.getAttribute('aria-disabled'), 'true');
+    assert.equal(await copy.evaluate(node => node === document.activeElement), true, 'Pending keyboard copy retains focus');
+    await page.keyboard.press('Enter');
+    assert.equal(await page.evaluate(() => window.__turboCopyAttempts), 1, 'Pending copy ignores repeat activation');
+    await page.evaluate(() => window.finishTestCopy());
+    await page.waitForFunction(() => document.querySelector('#copy-game-link').textContent === 'Copied');
+    assert.equal(await copy.evaluate(node => node === document.activeElement), true);
+    await page.keyboard.press('Enter');
+    await page.waitForFunction(() => window.__turboCopyAttempts === 2);
+    const closeShare = page.locator('#close-share');
+    await closeShare.focus();
+    await page.evaluate(() => window.denyTestCopy(new Error('test denial after moving focus')));
+    await page.getByText(/Select the link and use your browser’s Copy command/).waitFor();
+    assert.equal(await closeShare.evaluate(node => node === document.activeElement), true, 'Late copy denial preserves newer focus');
+    report.checks.push('Keyboard copy keeps focus while pending and after success, ignores repeat activation, and leaves newer focus alone after denial');
+
+    // Controlled denial fixture exercises manual recovery without declaring success.
+    await page.evaluate(() => {
       Object.defineProperty(navigator.clipboard, 'writeText', { configurable: true, value: async () => { throw new Error('test denial'); } });
     });
     await page.locator('#copy-game-link').click();

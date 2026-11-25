@@ -799,7 +799,7 @@
     shareGeneration++;
     playerShare.hidden = true;
     shareGame.setAttribute("aria-expanded", "false");
-    copyLink.disabled = false;
+    copyLink.removeAttribute("aria-disabled");
     copyLink.textContent = "Copy link";
     shareFeedback.textContent = "";
     if (restoreFocus && dialog.open) shareGame.focus({ preventScroll: true });
@@ -1201,8 +1201,8 @@
   copyLink.addEventListener("click", async () => {
     const generation = shareGeneration;
     const value = shareLink.value;
-    if (!activeItem || !value) return;
-    copyLink.disabled = true;
+    if (!activeItem || !value || copyLink.hasAttribute("aria-disabled")) return;
+    copyLink.setAttribute("aria-disabled", "true");
     copyLink.textContent = "Copying…";
     try {
       if (!navigator.clipboard?.writeText) throw new Error("Clipboard unavailable");
@@ -1213,11 +1213,16 @@
     } catch {
       if (generation !== shareGeneration || playerShare.hidden) return;
       copyLink.textContent = "Copy link";
-      shareFeedback.textContent = "Automatic copying is unavailable. Use your browser’s Copy command on the selected link.";
-      shareLink.focus({ preventScroll: true });
-      shareLink.select();
+      const copyStillFocused = document.activeElement === copyLink || document.activeElement === shareLink;
+      shareFeedback.textContent = copyStillFocused
+        ? "Automatic copying is unavailable. Use your browser’s Copy command on the selected link."
+        : "Automatic copying is unavailable. Select the link and use your browser’s Copy command.";
+      if (copyStillFocused) {
+        shareLink.focus({ preventScroll: true });
+        shareLink.select();
+      }
     } finally {
-      if (generation === shareGeneration) copyLink.disabled = false;
+      if (generation === shareGeneration) copyLink.removeAttribute("aria-disabled");
     }
   });
   dialog.addEventListener("close", () => {
