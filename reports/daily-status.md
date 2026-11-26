@@ -1,6 +1,6 @@
 # Daily TurboGames refresh
 
-Checked at: 2026-11-25T20:32:46.969078+00:00
+Checked at: 2026-11-26T20:18:29.629668+00:00
 
 Result: **attention**.
 
@@ -11,7 +11,7 @@ Result: **attention**.
 | Required launcher resource problems | 0 |
 | Inline JavaScript syntax failures | 0 |
 | Fresh remote URL checks | 3522 / 3522 |
-| Remote URLs requiring attention | 126 |
+| Remote URLs requiring attention | 146 |
 | Remote URLs deferred or skipped | 0 |
 
 The existing catalog and local artwork mappings are rebuilt. No new games are imported.
@@ -22,33 +22,33 @@ Full reports are attached to the GitHub Actions run as the daily-refresh-reports
 
 ## Remote issues (sample)
 
-- library-source/html5-games/clkanyezone.html: connection-error
-- library-source/emulated/psx/clgta.html: connection-error
-- library-source/emulated/psx/clwipeout2097.html: connection-error
-- library-source/emulated/nds/clpokeblack.html: connection-error
-- library-source/html5-games/clnetattack.html: connection-error
-- library-source/html5-games/clbottlecracks.html: connection-error
-- library-source/html5-games/clstickdefenders.html: connection-error
-- library-source/html5-games/clgolfbattle.html: http-error (HTTP 400)
-- library-source/html5-games/claftertheweek.html: http-error (HTTP 404)
-- library-source/html5-games/clalienskyinvasion.html: http-error (HTTP 404)
-- library-source/html5-games/clalienskyinvasion.html: http-error (HTTP 404)
-- library-source/html5-games/clblumgirocket.html: http-error (HTTP 400)
-- library-source/html5-games/clfallguys.html: http-error (HTTP 400)
-- library-source/html5-games/clgorescriptclassic.html: http-error (HTTP 403)
-- library-source/html5-games/clgorescriptclassic.html: http-error (HTTP 403)
-- library-source/html5-games/clgetontop.html: http-error (HTTP 404)
-- library-source/emulated/nes/clpopeyepapi.html: http-error (HTTP 404)
-- library-source/html5-games/clblackjackhhhh.html: http-error (HTTP 404)
-- library-source/html5-games/clblackjackhhhh.html: http-error (HTTP 404)
-- library-source/html5-games/clblackjackhhhh.html: http-error (HTTP 404)
-- library-source/html5-games/clblackjackhhhh.html: http-error (HTTP 404)
-- library-source/html5-games/clblackjackhhhh.html: http-error (HTTP 404)
-- library-source/html5-games/clidledice.html: http-error (HTTP 404)
-- library-source/html5-games/cllittlealchemy2.html: http-error (HTTP 404)
-- library-source/html5-games/cllittlealchemy2.html: http-error (HTTP 404)
-- library-source/html5-games/cllittlealchemy2.html: http-error (HTTP 404)
-- library-source/emulated/pokemon/clpokeodyssey2.html: http-error (HTTP 403)
-- library-source/emulated/pokemon/clpokemonperfectemerald5.5.html: http-error (HTTP 403)
-- library-source/emulated/pokemon/clpokeremnantsofwah.html: http-error (HTTP 403)
-- library-source/emulated/arcade/clmspacmangalaga.html: http-error (HTTP 403)
+- library-source/html5-games/clcuttherope.html: http-error (HTTP 404)
+- library-source/flash/cltrollfacequest9.html: http-error (HTTP 403)
+- library-source/html5-games/clwaterworks.html: http-error (HTTP 403)
+- library-source/html5-games/clbaconmaydie.html: http-error (HTTP 404)
+- library-source/html5-games/clcreaturecardidle.html: http-error (HTTP 404)
+- library-source/html5-games/clcreaturecardidle.html: http-error (HTTP 403)
+- library-source/html5-games/clcreaturecardidle.html: http-error (HTTP 404)
+- library-source/html5-games/clunitresdreams.html: http-error (HTTP 403)
+- library-source/html5-games/cljellymario.html: http-error (HTTP 403)
+- library-source/html5-games/clfunnyshooter2.html: http-error (HTTP 404)
+- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
+- library-source/html5-games/clmrmine.html: http-error (HTTP 403)
+- library-source/html5-games/clUltimatecardrivingsimulator.html: http-error (HTTP 404)
+- library-source/html5-games/clfnfanimation.html: http-error (HTTP 404)
+- library-source/html5-games/cl10minutestildawn.html: http-error (HTTP 404)
+- library-source/html5-games/clmelee.html: http-error (HTTP 404)
+- library-source/html5-games/cldubstep.html: http-error (HTTP 404)
+- library-source/html5-games/clspiralroll.html: http-error (HTTP 404)
+- library-source/html5-games/clspiralroll.html: http-error (HTTP 404)
+- library-source/html5-games/clspiralroll.html: http-error (HTTP 404)
+- library-source/html5-games/clblockcraftshooter.html: http-error (HTTP 403)
+- library-source/html5-games/cldreadheadparkour.html: http-error (HTTP 404)
+- library-source/html5-games/clkimjonguntilepuzzle.html: http-error (HTTP 404)
+- library-source/emulated/pokemon/clmoonemeraldextremerandomizer.html: http-error (HTTP 403)
+- library-source/emulated/pokemon/clscarletandviolet.html: http-error (HTTP 403)
+- library-source/html5-games/cljustaplatformerE2.html: http-error (HTTP 403)
+- library-source/html5-games/clslopeplus.html: http-error (HTTP 403)
+- library-source/html5-games/clslopeplus.html: http-error (HTTP 403)
+- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
+- library-source/html5-games/cldontyoulectureme.html: http-error (HTTP 403)
